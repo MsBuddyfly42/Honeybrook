@@ -1134,3 +1134,8 @@ setInterval(show,7000);show();
 document.addEventListener("click",e=>{if(e.target?.id==="cinemaEnter"){q("#visualTown")?.scrollIntoView({behavior:"smooth",block:"start"});}});
 const h=new Date().getHours(),stage=q("#hbCinema");if(stage&&(h>=19||h<6))stage.classList.add("cinema-night");
 })();
+/* CINEMATIC DISTRICT BRIDGE */
+(()=>{const stage=document.querySelector("#hbCinema"), bubble=document.querySelector("#cinemaBubble");if(!stage||!bubble)return;
+const districtLines={Bridgeview:"Big Mama is on the porch. A basketball bounces across the Commons while neighbors call to one another.",MainStreet:"Shop doors open along Main Street. The Honey Mug is steaming and Wally is already giving away something he was supposed to sell.",TownSquare:"The town clock marks another Honeybrook hour while bears cross the square beneath the Three Bears monument.",NorthernWoods:"The maintained trail grows quiet. Beyond the ranger sign, the trees seem to be listening.",HarmonyHill:"Music drifts down Harmony Hill as rehearsal begins inside Harmony Hall.",Scholars:"Books, lessons, experiments and questions are already moving through the Scholars’ Quarter."};
+document.addEventListener("click",e=>{const el=e.target.closest("[data-district], .town-building");if(!el)return;const raw=el.dataset.district||el.getAttribute("data-place")||el.textContent||"";const key=Object.keys(districtLines).find(k=>raw.toLowerCase().includes(k.toLowerCase()));if(!key)return;stage.classList.add("scene-focus");bubble.textContent=districtLines[key];setTimeout(()=>stage.classList.remove("scene-focus"),5000);});
+})();
