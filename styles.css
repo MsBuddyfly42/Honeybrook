@@ -435,3 +435,11 @@ small, .subtitle, .muted, .eyebrow {
 .hb-cinema.cinema-night:after{content:"✦  ·  ✧  ·  ✦  ·  ✧";position:absolute;z-index:2;top:7%;left:7%;right:7%;color:#fff9;font-size:1.2rem;letter-spacing:3vw;animation:hbTwinkle 3s ease-in-out infinite alternate}
 @keyframes hbTwinkle{to{opacity:.25}}
 .hb-cinema.scene-focus .cinema-title{opacity:.12;transition:opacity .5s}.hb-cinema.scene-focus .cinema-bubble{font-size:1.05rem}
+
+/* Scene transitions + Northern Woods cinematic treatment */
+#visualTown,.district-screen,.interior-screen{scroll-margin-top:76px}
+body.hb-transitioning #visualTown{animation:hbCameraIn .75s ease both}
+@keyframes hbCameraIn{from{opacity:.15;transform:scale(.96);filter:blur(5px)}to{opacity:1;transform:scale(1);filter:blur(0)}}
+.woods-cinematic{position:relative;overflow:hidden}.woods-cinematic:before{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,#0c241dcc,#173c2aaa,#071a16dd);opacity:.22}
+.woods-cinematic.woods-night:after{content:"✦  ✧   ·  ✦   ·  ✧   ✦";position:absolute;inset:8% 4% auto;color:#dfffc9;letter-spacing:2.2rem;text-shadow:0 0 10px #baff9a;animation:hbFireflies 4s ease-in-out infinite alternate;pointer-events:none}
+@keyframes hbFireflies{to{transform:translate(18px,12px);opacity:.35}}
