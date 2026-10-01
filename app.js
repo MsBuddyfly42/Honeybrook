@@ -1149,3 +1149,15 @@ const h=new Date().getHours();stage.dataset.period=h>=19||h<6?"night":h>=17?"sun
 const month=new Date().getMonth();const rainChance=[2,3,4,9,10].includes(month)&&Math.random()<.16;if(rainChance){stage.dataset.weather="rain";if(bubble)bubble.textContent="A soft rain moves across Honeybrook Creek. Porch conversations have shifted under the awnings."}
 document.addEventListener("visibilitychange",()=>{stage.classList.toggle("hb-paused",document.hidden)});
 })();
+/* VISIBLE CHARACTER MOMENTS */
+(()=>{const card=document.createElement("div");card.className="hb-scene-card";card.setAttribute("role","status");document.body.appendChild(card);
+const scenes=[
+["Big Mama • Bridgeview","Big Mama leans forward on the porch as a cub races past.","“WHO YOUR MAMA?”"],
+["Harold Pawst • Mail Route","Harold stops, checks the address twice, then looks toward Miss Patty’s café.","“I deliver MAIL. I do not deliver gossip.”"],
+["Wally Crumbwell • Cub Cakes","Wally slides another tray into the window even though the display is already full.","“I may have made…a few extra.”"],
+["Lance & Landis • Hearthwell Home","Two controllers click furiously. Buddy appears in the doorway.","Buddy: “If I hear ONE more argument over that game…”"],
+["Benny Scoops • Community Park","The ice-cream bell rings. Three cubs change direction instantly.","Somewhere nearby, a parent sighs."]
+];let i=0;
+function play(){const s=scenes[i++%scenes.length];card.innerHTML="<strong>"+s[0]+"</strong><span class='action'>"+s[1]+"</span><br>"+s[2];card.classList.add("show");setTimeout(()=>card.classList.remove("show"),4300)}
+setInterval(play,16000);
+})();
