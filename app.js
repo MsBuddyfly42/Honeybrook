@@ -1119,3 +1119,18 @@ document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll("[da
  function sync(){let p=read("honeybrook_visitor_passport_v1",null),d=localStorage.getItem("honeybrook_current_district_v1")||"Town Square";let a=document.getElementById("sessionBear"),b=document.getElementById("sessionDistrict"),c=document.getElementById("sessionTime"),s=document.getElementById("sessionStyle");if(a)a.textContent=p?.name||"Visitor Bear";if(b)b.textContent=d;if(c)c.textContent=part();if(s)s.textContent=p?.style||"Go with the flow"}
  document.addEventListener("DOMContentLoaded",()=>{sync();document.querySelectorAll("[data-jump]").forEach(b=>b.onclick=()=>document.getElementById(b.dataset.jump)?.scrollIntoView({behavior:"smooth",block:"start"}));document.getElementById("refreshSession")?.addEventListener("click",sync);document.addEventListener("click",()=>setTimeout(sync,30));document.getElementById("passportForm")?.addEventListener("submit",()=>setTimeout(sync,40))});
 })();
+
+/* HONEYBROOK CINEMATIC DIRECTOR */
+(()=>{const q=s=>document.querySelector(s), bubble=()=>q("#cinemaBubble");
+const moments=[
+["Harold Pawst is making his morning mail route across Bridgeview.","Harold: “I DELIVER MAIL. I DO NOT DELIVER GOSSIP.”"],
+["Benny Scoops rings the ice-cream-cart bell near Community Park.","Somewhere in Honeybrook, three parents just reached for their wallets."],
+["Smoke curls above Cub Cakes & Crumbs.","Wally: “I may have made…a few extra.”"],
+["Big Mama has spotted somebody crossing Bridgeview Commons.","Big Mama: “WHO YOUR MAMA?”"],
+["The Hearthwell house is already busy.","Buddy: “Baby…we ain’t even built the building yet.”"]
+];let n=0;
+function show(){const b=bubble();if(!b)return;b.textContent=moments[n++%moments.length][Math.random()>.45?1:0]}
+setInterval(show,7000);show();
+document.addEventListener("click",e=>{if(e.target?.id==="cinemaEnter"){q("#visualTown")?.scrollIntoView({behavior:"smooth",block:"start"});}});
+const h=new Date().getHours(),stage=q("#hbCinema");if(stage&&(h>=19||h<6))stage.classList.add("cinema-night");
+})();
