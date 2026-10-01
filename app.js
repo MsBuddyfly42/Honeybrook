@@ -1119,3 +1119,51 @@ document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll("[da
  function sync(){let p=read("honeybrook_visitor_passport_v1",null),d=localStorage.getItem("honeybrook_current_district_v1")||"Town Square";let a=document.getElementById("sessionBear"),b=document.getElementById("sessionDistrict"),c=document.getElementById("sessionTime"),s=document.getElementById("sessionStyle");if(a)a.textContent=p?.name||"Visitor Bear";if(b)b.textContent=d;if(c)c.textContent=part();if(s)s.textContent=p?.style||"Go with the flow"}
  document.addEventListener("DOMContentLoaded",()=>{sync();document.querySelectorAll("[data-jump]").forEach(b=>b.onclick=()=>document.getElementById(b.dataset.jump)?.scrollIntoView({behavior:"smooth",block:"start"}));document.getElementById("refreshSession")?.addEventListener("click",sync);document.addEventListener("click",()=>setTimeout(sync,30));document.getElementById("passportForm")?.addEventListener("submit",()=>setTimeout(sync,40))});
 })();
+
+/* HONEYBROOK CINEMATIC DIRECTOR */
+(()=>{const q=s=>document.querySelector(s), bubble=()=>q("#cinemaBubble");
+const moments=[
+["Harold Pawst is making his morning mail route across Bridgeview.","Harold: “I DELIVER MAIL. I DO NOT DELIVER GOSSIP.”"],
+["Benny Scoops rings the ice-cream-cart bell near Community Park.","Somewhere in Honeybrook, three parents just reached for their wallets."],
+["Smoke curls above Cub Cakes & Crumbs.","Wally: “I may have made…a few extra.”"],
+["Big Mama has spotted somebody crossing Bridgeview Commons.","Big Mama: “WHO YOUR MAMA?”"],
+["The Hearthwell house is already busy.","Buddy: “Baby…we ain’t even built the building yet.”"]
+];let n=0;
+function show(){const b=bubble();if(!b)return;b.textContent=moments[n++%moments.length][Math.random()>.45?1:0]}
+setInterval(show,7000);show();
+document.addEventListener("click",e=>{if(e.target?.id==="cinemaEnter"){q("#visualTown")?.scrollIntoView({behavior:"smooth",block:"start"});}});
+const h=new Date().getHours(),stage=q("#hbCinema");if(stage&&(h>=19||h<6))stage.classList.add("cinema-night");
+})();
+/* CINEMATIC DISTRICT BRIDGE */
+(()=>{const stage=document.querySelector("#hbCinema"), bubble=document.querySelector("#cinemaBubble");if(!stage||!bubble)return;
+const districtLines={Bridgeview:"Big Mama is on the porch. A basketball bounces across the Commons while neighbors call to one another.",MainStreet:"Shop doors open along Main Street. The Honey Mug is steaming and Wally is already giving away something he was supposed to sell.",TownSquare:"The town clock marks another Honeybrook hour while bears cross the square beneath the Three Bears monument.",NorthernWoods:"The maintained trail grows quiet. Beyond the ranger sign, the trees seem to be listening.",HarmonyHill:"Music drifts down Harmony Hill as rehearsal begins inside Harmony Hall.",Scholars:"Books, lessons, experiments and questions are already moving through the Scholars’ Quarter."};
+document.addEventListener("click",e=>{const el=e.target.closest("[data-district], .town-building");if(!el)return;const raw=el.dataset.district||el.getAttribute("data-place")||el.textContent||"";const key=Object.keys(districtLines).find(k=>raw.toLowerCase().includes(k.toLowerCase()));if(!key)return;stage.classList.add("scene-focus");bubble.textContent=districtLines[key];setTimeout(()=>stage.classList.remove("scene-focus"),5000);});
+})();
+/* CINEMATIC CAMERA */
+(()=>{document.addEventListener("click",e=>{if(e.target.closest("#cinemaEnter,.town-building,[data-district]")){document.body.classList.add("hb-transitioning");setTimeout(()=>document.body.classList.remove("hb-transitioning"),900);}});
+const woods=[...document.querySelectorAll('[id*="woods" i],[class*="woods" i]')];woods.forEach(w=>{w.classList.add("woods-cinematic");const h=new Date().getHours();if(h>=19||h<6)w.classList.add("woods-night");});
+})();
+/* LIVING WEATHER AND RHYTHM */
+(()=>{const stage=document.querySelector("#hbCinema"),bubble=document.querySelector("#cinemaBubble");if(!stage)return;
+const h=new Date().getHours();stage.dataset.period=h>=19||h<6?"night":h>=17?"sunset":h<11?"morning":"day";
+const month=new Date().getMonth();const rainChance=[2,3,4,9,10].includes(month)&&Math.random()<.16;if(rainChance){stage.dataset.weather="rain";if(bubble)bubble.textContent="A soft rain moves across Honeybrook Creek. Porch conversations have shifted under the awnings."}
+document.addEventListener("visibilitychange",()=>{stage.classList.toggle("hb-paused",document.hidden)});
+})();
+/* VISIBLE CHARACTER MOMENTS */
+(()=>{const card=document.createElement("div");card.className="hb-scene-card";card.setAttribute("role","status");document.body.appendChild(card);
+const scenes=[
+["Big Mama • Bridgeview","Big Mama leans forward on the porch as a cub races past.","“WHO YOUR MAMA?”"],
+["Harold Pawst • Mail Route","Harold stops, checks the address twice, then looks toward Miss Patty’s café.","“I deliver MAIL. I do not deliver gossip.”"],
+["Wally Crumbwell • Cub Cakes","Wally slides another tray into the window even though the display is already full.","“I may have made…a few extra.”"],
+["Lance & Landis • Hearthwell Home","Two controllers click furiously. Buddy appears in the doorway.","Buddy: “If I hear ONE more argument over that game…”"],
+["Benny Scoops • Community Park","The ice-cream bell rings. Three cubs change direction instantly.","Somewhere nearby, a parent sighs."]
+];let i=0;
+function play(){const s=scenes[i++%scenes.length];card.innerHTML="<strong>"+s[0]+"</strong><span class='action'>"+s[1]+"</span><br>"+s[2];card.classList.add("show");setTimeout(()=>card.classList.remove("show"),4300)}
+setInterval(play,16000);
+})();
+/* HONEYBROOK UX ACCESSIBILITY PASS */
+(()=>{const interactive=[...document.querySelectorAll('.town-building,[data-district]')];interactive.forEach((el,i)=>{if(!['BUTTON','A','INPUT','SELECT','TEXTAREA'].includes(el.tagName)){el.tabIndex=el.tabIndex>=0?el.tabIndex:0;el.setAttribute('role',el.getAttribute('role')||'button');if(!el.getAttribute('aria-label')){const label=(el.dataset.district||el.dataset.place||el.textContent||'Honeybrook location').replace(/\s+/g,' ').trim();el.setAttribute('aria-label','Visit '+label)}}});
+document.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.matches('.town-building,[data-district]')){e.preventDefault();e.target.click()}});
+const enter=document.querySelector('#cinemaEnter');if(enter){enter.setAttribute('aria-label','Enter Honeybrook town');}
+const bubble=document.querySelector('#cinemaBubble');if(bubble){bubble.setAttribute('aria-atomic','true');}
+})();
