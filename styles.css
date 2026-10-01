@@ -456,3 +456,21 @@ body.hb-transitioning #visualTown{animation:hbCameraIn .75s ease both}
 /* Character scene staging */
 .hb-scene-card{position:fixed;z-index:9998;left:50%;bottom:5%;transform:translate(-50%,20px);width:min(92vw,620px);padding:1rem 1.1rem;border:3px solid #6b3519;border-radius:22px;background:#fff8df;color:#2f1b0e;box-shadow:0 18px 50px #0006;opacity:0;pointer-events:none;transition:.35s ease}
 .hb-scene-card.show{opacity:1;transform:translate(-50%,0)}.hb-scene-card strong{display:block;font-size:1.08rem;margin-bottom:.25rem}.hb-scene-card .action{font-style:italic;opacity:.8}
+
+/* UX / RESPONSIVE POLISH PASS */
+:root{--hb-focus:#fff3a8;--hb-ink:#2b1b10}
+html{scroll-behavior:smooth;scroll-padding-top:78px}
+body{overflow-x:hidden}
+.hb-skip-link{position:fixed;z-index:10050;left:1rem;top:-5rem;padding:.75rem 1rem;border-radius:12px;background:#24160d;color:#fff;font-weight:900;transition:top .2s}.hb-skip-link:focus{top:1rem}
+button,[role="button"],.town-building,[data-district]{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+button:focus-visible,[role="button"]:focus-visible,.town-building:focus-visible,[data-district]:focus-visible{outline:4px solid var(--hb-focus);outline-offset:4px}
+button:not(:disabled),[role="button"],.town-building,[data-district]{transition:transform .18s ease,box-shadow .18s ease,filter .18s ease}
+@media(hover:hover){button:not(:disabled):hover,[role="button"]:hover,.town-building:hover,[data-district]:hover{transform:translateY(-3px);filter:brightness(1.04)}}
+button:not(:disabled):active,[role="button"]:active,.town-building:active,[data-district]:active{transform:translateY(1px) scale(.985)}
+.hb-cinema{height:clamp(560px,78svh,760px)}
+.cinema-title button{min-height:48px;min-width:160px}
+.hb-scene-card{max-height:min(42vh,280px);overflow:auto}
+@media(max-width:900px){.cinema-townline{gap:.25rem;padding:0 .5rem}.cinema-title h1{font-size:clamp(3rem,12vw,6rem)}}
+@media(max-width:600px){html{scroll-padding-top:62px}.hb-cinema{min-height:620px;height:88svh}.cinema-title{top:7%;width:94%}.cinema-title small{font-size:.72rem}.cinema-title p{font-size:1.05rem}.cinema-townline{top:51%;height:26%;font-size:clamp(2.6rem,14vw,4rem)}.cinema-actor{font-size:2.25rem}.cinema-bubble{bottom:2%;width:90%;font-size:.88rem;padding:.65rem .8rem}.hb-scene-card{bottom:3%;font-size:.92rem}.sticky-nav,.hb-sticky-nav{overflow-x:auto;overscroll-behavior-inline:contain;scrollbar-width:none}.sticky-nav::-webkit-scrollbar,.hb-sticky-nav::-webkit-scrollbar{display:none}}
+@media(max-width:380px){.hb-cinema{min-height:650px}.cinema-title h1{font-size:2.75rem}.cinema-townline{font-size:2.55rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}}
