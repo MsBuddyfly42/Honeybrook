@@ -1161,3 +1161,9 @@ const scenes=[
 function play(){const s=scenes[i++%scenes.length];card.innerHTML="<strong>"+s[0]+"</strong><span class='action'>"+s[1]+"</span><br>"+s[2];card.classList.add("show");setTimeout(()=>card.classList.remove("show"),4300)}
 setInterval(play,16000);
 })();
+/* HONEYBROOK UX ACCESSIBILITY PASS */
+(()=>{const interactive=[...document.querySelectorAll('.town-building,[data-district]')];interactive.forEach((el,i)=>{if(!['BUTTON','A','INPUT','SELECT','TEXTAREA'].includes(el.tagName)){el.tabIndex=el.tabIndex>=0?el.tabIndex:0;el.setAttribute('role',el.getAttribute('role')||'button');if(!el.getAttribute('aria-label')){const label=(el.dataset.district||el.dataset.place||el.textContent||'Honeybrook location').replace(/\s+/g,' ').trim();el.setAttribute('aria-label','Visit '+label)}}});
+document.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.matches('.town-building,[data-district]')){e.preventDefault();e.target.click()}});
+const enter=document.querySelector('#cinemaEnter');if(enter){enter.setAttribute('aria-label','Enter Honeybrook town');}
+const bubble=document.querySelector('#cinemaBubble');if(bubble){bubble.setAttribute('aria-atomic','true');}
+})();
