@@ -1,0 +1,574 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Honeybrook — There's a place for every bear</title><link rel="stylesheet" href="styles.css"></head><body>
+<section class="hb-townfront" id="honeybrookHome">
+ <div class="hb-sky"><span class="cloud c1">☁️</span><span class="cloud c2">☁️</span><span class="sun">☀️</span></div>
+ <div class="hb-hills"></div>
+ <div class="hb-front-content">
+  <div class="hb-townseal">🍯<span>H</span></div>
+  <p class="hb-kicker">WELCOME TO</p>
+  <h1>HONEYBROOK</h1>
+  <p class="hb-motto">There’s a place for every bear.</p>
+  <div class="hb-townscene" aria-label="Honeybrook town illustration">
+   <span class="tree">🌳</span><span class="house">🏡</span><span class="shop">🏪</span><span class="hall">🏛️</span><span class="bridge">🌉</span><span class="cafe">☕</span><span class="tree">🌲</span>
+  </div>
+  <p class="hb-arrival">Explore. Learn. Play. Follow a mystery. Visit somebody. Or do absolutely nothing.</p>
+  <div class="hb-entry-buttons">
+   <button data-frontgo="connectedTown">🗺️ Enter Town</button>
+   <button data-frontgo="passportWorld">🧸 My Bear</button>
+   <button data-frontgo="activityHubWorld">🎒 Find Something To Do</button>
+   <button data-frontgo="completionPass">🎭 Live a Honeybrook Day</button>
+   <button data-frontgo="bundledStoryWorld">🌲 Stories & Mysteries</button>
+  </div>
+ </div>
+</section>
+<nav class="hb-sticky-nav" aria-label="Honeybrook quick navigation">
+ <button data-frontgo="honeybrookHome">🍯 Home</button><button data-frontgo="connectedTown">🗺️ Town</button><button data-frontgo="passportWorld">🧸 Bear</button><button data-frontgo="activityHubWorld">🎒 Activities</button><button data-frontgo="calendarWorld">📅 Today</button><button data-frontgo="bundledStoryWorld">🌲 Stories</button>
+</nav>
+<section class="hb-session-strip" id="sessionStrip">
+ <div><small>VISITING AS</small><b id="sessionBear">Visitor Bear</b></div>
+ <div><small>CURRENT DISTRICT</small><b id="sessionDistrict">Town Square</b></div>
+ <div><small>HONEYBROOK TIME</small><b id="sessionTime">Checking…</b></div>
+ <div><small>VISIT STYLE</small><b id="sessionStyle">Go with the flow</b></div>
+ <button id="refreshSession">↻ Refresh</button>
+</section>
+
+
+<div id="app">
+<section id="welcome" class="screen active"><div class="sun"></div><div class="welcome-card"><div class="crest">🧸</div><p class="eyebrow">THE BEAR COMMUNITY</p><h1>WELCOME TO<br><span>HONEYBROOK</span></h1><p class="motto">There’s a place for every bear.</p><div class="bridge">🌳 <span>🌉</span> 🌳</div><p class="intro">Cross the Welcome Bridge and discover a town built on belonging, learning, laughter, stories—and a few mysteries.</p><button class="primary" id="enterBtn">Cross the Bridge →</button><p class="date" id="welcomeDate"></p></div></section>
+
+<section id="town" class="screen"><header><button id="homeBtn" class="brand">🧸 <b>HONEYBROOK</b></button><div class="top-actions"><button id="roleBtn">🎭 Visitor Mode</button><button id="journeyBtn" class="ghost">📖 My Journey</button><button id="todayBtn">📅 Today</button><button id="bearBtn">📖 Beartionary</button></div></header>
+<div class="town-shell"><aside><h3>Explore Honeybrook</h3><div id="nav"></div><div class="quote">“Pull up a paw.”<small>— an old Bridgeview saying</small></div></aside>
+<main>
+<section class="section explorer-gate" id="explorerGate">
+ <div class="explorer-hero">
+  <p class="eyebrow">Explorer Release</p><h2>🌉 Enter Honeybrook</h2>
+  <p id="welcomeLine">Cross the Welcome Bridge and begin wherever you want. There's a place for every bear.</p>
+  <div class="explorer-actions">
+   <button id="enterTown" class="explorer-primary">🧸 Enter Town</button>
+   <button id="makeVisitor" class="explorer-secondary">🎒 My Visitor Bear</button>
+   <button id="townCalendar" class="explorer-secondary">📅 Town Calendar</button>
+   <button id="discoveryBook" class="explorer-secondary">🗺️ Discovery Book</button>
+  </div>
+ </div>
+ <div id="explorerPanel" class="explorer-panel"></div>
+</section>
+<section class="hero"><div><p class="eyebrow" id="seasonLabel">TODAY IN HONEYBROOK</p><h2 id="locationTitle">Honeybrook Town Map</h2><p id="locationDesc">Choose a place to explore. Honeybrook Creek winds through town, joining neighborhoods, businesses, parks and stories by bridge.</p></div><div class="weather-card"><span id="seasonIcon">🍂</span><b id="dateNow"></b><small id="seasonText"></small></div></section>
+<section id="livingMap" class="living-map"></section><div class="map-legend"><span>🌉 Bridge</span><span>💧 Honeybrook Creek</span><span>🏡 Neighborhood</span><span>🌲 Unknown Territory</span></div><section class="town-life-strip" id="lifeStrip"></section><h3 class="district-list-heading">Explore by district</h3><section id="map" class="map-grid compact"></section><section id="content" class="content-panel hidden"></section>
+<section class="section daily-rhythm" id="dailyRhythm">
+  <div class="section-heading">
+    <p class="eyebrow">Living Town System</p>
+    <h2>🕰️ Honeybrook Right Now</h2>
+    <p id="rhythmSummary">Honeybrook is settling into its day.</p>
+  </div>
+  <div class="rhythm-grid" id="rhythmGrid"></div>
+</section>
+
+
+
+
+
+
+<section class="visual-town section" id="visualTown">
+ <div class="section-heading"><p class="eyebrow">Visual Town • First Pass</p><h2>🏘️ Honeybrook</h2><p>Click around the town. The buildings are beginning to become places instead of menu items.</p></div>
+ <div class="town-scene">
+  <div class="sky"><span class="sun">☀️</span><span class="cloud c1">☁️</span><span class="cloud c2">☁️</span></div>
+  <div class="woods-line"><span>🌲🌲🌲🌲🌲🌲🌲🌲🌲</span><button class="town-pin woods-pin" data-town-place="Northern Edge">NORTHERN WOODS</button></div>
+  <div class="hill h1"></div><div class="hill h2"></div>
+  <div class="creek"></div>
+  <div class="bridge bridge-north">🌉</div><div class="bridge bridge-center">🌉</div><div class="bridge bridge-south">🌉</div>
+  <button class="town-building scholars" data-town-place="Scholars' Quarter"><span>🏫</span><b>Scholars’ Quarter</b></button>
+  <button class="town-building harmony" data-town-place="Harmony Hill"><span>🎵</span><b>Harmony Hall</b></button>
+  <button class="town-building square" data-town-place="Town Square"><span>🏛️</span><b>Town Square</b></button>
+  <button class="town-building mainstreet" data-town-place="Main Street"><span>☕</span><b>Main Street</b></button>
+  <button class="town-building care" data-town-place="Care & Community"><span>❤️</span><b>Care District</b></button>
+  <button class="town-building fun" data-town-place="Entertainment District"><span>🎮</span><b>Fun District</b></button>
+  <button class="town-building bridgeview" data-town-place="Bridgeview"><span>🏡</span><b>Bridgeview</b></button>
+  <button class="town-building park" data-town-place="Community Park"><span>🌳</span><b>Community Park</b></button>
+  <button class="town-building welcome" data-town-place="Welcome House"><span>🎒</span><b>Welcome House</b></button>
+  <div class="road r1"></div><div class="road r2"></div>
+  <div class="town-bear bear1" title="A Honeybrook neighbor">🧸</div><div class="town-bear bear2" title="Another Honeybrook neighbor">🧸</div>
+  <div class="mailbear" title="Harold Pawst is on his route">🧸📬</div><div class="icecart" title="Benny Scoops">🧸🍦</div>
+  <div class="welcome-sign">WELCOME TO HONEYBROOK<br><small>There’s a place for every bear.</small></div>
+ </div>
+ <div id="townSceneInfo" class="town-scene-info">🍯 Pick a place on the map.</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="section connected-town" id="connectedTown">
+ <div class="section-heading"><p class="eyebrow">Connected Honeybrook • Major Completion Pass</p><h2>🗺️ Move Through Town</h2><p>Honeybrook now treats districts as connected places instead of isolated cards. Pick where you are, see what borders it, and keep wandering.</p></div>
+ <div class="location-bar"><span>📍 YOU ARE HERE:</span> <b id="currentDistrict">Town Square</b></div>
+ <div class="district-nav" id="districtNav"></div>
+ <div class="district-view" id="districtView"></div>
+ <div class="integration-jump"><button data-jump="passportWorld">🧸 Update Bear</button><button data-jump="activityHubWorld">🎒 Activities</button><button data-jump="calendarWorld">📅 Today</button><button data-jump="bundledStoryWorld">🌲 Mysteries</button><button data-jump="honeybrookHome">🍯 Town Entrance</button></div><div class="readiness-panel">
+  <h3>🔧 Honeybrook V1 Readiness</h3>
+  <div class="readiness-grid">
+   <div>🗺️ <b>Town Geography</b><span>Built</span></div><div>🏘️ <b>Districts & Places</b><span>Built</span></div><div>🧸 <b>Residents & Families</b><span>Built</span></div><div>🕰️ <b>Living Time</b><span>Built</span></div><div>🤝 <b>Memory & Continuity</b><span>Built</span></div><div>🎭 <b>Role-Play</b><span>Built</span></div><div>📚 <b>Learning / Activities</b><span>Built</span></div><div>🌲 <b>Mystery Foundation</b><span>Built</span></div><div>🎨 <b>Final Visual Polish</b><span>Next</span></div><div>🧪 <b>Integration Testing</b><span>Next</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="section completion-pass" id="completionPass">
+ <div class="section-heading"><p class="eyebrow">Major Completion Pass • Role-Play • Stories • Navigation • Comfort</p><h2>🏘️ Live a Honeybrook Day</h2><p>Choose how you want the town to meet you today. Honeybrook can create a scene, point toward a story thread, help you roam, or leave you completely alone.</p></div>
+ <div class="day-mode-buttons">
+  <button data-daymode="ordinary">☀️ Ordinary Day</button><button data-daymode="story">📖 Story Day</button><button data-daymode="mystery">🔎 Mystery Day</button><button data-daymode="roleplay">🎭 Role-Play</button><button data-daymode="cozy">🪑 Cozy Day</button>
+ </div>
+ <div class="completion-grid">
+  <article id="dayScene"><h3>🐾 Your Day Can Start Anywhere</h3><p>No objective has been assigned.</p></article>
+  <article><h3>🗺️ Quick Town Routes</h3><div id="quickRoutes"></div></article>
+  <article><h3>📚 Open Story Threads</h3><div id="storyThreads"></div></article>
+ </div>
+ <div class="role-stage" id="roleStage"><b>🎭 Role-Play rule:</b> You may be your Visitor Bear, a resident, or the narrator. Switching roles never erases your town memory.</div>
+</section>
+
+<section class="section bundled-story-world" id="bundledStoryWorld">
+ <div class="section-heading"><p class="eyebrow">Settlement • Events • Mystery</p><h2>🧳🎪🌲 Life Keeps Moving</h2><p>Three connected systems move Honeybrook forward without turning the town into a checklist.</p></div>
+ <div class="story-tabs">
+  <button data-storytab="newberry">🧳 Newberry First Week</button><button data-storytab="event">🎪 Town Event</button><button data-storytab="woods">🌲 Woods Field Notes</button>
+ </div>
+ <div id="storyBundlePanel"></div>
+</section>
+
+<section class="section bundled-life-world" id="bundledLifeWorld">
+ <div class="section-heading"><p class="eyebrow">Living World • Connected Town</p><h2>🏘️ Honeybrook Right Now</h2><p>A faster bundled upgrade: town pulse, resident crossovers, and your personal Honeybrook memory in one place.</p></div>
+ <div class="pulse-grid">
+  <article><h3>🕰️ Town Pulse</h3><div id="townPulse"></div></article>
+  <article><h3>💬 Bears Crossing Paths</h3><div id="crossPath"></div><button id="anotherCrossover">See Another Moment</button></article>
+  <article><h3>🍯 My Honeybrook</h3><div id="myHoneybrook"></div></article>
+ </div>
+</section>
+
+<section class="section town-guide-world" id="townGuideWorld">
+ <div class="section-heading"><p class="eyebrow">Your Honeybrook • Gentle Town Guide</p><h2 id="guideGreeting">🍯 Welcome Back, Bear</h2><p id="guideIntro">Honeybrook can suggest a few places based on what you feel like today. You remain completely free to ignore us.</p></div>
+ <div class="guide-layout">
+  <div class="guide-suggestions" id="guideSuggestions"></div>
+  <div class="guide-card" id="guideCard"><h3>🪧 Welcome Wagon Suggestion Board</h3><p>Create or update your Visitor Passport and Honeybrook can offer a few ideas.</p></div>
+ </div>
+</section>
+
+<section class="section passport-world" id="passportWorld">
+ <div class="section-heading"><p class="eyebrow">Your Honeybrook • Visitor Passport</p><h2>🧸 Who Are You Today?</h2><p>Create a simple visitor identity that remembers how you like to spend time here. No talent, career or destiny is required.</p></div>
+ <div class="passport-layout">
+  <form class="passport-form" id="passportForm">
+   <label>Bear name<input id="bearName" maxlength="30" placeholder="Your bear's name"></label>
+   <label>What brings you to Honeybrook?
+    <select id="bearReason"><option>I don't know yet</option><option>I want to explore</option><option>I want to learn</option><option>I want to play</option><option>I want stories and mysteries</option><option>I just need somewhere cozy today</option></select>
+   </label>
+   <label>Today's style
+    <select id="bearStyle"><option>Go with the flow</option><option>Curious explorer</option><option>Cozy visitor</option><option>Story seeker</option><option>Game-day bear</option><option>Learning mood</option></select>
+   </label>
+   <fieldset><legend>Things you might enjoy <small>(optional)</small></legend>
+    <label><input type="checkbox" name="likes" value="Reading"> Reading</label>
+    <label><input type="checkbox" name="likes" value="Games"> Games</label>
+    <label><input type="checkbox" name="likes" value="Learning"> Learning</label>
+    <label><input type="checkbox" name="likes" value="Mysteries"> Mysteries</label>
+    <label><input type="checkbox" name="likes" value="Creating"> Creating</label>
+    <label><input type="checkbox" name="likes" value="Just visiting"> Just visiting</label>
+   </fieldset>
+   <button type="submit">🍯 Save My Honeybrook Passport</button>
+  </form>
+  <div class="passport-card" id="passportCard"><h3>🍯 HONEYBROOK VISITOR</h3><p>There's a place for every bear.</p><p>Create your visitor bear whenever you feel like it.</p></div>
+ </div>
+</section>
+
+<section class="section activity-hub-world" id="activityHubWorld">
+ <div class="section-heading"><p class="eyebrow">Explore • Learn • Play • Read</p><h2>🎒 What Do You Feel Like Doing?</h2><p>Your classrooms, stories, mysteries and games now have places in Honeybrook. Pick by mood—not by obligation.</p></div>
+ <div class="mood-buttons" id="moodButtons"></div>
+ <div class="activity-directory" id="activityDirectory"></div>
+ <div class="activity-launch" id="activityLaunch"><h3>🧸 Honeybrook is open.</h3><p>Choose something above—or choose nothing. Both count as visiting.</p></div>
+</section>
+
+<section class="section calendar-world" id="calendarWorld">
+ <div class="section-heading"><p class="eyebrow">Living World • Real Calendar</p><h2>📅 Today in Honeybrook</h2><p>Honeybrook follows the real year. Seasons change, weekdays feel different from weekends, and town traditions arrive without demanding your participation.</p></div>
+ <div class="today-board">
+  <div><span class="board-label">TODAY</span><h3 id="hbTodayDate">Checking the town calendar…</h3><p id="hbSeason"></p></div>
+  <div class="today-notice" id="hbTodayNotice"></div>
+ </div>
+ <div class="calendar-grid">
+  <article><h3>🌷 Spring</h3><p><b>Festival of Bridges</b> • gardens reopen • creek walks • school projects move outdoors.</p></article>
+  <article><h3>☀️ Summer</h3><p><b>Harmony Festival</b> • park evenings • outdoor music • pool days • food carts stay out later.</p></article>
+  <article><h3>🍯 Autumn</h3><p><b>Honey Harvest Fair</b> • Founders' Day • Three Bears Heritage Weekend • cool Bridgeview porch nights.</p></article>
+  <article><h3>❄️ Winter</h3><p><b>Welcome Home Week</b> • warm café gatherings • library story nights • remembrance and community meals.</p></article>
+ </div>
+ <div class="upcoming-board"><h3>🗓️ Honeybrook Traditions</h3><div id="hbTraditions"></div><p class="calendar-rule"><b>Town rule:</b> An event happening does not create an obligation. You may attend, visit somewhere else, or just stay home.</p></div>
+</section>
+
+<section class="section newberry-world" id="newberryWorld">
+ <div class="section-heading"><p class="eyebrow">Living Story • A Family Arrives</p><h2>🧳 Welcome to Honeybrook, Newberry Family</h2><p>Meet Honeybrook through a family beginning a new chapter—not because they are broken, but because sometimes a family simply needs a different place to grow.</p></div>
+ <div class="newberry-family" id="newberryFamily"></div>
+ <div class="arrival-story" id="arrivalStory">
+   <h3>🚐 Day One: The Welcome Wagon</h3>
+   <p>The Newberry family has just crossed the southern bridge. Nobody hands them a checklist. Toby Trailpaw pulls the Welcome Wagon alongside their vehicle and waves.</p>
+   <div class="arrival-dialogue"><b>Toby:</b> “Welcome to Honeybrook! You folks looking for somebody?”<br><b>Papa Newberry:</b> “Actually…we're looking for a place.”<br><b>Toby:</b> “Well, that's convenient. We got one.”</div>
+   <div class="arrival-actions" id="arrivalActions"></div>
+   <div class="arrival-result" id="arrivalResult">Choose who you'd like to follow first. Their needs do not have to match.</div>
+ </div>
+</section>
+
+<section class="section interiors-world" id="interiorsWorld">
+ <div class="section-heading"><p class="eyebrow">Living World • Enterable Places</p><h2>🚪 Come On In</h2><p>Honeybrook is becoming more than destinations on a map. Step inside some of the town's anchor places and decide what you feel like doing there.</p></div>
+ <div class="interior-tabs" id="interiorTabs"></div>
+ <div class="interior-room" id="interiorRoom"><h3>Choose a doorway</h3><p>Somewhere in Honeybrook, a door is open.</p></div>
+</section>
+
+<section class="section visitor-day-world" id="visitorDayWorld">
+ <div class="section-heading"><p class="eyebrow">Living World • Free Roam</p><h2>🐾 Where Do You Feel Like Going?</h2><p>No required route. Pick a place, wander somewhere else, or stay put. Honeybrook will meet you where you are.</p></div>
+ <div class="visitor-day-layout">
+  <div class="travel-grid" id="travelGrid"></div>
+  <div class="arrival-card" id="arrivalCard"><h3>🧸 Your Honeybrook Day</h3><p>Choose somewhere to visit. There is no wrong first stop.</p></div>
+ </div>
+ <div class="day-journal"><h3>📖 Today's Wandering</h3><div id="dayJournal">You haven't gone anywhere yet—and that is completely fine.</div><button id="clearDay">Start a Fresh Wandering Day</button></div>
+</section>
+
+<section class="section continuity-world" id="continuityWorld">
+ <div class="section-heading"><p class="eyebrow">Living World • Cause & Effect</p><h2>🧵 Honeybrook Remembers What Happened</h2><p>Small moments can echo somewhere else later. No morality score—just a town with continuity.</p></div>
+ <div class="continuity-grid">
+  <article><h3>🧁 Wally's Cupcake Overflow</h3><p>Wally baked far too much again.</p><button data-thread="cupcakes">Help Share the Extras</button><small id="cupcakesState">Nothing recorded yet.</small></article>
+  <article><h3>📬 Harold's Route</h3><p>If you've met Harold, he can recognize you during a later delivery.</p><button data-thread="mail">Check Today's Delivery</button><small id="mailState">No delivery callback yet.</small></article>
+  <article><h3>🪨 The Old Marking</h3><p>A discovery in the Northern Woods can change what the library has to say.</p><button data-thread="marking">Ask at Bear Claw Library</button><small id="markingState">The library is waiting for context.</small></article>
+  <article><h3>☕ Honey Mug Callback</h3><p>News travels through ordinary conversation—especially anywhere Miss Patty serves coffee.</p><button data-thread="cafe">Stop by the Café</button><small id="cafeState">Miss Patty is carrying on with her day.</small></article>
+ </div>
+ <div class="continuity-result" id="continuityResult"><strong>Honeybrook Thread:</strong> Do something small, then see where it echoes.</div>
+</section>
+
+<section class="section relationship-world" id="relationshipWorld">
+ <div class="section-heading"><p class="eyebrow">Living World • Relationship Memory</p><h2>🤝 Bears Remember Bears</h2><p>Honeybrook remembers ordinary introductions and repeat visits. Friendship is not a score to grind—it is simply continuity.</p></div>
+ <div class="relationship-layout">
+  <div class="relationship-list" id="relationshipList"></div>
+  <div class="relationship-card" id="relationshipCard"><h3>Choose a bear</h3><p>See whether you've met and what a return visit feels like.</p></div>
+ </div>
+</section>
+
+<section class="section encounter-world" id="encounterWorld">
+ <div class="section-heading"><p class="eyebrow">Living World • Everyday Encounters</p><h2>💬 Meanwhile, Around Honeybrook…</h2><p>Small moments happen because residents share a town—not because every conversation needs to become a mission.</p></div>
+ <div class="encounter-toolbar"><button id="newEncounter">🎲 See What's Happening</button><span id="encounterPeriod">Honeybrook is carrying on with its day.</span></div>
+ <div class="encounter-card" id="encounterCard"><h3>🏘️ Around Town</h3><p>Press the button to catch an ordinary Honeybrook moment.</p></div>
+</section>
+
+<section class="section resident-life-world" id="residentLifeWorld">
+ <div class="section-heading"><p class="eyebrow">Living World • Resident Routines</p><h2>🧸 Who's Around Honeybrook?</h2><p>Residents now have places they are likely to be at different times of day. Pick a bear to see today's routine and current encounter.</p></div>
+ <div class="resident-life-layout">
+  <div class="resident-buttons" id="residentButtons"></div>
+  <div class="resident-card" id="residentCard"><h3>Choose a resident</h3><p>Honeybrook bears don't stand in one spot all day waiting for a visitor to click them.</p></div>
+ </div>
+ <div class="route-board"><h3>📬 Today's Moving Route</h3><p id="movingRoute">Harold is sorting the morning mail.</p></div>
+</section>
+
+<section class="section town-time-world" id="townTimeWorld">
+ <div class="section-heading"><p class="eyebrow">Living World System • Town Time</p><h2>🌞🌙 Honeybrook Changes With the Hour</h2><p>Explore in real local time, or preview Honeybrook during another part of the day.</p></div>
+ <div class="time-console">
+   <div><strong id="hbClock">Honeybrook Time</strong><small id="hbPeriod">Checking the town clock…</small></div>
+   <div class="time-buttons">
+    <button data-time="auto">🕰️ Real Time</button><button data-time="morning">🌅 Morning</button><button data-time="afternoon">☀️ Afternoon</button><button data-time="evening">🌇 Evening</button><button data-time="night">🌙 Night</button>
+   </div>
+ </div>
+ <div class="living-board">
+   <article><h3>🏘️ Around Town</h3><p id="townRhythm">Honeybrook is waking up.</p></article>
+   <article><h3>🧸 Bears You Might See</h3><p id="bearRhythm">Residents are beginning their routines.</p></article>
+   <article><h3>🌲 Northern Woods</h3><p id="woodsRhythm">The public trail looks different as the light changes.</p></article>
+ </div>
+</section>
+
+<section class="section northern-woods-world" id="northernWoodsWorld">
+ <div class="section-heading"><p class="eyebrow">Discovery Zone • Northern Woods</p><h2>🌲 Beyond the Public Trail</h2><p>The woods do not announce what they are. They simply become older, stranger, and less interested in matching Honeybrook's maps.</p></div>
+ <div class="nw-scene">
+  <div class="nw-sky">🌫️ <span>☀️</span> 🌫️</div><div class="nw-canopy">🌲🌲🌳🌲🌲🌳🌲🌲🌲</div><div class="nw-path"></div>
+  <button class="mystery-place pillars" data-nw="Ancient Pillars"><span>🏛️</span><b>ANCIENT PILLARS</b><small>Architecture older than town records</small></button>
+  <button class="mystery-place beartree" data-nw="Ancient Beartree"><span>🌳</span><b>ANCIENT BEARTREE</b><small>Paw-shaped leaves • immense age</small></button>
+  <button class="mystery-place pond" data-nw="Singing Pond"><span>🪷</span><b>SINGING POND</b><small>Quiet by day. Reports differ at night.</small></button>
+  <button class="mystery-place mushrooms" data-nw="Giant Mushroom Hollow"><span>🍄</span><b>MUSHROOM HOLLOW</b><small>Unusually large. Otherwise...probably fine.</small></button>
+  <button class="mystery-place marker" data-nw="Broken Path Marker"><span>🪧</span><b>BROKEN MARKER</b><small>Points toward a route no longer visible</small></button>
+  <button class="mystery-place cottageglimpse" data-nw="Distant Cottage Glimpse"><span>🏚️</span><b>DISTANT COTTAGE?</b><small>Observed. Location unconfirmed.</small></button>
+  <div class="oldruins">🪨　🏛️　🪨</div><div class="nw-bear explorer">🧸🧭</div><div class="nw-bear jonesha" title="Jonesha Hearthwell">🧸👀</div>
+  <div class="cottage-haze">🏚️<small>...was that there before?</small></div>
+  <div class="nw-note">DAYLIGHT DISCOVERY AREA<br><small>Night may not behave the same way.</small></div>
+ </div>
+ <div id="woodsInfo" class="district-info"><strong>Northern Woods:</strong> Discovery does not equal explanation. Finding a landmark adds it to what Honeybrook knows; it does not automatically reveal what the landmark means.</div>
+</section>
+
+<section class="section northern-edge-world" id="northernEdgeWorld">
+ <div class="section-heading"><p class="eyebrow">Boundary Scene • Northern Edge</p><h2>🌲 The Northern Edge</h2><p>Honeybrook's maintained trail ends here. Beyond it, the official map becomes incomplete.</p></div>
+ <div class="ne-scene">
+  <div class="ne-sky">☁️ <span>🌥️</span> ☁️</div><div class="deepwoods">🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲</div><div class="ne-creek"></div><div class="ne-trail"></div>
+  <div class="warning-sign">NORTHERN WOODS<br><small>Travel beyond this point is at your own risk.<br>Honeybrook Rangers recommend returning before nightfall.</small></div>
+  <button class="edge-place ranger" data-ne="Ranger Boundary"><span>🛖</span><b>RANGER BOUNDARY</b><small>Last maintained checkpoint</small></button>
+  <button class="edge-place trailend" data-ne="End of Public Trail"><span>🥾</span><b>TRAIL END</b><small>Maintained route stops here</small></button>
+  <button class="edge-place oldbridge" data-ne="Ancient Bridge"><span>🌉</span><b>ANCIENT BRIDGE</b><small>Older than Amelia's settlement</small></button>
+  <button class="edge-place mapstone" data-ne="Incomplete Map Stone"><span>🗺️</span><b>MAP STONE</b><small>Some routes simply stop</small></button>
+  <button class="edge-place marking" data-ne="Weathered Marking"><span>🪨</span><b>OLD MARKING</b><small>Meaning unknown</small></button>
+  <button class="edge-place returnpath" data-ne="Return to Honeybrook"><span>🏘️</span><b>RETURN PATH</b><small>Town is still behind you.</small></button>
+  <div class="ancient-bridge">╔═══🌉═══╗</div><div class="ne-bear rangerbear">🧸🧭</div><div class="ne-bear curious">🧸👀</div>
+  <div class="unknown-territory">UNKNOWN TERRITORY<br><small>Official town map ends beyond this point.</small></div>
+ </div>
+ <div id="northernEdgeInfo" class="district-info"><strong>Northern Edge:</strong> Honeybrook acknowledges what it does not know. The public trail ends before the deepest woods, and the town does not pretend uncertainty is the same thing as danger.</div>
+</section>
+
+<section class="section entrance-world" id="entranceWorld">
+ <div class="section-heading"><p class="eyebrow">Town Scene • Southern Entrance</p><h2>🌉 Welcome to Honeybrook</h2><p>This is the first ordinary road into town—and the first promise Honeybrook makes to a newcomer.</p></div>
+ <div class="se-scene">
+  <div class="se-sky">☁️ <span>☀️</span> ☁️</div><div class="se-hills"></div><div class="se-creek"></div><div class="se-road"></div>
+  <div class="welcome-sign">🧸 WELCOME TO HONEYBROOK 🧸<br><strong>There’s a place for every bear.</strong></div>
+  <button class="entry-place southbridge" data-se="Welcome Bridge"><span>🌉</span><b>WELCOME BRIDGE</b><small>Your first crossing into town</small></button>
+  <button class="entry-place infohouse" data-se="Visitor Welcome Stop"><span>🏡</span><b>VISITOR STOP</b><small>Maps • directions • no pressure</small></button>
+  <button class="entry-place wagonstop" data-se="Welcome Wagon Stop"><span>🚐</span><b>WAGON STOP</b><small>Newcomer pickup & orientation</small></button>
+  <button class="entry-place townroad" data-se="Honeybrook Road"><span>🛤️</span><b>HONEYBROOK ROAD</b><small>Town Square straight ahead</small></button>
+  <button class="entry-place creeklook" data-se="Creek Overlook"><span>💧</span><b>CREEK OVERLOOK</b><small>Stop before heading farther in</small></button>
+  <button class="entry-place justvisit" data-se="Just Visit Bench"><span>🪑</span><b>JUST VISIT BENCH</b><small>You don't need a reason to be here.</small></button>
+  <div class="se-bear newcomer">🧸🧳</div><div class="se-bear greeter">🧸👋</div><div class="se-bear cyclist2">🧸🚲</div>
+  <div class="se-banner">COME ON IN.<br><small>You can figure out the rest later.</small></div>
+ </div>
+ <div id="entranceInfo" class="district-info"><strong>Southern Entrance:</strong> Honeybrook does not ask a visitor to choose a career, quest, lesson or purpose before entering. Crossing the bridge is enough.</div>
+</section>
+
+<section class="section reflection-world" id="reflectionWorld">
+ <div class="section-heading"><p class="eyebrow">District Scene • Faith & Reflection</p><h2>⛪ Faith & Reflection</h2><p>A quieter corner of Honeybrook for worship, reflection, remembrance, service and stillness.</p></div>
+ <div class="fr-scene">
+  <div class="fr-sky">☁️ <span>☀️</span> ☁️</div><div class="fr-trees">🌳　🌳　🌳　🌳</div><div class="fr-path"></div>
+  <button class="reflect-place church" data-fr="Honeybrook Community Church"><span>⛪</span><b>COMMUNITY CHURCH</b><small>Worship • fellowship • community</small></button>
+  <button class="reflect-place garden" data-fr="Reflection Gardens"><span>🌷</span><b>REFLECTION GARDENS</b><small>Quiet paths • benches • flowers</small></button>
+  <button class="reflect-place outreach" data-fr="Goodberry Outreach House"><span>🤝</span><b>OUTREACH HOUSE</b><small>Food • supplies • practical help</small></button>
+  <button class="reflect-place memorial" data-fr="Remembrance Grove"><span>🕯️</span><b>REMEMBRANCE GROVE</b><small>Honor • memory • love</small></button>
+  <button class="reflect-place quiet" data-fr="Stillwater Pond"><span>🪷</span><b>STILLWATER POND</b><small>Sit quietly. Nothing required.</small></button>
+  <button class="reflect-place overlook" data-fr="South Bridge Overlook"><span>🌉</span><b>BRIDGE OVERLOOK</b><small>Watch travelers enter Honeybrook</small></button>
+  <div class="fr-bear grace" title="Miss Grace Goodberry">🧸🤲</div><div class="fr-bear sitter">🧸🪷</div><div class="fr-bear helper">🧸🧺</div>
+  <div class="fr-sign">FAITH & REFLECTION<br><small>Room for worship. Room for questions. Room for quiet.</small></div>
+ </div>
+ <div id="reflectionInfo" class="district-info"><strong>Faith & Reflection:</strong> Honeybrook makes room for spiritual community and for quiet personal reflection without turning either into a test of belonging.</div>
+</section>
+
+<section class="section outskirts-world" id="outskirtsWorld">
+ <div class="section-heading"><p class="eyebrow">District Scene • Honeybrook Outskirts</p><h2>🌾 Honeybrook Outskirts</h2><p>The roads widen, the buildings thin out, and Honeybrook becomes fields, orchards, barns, old bridges and working country homes.</p></div>
+ <div class="os-scene">
+  <div class="os-sky">☁️ <span>☀️</span> ☁️</div><div class="farwoods">🌲🌲🌲🌲🌲🌲🌲🌲🌲</div><div class="fields">🌾　🌾　🌾　🌾　🌾</div><div class="country-road"></div><div class="os-creek"></div>
+  <button class="out-place farm" data-os="Honeyfield Farm"><span>🚜</span><b>HONEYFIELD FARM</b><small>Fields • barn • working land</small></button>
+  <button class="out-place orchard" data-os="Honeybrook Orchard"><span>🍎</span><b>ORCHARD</b><small>Fruit trees • seasonal picking</small></button>
+  <button class="out-place mill" data-os="Old Honeybrook Mill"><span>⚙️</span><b>OLD MILL</b><small>Creek power • old town history</small></button>
+  <button class="out-place covered" data-os="Covered Bridge"><span>🌉</span><b>COVERED BRIDGE</b><small>Old road crossing</small></button>
+  <button class="out-place rural" data-os="Country Homes"><span>🏡</span><b>COUNTRY HOMES</b><small>Porches • gardens • quiet roads</small></button>
+  <button class="out-place northroad" data-os="Old Northern Road"><span>🛤️</span><b>OLD NORTHERN ROAD</b><small>The maintained road ends ahead.</small></button>
+  <div class="os-bear farmer">🧸🌾</div><div class="os-bear cyclist">🧸🚲</div><div class="os-bear walker">🧸🥾</div><div class="tractor">🚜</div>
+  <div class="old-stone">🪨 ᚨ 🪨<small>weathered markings</small></div>
+  <div class="os-sign">HONEYBROOK OUTSKIRTS<br><small>Town behind you. Older country ahead.</small></div>
+ </div>
+ <div id="outskirtsInfo" class="district-info"><strong>Honeybrook Outskirts:</strong> This is lived-in country, not a waiting room for the Northern Woods. Farms, homes and old community routes are part of Honeybrook life.</div>
+</section>
+
+<section class="section park-world" id="parkWorld">
+ <div class="section-heading"><p class="eyebrow">District Scene • Community Park</p><h2>🌳 Honeybrook Community Park</h2><p>Walk, play, picnic, fish, eat something from a cart—or find a tree and mind your bear-ness.</p></div>
+ <div class="pk-scene">
+  <div class="pk-sky">☁️ <span>☀️</span> ☁️</div><div class="pk-trees">🌳 🌳 🌲 🌳 🌳 🌲 🌳</div><div class="pk-creek"></div>
+  <div class="pk-bridge b1">🌉</div><div class="pk-bridge b2">🌉</div><div class="pk-path"></div>
+  <button class="park-place playground" data-pk="Honeybrook Playground"><span>🛝</span><b>PLAYGROUND</b><small>Cubs • climbing • running</small></button>
+  <button class="park-place picnic" data-pk="Picnic Lawn"><span>🧺</span><b>PICNIC LAWN</b><small>Blankets • grills • shade</small></button>
+  <button class="park-place gardens" data-pk="Park Gardens"><span>🌻</span><b>PARK GARDENS</b><small>Flowers • paths • benches</small></button>
+  <button class="park-place sports" data-pk="Sports Lawn"><span>⚽</span><b>SPORTS LAWN</b><small>Run • toss • play</small></button>
+  <button class="park-place creekside" data-pk="Creekside Trail"><span>🥾</span><b>CREEKSIDE TRAIL</b><small>Walk • wander • little bridges</small></button>
+  <button class="park-place quiettree" data-pk="The Quiet Tree"><span>🌳</span><b>THE QUIET TREE</b><small>No agenda.</small></button>
+  <div class="pk-bear family">🧸🧸🧸</div><div class="pk-bear napper" title="This bear has accomplished enough today.">🧸💤</div><div class="pk-bear fisher">🧸🎣</div>
+  <div class="benny-cart" title="Benny Scoops">🧸🍦<small>BEARy COLD</small></div><div class="lemon-cart">🍋<small>LEMONADE</small></div><div class="pk-sign">COMMUNITY PARK<br><small>Stay five minutes or stay all afternoon.</small></div>
+ </div>
+ <div id="parkInfo" class="district-info"><strong>Community Park:</strong> Honeybrook's outdoor living room. Nothing here needs to become a task.</div>
+</section>
+
+<section class="section fun-world" id="funWorld">
+ <div class="section-heading"><p class="eyebrow">District Scene • Entertainment & Play</p><h2>🎮 Entertainment & Play</h2><p>Games, movies, skating, bowling, swimming, sports—and absolutely no requirement to turn recreation into self-improvement.</p></div>
+ <div class="ep-scene">
+  <div class="ep-sky">☁️ <span>☀️</span> ☁️</div><div class="ep-lights">✨　⭐　✨　⭐　✨</div>
+  <button class="fun-place gameshow" data-ep="Gamer Bear Game Show Studio"><span>📺</span><b>GAME SHOW STUDIO</b><small>Lights • buzzers • ridiculous excitement</small></button>
+  <button class="fun-place skate" data-ep="Rollin' Bears Skate Palace"><span>🛼</span><b>SKATE PALACE</b><small>Music • lights • questionable balance</small></button>
+  <button class="fun-place lanes" data-ep="Honeybrook Lanes"><span>🎳</span><b>HONEYBROOK LANES</b><small>Bowling • snacks • bragging</small></button>
+  <button class="fun-place arcade" data-ep="Honeybrook Arcade"><span>🕹️</span><b>ARCADE</b><small>Games • tokens • high scores</small></button>
+  <button class="fun-place cinema" data-ep="Honeybrook Theater"><span>🎬</span><b>THEATER</b><small>Movies • shows • Pawcorn</small></button>
+  <button class="fun-place minigolf" data-ep="Bear Creek Mini Golf"><span>⛳</span><b>MINI GOLF</b><small>Little bridges • big opinions</small></button>
+  <button class="fun-place pool" data-ep="Honeybrook Pool"><span>🏊</span><b>TOWN POOL</b><small>Swim • splash • sit poolside</small></button>
+  <button class="fun-place gym" data-ep="BearFit Gym"><span>🏀</span><b>BEARFIT</b><small>Sports • fitness • open gym</small></button>
+  <div class="ep-bear gamer" title="Gavin Playmore">🧸🎮</div><div class="ep-bear skater">🧸🛼</div><div class="ep-bear moviebear">🧸🍿</div><div class="ep-bear bowler">🧸🎳</div>
+  <div class="pawcorn">🍿<small>PAWCORN</small></div><div class="ep-sign">FUN DISTRICT<br><small>Play because playing is enough.</small></div>
+ </div>
+ <div id="funInfo" class="district-info"><strong>Entertainment & Play:</strong> Honeybrook can teach you plenty. This district is also allowed to be completely, gloriously recreational.</div>
+</section>
+
+<section class="section care-world" id="careWorld">
+ <div class="section-heading"><p class="eyebrow">District Scene • Care & Community</p><h2>❤️ Care & Community</h2><p>Some bears need treatment. Some need information. Some need a meal, a room, a ride—or simply somebody who doesn't ask them to prove they deserve help.</p></div>
+ <div class="cc-scene">
+  <div class="cc-sky">☁️ <span>☀️</span> ☁️</div><div class="cc-trees">🌳　🌳　🌳　🌳</div><div class="cc-road"></div>
+  <button class="care-place clinic" data-cc="Honeybrook Health Center"><span>🏥</span><b>HEALTH CENTER</b><small>Medical care & wellness</small></button>
+  <button class="care-place dental" data-cc="Honeybrook Dental"><span>🦷</span><b>DENTAL</b><small>Everyday dental care</small></button>
+  <button class="care-place emergency" data-cc="Emergency Services"><span>🚑</span><b>EMERGENCY SERVICES</b><small>Response & preparedness</small></button>
+  <button class="care-place welcomehouse" data-cc="Welcome House"><span>🏠</span><b>WELCOME HOUSE</b><small>Come in. We'll figure out the rest.</small></button>
+  <button class="care-place kitchen" data-cc="Welcome House Kitchen"><span>🍲</span><b>COMMUNITY KITCHEN</b><small>Meals & a place at the table</small></button>
+  <button class="care-place porch" data-cc="Welcome House Porch"><span>🪑</span><b>WELCOME PORCH</b><small>Pull up a paw.</small></button>
+  <div class="welcome-wagon" title="The Honeybrook Welcome Wagon">🚐<span>🧸</span><small>WELCOME WAGON</small></div>
+  <div class="cc-bear mabel" title="Mabel Welcomeberry">🧸🗝️</div><div class="cc-bear toby" title="Toby Trailpaw">🧸🗺️</div><div class="cc-bear nora" title="Nora Kindpaw">🧸❤️</div><div class="cc-bear calvin" title="Calvin Stillwater">🧸☕</div>
+  <div class="cc-sign">WELCOME HOUSE<br><small>You don't have to bring anything but yourself.</small></div>
+ </div>
+ <div id="careInfo" class="district-info"><strong>Care & Community:</strong> Honeybrook does not confuse needing help with failing. Different buildings handle different kinds of care, and the Welcome House remains a home-like place rather than an institution.</div>
+</section>
+
+<section class="section harmony-world" id="harmonyWorld">
+ <div class="section-heading"><p class="eyebrow">District Scene • Harmony Hill</p><h2>🎶 Harmony Hill</h2><p>Make something, perform something, learn something—or sit on the grass and enjoy the show.</p></div>
+ <div class="hh-scene">
+  <div class="hh-sky">☁️ <span>☀️</span> ☁️</div><div class="hh-hill"></div><div class="hh-path"></div>
+  <button class="art-place harmonyhall" data-hh="Harmony Hall"><span>🎼</span><b>HARMONY HALL</b><small>Music • voice • rehearsal</small></button>
+  <button class="art-place stage" data-hh="Honeybrook Outdoor Stage"><span>🎤</span><b>OUTDOOR STAGE</b><small>Concerts • community nights</small></button>
+  <button class="art-place studio" data-hh="Poppy's Art Studio"><span>🎨</span><b>ART STUDIO</b><small>Paint • draw • make a mess</small></button>
+  <button class="art-place theater2" data-hh="Dance & Theater Studio"><span>🎭</span><b>DANCE & THEATER</b><small>Move • act • practice</small></button>
+  <button class="art-place rehearsal" data-hh="Rehearsal Rooms"><span>🎹</span><b>REHEARSAL ROOMS</b><small>Practice without an audience</small></button>
+  <button class="art-place lawn" data-hh="Listening Lawn"><span>🧺</span><b>LISTENING LAWN</b><small>No performance required.</small></button>
+  <div class="hh-bear robin" title="Robin Hearthwell">🧸🎤</div><div class="hh-bear melody" title="Melody Honeywell">🧸🎵</div><div class="hh-bear painter">🧸🎨</div><div class="hh-bear listener">🧸🧺</div>
+  <div class="music-notes">♪　♫　♪</div><div class="hh-sign">HARMONY HILL<br><small>You don't have to perform to belong in the audience.</small></div>
+ </div>
+ <div id="harmonyInfo" class="district-info"><strong>Harmony Hill:</strong> Creativity lives here without requiring every bear to turn a hobby into a career, competition, or accomplishment.</div>
+</section>
+
+<section class="section scholars-world" id="scholarsWorld">
+ <div class="section-heading"><p class="eyebrow">District Scene • Scholars’ Quarter</p><h2>📚 Scholars’ Quarter</h2><p>Nobody ages out of learning in Honeybrook—and nobody has to learn exactly like the bear beside them.</p></div>
+ <div class="sq-scene">
+  <div class="sq-sky">☁️ <span>☀️</span> ☁️</div><div class="sq-trees">🌳　🌳　🌳　🌳</div><div class="sq-walk"></div>
+  <button class="learn-place school" data-sq="Honeybrook School"><span>🏫</span><b>HONEYBROOK SCHOOL</b><small>Professor Honeywell</small></button>
+  <button class="learn-place library" data-sq="Bear Claw Library"><span>📚</span><b>BEAR CLAW LIBRARY</b><small>Stories • research • town history</small></button>
+  <button class="learn-place tech" data-sq="Honeybrook Technology Center"><span>💻</span><b>TECHNOLOGY CENTER</b><small>Learn it. Relearn it.</small></button>
+  <button class="learn-place commons2" data-sq="Learning Commons"><span>📝</span><b>LEARNING COMMONS</b><small>Practice • projects • Office skills</small></button>
+  <button class="learn-place hall" data-sq="Learning Hall"><span>🎓</span><b>LEARNING HALL</b><small>Classes for every age</small></button>
+  <button class="learn-place achievement" data-sq="Achievement Center"><span>⭐</span><b>ACHIEVEMENT CENTER</b><small>Celebrate progress—not worth</small></button>
+  <div class="sq-bear professor" title="Professor Theodore Honeywell">🧸📚</div><div class="sq-bear student1">🧸🎒</div><div class="sq-bear student2">🧸💻</div><div class="sq-bear reader">🧸📖</div>
+  <div class="sq-bench">🪑🌻🪑</div><div class="sq-sign">SCHOLARS’ QUARTER<br><small>“Never ask whether a bear can learn. Ask how.”</small></div>
+ </div>
+ <div id="scholarsInfo" class="district-info"><strong>Scholars’ Quarter:</strong> School-age cubs, adults returning to learning, readers, coders, researchers and bears who simply came to find a good book all belong here.</div>
+</section>
+
+<section class="section townsquare-world" id="townSquareWorld">
+ <div class="section-heading"><p class="eyebrow">District Scene • Civic Heart</p><h2>🏛️ Honeybrook Town Square</h2><p>History, town business, festivals, markets—and four figures whose story may be older than Honeybrook itself.</p></div>
+ <div class="ts-scene">
+  <div class="ts-sky">☁️ <span>☀️</span> ☁️</div><div class="ts-tree-line">🌳　🌳　🌳　🌳</div>
+  <div class="ts-plaza"></div><div class="ts-path p1"></div><div class="ts-path p2"></div>
+  <button class="civic townhall" data-ts="Honeybrook Town Hall"><span>🏛️</span><b>TOWN HALL</b><small>Ordinary civic government</small></button>
+  <button class="civic gazette" data-ts="Honeybrook Gazette"><span>📰</span><b>THE GAZETTE</b><small>Honeybrook's news</small></button>
+  <button class="civic postoffice" data-ts="Honeybrook Post Office"><span>📮</span><b>POST OFFICE</b><small>Harold's headquarters</small></button>
+  <button class="civic safety" data-ts="Public Safety"><span>🚒</span><b>PUBLIC SAFETY</b><small>Preparedness & response</small></button>
+  <button class="monument" data-ts="Goldilocks & The Three Bears Monument"><span class="figures">👧 🐻 🐻 🐻</span><b>THE GOLDEN VISITOR<br>& THE THREE BEARS</b><small>In remembrance of the tale that began before our town had a name.</small></button>
+  <button class="clocktower" data-ts="Honeybrook Town Clock"><span>🕰️</span><b>TOWN CLOCK</b></button>
+  <div class="ts-bear t1">🧸</div><div class="ts-bear t2">🧸🛍️</div><div class="ts-bear t3">🧸</div><div class="ts-bear t4" title="Harold heading toward the post office">🧸📬</div>
+  <div class="market-stall s1">🍯<small>Honey</small></div><div class="market-stall s2">🌻<small>Flowers</small></div><div class="market-stall s3">🥨<small>Snacks</small></div>
+  <div class="square-banner">HONEYBROOK TOWN SQUARE<br><small>Gather • Remember • Belong</small></div>
+ </div>
+ <div id="townSquareInfo" class="district-info"><strong>Town Square:</strong> The center of civic life—and a place where history is remembered without pretending every old question has been answered.</div>
+</section>
+
+<section class="section mainstreet-world" id="mainStreetWorld">
+ <div class="section-heading"><p class="eyebrow">District Scene • Main Street</p><h2>☕ Main Street</h2><p>Shopping, errands, food, business—and information you definitely did not come here to hear.</p></div>
+ <div class="ms-scene">
+  <div class="ms-sky">☁️ <span>☀️</span> ☁️</div><div class="ms-trees">🌳　🌳　🌳</div>
+  <div class="ms-sidewalk back"></div><div class="ms-road"></div><div class="ms-sidewalk front"></div>
+  <button class="shop cafe" data-ms="The Honey Mug Café"><span>☕</span><b>THE HONEY MUG</b><small>Miss Patty Peaches</small></button>
+  <button class="shop bakery" data-ms="Cub Cakes & Crumbs"><span>🥐</span><b>CUB CAKES & CRUMBS</b><small>Wally Crumbwell</small></button>
+  <button class="shop needs" data-ms="BEARcessities"><span>🛒</span><b>BEARcessities</b><small>Everything a Bear Needs</small></button>
+  <button class="shop market" data-ms="Honeybrook Market"><span>🍎</span><b>HONEYBROOK MARKET</b><small>Groceries • everyday goods</small></button>
+  <button class="shop threads" data-ms="Paws & Threads"><span>👕</span><b>PAWS & THREADS</b><small>Clothing & accessories</small></button>
+  <button class="shop business" data-ms="Honeybrook Business Center"><span>💼</span><b>BUSINESS CENTER</b><small>Build • learn • plan</small></button>
+  <div class="awning a1"></div><div class="awning a2"></div>
+  <div class="ms-bear patty" title="Miss Patty">🧸☕</div><div class="ms-bear wally" title="Wally">🧸🥐</div>
+  <div class="ms-bear shopper1">🧸🛍️</div><div class="ms-bear shopper2">🧸</div><div class="ms-bear harold2" title="Harold Pawst, still employed">🧸📬</div>
+  <div class="foodcart">🥨<small>Pretzels</small></div><div class="bench">🪑🪴</div>
+  <div class="street-sign">MAIN STREET<br><small>Honeybrook</small></div>
+ </div>
+ <div id="mainStreetInfo" class="district-info"><strong>Main Street:</strong> Come for an errand. Leave with a pastry and information about three neighbors you never asked about.</div>
+</section>
+
+<section class="section bridgeview-world" id="bridgeviewWorld">
+ <div class="section-heading"><p class="eyebrow">District Scene • Bridgeview</p><h2>🏡 Welcome to Bridgeview</h2><p>The neighborhood that raised Honeybrook. Pull up a paw.</p></div>
+ <div class="bridgeview-scene">
+  <div class="bv-sky">☁️ <span>☀️</span> ☁️</div><div class="bv-trees">🌳　🌳　🌳　🌳　🌳</div>
+  <div class="bv-road"></div><div class="bv-sidewalk"></div>
+  <button class="bv-place hearthwell" data-bv="Hearthwell Home"><span>🏠</span><b>Hearthwell Home</b><small>Big family. Bigger ideas.</small></button>
+  <button class="bv-place bigmama" data-bv="Big Mama's Cottage"><span>🏡</span><b>Big Mama's Cottage</b><small>Porch surveillance active.</small></button>
+  <button class="bv-place commons" data-bv="Bridgeview Commons"><span>🛝</span><b>Bridgeview Commons</b><small>Playground • court • picnic tables</small></button>
+  <button class="bv-place garden" data-bv="Community Garden"><span>🌻</span><b>Community Garden</b><small>Grow some. Share some.</small></button>
+  <button class="bv-place oldbridge" data-bv="Old Bridge"><span>🌉</span><b>The Old Bridge</b><small>Older than most stories told about it.</small></button>
+  <div class="bv-resident r-big" title="Big Mama is watching the neighborhood">🧸🪑</div>
+  <div class="bv-resident r-kids" title="Neighborhood cubs">🧸🧸</div>
+  <div class="bv-resident r-harold" title="Harold Pawst">🧸📬</div>
+  <div class="bv-resident r-benny" title="Benny Scoops">🧸🍦</div>
+  <div class="bv-resident r-neighbor" title="A Bridgeview neighbor">🧸</div>
+  <div class="bv-porchline">🪴　🪑　🪴　🪑　🪴</div>
+ </div>
+ <div id="bridgeviewInfo" class="district-info"><strong>Bridgeview:</strong> Porches, family, arguments, cookouts, cubs, gardens, and neighbors who will absolutely ask who your mama is.</div>
+</section>
+
+<section class="section cozy-honeybrook" id="cozyHoneybrook">
+ <div class="cozy-banner">
+  <div><p class="eyebrow">No Goals Required</p><h2>🧸 Just Visit Honeybrook</h2>
+  <p>You don't have to learn anything, finish anything, earn anything, or become anything today. You can simply be here.</p></div>
+  <button id="cozyToggle" class="cozy-toggle">🍯 Start a Cozy Day</button>
+ </div>
+ <div id="cozyWorkspace" class="cozy-workspace" hidden></div>
+</section>
+
+<section class="section learning-hub" id="learningHub">
+ <div class="section-heading"><p class="eyebrow">Phase 9 • Learning & Activity System</p><h2>📚 Honeybrook Learning Passport</h2>
+ <p>Lessons, stories, games, practice labs, and creative activities now have homes inside the town.</p></div>
+ <div class="learning-toolbar">
+  <select id="contentTypeFilter"><option value="all">All activity types</option><option>Lesson</option><option>Practice Lab</option><option>Game</option><option>Story</option><option>Creative Activity</option></select>
+  <select id="contentPlaceFilter"><option value="all">All locations</option></select>
+ </div>
+ <div id="learningStats" class="learning-stats"></div><div id="contentRegistry" class="content-registry"></div>
+</section>
+
+<section class="section play-studio" id="playStudio">
+ <div class="section-heading">
+  <p class="eyebrow">Phase 8 • Role Play Foundation</p>
+  <h2>🎭 Honeybrook Story Studio</h2>
+  <p>Observe the town, frame a scene as Narrator, or step into a resident's paws.</p>
+ </div>
+ <div class="mode-tabs">
+  <button class="mode-btn active" data-mode="visitor">👀 Visitor</button>
+  <button class="mode-btn" data-mode="narrator">📖 Narrator</button>
+  <button class="mode-btn" data-mode="character">🐻 Character</button>
+ </div>
+ <div id="modeWorkspace" class="mode-workspace"></div>
+</section>
+
+<section class="section story-engine" id="storyEngine">
+  <div class="section-heading">
+    <p class="eyebrow">Phase 7 • Story & Event Engine</p>
+    <h2>📜 Something's Happening in Honeybrook</h2>
+    <p>Ordinary days can produce little situations, community moments, and—occasionally—something worth investigating.</p>
+  </div>
+  <div class="event-panel" id="eventPanel"></div>
+  <div class="event-history">
+    <h3>Honeybrook Event Journal</h3>
+    <div id="eventHistory">No events completed yet.</div>
+  </div>
+</section>
+
+</main></div>
+<footer><span>🍯 Honeybrook v3</span><span>There’s a place for every bear.</span><span id="footerRole">Visitor</span><span id="memoryBadge" class="memory-badge"></span></footer></section>
+
+<div id="modal" class="modal hidden"><div class="modal-card"><button class="close" id="closeModal">×</button><div id="modalContent"></div></div></div>
+</div><script src="app.js"></script></body></html>
