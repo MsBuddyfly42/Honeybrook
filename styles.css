@@ -443,3 +443,13 @@ body.hb-transitioning #visualTown{animation:hbCameraIn .75s ease both}
 .woods-cinematic{position:relative;overflow:hidden}.woods-cinematic:before{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,#0c241dcc,#173c2aaa,#071a16dd);opacity:.22}
 .woods-cinematic.woods-night:after{content:"✦  ✧   ·  ✦   ·  ✧   ✦";position:absolute;inset:8% 4% auto;color:#dfffc9;letter-spacing:2.2rem;text-shadow:0 0 10px #baff9a;animation:hbFireflies 4s ease-in-out infinite alternate;pointer-events:none}
 @keyframes hbFireflies{to{transform:translate(18px,12px);opacity:.35}}
+
+/* Living-town performance pass */
+.hb-cinema{contain:layout paint;transform:translateZ(0)}
+.cinema-cloud,.cinema-actor,.cinema-birds,.cinema-smoke,.cinema-creek{will-change:transform}
+.hb-cinema[data-weather="rain"]{background:linear-gradient(#647b91 0 58%,#66835c 58%)}
+.hb-cinema[data-weather="rain"] .cinema-sky:after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(105deg,transparent 0 16px,#d9f2ff99 17px 19px,transparent 20px 35px);animation:hbRain .55s linear infinite}
+@keyframes hbRain{to{background-position:-35px 70px}}
+.hb-cinema[data-period="sunset"]{background:linear-gradient(#e98a62 0,#f5bf72 43%,#77a967 58%)}
+.hb-cinema[data-period="night"] .cinema-creek{filter:brightness(.62) saturate(.8)}
+.hb-paused *{animation-play-state:paused!important}
