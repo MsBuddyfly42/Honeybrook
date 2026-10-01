@@ -407,3 +407,22 @@ small, .subtitle, .muted, .eyebrow {
 .hb-night .district-view, .hb-night .district-view * {
   color:inherit;
 }
+
+/* HONEYBROOK • colorful cozy-world polish • 2026 */
+:root{--cream:#fff9e7;--honey:#ffc643;--sage:#85ba76;--blue:#86cde9;--red:#ca655f}
+body{background:linear-gradient(155deg,#fff4ce 0%,#fffbe9 40%,#edf9ec 78%,#e9f5ff 100%) fixed}
+.hb-townfront{background:linear-gradient(165deg,#6cc8f5 0%,#b1e8ff 43%,#e7f6ac 72%,#96d17c 100%);isolation:isolate}
+.hb-townfront:before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 85% 14%,#fffcc4b3,transparent 23%),radial-gradient(circle at 17% 78%,#fff9e888,transparent 31%)}
+.hb-townfront h1{color:#5b3020;text-shadow:0 3px 0 #fff3bc,0 8px 20px #784d3670;letter-spacing:.035em}
+.hb-townscene{filter:drop-shadow(0 12px 14px #47784655)}
+.hb-townfront button,.hb-entry-buttons button{box-shadow:0 6px 0 #61452b45,0 12px 24px #513c2550;transition:transform .2s ease,box-shadow .2s ease,filter .2s ease}
+.hb-entry-buttons button:nth-child(4n+1){background:linear-gradient(135deg,#ffcf65,#ffac64);color:#422f19}
+.hb-entry-buttons button:nth-child(4n+2){background:linear-gradient(135deg,#b3ecce,#66c9b0);color:#173f34}
+.hb-entry-buttons button:nth-child(4n+3){background:linear-gradient(135deg,#b9d9ff,#8eaff3);color:#26365d}
+.hb-entry-buttons button:nth-child(4n+4){background:linear-gradient(135deg,#ffd3eb,#f6a0c9);color:#643049}
+.hb-townfront button:hover,.hb-entry-buttons button:hover{transform:translateY(-4px);filter:saturate(1.1);box-shadow:0 9px 0 #61452b30,0 18px 28px #513c2540}
+button:focus-visible,a:focus-visible{outline:3px solid #9b4cbe;outline-offset:4px}
+@media(max-width:700px){.hb-townfront h1{font-size:clamp(2.5rem,10vw,5rem)}.hb-entry-buttons{gap:12px}.hb-entry-buttons button{min-height:48px}}
+@media(prefers-reduced-motion:reduce){.hb-townfront button,.hb-entry-buttons button{transition:none!important;transform:none!important}}
+
+/* END 2026 COLOR PASS */
