@@ -1143,3 +1143,9 @@ document.addEventListener("click",e=>{const el=e.target.closest("[data-district]
 (()=>{document.addEventListener("click",e=>{if(e.target.closest("#cinemaEnter,.town-building,[data-district]")){document.body.classList.add("hb-transitioning");setTimeout(()=>document.body.classList.remove("hb-transitioning"),900);}});
 const woods=[...document.querySelectorAll('[id*="woods" i],[class*="woods" i]')];woods.forEach(w=>{w.classList.add("woods-cinematic");const h=new Date().getHours();if(h>=19||h<6)w.classList.add("woods-night");});
 })();
+/* LIVING WEATHER AND RHYTHM */
+(()=>{const stage=document.querySelector("#hbCinema"),bubble=document.querySelector("#cinemaBubble");if(!stage)return;
+const h=new Date().getHours();stage.dataset.period=h>=19||h<6?"night":h>=17?"sunset":h<11?"morning":"day";
+const month=new Date().getMonth();const rainChance=[2,3,4,9,10].includes(month)&&Math.random()<.16;if(rainChance){stage.dataset.weather="rain";if(bubble)bubble.textContent="A soft rain moves across Honeybrook Creek. Porch conversations have shifted under the awnings."}
+document.addEventListener("visibilitychange",()=>{stage.classList.toggle("hb-paused",document.hidden)});
+})();
