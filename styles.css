@@ -424,3 +424,14 @@ small, .subtitle, .muted, .eyebrow {
 @keyframes hbCloud{to{left:110%}}@keyframes hbWater{to{background-position:120px 0}}@keyframes hbWalk{0%{left:-10%}45%{left:48%}50%{transform:scaleX(-1)}95%{left:105%;transform:scaleX(-1)}100%{left:105%}}@keyframes hbCart{from{right:-12%}to{right:108%}}@keyframes hbBirds{to{left:110%;top:24%}}@keyframes hbSmoke{from{transform:translateY(20px) scale(.6);opacity:.6}to{transform:translateY(-70px) scale(1.5);opacity:0}}
 @media(max-width:700px){.hb-cinema{min-height:560px}.cinema-title{top:9%}.cinema-townline{font-size:3.2rem;flex-wrap:wrap}.cinema-bubble{font-size:.9rem}}
 @media(prefers-reduced-motion:reduce){.hb-cinema *{animation:none!important}}
+
+/* Cinematic integration: legacy welcome remains for compatibility, but no longer competes with the movie opening */
+#hbCinema + .hb-townfront{display:none!important}
+#welcome.screen.active{display:none!important}
+.hb-cinema.cinema-night{background:linear-gradient(#10224b 0 58%,#315739 58%);color:#fff}
+.hb-cinema.cinema-night .cinema-sun{background:#f4f0d4;box-shadow:0 0 45px #e8ecff;transform:scale(.72)}
+.hb-cinema.cinema-night .cinema-townline{filter:drop-shadow(0 8px 3px #0007) brightness(.8)}
+.hb-cinema.cinema-night .cinema-title{color:#fff5d6;text-shadow:0 3px 12px #000}
+.hb-cinema.cinema-night:after{content:"✦  ·  ✧  ·  ✦  ·  ✧";position:absolute;z-index:2;top:7%;left:7%;right:7%;color:#fff9;font-size:1.2rem;letter-spacing:3vw;animation:hbTwinkle 3s ease-in-out infinite alternate}
+@keyframes hbTwinkle{to{opacity:.25}}
+.hb-cinema.scene-focus .cinema-title{opacity:.12;transition:opacity .5s}.hb-cinema.scene-focus .cinema-bubble{font-size:1.05rem}
