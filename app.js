@@ -1181,3 +1181,9 @@ const saved=localStorage.getItem("honeybrook_playable_scene_v1");if(saved&&saved
 const beats=["Harold pauses at a mailbox, checks an envelope, and keeps moving.","The Honey Mug door swings as another neighbor slips inside.","Benny Scoops rings the cart bell farther down Main Street.","A breeze moves through the trees beside Honeybrook Creek.","Somebody inside Cub Cakes laughs loud enough to hear from the sidewalk."];
 let i=0;setInterval(()=>{if(scene.hidden)return;if(hint)hint.textContent=beats[i++%beats.length]},6500);
 })();
+/* PLAYABLE DIALOGUE CHOICES */
+(()=>{const talk=document.querySelector('#pwTalkPatty'),panel=document.querySelector('#pwChoicePanel'),d=document.querySelector('#pwCafeDialogue'),p=document.querySelector('#pwPatty');if(!talk||!panel)return;
+talk.addEventListener('click',()=>{panel.hidden=false;talk.textContent='Choose what to say'});
+const replies={coffee:["Miss Patty","“Coffee it is, sugar. Sit wherever you like.”"],town:["Miss Patty","“Main Street's busy, Harmony Hill got rehearsal, and Big Mama has apparently appointed herself mayor of Bridgeview again.”"],harold:["Miss Patty","“Harold? He'll tell you he doesn't gossip. Ask him why he knows everybody's business.”"],quiet:["Miss Patty","“Then don't do a thing. I'll bring you something warm and leave you be.”"]};
+panel.addEventListener('click',e=>{const b=e.target.closest('[data-pwchoice]');if(!b)return;const r=replies[b.dataset.pwchoice];if(d)d.innerHTML='<b>'+r[0]+'</b><span>'+r[1]+'</span>';panel.hidden=true;p?.classList.add('react');setTimeout(()=>p?.classList.remove('react'),800);localStorage.setItem('honeybrook_patty_last_choice_v1',b.dataset.pwchoice)});
+})();
