@@ -4,7 +4,7 @@ const world=document.querySelector('#playableWorld'), scenes=[...world.querySele
 const canvas=document.createElement('canvas');canvas.id='hbGame';canvas.setAttribute('aria-label','Illustrated Honeybrook. Tap the path to walk. Use arrow keys or WASD; interact with residents and doors.');canvas.tabIndex=0;
 const c=canvas.getContext('2d');let scene='',time=0,last=0,transition=0,sequence=0,door=0,weather='clear',period='auto',sound=false,audio,ambient,gameActive=false,viewWidth=1000,cameraX=500,renderZoom=1;
 const keys=new Set(),player={x:500,y:535,tx:500,ty:535,state:'idle'},hits=[];
-const safeRead=()=>{try{return JSON.parse(localStorage.getItem('hb_illustrated_world_v1')||'{}')}catch{return {}}};
+const safeRead=()=>{try{const value=JSON.parse(localStorage.getItem('hb_illustrated_world_v1')||'{}');return value&&typeof value==='object'&&!Array.isArray(value)?value:{}}catch{return {}}};
 const memory=safeRead();memory.observations=Array.isArray(memory.observations)?memory.observations:[];
 function save(){try{localStorage.setItem('hb_illustrated_world_v1',JSON.stringify({...memory,scene,position:{x:player.x,y:player.y},period,weather}))}catch{}}
 const toolbar=document.createElement('div');toolbar.className='hb-world-tools';toolbar.innerHTML='<span>Tap a path to walk · tap a bear to talk</span><button id="hbLight">Time: Auto</button><button id="hbWeather">Weather: Clear</button><button id="hbNotes">Field notes</button><button id="hbSit">Just sit</button>';world.querySelector('.pw-hud').after(toolbar);
