@@ -8,7 +8,7 @@ let state;try{state=JSON.parse(localStorage.getItem(key)||'{}')}catch{state={}}
 state={...defaults,...(state&&typeof state==='object'&&!Array.isArray(state)?state:{})};
 state.cupcakes=Array.isArray(state.cupcakes)?state.cupcakes.filter(x=>['rose','honey','berry'].includes(x)).slice(0,3):[];
 state.garden=Math.max(0,Math.min(2,Number(state.garden)||0));
-state.map=Array.isArray(state.map)&&state.map.length===4?state.map.map(x=>((Number(x)||0)%4+4)%4):[1,2,3,1];
+state.map=Array.isArray(state.map)&&state.map.length===4?state.map.map(x=>((Number.isFinite(Number(x))?Number(x):0)%4+4)%4):[1,2,3,1];
 state.icecream=Array.isArray(state.icecream)?state.icecream.filter(x=>['vanilla','strawberry','honey'].includes(x)).slice(0,3):[];
 state.melody=Array.isArray(state.melody)?state.melody.filter(x=>Number.isInteger(x)&&x>=0&&x<7).slice(-16):[];
 let scoops=[],melody=[],litKey=-1;
@@ -20,7 +20,7 @@ function save(){try{localStorage.setItem(key,JSON.stringify(state))}catch{}}
 function dialogue(title,line){const d=world.querySelector('.pw-scene:not([hidden]) .pw-dialogue');if(!d)return;const b=document.createElement('b'),s=document.createElement('span');b.textContent=title;s.textContent=line;d.replaceChildren(b,s)}
 function button(label,fn){const b=document.createElement('button');b.textContent=label;b.onclick=fn;panel.append(b)}
 function close(){replayIndex=-1;activity=null;panel.hidden=true;panel.replaceChildren();world.dataset.activity='wandering'}
-function start(name){scene=world.querySelector('.pw-scene:not([hidden])')?.dataset.scene||scene;if(name==='tea')teaSteps=[];if(name==='icecream')scoops=[];if(name==='piano')melody=[];window.HBStory?.stop?.();activity=name;phase=0;actionTime=0;world.dataset.activity=name;panel.hidden=false;renderControls();}
+function start(name){replayIndex=-1;scene=world.querySelector('.pw-scene:not([hidden])')?.dataset.scene||scene;if(name==='tea')teaSteps=[];if(name==='icecream')scoops=[];if(name==='piano')melody=[];window.HBStory?.stop?.();activity=name;phase=0;actionTime=0;world.dataset.activity=name;panel.hidden=false;renderControls();}
 const available={
  cafe:[['Make a warm drink',()=>start('tea')],['Take the window seat',()=>{window.HBWorld?.sit();dialogue('Honey Mug','Your seat has a creek view. Nobody needs anything from you.');close()}]],
  cozy:[['Make a warm drink',()=>start('tea')],['Sit by the fire',()=>{window.HBWorld?.sit();dialogue('Cozy Corner','The fire settles. You can stay as long as you like.');close()}]],

@@ -1,18 +1,71 @@
-HONEYBROOK — VERSION 1.0
-Grand Finale Release
+HONEYBROOK — PLAYABLE WORLD V1 REVIEW BUILD
+Working branch: honeybrook-cinematic-overhaul
+Preview: https://honeybrook-playable-preview.onrender.com/
+Main has not been merged. Visual approval remains the release gate.
 
-Final release checks:
-PASS — JavaScript syntax check
-PASS — No missing front/jump navigation targets
-PASS — No duplicate HTML IDs
-PASS — Critical V1 section IDs present
-PASS — Required index.html, styles.css and app.js present
+The existing Honeybrook project and connected scenes are preserved.
+15 locations now have illustrated canvas environments and in-world paths.
+Articulated teddy bears have idle, walk, talk, work, sit and reaction poses.
+Door and object interaction includes walking to the target before acting.
+Harold walks continuously between mailboxes, stops to work, leaves at the edge
+and returns from outside the frame. Talking pauses his route.
+Benny pauses his cart while you make a cone.
 
-Final repair:
-- Corrected a JavaScript identifier collision in the Northern Woods field-note bundle.
+11 optional animated town moments:
+- Wally's cupcake situation
+- The Hearthwell controller negotiations
+- The Newberry arrival and later settling-in yard routine
+- Three notes at Singing Pond
+- Harold's breakfast delivery
+- Harmony Hall rehearsal
+- Big Mama's porch radar
+- The apple avalanche at Town Square
+- The creek's duck family
+- A map page caught by the library breeze
+- The technology center's very polite little robot
 
-Honeybrook principle:
-Honeybrook can teach you. Honeybrook can entertain you. Honeybrook can challenge you.
-But Honeybrook never requires you to be productive to belong there.
+7 hands-on activities, plus the existing firefly-catching room:
+Warm drinks, cupcake frosting, flower gardening, a welcome letter collected
+and delivered by Harold, rotating map fragments, ice cream cones, and piano
+notes with a remembered tune. No mandatory score, deadline or completion.
 
-Motto: There’s a place for every bear.
+Atmosphere: animated water, tree sway, chimney smoke, rain, mist, fireflies,
+automatic local time and a four-minute cycling day with gradual twilight.
+Camera follows walking on narrow screens, frames stories and pans to the
+Northern Edge's old arch. Reduced-motion settings limit camera zoom.
+Audio is opt-in and synthesized locally: ambient layers, footsteps, birds,
+door effects, story beats and piano tones. No external audio service.
+
+World-first controls: a compact game HUD, optional town map and settings.
+Mouse/touch path walking, arrow/WASD movement, Enter/Space interaction,
+nearby interaction button, mobile walking pad, and Escape to leave activities.
+
+Memory: scene and position, observations, story choices, flowers, cupcakes,
+letters, favorite scoops and tunes persist in this browser's local storage.
+This is browser-local memory, not a cross-device account or cloud save.
+Mystery observations remain explicitly separate from confirmed conclusions.
+
+Regression checks:
+node --check app.js
+node --check world-renderer.js
+node --check world-story.js
+node --check world-activities.js
+node --check world-life.js
+node --check world-shell.js
+node tests/world-renderer.test.cjs
+node tests/story-director.test.cjs
+node tests/world-activities.test.cjs
+node tests/world-life.test.cjs
+
+Live Render testing covers game HUD and map, path travel, story controls,
+optional activities, sound, atmosphere and persistence after reload.
+Portrait camera geometry is regression-tested. Real-device mobile visual
+approval is still needed; automated geometry checks are not device approval.
+
+The illustrated style is the current approved direction. Environments use
+code-drawn storybook art and articulated characters. Future richer artwork,
+additional resident schedules and longer story chapters are expansion work;
+this review build does not claim to finish every possible Honeybrook story.
+
+Honeybrook can teach, entertain and challenge you. Honeybrook never requires
+you to be productive to belong. The town continues while you do nothing.
