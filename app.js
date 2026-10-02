@@ -1176,3 +1176,8 @@ let pattyLines=["There you are, baby. Sit down. You hungry?","Coffee? Tea? Pie? 
 document.querySelector("#pwTalkPatty")?.addEventListener("click",()=>{const p=document.querySelector("#pwPatty"),d=document.querySelector("#pwCafeDialogue");p?.classList.remove("react");void p?.offsetWidth;p?.classList.add("react");if(d)d.innerHTML="<b>Miss Patty</b><span>“"+pattyLines[pi++%pattyLines.length]+"”</span>"});
 const saved=localStorage.getItem("honeybrook_playable_scene_v1");if(saved&&saved!=="bridge"){scenes.forEach(s=>s.hidden=s.dataset.scene!==saved);const names={mainstreet:"Main Street",cafe:"Honey Mug Café"};loc.textContent=names[saved]||"Honeybrook"}
 })();
+/* PLAYABLE AMBIENT DIRECTOR */
+(()=>{const scene=document.querySelector('.pw-mainstreet'),hint=document.querySelector('#pwHint');if(!scene)return;
+const beats=["Harold pauses at a mailbox, checks an envelope, and keeps moving.","The Honey Mug door swings as another neighbor slips inside.","Benny Scoops rings the cart bell farther down Main Street.","A breeze moves through the trees beside Honeybrook Creek.","Somebody inside Cub Cakes laughs loud enough to hear from the sidewalk."];
+let i=0;setInterval(()=>{if(scene.hidden)return;if(hint)hint.textContent=beats[i++%beats.length]},6500);
+})();
