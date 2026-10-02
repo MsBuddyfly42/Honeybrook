@@ -19,7 +19,7 @@ function draw(a){const {c,rect,ellipse,line,text,hit,bear,scene,time,night}=a;
  if(scene==='bakery')hit(400,255,190,65,()=>window.HBActivities?.start('cupcakes'),'Decorate cupcakes');
  if(scene==='cafe')hit(408,249,140,70,()=>window.HBActivities?.start('tea'),'Make a warm drink');
  // These signs are actual paths. They remain usable without a quest or a checklist.
- const paths=routes[scene]||[];paths.forEach(([label,target],i)=>{const x=paths.length===1?150:95+i*330;rect(x,530,7,49,'#806246',2);rect(x-73,500,154,33,'#efe0b9',6);text((i===0?'‹ ':'')+label+(i>0?' ›':''),x+3,522,13,'#6e563c');hit(x-77,492,165,60,()=>a.travel(target),'Walk to '+label)});
+ const paths=routes[scene]||[];paths.forEach(([label,target],i)=>{const x=scene==='cafe'?830:paths.length===1?150:95+i*330;rect(x,530,7,49,'#806246',2);rect(x-73,500,154,33,'#efe0b9',6);text((i===0?'‹ ':'')+label+(i>0?' ›':''),x+3,522,13,'#6e563c');hit(x-77,492,165,60,()=>a.travel(target),'Walk to '+label)});
 }
 const connections={...routes,mainstreet:[...routes.mainstreet,['Honey Mug Café','cafe'],['Cub Cakes & Crumbs','bakery'],['Bridgeview','bridgeview']]};
 window.HBLife={draw,routes,connections};
