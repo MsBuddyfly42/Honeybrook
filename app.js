@@ -1241,3 +1241,5 @@ document.addEventListener('visibilitychange',()=>{world.querySelectorAll('*').fo
 ['welcomehouse','A new visitor has arrived with no plan and no idea what to do first.'],
 ['cozy','Nothing urgent is happening. This is an officially valid Honeybrook event.']
 ];let i=0;function pulse(){const [place,text]=events[i++%events.length];q.textContent=text;q.dataset.place=place}pulse();setInterval(pulse,13000);q.parentElement.addEventListener('click',()=>{const p=q.dataset.place;if(p)document.querySelector('#pwWorldNav [data-pwjump="'+p+'"]')?.click()});q.parentElement.style.cursor='pointer';q.parentElement.title='Go to this living scene';})();
+/* WORLD TRAVEL TRANSITIONS */
+(()=>{const nav=document.querySelector('#pwWorldNav'),t=document.querySelector('#pwTransit');if(!nav||!t)return;nav.addEventListener('click',e=>{const b=e.target.closest('[data-pwjump]');if(!b)return;t.classList.add('show');const label=b.textContent.trim();t.querySelector('b').textContent='Walking to '+label.replace(/^\S+\s*/,'')+'…';setTimeout(()=>t.classList.remove('show'),520)},true)})();
