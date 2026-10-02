@@ -1187,3 +1187,8 @@ talk.addEventListener('click',()=>{panel.hidden=false;talk.textContent='Choose w
 const replies={coffee:["Miss Patty","“Coffee it is, sugar. Sit wherever you like.”"],town:["Miss Patty","“Main Street's busy, Harmony Hill got rehearsal, and Big Mama has apparently appointed herself mayor of Bridgeview again.”"],harold:["Miss Patty","“Harold? He'll tell you he doesn't gossip. Ask him why he knows everybody's business.”"],quiet:["Miss Patty","“Then don't do a thing. I'll bring you something warm and leave you be.”"]};
 panel.addEventListener('click',e=>{const b=e.target.closest('[data-pwchoice]');if(!b)return;const r=replies[b.dataset.pwchoice];if(d)d.innerHTML='<b>'+r[0]+'</b><span>'+r[1]+'</span>';panel.hidden=true;p?.classList.add('react');setTimeout(()=>p?.classList.remove('react'),800);localStorage.setItem('honeybrook_patty_last_choice_v1',b.dataset.pwchoice)});
 })();
+/* MAIN STREET NPC CONVERSATIONS */
+(()=>{const hint=document.querySelector('#pwHint');function talk(sel,lines){const n=document.querySelector(sel);if(!n)return;n.addEventListener('click',e=>{e.stopPropagation();n.classList.add('paused');const line=lines[Math.floor(Math.random()*lines.length)];if(hint)hint.textContent=line;setTimeout(()=>n.classList.remove('paused'),4200)})}
+talk('#pwHaroldTalk',["Harold: “Morning. And no, I don't know what Miss Patty told you.”","Harold: “Special delivery! ...Not for you. Sorry.”","Harold: “I am ON my route. This is not gossip time.”"]);
+talk('#pwBennyTalk',["Benny Scoops: “Vanilla, chocolate, honey swirl—or you just browsing?”","Benny Scoops: “That bell works better than advertising.”","Benny Scoops: “Grandpa Newberry? Haven't seen him. ...He'll be here.”"]);
+})();
