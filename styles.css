@@ -507,3 +507,6 @@ linear-gradient(180deg,transparent 0 62%,#51361a22 63% 100%)}
 /* Main Street NPC interaction */
 .pw-npcbutton{border:0;background:transparent;color:#3a2415;cursor:pointer;padding:0;font-weight:900}.pw-npcbutton small{display:block;background:#fff5d9dd;border:1px solid #70441f;border-radius:999px;padding:1px 7px;font-size:.68rem}.pw-npcbutton:hover{filter:drop-shadow(0 0 10px #fff8)}
 .pw-npc.paused{animation-play-state:paused!important;transform:scale(1.12)}
+
+/* Cub Cakes playable interior */
+.pw-bakeryinside{background:linear-gradient(#f3c9b8 0 66%,#8b5c42 66%)}.pw-bakery-wall{position:absolute;inset:6% 6% 34%;background:#fff0df;border:8px solid #8d5942;text-align:center;color:#6b3519}.pw-bakery-wall h2{font-family:Georgia,serif;font-size:clamp(1.5rem,4vw,2.8rem)}.pw-shelves{margin:2rem auto;font-size:clamp(2.5rem,7vw,5rem);line-height:1.5;border-block:8px solid #8d5942}.pw-wally{position:absolute;z-index:12;right:25%;bottom:28%;font-size:5rem;animation:pwWally 2.3s ease-in-out infinite alternate}@keyframes pwWally{to{transform:rotate(4deg) translateY(-4px)}}
