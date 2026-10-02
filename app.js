@@ -1,3 +1,5 @@
+/* Recover invalid legacy time values and keep container attributes out of control bindings. */
+try { const t=localStorage.getItem("honeybrook_time_preview"); if(t&&!['morning','afternoon','evening','night'].includes(t))localStorage.removeItem("honeybrook_time_preview"); } catch {}
 const places=[
 {id:'woods',name:'Northern Woods',icon:'🌲',zone:'mystery',desc:'The maintained trail ends here. Beyond it, Honeybrook’s oldest mysteries begin.',detail:'Official maps become incomplete beyond the ranger sign. An ancient bridge, disputed Three Bears history and ruins older than Honeybrook wait deeper inside.',locked:true},
 {id:'outskirts',name:'Honeybrook Outskirts',icon:'🌾',zone:'north',desc:'Farms, orchards, barns and covered bridges.',detail:'Country roads wind past orchards, old barns, creek branches and the old mill.'},
@@ -785,10 +787,10 @@ updateMemoryBadge();
    if(clock)clock.textContent="Honeybrook Time — "+s.label;
    if(period)period.textContent=(localStorage.getItem("honeybrook_time_preview")?"Preview mode":"Following your current local hour")+" • "+new Date().toLocaleTimeString([], {hour:"numeric",minute:"2-digit"});
    ["town","bear","woods"].forEach(x=>{let e=document.getElementById(x+"Rhythm");if(e)e.textContent=s[x]});
-   document.querySelectorAll("[data-time]").forEach(b=>b.classList.toggle("active",(b.dataset.time===k)||(!localStorage.getItem("honeybrook_time_preview")&&b.dataset.time==="auto")));
+   document.querySelectorAll("button[data-time]").forEach(b=>b.classList.toggle("active",(b.dataset.time===k)||(!localStorage.getItem("honeybrook_time_preview")&&b.dataset.time==="auto")));
  }
  document.addEventListener("DOMContentLoaded",()=>{
-   document.querySelectorAll("[data-time]").forEach(b=>b.onclick=()=>setTime(b.dataset.time));
+   document.querySelectorAll("button[data-time]").forEach(b=>b.onclick=()=>setTime(b.dataset.time));
    setTime(localStorage.getItem("honeybrook_time_preview")||"auto");
    let scene=document.querySelector(".nw-scene");
    if(scene&&!scene.querySelector(".night-only-clue")){
@@ -813,7 +815,7 @@ updateMemoryBadge();
  function period(){let p=localStorage.getItem("honeybrook_time_preview");if(p)return p;let h=new Date().getHours();return h<12?"morning":h<17?"afternoon":h<21?"evening":"night"}
  function show(n){let x=R[n],p=period(),v=x.r[p],e=document.getElementById("residentCard");if(!e)return;e.innerHTML=`<h3>${x.icon} ${n}</h3><div class="resident-meta"><div><strong>Home</strong><br>${x.home}</div><div><strong>Close Circle</strong><br>${x.close}</div></div><p><strong>Current likely location:</strong> ${v[0]}</p><p><strong>What they're doing:</strong> ${v[1]}</p><p><strong>If you meet them:</strong> “${v[2]}”</p>`}
  function route(){let p=period(),h=R["Harold Pawst"].r[p],b=R["Benny Scoops"].r[p],e=document.getElementById("movingRoute");if(e)e.innerHTML=`<strong>Harold:</strong> ${h[0]} — ${h[1]}<br><strong>Benny Scoops:</strong> ${b[0]} — ${b[1]}`}
- document.addEventListener("DOMContentLoaded",()=>{let box=document.getElementById("residentButtons");if(box){Object.keys(R).forEach(n=>{let b=document.createElement("button");b.innerHTML=`${R[n].icon}<br>${n}`;b.onclick=()=>show(n);box.appendChild(b)});show("Harold Pawst")}route();document.querySelectorAll("[data-time]").forEach(b=>b.addEventListener("click",()=>setTimeout(()=>{show("Harold Pawst");route()},20)))});
+ document.addEventListener("DOMContentLoaded",()=>{let box=document.getElementById("residentButtons");if(box){Object.keys(R).forEach(n=>{let b=document.createElement("button");b.innerHTML=`${R[n].icon}<br>${n}`;b.onclick=()=>show(n);box.appendChild(b)});show("Harold Pawst")}route();document.querySelectorAll("button[data-time]").forEach(b=>b.addEventListener("click",()=>setTimeout(()=>{show("Harold Pawst");route()},20)))});
 })();
 
 (function(){
@@ -841,7 +843,7 @@ updateMemoryBadge();
  let last=-1;
  function p(){let q=localStorage.getItem("honeybrook_time_preview");if(q)return q;let h=new Date().getHours();return h<12?"morning":h<17?"afternoon":h<21?"evening":"night"}
  function draw(){let k=p(),a=E[k],i=Math.floor(Math.random()*a.length);if(a.length>1&&i===last)i=(i+1)%a.length;last=i;let x=a[i],c=document.getElementById("encounterCard"),s=document.getElementById("encounterPeriod");if(c)c.innerHTML=`<span class="encounter-tag">${k.toUpperCase()} • ${x[0]}</span><h3>${x[1]}</h3><div class="encounter-dialogue">${x[2]}</div><small>Ordinary Honeybrook moment • No quest required.</small>`;if(s)s.textContent=`Showing a ${k} encounter.`}
- document.addEventListener("DOMContentLoaded",()=>{let b=document.getElementById("newEncounter");if(b)b.onclick=draw;draw();document.querySelectorAll("[data-time]").forEach(x=>x.addEventListener("click",()=>setTimeout(draw,30)))});
+ document.addEventListener("DOMContentLoaded",()=>{let b=document.getElementById("newEncounter");if(b)b.onclick=draw;draw();document.querySelectorAll("button[data-time]").forEach(x=>x.addEventListener("click",()=>setTimeout(draw,30)))});
 })();
 
 (function(){
@@ -1028,7 +1030,7 @@ updateMemoryBadge();
  function drawCross(){let a=cross[period()],x=a[Math.floor(Math.random()*a.length)],e=document.getElementById("crossPath");if(e)e.innerHTML=`<div class="pulse-note"><b>${x[0]}</b><br>${x[1]}</div><small>Ordinary town life • no quest created.</small>`}
  function dashboard(){let p=read("honeybrook_visitor_passport_v1",null),r=read("honeybrook_relationship_memory_v1",{}),w=read("honeybrook_wandering_day_v1",[]),c=read("honeybrook_continuity_v1",{}),d=read("honeybrook_explorer_discoveries_v1",[]),e=document.getElementById("myHoneybrook");if(!e)return;e.innerHTML=`<p><b>${p?p.name:"Visitor Bear"}</b></p><div class="memory-stat"><span>Residents met</span><b>${Object.keys(r).length}</b></div><div class="memory-stat"><span>Today's wandering stops</span><b>${w.length}</b></div><div class="memory-stat"><span>Continuity threads</span><b>${Object.keys(c).filter(k=>c[k]).length}</b></div><div class="memory-stat"><span>Recorded discoveries</span><b>${d.length}</b></div><div class="pulse-note">Honeybrook remembers experiences—not productivity streaks.</div>`}
  function refresh(){let e=document.getElementById("townPulse"),p=period();if(e)e.innerHTML=`<b>${p.toUpperCase()}</b><div class="pulse-note">${pulse[p]}</div><small>The pulse follows your real or previewed time.</small>`;drawCross();dashboard()}
- document.addEventListener("DOMContentLoaded",()=>{refresh();let b=document.getElementById("anotherCrossover");if(b)b.onclick=drawCross;document.querySelectorAll("[data-time]").forEach(x=>x.addEventListener("click",()=>setTimeout(refresh,30)));document.addEventListener("click",()=>setTimeout(dashboard,20))});
+ document.addEventListener("DOMContentLoaded",()=>{refresh();let b=document.getElementById("anotherCrossover");if(b)b.onclick=drawCross;document.querySelectorAll("button[data-time]").forEach(x=>x.addEventListener("click",()=>setTimeout(refresh,30)));document.addEventListener("click",()=>setTimeout(dashboard,20))});
 })();
 
 (function(){
