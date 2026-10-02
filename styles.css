@@ -503,3 +503,7 @@ linear-gradient(180deg,transparent 0 62%,#51361a22 63% 100%)}
 /* Playable dialogue-choice layer */
 .pw-choices{position:absolute;z-index:42;right:5%;bottom:17%;width:min(90%,330px);display:grid;gap:.45rem;padding:.65rem;border-radius:16px;background:#24170fe8;border:2px solid #b98954;box-shadow:0 12px 30px #0005}.pw-choices[hidden]{display:none}.pw-choices button{border:1px solid #cda36e;background:#fff6df;color:#3b2415;border-radius:11px;padding:.6rem;text-align:left;font-weight:800;cursor:pointer}.pw-choices button:hover{background:#ffe4a6}
 @media(max-width:700px){.pw-choices{left:5%;right:5%;width:auto;bottom:18%}}
+
+/* Main Street NPC interaction */
+.pw-npcbutton{border:0;background:transparent;color:#3a2415;cursor:pointer;padding:0;font-weight:900}.pw-npcbutton small{display:block;background:#fff5d9dd;border:1px solid #70441f;border-radius:999px;padding:1px 7px;font-size:.68rem}.pw-npcbutton:hover{filter:drop-shadow(0 0 10px #fff8)}
+.pw-npc.paused{animation-play-state:paused!important;transform:scale(1.12)}
