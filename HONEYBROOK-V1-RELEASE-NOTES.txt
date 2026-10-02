@@ -93,3 +93,15 @@ The five-key piano supports free play and replay without a score or assignment.
 Sofa/chair actions physically approach and settle the player into the seat,
 and seated bears have bent knees. Home visits do not require an activity.
 The original Newberry house, village scenes and optional stories remain intact.
+
+NORTHERN WOODS PATHS
+The existing Northern Edge now connects to Singing Pond, Old Creek Ruins,
+and Mistwood Lookout. Physical trail signs and accessible Look around actions
+lead between them and back to the maintained trail. Water, reeds, layered
+forest, wind, mist and nighttime fireflies continue around the player.
+Three optional movies show Jonesha observing pond tones, the weathered
+carving, and a distant roof-like outline with a fleeting warm glimmer.
+Unwatched events cannot be recorded as evidence. Observations remain
+separate from confirmed conclusions. A pebble makes visibly identified ripples.
+The saved woods location restores; leaving by the town map clears the zone.
+Additional check: node tests/world-woods.test.cjs

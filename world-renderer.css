@@ -19,3 +19,5 @@
 
 /* The family home uses the same physical doors and room HUD as the Newberry home. */
 #playableWorld[data-room] #pwHomeMoment,#playableWorld[data-room] #pwExitHome{display:none!important}
+
+#hbLeaveWoods[hidden]{display:none!important}#playableWorld[data-woods]:not([data-woods="edge"]) #pwListenWoods,#playableWorld[data-woods]:not([data-woods="edge"]) #pwExitWoods{display:none!important}.hb-woods-actions{z-index:68}
