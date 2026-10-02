@@ -39,12 +39,22 @@ function sky(a){const {c,rect,ellipse,line,tree,night}=a;const gradient=c.create
 }
 function ripple(a,x,y,r,alpha){a.c.save();a.c.strokeStyle=`rgba(223,239,207,${alpha})`;a.c.lineWidth=1.8;a.c.beginPath();a.c.ellipse(x,y,r,r*.23,0,0,Math.PI*2);a.c.stroke();a.c.restore()}
 function stone(a,x,y,w,h){a.rect(x,y,w,h,'#8c9884',4);a.line(x+4,y+3,x+w-5,y+3,'#c0c6a0',2);a.line(x+w*.5,y+2,x+w*.42,y+h-2,'#63775b',1)}
+function forestDetails(a){const {c,rect,ellipse,line,night}=a;
+ for(let i=0;i<11;i++){const x=(i*117+23)%1000,y=466+(i%3)*9;ellipse(x,y+5,25,7,'#354d3828');for(let j=-2;j<=2;j++){const sway=Math.sin(time*.8+i)*3;line(x,y,x+j*8+sway,y-23+Math.abs(j)*4,'#557546',2);for(let k=0;k<3;k++){ellipse(x+j*6+sway-3,y-8-k*5,5,2,'#73925c');ellipse(x+j*6+sway+4,y-9-k*5,5,2,'#829960')}}}
+ for(const [x,y] of [[198,471],[806,462],[885,481]]){rect(x,y-9,5,14,'#d8c9a6',2);ellipse(x+2,y-10,13,7,'#ad8271');ellipse(x-3,y-12,2,2,'#edd6b1');ellipse(x+7,y-11,2,2,'#edd6b1')}
+ for(let i=0;i<8;i++){const x=210+i*96,y=591+(i%2)*12;ellipse(x,y,5+i%3,3,'#9c9b7d');line(x-3,y-1,x+3,y-1,'#c4b99b',1)}
+ // Overhanging branches sway independently of the distant forest.
+ for(const side of [-1,1]){c.save();c.translate(side===-1?0:1000,72);c.scale(side===-1?1:-1,1);c.rotate(Math.sin(time*.45)*.018);line(-12,0,160,69,'#4e6347',13);for(let i=0;i<6;i++){const x=24+i*23,y=x*.43;line(x,y,x+14,y-29,'#4e6347',4);ellipse(x+15,y-29,23,9,'#496e48');ellipse(x+22,y+4,26,11,'#5a7e4d')}c.restore()}
+ if(zone==='pond'&&!night){const x=620+Math.sin(time*.65)*78,y=346+Math.cos(time*.9)*14;line(x-9,y,x+8,y,'#8aa7a1',2);ellipse(x-3,y-4,7,2,'#d6e0cc77');ellipse(x+3,y+4,7,2,'#d6e0cc77')}
+ if(zone==='lookout'){rect(915,403,7,92,'#746848',2);line(914,410,897,410,'#746848',4);rect(883,409,21,30,'#c1aa78',3);rect(886,413,15,21,night?'#ebd39b':'#82998c',2);if(night){ellipse(893,429,45,58,'#ecd09b14');ellipse(893,489,46,12,'#ead3981c')}}
+}
 function draw(a){if(!zone)return;const {c,rect,ellipse,line,text,hit,bear,tree,water,night}=a;sky(a);
  if(zone==='pond'){
   ellipse(630,424,303,92,'#738766');water(634,395,280,64);for(let i=0;i<7;i++){const x=436+i*61,y=389+Math.sin(i*4)*31;ellipse(x,y,17,5,'#839d68');line(x,y,x+8,y-2,'#b1bc7c',1)}
   for(let i=0;i<19;i++){const x=361+i*28,y=467+Math.sin(i*7)*15;line(x,y,x+Math.sin(time*1.1+i)*6,y-37-(i%3)*12,'#566f47',3);ellipse(x+Math.sin(time*1.1+i)*6,y-43-(i%3)*12,3,8,'#998361')}
   stone(a,278,465,99,24);ellipse(326,492,51,9,'#43563440');hit(271,446,113,57,sit,'Sit on the bank');hit(548,434,105,55,toss,'Skip a pebble');
-  if(film==='pond'&&elapsed>8&&elapsed<17||stoneRipples>0){const age=stoneRipples>0?4-stoneRipples:elapsed-8;for(let i=0;i<4;i++)ripple(a,642,405,17+age*16+i*18,Math.max(0,.5-age*.04))}
+  if(stoneRipples>2.5){const flight=(4-stoneRipples)/1.5;ellipse(325+flight*317,466-flight*61-Math.sin(flight*Math.PI)*61,5,3,'#b5b59c')}
+  if(film==='pond'&&elapsed>8&&elapsed<17||stoneRipples>0&&stoneRipples<=2.5){const age=stoneRipples>0?2.5-stoneRipples:elapsed-8;for(let i=0;i<4;i++)ripple(a,642,405,17+age*16+i*18,Math.max(0,.5-age*.04))}
  }else if(zone==='ruins'){
   // The creek is behind the walking bank, so bears never slide across water.
   water(509,409,570,50);c.fillStyle='#84917b';c.beginPath();c.moveTo(273,363);c.lineTo(736,363);c.lineTo(739,441);c.lineTo(672,441);c.ellipse(507,443,135,58,0,0,Math.PI,true);c.lineTo(274,441);c.closePath();c.fill();for(let row=0;row<3;row++)for(let i=0;i<10;i++){const sx=275+i*46+(row%2)*12;if(row===0||sx<370||sx>638)stone(a,sx,357+row*22,43,20);}for(let i=0;i<9;i++){if(i===5)continue;stone(a,276+i*51,333,46,i===4?15:24)}
@@ -55,6 +65,7 @@ function draw(a){if(!zone)return;const {c,rect,ellipse,line,text,hit,bear,tree,w
   if(film==='lookout'&&elapsed>=9&&elapsed<=19){const opacity=Math.min(1,(elapsed-9)/2,(19-elapsed)/2);c.save();c.globalAlpha=Math.max(0,opacity)*.75;rect(734,276,84,54,'#7e8271',2);c.fillStyle='#6b7668';c.beginPath();c.moveTo(724,279);c.lineTo(775,249);c.lineTo(829,280);c.fill();if(elapsed>14&&elapsed<18)rect(768,296,12,13,'#efd9a6');c.restore();}
   for(let i=0;i<8;i++)ellipse((i*169+time*8)%1150-70,290+(i%3)*25,160,30,'#c9d7cb35');stone(a,314,440,128,40);line(332,440,334,463,'#596e54',2);hit(310,423,139,60,()=>record(observed()),'Observe the distant ridge');
  }
+ forestDetails(a);
  // Jonesha moves along a safe bank, then pauses to watch the scene.
  const walking=film&&elapsed<6,x=film?210+Math.min(elapsed/6,1)*235:450+Math.sin(time*.15)*17;
  bear(x,510,.88,'#b98a64','#9a7f9a',walking?'walk':film?'talk':'idle',3,'Jonesha');hit(x-43,400,86,116,watch,'Talk with Jonesha');
