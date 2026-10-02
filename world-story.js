@@ -4,7 +4,7 @@
 const world=document.querySelector('#playableWorld');
 const storageKey='hb_story_memory_v1';
 let memory;try{memory=JSON.parse(localStorage.getItem(storageKey)||'{}')}catch{memory={}}
-if(!memory||typeof memory!=='object')memory={};
+if(!memory||typeof memory!=='object'||Array.isArray(memory))memory={};
 memory.witnessed=Array.isArray(memory.witnessed)?memory.witnessed:[];
 memory.choices=Array.isArray(memory.choices)?memory.choices:[];
 let current=null,elapsed=0,idle=0,location='',lastLine=-1,seenScene=new Set();
@@ -46,5 +46,5 @@ document.querySelector('#hbWatch').onclick=()=>start(true);document.querySelecto
 function drawAuto(){const b=document.querySelector('#hbAutoScenes');b.textContent=autoplay?'Living scenes on':'Living scenes quiet';b.setAttribute('aria-pressed',String(autoplay))}drawAuto();document.querySelector('#hbAutoScenes').onclick=()=>{autoplay=!autoplay;save();drawAuto();if(!autoplay)stop()};
 world.addEventListener('click',e=>{if(e.target.closest('#pwTalkPatty,#pwTalkWally,#pwTalkBigMama,#pwListenWoods,#pwWelcomeMoment,#pwHomeMoment,#pwHarmonyMoment,#pwLibraryMoment,#hbSit'))stop();});
 const journal=document.createElement('dialog');journal.className='hb-notes';world.append(journal);document.querySelector('#hbStoryMemory').onclick=()=>{journal.replaceChildren();const h=document.createElement('h2');h.textContent='Your Honeybrook memories';journal.append(h);const intro=document.createElement('p');intro.textContent='A little record of days in town. No checklist, streak or obligation.';journal.append(intro);for(const place of memory.witnessed){const p=document.createElement('p');p.textContent=stories[place]?.title||place;journal.append(p)}for(const choice of memory.choices.slice(-8)){const p=document.createElement('p');p.textContent=(stories[choice.scene]?.title||choice.scene)+' — '+choice.choice;journal.append(p)}if(!memory.witnessed.length){const p=document.createElement('p');p.textContent='Quiet visits count too. Stay wherever you feel comfortable.';journal.append(p)}const close=document.createElement('button');close.textContent='Back to Honeybrook';close.onclick=()=>journal.close();journal.append(close);journal.showModal()};
-window.HBStory={update,draw,sounds,stop,active:()=>!!current,camera:()=>current?{x:current.camera,zoom:motion.matches?1:1.08}:null};
+window.HBStory={start:()=>start(true),remembered:scene=>memory.witnessed.includes(scene),update,draw,sounds,stop,active:()=>!!current,camera:()=>current?{x:current.camera,zoom:motion.matches?1:1.08}:null};
 })();

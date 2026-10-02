@@ -1176,7 +1176,7 @@ document.querySelector("#pwEnterTown")?.addEventListener("click",()=>{const p=do
 document.querySelector("#pwCafe")?.addEventListener("click",()=>show("cafe"));document.querySelector("#pwExitCafe")?.addEventListener("click",()=>show("mainstreet"));
 let pattyLines=["There you are, baby. Sit down. You hungry?","Coffee? Tea? Pie? Don't tell me ‘nothing’—I know that look.","Harold came through here five minutes ago claiming he does NOT gossip.","You can stay as long as you want. Honeybrook ain't rushing you."],pi=0;
 document.querySelector("#pwTalkPatty")?.addEventListener("click",()=>{const p=document.querySelector("#pwPatty"),d=document.querySelector("#pwCafeDialogue");p?.classList.remove("react");void p?.offsetWidth;p?.classList.add("react");if(d)d.innerHTML="<b>Miss Patty</b><span>“"+pattyLines[pi++%pattyLines.length]+"”</span>"});
-const saved=localStorage.getItem("honeybrook_playable_scene_v1");if(saved&&saved!=="bridge"){scenes.forEach(s=>s.hidden=s.dataset.scene!==saved);const names={mainstreet:"Main Street",cafe:"Honey Mug Café"};loc.textContent=names[saved]||"Honeybrook"}
+const saved=localStorage.getItem("honeybrook_playable_scene_v1");if(saved&&saved!=="bridge"&&scenes.some(s=>s.dataset.scene===saved)){scenes.forEach(s=>s.hidden=s.dataset.scene!==saved);const names={mainstreet:"Main Street",cafe:"Honey Mug Café"};loc.textContent=names[saved]||"Honeybrook"}
 })();
 /* PLAYABLE AMBIENT DIRECTOR */
 (()=>{const scene=document.querySelector('.pw-mainstreet'),hint=document.querySelector('#pwHint');if(!scene)return;

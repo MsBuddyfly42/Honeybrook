@@ -1,0 +1,17 @@
+/* Small game controls leave the illustrated world at the center of the visit. */
+(()=>{'use strict';
+const world=document.querySelector('#playableWorld'),hud=world.querySelector('.pw-hud'),nav=world.querySelector('#pwWorldNav'),days=world.querySelector('#pwDayDirector'),tools=world.querySelector('.hb-world-tools'),stories=world.querySelector('.hb-story-tools');
+const menu=document.createElement('div');menu.id='hbTownMap';menu.className='hb-town-map';menu.hidden=true;hud.before(menu);menu.append(nav,days);
+const map=document.createElement('button');map.textContent='Town map';map.setAttribute('aria-controls','hbTownMap');map.setAttribute('aria-expanded','false');hud.append(map);
+map.onclick=()=>{menu.hidden=!menu.hidden;map.setAttribute('aria-expanded',String(!menu.hidden))};
+nav.addEventListener('click',e=>{if(e.target.closest('[data-pwjump]')){menu.hidden=true;map.setAttribute('aria-expanded','false')}});
+days.addEventListener('click',()=>{menu.hidden=true;map.setAttribute('aria-expanded','false')});
+const interact=document.createElement('button');interact.textContent='Interact nearby';interact.onclick=()=>window.HBWorld?.interact();hud.append(interact);
+const controls=document.createElement('button');controls.textContent='World controls';controls.setAttribute('aria-expanded','false');hud.append(controls);world.dataset.controls='closed';controls.onclick=()=>{const open=world.dataset.controls!=='open';world.dataset.controls=open?'open':'closed';controls.setAttribute('aria-expanded',String(open));measure()};
+for(const id of ['hbObjects','hbWatch','hbStoryStop']){const b=document.getElementById(id);if(b)hud.append(b)}
+const help=document.createElement('button');help.textContent='How to wander';tools.append(help);
+const guide=document.createElement('dialog');guide.className='hb-notes';world.append(guide);help.onclick=()=>{guide.replaceChildren();const title=document.createElement('h2');title.textContent='Make yourself at home';guide.append(title);for(const line of ['Tap a clear patch of path to walk. Tap a sign, a door, a bear or an object to walk over and interact.','Arrow keys or W, A, S, D move your bear. Enter or Space interacts nearby. On a phone, you can use the four walking buttons.','Look around offers the same little activities as the objects in the scene. Watch a town moment begins an optional animated scene. You can leave before it ends.','Town map is a shortcut to any place. World controls offers time, weather, quiet sitting, field notes and town memories. Sound starts only when you turn it on.','Your visit is remembered in this browser. There is no assignment, score, timer or requirement to do anything.']){const p=document.createElement('p');p.textContent=line;guide.append(p)}const close=document.createElement('button');close.textContent='Back to Honeybrook';close.onclick=()=>guide.close();guide.append(close);guide.showModal()};
+world.addEventListener('keydown',e=>{if(e.key==='Escape'){menu.hidden=true;map.setAttribute('aria-expanded','false');window.HBActivities?.stop?.();window.HBStory?.stop?.();}});
+function measure(){const height=hud.getBoundingClientRect().height+(world.dataset.controls==='open'?tools.getBoundingClientRect().height+stories.getBoundingClientRect().height:0);world.style.setProperty('--hb-chrome-height',Math.ceil(height)+'px')}
+new ResizeObserver(measure).observe(hud);new ResizeObserver(measure).observe(tools);new ResizeObserver(measure).observe(stories);measure();
+})();
