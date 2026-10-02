@@ -1,0 +1,5 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert');
+const context={window:{}};vm.createContext(context);vm.runInContext(fs.readFileSync(require('path').join(__dirname,'../world-life.js'),'utf8'),context);
+const {routes,connections,draw}=context.window.HBLife,visited=new Set();function visit(s){if(visited.has(s))return;visited.add(s);for(const [,next] of connections[s]){assert(routes[next],'Unknown path '+next);visit(next)}}visit('bridge');assert.equal(visited.size,15,'All fifteen existing locations must be reachable');
+for(const scene of Object.keys(routes)){const reachable=new Set();function walk(s){if(reachable.has(s))return;reachable.add(s);for(const [,next] of connections[s])walk(next)}walk(scene);assert(reachable.has('bridge'),'Every location needs a way home');const hits=[];const noop=()=>{},c=new Proxy({},{get:()=>noop,set:()=>true});draw({c,scene,time:12,night:false,rect:noop,ellipse:noop,line:noop,text:noop,bear:noop,hit:(...x)=>hits.push(x),travel:noop});assert(hits.length>=routes[scene].length);}
+console.log('PASS: fifteen illustrated locations are connected, have return routes and render their interactive signs.');
