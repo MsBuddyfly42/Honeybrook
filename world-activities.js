@@ -1,0 +1,68 @@
+/* Optional hands-on play. Objects stay in the existing world, with no task list. */
+(()=>{
+'use strict';
+const world=document.querySelector('#playableWorld');
+const key='hb_little_activities_v1';
+const defaults={tea:false,cupcakes:[],garden:0,mail:false,map:[1,2,3,1],mapAligned:false};
+let state;try{state=JSON.parse(localStorage.getItem(key)||'{}')}catch{state={}}
+state={...defaults,...(state&&typeof state==='object'&&!Array.isArray(state)?state:{})};
+state.cupcakes=Array.isArray(state.cupcakes)?state.cupcakes.filter(x=>['rose','honey','berry'].includes(x)).slice(0,3):[];
+state.garden=Math.max(0,Math.min(2,Number(state.garden)||0));
+state.map=Array.isArray(state.map)&&state.map.length===4?state.map.map(x=>((Number(x)||0)%4+4)%4):[1,2,3,1];
+let scene='',time=0,activity=null,phase=0,chosen='rose',decorated=[],teaSteps=[],actionTime=0;
+const toolbar=world.querySelector('.hb-world-tools');
+const open=document.createElement('button');open.id='hbObjects';open.textContent='Look around';toolbar.append(open);
+const panel=document.createElement('div');panel.className='hb-object-actions';panel.hidden=true;world.append(panel);
+function save(){try{localStorage.setItem(key,JSON.stringify(state))}catch{}}
+function dialogue(title,line){const d=world.querySelector('.pw-scene:not([hidden]) .pw-dialogue');if(!d)return;const b=document.createElement('b'),s=document.createElement('span');b.textContent=title;s.textContent=line;d.replaceChildren(b,s)}
+function button(label,fn){const b=document.createElement('button');b.textContent=label;b.onclick=fn;panel.append(b)}
+function close(){activity=null;panel.hidden=true;panel.replaceChildren();world.dataset.activity='wandering'}
+function start(name){scene=world.querySelector('.pw-scene:not([hidden])')?.dataset.scene||scene;if(name==='tea')teaSteps=[];window.HBStory?.stop?.();activity=name;phase=0;actionTime=0;world.dataset.activity=name;panel.hidden=false;renderControls();}
+const available={
+ cafe:[['Make a warm drink',()=>start('tea')],['Take the window seat',()=>{window.HBWorld?.sit();dialogue('Honey Mug','Your seat has a creek view. Nobody needs anything from you.');close()}]],
+ cozy:[['Make a warm drink',()=>start('tea')],['Sit by the fire',()=>{window.HBWorld?.sit();dialogue('Cozy Corner','The fire settles. You can stay as long as you like.');close()}]],
+ bakery:[['Decorate cupcakes',()=>{decorated=[];chosen='rose';start('cupcakes')}]],
+ park:[['Visit the little garden',()=>start('garden')],['Sit by the creek',()=>{window.HBWorld?.sit();dialogue('Community Park','Water passes under the bridge. The afternoon asks nothing of you.');close()}]],
+ mainstreet:[['Visit the mailbox',()=>start('mail')]],
+ library:[['Examine the torn map',()=>start('map')]],
+ bridgeview:[['Pull up a paw',()=>{window.HBWorld?.sit();dialogue('Bridgeview','Big Mama makes room on the porch. There is no admission requirement.');close()}]],
+ welcomehouse:[['Leave a welcome flower',()=>{state.flower=true;save();dialogue('Welcome House','A little flower waits by the Newberrys’ door. A quiet welcome counts.');close()}]],
+ hearthwell:[['Join the family sofa',()=>{window.HBWorld?.sit();dialogue('Hearthwell Home','Someone scoots over. Someone else asks whether you brought snacks.');close()}]],
+ harmony:[['Listen from the audience',()=>{window.HBWorld?.sit();dialogue('Harmony Hall','The room fills with a soft chorus. Singing along is optional.');close()}]],
+ woodsedge:[['Observe the water',()=>{dialogue('Field observation','Ripples cross Singing Pond. Their cause is not visible.');window.HBWorld?.recordObservation('Ripples observed at Singing Pond. Their cause is not visible.');close()}]]
+};
+open.onclick=()=>{scene=world.querySelector('.pw-scene:not([hidden])')?.dataset.scene||scene;if(!panel.hidden){close();return}activity=null;panel.hidden=false;panel.replaceChildren();for(const [label,fn] of available[scene]||[])button(label,fn);if(!(available[scene]||[]).length){const p=document.createElement('p');p.textContent='This is a good place to wander. Nothing needs doing.';panel.append(p)}button('Keep wandering',close)};
+function renderControls(){panel.replaceChildren();
+ if(activity==='tea'){dialogue('A warm drink','Tap the kettle, then the tea tin, then your mug. Or leave it for another day.');for(const [label,n] of [['Warm the kettle',0],['Add the tea',1],['Pour into the mug',2]])button(label,()=>tea(n));}
+ if(activity==='cupcakes'){dialogue('Wally’s frosting table','Choose rose, honey or berry frosting. Tap a cupcake to decorate it your way.');for(const color of ['rose','honey','berry'])button(color[0].toUpperCase()+color.slice(1)+' frosting',()=>select(color));for(let i=0;i<3;i++)button('Decorate cupcake '+(i+1),()=>frost(i));}
+ if(activity==='garden'){dialogue('Honeybrook’s little garden',state.garden===0?'A little bed of soil is waiting. Plant something if you feel like it.':state.garden===1?'A seedling is taking root. A little water would help.':'The flowers sway. You may simply enjoy them.');button('Plant a seed',plant);button('Water the flowers',water);button('Just enjoy the garden',()=>{dialogue('Community Park','The leaves turn toward the light. Your presence is enough.');close()});}
+ if(activity==='mail'){dialogue('The Main Street mailbox',state.mail?'Your little hello is already tucked inside. Harold will collect it on his route.':'You can leave a friendly hello for the Newberry family. No typing needed.');button('Choose a welcome note',()=>mail(0));button('Fold the envelope',()=>mail(1));button('Leave it in the mailbox',()=>mail(2));}
+ if(activity==='map'){dialogue('An old map fragment','Rotate the four fragments until the numbers are upright and the pale trail connects. It is an observation, not an answer to the mystery.');for(let i=0;i<4;i++)button('Rotate fragment '+(i+1),()=>rotate(i));}
+ button('Back to wandering',close);
+}
+function tea(n){if(n!==teaSteps.length){dialogue('A warm drink','The kettle comes first, then the tea, then a gentle pour. There is no rush.');return}teaSteps.push(n);actionTime=2.5;phase=n+1;window.HBWorld?.sound?.(n===0?240:420,.25);dialogue('A warm drink',['The kettle begins to steam.','Tea leaves settle into the pot.','A warm mug is waiting. You can sit and enjoy it.'][n]);if(n===2){state.tea=true;save();window.HBWorld?.sit();teaSteps=[];}}
+function select(color){chosen=color;dialogue('Wally’s frosting table',color[0].toUpperCase()+color.slice(1)+' frosting selected. Tap whichever cupcake you like.');}
+function frost(i){decorated[i]=chosen;actionTime=1;window.HBWorld?.sound?.(450+i*70,.12);if(decorated.filter(Boolean).length===3){state.cupcakes=decorated.slice();save();dialogue('Wally','“Look at that! Your tray gets the window spot.” It will be here when you return.');}else dialogue('Cupcakes & Crumbs','A soft swirl of '+chosen+' frosting lands on cupcake '+(i+1)+'.');}
+function plant(){if(state.garden>0){dialogue('The little garden','Something is already growing here. You can enjoy it without starting again.');return}state.garden=1;actionTime=3;save();dialogue('The little garden','A seed settles into the soil. A tiny green shoot follows.');}
+function water(){if(!state.garden){dialogue('The little garden','Plant a seed first, if you want to. Nothing has to happen today.');return}state.garden=2;actionTime=3;save();dialogue('The little garden','Water catches the light. A few bright blooms unfold. They will be here when you return.');}
+function mail(n){if(state.mail){dialogue('The mailbox','Your note is safely inside. There is no need to send it again.');return}if(n!==phase){dialogue('A small hello','Choose the note, fold the envelope, then tuck it into the mailbox.');return}phase++;actionTime=2;dialogue('A small hello',['“Welcome to Honeybrook. There’s a place for every bear.”','The paper folds into a neat little envelope.','The flag lifts. A friendly welcome is waiting for Harold.'][n]);if(n===2){state.mail=true;save();}}
+function rotate(i){state.map[i]=(state.map[i]+1)%4;actionTime=.5;window.HBWorld?.sound?.(300+i*35,.12);if(state.map.every(v=>v===0)){state.mapAligned=true;save();window.HBWorld?.recordObservation('Four library map fragments form a continuous trail with an old bridge marking. What the marking means and who drew it remain unknown.');dialogue('Field observation','The trail lines up around an old bridge marking. Its meaning and the map’s author remain unknown.');}else {save();dialogue('Bear Claw Library','You turn a fragment. The pale trail is still interrupted. Take your time.');}}
+function update(dt,next){time+=dt;actionTime=Math.max(0,actionTime-dt);if(next!==scene){scene=next;teaSteps=[];close()}if(window.HBStory?.active()&&!panel.hidden)close();}
+const colors={rose:'#ecb5bd',honey:'#efd292',berry:'#ba99c8'};
+function cupcake(api,x,y,color){api.rect(x-14,y,28,23,'#b27e52',5);api.ellipse(x,y-2,21,12,colors[color]||'#ead9b6');api.ellipse(x,y-13,13,9,colors[color]||'#ead9b6');for(let i=0;i<3;i++)api.ellipse(x-9+i*9,y-3,2,2,'#fff4d0')}
+function table(api,title){api.rect(285,344,510,140,'#b0875c',12);api.rect(275,335,530,22,'#efcea0',8);api.text(title,540,300,22,'#715336')}
+function draw(api){const {c,rect,ellipse,line,text,hit}=api;
+ if((scene==='cafe'||scene==='cozy')&&state.tea&&!activity){rect(287,416,32,33,'#f5e4bd',5);line(319,424,328,424,'#f5e4bd',5);for(let i=0;i<3;i++)ellipse(301+Math.sin(time+i)*5,404-(time*12+i*12)%45,4,11,'#fff9e344')}
+ if(scene==='bakery'&&state.cupcakes.length&&!activity){rect(116,254,196,12,'#ead09a',4);state.cupcakes.forEach((color,i)=>cupcake(api,155+i*59,231,color));text('Your little tray',215,291,14,'#715336')}
+ if(scene==='park'){rect(170,423,260,50,'#866548',18);for(let i=0;i<4;i++){const x=203+i*62,sway=Math.sin(time*1.7+i)*5;if(state.garden){line(x,450,x+sway,411,'#527646',4);ellipse(x-9,428,12,5,'#7c9a56');ellipse(x+10,421,12,5,'#7c9a56')}if(state.garden===2){for(let p=0;p<5;p++){const a=p*Math.PI*.4;ellipse(x+sway+Math.cos(a)*9,408+Math.sin(a)*9,7,7,['#eab3b7','#e4cc80','#b49bcc','#e6ad7e'][i])}ellipse(x+sway,408,5,5,'#fae39a')}}hit(170,390,260,90,()=>start('garden'),'Visit the little garden');if(actionTime>0)for(let i=0;i<12;i++)ellipse(203+(i*41)%210,360+(time*90+i*12)%90,2,5,'#cce4dd')}
+ if(scene==='mainstreet'&&state.mail){rect(314,438,5,21,'#ae6052');rect(314,433,19,12,'#bf735d',3);rect(282,452,25,14,'#f3e2b7',3)}
+ if(scene==='welcomehouse'&&state.flower){rect(783,443,33,26,'#af7e58',3);line(800,444,800,410,'#5a7b48',4);ellipse(800,405,15,15,'#d5a7b6');ellipse(800,405,5,5,'#f3d997')}
+ if(!activity||window.HBStory?.active())return;
+ if(activity==='tea'){table(api,'A warm little ritual');rect(350,386,75,60,'#7f9995',15);rect(357,376,61,12,'#567a77',5);line(424,396,445,387,'#7f9995',12);rect(522,392,62,50,'#b89865',7);text('TEA',553,421,14,'#fff1d0');rect(679,409,45,39,'#f4e4bc',7);line(724,418,739,421,'#f4e4bc',5);if(phase)for(let i=0;i<4;i++)ellipse(386+Math.sin(time*2+i)*5,370-(time*20+i*15)%60,6,14,'#fff3d544');if(phase===3){ellipse(701,410,18,5,'#98754f');if(actionTime>0)line(445,387,700,410,'#a7865577',4)}hit(340,365,115,90,()=>tea(0),'Kettle');hit(510,380,90,75,()=>tea(1),'Tea tin');hit(660,395,95,65,()=>tea(2),'Mug')}
+ if(activity==='cupcakes'){table(api,'Frost a little joy');['rose','honey','berry'].forEach((color,i)=>{ellipse(370+i*120,381,39,18,'#f4dfb8');ellipse(370+i*120,377,30,12,colors[color]);if(chosen===color)line(348+i*120,358,392+i*120,358,'#6f8556',3);hit(330+i*120,355,80,45,()=>select(color),color+' frosting')});for(let i=0;i<3;i++){cupcake(api,416+i*105,435,decorated[i]);hit(386+i*105,401,63,65,()=>frost(i),'Cupcake '+(i+1));}}
+ if(activity==='mail'){table(api,'A hello for the Newberrys');rect(365,372,128,66,'#f1dfb9',5);text('WELCOME',429,401,16,'#7b684d');rect(540,387,117,62,'#f6e9cf',4);line(540,387,598,421,'#b39d79',2);line(657,387,598,421,'#b39d79',2);rect(722,375,48,77,'#708d8e',10);if(phase===3)rect(771,370,20,15,'#b66e58',3);hit(350,360,155,95,()=>mail(0),'Welcome note');hit(525,370,145,95,()=>mail(1),'Fold envelope');hit(709,357,82,100,()=>mail(2),'Mailbox')}
+ if(activity==='map'){table(api,'Four pieces of an old trail');for(let i=0;i<4;i++){const x=383+(i%2)*143,y=366+Math.floor(i/2)*62;c.save();c.translate(x+53,y+25);c.rotate(state.map[i]*Math.PI/2);rect(-54,-27,108,54,'#eee0bb',4);line(-54,0,54,0,'#9b815d',5);line(-54,-8,54,-8,'#fff2d288',1);if(i===2){line(-13,12,-13,-12,'#756c58',4);line(13,12,13,-12,'#756c58',4);line(-19,-12,19,-12,'#756c58',4)}text(String(i+1),0,-10,12,'#9f8560');c.restore();hit(x,y,108,54,()=>rotate(i),'Map fragment '+(i+1));}if(state.mapAligned)text('Trail aligned · meaning unknown',540,500,16,'#f4e7c8')}
+}
+world.addEventListener('click',e=>{if(e.target.closest('[data-pwjump],[data-pwday],#hbWatch'))close()});
+window.HBActivities={update,draw,active:()=>!!activity,camera:()=>activity?{x:activity==='garden'?320:540,zoom:1.05}:null};
+})();
