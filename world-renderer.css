@@ -16,3 +16,6 @@
 @media(prefers-reduced-motion:reduce){#playableWorld .pw-scene{animation:none!important;transition:none!important}}
 
 #playableWorld[data-room] .pw-scene:not([hidden]) .pw-hotspot{display:none!important}#hbLeaveHome[hidden]{display:none!important}.hb-room-actions{z-index:68}
+
+/* The family home uses the same physical doors and room HUD as the Newberry home. */
+#playableWorld[data-room] #pwHomeMoment,#playableWorld[data-room] #pwExitHome{display:none!important}

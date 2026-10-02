@@ -82,3 +82,14 @@ Keyboard, mobile walking, canvas interactions and accessible Look around
 actions continue through the interiors. Low-frame-rate walking now uses
 elapsed time, with a regression check at two frames per second.
 Additional check: node tests/world-rooms.test.cjs
+
+HEARTHWELL FAMILY HOME
+The existing Hearthwell village location now opens into three connected rooms:
+family room, Buddy's kitchen, and a music corner. Framed wall doors retain
+the Bridgeview return route. Optional films stage the controller negotiations,
+supper's bread inspectors, and a family singalong with walking cubs and props.
+Plates, reading lamp setting and the latest twelve piano notes persist locally.
+The five-key piano supports free play and replay without a score or assignment.
+Sofa/chair actions physically approach and settle the player into the seat,
+and seated bears have bent knees. Home visits do not require an activity.
+The original Newberry house, village scenes and optional stories remain intact.
