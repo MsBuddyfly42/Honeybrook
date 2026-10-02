@@ -69,3 +69,16 @@ this review build does not claim to finish every possible Honeybrook story.
 
 Honeybrook can teach, entertain and challenge you. Honeybrook never requires
 you to be productive to belong. The town continues while you do nothing.
+
+NEWBERRY HOME EXPANSION
+Welcome House now opens into a front room, kitchen and Bella's reading nook.
+Interior doors animate before the room changes; every room has a return route.
+Four optional home films show settling in, the kettle, shared reading and
+Harold physically entering to deliver a welcome. Delivered letters remain
+on the mantel. Existing outdoor mail delivery waits while the player is inside.
+Curtains, the family photo, a jam snack and reading memories persist locally.
+The room itself is restored when reopening the same saved house visit.
+Keyboard, mobile walking, canvas interactions and accessible Look around
+actions continue through the interiors. Low-frame-rate walking now uses
+elapsed time, with a regression check at two frames per second.
+Additional check: node tests/world-rooms.test.cjs
