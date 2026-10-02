@@ -42,7 +42,9 @@ function finish(){memory[movie+'Watched']=true;if(movie==='mail'){memory.mailRec
 function update(dt,next){time+=dt;glow=Math.max(0,glow-dt);if(next!==lastScene){if(lastScene&&room)outside(true);lastScene=next}if(opening>0){opening=Math.max(0,opening-dt);if(!opening){if(leaving)outside();else enter(nextRoom);nextRoom=null;leaving=false;}}if(!room)return;const delivery=window.HBActivities?.deliveryState?.();if(!movie&&panel.hidden&&!world.querySelector('dialog[open]')&&!window.HBWorld?.walking?.())roomIdle+=dt;else roomIdle=0;if(room==='newberry'&&roomIdle>8&&!mailAttempted&&delivery?.collected&&!delivery.delivered)watch('mail');if(movie&&world.dataset.roomMoment==='playing'){const film=films[movie];movieTime=Math.min(film.duration,movieTime+dt);for(let i=0;i<film.lines.length;i++)if(movieTime>=film.lines[i][0]&&i>lastLine){lastLine=i;say(film.lines[i][1],film.lines[i][2]);if(movie==='kettle'&&i===1)window.HBWorld?.sound(660,.5)}if(movieTime>=film.duration)finish();}}
 const curtainsColor={rose:'#bc8484',sage:'#82997c',honey:'#c8a76c'};
 function draw(a){if(!room)return;const {c,rect,ellipse,line,text,hit,bear}=a,color=curtainsColor[memory.curtain];
- rect(0,0,1000,445,room==='newberry-kitchen'?'#e2c9a1':room==='bella-nook'?'#b8c3a0':'#d8bc97');rect(0,440,1000,210,'#947052');for(let i=0;i<9;i++)line(0,440+i*26,1000,440+i*26,'#e9cc9a33');for(let i=0;i<11;i++)line(i*110,440,(i-2)*135,650,'#694f3722');rect(0,420,1000,17,'#b48c61');
+ rect(0,0,1000,445,room==='newberry-kitchen'?'#e2c9a1':room==='bella-nook'?'#b8c3a0':'#d8bc97');rect(0,440,1000,210,'#947052');for(let i=0;i<9;i++)line(0,440+i*26,1000,440+i*26,'#e9cc9a33');for(let i=0;i<11;i++)line(i*110,440,(i-2)*135,650,'#694f3722');rect(0,420,1000,20,'#b48c61');line(0,420,1000,420,'#ead3ae',3);line(0,440,1000,440,'#60483255',3);
+ // Architectural depth: a ceiling cornice, subtle wall panels and light falling across the floor.
+ rect(0,0,1000,24,'#f0dfc1');rect(0,24,1000,9,'#a48768');line(0,34,1000,34,'#765a4140',2);for(let i=0;i<10;i++)line(i*112,40,i*112,419,'#ffffff0b',1);ellipse(201,484,143,28,a.night?'#bcc8cf08':'#f9e9bc22');
  // A clipped window has its own swaying tree and curtain, rather than a static icon.
  rect(80,104,234,219,'#78583d',9);c.save();c.beginPath();c.rect(92,116,210,193);c.clip();rect(92,116,210,193,a.night?'#294352':'#a9d1d2');ellipse(210,280,155,35,'#89a277');a.tree(215,321,.64);c.restore();line(198,110,198,315,'#ecd9b5',9);line(88,213,304,213,'#ecd9b5',9);rect(67+Math.sin(time*.8)*3,100,49,230,color,7);rect(282+Math.sin(time*.8+1)*3,100,47,230,color,7);line(60,97,335,97,'#6f573d',7);for(let i=0;i<5;i++){line(73+i*8,110,73+i*8,311,'#ffffff15',2);line(289+i*8,110,289+i*8,311,'#ffffff15',2)}
  ellipse(503,557,287,54,'#ad8b78');ellipse(503,557,262,42,'#c5a791');text(names[room],663,83,28,'#70533d');
@@ -56,7 +58,29 @@ function draw(a){if(!room)return;const {c,rect,ellipse,line,text,hit,bear}=a,col
  if(glow>0){for(let i=0;i<8;i++)ellipse(390+i*37,320+Math.sin(time*3+i)*17,3,3,'#fae29caa')}
  if(opening>0)rect(0,0,1000,650,`rgba(57,43,32,${Math.sin((.7-opening)/.7*Math.PI)*.45})`);
 }
-function door(a,x,label,target){const {rect,ellipse,text,hit}=a;rect(x-28,322,65,173,'#6b523d',5);rect(x-24,327,57,163,'#46362a',3);const open=movie==='mail'&&target===null&&movieTime<5?Math.sin(Math.min(movieTime/5,1)*Math.PI)*.9:opening>0&&target===nextRoom?Math.sin((.7-opening)/.7*Math.PI)*.9:0;rect(x-24,327,57*(1-open),163,'#aa8059',4);ellipse(x+17*(1-open),423,4,4,'#eed5a0');text(label,x+3,310,13,'#76583d');hit(x-31,318,75,190,()=>go(target),'Enter '+label);}
+// Door thresholds meet the wall/floor seam. The casing masks the baseboard,
+// and the leaf pivots inside its jamb rather than floating on the rug.
+function door(a,x,label,target){const {rect,ellipse,line,text,hit}=a;
+ const left=x-27,top=247,width=62,height=193,bottom=440;
+ const open=movie==='mail'&&target===null&&movieTime<5?Math.sin(Math.min(movieTime/5,1)*Math.PI)*.9:opening>0&&target===nextRoom?Math.sin((.7-opening)/.7*Math.PI)*.9:0;
+ rect(left-8,top-9,width+16,height+9,'#70543c',3);
+ rect(left-4,top-5,width+8,height+5,'#e1c59b',2);
+ rect(left,top,width,height,'#352b23',1);
+ // A lit adjoining passage becomes visible as the door opens.
+ if(open>.02){rect(left+4,top+5,width-8,height-5,target===null?'#9aad99':'#bba383');rect(left+4,bottom-31,width-8,31,'#82644c');}
+ const leaf=width*(1-open),edge=left+leaf;
+ rect(left,top+3,leaf,height-5,'#ab8058',2);
+ rect(left+5,top+10,Math.max(0,leaf-10),71,'#bc946b',2);
+ rect(left+5,top+94,Math.max(0,leaf-10),79,'#956c49',2);
+ line(edge,top+3,edge,bottom-2,'#6b4b32',3);
+ for(const y of [top+35,bottom-35])rect(left-2,y,4,11,'#8b7957',1);
+ ellipse(left+leaf*.8,top+104,3.5,4,'#efd394');
+ rect(left-5,bottom-3,width+10,6,'#dbc198',1);
+ ellipse(x+3,bottom+9,width*.65,7,'#49342228');
+ text(label,x+3,top-19,13,'#76583d');
+ // Keep the approach anchor on the walkable floor while the visible door stays in the wall.
+ hit(left-8,top-9,width+16,240,()=>go(target),'Enter '+label);
+}
 world.addEventListener('click',e=>{if(!room)return;const b=e.target.closest('button');if(!b)return;if(b.id==='hbObjects'){e.stopImmediatePropagation();controls()}if(b.id==='hbWatch'){e.stopImmediatePropagation();watch()}if(b.id==='hbStoryStop'){e.stopImmediatePropagation();stop()}},true);
 world.addEventListener('keydown',e=>{if(e.key==='Escape'&&room){stop();opening=0;nextRoom=null;leaving=false;window.HBWorld?.cancelMovement?.()}});
 // Persist the room only when the saved village location is still this house.
