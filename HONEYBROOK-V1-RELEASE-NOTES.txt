@@ -105,3 +105,5 @@ Unwatched events cannot be recorded as evidence. Observations remain
 separate from confirmed conclusions. A pebble makes visibly identified ripples.
 The saved woods location restores; leaving by the town map clears the zone.
 Additional check: node tests/world-woods.test.cjs
+
+Village interior polish: wall-mounted framed exit doors with hinges, panels and thresholds; clear window spacing; a physical café window chair and pedestal table; walking approaches from activity menus; finished tea carried to the window seat. All activities remain optional.
