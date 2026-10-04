@@ -2389,9 +2389,9 @@ const Carnival = {
       ? 'The little Ferris wheel lifts you above Honeybrook. At the top, you can see the creek bridge, the welcome house, and the Fair lights all at once.'
       : 'Painted ponies circle beneath strings of golden lights. You choose a honey-colored pony with a blue saddle.';
     const value = await modal(`<p class="kicker">A gentle Fair ride</p><h2>${wheel ? '🎡' : '🎠'} ${name}</h2><div class="carnival-act"><span class="act-icon">${wheel ? '🎡' : '🐴'}</span><p>${text}</p><p>${wheel ? 'The wheel makes 3 turns. If you count 4 lanterns on each side, how many lanterns can you spot altogether?' : 'The carousel has 8 ponies. Two are resting behind the curtain. How many ponies are ready to ride?'}</p></div>`,
-      [{label:'2'}, {label:'6'}, {label:'8',primary:true,value:'correct'}, {label:'12'}]);
+      (wheel ? [{label:'2'}, {label:'6'}, {label:'8',primary:true,value:'correct'}, {label:'12'}] : [{label:'2'}, {label:'6',primary:true,value:'correct'}, {label:'8'}, {label:'12'}]));
     S.usedSlot = true;
-    if (value === 'correct') { Snd.sfx('good'); toast(wheel ? 'Twelve lanterns—nice counting!' : 'Six ponies are ready—well counted!'); }
+    if (value === 'correct') { Snd.sfx('good'); toast(wheel ? 'Eight lanterns—nice counting!' : 'Six ponies are ready—well counted!'); }
     else { Snd.sfx('click'); toast('The ride is the prize. Want to count it together next time?'); }
   },
   async game(kind) {
