@@ -86,13 +86,13 @@ const Snd = {
   },
   ambience() {
     if (!this.ctx) return;
-    const outdoor = S.scene === 'village' || S.scene === 'pond' || S.scene === 'garden' || (S.scene === 'work' && S.wsPlace === 'hollow') || (S.scene === 'area' && S.area !== 'room');
+    const outdoor = S.scene === 'village' || S.scene === 'town' || S.scene === 'pond' || S.scene === 'garden' || (S.scene === 'work' && S.wsPlace === 'hollow') || (S.scene === 'area' && S.area !== 'room');
     const target = outdoor && S.weather === 'Rainy' ? 0.07 : 0;
     this.ambGain.gain.setTargetAtTime(target, this.ctx.currentTime, 0.6);
   },
   critters() {
     if (!this.ctx || !this.on) return;
-    const outdoor = S.scene === 'village' || S.scene === 'pond' || S.scene === 'garden' || (S.scene === 'work' && S.wsPlace === 'hollow') || (S.scene === 'area' && S.area !== 'room'); if (!outdoor) return;
+    const outdoor = S.scene === 'village' || S.scene === 'town' || S.scene === 'pond' || S.scene === 'garden' || (S.scene === 'work' && S.wsPlace === 'hollow') || (S.scene === 'area' && S.area !== 'room'); if (!outdoor) return;
     const t = this.ctx.currentTime;
     if (S.slot < 2 && S.weather !== 'Rainy' && Math.random() < 0.18) { // bird chirp
       const n = 2 + Math.floor(Math.random() * 3);
@@ -232,7 +232,8 @@ function updateHUD() {
   $('#hud-ribbons').textContent = S.ribbons;
   const ready = S.orders.filter(o => findItemFor(o)).length;
   $('#orders-badge').textContent = ready ? ready : '';
-  $('#btn-home').hidden = S.scene === 'village';
+  $('#btn-home').hidden = S.scene === 'village' || S.scene === 'title';
+  $('#btn-town').hidden = S.scene !== 'village';
   $('#teddy').hidden = !S.owned.teddy;
   $('#hud-glow').textContent = (S.glow || 0) + '%';
   $('#story-badge').textContent = S.storyNew ? 'New' : '';
@@ -255,7 +256,7 @@ function applyAtmosphere() {
 /* ------------------------------------------------------------------ */
 /* Scenes                                                             */
 /* ------------------------------------------------------------------ */
-function backOut() { const r = S.returnTo; S.returnTo = null; if (r) go('area', r); else go('village'); }
+function backOut() { const r = S.returnTo; S.returnTo = null; if (r === 'town') go('town'); else if (r) go('area', r); else go('village'); }
 function go(scene, arg) {
   S.scene = scene; if (scene === 'area') S.area = arg;
   $$('.scene').forEach(s => s.classList.toggle('active', s.id === 'scene-' + scene));
@@ -794,6 +795,21 @@ async function onPlace(p) {
 $$('.spot').forEach(b => b.addEventListener('click', () => onPlace(b.dataset.place)));
 $('#scene-village').addEventListener('click', e => { if (!e.target.closest('.villager')) $('#bubble').hidden = true; });
 
+async function onTownPlace(place) {
+  Snd.sfx('click');
+  if (place === 'square') { go('village'); toast('Back at the Fair square. All the familiar shops are open.'); return; }
+  if (place === 'bakery') { S.returnTo = 'town'; go('bakery'); return; }
+  const visits = {
+    welcome: `<p class="kicker">A light in the window</p><h2>The Welcome House</h2><p>Amelia and Tom first left a small shelter beside their repaired bridge, so a traveler would always have somewhere dry to rest. Neighbors added blankets, a stove, and a proper roof. The shelter grew into the Welcome House, where the door stays open for anyone who needs a place.</p>`,
+    homes: `<p class="kicker">Built one home at a time</p><h2>Neighbors' Homes</h2><p>When more travelers chose to stay, Honeybrook grew around them. Families raised cottages together, sharing tools, supper, and the work. Each home is different, and each one belongs because its neighbors made room.</p>`,
+    bridge: `<p class="kicker">Where Honeybrook began</p><h2>Amelia and Tom's Creek Bridge</h2><p>Amelia searched the creek bank after meeting the mysterious woman, then found Tom Bridgewell and asked him to help mend the broken crossing. They repaired the bridge and left a shelter nearby for the next person caught in the rain. Their first small act of care became a whole town.</p>`,
+    school: `<p class="kicker">A place to learn together</p><h2>Honeybrook School</h2><p>Professor Honeywell teaches here. The school began with a few benches and a chalkboard; now the neighbors share stories, lessons, and a crafting bench. There is room for curious questions, careful practice, and learning at your own pace.</p>`
+  };
+  if (visits[place]) await modal(visits[place], [{ label: 'Back to the map', primary: true }]);
+}
+$$('.town-marker').forEach(b => b.addEventListener('click', () => onTownPlace(b.dataset.townPlace)));
+
+
 /* ------------------------------------------------------------------ */
 /* Weather canvas (rain + evening lantern glow)                       */
 /* ------------------------------------------------------------------ */
@@ -803,7 +819,7 @@ const LANTERNS = { village: [[10, 76], [62, 37.5], [47.5, 36.5], [81.5, 61], [19
 function wxLoop(now) {
   const dt = Math.min(0.05, (now - wxLast) / 1000); wxLast = now;
   const c = ctxOf(wx); c.clearRect(0, 0, W, H);
-  const outdoor = S.scene === 'village' || S.scene === 'pond' || S.scene === 'garden' || (S.scene === 'work' && S.wsPlace === 'hollow') || (S.scene === 'area' && S.area !== 'room');
+  const outdoor = S.scene === 'village' || S.scene === 'town' || S.scene === 'pond' || S.scene === 'garden' || (S.scene === 'work' && S.wsPlace === 'hollow') || (S.scene === 'area' && S.area !== 'room');
   if (outdoor && S.slot === 2 && S.scene === 'village') {
     for (const [lx, ly] of LANTERNS.village) {
       const x = lx / 100 * W, y = ly / 100 * H, g = c.createRadialGradient(x, y, 0, x, y, 120);
@@ -2313,6 +2329,7 @@ async function continueGame(d) {
 /* Boot                                                               */
 /* ------------------------------------------------------------------ */
 $('#btn-home').onclick = () => { Snd.sfx('click'); if ((S.scene === 'bakery' && Bakery.st && Bakery.st.phase !== 'done') || (S.scene === 'work' && Work.st && !Work.st.done)) { modal('<h2>Leave your project?</h2><p>What you\'ve started will go to waste, and this part of the day will be used up.</p>', [{ label: 'Stay' }, { label: 'Leave', primary: true, value: 'go' }]).then(v => v === 'go' && leaveActivity()); return; } leaveActivity(); };
+$('#btn-town').onclick = () => { Snd.sfx('click'); go('town'); };
 $('#btn-orders').onclick = () => { Snd.sfx('click'); showOrders(); };
 $('#btn-basket').onclick = () => { Snd.sfx('click'); showBasket(); };
 $('#btn-shop').onclick = () => { Snd.sfx('click'); showStore(); };

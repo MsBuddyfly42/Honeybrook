@@ -66,6 +66,21 @@
     <div id="teddy" class="teddy" hidden title="Your teddy bear"></div>
   </section>
 
+  <!-- Honeybrook town walk; separate from the Fair square so every original shop stays in place. -->
+  <section id="scene-town" class="scene town-scene" aria-label="Explore Honeybrook town">
+    <img class="bg town-bg" src="img/honeybrook-town-map.jpg" alt="Honeybrook with its repaired creek bridge, Welcome House, neighbors' cottages, school, bakery, and Goldilocks with the Three Bears statue">
+    <div class="town-heading"><p class="town-kicker">THE PLACE AMELIA AND TOM BUILT</p><h2>Honeybrook, with room for every neighbor</h2><p>Choose a place to visit. The Fair shops and activities are waiting back at the square.</p></div>
+    <nav class="town-markers" aria-label="Honeybrook locations">
+      <button class="town-marker" data-town-place="welcome" style="left:12%;top:51%"><span class="town-icon">🏡</span><span><b>Welcome House</b><small>First shelter, open door</small></span></button>
+      <button class="town-marker" data-town-place="school" style="left:83%;top:31%"><span class="town-icon">📚</span><span><b>Honeybrook School</b><small>Professor Honeywell's room</small></span></button>
+      <button class="town-marker" data-town-place="homes" style="left:34%;top:48%"><span class="town-icon">🏘️</span><span><b>Neighbors' Homes</b><small>Built together, one by one</small></span></button>
+      <button class="town-marker" data-town-place="bakery" style="left:88%;top:62%"><span class="town-icon">🥖</span><span><b>Wally's Bakery</b><small>Step inside and bake</small></span></button>
+      <button class="town-marker" data-town-place="bridge" style="left:50%;top:80%"><span class="town-icon">🌉</span><span><b>Creek Bridge</b><small>Amelia and Tom's first work</small></span></button>
+      <button class="town-marker town-marker-square" data-town-place="square" style="left:70%;top:50%"><span class="town-icon">⛲</span><span><b>Fair Square &amp; Statue</b><small>Return to the Fair shops</small></span></button>
+    </nav>
+    <div class="town-footnote">A gentle walk around town · Visiting places does not use up your day</div>
+  </section>
+
   <!-- BAKERY -->
   <section id="scene-bakery" class="scene">
     <img class="bg" src="img/bakery.jpg" alt="Bakery kitchen">
@@ -113,6 +128,7 @@
   <header id="hud" hidden>
     <div class="hud-left">
       <button id="btn-home" class="btn btn-ghost" hidden>&larr; Village Square</button>
+      <button id="btn-town" class="btn btn-ghost" hidden>Explore Honeybrook</button>
       <div class="when"><strong id="hud-day">Day 1</strong><span id="hud-time">Morning</span><span id="hud-wx">Sunny</span></div>
       <div class="fair-count" id="hud-fair">Fair in 4 days</div>
     </div>
