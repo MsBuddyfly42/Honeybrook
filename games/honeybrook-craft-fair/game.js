@@ -391,11 +391,18 @@ const AREAS = {
     { id: 'lore:belonging', label: 'A Home for Whoever Needs One', l: 3, t: 77, w: 27, h: 18 },
     { id: 'lore:shared', label: 'Honey and Porridge', l: 69, t: 72, w: 27, h: 20 },
   ] },
-  'bear-hollow': { name: 'Bear Hollow', img: 'img/hollow.jpg', back: 'story-village', backLabel: 'Back to Honeybrook', spots: [
-    { id: 'lore:cottage', label: 'The Three Bears’ Cottage', l: 24, t: 20, w: 29, h: 28, hot: true },
-    { id: 'lore:blueflower', label: 'The Blue-Flower Honey Jar', l: 3, t: 58, w: 22, h: 20, hot: true },
-    { id: 'lore:hearth', label: 'The Hearth and the Empty Bowl', l: 57, t: 53, w: 24, h: 22 },
-    { id: 'lore:love', label: '“LOVE. Treat everybody right.”', l: 26, t: 76, w: 38, h: 16 },
+  'bear-hollow': { name: 'Bear Hollow', img: 'img/hollow.jpg', back: 'town', backLabel: 'Back to Honeybrook map', spots: [
+    { id: 'lore:cottage', label: 'Goldilocks & the Three Bears’ Cottage', l: 24, t: 20, w: 29, h: 28, hot: true },
+    { id: 'lore:cabins', label: 'Cabins for New Neighbors', l: 52, t: 17, w: 24, h: 24 },
+    { id: 'lore:square', label: 'Hollow Square · Fountain & Flowers', l: 68, t: 42, w: 29, h: 18, hot: true },
+    { id: 'lore:footbridge', label: 'Footbridge over the Brook', l: 3, t: 40, w: 23, h: 19, hot: true },
+    { id: 'lore:firewood', label: 'Shared Firewood Stack', l: 2, t: 79, w: 23, h: 17 },
+    { id: 'lore:garden', label: 'Goldilocks’ Garden', l: 28, t: 57, w: 21, h: 18 },
+    { id: 'lore:blueflower', label: 'The Blue-Flower Honey Jar', l: 3, t: 58, w: 22, h: 18, hot: true },
+    { id: 'lore:hives', label: 'Golden Honey Hives', l: 75, t: 66, w: 22, h: 20, hot: true },
+    { id: 'lore:hollowbakery', label: 'Bear Hollow Bakery', l: 77, t: 18, w: 22, h: 22, hot: true },
+    { id: 'lore:hearth', label: 'Hearth & the Empty Bowl', l: 54, t: 57, w: 24, h: 22 },
+    { id: 'lore:love', label: 'The Hollow’s Rule: LOVE', l: 29, t: 78, w: 37, h: 16 },
   ] },
   'northern-woods': { name: 'The Northern Woods', img: 'img/northern-woods.svg', back: 'story-village', backLabel: 'Back to Honeybrook', spots: [
     { id: 'lore:voices', label: 'The Voices in the Trees', l: 15, t: 45, w: 24, h: 21, hot: true },
@@ -558,6 +565,13 @@ const LORE = {
   belonging: ['Honesty, repair, and belonging', 'Honeybrook asks for honesty and repair when harm is done. It does not make people earn a home or send newcomers away. Accountability and belonging can live together; people need time, safety, and a chance to make things right.'],
   shared: ['Honey and porridge', 'Bear Hollow’s bees make unusually sweet honey, and Honeybrook shares in that sweetness. Honeybrook leaves porridge for Bear Hollow, but porridge belongs to the Hollow’s own rituals. The land does not take sides, and friendship does not require adopting another town’s rules.'],
   cottage: ['The cottage that opened its door', 'After a spring river swept away her beekeeper parents, a seven-year-old girl followed the smell of porridge to the Three Bears’ unlatched cottage. She ate from the bowls and curled into the smallest bed. Mama Bear saw a lost child, not a trespasser: “She stays.” The girl became Goldilocks and learned to care for bees.'],
+  cabins: ['Cabins for the newcomers', 'The first cabin stood near Goldilocks’s cottage. The next rose farther down the path. Every new home answered a real need, built by neighbors who wanted the next frightened bear to find a roof.'],
+  square: ['The fountain square', 'Bear Hollow became a town one shared task at a time. Someone shaped a fountain, Baby Bear hauled stones for it, and another neighbor planted flowers close by. The square gathered the bears around a place they had made together.'],
+  footbridge: ['The footbridge over the brook', 'A little footbridge joined the paths over the brook. Cubs played in the water while neighbors carried stones, mended fences, and built a place to stack firewood where new arrivals could reach it.'],
+  firewood: ['Firewood for whoever needs it', 'The stack was left where newcomers could find it. In Bear Hollow, practical kindness mattered: a warm fire, dry wood, a meal, and help offered before anyone had to ask twice.'],
+  garden: ['Goldilocks’s shared garden', 'Goldilocks helped plan a garden to feed the growing settlement. The bears planted, watered, and harvested together, then brought what they grew to the shared table.'],
+  hives: ['The hives and the golden honey', 'Goldilocks and Baby Bear tended the bees after Mama and Papa were gone. Their honey stayed golden, rich, and astonishingly sweet. The magic had been humming below the ground since the kiss, but it answered care in everyday work—not a command or a charm.'],
+  hollowbakery: ['The bakery that sold out by noon', 'Bear Hollow had become a proper town, with a bakery that sold out by noon. Honey and porridge were traded like money. The food carried the care of the bears who made it, and it could comfort a neighbor who was ill.'],
   blueflower: ['The blue-flower cloth', 'The little beekeeper carried one jar of honey wrapped in cloth printed with tiny blue flowers. She had saved it when the river took her parents. Goldilocks brought that memory, and the bees’ work, into the family she found.'],
   hearth: ['A bowl beside the hearth', 'Years later, a cruel winter took Mama Bear and Papa Bear. Goldilocks and Baby Bear relit the fire and tended the hives. They left a bowl beside the hearth for the ones they missed. In Bear Hollow, love meant showing up and caring for one another.'],
   love: ['The Hollow’s rule', 'Bear Hollow’s rule was “LOVE. Treat everybody right.” It began as a promise of care, work, and repair. Over time fear shaped who was allowed to stay. Some bears were sent away; some were harmed, and some could not live under the rules. The town stopped saying their names. The story holds both the love that built the Hollow and the hurt its silence concealed.'],
@@ -801,6 +815,7 @@ async function onTownPlace(place) {
   Snd.sfx('click');
   if (place === 'square') { go('village'); toast('Welcome to the Fair shops and little carnival.'); return; }
   if (place === 'den' || place === 'hive' || place === 'rest') { S.returnTo = 'town'; go('area', place); return; }
+  if (place === 'bear-hollow') { S.returnTo = 'town'; go('area', 'bear-hollow'); return; }
   if (place === 'bakery') { S.returnTo = 'town'; go('bakery'); return; }
   const visits = {
     welcome: `<p class="kicker">A light in the window</p><h2>The Welcome House</h2><p>Amelia and Tom first left a small shelter beside their repaired bridge, so a traveler would always have somewhere dry to rest. Neighbors added blankets, a stove, and a proper roof. The shelter grew into the Welcome House, where the door stays open for anyone who needs a place.</p>`,
