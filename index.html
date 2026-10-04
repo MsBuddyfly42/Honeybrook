@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Honeybrook — There's a place for every bear</title><link rel="stylesheet" href="styles.css"></head><body>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Honeybrook — There's a place for every bear</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,800&family=Nunito:wght@500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head><body>
 <section class="hb-townfront" id="honeybrookHome">
  <div class="hb-sky"><span class="cloud c1">☁️</span><span class="cloud c2">☁️</span><span class="sun">☀️</span></div>
  <div class="hb-hills"></div>
@@ -7,7 +7,7 @@
   <p class="hb-kicker">WELCOME TO</p>
   <h1>HONEYBROOK</h1>
   <p class="hb-motto">There’s a place for every bear.</p>
-  <div class="hb-townscene illustrated-world" aria-label="Illustrated interactive Honeybrook village"><img src="world-scene.svg" alt="Illustrated Honeybrook village with three colorful cottages, rolling hills, trees and a friendly bear" width="1200" height="580"><div class="world-hotspots"><button type="button" data-frontgo="connectedTown">🏡 Enter the village</button><button type="button" data-frontgo="activityHubWorld">🍰 Visit activities</button><button type="button" data-frontgo="bundledStoryWorld">🌲 Story adventures</button></div></div>
+  <div class="hb-townscene illustrated-world" aria-label="Honeybrook illustrated town map"><img src="games/honeybrook-craft-fair/img/honeybrook-town-map.jpg" alt="Honeybrook's storybook village with the creek bridge, cottages, school, bakery, Welcome House and town square" width="1500" height="1000"><div class="world-hotspots"><button type="button" data-frontgo="connectedTown">🗺️ Enter Honeybrook</button><a href="games/honeybrook-craft-fair/">🎪 Visit Honeybrook Fair</a><button type="button" data-frontgo="bundledStoryWorld">📖 Read the town stories</button></div></div>
   <p class="hb-arrival">Explore. Learn. Play. Follow a mystery. Visit somebody. Or do absolutely nothing.</p>
   <div class="hb-entry-buttons">
    <button data-frontgo="connectedTown">🗺️ Enter Town</button>
@@ -34,6 +34,36 @@
 <section id="welcome" class="screen active"><div class="sun"></div><div class="welcome-card"><div class="crest">🧸</div><p class="eyebrow">THE BEAR COMMUNITY</p><h1>WELCOME TO<br><span>HONEYBROOK</span></h1><p class="motto">There’s a place for every bear.</p><div class="bridge">🌳 <span>🌉</span> 🌳</div><p class="intro">Cross the Welcome Bridge and discover a town built on belonging, learning, laughter, stories—and a few mysteries.</p><button class="primary" id="enterBtn">Cross the Bridge →</button><p class="date" id="welcomeDate"></p></div></section>
 
 <section id="town" class="screen"><header><button id="homeBtn" class="brand">🧸 <b>HONEYBROOK</b></button><div class="top-actions"><button id="roleBtn">🎭 Visitor Mode</button><button id="journeyBtn" class="ghost">📖 My Journey</button><button id="todayBtn">📅 Today</button><button id="bearBtn">📖 Beartionary</button></div></header>
+<section class="hb-playable-world" id="hbPlayableWorld" aria-label="Walk around Honeybrook">
+ <div class="hb-world-art"><img src="games/honeybrook-craft-fair/img/honeybrook-town-map.jpg" alt="Illustrated Honeybrook village, with the repaired creek bridge, Welcome House, neighbors' cottages, school, bakery, statue and Fair Square">
+ <div class="hb-world-shade"></div>
+ <div class="hb-world-sign"><small>THE PLACE AMELIA &amp; TOM BUILT</small><strong>Welcome to Honeybrook</strong><span>There’s a place for every bear.</span></div>
+ <nav class="hb-world-rail" aria-label="Town tools">
+  <button type="button" data-hb-tool="map" aria-label="Map">🗺️<span>Map</span></button>
+  <button type="button" data-hb-tool="characters" aria-label="Characters">🐻<span>Characters</span></button>
+  <button type="button" data-hb-tool="places" aria-label="Places">🏡<span>Places</span></button>
+  <button type="button" data-hb-tool="journal" aria-label="Journal">📖<span>Journal</span></button>
+  <button type="button" data-hb-tool="settings" aria-label="Settings">⚙️<span>Settings</span></button>
+ </nav>
+ <div class="hb-world-date"><b id="hbWorldSeason">Autumn in Honeybrook</b><span>Morning · Creekside</span></div>
+ <button type="button" class="hb-world-map-button" data-hb-tool="places">Town Map <span>⌖</span></button>
+ <div class="hb-world-markers" aria-label="Choose a place to visit">
+  <button type="button" class="hb-world-marker" data-hb-place="welcome" style="left:12%;top:51%"><span class="hb-marker-icon">🏡</span><span><b>Welcome House</b><small>Food first. Questions later.</small></span></button>
+  <button type="button" class="hb-world-marker" data-hb-place="school" style="left:83%;top:31%"><span class="hb-marker-icon">📚</span><span><b>Honeybrook School</b><small>A room with many doorways</small></span></button>
+  <button type="button" class="hb-world-marker" data-hb-place="homes" style="left:34%;top:48%"><span class="hb-marker-icon">🏘️</span><span><b>Neighbors’ Homes</b><small>Raised together, one roof at a time</small></span></button>
+  <button type="button" class="hb-world-marker" data-hb-place="bakery" style="left:88%;top:62%"><span class="hb-marker-icon">🥖</span><span><b>Wally’s Bakery</b><small>Save one loaf for supper</small></span></button>
+  <button type="button" class="hb-world-marker" data-hb-place="bridge" style="left:50%;top:80%"><span class="hb-marker-icon">🌉</span><span><b>Amelia &amp; Tom’s Bridge</b><small>Where Honeybrook began</small></span></button>
+  <button type="button" class="hb-world-marker hb-marker-square" data-hb-place="square" style="left:70%;top:50%"><span class="hb-marker-icon">🎪</span><span><b>Town Square &amp; Fair</b><small>Statue, neighbors, autumn gathering</small></span></button>
+  <button type="button" class="hb-world-marker hb-marker-hollow" data-hb-place="hollow" style="left:55%;top:23%"><span class="hb-marker-icon">🍯</span><span><b>Road to Bear Hollow</b><small>A neighbor across the creek road</small></span></button>
+ </div>
+ <div class="hb-world-toolbar" role="toolbar" aria-label="Town actions">
+  <button type="button" data-hb-tool="walk">🚶 Walk</button><button type="button" data-hb-tool="characters">💬 Talk</button><button type="button" data-hb-tool="explore">🔎 Explore</button><button type="button" data-hb-tool="interact">✋ Interact</button><button type="button" data-hb-tool="journal">📔 Journal</button>
+ </div>
+ <aside class="hb-world-goal"><small>YOUR HONEYBROOK VISIT</small><b>You’re welcome here.</b><span>Choose a place—or simply enjoy the view. There’s no rush.</span></aside>
+ <div class="hb-world-footnote">A gentle walk around town · Your visit is your own</div>
+ </div>
+ <dialog class="hb-world-dialog" id="hbWorldDialog" aria-labelledby="hbWorldDialogTitle"><form method="dialog"><button class="hb-dialog-close" aria-label="Close">×</button><div id="hbWorldDialogBody"></div></form></dialog>
+</section>
 <div class="town-shell"><aside><h3>Explore Honeybrook</h3><div id="nav"></div><div class="quote">“Pull up a paw.”<small>— an old Bridgeview saying</small></div></aside>
 <main>
 <section class="section explorer-gate" id="explorerGate">

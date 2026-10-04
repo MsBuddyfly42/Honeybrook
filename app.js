@@ -1119,3 +1119,119 @@ document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll("[da
  function sync(){let p=read("honeybrook_visitor_passport_v1",null),d=localStorage.getItem("honeybrook_current_district_v1")||"Town Square";let a=document.getElementById("sessionBear"),b=document.getElementById("sessionDistrict"),c=document.getElementById("sessionTime"),s=document.getElementById("sessionStyle");if(a)a.textContent=p?.name||"Visitor Bear";if(b)b.textContent=d;if(c)c.textContent=part();if(s)s.textContent=p?.style||"Go with the flow"}
  document.addEventListener("DOMContentLoaded",()=>{sync();document.querySelectorAll("[data-jump]").forEach(b=>b.onclick=()=>document.getElementById(b.dataset.jump)?.scrollIntoView({behavior:"smooth",block:"start"}));document.getElementById("refreshSession")?.addEventListener("click",sync);document.addEventListener("click",()=>setTimeout(sync,30));document.getElementById("passportForm")?.addEventListener("submit",()=>setTimeout(sync,40))});
 })();
+
+/* Honeybrook Fair style town walk: story locations, friends, and journal */
+(() => {
+  const $ = (s, root=document) => root.querySelector(s);
+  const dialog = $('#hbWorldDialog');
+  const body = $('#hbWorldDialogBody');
+  if (!dialog || !body) return;
+  const fairRoot = 'games/honeybrook-craft-fair/';
+  const escapeHtml = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const places = {
+    welcome: {
+      title:'The Welcome House', kicker:'A shelter became a home',
+      text:'Amelia and Tom first built a little shelter beside the repaired bridge for whoever needed it. Travelers came in from the rain, one by one. A bed, a hearth, a meal and an open door turned that shelter into the Welcome House.',
+      detail:'Sammy was eleven when he offered a younger newcomer four words: “You can eat first.” In Honeybrook, food comes before questions, and questions wait until a newcomer wants to answer.',
+      image:'', links:[['Visit community life','residentLifeWorld']]
+    },
+    bridge: {
+      title:'Amelia & Tom’s Creek Bridge', kicker:'The first thing Honeybrook built',
+      text:'On a stormy evening, Amelia found the wooden bridge broken over the rushing creek. She sheltered beneath it. In the morning, the gentle woman she had met beside the water was gone—without a footprint in the mud.',
+      detail:'Across the creek, carpenter and stoneworker Thomas Bridgewell helped Amelia repair the bridge. They built a small shelter beside it, never planning a town—only a safe way across and a place to rest.',
+      image:'', links:[['Read the Honeybrook story','bundledStoryWorld']]
+    },
+    homes: {
+      title:'The Neighbors’ Homes', kicker:'Built together, one roof at a time',
+      text:'The first neighbors arrived carrying different stories. One frightened older cub came from Bear Hollow, slept in his coat and shoes, and was not pressed to explain. When ready, he helped Tom raise the next roof beam.',
+      detail:'The Hearthwells brought a whole family: Templar, Buddy, Big Mama Mary, and the memory of Willie, held with love. Jonesha, Ja’Mya, Jamon, Robin, Rheanna, Lena, Lance, Landis and little Landric brought their own rhythms, laughter and ideas.',
+      image:'', links:[['Meet Honeybrook’s neighbors','residentLifeWorld']]
+    },
+    school: {
+      title:'Honeybrook School', kicker:'Many doorways into learning',
+      text:'Professor Theodore Honeywell first lined pupils up by height and gave everyone the same lesson. Lena wanted to build something, Jamon asked to finish when he understood, and Rheanna had questions ready.',
+      detail:'He listened and changed the room. Now it has a reading corner, a puzzle table, a workbench, and room for pupils to help one another. Professor Honeywell still teaches; the children helped teach him how.',
+      image:'', links:[['Visit the learning hub','learningHub']]
+    },
+    bakery: {
+      title:'Wally’s Bakery', kicker:'A loaf saved for supper',
+      text:'Wally loves feeding the whole town. Amelia helped him see that the baker belongs at the table, too. He began saving one loaf for his own supper.',
+      detail:'Harold found the loaf under the counter on his route. “I DELIVER MAIL. I DO NOT DELIVER ADVICE.” He left the bread right there—and came back later to make sure Wally had eaten.',
+      image:'img/bakery.jpg', links:[['Visit Main Street','mainStreetWorld'],['Go to Honeybrook Fair','fair']]
+    },
+    square: {
+      title:'Town Square & Honeybrook Fair', kicker:'The heart of a town that grew together',
+      text:'The square holds a bronze statue of Goldilocks beside the Three Bears. It is where neighbors gather, share news, and celebrate together.',
+      detail:'Honeybrook Fair is one of the square’s special gatherings. The Fair’s original village, shops, and activities are ready to explore.',
+      image:'img/village.jpg', links:[['Open Honeybrook Fair','fair','primary-action'],['Explore the town square','townSquareWorld']]
+    },
+    hollow: {
+      title:'The Road to Bear Hollow', kicker:'Honeybrook’s neighbor across the creek road',
+      text:'Honeybrook shares Bear Hollow’s good honey, but leaves porridge to the Hollow. The Brook has no list of rules to earn a home.',
+      detail:'Here, harm still matters. Neighbors are asked for honesty, repair, and time. A bear can be held accountable and still belong.',
+      image:'img/hollow.jpg', links:[['Read the story trail','bundledStoryWorld']]
+    }
+  };
+  const sectionMap = {residentLifeWorld:'residentLifeWorld',bundledStoryWorld:'bundledStoryWorld',learningHub:'learningHub',mainStreetWorld:'mainStreetWorld',townSquareWorld:'townSquareWorld'};
+  let selected = 'bridge';
+  const visited = () => { try { return JSON.parse(localStorage.getItem('honeybrookTownJournal') || '[]'); } catch (_) { return []; } };
+  function markVisited(key) { const v=visited(); if(!v.includes(key)) v.push(key); try { localStorage.setItem('honeybrookTownJournal',JSON.stringify(v)); } catch (_) {} }
+  function show(title, html) {
+    body.innerHTML = html;
+    const h = document.createElement('h2'); h.id='hbWorldDialogTitle'; h.textContent=title;
+    const existing = body.querySelector('.hb-dialog-kicker');
+    if(existing) body.insertBefore(h, existing.nextSibling); else body.prepend(h);
+    if(!dialog.open) dialog.showModal();
+  }
+  function place(key) {
+    const p=places[key]; if(!p) return;
+    selected=key; markVisited(key);
+    const image=p.image ? '<img class="hb-place-art" src="'+fairRoot+p.image+'" alt="Illustrated '+escapeHtml(p.title)+' from Honeybrook Fair">' : '';
+    const links=p.links.map(link => link[1]==='fair'
+      ? '<a class="hb-fair-link '+(link[2]||'')+'" href="'+fairRoot+'">'+escapeHtml(link[0])+'</a>'
+      : '<button type="button" data-hb-dive="'+escapeHtml(sectionMap[link[1]]||link[1])+'">'+escapeHtml(link[0])+'</button>').join('');
+    show(p.title,'<p class="hb-dialog-kicker">'+escapeHtml(p.kicker)+'</p>'+image+'<p>'+escapeHtml(p.text)+'</p><p>'+escapeHtml(p.detail)+'</p><div class="hb-dialog-actions">'+links+'</div>');
+  }
+  function openTool(tool) {
+    const locations=Object.entries(places);
+    if(tool==='map' || tool==='walk') { dialog.close(); $('#hbPlayableWorld')?.scrollIntoView({behavior:'smooth',block:'start'}); return; }
+    if(tool==='interact') { place(selected); return; }
+    if(tool==='talk' || tool==='characters') {
+      show('Honeybrook’s Neighbors','<p class="hb-dialog-kicker">Meet the bears who made this town</p><div class="hb-dialog-list">'+[
+        ['Amelia Honeybrook','Founder. She left a light on for the next traveler.'],
+        ['Thomas “Tom” Bridgewell','Carpenter and stoneworker who repaired the creek bridge.'],
+        ['Sammy','Eleven years old. His welcome is “You can eat first.”'],
+        ['The Hearthwells','Templar, Buddy, Big Mama Mary, and Willie, remembered with love; Jonesha, Ja’Mya, Jamon, Robin, Rheanna, Lena, Lance, Landis and Landric.'],
+        ['Professor Theodore Honeywell','Teacher who learned to make room for different ways to learn.'],
+        ['Wally Crumbwell & Harold Pawst','A baker learning to save supper for himself, and the mail bear who always checks.']
+      ].map(x=>'<article><b>'+escapeHtml(x[0])+'</b><small>'+escapeHtml(x[1])+'</small></article>').join('')+'</div>');
+      return;
+    }
+    if(tool==='places') {
+      show('Places around Honeybrook','<p class="hb-dialog-kicker">Pick a path through town</p><div class="hb-dialog-list">'+locations.map(([key,p])=>'<button type="button" data-hb-place="'+key+'">'+escapeHtml(p.title)+'<small>'+escapeHtml(p.kicker)+'</small></button>').join('')+'</div>');
+      return;
+    }
+    if(tool==='journal') {
+      const v=visited(); const names=v.map(k=>places[k]?.title).filter(Boolean);
+      show('Your Honeybrook Journal','<p class="hb-dialog-kicker">A record of the places you have visited</p>'+ (names.length ? '<p>You have spent time at:</p><ul>'+names.map(n=>'<li>'+escapeHtml(n)+'</li>').join('')+'</ul>' : '<p>Your journal is waiting for its first town visit. Choose any place on the map to begin.</p>'));
+      return;
+    }
+    if(tool==='explore') {
+      show('A creekside mystery','<p class="hb-dialog-kicker">Something old is listening beneath the valley</p><p>After Amelia named the town for the golden girl in the old stories, the creek flashed gold for the briefest instant. A bee landed on the new sign and stayed after the light was gone. Amelia blamed the sunset. Tom blamed the water.</p><div class="hb-dialog-actions"><button type="button" data-hb-place="bridge">Visit the bridge</button><button type="button" data-hb-dive="bundledStoryWorld">Follow the story trail</button></div>');
+      return;
+    }
+    if(tool==='settings') {
+      show('Town settings','<p class="hb-dialog-kicker">Make Honeybrook comfortable for you</p><div class="hb-dialog-actions"><button type="button" data-hb-setting="large">Toggle larger text</button><button type="button" data-hb-setting="motion">Toggle reduced motion</button></div><p>These display choices stay on this device.</p>');
+    }
+  }
+  document.addEventListener('click', event => {
+    const placeButton=event.target.closest('[data-hb-place]');
+    if(placeButton){event.preventDefault();place(placeButton.dataset.hbPlace);return;}
+    const toolButton=event.target.closest('[data-hb-tool]');
+    if(toolButton){event.preventDefault();openTool(toolButton.dataset.hbTool);return;}
+    const dive=event.target.closest('[data-hb-dive]');
+    if(dive){event.preventDefault();const target=document.getElementById(dive.dataset.hbDive);dialog.close();if(target)target.scrollIntoView({behavior:'smooth',block:'start'});return;}
+    const setting=event.target.closest('[data-hb-setting]');
+    if(setting){event.preventDefault();document.body.classList.toggle(setting.dataset.hbSetting==='large'?'hb-large-text':'hb-reduced-motion');return;}
+  });
+})();
