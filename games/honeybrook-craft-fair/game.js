@@ -227,7 +227,7 @@ function updateHUD() {
   $('#hud-time').textContent = SLOTS[S.slot];
   $('#hud-wx').textContent = S.weather;
   const left = FAIR_DAY - S.day;
-  $('#hud-fair').textContent = left <= 0 ? 'Fair Day' : left === 1 ? 'Fair tomorrow' : `Fair in ${left} days`;
+  $('#hud-fair').textContent = left <= 0 ? 'Annual Fair Day' : left === 1 ? 'Annual Fair tomorrow' : `Annual Fair in ${left} days`;
   $('#hud-coins').textContent = S.coins;
   $('#hud-ribbons').textContent = S.ribbons;
   const ready = S.orders.filter(o => findItemFor(o)).length;
@@ -378,6 +378,33 @@ const AREAS = {
     { id: 'shelf1', kind: 'shelf', l: 76.5, t: 7.5, w: 18.5, h: 10 }, { id: 'shelf2', kind: 'shelf', l: 77, t: 18.6, w: 18, h: 10.3 }, { id: 'shelf3', kind: 'shelf', l: 77, t: 29.6, w: 18, h: 10.3 },
     { id: 'rug', kind: 'rug', l: 29, t: 77, w: 63, h: 17 },
   ] },
+  'story-village': { name: 'Honeybrook Village', img: 'img/village.jpg', back: 'village', backLabel: 'Back to Village Square', spots: [
+    { id: 'lore:bridge', label: 'Tom Bridgewell’s Bridge', l: 3, t: 53, w: 17, h: 20, hot: true },
+    { id: 'lore:welcome', label: 'Welcome House', l: 24, t: 34, w: 19, h: 24, hot: true },
+    { id: 'lore:family', label: 'The Hearthwell Family', l: 22, t: 65, w: 23, h: 19 },
+    { id: 'lore:school', label: 'Honeywell’s Learning Room', l: 49, t: 24, w: 18, h: 24 },
+    { id: 'lore:bakery', label: 'Wally’s Bakery', l: 75, t: 32, w: 19, h: 25 },
+    { id: 'lore:letter', label: 'Harold’s Hundred-Year Letter', l: 75, t: 59, w: 23, h: 18, hot: true },
+    { id: 'lore:statue', label: 'Goldilocks and the Three Bears', l: 41, t: 58, w: 22, h: 20, hot: true },
+    { id: 'lore:belonging', label: 'A Home for Whoever Needs One', l: 3, t: 77, w: 27, h: 18 },
+    { id: 'lore:shared', label: 'Honey and Porridge', l: 69, t: 72, w: 27, h: 20 },
+  ] },
+  'bear-hollow': { name: 'Bear Hollow', img: 'img/hollow.jpg', back: 'story-village', backLabel: 'Back to Honeybrook', spots: [
+    { id: 'lore:cottage', label: 'The Three Bears’ Cottage', l: 24, t: 20, w: 29, h: 28, hot: true },
+    { id: 'lore:blueflower', label: 'The Blue-Flower Honey Jar', l: 3, t: 58, w: 22, h: 20, hot: true },
+    { id: 'lore:hearth', label: 'The Hearth and the Empty Bowl', l: 57, t: 53, w: 24, h: 22 },
+    { id: 'lore:love', label: '“LOVE. Treat everybody right.”', l: 26, t: 76, w: 38, h: 16 },
+  ] },
+  'northern-woods': { name: 'The Northern Woods', img: 'img/northern-woods.svg', back: 'story-village', backLabel: 'Back to Honeybrook', spots: [
+    { id: 'lore:voices', label: 'The Voices in the Trees', l: 15, t: 45, w: 24, h: 21, hot: true },
+    { id: 'lore:forgotten', label: 'Stories in the Fog', l: 43, t: 62, w: 22, h: 20 },
+    { id: 'lore:mysterious', label: 'The Woman at the Tree Line', l: 69, t: 29, w: 24, h: 24 },
+  ] },
+  'storybook-lane': { name: 'Storybook Lane', img: 'img/storybook-lane.svg', back: 'northern-woods', backLabel: 'Back to the Woods', spots: [
+    { id: 'lore:glass', label: 'The Glass-Slipper Shop', l: 4, t: 38, w: 24, h: 28, hot: true },
+    { id: 'lore:gingerbread', label: 'The Gingerbread Cottage', l: 34, t: 26, w: 26, h: 28, hot: true },
+    { id: 'lore:ash', label: 'Ash’s Sourdough Bakery', l: 68, t: 41, w: 26, h: 28, hot: true },
+  ] },
 };
 function keepsake(it) { S.made = S.made || []; S.made.push({ ...it, day: S.day }); if (S.made.length > 60) S.made.shift(); }
 function drawDecor(c, W, H, it, kind) {
@@ -419,7 +446,7 @@ const Area = {
     }
     if (A.decor) this.renderRoom();
     const title = document.createElement('div'); title.className = 'area-title'; title.textContent = A.name; box.appendChild(title);
-    if (A.back) { const b = document.createElement('button'); b.className = 'btn btn-small area-back'; b.textContent = "Back to Bears' Den"; b.onclick = () => { Snd.sfx('click'); go('area', A.back); }; box.appendChild(b); }
+    if (A.back) { const b = document.createElement('button'); b.className = 'btn btn-small area-back'; b.textContent = A.backLabel || "Back to Bears' Den"; b.onclick = () => { Snd.sfx('click'); A.back === 'village' ? go('village') : go('area', A.back); }; box.appendChild(b); }
   },
   renderRoom() {
     const box = $('#area-spots'); S.room = S.room || {};
@@ -443,6 +470,7 @@ const Area = {
   },
   async spot(id) {
     Snd.sfx('click'); const day = S.day; S.restDay = S.restDay || {};
+    if (id.startsWith('lore:')) { await showLore(id.slice(5)); return; }
     if (id === 'room') { go('area', 'room'); if (!S.found?.room) { S.found = S.found || {}; S.found.room = true; toast('Your room. Click the empty spots to decorate with things you\'ve made.'); } return; }
     if (id.startsWith('ws:')) { if (S.usedSlot) { toast('Head back out to let some time pass first.'); } S.returnTo = this.cur; go('work', id.slice(3)); return; }
     if (id.startsWith('home:')) {
@@ -516,6 +544,40 @@ async function showStory() {
     : `<li class="story-ch locked"><b>${esc(t)}</b></li>`).join('');
   await modal(`<p class="kicker">Big Mama Mary's storybook</p><h2>Where the Stories Live</h2><p style="color:var(--ink-2);font-size:.9em;margin-top:-.4em">Book One, a story of Bear Hollow, Honeybrook, and the Northern Woods, by Templar Hughes-Bryant. ${n} of ${STORY.length} chapters told.</p><ul class="list story-list">${rows}</ul>`, [{ label: 'Close the book', primary: true }]);
   await checkWoods();
+}
+const LORE = {
+  bridge: ['The bridge into Honeybrook', 'During a storm, Amelia sheltered beneath a broken bridge. A gentle woman told her, “Rest tonight. Tomorrow may look different,” then vanished without footprints. The next day Amelia met Tom Bridgewell, a carpenter and stoneworker. They repaired the bridge together and built a small shelter for whoever needed it. That shelter became Honeybrook.'],
+  welcome: ['The Welcome House', 'The shelter grew into the Welcome House. When Sammy arrived, the welcome was simple: “You can eat first.” Food comes before questions here, and newcomers only tell their story when they want to.'],
+  family: ['The Hearthwell family', 'Templar is the family’s techie, Buddy is a veteran, and Big Mama Mary keeps the stories. Willie is remembered with love. Their children—Jonesha, Ja’Mya, Jamon, Robin, Rheanna, Lena, Lance, Landis, and Landric—each bring their own personality to the family and the town.'],
+  school: ['A room that learned to change', 'Professor Theodore Honeywell first brought identical lessons for every child. The children helped him make a room with a reading corner, a puzzle table, a workbench, and room for neighbors to help one another. The teacher changed his plan when he saw what his students needed.'],
+  bakery: ['Wally’s bakery', 'Wally makes bread and pastries for the village. Honeybrook learned that a giver needs to eat, too: caring for neighbors includes letting them care for you.'],
+  letter: ['The letter Harold kept', 'Harold Pawst is the mail bear. “I DELIVER MAIL. I DO NOT DELIVER MESSAGES.” He knows most things and delivers messages anyway. For a hundred years he carried a sealed letter Goldilocks asked him to deliver to a human who came asking about the beekeepers. When Carmen arrived, she learned she was their descendant; Harold gave her the letter and the history.'],
+  statue: ['The village square', 'A bronze Goldilocks stands with the Three Bears in the town square. The statue remembers the lost beekeeper’s daughter who found a family in Bear Hollow, and the hope that traveled with her to Honeybrook.'],
+  belonging: ['Honesty, repair, and belonging', 'Honeybrook asks for honesty and repair when harm is done. It does not make people earn a home or send newcomers away. Accountability and belonging can live together; people need time, safety, and a chance to make things right.'],
+  shared: ['Honey and porridge', 'Bear Hollow’s bees make unusually sweet honey, and Honeybrook shares in that sweetness. Honeybrook leaves porridge for Bear Hollow, but porridge belongs to the Hollow’s own rituals. The land does not take sides, and friendship does not require adopting another town’s rules.'],
+  cottage: ['The cottage that opened its door', 'After a spring river swept away her beekeeper parents, a seven-year-old girl followed the smell of porridge to the Three Bears’ unlatched cottage. She ate from the bowls and curled into the smallest bed. Mama Bear saw a lost child, not a trespasser: “She stays.” The girl became Goldilocks and learned to care for bees.'],
+  blueflower: ['The blue-flower cloth', 'The little beekeeper carried one jar of honey wrapped in cloth printed with tiny blue flowers. She had saved it when the river took her parents. Goldilocks brought that memory, and the bees’ work, into the family she found.'],
+  hearth: ['A bowl beside the hearth', 'Years later, a cruel winter took Mama Bear and Papa Bear. Goldilocks and Baby Bear relit the fire and tended the hives. They left a bowl beside the hearth for the ones they missed. In Bear Hollow, love meant showing up and caring for one another.'],
+  love: ['The Hollow’s rule', 'Bear Hollow’s rule was “LOVE. Treat everybody right.” It began as a promise of care, work, and repair. Over time fear shaped who was allowed to stay. Some bears were sent away; some were harmed, and some could not live under the rules. The town stopped saying their names. The story holds both the love that built the Hollow and the hurt its silence concealed.'],
+  voices: ['A voice for each bear', 'In the Northern Woods, each bear hears an individual voice calling their own name. It is a resonance and an invitation, not a command for everyone to follow the same call. Honeybrook respects the woods’ boundary and the choice each person makes.'],
+  forgotten: ['The stories in the fog', 'The fog and gloom hold fairy tales that have gone untold for a long time. A glass slipper chimes somewhere among the mushrooms. The woods draw people who feel lost or lonely; their sacredness asks for sympathy, not fear or another rule.'],
+  mysterious: ['The woman at the tree line', 'A woman sometimes appears at the edge of the Northern Woods. Amelia remembers the same gentle woman from the night beneath the broken bridge. She offered rest, disappeared without footprints, and left no explanation.'],
+  glass: ['The glass-slipper shop', 'Deep beyond the fog and the last reach of daylight, Storybook Lane opens in a clearing. A shop keeps glass slippers safe among the stories that are still waiting to be told.'],
+  gingerbread: ['The gingerbread cottage', 'The Lane gathers storybook homes together: here stands a gingerbread cottage, beside shops and a bakery. It appears when old stories are brought back to life. The lane had waited a hundred years.'],
+  ash: ['Ash’s bakery', 'Ash used to be called the Big Bad Wolf. Now he is rounder, kind, and bakes sourdough. He offers a seat and says, “Sit down, kid. Let me tell you what the books got wrong.”'],
+};
+async function showLore(id) { const item = LORE[id]; if (!item) return; await modal(`<p class="kicker">Where the Stories Live</p><h2>${esc(item[0])}</h2><p>${esc(item[1])}</p>`, [{ label: 'Keep exploring', primary: true }]); }
+async function showStoryTrail() {
+  const lane = S.woodsOpen;
+  const choices = [
+    ['village', 'Honeybrook Village', 'Amelia, Tom, the Welcome House, and the town that makes room.'],
+    ['bear-hollow', 'Bear Hollow', 'Goldilocks, the Three Bears, the bees, and the meaning of the Hollow’s rule.'],
+    ['northern-woods', 'Northern Woods', 'A boundary honored by the towns, and a voice that calls each bear by name.'],
+    ['storybook-lane', lane ? 'Storybook Lane' : 'Storybook Lane · not yet', lane ? 'The glass-slipper shop, gingerbread cottage, and Ash’s bakery.' : 'The Lane appears after the whole first book has been told.'],
+  ];
+  const html = choices.map(([id, name, desc]) => `<button class="recipe-btn" data-val="${id}" ${id === 'storybook-lane' && !lane ? 'disabled' : ''}><b>${esc(name)}</b><small>${esc(desc)}</small></button>`).join('');
+  const choice = await modal(`<p class="kicker">Explore the book’s places</p><h2>The Story Trail</h2><p>Walk through the places in <i>Where the Stories Live</i>. Tap a sign in each scene to hear its part of the story.</p><div class="recipe-grid">${html}</div>`, [{ label: 'Close', value: 'close' }]);
+  if (choice && choice !== 'close' && (choice !== 'storybook-lane' || S.woodsOpen)) go('area', choice);
 }
 /* ------------------------------------------------------------------ */
 /* Orders, basket, store                                              */
@@ -720,7 +782,7 @@ async function onPlace(p) {
   if (p === 'den' || p === 'hive' || p === 'rest') { go('area', p); return; }
   if (p === 'hollowroad') { go('work', 'hollow'); return; }
   if (p === 'woods') {
-    if (S.woodsOpen) { await modal(`<p class="kicker">The Northern Woods</p><h2>The path is open</h2><p>The dark between the trunks looks like a doorway held open. Somewhere past the fog, Storybook Lane is waiting: a glass-slipper shop, a gingerbread cottage, and a bakery where a kind wolf named Ash sets loaves on the rack.</p><p style="color:var(--ink-2);font-size:.9em">This path opens with Book Two.</p>`, [{ label: 'Not yet', primary: true }]); return; }
+    if (S.woodsOpen) { const v = await modal(`<p class="kicker">The Northern Woods</p><h2>The lane is calling</h2><p>Past the fog, a clearing has appeared with a glass-slipper shop, a gingerbread cottage, and a bakery where Ash sets sourdough on the rack.</p>`, [{ label: 'Stay in Honeybrook' }, { label: 'Follow the lights', primary: true, value: 'lane' }]); if (v === 'lane') go('area', 'storybook-lane'); return; }
     const seen = Math.random() < 0.35;
     await modal(`<p class="kicker">The edge of town</p><h2>The Northern Woods</h2><p>North of Honeybrook, the trees grow close together and the light behaves strangely. Bear Hollow's elders forbid anyone to enter. Honeybrook honors the boundary.</p>${seen ? '<p><b>For a moment, a woman stands at the tree line, watching you. Then she\'s gone.</b></p>' : '<p>Fog sits low between the trunks. Somewhere deep inside, something chimes, like a glass slipper touching stone.</p>'}`, [{ label: 'Leave the woods be', primary: true }]);
     return;
@@ -2167,7 +2229,7 @@ function ribbonSVG(col) { return `<svg viewBox="0 0 60 80"><path d="M18 40 L8 78
 async function countyFair() {
   S.day = FAIR_DAY; S.slot = 1; S.weather = 'Sunny'; updateHUD(); go('village');
   Snd.sfx('fanfare');
-  await modal(`<p class="kicker">Fair Day</p><h2>The Honeybrook County Fair</h2><p>Bunting flaps in the breeze, a fiddle plays by the fountain, and the whole village gathers in the square. Big Mama Mary has saved you a seat up front.</p><p>The judges are ready to look at your best work from this season.</p>`, [{ label: 'Hear the results', primary: true }]);
+  await modal(`<p class="kicker">Annual Fair Day</p><h2>The Honeybrook Annual Craft Fair</h2><p>Bunting flaps in the breeze, a fiddle plays by the fountain, and the whole village gathers in the square. Big Mama Mary has saved you a seat up front.</p><p>The judges are ready to look at your best work from this year. Open Story Trail any time to walk through the places from the book.</p>`, [{ label: 'Hear the results', primary: true }]);
   const res = [];
   const add = (cat, entry, score, detail) => { const r = entry ? ribbonFor(score) : null; res.push({ cat, entry, score, r, detail }); if (r) { S.ribbons++; S.coins += r[2] * 10; } };
   for (const [k, label] of Object.entries(CATS)) add(label, S.best[k]?.name, S.best[k]?.score || 0, '');
@@ -2177,10 +2239,10 @@ async function countyFair() {
   const lines = res.map(x => x.entry ? `<li class="row"><div class="grow"><b>${x.cat}</b><small>${esc(x.entry)}</small></div><b>${x.r ? '+' + x.r[2] * 10 + ' coins' : '—'}</b></li>` : '').join('');
   const won = res.filter(x => x.r).length;
   updateHUD(); Snd.sfx(won ? 'fanfare' : 'meh');
-  await modal(`<p class="kicker">Judges' results · Season ${S.season}</p><h2>${res.every(x => x.r && x.r[2] === 3) ? 'A clean sweep of blue ribbons!' : won ? 'Ribbons for ' + esc(S.name) + '!' : 'Better luck next fair'}</h2><div class="ribbon-row">${cards}</div><p>${won ? 'Buddy is grinning ear to ear, and Big Mama Mary is telling everybody she taught you everything you know.' : 'The whole village cheered anyway. Next season is yours.'}</p>`, [{ label: 'Begin a new season', primary: true }]);
+  await modal(`<p class="kicker">Annual Fair results · Year ${S.season}</p><h2>${res.every(x => x.r && x.r[2] === 3) ? 'A clean sweep of blue ribbons!' : won ? 'Ribbons for ' + esc(S.name) + '!' : 'Better luck next fair'}</h2><div class="ribbon-row">${cards}</div><p>${won ? 'Buddy is grinning ear to ear, and Big Mama Mary is telling everybody she taught you everything you know.' : 'The whole village cheered anyway. There will be another annual fair next year.'}</p>`, [{ label: 'Begin a new year', primary: true }]);
   S.season++; S.day = 1; S.slot = 0; S.weather = rollWeather(); S.best = {}; S.delivered = 0; S.orders = []; refreshOrders();
   updateHUD(); Village.populate();
-  toast(`Season ${S.season} begins. The next fair is in ${FAIR_DAY - 1} days.`);
+  toast(`Fair Year ${S.season} begins. The next annual fair is in ${FAIR_DAY - 1} days.`);
 }
 
 
@@ -2255,6 +2317,7 @@ $('#btn-orders').onclick = () => { Snd.sfx('click'); showOrders(); };
 $('#btn-basket').onclick = () => { Snd.sfx('click'); showBasket(); };
 $('#btn-shop').onclick = () => { Snd.sfx('click'); showStore(); };
 $('#btn-story').onclick = () => { Snd.sfx('click'); showStory(); };
+$('#btn-storytrail').onclick = () => { Snd.sfx('click'); showStoryTrail(); };
 $('#btn-sound').onclick = () => { Snd.init(); const on = Snd.toggle(); $('#snd-waves').style.opacity = on ? 1 : 0.15; };
 $('#player-name').addEventListener('keydown', e => { if (e.key === 'Enter') $('#btn-start').click(); });
 $('#btn-start').onclick = async () => {
@@ -2262,7 +2325,7 @@ $('#btn-start').onclick = async () => {
   S.name = ($('#player-name').value || '').trim() || 'Friend';
   S.weather = 'Sunny'; refreshOrders();
   $('#hud').hidden = false; go('village'); Save.push(true);
-  await modal(`<p class="kicker">The bridge into Honeybrook</p><h2>Welcome, ${esc(S.name)}</h2><p>You came over the creek in the rain with tired feet and nowhere in particular to go. On the far side of Tom Bridgewell's bridge, a bear named Amelia was waiting with a lantern.</p><p style="font-family:var(--font-d);font-size:1.1em">"If you need a place," she said, "we'll make one."</p><p>Sammy pushed a plate toward you. "You can eat first." They gave you the spare room at the Welcome House.</p><p>In <b>${FAIR_DAY - 1} days</b>, Honeybrook holds its County Craft Fair beneath the bronze statue of Goldilocks and the Three Bears. Every shop is open: <b>Wally's Bakery</b>, the <b>Sewing Cottage</b>, <b>Yarn Shop</b>, <b>Painter's Studio</b>, Tom's <b>Craft Barn</b>, the <b>Fishing Pond</b>, your own <b>Garden Plot</b>, and up the old creek road, <b>Bear Hollow</b>, with its hives and porridge pots. Harold Pawst brings <b>orders</b>. Fill them to earn coins.</p><p>Signposts at the bottom of the square lead to <b>Bears' Den</b> (the homes, including your own room to decorate), <b>Bears' Hive</b> (the market stall and new shops), and <b>Bears' Rest</b> (a quiet meadow to sit and remember). Chat with neighbors every day and bring them gifts to become friends.</p><p>Each visit to a shop takes one part of the day. Garden chores don't. Kindness makes the honey glow brighter here, and golden honey makes everything sweeter.</p><p>Big Mama Mary carries the town's stories. Finish projects and fill orders, and she'll tell you the story of Goldilocks and Bear Hollow, one chapter at a time.</p>`, [{ label: 'Step into the square', primary: true }]);
+  await modal(`<p class="kicker">The bridge into Honeybrook</p><h2>Welcome, ${esc(S.name)}</h2><p>You came over the creek in the rain with tired feet and nowhere in particular to go. On the far side of Tom Bridgewell's bridge, a bear named Amelia was waiting with a lantern.</p><p style="font-family:var(--font-d);font-size:1.1em">"If you need a place," she said, "we'll make one."</p><p>Sammy pushed a plate toward you. "You can eat first." They gave you the spare room at the Welcome House.</p><p>In <b>${FAIR_DAY - 1} days</b>, Honeybrook holds its annual County Craft Fair beneath the bronze statue of Goldilocks and the Three Bears. Every shop is open: <b>Wally's Bakery</b>, the <b>Sewing Cottage</b>, <b>Yarn Shop</b>, <b>Painter's Studio</b>, Tom's <b>Craft Barn</b>, the <b>Fishing Pond</b>, your own <b>Garden Plot</b>, and up the old creek road, <b>Bear Hollow</b>, with its hives and porridge pots. Harold Pawst brings <b>orders</b>. Fill them to earn coins.</p><p>Use the new <b>Story Trail</b> button to explore Honeybrook, Bear Hollow, and the Northern Woods as the book describes them. Storybook Lane appears when the whole first book has been told. The other signposts lead to Bears' Den, Hive, and Rest. Chat with neighbors, make things for the fair, and bring gifts to become friends.</p><p>Each visit to a shop takes one part of the day. Garden chores don't. Kindness makes the honey glow brighter here, and golden honey makes everything sweeter.</p><p>Big Mama Mary carries the town's stories. Finish projects and fill orders, and she'll tell you the story of Goldilocks and Bear Hollow, one chapter at a time.</p>`, [{ label: 'Step into the square', primary: true }]);
 };
 
 /* testing hooks */
