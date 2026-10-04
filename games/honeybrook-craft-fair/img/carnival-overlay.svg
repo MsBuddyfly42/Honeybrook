@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1000" role="img" aria-label="A little Honeybrook carnival with a Ferris wheel, carousel, circus tent, games and food stands">
+<defs>
+ <linearGradient id="gold" x2="0" y2="1"><stop stop-color="#ffe59a"/><stop offset=".55" stop-color="#d5912d"/><stop offset="1" stop-color="#8f571c"/></linearGradient>
+ <linearGradient id="berry" x2="0" y2="1"><stop stop-color="#f18a7f"/><stop offset="1" stop-color="#9f3448"/></linearGradient>
+ <linearGradient id="cream" x2="0" y2="1"><stop stop-color="#fff7df"/><stop offset="1" stop-color="#dcc89d"/></linearGradient>
+ <linearGradient id="sage" x2="0" y2="1"><stop stop-color="#b2c884"/><stop offset="1" stop-color="#597546"/></linearGradient>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur in="SourceAlpha" stdDeviation="7"/><feOffset dy="9"/><feComponentTransfer><feFuncA type="linear" slope=".32"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <g id="bulb"><circle r="8" fill="#fff3b1" stroke="#d9a54d" stroke-width="3"/><circle r="3" fill="#fff"/></g>
+</defs>
+<!-- warm festoon lights -->
+<path d="M0 183 Q380 315 760 184 T1500 190" fill="none" stroke="#53341d" stroke-width="8"/>
+<g filter="url(#shadow)">
+ <use href="#bulb" x="90" y="219"/><use href="#bulb" x="240" y="257"/><use href="#bulb" x="390" y="277"/><use href="#bulb" x="540" y="273"/><use href="#bulb" x="690" y="235"/><use href="#bulb" x="840" y="207"/><use href="#bulb" x="990" y="213"/><use href="#bulb" x="1140" y="244"/><use href="#bulb" x="1290" y="264"/><use href="#bulb" x="1440" y="224"/>
+</g>
+<!-- Ferris wheel: wood and painted gondolas -->
+<g filter="url(#shadow)" stroke-linecap="round" stroke-linejoin="round">
+ <path d="M170 756 L315 369 L462 756 M225 756 L315 369 L406 756" fill="none" stroke="#744b2b" stroke-width="17"/>
+ <circle cx="315" cy="513" r="179" fill="#fff4d8" fill-opacity=".18" stroke="url(#gold)" stroke-width="18"/>
+ <circle cx="315" cy="513" r="151" fill="none" stroke="#9a682e" stroke-width="8"/>
+ <g stroke="#b77b32" stroke-width="7">
+  <path d="M315 334V692 M136 513H494 M188 386L442 640 M188 640L442 386 M247 348L383 678 M150 454L480 572 M150 572L480 454 M247 678L383 348"/>
+ </g><circle cx="315" cy="513" r="23" fill="url(#gold)" stroke="#75471e" stroke-width="7"/>
+ <g stroke="#674321" stroke-width="6">
+  <path d="M315 334v29 M442 386l-21 21 M494 513h-29 M442 640l-21-21 M315 692v-29 M188 640l21-21 M136 513h29 M188 386l21 21"/>
+ </g>
+ <g stroke="#fff0c8" stroke-width="4">
+  <path d="M289 365h52l-3 51h-46z" fill="#b4414c"/><path d="M416 412l44 22-26 44-41-23z" fill="#6d8c57"/>
+  <path d="M449 487h51v52h-51z" fill="#e5ae46"/><path d="M416 569l42 23-27 44-43-23z" fill="#6d8da0"/>
+  <path d="M289 611h52l-3 51h-46z" fill="#a94557"/><path d="M169 569l44-22 24 44-43 23z" fill="#e9c878"/>
+  <path d="M130 487h51v52h-51z" fill="#6d8c57"/><path d="M169 412l44-22 24 44-43 23z" fill="#ce7752"/>
+ </g>
+</g>
+<!-- carousel -->
+<g filter="url(#shadow)" stroke-linejoin="round">
+ <ellipse cx="754" cy="755" rx="196" ry="43" fill="#986428" stroke="#67431f" stroke-width="12"/>
+ <ellipse cx="754" cy="739" rx="180" ry="37" fill="#f2d49a" stroke="#bd8634" stroke-width="8"/>
+ <path d="M575 587 Q754 422 933 587 L900 630 Q754 509 608 630z" fill="url(#berry)" stroke="#824326" stroke-width="9"/>
+ <path d="M602 580 Q650 520 697 493 L719 543 Q677 566 637 610z M719 543 Q754 524 790 543 L798 497 Q754 477 710 497z M798 543 Q841 566 880 610 L900 580 Q853 519 811 493z" fill="url(#cream)" opacity=".96"/>
+ <path d="M577 587 Q754 422 933 587" fill="none" stroke="#ffe7a2" stroke-width="17"/>
+ <path d="M605 610v119 M665 568v157 M718 540v179 M790 540v179 M845 568v157 M902 610v119" stroke="#c38a3c" stroke-width="9"/>
+ <g fill="#fff0cc" stroke="#754b25" stroke-width="7">
+  <path d="M630 656h47l12 22-11 13h-52l-11-13z"/><path d="M703 635h48l13 22-12 13h-52l-11-13z"/><path d="M779 635h48l13 22-12 13h-52l-11-13z"/><path d="M852 656h47l13 22-12 13h-51l-12-13z"/>
+ </g>
+ <g fill="#a8344a"><circle cx="651" cy="672" r="7"/><circle cx="724" cy="652" r="7"/><circle cx="800" cy="652" r="7"/><circle cx="875" cy="672" r="7"/></g>
+ <path d="M754 430v-55" stroke="#81521d" stroke-width="10"/><path d="M754 377l-28-34 28 8 29-8z" fill="#e9a91b" stroke="#81521d" stroke-width="5"/>
+</g>
+<!-- striped circus tent -->
+<g filter="url(#shadow)" stroke-linejoin="round">
+ <path d="M1022 697 Q1032 477 1285 335 Q1538 477 1548 697z" fill="#fff0cf" stroke="#734824" stroke-width="12"/>
+ <path d="M1022 697 Q1049 488 1285 335 L1194 697z" fill="#b53c50" stroke="#8e293d" stroke-width="7"/>
+ <path d="M1194 697 Q1214 433 1285 335 L1376 697z" fill="#f8e6c0" stroke="#8e293d" stroke-width="7"/>
+ <path d="M1376 697 Q1452 488 1285 335 L1548 697z" fill="#b53c50" stroke="#8e293d" stroke-width="7"/>
+ <path d="M1007 698 Q1285 639 1560 698 L1551 758 Q1284 702 1015 758z" fill="url(#gold)" stroke="#734824" stroke-width="10"/>
+ <path d="M1194 697 Q1285 612 1376 697 V762 H1194z" fill="#703d32" stroke="#693d25" stroke-width="8"/>
+ <path d="M1234 754 Q1235 684 1285 664 Q1335 684 1336 754" fill="#a8344a" stroke="#f2d79f" stroke-width="9"/>
+ <path d="M1285 335v-89" stroke="#71451f" stroke-width="9"/><path d="M1284 260l-52-28 52 8 56-8z" fill="#e4ae42" stroke="#71451f" stroke-width="5"/>
+ <g fill="#fff0c8"><path d="M1070 705l26-4 4 15-27 4z"/><path d="M1130 693l28-3 2 16-29 4z"/><path d="M1413 694l28 4-3 16-28-4z"/><path d="M1481 706l27 4-4 15-27-4z"/></g>
+</g>
+<!-- food carts, foreground -->
+<g filter="url(#shadow)" font-family="Nunito,Arial,sans-serif" font-weight="900" text-anchor="middle">
+ <g>
+  <path d="M35 850h240v84H35z" fill="#7a4d2c" stroke="#58351f" stroke-width="9"/><path d="M25 847h260l-14-80H39z" fill="#f3dba8" stroke="#764b29" stroke-width="9"/>
+  <path d="M42 775h44l12 72H29z M111 775h45v72h-45z M180 775h44l31 72h-48z" fill="#c14a5a"/>
+  <path d="M52 747h214v36H52z" fill="url(#gold)" stroke="#764b29" stroke-width="7"/>
+  <text x="159" y="773" font-size="22" fill="#fff8e6" stroke="none">COTTON CANDY</text>
+  <circle cx="88" cy="933" r="18" fill="#4b3421"/><circle cx="220" cy="933" r="18" fill="#4b3421"/>
+ </g>
+ <g>
+  <path d="M370 850h240v84H370z" fill="#7a4d2c" stroke="#58351f" stroke-width="9"/><path d="M360 847h260l-14-80h-232z" fill="#f3dba8" stroke="#764b29" stroke-width="9"/>
+  <path d="M377 775h44l12 72h-69z M446 775h45v72h-45z M515 775h44l31 72h-48z" fill="#a8344a"/>
+  <path d="M387 747h214v36H387z" fill="url(#gold)" stroke="#764b29" stroke-width="7"/>
+  <text x="494" y="773" font-size="22" fill="#fff8e6" stroke="none">CANDY APPLES</text>
+  <circle cx="423" cy="933" r="18" fill="#4b3421"/><circle cx="555" cy="933" r="18" fill="#4b3421"/>
+ </g>
+ <g>
+  <path d="M700 850h240v84H700z" fill="#7a4d2c" stroke="#58351f" stroke-width="9"/><path d="M690 847h260l-14-80H704z" fill="#f3dba8" stroke="#764b29" stroke-width="9"/>
+  <path d="M707 775h44l12 72h-69z M776 775h45v72h-45z M845 775h44l31 72h-48z" fill="#d6922f"/>
+  <path d="M717 747h214v36H717z" fill="#a8344a" stroke="#764b29" stroke-width="7"/>
+  <text x="824" y="773" font-size="22" fill="#fff8e6" stroke="none">FUNNEL CAKES</text>
+  <circle cx="753" cy="933" r="18" fill="#4b3421"/><circle cx="885" cy="933" r="18" fill="#4b3421"/>
+ </g>
+</g>
+</svg>

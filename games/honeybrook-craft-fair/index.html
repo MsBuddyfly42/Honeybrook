@@ -51,32 +51,27 @@
       <button class="spot" data-place="paint" style="left:52%;top:28%;width:19%;height:24%"><span class="sign">Painter's Studio</span></button>
       <button class="spot" data-place="barn" style="left:72%;top:20%;width:22%;height:33%"><span class="sign">Craft Barn</span></button>
       <button class="spot" data-place="pond" style="left:85%;top:56%;width:15%;height:26%"><span class="sign">Fishing Pond</span></button>
+      <button class="spot fair-carnival-gate" data-place="carnival" style="left:80%;top:5%;width:18%;height:16%"><span class="sign">🎪 Little Carnival</span></button>
       <button class="spot" data-place="garden" style="left:0%;top:70%;width:15%;height:28%"><span class="sign">Garden Plot</span></button>
-      <button class="spot quiet" data-place="fountain" style="left:37%;top:51%;width:22%;height:22%"><span class="sign">Goldilocks Fountain</span></button>
-      <button class="spot" data-place="hollowroad" style="left:49%;top:12%;width:10%;height:15%"><span class="sign">To Bear Hollow</span></button>
-      <button class="spot quiet" data-place="woods" style="left:73%;top:8%;width:18%;height:11%"><span class="sign">Northern Woods</span></button>
-      <button class="spot quiet" data-place="bench" style="left:16%;top:80%;width:15%;height:12%"><span class="sign">Willie's Bench</span></button>
     </div>
     <div id="villagers"></div>
-    <div class="area-signs">
-      <button class="spot area-sign" data-place="den" style="left:33%;top:85%;width:12%;height:9%"><span class="sign">Bears' Den</span></button>
-      <button class="spot area-sign" data-place="hive" style="left:46%;top:85%;width:12%;height:9%"><span class="sign">Bears' Hive</span></button>
-      <button class="spot area-sign" data-place="rest" style="left:59%;top:85%;width:12%;height:9%"><span class="sign">Bears' Rest</span></button>
-    </div>
     <div id="teddy" class="teddy" hidden title="Your teddy bear"></div>
   </section>
 
   <!-- Honeybrook town walk; separate from the Fair square so every original shop stays in place. -->
   <section id="scene-town" class="scene town-scene" aria-label="Explore Honeybrook town">
     <img class="bg town-bg" src="img/honeybrook-town-map.jpg" alt="Honeybrook with its repaired creek bridge, Welcome House, neighbors' cottages, school, bakery, and Goldilocks with the Three Bears statue">
-    <div class="town-heading"><p class="town-kicker">THE PLACE AMELIA AND TOM BUILT</p><h2>Honeybrook, with room for every neighbor</h2><p>Choose a place to visit. The Fair shops and activities are waiting back at the square.</p></div>
+    <div class="town-heading"><p class="town-kicker">THE PLACE AMELIA AND TOM BUILT</p><h2>Honeybrook, with room for every neighbor</h2><p>Bear’s Den, Bear’s Hive, and Bear’s Rest are part of Honeybrook town. The Fair is the shops and little carnival at the square.</p></div>
     <nav class="town-markers" aria-label="Honeybrook locations">
       <button class="town-marker" data-town-place="welcome" style="left:12%;top:51%"><span class="town-icon">🏡</span><span><b>Welcome House</b><small>First shelter, open door</small></span></button>
       <button class="town-marker" data-town-place="school" style="left:83%;top:31%"><span class="town-icon">📚</span><span><b>Honeybrook School</b><small>Professor Honeywell's room</small></span></button>
       <button class="town-marker" data-town-place="homes" style="left:34%;top:48%"><span class="town-icon">🏘️</span><span><b>Neighbors' Homes</b><small>Built together, one by one</small></span></button>
       <button class="town-marker" data-town-place="bakery" style="left:88%;top:62%"><span class="town-icon">🥖</span><span><b>Wally's Bakery</b><small>Step inside and bake</small></span></button>
       <button class="town-marker" data-town-place="bridge" style="left:50%;top:80%"><span class="town-icon">🌉</span><span><b>Creek Bridge</b><small>Amelia and Tom's first work</small></span></button>
-      <button class="town-marker town-marker-square" data-town-place="square" style="left:70%;top:50%"><span class="town-icon">⛲</span><span><b>Fair Square &amp; Statue</b><small>Return to the Fair shops</small></span></button>
+      <button class="town-marker town-marker-square" data-town-place="square" style="left:70%;top:50%"><span class="town-icon">⛲</span><span><b>Town Square &amp; Fair</b><small>Shops, treats, rides, and circus</small></span></button>
+      <button class="town-marker town-district-marker" data-town-place="den" style="left:17%;top:70%"><span class="town-icon">🏡</span><span><b>Bear’s Den</b><small>Neighborhood homes</small></span></button>
+      <button class="town-marker town-district-marker" data-town-place="hive" style="left:54%;top:24%"><span class="town-icon">🍯</span><span><b>Bear’s Hive</b><small>Town market and shops</small></span></button>
+      <button class="town-marker town-district-marker" data-town-place="rest" style="left:69%;top:77%"><span class="town-icon">🌿</span><span><b>Bear’s Rest</b><small>Quiet garden and memory</small></span></button>
     </nav>
     <div class="town-footnote">A gentle walk around town · Visiting places does not use up your day</div>
   </section>
@@ -96,6 +91,30 @@
     <canvas id="work-canvas"></canvas>
     <aside id="work-card" class="panel paper craft-card"></aside>
     <div id="work-controls" class="controls"></div>
+  </section>
+
+  <!-- HONEYBROOK LITTLE CARNIVAL -->
+  <section id="scene-carnival" class="scene carnival-scene" aria-label="Honeybrook Little Carnival">
+    <img class="bg" src="img/village.jpg" alt="Honeybrook Fair village square dressed for its little autumn carnival">
+    <div class="carnival-wash"></div>
+    <img class="carnival-illustration" src="img/carnival-overlay.svg" alt="">
+    <div class="carnival-heading panel paper"><p class="town-kicker">HONEYBROOK FAIR MIDWAY</p><h2>The Little Carnival</h2><p>Sweet treats, merry rides, midway games, and one very special circus show.</p></div>
+    <div class="carnival-treats" aria-label="Carnival food stands">
+      <button class="carnival-stop food-stop" data-carnival="cotton"><b>Cotton Candy</b><small>Cloud-soft and spun fresh</small></button>
+      <button class="carnival-stop food-stop" data-carnival="apple"><b>Candy Apples</b><small>Shiny, crisp, and sweet</small></button>
+      <button class="carnival-stop food-stop" data-carnival="funnel"><b>Funnel Cakes</b><small>Warm with a snowfall of sugar</small></button>
+      <button class="carnival-stop food-stop extra-treat" data-carnival="popcorn"><b>Popcorn &amp; Lemonade</b><small>Classic midway snacks</small></button>
+    </div>
+    <div class="carnival-ride-stops" aria-label="Rides and attractions">
+      <button class="carnival-stop ride-stop ferris-stop" data-carnival="wheel"><b>Honeywheel</b><small>Take a slow ride above the lights</small></button>
+      <button class="carnival-stop ride-stop carousel-stop" data-carnival="carousel"><b>Honey-Go-Round</b><small>Pick a painted pony</small></button>
+      <button class="carnival-stop game-stop ring-stop" data-carnival="rings"><b>Ring Toss</b><small>Win tickets on the midway</small></button>
+      <button class="carnival-stop game-stop duck-stop" data-carnival="ducks"><b>Lucky Duck Pond</b><small>Pick a duck and see what you find</small></button>
+      <button class="carnival-stop game-stop balloon-stop" data-carnival="balloons"><b>Balloon Pop</b><small>Choose the right balloon</small></button>
+      <button class="carnival-stop circus-stop" data-carnival="circus"><b>Little Circus Show</b><small>Three acts · one golden finale</small></button>
+    </div>
+    <div class="carnival-ticket-purse"><span>🎟️ Carnival tickets</span><b id="carnivalTickets">0</b><button type="button" data-carnival="prizes">Prize Booth</button></div>
+    <div class="carnival-footnote">The Fair is part of Honeybrook. The town’s homes and gathering places are just across the map.</div>
   </section>
 
   <!-- AREAS: Bears' Den, Hive, Rest, Your Room -->

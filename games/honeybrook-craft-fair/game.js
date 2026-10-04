@@ -86,7 +86,7 @@ const Snd = {
   },
   ambience() {
     if (!this.ctx) return;
-    const outdoor = S.scene === 'village' || S.scene === 'town' || S.scene === 'pond' || S.scene === 'garden' || (S.scene === 'work' && S.wsPlace === 'hollow') || (S.scene === 'area' && S.area !== 'room');
+    const outdoor = S.scene === 'village' || S.scene === 'town' || S.scene === 'carnival' || S.scene === 'pond' || S.scene === 'garden' || (S.scene === 'work' && S.wsPlace === 'hollow') || (S.scene === 'area' && S.area !== 'room');
     const target = outdoor && S.weather === 'Rainy' ? 0.07 : 0;
     this.ambGain.gain.setTargetAtTime(target, this.ctx.currentTime, 0.6);
   },
@@ -186,7 +186,7 @@ const UPGRADES = [
 /* ------------------------------------------------------------------ */
 const S = {
   name: 'Friend', day: 1, slot: 0, weather: 'Sunny', season: 1,
-  coins: 20, ribbons: 0, basket: [], orders: [], owned: {}, delivered: 0,
+  coins: 20, ribbons: 0, basket: [], orders: [], owned: {}, delivered: 0, carnivalTickets: 0, carnivalTreats: [],
   best: {}, gallery: [], garden: Array.from({ length: 6 }, () => ({ crop: null })), scene: 'title', usedSlot: false,
   storyPts: 0, glow: 20, woodsOpen: false, woodsCall: false,
 };
@@ -230,6 +230,7 @@ function updateHUD() {
   $('#hud-fair').textContent = left <= 0 ? 'Annual Fair Day' : left === 1 ? 'Annual Fair tomorrow' : `Annual Fair in ${left} days`;
   $('#hud-coins').textContent = S.coins;
   $('#hud-ribbons').textContent = S.ribbons;
+  const ticketCount = $('#carnivalTickets'); if (ticketCount) ticketCount.textContent = S.carnivalTickets || 0;
   const ready = S.orders.filter(o => findItemFor(o)).length;
   $('#orders-badge').textContent = ready ? ready : '';
   $('#btn-home').hidden = S.scene === 'village' || S.scene === 'title';
@@ -256,7 +257,7 @@ function applyAtmosphere() {
 /* ------------------------------------------------------------------ */
 /* Scenes                                                             */
 /* ------------------------------------------------------------------ */
-function backOut() { const r = S.returnTo; S.returnTo = null; if (r === 'town') go('town'); else if (r) go('area', r); else go('village'); }
+function backOut() { const r = S.returnTo; S.returnTo = null; if (r === 'town') go('town'); else if (r === 'village') go('village'); else if (r) go('area', r); else go('village'); }
 function go(scene, arg) {
   S.scene = scene; if (scene === 'area') S.area = arg;
   $$('.scene').forEach(s => s.classList.toggle('active', s.id === 'scene-' + scene));
@@ -351,14 +352,14 @@ const DECOR = {
   rug: ['blanket', 'quilt', 'granny'],
 };
 const AREAS = {
-  den: { name: "Bears' Den", img: 'img/den.jpg', spots: [
+  den: { name: "Bears' Den", img: 'img/den.jpg', back: 'town', backLabel: 'Back to Honeybrook', spots: [
     { id: 'room', label: 'Welcome House · Your Room', l: 42, t: 22, w: 20, h: 34, hot: true },
     { id: 'home:hearthwell', label: 'Hearthwell House', l: 1, t: 22, w: 27, h: 45 },
     { id: 'home:amelia', label: "Amelia's Cottage", l: 29, t: 36, w: 12, h: 22 },
     { id: 'home:harold', label: "Harold's House", l: 66, t: 34, w: 13, h: 18 },
     { id: 'home:wally', label: "Wally's Cottage", l: 81, t: 10, w: 19, h: 55 },
   ] },
-  hive: { name: "Bears' Hive", img: 'img/hive.jpg', spots: [
+  hive: { name: "Bears' Hive", img: 'img/hive.jpg', back: 'town', backLabel: 'Back to Honeybrook', spots: [
     { id: 'stall', label: 'Market Stall · Sell', l: 0, t: 30, w: 21, h: 60, hot: true },
     { id: 'ws:cakes', label: 'Cake Shop', l: 22, t: 22, w: 15, h: 48 },
     { id: 'ws:beads', label: 'Bead & Jewel Shop', l: 38, t: 18, w: 19, h: 52 },
@@ -366,7 +367,7 @@ const AREAS = {
     { id: 'ws:salon', label: 'Braiding Salon', l: 79, t: 12, w: 21, h: 64 },
     { id: 'soon', label: 'More shops coming', l: 40, t: 80, w: 22, h: 12 },
   ] },
-  rest: { name: "Bears' Rest", img: 'img/rest.jpg', spots: [
+  rest: { name: "Bears' Rest", img: 'img/rest.jpg', back: 'town', backLabel: 'Back to Honeybrook', spots: [
     { id: 'bench', label: "Willie's Bench", l: 14, t: 40, w: 22, h: 20 },
     { id: 'stones', label: 'Remembrance Stones', l: 20, t: 63, w: 26, h: 17 },
     { id: 'stump', label: 'Storytelling Stump', l: 61, t: 63, w: 16, h: 20 },
@@ -447,7 +448,7 @@ const Area = {
     }
     if (A.decor) this.renderRoom();
     const title = document.createElement('div'); title.className = 'area-title'; title.textContent = A.name; box.appendChild(title);
-    if (A.back) { const b = document.createElement('button'); b.className = 'btn btn-small area-back'; b.textContent = A.backLabel || "Back to Bears' Den"; b.onclick = () => { Snd.sfx('click'); A.back === 'village' ? go('village') : go('area', A.back); }; box.appendChild(b); }
+    if (A.back) { const b = document.createElement('button'); b.className = 'btn btn-small area-back'; b.textContent = A.backLabel || "Back to Bears' Den"; b.onclick = () => { Snd.sfx('click'); A.back === 'village' ? go('village') : A.back === 'town' ? go('town') : go('area', A.back); }; box.appendChild(b); }
   },
   renderRoom() {
     const box = $('#area-spots'); S.room = S.room || {};
@@ -759,6 +760,7 @@ $('#teddy').innerHTML = teddySVG();
 
 async function onPlace(p) {
   Snd.sfx('click');
+  if (p === 'carnival') { S.returnTo = 'village'; go('carnival'); return; }
   if (p === 'bakery') { go('bakery'); return; }
   if (p === 'pond') { go('pond'); return; }
   if (WORKSHOPS[p]) { go('work', p); return; }
@@ -797,7 +799,8 @@ $('#scene-village').addEventListener('click', e => { if (!e.target.closest('.vil
 
 async function onTownPlace(place) {
   Snd.sfx('click');
-  if (place === 'square') { go('village'); toast('Back at the Fair square. All the familiar shops are open.'); return; }
+  if (place === 'square') { go('village'); toast('Welcome to the Fair shops and little carnival.'); return; }
+  if (place === 'den' || place === 'hive' || place === 'rest') { S.returnTo = 'town'; go('area', place); return; }
   if (place === 'bakery') { S.returnTo = 'town'; go('bakery'); return; }
   const visits = {
     welcome: `<p class="kicker">A light in the window</p><h2>The Welcome House</h2><p>Amelia and Tom first left a small shelter beside their repaired bridge, so a traveler would always have somewhere dry to rest. Neighbors added blankets, a stove, and a proper roof. The shelter grew into the Welcome House, where the door stays open for anyone who needs a place.</p>`,
@@ -2272,7 +2275,7 @@ const Save = {
   headers() { const h = { 'Content-Type': 'application/json' }; if (this.base.includes('localhost')) h['X-Save-Id'] = 'local-test'; return h; },
   snapshot() {
     return { v: 1, name: S.name, day: S.day, slot: S.slot, weather: S.weather, season: S.season, coins: S.coins, ribbons: S.ribbons,
-      basket: S.basket, orders: S.orders, owned: S.owned, delivered: S.delivered, best: S.best, gallery: S.gallery, garden: S.garden,
+      basket: S.basket, orders: S.orders, owned: S.owned, delivered: S.delivered, best: S.best, gallery: S.gallery, garden: S.garden, carnivalTickets: S.carnivalTickets || 0, carnivalTreats: S.carnivalTreats || [],
       friend: S.friend || {}, talked: S.talked || {}, made: S.made || [], room: S.room || {}, restDay: S.restDay || {}, homeGift: S.homeGift || {}, storyPts: S.storyPts || 0, glow: S.glow ?? 20, woodsOpen: !!S.woodsOpen, woodsCall: !!S.woodsCall, storyNew: !!S.storyNew, found: S.found || {}, usedSlot: !!S.usedSlot, savedAt: Date.now() };
   },
   async load() {
@@ -2290,7 +2293,7 @@ const Save = {
   },
   async wipe() { try { await fetch(this.base + '/api/save', { method: 'DELETE', headers: this.headers() }); } catch (e) { } this.last = ''; },
   apply(d) {
-    const keys = ['name', 'day', 'slot', 'weather', 'season', 'coins', 'ribbons', 'basket', 'orders', 'owned', 'delivered', 'best', 'gallery', 'garden', 'found', 'friend', 'talked', 'made', 'room', 'restDay', 'homeGift', 'storyPts', 'glow', 'woodsOpen', 'woodsCall', 'storyNew'];
+    const keys = ['name', 'day', 'slot', 'weather', 'season', 'coins', 'ribbons', 'basket', 'orders', 'owned', 'delivered', 'best', 'gallery', 'garden', 'carnivalTickets', 'carnivalTreats', 'found', 'friend', 'talked', 'made', 'room', 'restDay', 'homeGift', 'storyPts', 'glow', 'woodsOpen', 'woodsCall', 'storyNew'];
     for (const k of keys) if (d[k] !== undefined) S[k] = d[k];
     if (!Array.isArray(S.garden) || S.garden.length !== 6) S.garden = Array.from({ length: 6 }, () => ({ crop: null }));
     S.usedSlot = false;
@@ -2307,7 +2310,7 @@ async function continueGame(d) {
   Save.apply(d); refreshOrders();
   $('#hud').hidden = false; go('village');
   toast(`Welcome back to Honeybrook, ${S.name}.`);
-  S.found = S.found || {}; if (!S.found.v4) { S.found.v4 = true; setTimeout(() => modal(`<p class="kicker">New in Honeybrook</p><h2>Three new places</h2><p>Look for the green signposts at the bottom of the square:</p><ul class="list"><li class="row"><div class="grow"><b>Bears' Den</b><small>The homes of Honeybrook, including your own room to decorate with things you make</small></div></li><li class="row"><div class="grow"><b>Bears' Hive</b><small>A market stall for selling, plus the Cake Shop, Bead & Jewel Shop, Woodshop, and Braiding Salon</small></div></li><li class="row"><div class="grow"><b>Bears' Rest</b><small>A quiet meadow with Willie's Bench, the Remembrance Stones, and wildflowers</small></div></li></ul><p>Talk to neighbors every day and give them gifts. Friends invite you into their homes.</p>`, [{ label: 'Go explore', primary: true }]), 900); }
+  S.found = S.found || {}; if (!S.found.v4) { S.found.v4 = true; setTimeout(() => modal(`<p class="kicker">New in Honeybrook</p><h2>Three new places</h2><p>Open the Town Map from the Fair square to visit all three places in Honeybrook town:</p><ul class="list"><li class="row"><div class="grow"><b>Bears' Den</b><small>The homes of Honeybrook, including your own room to decorate with things you make</small></div></li><li class="row"><div class="grow"><b>Bears' Hive</b><small>A market stall for selling, plus the Cake Shop, Bead & Jewel Shop, Woodshop, and Braiding Salon</small></div></li><li class="row"><div class="grow"><b>Bears' Rest</b><small>A quiet meadow with Willie's Bench, the Remembrance Stones, and wildflowers</small></div></li></ul><p>Talk to neighbors every day and give them gifts. Friends invite you into their homes.</p>`, [{ label: 'Go explore', primary: true }]), 900); }
   if (d.usedSlot) await advanceTime();
   Save.push(true);
 }
@@ -2342,11 +2345,92 @@ $('#btn-start').onclick = async () => {
   S.name = ($('#player-name').value || '').trim() || 'Friend';
   S.weather = 'Sunny'; refreshOrders();
   $('#hud').hidden = false; go('village'); Save.push(true);
-  await modal(`<p class="kicker">The bridge into Honeybrook</p><h2>Welcome, ${esc(S.name)}</h2><p>You came over the creek in the rain with tired feet and nowhere in particular to go. On the far side of Tom Bridgewell's bridge, a bear named Amelia was waiting with a lantern.</p><p style="font-family:var(--font-d);font-size:1.1em">"If you need a place," she said, "we'll make one."</p><p>Sammy pushed a plate toward you. "You can eat first." They gave you the spare room at the Welcome House.</p><p>In <b>${FAIR_DAY - 1} days</b>, Honeybrook holds its annual County Craft Fair beneath the bronze statue of Goldilocks and the Three Bears. Every shop is open: <b>Wally's Bakery</b>, the <b>Sewing Cottage</b>, <b>Yarn Shop</b>, <b>Painter's Studio</b>, Tom's <b>Craft Barn</b>, the <b>Fishing Pond</b>, your own <b>Garden Plot</b>, and up the old creek road, <b>Bear Hollow</b>, with its hives and porridge pots. Harold Pawst brings <b>orders</b>. Fill them to earn coins.</p><p>Use the new <b>Story Trail</b> button to explore Honeybrook, Bear Hollow, and the Northern Woods as the book describes them. Storybook Lane appears when the whole first book has been told. The other signposts lead to Bears' Den, Hive, and Rest. Chat with neighbors, make things for the fair, and bring gifts to become friends.</p><p>Each visit to a shop takes one part of the day. Garden chores don't. Kindness makes the honey glow brighter here, and golden honey makes everything sweeter.</p><p>Big Mama Mary carries the town's stories. Finish projects and fill orders, and she'll tell you the story of Goldilocks and Bear Hollow, one chapter at a time.</p>`, [{ label: 'Step into the square', primary: true }]);
+  await modal(`<p class="kicker">The bridge into Honeybrook</p><h2>Welcome, ${esc(S.name)}</h2><p>You came over the creek in the rain with tired feet and nowhere in particular to go. On the far side of Tom Bridgewell's bridge, a bear named Amelia was waiting with a lantern.</p><p style="font-family:var(--font-d);font-size:1.1em">"If you need a place," she said, "we'll make one."</p><p>Sammy pushed a plate toward you. "You can eat first." They gave you the spare room at the Welcome House.</p><p>In <b>${FAIR_DAY - 1} days</b>, Honeybrook holds its annual County Craft Fair beneath the bronze statue of Goldilocks and the Three Bears. Every shop is open: <b>Wally's Bakery</b>, the <b>Sewing Cottage</b>, <b>Yarn Shop</b>, <b>Painter's Studio</b>, Tom's <b>Craft Barn</b>, the <b>Fishing Pond</b>, your own <b>Garden Plot</b>, and up the old creek road, <b>Bear Hollow</b>, with its hives and porridge pots. Harold Pawst brings <b>orders</b>. Fill them to earn coins.</p><p>Use the new <b>Story Trail</b> button to explore Honeybrook, Bear Hollow, and the Northern Woods as the book describes them. Storybook Lane appears when the whole first book has been told. Bear's Den, Bear's Hive and Bear's Rest are all in Honeybrook town. Return to the Fair square for its craft shops, midway games, and little circus.</p><p>Each visit to a shop takes one part of the day. Garden chores don't. Kindness makes the honey glow brighter here, and golden honey makes everything sweeter.</p><p>Big Mama Mary carries the town's stories. Finish projects and fill orders, and she'll tell you the story of Goldilocks and Bear Hollow, one chapter at a time.</p>`, [{ label: 'Step into the square', primary: true }]);
 };
 
 /* testing hooks */
 window.render_game_to_text = () => JSON.stringify({ scene: S.scene, day: S.day, slot: SLOTS[S.slot], weather: S.weather, coins: S.coins, ribbons: S.ribbons, basket: S.basket.length, orders: S.orders.map(o => o.who + ':' + o.text), work: Work.st && { craft: Work.st.craft.id, done: Work.st.done }, garden: S.garden.map(b => b.crop ? b.crop + ':' + b.stage : '-').join(','), bake: Bakery.st && { phase: Bakery.st.phase, i: Bakery.st.i, fill: +Bakery.st.fill.toFixed(2), mix: +Bakery.st.mix.toFixed(2), bake: +Bakery.st.bake.toFixed(2) }, pond: Pond.st && { phase: Pond.st.phase, casts: Pond.st.casts, reel: Pond.st.reel && { prog: +Pond.st.reel.prog.toFixed(2) } } });
 window.__S = S; window.__Work = Work; window.__Garden = Garden; window.__WS = WORKSHOPS;
 window.__reelDbg = () => Pond.st && Pond.st.reel && { fish: Pond.st.reel.fish, bar: Pond.st.reel.bar, h: Pond.st.reel.h, prog: Pond.st.reel.prog };
+
+/* ------------------------------------------------------------------ */
+/* Honeybrook Fair's little midway                                    */
+/* ------------------------------------------------------------------ */
+const Carnival = {
+  snack: {
+    cotton: { name: 'Cotton Candy', icon: '🍭', cost: 2, line: 'A cloud-soft swirl spun fresh at the midway.' },
+    apple: { name: 'Candy Apple', icon: '🍎', cost: 3, line: 'A crisp apple with a shiny red sugar shell.' },
+    funnel: { name: 'Funnel Cake', icon: '🍰', cost: 4, line: 'Warm, golden ribbons dusted with powdered sugar.' },
+    popcorn: { name: 'Popcorn & Lemonade', icon: '🍿', cost: 3, line: 'A little salty, a little sweet, and nice to share.' }
+  },
+  async visit(kind) {
+    if (this.snack[kind]) return this.buy(kind);
+    if (kind === 'wheel' || kind === 'carousel') return this.ride(kind);
+    if (kind === 'prizes') return this.prizes();
+    if (kind === 'rings' || kind === 'ducks' || kind === 'balloons') return this.game(kind);
+    if (kind === 'circus') return this.circus();
+  },
+  async buy(kind) {
+    const item = this.snack[kind];
+    if (S.coins < item.cost) {
+      await modal(`<p class="kicker">Midway Treats</p><h2>${item.icon} ${item.name}</h2><p>${item.line}</p><p>This treat costs <b>${item.cost} coins</b>. You have <b>${S.coins}</b>. You can earn coins at the market stall or enjoy the rides and shows for free.</p>`, [{label:'Back to the midway',primary:true}]);
+      return;
+    }
+    const choice = await modal(`<p class="kicker">A little carnival treat</p><h2>${item.icon} ${item.name}</h2><p>${item.line}</p><p>Spend <b>${item.cost} coins</b>? You have ${S.coins} coins. Treats are saved in your Fair keepsakes.</p>`, [{label:'Maybe later'}, {label:`Enjoy one · ${item.cost} coins`,primary:true,value:'buy'}]);
+    if (choice !== 'buy') return;
+    S.coins -= item.cost; S.carnivalTreats = S.carnivalTreats || []; S.carnivalTreats.push(kind);
+    Snd.sfx('good'); updateHUD(); Save.push(true);
+    await modal(`<p class="kicker">Fresh from the midway</p><h2>Yum! ${item.name}</h2><p>${item.line}</p><p>You have enjoyed ${S.carnivalTreats.length} carnival ${S.carnivalTreats.length === 1 ? 'treat' : 'treats'} so far. Take your time—there is no rush to leave the Fair.</p>`, [{label:'Back to the carnival',primary:true}]);
+  },
+  async ride(kind) {
+    const wheel = kind === 'wheel';
+    const name = wheel ? 'Honeywheel' : 'Honey-Go-Round';
+    const text = wheel
+      ? 'The little Ferris wheel lifts you above Honeybrook. At the top, you can see the creek bridge, the welcome house, and the Fair lights all at once.'
+      : 'Painted ponies circle beneath strings of golden lights. You choose a honey-colored pony with a blue saddle.';
+    const value = await modal(`<p class="kicker">A gentle Fair ride</p><h2>${wheel ? '🎡' : '🎠'} ${name}</h2><div class="carnival-act"><span class="act-icon">${wheel ? '🎡' : '🐴'}</span><p>${text}</p><p>${wheel ? 'The wheel makes 3 turns. If you count 4 lanterns on each side, how many lanterns can you spot altogether?' : 'The carousel has 8 ponies. Two are resting behind the curtain. How many ponies are ready to ride?'}</p></div>`,
+      [{label:'2'}, {label:'6'}, {label:'8',primary:true,value:'correct'}, {label:'12'}]);
+    S.usedSlot = true;
+    if (value === 'correct') { Snd.sfx('good'); toast(wheel ? 'Twelve lanterns—nice counting!' : 'Six ponies are ready—well counted!'); }
+    else { Snd.sfx('click'); toast('The ride is the prize. Want to count it together next time?'); }
+  },
+  async game(kind) {
+    const q = {
+      rings: { title:'Ring Toss', icon:'🎯', intro:'The rings have to land around the bottle neck. Before you toss, solve the midway number riddle:', prompt:'A prize shelf has 3 honey jars and 4 berry jars. How many jars are there altogether?', answers:[['6','6'],['7','7'],['8','8']], correct:'7', tickets:3, hint:'Try counting on from 3: 4, 5, 6, 7.' },
+      ducks: { title:'Lucky Duck Pond', icon:'🦆', intro:'Three ducks drift by. Pick the one with the word that has a long A sound:', prompt:'Which duck carries a long A word?', answers:[['CAT','cat'],['CAKE','cake'],['CAN','can']], correct:'cake', tickets:2, hint:'The silent e at the end helps the A say its name: cake.' },
+      balloons: { title:'Balloon Pop', icon:'🎈', intro:'Pick the balloon that completes the pattern:', prompt:'🔴  🔵  🔴  🔵  🔴  ?', answers:[['🔴','red'],['🟡','yellow'],['🔵','blue']], correct:'blue', tickets:2, hint:'The colors take turns: red, blue, red, blue, red…' }
+    }[kind];
+    const ans = await modal(`<p class="kicker">Midway challenge · Just for fun</p><h2>${q.icon} ${q.title}</h2><p>${q.intro}</p><div class="carnival-act"><p><b>${q.prompt}</b></p></div><p>Take a thoughtful guess. A wrong answer is just another chance to learn.</p>`,
+      q.answers.map(([label,val])=>({label,primary:val===q.correct,value:val})));
+    S.usedSlot = true;
+    if (ans === q.correct) {
+      S.carnivalTickets = (S.carnivalTickets || 0) + q.tickets;
+      Snd.sfx('good'); updateHUD(); Save.push(true);
+      await modal(`<p class="kicker">Well done!</p><h2>${q.icon} ${q.title}</h2><p>${q.hint}</p><p>You earned <b>${q.tickets} carnival tickets</b>. Your purse now holds ${S.carnivalTickets}.</p>`,[{label:'Back to the midway',primary:true}]);
+    } else {
+      S.carnivalTickets = (S.carnivalTickets || 0) + 1;
+      Snd.sfx('click'); updateHUD(); Save.push(true);
+      await modal(`<p class="kicker">A good try</p><h2>Let’s work it out together</h2><p>${q.hint}</p><p>You still earned <b>1 carnival ticket</b> for giving it a try. Your purse now holds ${S.carnivalTickets}.</p>`,[{label:'Back to the midway',primary:true}]);
+    }
+  },
+  async circus() {
+    const robin = await modal(`<p class="kicker">Under the big top</p><h2>🎪 The Honeybrook Little Circus</h2><p>Find a seat beneath the striped tent. Robin is ready to sing, Templar has brought a clockwork bee, and Big Mama Mary is saving a story for the finale. The acts are friendly, the audience can join in, and everyone gets a warm welcome.</p><div class="carnival-act"><span class="act-icon">🎤</span><b>Act One · Robin’s rhyme</b><p>Robin sings: “A bear brought a pear, and sat in a ___.” Which word rhymes?</p></div>`,[{label:'chair',primary:true,value:'right'},{label:'river',value:'wrong'},{label:'honey',value:'wrong'}]);
+    let score = robin === 'right' ? 1 : 0;
+    const bee = await modal(`<p class="kicker">Act Two · Templar’s clockwork bee</p><h2>🐝 Follow the golden lights</h2><p>The bee blinks a pattern: <b>gold, blue, gold, blue, gold…</b> Which light should blink next?</p>`,[{label:'Gold',value:'wrong'},{label:'Blue',primary:true,value:'right'},{label:'Green',value:'wrong'}]);
+    if (bee === 'right') score++;
+    const story = await modal(`<p class="kicker">Act Three · Big Mama Mary’s story</p><h2>📖 The traveler at the door</h2><p>A new cub arrives in the rain. What does Sammy’s Honeybrook welcome say first?</p>`,[{label:'“Tell us everything.”',value:'wrong'},{label:'“You can eat first.”',primary:true,value:'right'},{label:'“Come back tomorrow.”',value:'wrong'}]);
+    if (story === 'right') score++;
+    S.usedSlot = true;
+    const tickets = 2 + score;
+    S.carnivalTickets = (S.carnivalTickets || 0) + tickets;
+    Snd.sfx('good'); updateHUD(); Save.push(true);
+    await modal(`<p class="kicker">The circus finale</p><h2>✨ A standing ovation!</h2><p>The clockwork bee loops over the tent, Robin leads the crowd in the final chorus, and Big Mama Mary tells a story where everyone gets to come in from the rain.</p><p>You got ${score} of 3 audience challenges right and earned <b>${tickets} carnival tickets</b>. Everyone at the little circus belongs in the show.</p>`,[{label:'Back to the midway',primary:true}]);
+  },
+  async prizes() {
+    const choice = await modal(`<p class="kicker">Prize Booth</p><h2>🎟️ Trade tickets for a Fair ribbon</h2><p>Choose a keepsake for your collection. A ribbon costs 6 tickets. You have <b>${S.carnivalTickets || 0}</b>.</p><p>Ribbons are just for fun. You can keep exploring even if you save your tickets.</p>`,[{label:'Keep my tickets'},{label:'Trade 6 tickets for a ribbon',primary:true,disabled:(S.carnivalTickets||0)<6,value:'trade'}]);
+    if (choice === 'trade') { S.carnivalTickets -= 6; S.ribbons = (S.ribbons || 0) + 1; Snd.sfx('good'); updateHUD(); Save.push(true); toast('A shiny Fair ribbon joins your keepsakes!'); }
+  }
+};
+document.querySelectorAll('[data-carnival]').forEach(button => button.addEventListener('click', () => { Snd.sfx('click'); Carnival.visit(button.dataset.carnival); }));
+
 })();

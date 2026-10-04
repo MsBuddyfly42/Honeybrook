@@ -182,3 +182,56 @@ h1 span{color:var(--berry);font-size:.78em}
 .town-icon{display:grid;place-items:center;flex:0 0 2em;height:2em;border-radius:50%;background:#f1e3c4;font-size:1.15em}.town-marker b,.town-marker small{display:block;white-space:nowrap}.town-marker b{font:800 .9em/1.1 var(--font-d)}.town-marker small{margin-top:.15em;color:#65513d;font-size:.69em;line-height:1.1}.town-marker-square{background:#fff0c9;border-color:#b78432}
 .town-footnote{position:absolute;z-index:3;right:1.1%;bottom:1.6%;padding:.35em .7em;border-radius:999px;background:rgba(48,39,29,.78);color:#fff8e7;font-size:.72em;font-weight:800;box-shadow:0 2px 8px rgba(0,0,0,.2)}
 @media (max-width:760px){.town-heading{top:11%;width:79%;padding:.55em .75em}.town-heading h2{font-size:1.18em}.town-heading p:last-child{font-size:.72em}.town-marker{gap:.25em;min-height:2.5em;padding:.25em .4em;border-width:1px;border-radius:.7em}.town-icon{flex-basis:1.5em;height:1.5em;font-size:.9em}.town-marker b{font-size:.68em}.town-marker small{font-size:.53em}.town-footnote{font-size:.58em;max-width:42%;text-align:right}}
+
+/* Honeybrook Town map districts and the separate Fair midway */
+.town-district-marker{max-width:15em;min-height:2.9em;background:rgba(247,236,212,.97);border-color:#a8793e}
+.town-district-marker .town-icon{flex-basis:1.7em;height:1.7em;font-size:1rem}
+.fair-carnival-gate .sign{background:#a8344a!important;color:#fff8e7!important;border-color:#74202f!important;box-shadow:0 2px 0 #74202f,0 4px 12px #27180f66!important}
+.carnival-scene{background:#302116}
+.carnival-wash{position:absolute;z-index:1;inset:0;background:linear-gradient(180deg,rgba(31,20,13,.12),transparent 30%,rgba(37,24,14,.28))}
+.carnival-illustration{position:absolute;z-index:2;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
+.carnival-heading{position:absolute;z-index:4;left:50%;top:7%;transform:translateX(-50%);width:min(47%,33em);padding:.65em 1em;text-align:center;border:2px solid #c9a96e}
+.carnival-heading .town-kicker{margin:0;font-size:.62em;letter-spacing:.14em;color:#87591c;font-weight:900}
+.carnival-heading h2{margin:.08em 0;font:800 1.7em/1.05 var(--font-d);color:var(--ink)}
+.carnival-heading p:last-child{margin:.2em 0 0;font-size:.78em;color:var(--ink-2)}
+.carnival-stop{position:absolute;z-index:5;display:grid;gap:.12em;justify-items:center;min-width:10.5em;padding:.35em .65em;border:2px solid #c9a96e;border-radius:999px;background:rgba(255,247,226,.96);color:var(--ink);font:inherit;text-align:center;box-shadow:0 3px 0 rgba(97,63,30,.8),0 6px 14px rgba(0,0,0,.3);cursor:pointer;transition:transform .18s,filter .18s}
+.carnival-stop:hover,.carnival-stop:focus-visible{transform:translateY(-4px) scale(1.04);filter:brightness(1.06);outline:3px solid #fff3d6;outline-offset:2px}
+.carnival-stop b{font:800 .86em var(--font-d)}
+.carnival-stop small{font-size:.64em;font-weight:700;color:var(--ink-2)}
+.carnival-treats,.carnival-ride-stops{position:absolute;inset:0;z-index:5;pointer-events:none}
+.carnival-treats .carnival-stop,.carnival-ride-stops .carnival-stop{pointer-events:auto}
+.cotton{left:8%;top:80%}.apple{left:31%;top:80%}.funnel{left:54%;top:80%}.popcorn{left:77%;top:80%}
+.carnival-stop[data-carnival="cotton"]{left:7%;top:82%}
+.carnival-stop[data-carnival="apple"]{left:28%;top:82%}
+.carnival-stop[data-carnival="funnel"]{left:49%;top:82%}
+.carnival-stop[data-carnival="popcorn"]{left:72%;top:82%}
+.ferris-stop{left:11%;top:48%}.carousel-stop{left:43%;top:58%}.ring-stop{left:70%;top:69%}.duck-stop{left:70%;top:55%}.balloon-stop{left:47%;top:70%}
+.circus-stop{left:82%;top:48%;min-width:12em;background:#a8344a;color:#fff7e7;border-color:#74202f;box-shadow:0 3px 0 #74202f,0 6px 16px #24170d55}
+.circus-stop small{color:#fff0d8}
+.carnival-ticket-purse{position:absolute;z-index:7;right:1%;top:1%;display:flex;align-items:center;gap:.4em;padding:.35em .6em;border:1.5px solid #c9a96e;border-radius:999px;background:rgba(251,243,226,.96);box-shadow:0 2px 0 #8d693e;font-size:.77em;font-weight:800;color:var(--ink)}
+.carnival-ticket-purse b{background:#2f6b8a;color:white;padding:.16em .48em;border-radius:999px}
+.carnival-ticket-purse button{border:0;border-radius:999px;background:#c8862a;color:white;padding:.35em .65em;font-size:.86em;font-weight:900;cursor:pointer}
+.carnival-footnote{position:absolute;z-index:3;bottom:1%;left:50%;transform:translateX(-50%);padding:.3em .7em;max-width:94%;white-space:nowrap;border-radius:999px;background:rgba(48,39,29,.78);color:#fff8e7;font-size:.66em;font-weight:800}
+.carnival-act{padding:1em;background:linear-gradient(135deg,#fff7e6,#f3e3bf);border:2px solid #c9a96e;border-radius:12px;box-shadow:0 3px 0 #98703f;margin:.65em 0}
+.carnival-act .act-icon{font-size:2.2em;float:left;margin:.1em .55em .25em 0}
+@media(max-width:760px){
+ .town-district-marker{max-width:9.5em;min-height:2.3em;padding:.22em .35em}
+ .town-district-marker small{font-size:.48em}
+ .town-marker[data-town-place="den"]{left:18%!important;top:71%!important}
+ .town-marker[data-town-place="hive"]{left:54%!important;top:23%!important}
+ .town-marker[data-town-place="rest"]{left:70%!important;top:77%!important}
+ .carnival-heading{top:8%;width:52%;padding:.4em .55em}.carnival-heading h2{font-size:1.22em}.carnival-heading p:last-child{font-size:.63em}
+ .carnival-stop{min-width:0;width:21%;padding:.24em .25em;border-width:1px}
+ .carnival-stop b{font-size:.63em}.carnival-stop small{display:none}
+ .carnival-stop[data-carnival="cotton"]{left:2%;top:82%;width:22%}
+ .carnival-stop[data-carnival="apple"]{left:26%;top:82%;width:22%}
+ .carnival-stop[data-carnival="funnel"]{left:50%;top:82%;width:22%}
+ .carnival-stop[data-carnival="popcorn"]{left:74%;top:82%;width:22%}
+ .ferris-stop{left:4%;top:48%}.carousel-stop{left:40%;top:56%}.ring-stop{left:72%;top:69%}.duck-stop{left:72%;top:54%}.balloon-stop{left:42%;top:69%}
+ .circus-stop{left:75%;top:43%;width:22%}
+ .carnival-ticket-purse{top:1%;right:1%;font-size:.58em}.carnival-footnote{display:none}
+}
+
+.carnival-illustration{animation:carnival-wheel-wiggle 22s ease-in-out infinite alternate}
+@keyframes carnival-wheel-wiggle{from{transform:scale(1)}to{transform:scale(1.035)}}
+.carnival-scene .bg{filter:saturate(1.12) brightness(.9)}
