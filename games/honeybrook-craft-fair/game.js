@@ -233,7 +233,8 @@ function updateHUD() {
   const ticketCount = $('#carnivalTickets'); if (ticketCount) ticketCount.textContent = S.carnivalTickets || 0;
   const ready = S.orders.filter(o => findItemFor(o)).length;
   $('#orders-badge').textContent = ready ? ready : '';
-  $('#btn-home').hidden = S.scene === 'village' || S.scene === 'title';
+  $('#btn-home').hidden = S.scene === 'village' || S.scene === 'title' || S.scene === 'home';
+  $('#hud-toggle').hidden = $('#hud').hidden;
   $('#btn-town').hidden = S.scene !== 'village';
   $('#teddy').hidden = !S.owned.teddy;
   $('#hud-glow').textContent = (S.glow || 0) + '%';
@@ -259,6 +260,7 @@ function applyAtmosphere() {
 /* ------------------------------------------------------------------ */
 function backOut() { const r = S.returnTo; S.returnTo = null; if (r === 'town') go('town'); else if (r === 'village') go('village'); else if (r) go('area', r); else go('village'); }
 function go(scene, arg) {
+  if (scene === 'home' && S.scene !== 'home') Stay.returnTarget = { scene: S.scene, area: S.area };
   S.scene = scene; if (scene === 'area') S.area = arg;
   $$('.scene').forEach(s => s.classList.toggle('active', s.id === 'scene-' + scene));
   $('#bubble').hidden = true;
@@ -837,6 +839,24 @@ const STAY_PLACES = {
 };
 const Stay = {
   stayPlace:null,
+  returnTarget:null,
+  returnLabel(){
+    const t=this.returnTarget;
+    if(t?.scene==='town') return '← Back to Honeybrook';
+    if(t?.scene==='village') return '← Back to Village Square';
+    if(t?.scene==='area') return '← Back to '+(AREAS[t.area]?.name||'Honeybrook');
+    if(t?.scene==='carnival') return '← Back to the Little Carnival';
+    if(this.returnArea==='bear-hollow') return '← Back to Bear Hollow';
+    if(this.returnArea==='den') return '← Back to Bear’s Den';
+    return '← Back to Honeybrook';
+  },
+  goBack(){
+    const t=this.returnTarget;
+    if(t?.scene==='area'&&AREAS[t.area]) return go('area',t.area);
+    if(t&&['town','village','carnival'].includes(t.scene)) return go(t.scene);
+    if(AREAS[this.returnArea]) return go('area',this.returnArea);
+    return go('town');
+  },
   enter(key){
     this.stayPlace=key; const p=STAY_PLACES[key]; if(!p){go('town');return;}
     $('#home-title').textContent=p.title; $('#home-kicker').textContent=p.kicker; $('#home-description').textContent=p.desc;
@@ -845,7 +865,7 @@ const Stay = {
     const room=$('#home-room'); room.className='home-room '+key; room.classList.toggle('home-cottage',key.startsWith('home-'));
     const box=$('#home-objects'); box.innerHTML='';
     p.objects.forEach(([id,icon,label])=>{const b=document.createElement('button');b.className='home-object object-'+(p.objects.findIndex(o=>o[0]===id)+1);b.dataset.homeObject=id;b.setAttribute('aria-label',label);b.innerHTML='<span class="home-hotspot-mark" aria-hidden="true"></span><b>'+esc(label)+'</b>';box.appendChild(b);});
-    $('#home-back').textContent=this.returnArea==='bear-hollow'?'← Back to Bear Hollow':this.returnArea==='den'?'← Back to Bear’s Den':'← Back to town map';
+    $('#home-back').textContent=this.returnLabel();
     if(p.owner){S.homeGift=S.homeGift||{};if(!S.homeGift[p.owner]){S.homeGift[p.owner]=true;const g=HOMES[p.owner].gift;if(g.coins)S.coins+=g.coins;if(g.glow)S.glow=clamp((S.glow||0)+g.glow,0,100);updateHUD();Save.push(true);toast(g.text);}}
   },
   async touch(id){
@@ -2396,7 +2416,18 @@ async function continueGame(d) {
 /* ------------------------------------------------------------------ */
 /* Boot                                                               */
 /* ------------------------------------------------------------------ */
-$('#btn-home').onclick = () => { Snd.sfx('click'); if ((S.scene === 'bakery' && Bakery.st && Bakery.st.phase !== 'done') || (S.scene === 'work' && Work.st && !Work.st.done)) { modal('<h2>Leave your project?</h2><p>What you\'ve started will go to waste, and this part of the day will be used up.</p>', [{ label: 'Stay' }, { label: 'Leave', primary: true, value: 'go' }]).then(v => v === 'go' && leaveActivity()); return; } leaveActivity(); };
+const hudToggle = $('#hud-toggle');
+function setHudMenuOpen(open) {
+  $('#hud').classList.toggle('hud-open', open);
+  hudToggle.setAttribute('aria-expanded', String(open));
+  hudToggle.title = open ? 'Close game menu' : 'Open game menu';
+  hudToggle.textContent = open ? '× Close menu' : '☰ Menu';
+}
+hudToggle.addEventListener('click', () => setHudMenuOpen(!$('#hud').classList.contains('hud-open')));
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && $('#hud').classList.contains('hud-open')) setHudMenuOpen(false); });
+$('#stage').addEventListener('pointerdown', e => { if ($('#hud').classList.contains('hud-open') && !e.target.closest('#hud, #hud-toggle')) setHudMenuOpen(false); });
+$('#hud').addEventListener('click', e => { if (e.target.closest('button')) setTimeout(() => setHudMenuOpen(false), 0); });
+$('#btn-home').onclick = () => { Snd.sfx('click'); if (S.scene === 'home') { Stay.goBack(); return; } if ((S.scene === 'bakery' && Bakery.st && Bakery.st.phase !== 'done') || (S.scene === 'work' && Work.st && !Work.st.done)) { modal('<h2>Leave your project?</h2><p>What you\'ve started will go to waste, and this part of the day will be used up.</p>', [{ label: 'Stay' }, { label: 'Leave', primary: true, value: 'go' }]).then(v => v === 'go' && leaveActivity()); return; } leaveActivity(); };
 $('#btn-town').onclick = () => { Snd.sfx('click'); go('town'); };
 $('#btn-orders').onclick = () => { Snd.sfx('click'); showOrders(); };
 $('#btn-basket').onclick = () => { Snd.sfx('click'); showBasket(); };
@@ -2500,7 +2531,7 @@ document.querySelectorAll('[data-carnival]').forEach(button => button.addEventLi
 $('#btn-neighbors').addEventListener('click', () => FriendBook.open());
 $('#circus-back').addEventListener('click', () => go('carnival'));
 $('#circus-start').addEventListener('click', () => { Snd.sfx('ding'); $('#scene-circus').classList.add('showtime'); $('#circus-act-line').textContent = 'The curtains open. Robin steps into the golden ring…'; Carnival.circus(); });
-$('#home-back').addEventListener('click', () => { const destination=Stay.returnArea; if (AREAS[destination]) go('area',destination); else go('town'); });
+$('#home-back').addEventListener('click', () => Stay.goBack());
 $('#home-objects').addEventListener('click', e => { const b = e.target.closest('[data-home-object]'); if (b) Stay.touch(b.dataset.homeObject); });
 
 })();
