@@ -270,6 +270,8 @@ function go(scene, arg) {
   if (scene === 'work') Work.enter(arg);
   if (scene === 'garden') Garden.enter();
   if (scene === 'area') Area.enter(arg);
+  if (scene === 'home') Stay.enter(arg);
+  if (scene === 'circus') { $('#circus-act-line').textContent = 'Robin, Templar, and Big Mama Mary are getting ready.'; $('#scene-circus').classList.remove('showtime'); }
 }
 
 async function leaveActivity() {
@@ -319,7 +321,7 @@ function addFriend(name, n) {
   if (!name) return; S.friend = S.friend || {}; const before = hearts(name); S.friend[name] = (S.friend[name] || 0) + n; const after = hearts(name);
   if (after > before) {
     const m = MOMENTS[name] || [`${name} saves you a seat by the fountain now.`, `${name} tells you, "You're one of us now. Don't forget it."`];
-    setTimeout(() => { toast(`You and ${name} are closer now: ${heartStr(name)}`); if (after === 2 || after === 4) setTimeout(() => modal(`<p class="kicker">Friendship · ${heartStr(name)}</p><h2>${esc(name)}</h2><p>${esc(m[after === 2 ? 0 : 1])}</p>${after === 2 && HOME_OF[name] ? `<p style="color:var(--ink-2);font-size:.9em">You're welcome to visit ${esc(HOMES[HOME_OF[name]].title)} in Bears' Den now.</p>` : ''}`, [{ label: 'That\'s sweet', primary: true }]), 1400); }, 600);
+    setTimeout(() => { toast(`You and ${name} are closer now: ${heartStr(name)}`); if (after === 2 || after === 4) setTimeout(() => modal(`<p class="kicker">Friendship · ${heartStr(name)}</p><h2>${esc(name)}</h2><p>${esc(m[after === 2 ? 0 : 1])}</p>${after === 2 && HOME_OF[name] ? `<p style="color:var(--ink-2);font-size:.9em">Their door is always open. You can visit ${esc(HOMES[HOME_OF[name]].title)} in Bears' Den.</p>` : ''}`, [{ label: 'That\'s sweet', primary: true }]), 1400); }, 600);
   }
 }
 async function giveGift(f) {
@@ -482,13 +484,7 @@ const Area = {
     if (id.startsWith('lore:')) { await showLore(id.slice(5)); return; }
     if (id === 'room') { go('area', 'room'); if (!S.found?.room) { S.found = S.found || {}; S.found.room = true; toast('Your room. Click the empty spots to decorate with things you\'ve made.'); } return; }
     if (id.startsWith('ws:')) { if (S.usedSlot) { toast('Head back out to let some time pass first.'); } S.returnTo = this.cur; go('work', id.slice(3)); return; }
-    if (id.startsWith('home:')) {
-      const k = id.slice(5), H = HOMES[k], friend = H.owners.find(o => hearts(o) >= 2);
-      if (!friend) { await modal(`<p class="kicker">Bears' Den</p><h2>${esc(H.title)}</h2><p>You knock. Nobody answers yet. Get to know ${esc(H.owners.join(' or '))} a little better first (2 hearts), and you'll be invited in.</p><p style="color:var(--berry)">${H.owners.map(o => `${esc(o)} ${heartStr(o)}`).join('<br>')}</p>`, [{ label: 'Maybe later', primary: true }]); return; }
-      S.homeGift = S.homeGift || {}; const first = !S.homeGift[k]; let extra = '';
-      if (first) { S.homeGift[k] = true; const g = H.gift; if (g.coins) S.coins += g.coins; if (g.glow) S.glow = clamp((S.glow || 0) + g.glow, 0, 100); extra = `<p><b>${esc(g.text)}</b></p>`; Snd.sfx('coin'); updateHUD(); }
-      await modal(`<p class="kicker">${esc(friend)} invites you in</p><h2>${esc(H.title)}</h2><p>${esc(H.desc)}</p>${extra}`, [{ label: 'Thank you', primary: true }]); return;
-    }
+    if (id.startsWith('home:')) { go('home', 'home-' + id.slice(5)); return; }
     if (id === 'stall') return this.market();
     if (id === 'soon') { await modal(`<p class="kicker">Bears' Hive</p><h2>More shops coming</h2><p>Signs are going up on the empty lots:</p><ul class="list"><li class="row"><div class="grow"><b>Photography Studio</b><small>Portraits and product photos</small></div></li><li class="row"><div class="grow"><b>Pet Grooming Parlor</b><small>Suds, brushing, and very fluffy results</small></div></li><li class="row"><div class="grow"><b>Flower Stand</b><small>Bouquets from your garden</small></div></li><li class="row"><div class="grow"><b>Makeup Studio</b><small>Shade-mixing lab and timed looks</small></div></li><li class="row"><div class="grow"><b>Farm Shop</b><small>Animal care, harvest timing, and a very dramatic chicken</small></div></li><li class="row"><div class="grow"><b>Mechanic Shop</b><small>Diagnose the engine by its sound</small></div></li></ul><p style="color:var(--ink-2);font-size:.9em">Soap making is coming to the Craft Barn's candle bench, hemming to the Sewing Cottage, and landscaping to your Garden Plot.</p>`, [{ label: 'Can\'t wait', primary: true }]); return; }
     if (id === 'bench') { const fresh = S.restDay.bench !== day; if (fresh) { S.restDay.bench = day; S.glow = clamp((S.glow || 0) + 2, 0, 100); updateHUD(); } await modal(`<p class="kicker">A small brass plaque</p><h2>Willie's Bench</h2><p style="font-family:var(--font-d);font-size:1.15em">"Sit a while. The fish will wait."</p><p>${pick(['The meadow hums. For a while, nothing needs fixing.', 'Somewhere a bee is working. You let it.', 'The light goes gold on the water. You breathe a little slower.', 'You think about everyone who made room for you here.'])}</p>${fresh ? '<p style="color:var(--ink-2);font-size:.9em">You feel steadier. The honey glows a little brighter.</p>' : ''}`, [{ label: 'Stand up slowly', primary: true }]); return; }
@@ -817,17 +813,65 @@ async function onTownPlace(place) {
   if (place === 'den' || place === 'hive' || place === 'rest') { S.returnTo = 'town'; go('area', place); return; }
   if (place === 'bear-hollow') { S.returnTo = 'town'; go('area', 'bear-hollow'); return; }
   if (place === 'bakery') { S.returnTo = 'town'; go('bakery'); return; }
-  const visits = {
-    welcome: `<p class="kicker">A light in the window</p><h2>The Welcome House</h2><p>Amelia and Tom first left a small shelter beside their repaired bridge, so a traveler would always have somewhere dry to rest. Neighbors added blankets, a stove, and a proper roof. The shelter grew into the Welcome House, where the door stays open for anyone who needs a place.</p>`,
-    homes: `<p class="kicker">Built one home at a time</p><h2>Neighbors' Homes</h2><p>When more travelers chose to stay, Honeybrook grew around them. Families raised cottages together, sharing tools, supper, and the work. Each home is different, and each one belongs because its neighbors made room.</p>`,
-    bridge: `<p class="kicker">Where Honeybrook began</p><h2>Amelia and Tom's Creek Bridge</h2><p>Amelia searched the creek bank after meeting the mysterious woman, then found Tom Bridgewell and asked him to help mend the broken crossing. They repaired the bridge and left a shelter nearby for the next person caught in the rain. Their first small act of care became a whole town.</p>`,
-    school: `<p class="kicker">A place to learn together</p><h2>Honeybrook School</h2><p>Professor Honeywell teaches here. The school began with a few benches and a chalkboard; now the neighbors share stories, lessons, and a crafting bench. There is room for curious questions, careful practice, and learning at your own pace.</p>`
-  };
-  if (visits[place]) await modal(visits[place], [{ label: 'Back to the map', primary: true }]);
+  if (['welcome','homes','bridge','school'].includes(place)) { go('home', 'town-' + place); return; }
 }
 $$('.town-marker').forEach(b => b.addEventListener('click', () => onTownPlace(b.dataset.townPlace)));
 
 
+/* ------------------------------------------------------------------ */
+/* Enterable Honeybrook rooms                                          */
+/* ------------------------------------------------------------------ */
+const STAY_PLACES = {
+  'home-hearthwell': {title:'Hearthwell House',kicker:'THE HOUSE FULL OF FAMILY',desc:'Nine pairs of boots by the door, a guitar by the hearth, and Big Mama Mary’s stories waiting at the table.',owner:'hearthwell',objects:[['hearth','🪵','Warm hearth','The fire pops softly. Big Mama Mary’s stories are waiting by the fire, and Buddy checks that everyone has a warm place to sit.'],['table','🍲','Family supper','A place is set for you. Honeybrook follows Sammy’s custom: you can eat first and share your story only if you want to.'],['mantel','🖼️','Willie’s picture','Willie’s photograph rests where everyone can see it. His name is woven into the family’s stories with tenderness.'],['guitar','🎸','The old guitar','Robin strums a tune. The children join in—some singing, some clapping, and Landric making up a very silly dance.']]},
+  'home-amelia': {title:'Amelia’s Cottage',kicker:'A LIGHT IN THE WINDOW',desc:'Spare blankets, a steady lantern, and a little shelter grown into a home for whoever needs one.',owner:'amelia',objects:[['lantern','🕯️','The lantern','Its warm light reaches the path outside. Amelia says the door should be easy to find on a stormy night.'],['table','🍎','A traveler’s plate','There is an apple and a small bowl set out. Amelia asks if you would like to sit and rest awhile.'],['blanket','🧺','Spare blankets','The blankets are clean, soft, and folded close to the door. Take one if the night turns cold.'],['window','🌧️','The rain window','Rain trickles down the glass. From here you can see the creek road and Tom’s bridge.']]},
+  'home-harold': {title:'Harold’s House',kicker:'MAIL, MAPS & MEMORIES',desc:'Mail routes cover the walls. Harold’s satchel stays close by, even when he is home.',owner:'harold',objects:[['maps','🗺️','The route maps','Pins mark every stop along Harold’s route. He knows which doors welcome a knock and which letters should be left quietly.'],['desk','✉️','The letter desk','Harold sorts the mail carefully. “I DELIVER MAIL. I DO NOT DELIVER MESSAGES.” He remembers every word someone hopes to hear.'],['hook','🎒','The satchel hook','The hook is worn smooth. Harold’s satchel is not on it. It never leaves his side.'],['window','📮','The post window','A neighbor waves from the path. Harold is already checking that no letter was missed.']]},
+  'home-wally': {title:'Wally’s Cottage',kicker:'THE LOAF THAT WAS HIS',desc:'There is flour on everything, and Amelia’s note beside one loaf: “This one is yours, Wally.”',owner:'wally',objects:[['oven','🔥','The little oven','Wally checks the warmth, then pulls out a honey bun. The whole kitchen smells like cinnamon and toasted honey.'],['table','🍞','Wally’s supper','Wally sits down to eat the loaf he meant to give away. A bear who feeds the town has to remember to feed himself, too.'],['note','💌','Amelia’s note','The note is simple and kind. Wally smiles; Harold made sure the loaf stayed right here.'],['window','🥖','The bakery path','You can smell the bakery from here. Wally invites you to visit the kitchen and bake something together.']]},
+  'town-welcome': {title:'The Welcome House',kicker:'YOU CAN EAT FIRST',desc:'The first shelter grew into a house with a hearth, a table, and a door that stays open.',objects:[['hearth','🔥','A warm place to rest','Dry kindling catches. The creek hurries past outside, but here it is warm and safe.'],['table','🥣','Food first','A plate is ready before anyone asks where you came from. The house has room for one more.'],['bed','🛏️','A dry bed','There are clean blankets and a quiet corner for a traveler who needs a night’s rest.'],['door','🚪','The open door','A bee rests on the sign outside. It does not seem in a hurry to leave.']]},
+  'town-homes': {title:'Neighbors’ Cottages',kicker:'BUILT TOGETHER, ONE BY ONE',desc:'Each cottage grew from what neighbors needed: a bed, a meal, a path, a place at the table.',objects:[['tools','🪚','Shared tools','A hammer and saw hang neatly on the wall. Tom lends them to neighbors who want to mend or build.'],['garden','🌼','The shared garden','The path winds past vegetables and flowers. Every family helps in its own way.'],['door','🏡','A cottage door','A neighbor welcomes you in without asking you to prove you belong.'],['table','🍯','A neighborly meal','Honey and bread are passed around. Nobody is hurried and nobody has to tell more than they want.']]},
+  'town-school': {title:'Honeybrook School',kicker:'LEARNING HAS MORE THAN ONE DOORWAY',desc:'Professor Honeywell changed his classroom after listening. Learn by reading, puzzling, building, or helping a friend.',objects:[['books','📚','The reading corner','Sammy sounds out a tricky word with a friend, one little piece at a time. A book is ready for you, too.'],['board','🧩','The puzzle table','Number tiles, patterns, and a puzzle with more than one way to solve it are spread across the table.'],['bench','🪵','The workbench','Lena builds a little bridge from craft sticks. Jamon asks if you can make one strong enough to hold a toy bear.'],['window','🔔','The school bell','The bell rings for a short stretch break. Then everyone comes back ready to read, build, and ask more questions.']]},
+  'town-bridge': {title:'Amelia & Tom’s Creek Bridge',kicker:'THE FIRST THING THEY BUILT',desc:'A repaired crossing and a small shelter became the beginning of Honeybrook.',objects:[['creek','💧','The rushing creek','The water hurries past. For one brief instant, a golden flash glimmers and is gone.'],['planks','🪵','Tom’s sturdy planks','Tom shows you how the boards fit. The bridge holds because each piece was measured, set, and repaired with care.'],['shelter','🏠','The first shelter','There is a dry blanket and a covered place to sit. Amelia hopes the next traveler finds it before the rain.'],['bee','🐝','The bee on the sign','A bee lands on the new Honeybrook sign and stays long after the light is gone.']]}
+};
+const Stay = {
+  stayPlace:null,
+  enter(key){
+    this.stayPlace=key; const p=STAY_PLACES[key]; if(!p){go('town');return;}
+    $('#home-title').textContent=p.title; $('#home-kicker').textContent=p.kicker; $('#home-description').textContent=p.desc;
+    const room=$('#home-room'); room.className='home-room '+key; room.classList.toggle('home-cottage',key.startsWith('home-'));
+    const box=$('#home-objects'); box.innerHTML='';
+    p.objects.forEach(([id,icon,label])=>{const b=document.createElement('button');b.className='home-object object-'+(p.objects.findIndex(o=>o[0]===id)+1);b.dataset.homeObject=id;b.setAttribute('aria-label',label);b.innerHTML='<span>'+icon+'</span><b>'+esc(label)+'</b>';box.appendChild(b);});
+    $('#home-back').textContent=key.startsWith('home-')?'← Back to Bear’s Den':'← Back to town map';
+    if(p.owner){S.homeGift=S.homeGift||{};if(!S.homeGift[p.owner]){S.homeGift[p.owner]=true;const g=HOMES[p.owner].gift;if(g.coins)S.coins+=g.coins;if(g.glow)S.glow=clamp((S.glow||0)+g.glow,0,100);updateHUD();Save.push(true);toast(g.text);}}
+  },
+  async touch(id){
+    Snd.sfx('click');const p=STAY_PLACES[this.stayPlace],item=p.objects.find(o=>o[0]===id);if(!item)return;
+    if(this.stayPlace==='town-welcome'&&id==='table'){
+      const v=await modal('<p class="kicker">The Welcome House</p><h2>What sounds good?</h2><p>Take a warm bowl, ask for bread, or sit quietly before you talk.</p>',[{label:'Warm porridge'},{label:'Bread and honey',primary:true},{label:'Just rest'}]);
+      const line=v===0?'The bowl is warm in your paws.':v===1?'Bread and honey—food first, questions later.':'You rest without anyone asking a thing.';
+      await modal('<p class="kicker">You are welcome here</p><h2>Stay as long as you need</h2><p>'+line+'</p>',[{label:'Thank you',primary:true}]);return;
+    }
+    if(this.stayPlace==='town-school'&&(id==='books'||id==='board'||id==='bench')){
+      const intro=id==='books'?'Choose a book and find a cozy place to read.':id==='board'?'A pattern puzzle is waiting. How would you like to explore it?':'Build a bridge with craft sticks and test where it needs support.';
+      const v=await modal('<p class="kicker">Honeybrook School · Explore a learning station</p><h2>'+esc(item[2])+'</h2><p>'+esc(intro)+'</p><p>What would you like to try?</p>',[{label:'Read and tell what I noticed',value:'read'},{label:'Try a puzzle or pattern',value:'puzzle'},{label:'Build and test an idea',value:'build'}]);
+      if(v) await modal('<p class="kicker">Professor Honeywell</p><h2>That is a thoughtful way to learn.</h2><p>Take your time, explain your idea, and change it if you discover something new.</p>',[{label:'Back to class',primary:true}]);return;
+    }
+    await modal('<p class="kicker">'+esc(p.title)+'</p><h2>'+esc(item[2])+'</h2><p>'+esc(item[3])+'</p>',[{label:'Keep exploring',primary:true}]);
+  }
+};
+const FriendBook = {
+ async open(){
+  const rows=FOLKS.map((f,i)=>'<div class="neighbor-row"><span class="neighbor-face">'+(f.human?'🧑':'🐻')+'</span><span class="neighbor-name"><b>'+esc(f.name)+'</b><small>'+heartStr(f.name)+'</small></span><button class="btn btn-small" data-val="n'+i+'">Visit</button></div>').join('');
+  const result=await modal('<p class="kicker">Honeybrook neighbors</p><h2>Find someone to visit</h2><p>Everyone is listed here, even when they are away from the square. Visit once each day to grow a friendship.</p><div class="neighbor-list">'+rows+'</div>',[{label:'Close'}]);
+  if(typeof result!=='string'||result[0]!=='n')return;
+  const f=FOLKS[Number(result.slice(1))];if(!f)return;
+  const already=(S.talked||{})[f.name]===S.day;
+  const line=pick(f.lines).replace('{name}',S.name);
+  const answer=await modal('<p class="kicker">A visit with '+esc(f.name)+'</p><h2>'+esc(f.name)+' <span style="color:var(--berry)">'+heartStr(f.name)+'</span></h2><p>'+esc(line)+'</p><p>What would you like to say?</p>',[{label:'Tell me more'},{label:'I’m glad I found you',primary:true},{label:'Ask what they are working on'}]);
+  if(!already){S.talked=S.talked||{};S.talked[f.name]=S.day;addFriend(f.name,1);Save.push(true);}
+  else toast('You already visited '+f.name+' today. Come by tomorrow for another friendship point.');
+  if(answer!==undefined){const follow=pick(['They smile and save you a seat.','They tell you a little more about the day.','You share a laugh before they get back to work.']);await modal('<p class="kicker">Honeybrook friendship</p><h2>'+esc(f.name)+'</h2><p>'+esc(follow)+'</p><p>'+heartStr(f.name)+'</p>',[{label:'Back to the neighbors',primary:true}]);}
+  this.open();
+ }
+};
 /* ------------------------------------------------------------------ */
 /* Weather canvas (rain + evening lantern glow)                       */
 /* ------------------------------------------------------------------ */
@@ -2383,7 +2427,7 @@ const Carnival = {
     if (kind === 'wheel' || kind === 'carousel') return this.ride(kind);
     if (kind === 'prizes') return this.prizes();
     if (kind === 'rings' || kind === 'ducks' || kind === 'balloons') return this.game(kind);
-    if (kind === 'circus') return this.circus();
+    if (kind === 'circus') { go('circus'); return; }
   },
   async buy(kind) {
     const item = this.snack[kind];
@@ -2430,16 +2474,16 @@ const Carnival = {
   },
   async circus() {
     const robin = await modal(`<p class="kicker">Under the big top</p><h2>🎪 The Honeybrook Little Circus</h2><p>Find a seat beneath the striped tent. Robin is ready to sing, Templar has brought a clockwork bee, and Big Mama Mary is saving a story for the finale. The acts are friendly, the audience can join in, and everyone gets a warm welcome.</p><div class="carnival-act"><span class="act-icon">🎤</span><b>Act One · Robin’s rhyme</b><p>Robin sings: “A bear brought a pear, and sat in a ___.” Which word rhymes?</p></div>`,[{label:'chair',primary:true,value:'right'},{label:'river',value:'wrong'},{label:'honey',value:'wrong'}]);
-    let score = robin === 'right' ? 1 : 0;
+    let score = robin === 'right' ? 1 : 0; $('#circus-act-line').textContent = 'Act One: Robin leads the audience in a rhyme.';
     const bee = await modal(`<p class="kicker">Act Two · Templar’s clockwork bee</p><h2>🐝 Follow the golden lights</h2><p>The bee blinks a pattern: <b>gold, blue, gold, blue, gold…</b> Which light should blink next?</p>`,[{label:'Gold',value:'wrong'},{label:'Blue',primary:true,value:'right'},{label:'Green',value:'wrong'}]);
-    if (bee === 'right') score++;
+    if (bee === 'right') score++; $('#circus-act-line').textContent = 'Act Two: Templar’s clockwork bee loops around the golden ring.';
     const story = await modal(`<p class="kicker">Act Three · Big Mama Mary’s story</p><h2>📖 The traveler at the door</h2><p>A new cub arrives in the rain. What does Sammy’s Honeybrook welcome say first?</p>`,[{label:'“Tell us everything.”',value:'wrong'},{label:'“You can eat first.”',primary:true,value:'right'},{label:'“Come back tomorrow.”',value:'wrong'}]);
-    if (story === 'right') score++;
+    if (story === 'right') score++; $('#circus-act-line').textContent = 'Act Three: Big Mama Mary brings the traveler in from the rain.';
     S.usedSlot = true;
     const tickets = 2 + score;
     S.carnivalTickets = (S.carnivalTickets || 0) + tickets;
     Snd.sfx('good'); updateHUD(); Save.push(true);
-    await modal(`<p class="kicker">The circus finale</p><h2>✨ A standing ovation!</h2><p>The clockwork bee loops over the tent, Robin leads the crowd in the final chorus, and Big Mama Mary tells a story where everyone gets to come in from the rain.</p><p>You got ${score} of 3 audience challenges right and earned <b>${tickets} carnival tickets</b>. Everyone at the little circus belongs in the show.</p>`,[{label:'Back to the midway',primary:true}]);
+    await modal(`<p class="kicker">The circus finale</p><h2>✨ A standing ovation!</h2><p>The clockwork bee loops over the tent, Robin leads the crowd in the final chorus, and Big Mama Mary tells a story where everyone gets to come in from the rain.</p><p>You got ${score} of 3 audience challenges right and earned <b>${tickets} carnival tickets</b>. Everyone at the little circus belongs in the show.</p>`,[{label:'Back to the tent',primary:true}]);
   },
   async prizes() {
     const choice = await modal(`<p class="kicker">Prize Booth</p><h2>🎟️ Trade tickets for a Fair ribbon</h2><p>Choose a keepsake for your collection. A ribbon costs 6 tickets. You have <b>${S.carnivalTickets || 0}</b>.</p><p>Ribbons are just for fun. You can keep exploring even if you save your tickets.</p>`,[{label:'Keep my tickets'},{label:'Trade 6 tickets for a ribbon',primary:true,disabled:(S.carnivalTickets||0)<6,value:'trade'}]);
@@ -2447,5 +2491,10 @@ const Carnival = {
   }
 };
 document.querySelectorAll('[data-carnival]').forEach(button => button.addEventListener('click', () => { Snd.sfx('click'); Carnival.visit(button.dataset.carnival); }));
+$('#btn-neighbors').addEventListener('click', () => FriendBook.open());
+$('#circus-back').addEventListener('click', () => go('carnival'));
+$('#circus-start').addEventListener('click', () => { Snd.sfx('ding'); $('#scene-circus').classList.add('showtime'); $('#circus-act-line').textContent = 'The curtains open. Robin steps into the golden ring…'; Carnival.circus(); });
+$('#home-back').addEventListener('click', () => { const key = S.stayPlace || ''; if (key.startsWith('home-')) go('area', 'den'); else go('town'); });
+$('#home-objects').addEventListener('click', e => { const b = e.target.closest('[data-home-object]'); if (b) Stay.touch(b.dataset.homeObject); });
 
 })();

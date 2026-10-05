@@ -124,6 +124,27 @@
     <div id="area-spots" class="hotspots"></div>
   </section>
 
+  <!-- Enterable Honeybrook homes and community interiors -->
+  <section id="scene-home" class="scene home-scene" aria-label="Enter a Honeybrook home or community place">
+    <div id="home-room" class="home-room">
+      <div class="home-beams"></div><div class="home-window"><span>🌳</span><i>☀️</i></div>
+      <div class="home-shelf">📚　🫙　🧸</div><div class="home-fireplace"><span>🔥</span></div>
+      <div class="home-rug"></div><div class="home-table">🍞　🥣　🍯</div><div class="home-welcome">Come in. There’s room for you.</div><div class="home-bear" aria-hidden="true">🐻</div>
+      <div id="home-objects" class="home-objects"></div>
+      <header class="home-sign panel paper"><p id="home-kicker" class="town-kicker">HONEYBROOK</p><h2 id="home-title">A Cozy Home</h2><p id="home-description"></p></header>
+      <button id="home-back" class="btn btn-small home-back">← Back outside</button>
+    </div>
+  </section>
+  <section id="scene-circus" class="scene circus-scene" aria-label="Inside the Honeybrook circus tent">
+    <div class="circus-canvas">
+      <div class="circus-canopy"><span>🎪</span></div><div class="circus-lights">✦　✦　✦　✦　✦　✦　✦</div>
+      <div class="circus-curtain left"></div><div class="circus-curtain right"></div>
+      <div class="circus-stage"><div class="circus-performers"><span class="performer robin">🎤</span><span class="performer templar">🐝</span><span class="performer mama">📖</span></div><div class="circus-ring">✨ THE HONEYBROOK LITTLE CIRCUS ✨</div><div id="circus-act-line" class="circus-act-line">Robin, Templar, and Big Mama Mary are getting ready.</div></div>
+      <div class="circus-audience">🐻　🧸　🐻　🐻　🧸　🐻　🐻　🧸</div>
+      <div class="circus-sign panel paper"><p class="town-kicker">UNDER THE BIG TOP</p><h2>Honeybrook’s Little Circus</h2><p>Friendly acts, audience games, a clockwork bee, and a story where everyone gets to come in from the rain.</p><button id="circus-start" class="btn btn-primary">🎟️ Start the show</button></div>
+      <button id="circus-back" class="btn btn-small circus-back">← Back to the carnival</button><div id="circus-confetti" class="circus-confetti" aria-hidden="true"></div>
+    </div>
+  </section>
   <!-- GARDEN -->
   <section id="scene-garden" class="scene">
     <img class="bg" src="img/garden.jpg" alt="Your garden plot">
@@ -159,6 +180,7 @@
       <span class="stat" title="Honey glow: kindness makes Honeybrook's honey sweeter"><svg viewBox="0 0 20 20"><path d="M5 7h10l-1 10H6z" fill="#d9921f" stroke="#8a5a14" stroke-width="1.5"/><rect x="4" y="4" width="12" height="3" rx="1" fill="#5f93c0"/></svg><b id="hud-glow">20%</b></span>
       <button class="btn btn-small" id="btn-story">Story <i id="story-badge"></i></button>
       <button class="btn btn-small" id="btn-storytrail">Story Trail</button>
+      <button class="btn btn-small" id="btn-neighbors" title="Talk with every Honeybrook neighbor">Neighbors</button>
       <button class="btn btn-small" id="btn-orders">Orders <i id="orders-badge"></i></button>
       <button class="btn btn-small" id="btn-basket">Basket</button>
       <button class="btn btn-small" id="btn-shop">Store</button>
