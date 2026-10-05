@@ -1315,3 +1315,23 @@ document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll("[da
     if(setting){event.preventDefault();document.body.classList.toggle(setting.dataset.hbSetting==='large'?'hb-large-text':'hb-reduced-motion');return;}
   });
 })();
+
+/* Honeybrook exterior hotspots now open small playable moments instead of stopping at a caption. */
+(function(){
+ const targets={
+  "town-place":"townSceneInfo",bv:"bridgeviewInfo",ms:"mainStreetInfo",ts:"townSquareInfo",
+  cc:"careInfo",ep:"funInfo",fr:"reflectionInfo",hh:"harmonyInfo",ne:"northernEdgeInfo",
+  nw:"woodsInfo",os:"outskirtsInfo",pk:"parkInfo",se:"entranceInfo",sq:"scholarsInfo"
+ };
+ const esc=x=>String(x).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+ document.addEventListener("click",e=>{
+  let choice=e.target.closest("[data-hb-hotspot-choice]");
+  if(choice){const box=document.getElementById(choice.dataset.hbHotspotChoice);if(box){const i=+choice.dataset.choice;const actions=["You step into the place and notice the small details around you. A neighbor looks up and waves.","You greet a neighbor. They answer warmly and make room for you in the scene.","You join in with a small task. Someone nearby offers to help, and the moment unfolds together."];box.querySelector(".hb-hotspot-result").innerHTML='<div class="scene-choice-result"><span>✨</span><p>'+actions[i]+'</p></div><div class="scene-choice-buttons"><button data-hb-hotspot-choice="'+choice.dataset.hbHotspotChoice+'" data-choice="'+((i+1)%3)+'">↻ Do something else here</button></div>'}return}
+  const b=e.target.closest("[data-town-place],[data-bv],[data-ms],[data-ts],[data-cc],[data-ep],[data-fr],[data-hh],[data-ne],[data-nw],[data-os],[data-pk],[data-se],[data-sq]");if(!b)return;
+  const key=b.hasAttribute("data-town-place")?"town-place":Object.keys(targets).find(k=>k!=="town-place"&&b.hasAttribute("data-"+k));if(!key)return;
+  const box=document.getElementById(targets[key]);if(!box)return;
+  const name=b.dataset.townPlace||b.dataset[key];
+  const detail=box.innerText||"The place is open and everyday Honeybrook life is happening around you.";
+  box.innerHTML='<article class="hb-hotspot-scene"><small>YOU ARE HERE</small><h3>'+esc(name)+'</h3><p>'+esc(detail.replace(name,"").trim())+'</p><b>What would you like to do?</b><div class="scene-choice-buttons"><button data-hb-hotspot-choice="'+box.id+'" data-choice="0">🔎 Look around</button><button data-hb-hotspot-choice="'+box.id+'" data-choice="1">💬 Talk with someone</button><button data-hb-hotspot-choice="'+box.id+'" data-choice="2">👐 Join the activity</button></div><div class="hb-hotspot-result moment-play">Choose an action and the scene will continue.</div></article>'
+ });
+})();
