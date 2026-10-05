@@ -294,6 +294,16 @@ h1 span{color:var(--berry);font-size:.78em}
 #home-room{background:none}
 #home-room:before,#home-room:after{display:none}
 .home-background{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+
+/* Creek Bridge has its own close view: the town map is panned to the bridge so its
+   quiet details, not the whole town, fill the screen. */
+.home-town-bridge .home-background{transform:scale(1.62) translateY(-18%);transform-origin:center center}
+.home-town-bridge .object-1{left:31%;top:58%}
+.home-town-bridge .object-2{left:48%;top:38%}
+.home-town-bridge .object-3{left:72%;top:25%}
+.home-town-bridge .object-4{left:55%;top:58%}
+.home-town-bridge .home-sign{background:rgba(255,247,226,.94);box-shadow:0 4px 18px #2e1b1566}
+
 .home-objects{z-index:6}
 .home-sign{top:1.5%;left:50%;transform:translateX(-50%);width:min(31%,24em);padding:.36em .7em;background:rgba(255,247,226,.91);pointer-events:none}
 .home-sign h2{font-size:1em}
