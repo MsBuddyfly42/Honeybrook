@@ -641,3 +641,25 @@ body.hb-reduced-motion *,body.hb-reduced-motion *::before,body.hb-reduced-motion
 @keyframes hb-arrival-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
 @media(max-width:700px){#town .hb-scene-live{grid-template-columns:1fr}#town .hb-scene-banner{min-height:126px;padding:.8rem}#town .hb-scene-banner>span{font-size:3rem}#town .explore-card{min-height:110px}#town .hb-action-grid button,#town .scene-choice-buttons button{flex:1 1 100%;text-align:left}}
 @media(prefers-reduced-motion:reduce){#town .hb-scene-banner>span{animation:none}#town .explore-card,#town .hb-action-grid button{transition:none}}
+
+/* Story actions in the illustrated town map and accessible chapter reader */
+#hbWorldDialog .hb-back-town{border:1.5px solid #9a7440;border-radius:999px;padding:.48rem .8rem;background:#ead7ae;color:#3a2a1c;font-weight:900;box-shadow:0 2px 0 #8f6739;cursor:pointer}
+#hbWorldDialog .hb-place-action{margin:.9rem 0;padding:.85rem 1rem;border-radius:14px;background:#304744;color:#fff4dc;border:1px solid #b88b49}
+#hbWorldDialog .hb-place-action h3,#hbWorldDialog .hb-place-action p{color:#fff4dc;margin:.2rem 0}
+#hbWorldDialog .hb-place-action .hb-dialog-actions{margin:.6rem 0}
+#hbWorldDialog .hb-place-action .hb-dialog-actions button{background:#ffdf94;color:#302419;border-color:#a77937}
+#hbWorldDialog .hb-place-action .hb-action-result{min-height:3rem;margin-top:.55rem;padding:.65rem .8rem;border-radius:10px;background:#f8eed9;color:#30261e}
+#hbWorldDialog .hb-place-action .hb-action-result p{color:#30261e}
+#town .chapter-tabs{display:flex;flex-wrap:wrap;gap:.45rem;margin:.7rem 0 1rem}
+#town .chapter-tabs button,#town .chapter-navigation button{border:1.5px solid #ad7a35;border-radius:999px;padding:.55rem .8rem;background:#ffdf94;color:#302419;font-weight:900;box-shadow:0 3px 0 #81572b;cursor:pointer}
+#town .chapter-tabs button.active{background:#a8344a;color:#fff8eb;border-color:#702132;box-shadow:0 3px 0 #702132}
+#town .chapter-navigation{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-top:1rem;padding-top:.75rem;border-top:1px solid #caa96c;color:#fff4dc}
+#town .chapter-navigation button:disabled{opacity:.45;cursor:not-allowed;box-shadow:none}
+#town .chapter-response{margin-top:.9rem;padding:.8rem;border-radius:12px;background:#243a38;border:1px solid #b78b47}
+#town .chapter-response h4,#town .chapter-response p{color:#fff4dc}
+#town .hb-hotspot-scene{padding:.75rem;border-radius:12px;background:linear-gradient(140deg,#304744,#53644d);border:1px solid #c29850;color:#fff4dc}
+#town .hb-hotspot-scene h3,#town .hb-hotspot-scene p,#town .hb-hotspot-scene small{color:#fff4dc}
+#town .hb-hotspot-scene>small{font-weight:900;letter-spacing:.1em;color:#f3cd78}
+#town .hb-hotspot-scene .scene-choice-buttons button{background:#ffdf94;color:#302419}
+#town .hb-hotspot-result{padding:.55rem;border-radius:10px;background:#223a37;color:#fff4dc}
+@media(max-width:620px){#town .chapter-navigation{align-items:stretch;flex-direction:column}#town .chapter-navigation span{text-align:center}}
