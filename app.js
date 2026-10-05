@@ -1229,6 +1229,24 @@ document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll("[da
     }
   };
   const sectionMap = {residentLifeWorld:'residentLifeWorld',bundledStoryWorld:'bundledStoryWorld',learningHub:'learningHub',mainStreetWorld:'mainStreetWorld',townSquareWorld:'townSquareWorld'};
+  const sceneActions={
+   welcome:['Set a plate on the table','Ask Sammy how he welcomes new bears','Help ready a room'],
+   bridge:['Walk across the repaired bridge','Look for the old creek mark','Help Tom check the railing'],
+   homes:['Help raise a roof beam','Meet the Hearthwell family','Bring a neighbor something useful'],
+   school:['Choose the reading corner','Try the puzzle table','Build at the workbench'],
+   bakery:['Choose a loaf for Wally’s supper','Ask Harold about his mail route','Help finish the day’s baking'],
+   square:['Read the town notice','Visit the bronze statue','Ask Amelia about the square'],
+   hollow:['Compare Honeybrook and Hollow customs','Ask what happens after harm','Follow the creek road home']
+  };
+  const actionOutcomes={
+   welcome:['Sammy sets down a plate, then steps back so the newcomer can decide whether to sit.','Sammy says the first words he learned in Honeybrook: “You can eat first.”','You place a folded blanket on the bed. The room is ready whenever somebody needs it.'],
+   bridge:['The boards hold steady beneath your feet. The creek rushes on below.','You find an old cut in the wood, worn too smooth to read. You note its shape without guessing what it means.','Tom tests the rail with you. One loose peg gets tapped back into place.'],
+   homes:['Tom lifts the far end while you steady the beam. The next roof begins to take shape.','The Hearthwells call you over. Big Mama offers a seat and the children begin telling you what they are building.','A neighbor accepts the basket and asks you to stay for supper.'],
+   school:['Storytime Bear opens a book and you take turns reading the page.','Lena shows a pattern she found. The pieces fit when you try her arrangement.','You and Jamon build a little bridge from blocks. It holds the book after you widen the base.'],
+   bakery:['Wally wraps a loaf for his own supper and puts it by the kettle. He will not give this one away.','Harold sorts the letters by street and lets you stamp the day’s mail.','You glaze the last honey buns. Wally saves one for the baker before bringing the tray outside.'],
+   square:['A neighbor adds a note about the next shared meal. Amelia asks who wants to help.','The statue’s bronze catches the light. At its base, a bee lands beside the inscription.','Amelia tells you the town was named for a golden girl in an old story, then smiles at the creek.'],
+   hollow:['You compare the customs carefully: both towns share honey, while porridge belongs to the Hollow.','You hear that harm calls for honesty, repair and time. A bear can be held accountable and still belong.','You follow the public road toward the bridge and back to Honeybrook.']
+  };
   let selected = 'bridge';
   const visited = () => { try { return JSON.parse(localStorage.getItem('honeybrookTownJournal') || '[]'); } catch (_) { return []; } };
   function markVisited(key) { const v=visited(); if(!v.includes(key)) v.push(key); try { localStorage.setItem('honeybrookTownJournal',JSON.stringify(v)); } catch (_) {} }
@@ -1246,7 +1264,7 @@ document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll("[da
     const links=p.links.map(link => link[1]==='fair'
       ? '<a class="hb-fair-link '+(link[2]||'')+'" href="'+fairRoot+'">'+escapeHtml(link[0])+'</a>'
       : '<button type="button" data-hb-dive="'+escapeHtml(sectionMap[link[1]]||link[1])+'">'+escapeHtml(link[0])+'</button>').join('');
-    show(p.title,'<p class="hb-dialog-kicker">'+escapeHtml(p.kicker)+'</p>'+image+'<p>'+escapeHtml(p.text)+'</p><p>'+escapeHtml(p.detail)+'</p><div class="hb-dialog-actions">'+links+'</div>');
+    const actions=sceneActions[key]||['Look around this place','Talk with a neighbor','Try a small task'];const play='<section class="hb-place-action"><h3>Step into the scene</h3><p>Choose what you want to do here.</p><div class="hb-dialog-actions">'+actions.map((a,i)=>'<button type="button" data-hb-place-action="'+i+'">'+escapeHtml(a)+' →</button>').join('')+'</div><div class="hb-action-result" id="hbPlaceActionResult" aria-live="polite">The scene is waiting for you.</div></section>';show(p.title,'<p class="hb-dialog-kicker">'+escapeHtml(p.kicker)+'</p>'+image+'<p>'+escapeHtml(p.text)+'</p><p>'+escapeHtml(p.detail)+'</p>'+play+'<div class="hb-dialog-actions">'+links+'</div>');
   }
   function openTool(tool) {
     const locations=Object.entries(places);
@@ -1281,6 +1299,8 @@ document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll("[da
     }
   }
   document.addEventListener('click', event => {
+    const actionButton=event.target.closest('[data-hb-place-action]');
+    if(actionButton){event.preventDefault();const list=sceneActions[selected]||['Look around this place','Talk with a neighbor','Try a small task'];const outcomes=actionOutcomes[selected]||['You notice a new detail in the scene.','A neighbor responds and makes room for you.','You try something small and see what happens.'];const result=document.getElementById('hbPlaceActionResult');if(result)result.innerHTML='<strong>✨ '+escapeHtml(list[Number(actionButton.dataset.hbPlaceAction)])+'</strong><p>'+escapeHtml(outcomes[Number(actionButton.dataset.hbPlaceAction)])+'</p>';return;}
     const placeButton=event.target.closest('[data-hb-place]');
     if(placeButton){event.preventDefault();place(placeButton.dataset.hbPlace);return;}
     const toolButton=event.target.closest('[data-hb-tool]');
