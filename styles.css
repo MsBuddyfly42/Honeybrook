@@ -672,3 +672,14 @@ body.hb-reduced-motion *,body.hb-reduced-motion *::before,body.hb-reduced-motion
 #town .town-shell .town-life-strip,#town .town-shell .living-map{min-width:0;max-width:100%}
 #town .district-nav,#town .map-grid,#town .destination-grid{min-width:0}
 @media(max-width:760px){#town .town-shell{grid-template-columns:1fr}#town .town-shell>aside{position:relative}#town main{padding:.8rem}}
+
+/* Keep interactive labels legible over honey-colored controls. */
+#town .activity-card button,#town .route-btn,#town .thread-btn,#town .story-tabs button,#town .bundle-action,
+#town .day-mode-buttons button,#town #anotherCrossover,#town .passport-form button{
+ background:#ffd783!important;color:#302419!important;border:1.5px solid #815a2b!important;
+ box-shadow:0 3px 0 #815a2b!important
+}
+#town .route-btn small,#town .thread-btn small{color:#302419!important;opacity:1}
+#town .place.east{background:#853b32;color:#fff8ee}
+#town .place.south{background:#40552f;color:#fff8ee}
+#town .place.east small,#town .place.south small{color:#fff8ee}
