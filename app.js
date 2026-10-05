@@ -1234,7 +1234,7 @@ document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll("[da
   const sceneActions={
    welcome:['Set a plate on the table','Ask Sammy how he welcomes new bears','Help ready a room'],
    bridge:['Walk across the repaired bridge','Look for the old creek mark','Help Tom check the railing'],
-   homes:['Help raise a roof beam','Meet the Hearthwell family','Bring a neighbor something useful'],
+   homes:['Enter the Hearthwell home',"Visit Big Mama’s cottage",'Visit the country houses'],
    school:['Choose the reading corner','Try the puzzle table','Build at the workbench'],
    bakery:['Choose a loaf for Wally’s supper','Ask Harold about his mail route','Help finish the day’s baking'],
    square:['Read the town notice','Visit the bronze statue','Ask Amelia about the square'],
@@ -1267,7 +1267,8 @@ document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll("[da
     const links=p.links.map(link => link[1]==='fair'
       ? '<a class="hb-fair-link '+(link[2]||'')+'" href="'+fairRoot+'">'+escapeHtml(link[0])+'</a>'
       : '<button type="button" data-hb-dive="'+escapeHtml(sectionMap[link[1]]||link[1])+'">'+escapeHtml(link[0])+'</button>').join('');
-    const actions=sceneActions[key]||['Look around this place','Talk with a neighbor','Try a small task'];const back='<button type="button" class="hb-back-town" data-hb-back-map>'+(fromPlacesList?'← Back to all Honeybrook places':'← Back to Honeybrook map')+'</button>';const play='<section class="hb-place-action"><h3>Step into the scene</h3><p>Choose what you want to do here.</p><div class="hb-dialog-actions">'+actions.map((a,i)=>'<button type="button" data-hb-place-action="'+i+'">'+escapeHtml(a)+' →</button>').join('')+'</div><div class="hb-action-result" id="hbPlaceActionResult" aria-live="polite">The scene is waiting for you.</div></section>';show(p.title,back+'<p class="hb-dialog-kicker">'+escapeHtml(p.kicker)+'</p>'+image+'<p>'+escapeHtml(p.text)+'</p><p>'+escapeHtml(p.detail)+'</p>'+play+'<div class="hb-dialog-actions">'+links+'</div>');
+    const entrance={welcome:'Welcome House',homes:'Hearthwell Home',bakery:'Cub Cakes & Crumbs',bridge:'Old Bridge',school:'Honeybrook School',square:'Honeybrook Town Hall',hollow:'Ranger Boundary'}[key];const door=entrance?'<button type="button" data-hb-enter="'+escapeHtml(entrance)+'">Enter this place →</button>':'';
+    const actions=sceneActions[key]||['Look around this place','Talk with a neighbor','Try a small task'];const back='<button type="button" class="hb-back-town" data-hb-back-map>'+(fromPlacesList?'← Back to all Honeybrook places':'← Back to Honeybrook map')+'</button>';const play='<section class="hb-place-action"><h3>Step into the scene</h3><p>Choose what you want to do here.</p><div class="hb-dialog-actions">'+actions.map((a,i)=>'<button type="button" data-hb-place-action="'+i+'">'+escapeHtml(a)+' →</button>').join('')+'</div><div class="hb-action-result" id="hbPlaceActionResult" aria-live="polite">The scene is waiting for you.</div></section>';show(p.title,back+'<p class="hb-dialog-kicker">'+escapeHtml(p.kicker)+'</p>'+image+'<p>'+escapeHtml(p.text)+'</p><p>'+escapeHtml(p.detail)+'</p>'+door+play+'<div class="hb-dialog-actions">'+links+'</div>');
   }
   function openTool(tool) {
     const locations=Object.entries(places);
@@ -1305,8 +1306,9 @@ document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll("[da
   document.addEventListener('click', event => {
     const backButton=event.target.closest('[data-hb-back-map]');
     if(backButton){event.preventDefault();if(fromPlacesList){openTool('places')}else{dialog.close();$('#hbPlayableWorld')?.scrollIntoView({behavior:'smooth',block:'start'})}return;}
+    const entranceButton=event.target.closest('[data-hb-enter]');if(entranceButton){event.preventDefault();dialog.close();dispatchEvent(new CustomEvent('honeybrook-enter-place',{detail:{name:entranceButton.dataset.hbEnter}}));return;}
     const actionButton=event.target.closest('[data-hb-place-action]');
-    if(actionButton){event.preventDefault();const list=sceneActions[selected]||['Look around this place','Talk with a neighbor','Try a small task'];const outcomes=actionOutcomes[selected]||['You notice a new detail in the scene.','A neighbor responds and makes room for you.','You try something small and see what happens.'];const result=document.getElementById('hbPlaceActionResult');if(result)result.innerHTML='<strong>✨ '+escapeHtml(list[Number(actionButton.dataset.hbPlaceAction)])+'</strong><p>'+escapeHtml(outcomes[Number(actionButton.dataset.hbPlaceAction)])+'</p>';return;}
+    if(actionButton){event.preventDefault();const routes={homes:['Hearthwell Home',"Big Mama's Cottage",'Country Homes'],welcome:[null,null,'Welcome House'],bakery:[null,'Honeybrook Post Office','Cub Cakes & Crumbs']};const destination=routes[selected]?.[Number(actionButton.dataset.hbPlaceAction)];if(destination){dialog.close();dispatchEvent(new CustomEvent('honeybrook-enter-place',{detail:{name:destination}}));return;}const list=sceneActions[selected]||['Look around this place','Talk with a neighbor','Try a small task'];const outcomes=actionOutcomes[selected]||['You notice a new detail in the scene.','A neighbor responds and makes room for you.','You try something small and see what happens.'];const result=document.getElementById('hbPlaceActionResult');if(result)result.innerHTML='<strong>✨ '+escapeHtml(list[Number(actionButton.dataset.hbPlaceAction)])+'</strong><p>'+escapeHtml(outcomes[Number(actionButton.dataset.hbPlaceAction)])+'</p>';return;}
     const placeButton=event.target.closest('[data-hb-place]');
     if(placeButton){event.preventDefault();place(placeButton.dataset.hbPlace);return;}
     const toolButton=event.target.closest('[data-hb-tool]');
