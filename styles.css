@@ -663,3 +663,12 @@ body.hb-reduced-motion *,body.hb-reduced-motion *::before,body.hb-reduced-motion
 #town .hb-hotspot-scene .scene-choice-buttons button{background:#ffdf94;color:#302419}
 #town .hb-hotspot-result{padding:.55rem;border-radius:10px;background:#223a37;color:#fff4dc}
 @media(max-width:620px){#town .chapter-navigation{align-items:stretch;flex-direction:column}#town .chapter-navigation span{text-align:center}}
+
+/* Keep the town sidebar and play space inside the viewport instead of creating page-wide horizontal scrolling. */
+#town .town-shell{grid-template-columns:clamp(180px,20vw,245px) minmax(0,1fr);width:100%;max-width:100%;min-width:0}
+#town .town-shell>aside{min-width:0}
+#town main{width:100%;min-width:0;max-width:none;overflow-x:clip}
+#town .town-shell .section,#town .town-shell .hero,#town .town-shell .map-grid,
+#town .town-shell .town-life-strip,#town .town-shell .living-map{min-width:0;max-width:100%}
+#town .district-nav,#town .map-grid,#town .destination-grid{min-width:0}
+@media(max-width:760px){#town .town-shell{grid-template-columns:1fr}#town .town-shell>aside{position:relative}#town main{padding:.8rem}}
