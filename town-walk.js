@@ -50,11 +50,11 @@
     const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const names = ['Amelia','Harold Pawst','Sammy','Wally','Benny Scoops'];
     const bears = [
-      {name:names[0], fur:'#b88655', coat:'#618a69', path:[[.56,.70],[.61,.64],[.65,.60],[.59,.62],[.54,.67]], speed:.038},
-      {name:names[1], fur:'#9b9289', coat:'#486087', path:[[.40,.62],[.45,.59],[.51,.61],[.47,.66],[.42,.65]], speed:.05},
-      {name:names[2], fur:'#9a693e', coat:'#897858', path:[[.30,.49],[.34,.52],[.38,.50],[.37,.46],[.32,.46]], speed:.03},
-      {name:names[3], fur:'#bb925f', coat:'#bd5962', path:[[.83,.59],[.79,.61],[.79,.65],[.83,.65],[.85,.61]], speed:.027},
-      {name:names[4], fur:'#a7774b', coat:'#4d8b9d', path:[[.70,.59],[.73,.62],[.68,.64],[.65,.61],[.69,.58]], speed:.044}
+      {name:names[0], fur:'#b88655', coat:'#618a69', path:[[.55,.66],[.59,.68],[.62,.70],[.61,.73],[.56,.71]], speed:.038},
+      {name:names[1], fur:'#9b9289', coat:'#486087', path:[[.40,.61],[.44,.64],[.49,.65],[.47,.69],[.42,.68]], speed:.05},
+      {name:names[2], fur:'#9a693e', coat:'#897858', path:[[.25,.62],[.28,.66],[.31,.68],[.30,.71],[.26,.69]], speed:.03},
+      {name:names[3], fur:'#bb925f', coat:'#bd5962', path:[[.77,.70],[.81,.73],[.84,.75],[.83,.78],[.79,.76]], speed:.027},
+      {name:names[4], fur:'#a7774b', coat:'#4d8b9d', path:[[.61,.66],[.64,.69],[.67,.72],[.65,.75],[.62,.73]], speed:.044}
     ];
     const dialogue = {
       'Amelia':['“Tom and I only meant to fix a bridge. Look what grew out of it.”','“A light in the window can change somebody’s whole night.”','“You don’t have to know what comes next before you come in.”'],
@@ -87,7 +87,7 @@
       let nearestPlace=null, pd=Infinity;
       places().forEach(p=>{const d=Math.hypot((p.x-x)*a.width,(p.y-y)*a.height);if(d<pd){pd=d;nearestPlace=p;}});
       let nearestBear=null, bd=Infinity;
-      bears.forEach((b,i)=>{const p=npcPoint(b,elapsed),d=Math.hypot((p.x-x)*a.width,(p.y-y)*a.height);if(d<bd){bd=d;nearestBear={bear:b,point:p,index:i};}});
+      bears.forEach((b,i)=>{const p=npcPoint(b,elapsed+i*8),d=Math.hypot((p.x-x)*a.width,(p.y-y)*a.height);if(d<bd){bd=d;nearestBear={bear:b,point:p,index:i};}});
       action.hidden=true;
       action.onclick=null;
       activeNpc=null;
