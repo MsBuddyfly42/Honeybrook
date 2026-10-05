@@ -222,6 +222,16 @@ function stars(n, of = 3) { let s = '<span class="stars" aria-label="' + n + ' o
 function avatar(f) { const ini = f.name.replace("Big Mama ", "").replace("Professor ", "").split(' ').map(w => w[0]).join('').slice(0, 2); return `<span class="avatar" style="background:${f.top}">${esc(ini)}</span>`; }
 function folk(name) { return FOLKS.find(f => f.name === name); }
 
+function updateSceneBack() {
+  const b = $('#scene-back'); if (!b) return;
+  const hasAreaBack = !!document.querySelector('#scene-area .area-back');
+  b.hidden = S.scene === 'title' || S.scene === 'home' || S.scene === 'circus' || S.scene === 'carnival' || (S.scene === 'area' && hasAreaBack);
+  if (S.scene === 'town') b.textContent = '← Back to Village Square';
+  else if (S.scene === 'village') b.textContent = '← Back to Honeybrook';
+  else if (S.returnTo === 'town') b.textContent = '← Back to Honeybrook';
+  else if (S.returnTo && AREAS[S.returnTo]) b.textContent = '← Back to ' + AREAS[S.returnTo].name;
+  else b.textContent = '← Back to Village Square';
+}
 function updateHUD() {
   $('#hud-day').textContent = 'Day ' + S.day;
   $('#hud-time').textContent = SLOTS[S.slot];
@@ -234,6 +244,7 @@ function updateHUD() {
   const ready = S.orders.filter(o => findItemFor(o)).length;
   $('#orders-badge').textContent = ready ? ready : '';
   $('#btn-home').hidden = S.scene === 'village' || S.scene === 'title' || S.scene === 'home';
+  updateSceneBack();
   $('#hud-toggle').hidden = $('#hud').hidden;
   $('#btn-town').hidden = S.scene !== 'village';
   $('#teddy').hidden = !S.owned.teddy;
@@ -2429,6 +2440,7 @@ $('#stage').addEventListener('pointerdown', e => { if ($('#hud').classList.conta
 $('#hud').addEventListener('click', e => { if (e.target.closest('button')) setTimeout(() => setHudMenuOpen(false), 0); });
 $('#btn-home').onclick = () => { Snd.sfx('click'); if (S.scene === 'home') { Stay.goBack(); return; } if ((S.scene === 'bakery' && Bakery.st && Bakery.st.phase !== 'done') || (S.scene === 'work' && Work.st && !Work.st.done)) { modal('<h2>Leave your project?</h2><p>What you\'ve started will go to waste, and this part of the day will be used up.</p>', [{ label: 'Stay' }, { label: 'Leave', primary: true, value: 'go' }]).then(v => v === 'go' && leaveActivity()); return; } leaveActivity(); };
 $('#btn-town').onclick = () => { Snd.sfx('click'); go('town'); };
+$('#scene-back').onclick = () => { Snd.sfx('click'); if (S.scene === 'village') go('town'); else if (S.scene === 'town') go('village'); else $('#btn-home').click(); };
 $('#btn-orders').onclick = () => { Snd.sfx('click'); showOrders(); };
 $('#btn-basket').onclick = () => { Snd.sfx('click'); showBasket(); };
 $('#btn-shop').onclick = () => { Snd.sfx('click'); showStore(); };
