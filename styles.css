@@ -683,3 +683,6 @@ body.hb-reduced-motion *,body.hb-reduced-motion *::before,body.hb-reduced-motion
 #town .place.east{background:#853b32;color:#fff8ee}
 #town .place.south{background:#40552f;color:#fff8ee}
 #town .place.east small,#town .place.south small{color:#fff8ee}
+
+#town .neighbor-links button{background:#ffd783;color:#302419;border:1.5px solid #815a2b;box-shadow:0 2px 0 #815a2b}
+#town .neighbor-links button:hover,#town .neighbor-links button:focus-visible{background:#ffe7aa;color:#302419}
