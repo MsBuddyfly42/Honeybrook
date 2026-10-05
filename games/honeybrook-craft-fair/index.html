@@ -96,27 +96,23 @@
 
   <!-- HONEYBROOK LITTLE CARNIVAL -->
   <section id="scene-carnival" class="scene carnival-scene" aria-label="Honeybrook Little Carnival">
-    <img class="bg" src="img/village.jpg" alt="Honeybrook Fair village square dressed for its little autumn carnival">
-    <div class="carnival-wash"></div>
-    <img class="carnival-illustration" src="img/carnival-overlay.svg" alt="">
-    <div class="carnival-heading panel paper"><p class="town-kicker">HONEYBROOK FAIR MIDWAY</p><h2>The Little Carnival</h2><p>Sweet treats, merry rides, midway games, and one very special circus show.</p></div>
-    <div class="carnival-treats" aria-label="Carnival food stands">
-      <button class="carnival-stop food-stop" data-carnival="cotton"><b>Cotton Candy</b><small>Cloud-soft and spun fresh</small></button>
-      <button class="carnival-stop food-stop" data-carnival="apple"><b>Candy Apples</b><small>Shiny, crisp, and sweet</small></button>
-      <button class="carnival-stop food-stop" data-carnival="funnel"><b>Funnel Cakes</b><small>Warm with a snowfall of sugar</small></button>
-      <button class="carnival-stop food-stop extra-treat" data-carnival="popcorn"><b>Popcorn &amp; Lemonade</b><small>Classic midway snacks</small></button>
-    </div>
-    <div class="carnival-ride-stops" aria-label="Rides and attractions">
-      <button class="carnival-stop ride-stop ferris-stop" data-carnival="wheel"><b>Honeywheel</b><small>Take a slow ride above the lights</small></button>
-      <button class="carnival-stop ride-stop carousel-stop" data-carnival="carousel"><b>Honey-Go-Round</b><small>Pick a painted pony</small></button>
-      <button class="carnival-stop game-stop ring-stop" data-carnival="rings"><b>Ring Toss</b><small>Win tickets on the midway</small></button>
-      <button class="carnival-stop game-stop duck-stop" data-carnival="ducks"><b>Lucky Duck Pond</b><small>Pick a duck and see what you find</small></button>
-      <button class="carnival-stop game-stop balloon-stop" data-carnival="balloons"><b>Balloon Pop</b><small>Choose the right balloon</small></button>
-      <button class="carnival-stop circus-stop" data-carnival="circus"><b>Little Circus Show</b><small>Three acts · one golden finale</small></button>
-    </div>
-    <div class="carnival-ticket-purse"><span>🎟️ Carnival tickets</span><b id="carnivalTickets">0</b><button type="button" data-carnival="prizes">Prize Booth</button></div>
-    <div class="carnival-footnote">The Fair is part of Honeybrook. The town’s homes and gathering places are just across the map.</div>
-  </section>
+  <img class="bg" src="img/carnival.jpg" alt="A lively autumn carnival with food stands, rides, midway games, and a circus tent">
+  <div class="carnival-heading panel paper"><p class="town-kicker">HONEYBROOK FAIR MIDWAY</p><h2>The Little Carnival</h2><p>Hover over a stand or attraction to explore.</p></div>
+  <div class="carnival-hotspots" aria-label="Carnival attractions">
+    <button class="carnival-stop food-stop cotton-stop" data-carnival="cotton" aria-label="Cotton candy stand"><b>Cotton Candy</b><small>Cloud-soft and spun fresh</small></button>
+    <button class="carnival-stop food-stop apple-stop" data-carnival="apple" aria-label="Candy apples stand"><b>Candy Apples</b><small>Shiny, crisp, and sweet</small></button>
+    <button class="carnival-stop food-stop funnel-stop" data-carnival="funnel" aria-label="Funnel cake stand"><b>Funnel Cakes</b><small>Warm with powdered sugar</small></button>
+    <button class="carnival-stop food-stop popcorn-stop" data-carnival="popcorn" aria-label="Popcorn and lemonade stand"><b>Popcorn &amp; Lemonade</b><small>Classic midway snacks</small></button>
+    <button class="carnival-stop ride-stop wheel-stop" data-carnival="wheel" aria-label="Ride the Honeywheel Ferris wheel"><b>Honeywheel</b><small>A slow ride above the lights</small></button>
+    <button class="carnival-stop ride-stop carousel-stop" data-carnival="carousel" aria-label="Ride the Honey-Go-Round carousel"><b>Honey-Go-Round</b><small>Pick a painted pony</small></button>
+    <button class="carnival-stop game-stop ring-stop" data-carnival="rings" aria-label="Play ring toss"><b>Ring Toss</b><small>Win tickets on the midway</small></button>
+    <button class="carnival-stop game-stop duck-stop" data-carnival="ducks" aria-label="Play Lucky Duck Pond"><b>Lucky Duck Pond</b><small>Pick a duck and see what you find</small></button>
+    <button class="carnival-stop game-stop balloon-stop" data-carnival="balloons" aria-label="Play Balloon Pop"><b>Balloon Pop</b><small>Choose the right balloon</small></button>
+    <button class="carnival-stop circus-stop" data-carnival="circus" aria-label="Enter the Honeybrook circus show"><b>Little Circus Show</b><small>Three acts · one golden finale</small></button>
+  </div>
+  <div class="carnival-ticket-purse"><span>🎟 Carnival tickets</span><b id="carnivalTickets">0</b><button type="button" data-carnival="prizes">Prize Booth</button></div>
+  <div class="carnival-footnote">The Fair is part of Honeybrook. Homes and gathering places are just across the map.</div>
+</section>
 
   <!-- AREAS: Bears' Den, Hive, Rest, Your Room -->
   <section id="scene-area" class="scene">
@@ -126,25 +122,24 @@
 
   <!-- Enterable Honeybrook homes and community interiors -->
   <section id="scene-home" class="scene home-scene" aria-label="Enter a Honeybrook home or community place">
-    <div id="home-room" class="home-room">
-      <div class="home-beams"></div><div class="home-window"><span>🌳</span><i>☀️</i></div>
-      <div class="home-shelf">📚　🫙　🧸</div><div class="home-fireplace"><span>🔥</span></div>
-      <div class="home-rug"></div><div class="home-table">🍞　🥣　🍯</div><div class="home-welcome">Come in. There’s room for you.</div><div class="home-bear" aria-hidden="true">🐻</div>
-      <div id="home-objects" class="home-objects"></div>
-      <header class="home-sign panel paper"><p id="home-kicker" class="town-kicker">HONEYBROOK</p><h2 id="home-title">A Cozy Home</h2><p id="home-description"></p></header>
-      <button id="home-back" class="btn btn-small home-back">← Back outside</button>
-    </div>
-  </section>
+  <div id="home-room" class="home-room">
+    <img id="home-bg" class="home-background" src="img/welcome-house.jpg" alt="">
+    <div id="home-objects" class="home-objects"></div>
+    <header class="home-sign panel paper"><p id="home-kicker" class="town-kicker">HONEYBROOK</p><h2 id="home-title">A Cozy Home</h2><p id="home-description"></p></header>
+    <button id="home-back" class="btn btn-small home-back">← Back outside</button>
+  </div>
+</section>
   <section id="scene-circus" class="scene circus-scene" aria-label="Inside the Honeybrook circus tent">
-    <div class="circus-canvas">
-      <div class="circus-canopy"><span>🎪</span></div><div class="circus-lights">✦　✦　✦　✦　✦　✦　✦</div>
-      <div class="circus-curtain left"></div><div class="circus-curtain right"></div>
-      <div class="circus-stage"><div class="circus-performers"><span class="performer robin">🎤</span><span class="performer templar">🐝</span><span class="performer mama">📖</span></div><div class="circus-ring">✨ THE HONEYBROOK LITTLE CIRCUS ✨</div><div id="circus-act-line" class="circus-act-line">Robin, Templar, and Big Mama Mary are getting ready.</div></div>
-      <div class="circus-audience">🐻　🧸　🐻　🐻　🧸　🐻　🐻　🧸</div>
-      <div class="circus-sign panel paper"><p class="town-kicker">UNDER THE BIG TOP</p><h2>Honeybrook’s Little Circus</h2><p>Friendly acts, audience games, a clockwork bee, and a story where everyone gets to come in from the rain.</p><button id="circus-start" class="btn btn-primary">🎟️ Start the show</button></div>
-      <button id="circus-back" class="btn btn-small circus-back">← Back to the carnival</button><div id="circus-confetti" class="circus-confetti" aria-hidden="true"></div>
-    </div>
-  </section>
+  <img class="bg circus-background" src="img/circus.jpg" alt="Inside the glowing Honeybrook circus tent, Robin sings, Templar presents a clockwork bee, and Big Mama Mary tells a story">
+  <div class="circus-shade"></div>
+  <button id="circus-back" class="btn btn-small circus-back">← Back to the carnival</button>
+  <aside class="circus-sign panel paper">
+    <p class="town-kicker">UNDER THE BIG TOP</p><h2>Honeybrook’s Little Circus</h2>
+    <p>Robin, Templar, and Big Mama Mary are ready for the show.</p>
+    <p id="circus-act-line" class="circus-act-line" aria-live="polite">Three acts · one story about making room.</p>
+    <button id="circus-start" class="btn btn-primary">Start the show</button>
+  </aside>
+</section>
   <!-- GARDEN -->
   <section id="scene-garden" class="scene">
     <img class="bg" src="img/garden.jpg" alt="Your garden plot">
