@@ -2478,13 +2478,24 @@ const Carnival = {
     Snd.sfx('good'); updateHUD(); Save.push(true);
     await modal(`<p class="kicker">Fresh from the midway</p><h2>Yum! ${item.name}</h2><p>${item.line}</p><p>You have enjoyed ${S.carnivalTreats.length} carnival ${S.carnivalTreats.length === 1 ? 'treat' : 'treats'} so far. Take your time—there is no rush to leave the Fair.</p>`, [{label:'Back to the carnival',primary:true}]);
   },
+  action(kind) {
+    const scenes = {
+      carousel: { label:'Painted ponies circling under golden lights', art:'<div class="midway-canopy">🎠</div><div class="midway-deck"></div><div class="midway-ponies"><span>🐴</span><span>🐴</span><span>🐴</span><span>🐴</span><span>🐴</span><span>🐴</span></div><div class="midway-rest">🐴 🐴<small>resting behind the curtain</small></div>' },
+      wheel: { label:'A little Ferris wheel turning above Honeybrook', art:'<div class="midway-wheel"><div class="midway-spokes"></div><i>🎡</i><span>🟡</span><span>🔵</span><span>🟡</span><span>🔵</span><span>🟡</span><span>🔵</span></div>' },
+      rings: { label:'Rings sailing toward honey jars', art:'<div class="midway-target"><span class="midway-jar">🍯</span><span class="midway-ring">⭕</span><span class="midway-ring second">⭕</span><span class="midway-jar">🍯</span><span class="midway-jar">🍯</span></div>' },
+      ducks: { label:'Three ducks drifting across the pond', art:'<div class="midway-water"><span>🦆</span><span>🦆</span><span>🦆</span></div>' },
+      balloons: { label:'Bright balloons bobbing above the midway', art:'<div class="midway-balloons"><span>🎈</span><span>🎈</span><span>🎈</span></div>' }
+    };
+    const scene=scenes[kind]; if(!scene)return '';
+    return '<div class="midway-action midway-'+kind+'" role="img" aria-label="'+scene.label+'"><span class="midway-lights" aria-hidden="true">✦　✧　✦　✧　✦</span>'+scene.art+'</div>';
+  },
   async ride(kind) {
     const wheel = kind === 'wheel';
     const name = wheel ? 'Honeywheel' : 'Honey-Go-Round';
     const text = wheel
       ? 'The little Ferris wheel lifts you above Honeybrook. At the top, you can see the creek bridge, the welcome house, and the Fair lights all at once.'
       : 'Painted ponies circle beneath strings of golden lights. You choose a honey-colored pony with a blue saddle.';
-    const value = await modal(`<p class="kicker">A gentle Fair ride</p><h2>${wheel ? '🎡' : '🎠'} ${name}</h2><div class="carnival-act"><span class="act-icon">${wheel ? '🎡' : '🐴'}</span><p>${text}</p><p>${wheel ? 'The wheel makes 3 turns. If you count 4 lanterns on each side, how many lanterns can you spot altogether?' : 'The carousel has 8 ponies. Two are resting behind the curtain. How many ponies are ready to ride?'}</p></div>`,
+    const value = await modal(`<p class="kicker">A gentle Fair ride</p><h2>${wheel ? '🎡' : '🎠'} ${name}</h2><div class="carnival-act ride-act"><div class="ride-picture">${this.action(wheel ? 'wheel' : 'carousel')}</div><span class="act-icon" aria-hidden="true">${wheel ? '🎡' : '🐴'}</span><p>${text}</p><p class="ride-question">${wheel ? 'The wheel makes 3 turns. If you count 4 lanterns on each side, how many lanterns can you spot altogether?' : 'The carousel has 8 ponies. Two are resting behind the curtain. How many ponies are ready to ride?'}</p></div>`,
       (wheel ? [{label:'2'}, {label:'6'}, {label:'8',primary:true,value:'correct'}, {label:'12'}] : [{label:'2'}, {label:'6',primary:true,value:'correct'}, {label:'8'}, {label:'12'}]));
     S.usedSlot = true;
     if (value === 'correct') { Snd.sfx('good'); toast(wheel ? 'Eight lanterns—nice counting!' : 'Six ponies are ready—well counted!'); }
@@ -2496,7 +2507,7 @@ const Carnival = {
       ducks: { title:'Lucky Duck Pond', icon:'🦆', intro:'Three ducks drift by. Pick the one with the word that has a long A sound:', prompt:'Which duck carries a long A word?', answers:[['CAT','cat'],['CAKE','cake'],['CAN','can']], correct:'cake', tickets:2, hint:'The silent e at the end helps the A say its name: cake.' },
       balloons: { title:'Balloon Pop', icon:'🎈', intro:'Pick the balloon that completes the pattern:', prompt:'🔴  🔵  🔴  🔵  🔴  ?', answers:[['🔴','red'],['🟡','yellow'],['🔵','blue']], correct:'blue', tickets:2, hint:'The colors take turns: red, blue, red, blue, red…' }
     }[kind];
-    const ans = await modal(`<p class="kicker">Midway challenge · Just for fun</p><h2>${q.icon} ${q.title}</h2><p>${q.intro}</p><div class="carnival-act"><p><b>${q.prompt}</b></p></div><p>Take a thoughtful guess. A wrong answer is just another chance to learn.</p>`,
+    const ans = await modal(`<p class="kicker">Midway challenge · Just for fun</p><h2>${q.icon} ${q.title}</h2><p>${q.intro}</p><div class="carnival-act game-act"><div class="ride-picture">${this.action(kind)}</div><p><b>${q.prompt}</b></p></div><p>Take a thoughtful guess. A wrong answer is just another chance to learn.</p>`,
       q.answers.map(([label,val])=>({label,primary:val===q.correct,value:val})));
     S.usedSlot = true;
     if (ans === q.correct) {
