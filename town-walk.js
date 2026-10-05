@@ -45,7 +45,7 @@
     let x = Math.max(.03, Math.min(.97, Number(memory.x) || .5));
     let y = Math.max(.06, Math.min(.94, Number(memory.y) || .73));
     let W = 1, H = 1, lastTime = 0, elapsed = 0, goal = null, goalDone = null;
-    let activeNpc = null, facing = 1, walkPhase = 0, footstep = 0;
+    let activeNpc = null, facing = 1, walkPhase = 0, footstep = 0, enteredPlace = false;
     const held = new Set();
     const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const names = ['Amelia','Harold Pawst','Sammy','Wally','Benny Scoops'];
@@ -122,23 +122,30 @@
       paint();
     }
     function ellipse(cx,cy,rx,ry,color) { ctx.fillStyle=color;ctx.beginPath();ctx.ellipse(cx,cy,rx,ry,0,0,Math.PI*2);ctx.fill(); }
+    function plush(base,light,shade,cx,cy,r) { const g=ctx.createRadialGradient(cx-r*.35,cy-r*.46,r*.12,cx,cy,r);g.addColorStop(0,light);g.addColorStop(.66,base);g.addColorStop(1,shade);return g; }
     function drawBear(nx,ny,fur,coat,t,moving,label,isPlayer) {
       const u=Math.max(.78,Math.min(1.35,Math.min(W,H)/510)), px=nx*W, py=ny*H;
       const bob=moving?Math.abs(Math.sin(t*11))*2.1*u:Math.sin(t*2.2)*.8*u;
       const swing=moving?Math.sin(t*11)*.22:Math.sin(t*1.4)*.035;
+      const furPaint=plush(fur,'#f2d2a7','#62452e',0,-32*u,21*u), coatPaint=plush(coat,'#f2d6a0','#28392e',0,-16*u,21*u);
       ctx.save();ctx.translate(px,py+bob);
-      ellipse(0,4*u,19*u,5*u,'rgba(29,25,17,.24)');
-      ctx.strokeStyle=fur;ctx.lineWidth=5*u;ctx.lineCap='round';
+      ellipse(0,4*u,20*u,5.5*u,'rgba(26,23,17,.30)');
+      ctx.lineCap='round';ctx.lineWidth=6*u;ctx.strokeStyle=furPaint;
       ctx.beginPath();ctx.moveTo(-7*u,-8*u);ctx.lineTo(-10*u+12*swing*u,1*u);ctx.moveTo(7*u,-8*u);ctx.lineTo(10*u-12*swing*u,1*u);ctx.stroke();
-      ellipse(-8*u,-1*u,4*u,5*u,fur);ellipse(8*u,-1*u,4*u,5*u,fur);
-      ellipse(0,-12*u,9*u,13*u,coat);
-      ctx.strokeStyle=coat;ctx.lineWidth=5*u;ctx.beginPath();ctx.moveTo(-6*u,-17*u);ctx.lineTo(-10*u+14*swing*u,-9*u);ctx.moveTo(6*u,-17*u);ctx.lineTo(10*u-14*swing*u,-9*u);ctx.stroke();
-      ellipse(0,-29*u,13*u,12*u,fur);ellipse(-8*u,-38*u,4.3*u,5*u,fur);ellipse(8*u,-38*u,4.3*u,5*u,fur);
-      ellipse(-4*u,-30*u,1.25*u,1.6*u,'#21180f');ellipse(4*u,-30*u,1.25*u,1.6*u,'#21180f');
-      ellipse(0,-25*u,4.6*u,3.3*u,'#e6c397');ellipse(0,-26*u,1.8*u,1.4*u,'#39251a');
-      ctx.strokeStyle='#39251a';ctx.lineWidth=1*u;ctx.beginPath();ctx.arc(0,-24*u,2.6*u,.2,2.8);ctx.stroke();
-      if (isPlayer) { ctx.strokeStyle='#ffe18c';ctx.lineWidth=2*u;ctx.beginPath();ctx.arc(0,-18*u,23*u,0,Math.PI*2);ctx.stroke();ellipse(14*u,-19*u,4*u,4*u,'#ffe18c'); }
-      ctx.font='800 '+Math.max(10,11*u)+'px Nunito, sans-serif';ctx.textAlign='center';ctx.lineWidth=3*u;ctx.strokeStyle='rgba(42,30,19,.72)';ctx.strokeText(label,0,-50*u);ctx.fillStyle=isPlayer?'#fff1c9':'#fff9eb';ctx.fillText(label,0,-50*u);
+      ellipse(-8*u,-1*u,4*u,5*u,furPaint);ellipse(8*u,-1*u,4*u,5*u,furPaint);
+      ellipse(0,-12*u,9.5*u,13.5*u,coatPaint);
+      ctx.strokeStyle=coatPaint;ctx.lineWidth=6*u;ctx.beginPath();ctx.moveTo(-6*u,-17*u);ctx.lineTo(-10*u+14*swing*u,-9*u);ctx.moveTo(6*u,-17*u);ctx.lineTo(10*u-14*swing*u,-9*u);ctx.stroke();
+      ctx.strokeStyle='rgba(255,235,196,.52)';ctx.lineWidth=1*u;ctx.beginPath();ctx.moveTo(-4*u,-19*u);ctx.lineTo(-4*u,-8*u);ctx.stroke();
+      ellipse(0,-29*u,13.5*u,12.5*u,furPaint);ellipse(-8*u,-38*u,4.8*u,5.5*u,furPaint);ellipse(8*u,-38*u,4.8*u,5.5*u,furPaint);
+      ellipse(-8*u,-38*u,2.2*u,2.9*u,'rgba(105,67,43,.56)');ellipse(8*u,-38*u,2.2*u,2.9*u,'rgba(105,67,43,.56)');
+      ellipse(-4*u,-30*u,1.45*u,1.8*u,'#21180f');ellipse(4*u,-30*u,1.45*u,1.8*u,'#21180f');
+      ellipse(-4.4*u,-30.6*u,.45*u,.55*u,'#fff0d1');ellipse(3.6*u,-30.6*u,.45*u,.55*u,'#fff0d1');
+      ellipse(0,-25*u,5*u,3.5*u,'#e9c69b');ellipse(0,-26*u,2*u,1.5*u,'#39251a');
+      ctx.strokeStyle='#39251a';ctx.lineWidth=1.1*u;ctx.beginPath();ctx.arc(0,-24*u,2.8*u,.2,2.8);ctx.stroke();
+      if(label==='Harold Pawst'){ctx.strokeStyle='#d7bb82';ctx.lineWidth=2*u;ctx.beginPath();ctx.moveTo(-7*u,-16*u);ctx.lineTo(8*u,-7*u);ctx.stroke();ellipse(8*u,-7*u,3.7*u,4.2*u,'#8c633d');}
+      if(label==='Wally'){ctx.strokeStyle='#fff0d5';ctx.lineWidth=2*u;ctx.beginPath();ctx.moveTo(-4*u,-18*u);ctx.lineTo(-4*u,-11*u);ctx.lineTo(4*u,-11*u);ctx.lineTo(4*u,-18*u);ctx.stroke();}
+      if(isPlayer){ctx.strokeStyle='#ffe18c';ctx.lineWidth=2*u;ctx.beginPath();ctx.arc(0,-18*u,24*u,0,Math.PI*2);ctx.stroke();ellipse(15*u,-20*u,4.2*u,4.2*u,'#ffe18c');}
+      ctx.font='800 '+Math.max(10,11*u)+'px Nunito, sans-serif';ctx.textAlign='center';ctx.lineWidth=3*u;ctx.strokeStyle='rgba(42,30,19,.78)';ctx.strokeText(label,0,-51*u);ctx.fillStyle=isPlayer?'#fff1c9':'#fff9eb';ctx.fillText(label,0,-51*u);
       ctx.restore();
     }
     function paint(t) {
@@ -186,11 +193,50 @@
       addMemory('Walked to '+p.name);
       save();updateHud();
     }
+    const placeScenes = {
+      welcome:{image:'games/honeybrook-craft-fair/img/welcome-house.png', activity:'Make the welcome room ready', items:['Set out a warm bowl','Fold a fresh blanket','Light the hearth']},
+      bridge:{image:'games/honeybrook-craft-fair/img/honeybrook-town-map.jpg', activity:'Check Amelia and Tom’s bridge', items:['Test a sturdy plank','Tap the handrail','Take a careful crossing']},
+      homes:{image:'games/honeybrook-craft-fair/img/hearthwell-home.png', activity:'Raise the next neighbor’s roof', items:['Lift your end','Line up the beam','Secure the joint']},
+      school:{image:'games/honeybrook-craft-fair/img/schoolroom.png', activity:'Try the three learning stations', items:['Read a story line','Fit a puzzle piece','Test the block bridge']},
+      bakery:{image:'games/honeybrook-craft-fair/img/bakery.jpg', activity:'Finish Wally’s honey-bun tray', items:['Measure the flour','Stir in the honey','Set out the warm loaf']},
+      square:{image:'games/honeybrook-craft-fair/img/village.jpg', activity:'Prepare the town square', items:['Read the town notice','Polish the statue','Hang a festival ribbon']},
+      hollow:{image:'games/honeybrook-craft-fair/img/hollow.jpg', activity:'Learn a neighbor’s custom', items:['Share the honey','Respect the porridge','Choose the creek road']}
+    };
+    function enterScene(p) {
+      const key=p.button.dataset.hbPlace, cfg=placeScenes[key]||placeScenes.bridge;
+      p.button.dataset.hbWalkPass='1';
+      p.button.click();
+      const title=body.querySelector('#hbWorldDialogTitle')?.textContent||p.name;
+      const kicker=body.querySelector('.hb-dialog-kicker')?.textContent||'A Honeybrook place';
+      const paragraphs=Array.from(body.querySelectorAll(':scope > p')).filter(node=>!node.classList.contains('hb-dialog-kicker')).map(node=>node.textContent.trim()).filter(Boolean);
+      const activity=body.querySelector('.hb-place-action');
+      const links=Array.from(body.querySelectorAll(':scope > .hb-dialog-actions')).pop();
+      const scene=document.createElement('section');
+      scene.className='hb-entry-scene'; scene.dataset.place=key; scene.setAttribute('aria-label',title+' playable scene');
+      scene.innerHTML='<img class="hb-entry-bg" src="'+cfg.image+'" alt="" aria-hidden="true"><div class="hb-entry-vignette"></div><header class="hb-entry-header"><button type="button" class="hb-entry-back" data-hb-entry-back>← Back to Honeybrook</button><div><small>'+kicker+'</small><h2>'+title+'</h2></div><span class="hb-entry-live"><i></i> You are here</span></header><div class="hb-entry-host" aria-hidden="true"><span class="hb-entry-host-ear left"></span><span class="hb-entry-host-ear right"></span><span class="hb-entry-host-face"><i></i><i></i><b></b></span><span class="hb-entry-host-body"></span><span class="hb-entry-host-note">A neighbor is here</span></div><div class="hb-entry-dock"><div class="hb-entry-story"><small>LOOK AROUND</small><p></p><details><summary>Hear this place’s story</summary><div class="hb-entry-story-full"></div></details></div><div class="hb-entry-actions"></div><section class="hb-mini-task"><div class="hb-mini-intro"><div><small>OPTIONAL LITTLE ACTIVITY</small><h3>'+cfg.activity+'</h3><p>Try the steps in any order. Nothing is timed, and you can stop whenever you like.</p></div><button type="button" class="hb-task-start">Let me try</button></div><div class="hb-task-play" hidden><div class="hb-task-progress"><span>Progress</span><span class="hb-task-count">0 / '+cfg.items.length+'</span></div><div class="hb-task-track"><i></i></div><div class="hb-task-items"></div><p class="hb-task-finish" aria-live="polite"></p></div></section><details class="hb-entry-routes"><summary>Places connected from here</summary><div class="hb-entry-route-links"></div></details></div><div class="hb-entry-arrival" aria-hidden="true"><span>🐾</span><b>Arriving at '+title+'</b></div>';
+      scene.querySelector('.hb-entry-story>p').textContent=paragraphs[0]||kicker;
+      scene.querySelector('.hb-entry-story-full').textContent=paragraphs.join(' ');
+      if(activity){scene.querySelector('.hb-entry-actions').appendChild(activity);activity.classList.add('hb-entry-action-set');}
+      if(links){scene.querySelector('.hb-entry-route-links').appendChild(links);}
+      const items=scene.querySelector('.hb-task-items'),taskPlay=scene.querySelector('.hb-task-play'),count=scene.querySelector('.hb-task-count'),track=scene.querySelector('.hb-task-track i'),finish=scene.querySelector('.hb-task-finish');
+      cfg.items.forEach((label,i)=>{const b=document.createElement('button');b.type='button';b.className='hb-task-item';b.dataset.step=String(i);b.innerHTML='<span>'+(i+1)+'</span>'+label;b.addEventListener('click',()=>{if(b.classList.contains('done'))return;b.classList.add('done');b.disabled=true;const done=items.querySelectorAll('.done').length;count.textContent=done+' / '+cfg.items.length;track.style.width=(done/cfg.items.length*100)+'%';scene.classList.remove('hb-scene-burst');void scene.offsetWidth;scene.classList.add('hb-scene-burst');finish.textContent=done===cfg.items.length?'All three steps are done. The place is a little better because you stopped by.':'Good—one small step is done. What else would you like to try?';if(done===cfg.items.length){finish.classList.add('complete');addMemory('Finished a small activity at '+title);}});items.appendChild(b);});
+      scene.querySelector('.hb-task-start').addEventListener('click',event=>{taskPlay.hidden=false;event.currentTarget.hidden=true;items.querySelector('.hb-task-item:not(.done)')?.focus();});
+      scene.querySelector('[data-hb-entry-back]').addEventListener('click',exitScene);
+      scene.querySelector('.hb-entry-bg').addEventListener('error',event=>{event.currentTarget.src='games/honeybrook-craft-fair/img/honeybrook-town-map.jpg';});
+      art.appendChild(scene); enteredPlace=true; art.classList.add('hb-inside-place');
+      dialog.close(); scene.querySelector('.hb-entry-back').focus({preventScroll:true});
+    }
+    function exitScene() {
+      const scene=art.querySelector('.hb-entry-scene'); if(!scene)return;
+      scene.classList.add('hb-entry-leave'); enteredPlace=false; art.classList.remove('hb-inside-place');
+      setTimeout(()=>scene.remove(), reduceMotion?0:220);
+      canvas.focus({preventScroll:true});
+      say('You step back outside. Wander anywhere, or enter another place.');
+    }
     function activate(p) {
       if(!p)return;
       rememberPlace(p);
-      p.button.dataset.hbWalkPass='1';
-      p.button.click();
+      enterScene(p);
     }
     function nearestPlace() {
       const a=art.getBoundingClientRect();let best=null,d0=Infinity;
@@ -253,6 +299,14 @@
       if(kind==='explore'){event.preventDefault();event.stopPropagation();explore();}
     }
     art.addEventListener('click',captureClick,true);
+    document.addEventListener('click',event=>{
+      if(!town.classList.contains('active')||enteredPlace)return;
+      const choice=event.target.closest&&event.target.closest('[data-hb-place]');
+      if(!choice||art.contains(choice))return;
+      event.preventDefault();event.stopPropagation();
+      const p=places().find(v=>v.button.dataset.hbPlace===choice.dataset.hbPlace);
+      if(p)walkTo(p.x,p.y,()=>activate(p),'Walking to '+p.name+' before stepping inside.');
+    },true);
     canvas.addEventListener('click',event=>{
       const r=canvas.getBoundingClientRect(),tx=(event.clientX-r.left)/r.width,ty=(event.clientY-r.top)/r.height;
       walkTo(tx,ty,()=>{status.textContent='A quiet moment in Honeybrook.';say('You pause along the path. The creek moves, neighbors pass, and nothing needs to happen next.');addMemory('Paused along a Honeybrook path');},'Walking along the path.');
@@ -260,7 +314,9 @@
     canvas.addEventListener('keydown',event=>{if(event.key===' '){event.preventDefault();activateNearest();}});
     function keyName(k){return ({ArrowUp:'up',w:'up',W:'up',ArrowDown:'down',s:'down',S:'down',ArrowLeft:'left',a:'left',A:'left',ArrowRight:'right',d:'right',D:'right'})[k];}
     document.addEventListener('keydown',event=>{
-      if(!town.classList.contains('active')||document.getElementById('hbWorldDialog')?.open)return;
+      if(!town.classList.contains('active'))return;
+      if(event.key==='Escape'&&enteredPlace){event.preventDefault();exitScene();return;}
+      if(enteredPlace||document.getElementById('hbWorldDialog')?.open)return;
       if(event.target.closest && event.target.closest('input,textarea,select,[contenteditable="true"]'))return;
       const k=keyName(event.key);if(k && (document.activeElement===canvas||art.contains(document.activeElement))){event.preventDefault();goal=null;goalDone=null;held.add(k);}
       if((event.key==='e'||event.key==='E'||event.key==='Enter')&&(document.activeElement===canvas||art.contains(document.activeElement))){event.preventDefault();activateNearest();}
