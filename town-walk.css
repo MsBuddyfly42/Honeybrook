@@ -1,0 +1,34 @@
+/* The scene controls stay inside the established Honeybrook storybook map. */
+#town .hb-world-art{isolation:isolate}
+#town .hb-walk-canvas{position:absolute;inset:0;z-index:2;display:block;touch-action:none;outline:none}
+#town .hb-walk-canvas:focus-visible{box-shadow:inset 0 0 0 4px #ffe29a}
+#town .hb-walk-hud{position:absolute;z-index:7;left:1.2%;bottom:2.4%;width:min(360px,32%);max-height:45%;overflow:auto;padding:.68rem .82rem;border:2px solid #c9a96e;border-radius:14px;background:rgba(35,52,45,.94);color:#fff5df;box-shadow:0 4px 0 #684727,0 10px 24px #24170d66;pointer-events:auto}
+#town .hb-walk-head{display:flex;align-items:center;gap:.55rem}
+#town .hb-walk-paw{display:grid;place-items:center;flex:0 0 2.3rem;height:2.3rem;border-radius:50%;background:#ffe09a;color:#3a2a1c;font-size:1.25rem}
+#town .hb-walk-head>div{display:grid;gap:.1rem}
+#town .hb-walk-head small{color:#f0cd80;font:900 .56rem Nunito,sans-serif;letter-spacing:.1em}
+#town .hb-walk-head b{color:#fff5df;font:800 .95rem/1.15 Fraunces,Georgia,serif}
+#town .hb-walk-hud p{margin:.42rem 0;color:#fff5df;font-size:.75rem;line-height:1.35}
+#town .hb-walk-response{margin:.45rem 0;padding:.52rem .62rem;border-left:3px solid #f0cd80;border-radius:0 9px 9px 0;background:#ffffff12;color:#fff5df;font-size:.78rem;line-height:1.4}
+#town .hb-walk-choices{display:flex;flex-wrap:wrap;gap:.35rem}
+#town .hb-walk-choices button,#town .hb-walk-action{border:1px solid #b48a4d;border-radius:999px;padding:.4rem .62rem;background:#ffe09a;color:#302419;font:800 .72rem Nunito,sans-serif;cursor:pointer}
+#town .hb-walk-action{margin:.12rem 0 .35rem;background:#eec66d}
+#town .hb-walk-choices button:hover,#town .hb-walk-action:hover{background:#fff0c6;transform:translateY(-1px)}
+#town .hb-walk-help{display:block;margin-top:.35rem;color:#f7e7c5;font-size:.62rem}
+#town .hb-walk-pad{display:none}
+@media(max-width:760px){
+ #town .hb-walk-hud{left:2%;bottom:1.4%;width:min(310px,62%);max-height:34%;padding:.55rem .62rem}
+ #town .hb-walk-head small{font-size:.48rem}
+ #town .hb-walk-head b{font-size:.82rem}
+ #town .hb-walk-hud p{font-size:.69rem}
+ #town .hb-walk-help{font-size:.56rem}
+ #town .hb-walk-pad{position:absolute;z-index:8;right:2%;bottom:1.2%;display:grid;grid-template-columns:repeat(3,2.2rem);grid-template-rows:repeat(2,2.2rem);gap:.18rem;pointer-events:auto}
+ #town .hb-walk-pad button{border:2px solid #d3ae6b;border-radius:10px;background:rgba(247,236,212,.96);color:#3a2a1c;font-weight:1000;box-shadow:0 3px 0 #684727;touch-action:none}
+ #town .hb-walk-pad button:first-child{grid-column:2}
+ #town .hb-walk-pad button:nth-child(2){grid-column:1;grid-row:2}
+ #town .hb-walk-pad button:nth-child(3){grid-column:2;grid-row:2}
+ #town .hb-walk-pad button:nth-child(4){grid-column:3;grid-row:2}
+ #town .hb-world-toolbar{bottom:auto;top:11%;left:auto;right:1%;transform:none;display:grid;grid-template-columns:repeat(2,1fr);border-radius:12px;max-width:110px;padding:.28rem;gap:.2rem}
+ #town .hb-world-toolbar button{padding:.38rem .44rem;font-size:.68rem}
+}
+@media(prefers-reduced-motion:reduce){#town .hb-walk-choices button,#town .hb-walk-action{transition:none}}
