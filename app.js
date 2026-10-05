@@ -1053,29 +1053,45 @@ updateMemoryBadge();
 
 (function(){
  const scenes={
- ordinary:["☀️ Ordinary Honeybrook","Harold is halfway through his route, somebody is arguing over a parking space on Main Street, and Benny Scoops' bell has caused three cubs to appear from nowhere.","Go wherever you want. Nothing historic is required."],
- story:["📖 Story Day","Storytime Bear has placed an old Honeybrook volume on the library table. One page mentions a bridge that existed before the town—and before Amelia.","Read, investigate, or close the book and get lunch."],
- mystery:["🔎 Mystery Day","A field note from the Northern Edge does not match an older library sketch. Jonesha has already noticed. Big Mama has already noticed Jonesha noticing.","Compare evidence without assuming the strangest explanation is correct."],
- roleplay:["🎭 Role-Play Day","The scene is yours. Enter as your Visitor Bear, narrate the town, or borrow a resident for a while.","Try: Narrator → “Meanwhile, across Honeybrook…” • Resident → choose a familiar bear • Visitor → simply walk in."],
- cozy:["🪑 Cozy Day","Honeybrook keeps running without needing anything from you. The Honey Mug has a window seat, Bridgeview has porches, and the library has chairs nobody quizzes you in.","No quest. No score. No progress goal. Stay as long as you like."]
+ ordinary:["☀️ Ordinary Honeybrook","Harold is halfway through his route, somebody is arguing over a parking space on Main Street, and Benny Scoops' bell has caused three cubs to appear from nowhere.","Go wherever you want. Nothing historic is required.",["Follow Harold’s mail route","Get a treat with Benny","See what is happening on Main Street"]],
+ story:["📖 Story Day","Storytime Bear has placed an old Honeybrook volume on the library table. One page mentions a bridge that existed before the town—and before Amelia.","Read, investigate, or close the book and get lunch.",["Read the bridge passage","Compare it with the town map","Ask Storytime Bear a question"]],
+ mystery:["🔎 Mystery Day","A field note from the Northern Edge does not match an older library sketch. Jonesha has already noticed. Big Mama has already noticed Jonesha noticing.","Compare evidence without assuming the strangest explanation is correct.",["Inspect the old sketch","Ask Jonesha what she noticed","Record an open question"]],
+ roleplay:["🎭 Role-Play Day","The scene is yours. Enter as your Visitor Bear, narrate the town, or borrow a resident for a while.","Try a scene, change roles, or just walk in.",["Start as the Visitor Bear","Narrate a moment","Play a familiar resident"]],
+ cozy:["🪑 Cozy Day","Honeybrook keeps running without needing anything from you. The Honey Mug has a window seat, Bridgeview has porches, and the library has chairs nobody quizzes you in.","No quest. No score. No progress goal. Stay as long as you like.",["Sit by the café window","Rest on Big Mama’s porch","Choose a quiet book"]]
  };
  const routes=[
- ["☕ Easy & Cozy","Honey Mug → Bear Claw Library → Community Park"],
- ["💻 Curious & Practical","Technology Center → Learning Commons → Main Street"],
- ["🎮 Fun Day","Gamer Bear Studio → Arcade → Bowling → BEARy Cold"],
- ["🏘️ Neighborhood Day","Bridgeview → Big Mama's porch → Commons → Hearthwell Home"],
- ["🌲 Edge of Mystery","Town Archives → Northern Edge → Ranger Boundary — stop before deepest woods"],
- ["🎨 Creative Day","Harmony Hill → Theater → outdoor performance lawn"]
+ ["☕ Easy & Cozy",["Main Street","Scholars' Quarter","Community Park"]],
+ ["💻 Curious & Practical",["Scholars' Quarter","Main Street","Town Square"]],
+ ["🎮 Fun Day",["Entertainment","Community Park","Main Street"]],
+ ["🏘️ Neighborhood Day",["Bridgeview","Community Park","Care & Community"]],
+ ["🌲 Edge of Mystery",["Town Square","Outskirts","Northern Edge"]],
+ ["🎨 Creative Day",["Harmony Hill","Entertainment","Scholars' Quarter"]]
  ];
  const threads=[
- ["The Bridge Before Honeybrook","Who built the ancient bridge, and what does its worn marking mean?"],
- ["The Golden Visitor","How much of the familiar Goldilocks story is history, and how much changed in retelling?"],
- ["The Cottage That Moves","Why do credible observers disagree about where a distant cottage appears?"],
- ["Amelia's Rainy-Night Visitor","Who was the mysterious woman who appeared before Honeybrook existed?"],
- ["The Goddess & the Angel","They are related somehow. Honeybrook does not yet know how."]
+ ["The Bridge Before Honeybrook","Who built the ancient bridge, and what does its worn marking mean?","A library sketch shows the bridge before Amelia arrived. One pencil note reads only: ‘The creek keeps what the town forgets.’"],
+ ["The Golden Visitor","How much of the familiar Goldilocks story is history, and how much changed in retelling?","Honeybrook’s oldest families tell the story differently. They agree on the names, but not on who first opened the door."],
+ ["The Cottage That Moves","Why do credible observers disagree about where a distant cottage appears?","Two trail maps put the cottage on different ridges. Both were drawn in clear weather by bears who knew the woods."],
+ ["Amelia's Rainy-Night Visitor","Who was the mysterious woman who appeared before Honeybrook existed?","Amelia remembered a familiar voice but found no tracks. The creek flashed gold only after the town received its name."],
+ ["The Goddess & the Angel","They are related somehow. Honeybrook does not yet know how.","An old carving shows two figures under one branch. The inscription is too worn to explain their connection."]
  ];
- function scene(k){let x=scenes[k],e=document.getElementById("dayScene");if(e)e.innerHTML=`<h3>${x[0]}</h3><p>${x[1]}</p><div class="scene-choice"><b>Freedom note:</b> ${x[2]}</div>`}
- document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll("[data-daymode]").forEach(b=>b.onclick=()=>scene(b.dataset.daymode));let r=document.getElementById("quickRoutes");if(r)r.innerHTML=routes.map(x=>`<button class="route-btn"><b>${x[0]}</b><br><small>${x[1]}</small></button>`).join("");let t=document.getElementById("storyThreads");if(t)t.innerHTML=threads.map(x=>`<button class="thread-btn" data-thread="${x[0]}"><b>${x[0]}</b><br><small>${x[1]}</small></button>`).join("");document.querySelectorAll("[data-thread]").forEach(b=>b.onclick=()=>{let x=threads.find(y=>y[0]===b.dataset.thread),e=document.getElementById("roleStage");if(e)e.innerHTML=`<b>📖 Open thread: ${x[0]}</b><br>${x[1]}<br><small>No final answer has been revealed. This thread remains available for future stories and investigation.</small>`});scene("ordinary")});
+ const sceneChoices=["The moment changes around you. A neighbor responds, and Honeybrook carries on.","You make a small difference here. Someone notices and joins in.","You pause to look more closely. A new detail becomes part of the scene."];
+ let currentMode="ordinary";
+ function scene(k){currentMode=scenes[k]?k:"ordinary";let x=scenes[currentMode],e=document.getElementById("dayScene");if(e)e.innerHTML='<article class="hb-story-scene"><small>HONEYBROOK TODAY</small><h3>'+x[0]+'</h3><p>'+x[1]+'</p><div class="scene-choice"><b>Freedom note:</b> '+x[2]+'</div><div class="scene-choice-buttons">'+x[3].map((c,i)=>'<button data-day-action="'+i+'">'+c+' →</button>').join("")+'</div><div class="moment-play" id="dayActionResult" aria-live="polite">Choose something to see how the day unfolds.</div></article>'}
+ function routeStart(i){let r=routes[i],e=document.getElementById("roleStage");if(!e)return;e.innerHTML='<article class="hb-story-scene"><small>YOUR TOWN WALK</small><h3>'+r[0]+'</h3><p>Choose any stop to go there now. This route is only a suggestion; you can leave it whenever you like.</p><div class="scene-choice-buttons">'+r[1].map((x,n)=>'<button data-route-stop="'+x+'">Stop '+(n+1)+': '+x+' →</button>').join("")+'</div><div class="moment-play" id="routeActionResult">Where would you like to begin?</div></article>'}
+ function openThread(i){let x=threads[i],e=document.getElementById("roleStage");if(e)e.innerHTML='<article class="hb-story-scene"><small>OPEN STORY THREAD</small><h3>'+x[0]+'</h3><p>'+x[1]+'</p><blockquote>'+x[2]+'</blockquote><p>What would you like to do with this clue?</p><div class="scene-choice-buttons"><button data-thread-action="0">🔎 Inspect the clue</button><button data-thread-action="1">💬 Ask a neighbor</button><button data-thread-action="2">📔 Save it for later</button></div><div class="moment-play" id="threadActionResult">The story is open. Choose a way to follow it.</div></article>'}
+ document.addEventListener("DOMContentLoaded",()=>{
+  document.querySelectorAll("[data-daymode]").forEach(b=>b.onclick=()=>scene(b.dataset.daymode));
+  const r=document.getElementById("quickRoutes");if(r){r.innerHTML=routes.map((x,i)=>'<button class="route-btn" data-route="'+i+'"><b>'+x[0]+'</b><br><small>'+x[1].join(" → ")+'</small></button>').join("")}
+  const t=document.getElementById("storyThreads");if(t)t.innerHTML=threads.map((x,i)=>'<button class="thread-btn" data-thread="'+i+'"><b>'+x[0]+'</b><br><small>'+x[1]+'</small></button>').join("");
+  scene("ordinary");
+ });
+ document.addEventListener("click",e=>{
+  let b=e.target.closest("[data-day-action]");if(b){let x=scenes[currentMode],i=+b.dataset.dayAction;let detail=currentMode==="story"?"Storytime Bear turns the page toward a hand-drawn bridge. You notice the rails were carved with the same little bee as the town sign.":currentMode==="mystery"?"Jonesha lays the sketch beside the field note. The lines resemble each other, but nobody claims to know why.":currentMode==="roleplay"?"A familiar neighbor steps into the scene. They ask what you would like to happen next, and wait for your idea.":currentMode==="cozy"?"The chair is soft, the drink is warm, and no one asks you to do anything else.":sceneChoices[i];let out=document.getElementById("dayActionResult");if(out)out.innerHTML='<div class="scene-choice-result"><span>✨</span><p>'+detail+'</p><button data-day-action="'+((i+1)%x[3].length)+'">↻ Try another moment</button></div>';return}
+  b=e.target.closest("[data-route]");if(b){routeStart(+b.dataset.route);return}
+  b=e.target.closest("[data-route-stop]");if(b){let name=b.dataset.routeStop,btn=[...document.querySelectorAll("#districtNav [data-district]")].find(x=>x.dataset.district===name);if(btn)btn.click();else{let out=document.getElementById("routeActionResult");if(out)out.textContent=name+" is ready to explore. Use Move Through Town to open its district.";return}document.getElementById("connectedTown")?.scrollIntoView({behavior:"smooth",block:"start"});return}
+  b=e.target.closest("[data-thread]");if(b){openThread(+b.dataset.thread);return}
+  b=e.target.closest("[data-thread-action]");if(b){let i=+b.dataset.threadAction,msg=["You check the archive record against a second source. The detail is recorded; the meaning remains open.","A neighbor offers a memory, not a final answer. It gives you another path to follow.","The clue is added to your story notes so you can return to it whenever you want."];let out=document.getElementById("threadActionResult");if(out)out.innerHTML='<div class="scene-choice-result"><span>📖</span><p>'+msg[i]+'</p></div>';return}
+ });
 })();
 
 (function(){
