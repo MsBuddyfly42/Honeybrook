@@ -690,7 +690,7 @@ async function showStore() {
   }).join('');
   const v = await modal(`<p class="kicker">Honeybrook general store</p><h2>Store</h2><p>You have <b>${S.coins} coins</b>. Fill orders to earn more.</p><ul class="list">${rows}</ul>`, [{ label: 'Close' }]);
   if (typeof v === 'string') {
-    const u = UPGRADES.find(x => x.id === v); S.coins -= u.cost; S.owned[u.id] = true; Snd.sfx('coin'); updateHUD();
+    const u = UPGRADES.find(x => x.id === v); S.coins -= u.cost; S.owned[u.id] = true; Snd.sfx('coin'); updateHUD(); Save.push(true);
     toast(`You bought the ${u.name}.`); if (u.id === 'teddy') toast('Your teddy bear is waiting by the fountain.');
   }
 }
@@ -2399,32 +2399,36 @@ async function countyFair() {
 
 
 /* ------------------------------------------------------------------ */
-/* Saving: one saved game per visitor, kept on the Honeybrook server   */
+/* Saving: one saved game in this browser, with portable JSON backups   */
 /* ------------------------------------------------------------------ */
-const API = 'port/8000';
+const FAIR_SAVE_KEY='honeybrook_craft_fair_save_v1';
 const Save = {
-  base: API.startsWith('__PORT') ? 'http://localhost:8000' : API,
+  key: FAIR_SAVE_KEY,
   last: '', ok: null, busy: false,
-  headers() { const h = { 'Content-Type': 'application/json' }; if (this.base.includes('localhost')) h['X-Save-Id'] = 'local-test'; return h; },
   snapshot() {
     return { v: 1, name: S.name, day: S.day, slot: S.slot, weather: S.weather, season: S.season, coins: S.coins, ribbons: S.ribbons,
       basket: S.basket, orders: S.orders, owned: S.owned, delivered: S.delivered, best: S.best, gallery: S.gallery, garden: S.garden, carnivalTickets: S.carnivalTickets || 0, carnivalTreats: S.carnivalTreats || [],
       friend: S.friend || {}, talked: S.talked || {}, made: S.made || [], room: S.room || {}, restDay: S.restDay || {}, homeGift: S.homeGift || {}, storyPts: S.storyPts || 0, glow: S.glow ?? 20, woodsOpen: !!S.woodsOpen, woodsCall: !!S.woodsCall, storyNew: !!S.storyNew, found: S.found || {}, usedSlot: !!S.usedSlot, savedAt: Date.now() };
   },
+  valid(d) {
+    const object=v=>v&&typeof v==='object'&&!Array.isArray(v);
+    return object(d)&&d.v===1&&typeof d.name==='string'&&d.name.length<=80&&
+      ['day','slot','season','coins','ribbons','delivered'].every(k=>Number.isSafeInteger(d[k])&&d[k]>=0)&&d.day>=1&&d.season>=1&&d.slot<=3&&['Sunny','Cloudy','Rainy'].includes(d.weather)&&
+      ['basket','orders','gallery','garden'].every(k=>Array.isArray(d[k])&&d[k].length<=5000)&&d.garden.length===6&&d.garden.every(object)&&
+      ['owned','best'].every(k=>object(d[k]));
+  },
   async load() {
-    try { const r = await fetch(this.base + '/api/save', { headers: this.headers() }); if (!r.ok) throw 0; const j = await r.json(); this.ok = true; return j.save; }
-    catch (e) { this.ok = false; return null; }
+    try { const raw=localStorage.getItem(this.key);if(!raw)return null;const d=JSON.parse(raw);if(!this.valid(d)){saveIndicator('Saved game could not be read',true);return null;}this.ok=true;return d; }
+    catch {this.ok=false;saveIndicator('Browser saving is unavailable',true);return null;}
   },
   async push(force) {
-    if (S.scene === 'title' || this.busy) return;
-    const snap = this.snapshot(), key = JSON.stringify({ ...snap, savedAt: 0 });
-    if (!force && key === this.last) return;
-    this.busy = true;
-    try { const r = await fetch(this.base + '/api/save', { method: 'POST', headers: this.headers(), body: JSON.stringify(snap), keepalive: true }); if (!r.ok) throw 0; this.last = key; this.ok = true; saveIndicator('Saved'); }
-    catch (e) { this.ok = false; saveIndicator('Not saving right now', true); }
-    this.busy = false;
+    if(S.scene==='title')return;
+    const snap=this.snapshot(),key=JSON.stringify({...snap,savedAt:0});if(!force&&key===this.last)return;
+    try{localStorage.setItem(this.key,JSON.stringify(snap));this.last=key;this.ok=true;saveIndicator('Saved in this browser');}
+    catch{this.ok=false;saveIndicator('Saving unavailable · export a backup',true);}
   },
-  async wipe() { try { await fetch(this.base + '/api/save', { method: 'DELETE', headers: this.headers() }); } catch (e) { } this.last = ''; },
+  async wipe(){try{localStorage.removeItem(this.key);this.last='';return true;}catch{saveIndicator('Could not erase browser save',true);return false;}},
+  export(){const url=URL.createObjectURL(new Blob([JSON.stringify(this.snapshot(),null,2)],{type:'application/json'}));const link=document.createElement('a');link.href=url;link.download='honeybrook-fair-backup.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);},
   apply(d) {
     const keys = ['name', 'day', 'slot', 'weather', 'season', 'coins', 'ribbons', 'basket', 'orders', 'owned', 'delivered', 'best', 'gallery', 'garden', 'carnivalTickets', 'carnivalTreats', 'found', 'friend', 'talked', 'made', 'room', 'restDay', 'homeGift', 'storyPts', 'glow', 'woodsOpen', 'woodsCall', 'storyNew'];
     for (const k of keys) if (d[k] !== undefined) S[k] = d[k];
@@ -2457,7 +2461,7 @@ async function continueGame(d) {
   $('#btn-newgame').onclick = async () => {
     const v = await modal(`<h2>Start a brand-new game?</h2><p>This will erase ${esc(d.name)}'s saved game: coins, ribbons, garden, gallery, and everything in the basket. This can't be undone.</p>`, [{ label: 'Keep my game', primary: true, value: 'keep' }, { label: 'Erase and start over', value: 'wipe' }]);
     if (v !== 'wipe') return;
-    await Save.wipe(); box.hidden = true; $('#name-box').hidden = false; $('#btn-start').hidden = false; $('#player-name').value = '';
+    if(!await Save.wipe())return;box.hidden = true; $('#name-box').hidden = false; $('#btn-start').hidden = false; $('#player-name').value = '';
   };
 })();
 
@@ -2486,8 +2490,9 @@ $('#btn-storytrail').onclick = () => { Snd.sfx('click'); showStoryTrail(); };
 $('#btn-sound').onclick = () => { Snd.init(); const on = Snd.toggle(); $('#snd-waves').style.opacity = on ? 1 : 0.15; };
 $('#player-name').addEventListener('keydown', e => { if (e.key === 'Enter') $('#btn-start').click(); });
 $('#btn-start').onclick = async () => {
+  if(S.scene!=='title')return;$('#btn-start').disabled=true;
   Snd.init(); Snd.ctx && Snd.ctx.resume(); Snd.sfx('good');
-  S.name = ($('#player-name').value || '').trim() || 'Friend';
+  S.name = (($('#player-name').value || '').trim() || 'Friend').slice(0,80);
   S.weather = 'Sunny'; refreshOrders();
   $('#hud').hidden = false; go('village'); Save.push(true);
   await modal(`<p class="kicker">The bridge into Honeybrook</p><h2>Welcome, ${esc(S.name)}</h2><p>You came over the creek in the rain with tired feet and nowhere in particular to go. On the far side of Tom Bridgewell's bridge, a bear named Amelia was waiting with a lantern.</p><p style="font-family:var(--font-d);font-size:1.1em">"If you need a place," she said, "we'll make one."</p><p>Sammy pushed a plate toward you. "You can eat first." They gave you the spare room at the Welcome House.</p><p>In <b>${FAIR_DAY - 1} days</b>, Honeybrook holds its annual County Craft Fair beneath the bronze statue of Goldilocks and the Three Bears. Every shop is open: <b>Wally's Bakery</b>, the <b>Sewing Cottage</b>, <b>Yarn Shop</b>, <b>Painter's Studio</b>, Tom's <b>Craft Barn</b>, the <b>Fishing Pond</b>, your own <b>Garden Plot</b>, and up the old creek road, <b>Bear Hollow</b>, with its hives and porridge pots. Harold Pawst brings <b>orders</b>. Fill them to earn coins.</p><p>Use the new <b>Story Trail</b> button to explore Honeybrook, Bear Hollow, and the Northern Woods as the book describes them. Storybook Lane appears when the whole first book has been told. Bear's Den, Bear's Hive and Bear's Rest are all in Honeybrook town. Return to the Fair square for its craft shops, midway games, and little circus.</p><p>Each visit to a shop takes one part of the day. Garden chores don't. Kindness makes the honey glow brighter here, and golden honey makes everything sweeter.</p><p>Big Mama Mary carries the town's stories. Finish projects and fill orders, and she'll tell you the story of Goldilocks and Bear Hollow, one chapter at a time.</p>`, [{ label: 'Step into the square', primary: true }]);
@@ -2622,5 +2627,16 @@ $('#circus-back').addEventListener('click', () => go('carnival'));
 $('#circus-start').addEventListener('click', () => { Snd.sfx('ding'); $('#scene-circus').classList.add('showtime'); $('#circus-act-line').textContent = 'The curtains open. Robin steps into the golden ring…'; Carnival.circus(); });
 $('#home-back').addEventListener('click', () => Stay.goBack());
 $('#home-objects').addEventListener('click', e => { const b = e.target.closest('[data-home-object]'); if (b) Stay.touch(b.dataset.homeObject); });
+
+// Take local progress with you; restoring validates before touching the current save.
+$('#btn-backup').onclick=()=>Save.export();
+$('#btn-restore').onclick=()=>$('#fair-backup-file').click();$('#btn-restore-title').onclick=()=>$('#fair-backup-file').click();
+$('#fair-backup-file').onchange=async event=>{
+ const file=event.target.files[0];if(!file)return;
+ try{if(file.size>10000000)throw Error();const d=JSON.parse(await file.text());if(!Save.valid(d))throw Error();if(!confirm('Replace this browser’s Fair progress with this backup? Export your current game first if you want to keep it.'))return;
+ localStorage.setItem(FAIR_SAVE_KEY,JSON.stringify(d));location.reload();}
+ catch{toast('Could not restore this backup. Your current game was kept.');}
+ finally{event.target.value='';}
+};
 
 })();

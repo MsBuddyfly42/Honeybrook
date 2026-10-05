@@ -13,20 +13,21 @@
     canvas.tabIndex = 0;
     canvas.setAttribute('role', 'img');
     canvas.setAttribute('aria-label', 'Playable Honeybrook town scene. Use arrow keys or WASD to walk, click the path to move, and press E to interact.');
+    const tools=art.querySelector('.hb-world-rail'),toolbar=art.querySelector('.hb-world-toolbar');if(tools)world.insertBefore(tools,art);if(toolbar)world.appendChild(toolbar);for(const marker of art.querySelectorAll('[data-hb-place]'))marker.setAttribute('aria-label',marker.querySelector('b')?.textContent||'Visit this place');
     const shade = art.querySelector('.hb-world-shade');
     if (shade) shade.after(canvas); else art.prepend(canvas);
 
     const hud = document.createElement('div');
     hud.className = 'hb-walk-hud';
-    hud.innerHTML = '<div class="hb-walk-head"><span class="hb-walk-paw">🐾</span><div><small>FREE ROAM · NO ROUTE REQUIRED</small><b id="hbWalkStatus">You are standing by the Welcome Bridge.</b></div></div><p id="hbWalkNearby">Walk with WASD or the arrow keys. Click anywhere on the town path to stroll there.</p><div id="hbWalkResponse" class="hb-walk-response" aria-live="polite" hidden></div><div id="hbWalkChoices" class="hb-walk-choices"></div><button type="button" id="hbWalkAction" class="hb-walk-action" hidden></button><small class="hb-walk-help">WASD / arrows to walk <span>·</span> E to interact</small></div>';
-    art.appendChild(hud);
+    hud.innerHTML = '<div class="hb-walk-head"><span class="hb-walk-paw">🐾</span><div><small>FREE ROAM · NO ROUTE REQUIRED</small><b id="hbWalkStatus">Your Honeybrook walk is ready.</b></div></div><p id="hbWalkNearby">Walk with WASD or the arrow keys. Click anywhere on the town path to stroll there.</p><div id="hbWalkResponse" class="hb-walk-response" aria-live="polite" hidden></div><div id="hbWalkChoices" class="hb-walk-choices"></div><button type="button" id="hbWalkAction" class="hb-walk-action" hidden></button><small class="hb-walk-help">WASD / arrows to walk <span>·</span> E to interact</small></div>';
+    world.appendChild(hud);
 
     const pad = document.createElement('div');
     pad.className = 'hb-walk-pad';
     pad.setAttribute('role', 'group');
     pad.setAttribute('aria-label', 'Walk around Honeybrook');
     pad.innerHTML = '<button type="button" data-walk-dir="up" aria-label="Walk up">▲</button><button type="button" data-walk-dir="left" aria-label="Walk left">◀</button><button type="button" data-walk-dir="down" aria-label="Walk down">▼</button><button type="button" data-walk-dir="right" aria-label="Walk right">▶</button>';
-    art.appendChild(pad);
+    world.appendChild(pad);
 
     const ctx = canvas.getContext('2d');
     const status = document.getElementById('hbWalkStatus');
@@ -47,7 +48,8 @@
     let W = 1, H = 1, lastTime = 0, elapsed = 0, goal = null, goalDone = null;
     let activeNpc = null, facing = 1, walkPhase = 0, footstep = 0;
     const held = new Set();
-    const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const motionPreference=window.matchMedia('(prefers-reduced-motion: reduce)');const reduceMotion=()=>motionPreference.matches||document.body.classList.contains('hb-reduced-motion');
+    const spriteNames=['visitor','amelia','harold','sammy','wally','benny'];const bearSprites=spriteNames.map(name=>{const image=new Image();image.src='assets/'+name+'.webp';image.onload=()=>paint();return image;});
     const names = ['Amelia','Harold Pawst','Sammy','Wally','Benny Scoops'];
     const bears = [
       {name:names[0], fur:'#b88655', coat:'#618a69', path:[[.55,.66],[.59,.68],[.62,.70],[.61,.73],[.56,.71]], speed:.038},
@@ -124,10 +126,11 @@
     function ellipse(cx,cy,rx,ry,color) { ctx.fillStyle=color;ctx.beginPath();ctx.ellipse(cx,cy,rx,ry,0,0,Math.PI*2);ctx.fill(); }
     function drawBear(nx,ny,fur,coat,t,moving,label,isPlayer) {
       const u=Math.max(.78,Math.min(1.35,Math.min(W,H)/510)), px=nx*W, py=ny*H;
-      const bob=moving?Math.abs(Math.sin(t*11))*2.1*u:Math.sin(t*2.2)*.8*u;
+      const bob=reduceMotion()?0:moving?Math.abs(Math.sin(t*11))*2.1*u:Math.sin(t*2.2)*.8*u;
       const swing=moving?Math.sin(t*11)*.22:Math.sin(t*1.4)*.035;
       ctx.save();ctx.translate(px,py+bob);
       ellipse(0,4*u,19*u,5*u,'rgba(29,25,17,.24)');
+      const image=bearSprites[isPlayer?0:names.indexOf(label)+1];if(image?.complete&&image.naturalWidth){const size=label==='Sammy'?62*u:80*u;const width=size*image.naturalWidth/image.naturalHeight;ctx.drawImage(image,-width/2,4*u-size,width,size);}else{
       ctx.strokeStyle=fur;ctx.lineWidth=5*u;ctx.lineCap='round';
       ctx.beginPath();ctx.moveTo(-7*u,-8*u);ctx.lineTo(-10*u+12*swing*u,1*u);ctx.moveTo(7*u,-8*u);ctx.lineTo(10*u-12*swing*u,1*u);ctx.stroke();
       ellipse(-8*u,-1*u,4*u,5*u,fur);ellipse(8*u,-1*u,4*u,5*u,fur);
@@ -137,8 +140,9 @@
       ellipse(-4*u,-30*u,1.25*u,1.6*u,'#21180f');ellipse(4*u,-30*u,1.25*u,1.6*u,'#21180f');
       ellipse(0,-25*u,4.6*u,3.3*u,'#e6c397');ellipse(0,-26*u,1.8*u,1.4*u,'#39251a');
       ctx.strokeStyle='#39251a';ctx.lineWidth=1*u;ctx.beginPath();ctx.arc(0,-24*u,2.6*u,.2,2.8);ctx.stroke();
+      }
       if (isPlayer) { ctx.strokeStyle='#ffe18c';ctx.lineWidth=2*u;ctx.beginPath();ctx.arc(0,-18*u,23*u,0,Math.PI*2);ctx.stroke();ellipse(14*u,-19*u,4*u,4*u,'#ffe18c'); }
-      ctx.font='800 '+Math.max(10,11*u)+'px Nunito, sans-serif';ctx.textAlign='center';ctx.lineWidth=3*u;ctx.strokeStyle='rgba(42,30,19,.72)';ctx.strokeText(label,0,-50*u);ctx.fillStyle=isPlayer?'#fff1c9':'#fff9eb';ctx.fillText(label,0,-50*u);
+      ctx.font='800 '+Math.max(14,12*u)+'px Nunito, sans-serif';ctx.textAlign='center';ctx.lineWidth=3*u;ctx.strokeStyle='rgba(42,30,19,.72)';if(W>600||isPlayer)ctx.strokeText(label,0,(isPlayer?-86:24)*u);ctx.fillStyle=isPlayer?'#fff1c9':'#fff9eb';if(W>600||isPlayer)ctx.fillText(label,0,(isPlayer?-86:24)*u);
       ctx.restore();
     }
     function paint(t) {
@@ -149,7 +153,7 @@
         ctx.save();ctx.setLineDash([7,8]);ctx.strokeStyle='rgba(255,238,183,.88)';ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(x*W,y*H);ctx.lineTo(goal.x*W,goal.y*H);ctx.stroke();ctx.setLineDash([]);ctx.fillStyle='rgba(255,222,132,.8)';ctx.beginPath();ctx.arc(goal.x*W,goal.y*H,7+Math.sin(elapsed*5)*2,0,Math.PI*2);ctx.fill();ctx.restore();
       }
       bears.forEach((b,i)=>{const p=npcPoint(b,elapsed+i*8);drawBear(p.x,p.y,b.fur,b.coat,elapsed+i,p.walking,b.name,false);});
-      drawBear(x,y,'#a87549','#527e67',elapsed,held.size>0||!!goal,'Visitor Bear',true);
+      drawBear(x,y,'#a87549','#527e67',elapsed,held.size>0||!!goal,document.getElementById('sessionBear')?.textContent||'Visitor Bear',true);
       if (goal && Math.hypot((goal.x-x)*W,(goal.y-y)*H)<18) {
         const done=goalDone;goal=null;goalDone=null;save();updateHud();if(done)done();
       }
@@ -157,8 +161,8 @@
     }
     function loop(now) {
       const dt=Math.min(.05, lastTime ? (now-lastTime)/1000 : .016);lastTime=now;
-      elapsed += reduceMotion ? dt*.18 : dt;
-      if (town.classList.contains('active') && !document.getElementById('hbWorldDialog')?.open) {
+      if(!reduceMotion())elapsed+=dt;
+      if (town.classList.contains('active') && !document.hidden && !document.getElementById('hbWorldDialog')?.open && document.getElementById('modal')?.classList.contains('hidden')) {
         if (goal) {
           const dx=(goal.x-x)*W,dy=(goal.y-y)*H,d=Math.hypot(dx,dy);
           if(d>3){const step=Math.min(d,235*dt);x+=dx/d*step/W;y+=dy/d*step/H;facing=dx>=0?1:-1;walkPhase+=dt*9;}
@@ -261,20 +265,26 @@
     function keyName(k){return ({ArrowUp:'up',w:'up',W:'up',ArrowDown:'down',s:'down',S:'down',ArrowLeft:'left',a:'left',A:'left',ArrowRight:'right',d:'right',D:'right'})[k];}
     document.addEventListener('keydown',event=>{
       if(!town.classList.contains('active')||document.getElementById('hbWorldDialog')?.open)return;
-      if(event.target.closest && event.target.closest('input,textarea,select,[contenteditable="true"]'))return;
+      if(event.target.closest && event.target.closest('input,textarea,select,button,a,[contenteditable="true"]'))return;
       const k=keyName(event.key);if(k && (document.activeElement===canvas||art.contains(document.activeElement))){event.preventDefault();goal=null;goalDone=null;held.add(k);}
       if((event.key==='e'||event.key==='E'||event.key==='Enter')&&(document.activeElement===canvas||art.contains(document.activeElement))){event.preventDefault();activateNearest();}
     });
-    document.addEventListener('keyup',event=>{const k=keyName(event.key);if(k)held.delete(k);});
+    document.addEventListener('keyup',event=>{const k=keyName(event.key);if(k){held.delete(k);save();}});
+    function stopWalking(){held.clear();goal=null;goalDone=null;save();}
+    window.addEventListener('blur',stopWalking);window.addEventListener('pagehide',stopWalking);document.addEventListener('visibilitychange',()=>{if(document.hidden)stopWalking();});
+    canvas.addEventListener('blur',()=>{held.clear();save();});
+    document.getElementById('hbWorldDialog')?.addEventListener('close',()=>held.clear());
+    setInterval(()=>{if(held.size||goal)save();},1000);
     pad.addEventListener('pointerdown',event=>{const b=event.target.closest('[data-walk-dir]');if(!b)return;event.preventDefault();const dir=b.dataset.walkDir;held.add(dir);goal=null;goalDone=null;b.dataset.walkDown=String(Date.now());b.setPointerCapture&&b.setPointerCapture(event.pointerId);});
-    pad.addEventListener('pointerup',event=>{const b=event.target.closest('[data-walk-dir]');if(b){held.delete(b.dataset.walkDir);b.dataset.walkDown='';}});
-    pad.addEventListener('pointercancel',event=>{const b=event.target.closest('[data-walk-dir]');if(b)held.delete(b.dataset.walkDir);});
-    pad.addEventListener('click',event=>{const b=event.target.closest('[data-walk-dir]');if(!b)return;const a=art.getBoundingClientRect(),step=70/Math.max(a.width,a.height);if(b.dataset.walkDown===''){const dirs={up:[0,-step],down:[0,step],left:[-step,0],right:[step,0]},d=dirs[b.dataset.walkDir];if(d){x=Math.max(.025,Math.min(.975,x+d[0]));y=Math.max(.04,Math.min(.96,y+d[1]));save();}}canvas.focus({preventScroll:true});});
+    pad.addEventListener('pointerup',event=>{const b=event.target.closest('[data-walk-dir]');if(b){held.delete(b.dataset.walkDir);b.dataset.walkDown='';save();}});
+    pad.addEventListener('pointercancel',event=>{const b=event.target.closest('[data-walk-dir]');if(b){held.delete(b.dataset.walkDir);save();}});
+    pad.addEventListener('lostpointercapture',()=>{held.clear();save();});
+    pad.addEventListener('click',event=>{const b=event.target.closest('[data-walk-dir]');if(!b)return;const a=art.getBoundingClientRect(),step=70/Math.max(a.width,a.height);if(b.dataset.walkDown===undefined){const dirs={up:[0,-step],down:[0,step],left:[-step,0],right:[step,0]},d=dirs[b.dataset.walkDir];if(d){x=Math.max(.025,Math.min(.975,x+d[0]));y=Math.max(.04,Math.min(.96,y+d[1]));save();}}canvas.focus({preventScroll:true});});
     document.getElementById('hbWorldDialog')?.addEventListener('close',()=>canvas.focus({preventScroll:true}));
     window.addEventListener('resize',resize);
     if('ResizeObserver' in window)new ResizeObserver(resize).observe(art);
     document.getElementById('enterTown')?.addEventListener('click',()=>setTimeout(()=>canvas.focus({preventScroll:true}),500));
-    resize();status.textContent='You are standing by the Welcome Bridge.';updateHud();requestAnimationFrame(loop);
+    resize();status.textContent='Your Honeybrook walk is ready.';updateHud();requestAnimationFrame(loop);
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
 })();

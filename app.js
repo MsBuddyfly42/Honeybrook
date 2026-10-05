@@ -152,10 +152,10 @@ document.addEventListener('click',e=>{let person=e.target.closest('[data-person]
 // === Honeybrook Phase 5: Town Memory & Discovery State ===
 const HB_SAVE_KEY='honeybrook_save_v1';
 const defaultState={version:1,role:'Visitor',visitedDistricts:[],visitedDestinations:[],metResidents:[],discoveries:['Welcome Bridge'],journal:[],lastVisit:null};
-function loadHBState(){try{return {...defaultState,...JSON.parse(localStorage.getItem(HB_SAVE_KEY)||'{}')}}catch(e){return {...defaultState}}}
+function loadHBState(){let raw={};try{raw=JSON.parse(localStorage.getItem(HB_SAVE_KEY)||'{}')||{}}catch{}const state={...defaultState,...raw};for(const key of ['visitedDistricts','visitedDestinations','metResidents','discoveries','journal'])state[key]=Array.isArray(raw[key])?raw[key].filter(x=>typeof x==='string'):[...defaultState[key]];return state;}
 let hbState=loadHBState();
 if(hbState.role&&roles.includes(hbState.role)){role=hbState.role;$('#roleBtn').textContent=`🎭 ${role} Mode`;$('#footerRole').textContent=role;}
-function saveHBState(){hbState.role=role;hbState.lastVisit=new Date().toISOString();localStorage.setItem(HB_SAVE_KEY,JSON.stringify(hbState));updateMemoryBadge();}
+function saveHBState(){hbState.role=role;hbState.lastVisit=new Date().toISOString();try{localStorage.setItem(HB_SAVE_KEY,JSON.stringify(hbState));}catch{const badge=$('#memoryBadge');if(badge)badge.title='Browser saving is unavailable. Your current visit can continue.';}updateMemoryBadge();}
 function uniquePush(arr,val){if(!arr.includes(val)){arr.push(val);return true}return false}
 function rememberDistrict(id){if(uniquePush(hbState.visitedDistricts,id)){let p=places.find(x=>x.id===id);hbState.journal.unshift(`Visited ${p?.name||id}.`);saveHBState();}}
 function rememberDestination(id,index){let d=(destinations[id]||[])[Number(index)];if(!d)return;let key=`${id}:${d[0]}`;if(uniquePush(hbState.visitedDestinations,key)){hbState.journal.unshift(`Discovered ${d[0]}.`);uniquePush(hbState.discoveries,d[0]);saveHBState();}}
@@ -167,7 +167,7 @@ const phase5OpenDestination=openDestination;openDestination=function(id,index){r
 const phase5ShowPerson=showPerson;showPerson=function(name){rememberResident(name);phase5ShowPerson(name);};
 const oldRoleHandler=modal.onclick;
 modal.addEventListener('click',e=>{let b=e.target.closest('[data-role]');if(b){setTimeout(()=>{hbState.role=role;saveHBState();},0)}});
-document.addEventListener('click',e=>{if(e.target.closest('#journeyBtn'))showJourney();if(e.target.closest('#resetJourney')){if(confirm('Start a fresh Honeybrook journey on this browser?')){localStorage.removeItem(HB_SAVE_KEY);location.reload();}}if(e.target.closest('#exportJourney')){let summary=`Honeybrook Journey — Role: ${role}\nDistricts visited: ${hbState.visitedDistricts.length}\nBears met: ${hbState.metResidents.join(', ')||'None yet'}\nDiscoveries: ${hbState.discoveries.join(', ')}`;navigator.clipboard?.writeText(summary);e.target.textContent='Copied!';}});
+document.addEventListener('click',e=>{if(e.target.closest('#journeyBtn'))showJourney();if(e.target.closest('#resetJourney')){if(confirm('Start a fresh Honeybrook journey on this browser?')){localStorage.removeItem(HB_SAVE_KEY);location.reload();}}if(e.target.closest('#exportJourney')){let summary=`Honeybrook Journey — Role: ${role}\nDistricts visited: ${hbState.visitedDistricts.length}\nBears met: ${hbState.metResidents.join(', ')||'None yet'}\nDiscoveries: ${hbState.discoveries.join(', ')}`;const button=e.target.closest('#exportJourney');if(navigator.clipboard)navigator.clipboard.writeText(summary).then(()=>button.textContent='Copied!',()=>button.textContent='Copy unavailable');else button.textContent='Copy unavailable';}});
 updateMemoryBadge();
 
 // Phase 6 — Honeybrook daily rhythm/activity engine
@@ -1172,7 +1172,7 @@ document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll("[da
 (function(){
  function read(k,d){try{return JSON.parse(localStorage.getItem(k)||JSON.stringify(d))}catch(e){return d}}
  function part(){let q=localStorage.getItem("honeybrook_time_preview");if(q)return q[0].toUpperCase()+q.slice(1);let h=new Date().getHours();return h<12?"Morning":h<17?"Afternoon":h<21?"Evening":"Night"}
- function sync(){let p=read("honeybrook_visitor_passport_v1",null),d=localStorage.getItem("honeybrook_current_district_v1")||"Town Square";let a=document.getElementById("sessionBear"),b=document.getElementById("sessionDistrict"),c=document.getElementById("sessionTime"),s=document.getElementById("sessionStyle");if(a)a.textContent=p?.name||"Visitor Bear";if(b)b.textContent=d;if(c)c.textContent=part();if(s)s.textContent=p?.style||"Go with the flow"}
+ function sync(){let p=read("honeybrook_visitor_passport_v1",null),d=localStorage.getItem("honeybrook_current_district_v1")||"Town Square";let a=document.getElementById("sessionBear"),b=document.getElementById("sessionDistrict"),c=document.getElementById("sessionTime"),s=document.getElementById("sessionStyle");if(a)a.textContent=p?.name||"Visitor Bear";if(b)b.textContent=d;if(c)c.textContent=part();const seasonLabel=document.getElementById('hbWorldSeason'),sceneDate=document.querySelector('.hb-world-date span');if(seasonLabel)seasonLabel.textContent=season()[1]+' in Honeybrook';if(sceneDate)sceneDate.textContent=part()+' · Creekside';if(s)s.textContent=p?.style||"Go with the flow"}
  document.addEventListener("DOMContentLoaded",()=>{sync();document.querySelectorAll("[data-jump]").forEach(b=>b.onclick=()=>document.getElementById(b.dataset.jump)?.scrollIntoView({behavior:"smooth",block:"start"}));document.getElementById("refreshSession")?.addEventListener("click",sync);document.addEventListener("click",()=>setTimeout(sync,30));document.getElementById("passportForm")?.addEventListener("submit",()=>setTimeout(sync,40))});
 })();
 
@@ -1189,7 +1189,7 @@ document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll("[da
       title:'The Welcome House', kicker:'A shelter became a home',
       text:'Amelia and Tom first built a little shelter beside the repaired bridge for whoever needed it. Travelers came in from the rain, one by one. A bed, a hearth, a meal and an open door turned that shelter into the Welcome House.',
       detail:'Sammy was eleven when he offered a younger newcomer four words: “You can eat first.” In Honeybrook, food comes before questions, and questions wait until a newcomer wants to answer.',
-      image:'', links:[['Visit community life','residentLifeWorld']]
+      image:'img/welcome-house.webp', links:[['Visit community life','residentLifeWorld']]
     },
     bridge: {
       title:'Amelia & Tom’s Creek Bridge', kicker:'The first thing Honeybrook built',
@@ -1201,13 +1201,13 @@ document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll("[da
       title:'The Neighbors’ Homes', kicker:'Built together, one roof at a time',
       text:'The first neighbors arrived carrying different stories. One frightened older cub came from Bear Hollow, slept in his coat and shoes, and was not pressed to explain. When ready, he helped Tom raise the next roof beam.',
       detail:'The Hearthwells brought a whole family: Templar, Buddy, Big Mama Mary, and the memory of Willie, held with love. Jonesha, Ja’Mya, Jamon, Robin, Rheanna, Lena, Lance, Landis and little Landric brought their own rhythms, laughter and ideas.',
-      image:'', links:[['Meet Honeybrook’s neighbors','residentLifeWorld']]
+      image:'img/hearthwell-home.webp', links:[['Meet Honeybrook’s neighbors','residentLifeWorld']]
     },
     school: {
       title:'Honeybrook School', kicker:'Many doorways into learning',
       text:'Professor Theodore Honeywell first lined pupils up by height and gave everyone the same lesson. Lena wanted to build something, Jamon asked to finish when he understood, and Rheanna had questions ready.',
       detail:'He listened and changed the room. Now it has a reading corner, a puzzle table, a workbench, and room for pupils to help one another. Professor Honeywell still teaches; the children helped teach him how.',
-      image:'', links:[['Visit the learning hub','learningHub']]
+      image:'img/schoolroom.webp', links:[['Visit the learning hub','learningHub']]
     },
     bakery: {
       title:'Wally’s Bakery', kicker:'A loaf saved for supper',
@@ -1229,6 +1229,8 @@ document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll("[da
     }
   };
   const sectionMap = {residentLifeWorld:'residentLifeWorld',bundledStoryWorld:'bundledStoryWorld',learningHub:'learningHub',mainStreetWorld:'mainStreetWorld',townSquareWorld:'townSquareWorld'};
+  const settingsKey='honeybrook_display_settings_v1';try{const saved=JSON.parse(localStorage.getItem(settingsKey)||'{}');document.body.classList.toggle('hb-large-text',saved.large===true);document.body.classList.toggle('hb-reduced-motion',saved.motion===true);}catch{}
+  function settingsButtons(){for(const button of document.querySelectorAll('[data-hb-setting]'))button.setAttribute('aria-pressed',String(document.body.classList.contains(button.dataset.hbSetting==='large'?'hb-large-text':'hb-reduced-motion')));}
   const sceneActions={
    welcome:['Set a plate on the table','Ask Sammy how he welcomes new bears','Help ready a room'],
    bridge:['Walk across the repaired bridge','Look for the old creek mark','Help Tom check the railing'],
@@ -1249,7 +1251,7 @@ document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll("[da
   };
   let selected = 'bridge';
   let fromPlacesList=false;
-  const visited = () => { try { return JSON.parse(localStorage.getItem('honeybrookTownJournal') || '[]'); } catch (_) { return []; } };
+  const visited=()=>{try{const v=JSON.parse(localStorage.getItem('honeybrookTownJournal')||'[]');return Array.isArray(v)?v.filter(x=>typeof x==='string'):[];}catch{return [];}};
   function markVisited(key) { const v=visited(); if(!v.includes(key)) v.push(key); try { localStorage.setItem('honeybrookTownJournal',JSON.stringify(v)); } catch (_) {} }
   function show(title, html) {
     body.innerHTML = html;
@@ -1297,7 +1299,7 @@ document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll("[da
       return;
     }
     if(tool==='settings') {
-      show('Town settings','<p class="hb-dialog-kicker">Make Honeybrook comfortable for you</p><div class="hb-dialog-actions"><button type="button" data-hb-setting="large">Toggle larger text</button><button type="button" data-hb-setting="motion">Toggle reduced motion</button></div><p>These display choices stay on this device.</p>');
+      show('Town settings','<p class="hb-dialog-kicker">Make Honeybrook comfortable for you</p><div class="hb-dialog-actions"><button type="button" data-hb-setting="large">Toggle larger text</button><button type="button" data-hb-setting="motion">Toggle reduced motion</button></div><p>These display choices save in this browser.</p>');settingsButtons();
     }
   }
   document.addEventListener('click', event => {
@@ -1312,7 +1314,7 @@ document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll("[da
     const dive=event.target.closest('[data-hb-dive]');
     if(dive){event.preventDefault();const target=document.getElementById(dive.dataset.hbDive);dialog.close();if(target){target.scrollIntoView({behavior:'smooth',block:'start'});if(dive.dataset.hbDive==='bundledStoryWorld')document.querySelector('[data-storytab="chapters"]')?.click()}return;}
     const setting=event.target.closest('[data-hb-setting]');
-    if(setting){event.preventDefault();document.body.classList.toggle(setting.dataset.hbSetting==='large'?'hb-large-text':'hb-reduced-motion');return;}
+    if(setting){event.preventDefault();document.body.classList.toggle(setting.dataset.hbSetting==='large'?'hb-large-text':'hb-reduced-motion');settingsButtons();try{localStorage.setItem(settingsKey,JSON.stringify({large:document.body.classList.contains('hb-large-text'),motion:document.body.classList.contains('hb-reduced-motion')}));}catch{}return;}
   });
 })();
 
@@ -1334,4 +1336,10 @@ document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll("[da
   const detail=box.innerText||"The place is open and everyday Honeybrook life is happening around you.";
   box.innerHTML='<article class="hb-hotspot-scene"><small>YOU ARE HERE</small><h3>'+esc(name)+'</h3><p>'+esc(detail.replace(name,"").trim())+'</p><b>What would you like to do?</b><div class="scene-choice-buttons"><button data-hb-hotspot-choice="'+box.id+'" data-choice="0">🔎 Look around</button><button data-hb-hotspot-choice="'+box.id+'" data-choice="1">💬 Talk with someone</button><button data-hb-hotspot-choice="'+box.id+'" data-choice="2">👐 Join the activity</button></div><div class="hb-hotspot-result moment-play">Choose an action and the scene will continue.</div></article>'
  });
+})();
+
+// Keyboard users can close and stay inside the open town dialog.
+(()=>{const box=document.getElementById('modal'),card=box?.querySelector('.modal-card');if(!box||!card)return;card.setAttribute('role','dialog');card.setAttribute('aria-modal','true');card.setAttribute('aria-label','Honeybrook visit');card.tabIndex=-1;let previous;
+new MutationObserver(()=>{if(!box.classList.contains('hidden')){previous=document.activeElement;(card.querySelector('button,input,select,textarea,a[href]')||card).focus();}else if(previous?.isConnected)previous.focus();}).observe(box,{attributes:true,attributeFilter:['class']});
+document.addEventListener('keydown',event=>{if(box.classList.contains('hidden'))return;if(event.key==='Escape'){event.preventDefault();box.classList.add('hidden');return;}if(event.key!=='Tab')return;const items=[...card.querySelectorAll('button,input,select,textarea,a[href],[tabindex="0"]')].filter(e=>!e.disabled&&e.getClientRects().length);if(!items.length){event.preventDefault();card.focus();return;}if(event.shiftKey&&document.activeElement===items[0]){event.preventDefault();items.at(-1).focus();}else if(!event.shiftKey&&document.activeElement===items.at(-1)){event.preventDefault();items[0].focus();}});
 })();

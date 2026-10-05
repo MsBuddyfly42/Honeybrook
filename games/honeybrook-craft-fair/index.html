@@ -8,8 +8,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,800&family=Nunito:wght@500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
+<link rel="icon" href="data:,"><link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="comfort.css?v=20261005-v2"></head>
 <body>
 <div id="stage" aria-live="polite">
 
@@ -37,7 +37,7 @@
         <input id="player-name" type="text" maxlength="18" placeholder="Your name" autocomplete="off">
       </label>
       <button id="btn-start" class="btn btn-primary btn-lg">Start the Fair</button>
-      <p class="fine">Best with sound on. Your game saves automatically.</p>
+      <button id="btn-restore-title" class="btn btn-ghost">Restore a saved backup</button><p class="fine">Best with sound on. Your game saves automatically in this browser. Export a backup from the game menu to keep it.</p>
     </div>
   </section>
 
@@ -180,7 +180,7 @@
       <button class="btn btn-small" id="btn-neighbors" title="Talk with every Honeybrook neighbor">Neighbors</button>
       <button class="btn btn-small" id="btn-orders">Orders <i id="orders-badge"></i></button>
       <button class="btn btn-small" id="btn-basket">Basket</button>
-      <button class="btn btn-small" id="btn-shop">Store</button>
+      <button class="btn btn-small" id="btn-shop">Store</button><button class="btn btn-small" id="btn-backup">Export backup</button><button class="btn btn-small" id="btn-restore">Restore backup</button>
       <button class="btn btn-small btn-icon" id="btn-sound" aria-label="Toggle sound" title="Sound">
         <svg viewBox="0 0 24 24"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path id="snd-waves" d="M16 8.5a5 5 0 010 7M18.5 6a8.5 8.5 0 010 12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
       </button>
@@ -199,8 +199,8 @@
 
   <div id="rotate-hint">Turn your phone sideways for the best view of Honeybrook.</div>
 </div>
-<script src="game.js"></script>
-<script data-pplx-inline-edit>
+<input id="fair-backup-file" type="file" accept="application/json,.json" hidden><script src="game.js?v=20261005-local-save-v2"></script>
+<script src="comfort.js?v=20261005-v2"></script><script data-pplx-inline-edit>
 (function () {
   if (window === window.top) return;
 
