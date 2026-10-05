@@ -1248,6 +1248,7 @@ document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll("[da
    hollow:['You compare the customs carefully: both towns share honey, while porridge belongs to the Hollow.','You hear that harm calls for honesty, repair and time. A bear can be held accountable and still belong.','You follow the public road toward the bridge and back to Honeybrook.']
   };
   let selected = 'bridge';
+  let fromPlacesList=false;
   const visited = () => { try { return JSON.parse(localStorage.getItem('honeybrookTownJournal') || '[]'); } catch (_) { return []; } };
   function markVisited(key) { const v=visited(); if(!v.includes(key)) v.push(key); try { localStorage.setItem('honeybrookTownJournal',JSON.stringify(v)); } catch (_) {} }
   function show(title, html) {
@@ -1264,7 +1265,7 @@ document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll("[da
     const links=p.links.map(link => link[1]==='fair'
       ? '<a class="hb-fair-link '+(link[2]||'')+'" href="'+fairRoot+'">'+escapeHtml(link[0])+'</a>'
       : '<button type="button" data-hb-dive="'+escapeHtml(sectionMap[link[1]]||link[1])+'">'+escapeHtml(link[0])+'</button>').join('');
-    const actions=sceneActions[key]||['Look around this place','Talk with a neighbor','Try a small task'];const play='<section class="hb-place-action"><h3>Step into the scene</h3><p>Choose what you want to do here.</p><div class="hb-dialog-actions">'+actions.map((a,i)=>'<button type="button" data-hb-place-action="'+i+'">'+escapeHtml(a)+' →</button>').join('')+'</div><div class="hb-action-result" id="hbPlaceActionResult" aria-live="polite">The scene is waiting for you.</div></section>';show(p.title,'<p class="hb-dialog-kicker">'+escapeHtml(p.kicker)+'</p>'+image+'<p>'+escapeHtml(p.text)+'</p><p>'+escapeHtml(p.detail)+'</p>'+play+'<div class="hb-dialog-actions">'+links+'</div>');
+    const actions=sceneActions[key]||['Look around this place','Talk with a neighbor','Try a small task'];const back='<button type="button" class="hb-back-town" data-hb-back-map>'+(fromPlacesList?'← Back to all Honeybrook places':'← Back to Honeybrook map')+'</button>';const play='<section class="hb-place-action"><h3>Step into the scene</h3><p>Choose what you want to do here.</p><div class="hb-dialog-actions">'+actions.map((a,i)=>'<button type="button" data-hb-place-action="'+i+'">'+escapeHtml(a)+' →</button>').join('')+'</div><div class="hb-action-result" id="hbPlaceActionResult" aria-live="polite">The scene is waiting for you.</div></section>';show(p.title,back+'<p class="hb-dialog-kicker">'+escapeHtml(p.kicker)+'</p>'+image+'<p>'+escapeHtml(p.text)+'</p><p>'+escapeHtml(p.detail)+'</p>'+play+'<div class="hb-dialog-actions">'+links+'</div>');
   }
   function openTool(tool) {
     const locations=Object.entries(places);
@@ -1282,6 +1283,7 @@ document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll("[da
       return;
     }
     if(tool==='places') {
+      fromPlacesList=true;
       show('Places around Honeybrook','<p class="hb-dialog-kicker">Pick a path through town</p><div class="hb-dialog-list">'+locations.map(([key,p])=>'<button type="button" data-hb-place="'+key+'">'+escapeHtml(p.title)+'<small>'+escapeHtml(p.kicker)+'</small></button>').join('')+'</div>');
       return;
     }
@@ -1299,6 +1301,8 @@ document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll("[da
     }
   }
   document.addEventListener('click', event => {
+    const backButton=event.target.closest('[data-hb-back-map]');
+    if(backButton){event.preventDefault();if(fromPlacesList){openTool('places')}else{dialog.close();$('#hbPlayableWorld')?.scrollIntoView({behavior:'smooth',block:'start'})}return;}
     const actionButton=event.target.closest('[data-hb-place-action]');
     if(actionButton){event.preventDefault();const list=sceneActions[selected]||['Look around this place','Talk with a neighbor','Try a small task'];const outcomes=actionOutcomes[selected]||['You notice a new detail in the scene.','A neighbor responds and makes room for you.','You try something small and see what happens.'];const result=document.getElementById('hbPlaceActionResult');if(result)result.innerHTML='<strong>✨ '+escapeHtml(list[Number(actionButton.dataset.hbPlaceAction)])+'</strong><p>'+escapeHtml(outcomes[Number(actionButton.dataset.hbPlaceAction)])+'</p>';return;}
     const placeButton=event.target.closest('[data-hb-place]');
