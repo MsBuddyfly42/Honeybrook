@@ -564,3 +564,80 @@ body.hb-reduced-motion *,body.hb-reduced-motion *::before,body.hb-reduced-motion
 #welcome .welcome-card{background:#f7ecd4;border:2px solid #c9a96e;border-radius:16px;box-shadow:0 5px 0 #684727,0 18px 42px #26180f77}
 #welcome .welcome-card h1{font-family:'Fraunces',Georgia,serif}#welcome .sun{display:none}
 @media(max-width:760px){.hb-world-marker.hb-marker-hollow{left:54%!important;top:22%!important}}
+
+
+/* Honeybrook Explorer • playable scenes, clear contrast, readable story panels */
+#town main{background:#423228;color:#f8efd9}
+#town .section,#town .completion-pass,#town .connected-town,#town .passport-world,#town .activity-hub-world,#town .calendar-world,#town .bundled-story-world,#town .town-guide-world,#town .resident-life-world,#town .town-square-world,#town .main-street-world,#town .bridgeview-world,#town .cozy-honeybrook,#town .learning-hub{
+ background:#ead9b8;color:#2b241d;border-color:#bb965b;box-shadow:0 4px 0 #705131,0 10px 24px #24180f38
+}
+#town .section-heading h2,#town .section-heading h3,#town .section-heading p,#town .section-heading .eyebrow,
+#town .hero h2,#town .hero p,#town .section p,#town .section li,#town .section small,
+#town .section label,#town .section .tag,#town .section .activity-place{color:#30261e;opacity:1}
+#town .district-view,#town .bundle-panel,#town .completion-grid article,#town .pulse-grid article,
+#town .day-scene,#town .role-stage,#town .activity-launch,#town .guide-card,#town .guide-suggestion,
+#town .route-result,#town .district-card{
+ background:#344b4b;color:#fff4dc;border-color:#a98145
+}
+#town .district-view p,#town .district-view small,#town .bundle-panel p,#town .bundle-panel small,
+#town .bundle-card p,#town .completion-grid article p,#town .completion-grid article small,
+#town .pulse-grid article p,#town .pulse-grid article small,#town .day-scene p,#town .day-scene small,
+#town .role-stage p,#town .activity-launch p,#town .activity-launch small,#town .guide-card p,
+#town .guide-suggestion p,#town .guide-suggestion small{color:#fff4dc;opacity:1}
+#town .bundle-card,#town .field-note,#town .activity-card,#town .guide-freedom{
+ background:#f4e4c2;color:#30261e;border:1.5px solid #bd985f
+}
+#town .bundle-card p,#town .bundle-card small,#town .field-note p,#town .field-note small,
+#town .activity-card p,#town .activity-card small,#town .guide-freedom{color:#30261e;opacity:1}
+#town .explorer-hero{background:linear-gradient(135deg,#30463f,#52604b 64%,#6b4b30);border:2px solid #c99b4d;color:#fff4df;box-shadow:0 6px 0 #2a1d14,0 16px 32px #24180f55}
+#town .explorer-hero h2,#town .explorer-hero p,#town .explorer-hero .eyebrow{color:#fff4df;opacity:1}
+#town .explorer-hero .eyebrow{color:#f4cd7b}
+#town .explorer-panel{color:#fff4df}
+#town .visitor-form{background:#314846;color:#fff4df;border:2px solid #ba914f;box-shadow:0 5px 0 #281c13,0 12px 26px #281c1333}
+#town .visitor-form h3,#town .visitor-form h4,#town .visitor-form p,#town .visitor-form label,#town .visitor-form small{color:#fff4df;opacity:1}
+#town .visitor-form input,#town .visitor-form select{background:#fff8e9;color:#2c241e;border:2px solid #c89d55}
+#town .explore-card{display:grid;grid-template-columns:auto 1fr;column-gap:.75rem;align-items:center;min-height:130px;background:linear-gradient(145deg,#fff4d6,#ead4a5);color:#2d241a;border:2px solid #c49a55;box-shadow:0 4px 0 #73512e;transition:transform .18s,box-shadow .18s}
+#town .explore-card:hover{transform:translateY(-4px);box-shadow:0 8px 0 #73512e}
+#town .explore-card strong{font:800 1.12rem 'Fraunces',Georgia,serif;color:#2b241d;margin:0}
+#town .explore-card span:not(.explore-door-icon){grid-column:2;color:#463729;line-height:1.4}
+#town .explore-card small{grid-column:2;color:#724521;font-weight:900}
+#town .explore-door-icon{grid-row:1 / span 3;font-size:2.6rem;background:#d6b671;border-radius:14px;padding:.5rem;box-shadow:inset 0 0 0 2px #9f7337}
+#town .hb-scene-banner{display:flex;align-items:center;gap:1rem;position:relative;isolation:isolate;overflow:hidden;min-height:150px;margin:.9rem 0 1rem;padding:1rem 1.2rem;border:2px solid #d5ad62;border-radius:18px;background:linear-gradient(120deg,#203b37,#597657 57%,#b68a4d);box-shadow:inset 0 0 40px #192c2b66,0 5px 0 #251a12}
+#town .hb-scene-banner:before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at 82% 110%,#ffd76b99,transparent 32%),linear-gradient(0deg,#21191066,transparent 62%)}
+#town .hb-scene-banner>span{font-size:clamp(3rem,7vw,5rem);filter:drop-shadow(0 5px 4px #17201c88);animation:hb-arrival-bob 3s ease-in-out infinite}
+#town .hb-scene-banner small{display:block;color:#ffdb8d;font-size:.72rem;font-weight:900;letter-spacing:.14em}
+#town .hb-scene-banner b,#town .hb-scene-banner h3{display:block;margin:.18rem 0;color:#fff5df;font:800 clamp(1.2rem,3vw,1.8rem) 'Fraunces',Georgia,serif}
+#town .hb-scene-banner p{margin:.3rem 0 0;color:#fff5df;line-height:1.45}
+#town .hb-place-view{padding:1.1rem}
+#town .hb-scene-live{display:grid;grid-template-columns:minmax(210px,.8fr) minmax(300px,1.5fr);gap:.85rem;align-items:stretch}
+#town .hb-scene-resident,#town .hb-scene-activity{padding:1rem;border-radius:16px;background:#f8eed9;color:#30261e;border:1px solid #c8a15c}
+#town .hb-scene-resident p,#town .hb-scene-activity p,#town .hb-scene-activity h4{color:#30261e;opacity:1}
+#town .hb-scene-resident{background:linear-gradient(150deg,#f8eed9,#e9d2a4);box-shadow:inset 0 0 0 3px #fff8e9}
+#town .hb-scene-activity h4{margin:.1rem 0 .7rem;font:800 1.15rem 'Fraunces',Georgia,serif}
+#town .hb-action-grid,#town .scene-choice-buttons,#town .hb-scene-controls,#town .hb-scene-back-links{display:flex;flex-wrap:wrap;gap:.55rem;margin:.65rem 0}
+#town .hb-action-grid button,#town .scene-choice-buttons button,#town .hb-scene-controls button,#town .hb-scene-back-links button,
+#town .hb-back-town,#town .moment-play button{border:1.5px solid #a77937;border-radius:999px;padding:.62rem .85rem;background:#ffdf94;color:#302419;font-weight:900;box-shadow:0 3px 0 #81572b;transition:transform .15s,filter .15s}
+#town .hb-action-grid button:hover,#town .scene-choice-buttons button:hover,#town .hb-scene-controls button:hover,#town .hb-scene-back-links button:hover,#town .moment-play button:hover{transform:translateY(-2px);filter:brightness(1.05)}
+#town .hb-action-result,#town .moment-play{margin-top:.8rem;padding:.85rem;border-radius:14px;background:#263d3b;color:#fff4dc;border:1px solid #b18b4e;min-height:3.4rem}
+#town .hb-action-result p,#town .moment-play p{color:#fff4dc;opacity:1}
+#town .hb-action-play{display:flex;align-items:center;gap:.85rem}
+#town .hb-action-illustration{display:grid;place-items:center;flex:0 0 3.4rem;height:3.4rem;border-radius:50%;background:#ffd780;color:#503519;font-size:1.8rem;box-shadow:0 3px 0 #97682d}
+#town .hb-scene-controls,#town .hb-scene-back-links{justify-content:flex-start;margin-top:.9rem}
+#town .hb-story-scene{padding:1rem;border-radius:14px;background:linear-gradient(135deg,#2d4844,#4d6853);border:1px solid #b78b47;color:#fff4dc;box-shadow:inset 0 0 24px #192a2855}
+#town .hb-story-scene h3,#town .hb-story-scene p,#town .hb-story-scene small,#town .hb-story-scene blockquote{color:#fff4dc;opacity:1}
+#town .hb-story-scene>small{color:#ffd783;font-weight:900;letter-spacing:.1em}
+#town .hb-story-scene blockquote{margin:.8rem 0;padding:.7rem 1rem;border-left:4px solid #e2b75d;background:#ffffff12}
+#town .scene-choice-result{display:flex;align-items:flex-start;gap:.65rem}
+#town .scene-choice-result span{font-size:1.5rem}
+#town .scene-choice-result p{margin:.1rem 0}
+#town .calendar-card,#town .discovery-card,#town .hb-journal-entry{background:#f4e5c6;color:#30261e;border:1px solid #c49a55;border-radius:12px;padding:.8rem;margin:.55rem 0}
+#town .calendar-card small,#town .discovery-card small,#town .hb-journal-entry small{color:#48372a}
+#town .district-nav button,#town .integration-jump button,#town .story-tabs button,#town .day-mode-buttons button{min-height:44px}
+#town .district-nav button:hover,#town .integration-jump button:hover,#town .story-tabs button:hover,#town .day-mode-buttons button:hover{filter:brightness(1.08);transform:translateY(-1px)}
+#town .route-btn,#town .thread-btn{display:block;width:100%;text-align:left;margin:.5rem 0;border:2px solid #bd914d;box-shadow:0 3px 0 #75512d;transition:transform .15s,filter .15s}
+#town .route-btn:hover,#town .thread-btn:hover{transform:translateY(-2px);filter:brightness(1.06)}
+#town .route-btn small,#town .thread-btn small{display:block;color:#fff4dc;opacity:1;line-height:1.45;margin-top:.2rem}
+#town .activity-card p,#town .guide-suggestion p,#town .district-view p{line-height:1.5}
+@keyframes hb-arrival-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@media(max-width:700px){#town .hb-scene-live{grid-template-columns:1fr}#town .hb-scene-banner{min-height:126px;padding:.8rem}#town .hb-scene-banner>span{font-size:3rem}#town .explore-card{min-height:110px}#town .hb-action-grid button,#town .scene-choice-buttons button{flex:1 1 100%;text-align:left}}
+@media(prefers-reduced-motion:reduce){#town .hb-scene-banner>span{animation:none}#town .explore-card,#town .hb-action-grid button{transition:none}}
