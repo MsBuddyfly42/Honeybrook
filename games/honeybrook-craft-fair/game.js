@@ -197,26 +197,34 @@ function rollWeather() { const r = Math.random(); return r < 0.5 ? 'Sunny' : r <
 /* ------------------------------------------------------------------ */
 let toastT;
 function toast(msg) { const t = $('#toast'); t.textContent = msg; t.classList.add('show'); clearTimeout(toastT); toastT = setTimeout(() => t.classList.remove('show'), 2800); }
+let modalBodyHandler = null;
 function modal(html, actions = [{ label: 'OK', primary: true }]) {
+  if (!$('#modal').hidden) closeModal();
   return new Promise(res => {
+    const finish = value => {
+      if (modalBodyHandler !== finish) return;
+      modalBodyHandler = null; $('#modal').hidden = true; res(value);
+    };
     $('#modal-body').innerHTML = html;
     const box = $('#modal-actions'); box.innerHTML = '';
     actions.forEach((a, i) => {
       const b = document.createElement('button'); b.className = 'btn ' + (a.primary ? 'btn-primary' : a.sage ? 'btn-sage' : ''); b.textContent = a.label;
       if (a.disabled) b.disabled = true;
-      b.onclick = () => { Snd.sfx('click'); closeModal(); res(a.value ?? i); };
+      b.onclick = () => { Snd.sfx('click'); finish(a.value ?? i); };
       box.appendChild(b);
     });
-    $('#modal').hidden = false; bindModalBody(res);
-    setTimeout(() => (box.querySelector('.btn-primary') || box.querySelector('.btn'))?.focus(), 50);
+    $('#modal').hidden = false; modalBodyHandler = finish;
+    setTimeout(() => { if(modalBodyHandler===finish)(box.querySelector('.btn-primary') || box.querySelector('.btn'))?.focus(); }, 50);
   });
 }
-let modalBodyHandler = null;
-function bindModalBody(res) { modalBodyHandler = res; }
-function closeModal() { $('#modal').hidden = true; }
+function closeModal() {
+  const finish=modalBodyHandler;
+  if(finish){finish(null);return;}
+  $('#modal').hidden = true;
+}
 $('#modal-body').addEventListener('click', e => {
-  const b = e.target.closest('[data-val]'); if (!b || b.disabled) return;
-  Snd.sfx('click'); closeModal(); modalBodyHandler && modalBodyHandler(b.dataset.val);
+  const b = e.target.closest('[data-val]'); if (!b || b.disabled || !modalBodyHandler) return;
+  Snd.sfx('click'); modalBodyHandler(b.dataset.val);
 });
 function stars(n, of = 3) { let s = '<span class="stars" aria-label="' + n + ' of ' + of + ' stars">'; for (let i = 0; i < of; i++) s += i < n ? '★' : '<span class="off">★</span>'; return s + '</span>'; }
 function avatar(f) { const ini = f.name.replace("Big Mama ", "").replace("Professor ", "").split(' ').map(w => w[0]).join('').slice(0, 2); return `<span class="avatar" style="background:${f.top}">${esc(ini)}</span>`; }
@@ -271,6 +279,8 @@ function applyAtmosphere() {
 /* ------------------------------------------------------------------ */
 function backOut() { const r = S.returnTo; S.returnTo = null; if (r === 'town') go('town'); else if (r === 'village') go('village'); else if (r) go('area', r); else go('village'); }
 function go(scene, arg) {
+  const sceneChanged=scene!==S.scene||(scene==='area'&&arg!==S.area)||(scene==='home'&&arg!==Stay.stayPlace);
+  if(sceneChanged&&!$('#modal').hidden)closeModal();
   if (scene === 'home' && S.scene !== 'home') Stay.returnTarget = { scene: S.scene, area: S.area };
   S.scene = scene; if (scene === 'area') S.area = arg;
   $$('.scene').forEach(s => s.classList.toggle('active', s.id === 'scene-' + scene));
@@ -851,6 +861,24 @@ const STAY_PLACES = {
 const Stay = {
   stayPlace:null,
   returnTarget:null,
+  schoolTask:null,
+  openSchoolTask(station,title){
+    const specs={
+      books:{kicker:'READING CORNER · READ & NOTICE',title:'The blanket by the door',passage:'After the storm, Amelia found a dry blanket folded beside the Welcome House door. No one had left a name or asked for thanks. That night, a traveler came in shivering. Amelia placed the blanket around their shoulders and warmed a bowl of soup.',question:'What does Amelia’s choice show about her?',answers:['She notices what a traveler needs and helps quietly.','She wants the traveler to explain everything first.','She keeps the blanket for herself.'],correct:0,why:'Amelia notices the traveler is cold and offers help before asking questions.'},
+      board:{kicker:'PUZZLE TABLE · FIND THE PATTERN',title:'Follow the honeybee trail',passage:'🐝  🌼  🐝  🌼  🐝  ?',question:'Which symbol belongs in the empty spot? Tell Professor Honeywell why the pattern repeats.',answers:['🌼 A flower','🐝 A bee','🍎 An apple'],correct:0,why:'The pattern alternates bee, flower. After the third bee, the next shape is a flower.'},
+      bench:{kicker:'WORKBENCH · BUILD & TEST',title:'Strengthen the creek bridge',passage:'A little wooden bridge sags when two neighbors cross at once. You have three craft sticks for extra support.',question:'Where should you place the middle support to help carry the load?',answers:['Under the center of the bridge.','Beside the path, away from the bridge.','On top of one end only.'],correct:0,why:'A support under the center helps spread the load and reduces sagging.'}
+    };
+    const task=specs[station];if(!task)return;this.schoolTask={station,answered:false};
+    let panel=$('#school-task');if(!panel){panel=document.createElement('aside');panel.id='school-task';panel.className='school-task panel paper';panel.setAttribute('aria-live','polite');$('#home-room').appendChild(panel);}
+    panel.innerHTML='<p class="kicker">'+task.kicker+'</p><h2>'+esc(title)+': '+task.title+'</h2><p class="school-passage">'+task.passage+'</p><p><b>'+task.question+'</b></p><div class="school-answers">'+task.answers.map((a,i)=>'<button type="button" class="btn" data-school-answer="'+i+'">'+a+'</button>').join('')+'</div><p class="school-feedback" id="school-feedback">Choose an answer to see what happens.</p><div class="school-task-actions"><button type="button" class="btn btn-small btn-ghost" data-school-close>Back to the classroom</button></div>';
+    panel.dataset.correct=task.correct;panel.dataset.why=task.why;panel.hidden=false;panel.scrollIntoView({block:'nearest',behavior:'smooth'});
+  },
+  schoolAnswer(index){
+    const panel=$('#school-task');if(!panel||!this.schoolTask)return;const correct=Number(panel.dataset.correct),feedback=$('#school-feedback');
+    if(index===correct){feedback.innerHTML='<b>That works!</b> '+esc(panel.dataset.why);feedback.classList.add('is-correct');this.schoolTask.answered=true;panel.querySelectorAll('[data-school-answer]').forEach(b=>{b.disabled=true;if(Number(b.dataset.schoolAnswer)===correct)b.classList.add('btn-sage');});Snd.sfx('good');}
+    else{feedback.textContent='Try once more. Look closely at the detail or the pattern, then choose again.';feedback.classList.remove('is-correct');Snd.sfx('meh');}
+  },
+  closeSchoolTask(){const panel=$('#school-task');if(panel)panel.hidden=true;this.schoolTask=null;},
   returnLabel(){
     const t=this.returnTarget;
     if(t?.scene==='town') return '← Back to Honeybrook';
@@ -869,7 +897,7 @@ const Stay = {
     return go('town');
   },
   enter(key){
-    this.stayPlace=key; const p=STAY_PLACES[key]; if(!p){go('town');return;}
+    this.stayPlace=key;['school-task','home-action'].forEach(id=>{const panel=$('#'+id);if(panel)panel.hidden=true;});this.schoolTask=null; const p=STAY_PLACES[key]; if(!p){go('town');return;}
     $('#home-title').textContent=p.title; $('#home-kicker').textContent=p.kicker; $('#home-description').textContent=p.desc;
     $('#home-bg').src=p.img || 'img/welcome-house.png'; $('#home-bg').alt='Interior of '+p.title;
     this.returnArea=p.returnArea || (key.startsWith('home-')?'den':'town');
@@ -886,12 +914,8 @@ const Stay = {
       const line=v===0?'The bowl is warm in your paws.':v===1?'Bread and honey—food first, questions later.':'You rest without anyone asking a thing.';
       await modal('<p class="kicker">You are welcome here</p><h2>Stay as long as you need</h2><p>'+line+'</p>',[{label:'Thank you',primary:true}]);return;
     }
-    if(this.stayPlace==='town-school'&&(id==='books'||id==='board'||id==='bench')){
-      const intro=id==='books'?'Choose a book and find a cozy place to read.':id==='board'?'A pattern puzzle is waiting. How would you like to explore it?':'Build a bridge with craft sticks and test where it needs support.';
-      const v=await modal('<p class="kicker">Honeybrook School · Explore a learning station</p><h2>'+esc(item[2])+'</h2><p>'+esc(intro)+'</p><p>What would you like to try?</p>',[{label:'Read and tell what I noticed',value:'read'},{label:'Try a puzzle or pattern',value:'puzzle'},{label:'Build and test an idea',value:'build'}]);
-      if(v) await modal('<p class="kicker">Professor Honeywell</p><h2>That is a thoughtful way to learn.</h2><p>Take your time, explain your idea, and change it if you discover something new.</p>',[{label:'Back to class',primary:true}]);return;
-    }
-    await modal('<p class="kicker">'+esc(p.title)+'</p><h2>'+esc(item[2])+'</h2><p>'+esc(item[3])+'</p>',[{label:'Keep exploring',primary:true}]);
+    if(this.stayPlace==='town-school'&&(id==='books'||id==='board'||id==='bench')){ this.openSchoolTask(id,item[2]); return; }
+    const room=$('#home-room');let panel=$('#home-action');if(!panel){panel=document.createElement('aside');panel.id='home-action';panel.className='home-action panel paper';panel.setAttribute('aria-live','polite');room.appendChild(panel);}panel.innerHTML='<p class="kicker">'+esc(p.kicker)+'</p><h2>'+esc(item[2])+'</h2><p>'+esc(item[3])+'</p><button type="button" class="btn btn-small btn-ghost" data-home-action-close>Back to the room</button>';panel.hidden=false;panel.scrollIntoView({block:'nearest',behavior:'smooth'});
   }
 };
 const FriendBook = {
@@ -945,11 +969,12 @@ const Bakery = {
     this.st = null; this.renderCard(); $('#bake-controls').innerHTML = '';
     cancelAnimationFrame(this.raf); this.last = performance.now(); this.loop();
     if (S.usedSlot) return;
-    const ordersFor = id => S.orders.some(o => o.kind === 'cookie' && o.recipe === id);
-    const grid = RECIPES.map(r => `<button class="recipe-btn" data-val="${r.id}"><b>${esc(r.name)}${ordersFor(r.id) ? '<span class="tag">Ordered</span>' : ''}</b><small>${esc(r.note)}</small></button>`).join('');
-    const v = await modal(`<p class="kicker">Wally's Bakery · ${SLOTS[S.slot]}</p><h2>What are we baking?</h2><p>Measure, mix, and bake one batch. Recipes marked <span class="tag" style="margin:0">Ordered</span> are wanted on the order board.</p><div class="recipe-grid">${grid}</div>`, [{ label: 'Back to the square' }]);
-    if (typeof v !== 'string') { go('village'); return; }
-    this.start(RECIPES.find(r => r.id === v));
+    this.renderRecipeMenu();
+  },
+  renderRecipeMenu(){
+    const ordersFor=id=>S.orders.some(o=>o.kind==='cookie'&&o.recipe===id);
+    const grid=RECIPES.map(r=>'<button type="button" class="recipe-btn" data-bake-recipe="'+r.id+'"><b>'+esc(r.name)+(ordersFor(r.id)?'<span class="tag">Ordered</span>':'')+'</b><small>'+esc(r.note)+'</small></button>').join('');
+    $('#recipe-card').innerHTML='<p class="kicker">Wally’s Bakery · '+SLOTS[S.slot]+'</p><h3>Pick a recipe and start baking</h3><p>Measure, mix, then watch the oven. Recipes marked Ordered are wanted on the mail board.</p><div class="recipe-grid">'+grid+'</div><button type="button" class="btn btn-small btn-ghost" data-bake-leave>← Back to the square</button>';
   },
   start(r) {
     this.st = { r, phase: 'measure', i: 0, fill: 0, pouring: false, drip: 0, scores: [], results: [], mix: 0, mixT: 0, mixAngle: 0, angle: null, bake: 0, bakeSpeed: rand(0.085, 0.12), bakeScore: 0, done: false, msg: '' };
@@ -1481,23 +1506,24 @@ const Work = {
     $('#work-bg').src = ws.img; this.g = null; this.st = null; this.card(`<h3>${ws.name}</h3><p class="card-note">${S.usedSlot ? 'You\'ve finished your project for now. Head back to the square to let time pass.' : ws.intro}</p>`);
     this.setControls([]);
     cancelAnimationFrame(this.raf); this.last = performance.now(); this.loop();
-    if (S.usedSlot) return;
-    const ordered = id => S.orders.some(o => o.kind === 'craft' && o.craft === id);
-    const grid = ws.crafts.map(c => `<button class="recipe-btn" data-val="${c.id}"><b>${esc(c.name)}${ordered(c.id) ? '<span class="tag">Ordered</span>' : ''}</b><small>${esc(c.note)}</small></button>`).join('');
-    const extra = place === 'paint' ? [{ label: 'Visit the gallery', value: 'gallery' }] : [];
-    const v = await modal(`<p class="kicker">${ws.name} · ${SLOTS[S.slot]}</p><h2>${place === 'hollow' ? 'What will you tend?' : 'What will you make?'}</h2><p>${ws.intro}</p><div class="recipe-grid">${grid}</div>`, [{ label: 'Back to the square', value: 'home' }, ...extra]);
-    if (v === 'gallery') { await showGallery(); return this.enter(place); }
-    if (v === 'home' || typeof v !== 'string') { backOut(); return; }
-    const craft = ALL_CRAFTS.find(c => c.id === v);
-    let color = null;
-    if (craft.pal) {
-      const sw = PALETTES[craft.pal].map(([n, c]) => `<button class="swatch" data-val="${c}" style="--c:${c}"><span></span>${n}</button>`).join('');
-      const cv = await modal(`<p class="kicker">${esc(craft.name)}</p><h2>Pick your ${craft.pal === 'glaze' ? 'glaze' : craft.pal === 'wax' ? 'wax' : craft.pal}</h2><div class="swatches">${sw}</div>`, [{ label: 'Back', value: 'back' }]);
-      if (cv === 'back' || typeof cv !== 'string') return this.enter(place);
-      color = cv;
-    }
-    this.start(craft, color);
+    if (S.usedSlot) { this.card(`<h3>${ws.name}</h3><p class="card-note">You finished today’s project here. Head back outside to move time forward.</p>`);return; }
+    this.renderMenu(place);
   },
+  renderMenu(place=this.place){
+    const ws=WORKSHOPS[place],ordered=id=>S.orders.some(o=>o.kind==='craft'&&o.craft===id);
+    const grid=ws.crafts.map(c=>'<button type="button" class="recipe-btn" data-work-craft="'+c.id+'"><b>'+esc(c.name)+(ordered(c.id)?'<span class="tag">Ordered</span>':'')+'</b><small>'+esc(c.note)+'</small></button>').join('');
+    this.card('<p class="kicker">'+ws.name+' · '+SLOTS[S.slot]+'</p><h3>'+(place==='hollow'?'What will you tend?':'Choose a project')+'</h3><p class="card-note">'+ws.intro+'</p><div class="recipe-grid work-recipe-grid">'+grid+'</div>'+(place==='paint'?'<button type="button" class="btn btn-small" data-work-gallery>Visit the gallery</button>':'')+'<button type="button" class="btn btn-small btn-ghost" data-work-leave>← Back outside</button>');
+  },
+  async choose(id){
+    if(id==='__leave'){backOut();return;}if(id==='__gallery'){await showGallery();this.renderMenu(this.place);return;}
+    const craft=ALL_CRAFTS.find(c=>c.id===id);if(!craft)return;
+    if(craft.pal){const choices=PALETTES[craft.pal].map(([name,color])=>'<button type="button" class="swatch" data-work-color="'+color+'" style="--c:'+color+'"><span></span>'+esc(name)+'</button>').join('');
+      this.card('<p class="kicker">'+esc(craft.name)+'</p><h3>Choose your '+esc(craft.pal==='glaze'?'glaze':craft.pal==='wax'?'wax':craft.pal)+'</h3><div class="swatches">'+choices+'</div><button type="button" class="btn btn-small btn-ghost" data-work-back>← Back to projects</button>');
+      this.pendingCraft=craft;return;
+    }
+    this.start(craft,null);
+  },
+  chooseColor(color){if(!this.pendingCraft)return;const craft=this.pendingCraft;this.pendingCraft=null;this.start(craft,color);},
   start(craft, color) {
     this.craft = craft; this.g = GAMES[craft.game]; this.st = { craft, color, t: 0, done: false };
     S.usedSlot = true; this.g.init(this.st); this.refresh();
@@ -2565,6 +2591,9 @@ const Carnival = {
   }
 };
 document.querySelectorAll('[data-carnival]').forEach(button => button.addEventListener('click', () => { Snd.sfx('click'); Carnival.visit(button.dataset.carnival); }));
+$('#work-card').addEventListener('click', e => { const b=e.target.closest('[data-work-craft],[data-work-color],[data-work-back],[data-work-gallery],[data-work-leave]');if(!b)return;if(b.hasAttribute('data-work-craft'))Work.choose(b.dataset.workCraft);else if(b.hasAttribute('data-work-color'))Work.chooseColor(b.dataset.workColor);else if(b.hasAttribute('data-work-back')){Work.pendingCraft=null;Work.renderMenu();}else if(b.hasAttribute('data-work-gallery'))Work.choose('__gallery');else if(b.hasAttribute('data-work-leave'))Work.choose('__leave'); });
+$('#recipe-card').addEventListener('click',e=>{const b=e.target.closest('[data-bake-recipe],[data-bake-leave]');if(!b)return;if(b.hasAttribute('data-bake-leave')){go('village');return;}const recipe=RECIPES.find(r=>r.id===b.dataset.bakeRecipe);if(recipe)Bakery.start(recipe);});
+$('#home-room').addEventListener('click',e=>{const answer=e.target.closest('[data-school-answer]');if(answer){Stay.schoolAnswer(Number(answer.dataset.schoolAnswer));return;}if(e.target.closest('[data-school-close]')){Stay.closeSchoolTask();return;}if(e.target.closest('[data-home-action-close]')){const panel=$('#home-action');if(panel)panel.hidden=true;}});
 $('#btn-neighbors').addEventListener('click', () => FriendBook.open());
 $('#circus-back').addEventListener('click', () => go('carnival'));
 $('#circus-start').addEventListener('click', () => { Snd.sfx('ding'); $('#scene-circus').classList.add('showtime'); $('#circus-act-line').textContent = 'The curtains open. Robin steps into the golden ring…'; Carnival.circus(); });
