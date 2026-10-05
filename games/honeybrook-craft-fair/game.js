@@ -280,7 +280,7 @@ function applyAtmosphere() {
 function backOut() { const r = S.returnTo; S.returnTo = null; if (r === 'town') go('town'); else if (r === 'village') go('village'); else if (r) go('area', r); else go('village'); }
 function go(scene, arg) {
   const sceneChanged=scene!==S.scene||(scene==='area'&&arg!==S.area)||(scene==='home'&&arg!==Stay.stayPlace);
-  if(sceneChanged&&!$('#modal').hidden)closeModal();
+  if(sceneChanged){S.sceneEpoch=(S.sceneEpoch||0)+1;if(!$('#modal').hidden)closeModal();}
   if (scene === 'home' && S.scene !== 'home') Stay.returnTarget = { scene: S.scene, area: S.area };
   S.scene = scene; if (scene === 'area') S.area = arg;
   $$('.scene').forEach(s => s.classList.toggle('active', s.id === 'scene-' + scene));
@@ -470,6 +470,15 @@ function drawDecor(c, W, H, it, kind) {
   else { c.fillStyle = col; c.fillRect(-30 * u, -30 * u, 60 * u, 60 * u); }
   c.restore();
 }
+const ACTION_ICONS={hearth:'🔥',table:'🍲',mantel:'🖼️',guitar:'🎸',lantern:'🕯️',blanket:'🧺',window:'🌦️',maps:'🗺️',desk:'✉️',hook:'🎒',oven:'🥖',note:'💌',books:'📚',board:'🧩',bench:'🪵',door:'🚪',bed:'🛏️',creek:'💧',planks:'🪵',shelter:'🏠',bee:'🐝',chair:'🪑',wood:'🪵',tools:'🪚',garden:'🌼',flowers:'🌼',stones:'🪨',water:'💧'};
+function showPlayableAction(container,{kicker,title,description,icon='🐻',verb='Join in',key='activity',onComplete=null}){
+  if(!container)return null;container.querySelectorAll('.play-action-card').forEach(el=>el.remove());
+  const card=document.createElement('aside');card.className='play-action-card panel paper';card.setAttribute('aria-live','polite');
+  card.innerHTML='<p class="kicker">'+esc(kicker||'HONEYBROOK · TRY AN ACTIVITY')+'</p><h2>'+esc(title)+'</h2><div class="action-stage" role="img" aria-label="A Honeybrook neighbor is doing this activity"><span class="action-spark">✦</span><span class="action-bear">🐻</span><span class="action-prop">'+esc(icon)+'</span><span class="action-result">✨</span></div><p class="action-copy">'+esc(description||'')+'</p><p class="action-feedback">The scene is ready. Join in to make something happen.</p><div class="action-controls"><button type="button" class="btn btn-primary" data-action-go>'+esc(verb)+'</button><button type="button" class="btn btn-small btn-ghost" data-action-close>Keep exploring</button></div>';
+  container.appendChild(card);const stage=card.querySelector('.action-stage'),run=card.querySelector('[data-action-go]'),feedback=card.querySelector('.action-feedback');
+  run.addEventListener('click',()=>{if(run.disabled)return;run.disabled=true;stage.classList.add('is-working');feedback.textContent='You step in and help. The work is moving along…';Snd.sfx('good');S.restDay=S.restDay||{};const dayKey='action:'+key;if(S.restDay[dayKey]!==S.day){S.restDay[dayKey]=S.day;addGlow(1);Save.push(true);}setTimeout(()=>{if(!card.isConnected)return;stage.classList.remove('is-working');stage.classList.add('is-done');feedback.textContent='Done! You helped make this place a little warmer. The neighbors notice.';run.textContent='Finished';if(onComplete)onComplete();},1300);});
+  card.querySelector('[data-action-close]').addEventListener('click',()=>card.remove());return card;
+}
 const Area = {
   cur: null,
   enter(name) {
@@ -511,12 +520,12 @@ const Area = {
     if (id.startsWith('ws:')) { if (S.usedSlot) { toast('Head back out to let some time pass first.'); } S.returnTo = this.cur; go('work', id.slice(3)); return; }
     if (id.startsWith('home:')) { go('home', 'home-' + id.slice(5)); return; }
     if (id === 'stall') return this.market();
-    if (id === 'soon') { await modal(`<p class="kicker">Bears' Hive</p><h2>More shops coming</h2><p>Signs are going up on the empty lots:</p><ul class="list"><li class="row"><div class="grow"><b>Photography Studio</b><small>Portraits and product photos</small></div></li><li class="row"><div class="grow"><b>Pet Grooming Parlor</b><small>Suds, brushing, and very fluffy results</small></div></li><li class="row"><div class="grow"><b>Flower Stand</b><small>Bouquets from your garden</small></div></li><li class="row"><div class="grow"><b>Makeup Studio</b><small>Shade-mixing lab and timed looks</small></div></li><li class="row"><div class="grow"><b>Farm Shop</b><small>Animal care, harvest timing, and a very dramatic chicken</small></div></li><li class="row"><div class="grow"><b>Mechanic Shop</b><small>Diagnose the engine by its sound</small></div></li></ul><p style="color:var(--ink-2);font-size:.9em">Soap making is coming to the Craft Barn's candle bench, hemming to the Sewing Cottage, and landscaping to your Garden Plot.</p>`, [{ label: 'Can\'t wait', primary: true }]); return; }
-    if (id === 'bench') { const fresh = S.restDay.bench !== day; if (fresh) { S.restDay.bench = day; S.glow = clamp((S.glow || 0) + 2, 0, 100); updateHUD(); } await modal(`<p class="kicker">A small brass plaque</p><h2>Willie's Bench</h2><p style="font-family:var(--font-d);font-size:1.15em">"Sit a while. The fish will wait."</p><p>${pick(['The meadow hums. For a while, nothing needs fixing.', 'Somewhere a bee is working. You let it.', 'The light goes gold on the water. You breathe a little slower.', 'You think about everyone who made room for you here.'])}</p>${fresh ? '<p style="color:var(--ink-2);font-size:.9em">You feel steadier. The honey glows a little brighter.</p>' : ''}`, [{ label: 'Stand up slowly', primary: true }]); return; }
-    if (id === 'stones') { const fresh = S.restDay.stones !== day; const v = await modal(`<p class="kicker">Bears' Rest</p><h2>Remembrance Stones</h2><p>A circle of smooth stones around a flat one with an empty bowl. Bears leave a little honey here for the ones who won't come home: Mama Bear, Papa Bear, Goldilocks, Willie, and anyone else someone is missing.</p>`, fresh ? [{ label: 'Leave a little honey', primary: true, value: 'h' }, { label: 'Just sit' }] : [{ label: 'Sit quietly', primary: true }]); if (v === 'h') { S.restDay.stones = day; S.glow = clamp((S.glow || 0) + 3, 0, 100); updateHUD(); Snd.sfx('ding'); toast('The bowl catches the light for a moment.'); } return; }
-    if (id === 'flowers') { const fresh = S.restDay.flowers !== day; const v = await modal(`<p class="kicker">Bears' Rest</p><h2>Hundred-Year Wildflowers</h2><p>These wildflowers have bloomed here longer than anyone remembers. Big Mama Mary says they've been blooming for a hundred years, ever since a kiss far away sank into the soil.</p>`, fresh ? [{ label: 'Pick a small bouquet', primary: true, value: 'p' }, { label: 'Leave them be' }] : [{ label: 'Leave them be', primary: true }]); if (v === 'p') { S.restDay.flowers = day; keepsake({ id: 'flowers', name: 'Wildflower Bouquet', stars: 0 }); Snd.sfx('good'); toast('A Wildflower Bouquet for your windowsill or shelf.'); } return; }
+    if (id === 'soon') { showPlayableAction($('#area-spots'),{kicker:'BEARS’ HIVE · HELP OPEN A SHOP',title:'Set up the next market stall',description:'You unfold a striped awning, arrange a little flower stand, and leave space for neighbors to bring their own work.',icon:'🌼',verb:'Set up the flower stand',key:'hive-flower-stall'}); return; }
+    if (id === 'bench') { showPlayableAction($('#area-spots'),{kicker:'BEARS’ REST · WILLIE’S BENCH',title:'Sit beside the quiet water',description:'You take a breath on the old bench. The fish keep moving, the bees keep working, and for a moment nothing needs to be fixed.',icon:'🪑',verb:'Sit and listen',key:'rest-bench'}); return; }
+    if (id === 'stones') { showPlayableAction($('#area-spots'),{kicker:'BEARS’ REST · REMEMBRANCE STONES',title:'Leave a little honey',description:'You set a small bowl beside the stones and remember someone you love. A warm gold glint passes over the bowl.',icon:'🍯',verb:'Set down the bowl',key:'rest-stones'}); return; }
+    if (id === 'flowers') { showPlayableAction($('#area-spots'),{kicker:'BEARS’ REST · HUNDRED-YEAR WILDFLOWERS',title:'Gather a small bouquet',description:'You choose a few flowers and leave plenty blooming for the next visitor.',icon:'💐',verb:'Gather the bouquet',key:'rest-flowers',onComplete:()=>{if(S.restDay?.pickedRestFlowers!==S.day){S.restDay=S.restDay||{};S.restDay.pickedRestFlowers=S.day;keepsake({id:'flowers',name:'Wildflower Bouquet',stars:0});toast('A Wildflower Bouquet is ready for your room.');}}}); return; }
     if (id === 'stump') { await showStory(); return; }
-    if (id === 'water') { await modal(`<p class="kicker">Bears' Rest</p><h2>Quiet Water</h2><p>${S.slot === 2 ? 'Fireflies drift over the water, one, then ten, then too many to count. Somewhere to the north, a light in the woods blinks back.' : pick(['A dragonfly lands on a reed, considers you, and leaves.', 'The water holds the whole sky, upside down and perfectly still.', 'A fish jumps. Buddy would want to know about that.'])}</p>`, [{ label: 'Keep watching', primary: true }]); return; }
+    if (id === 'water') { showPlayableAction($('#area-spots'),{kicker:'BEARS’ REST · QUIET WATER',title:'Watch the water together',description:S.slot===2?'Fireflies gather above the still water, then drift north toward the woods.':'A dragonfly lands on a reed. A fish jumps, and Buddy will want to hear about it.',icon:'🐟',verb:'Watch for a fish',key:'rest-water'}); return; }
   },
   async market() {
     if (!S.basket.length) { await modal(`<p class="kicker">Bears' Hive</p><h2>Market Stall</h2><p>Your basket is empty. Make, bake, catch, or grow something, then bring it here to sell. Farmers market money adds up.</p>`, [{ label: 'Okay', primary: true }]); return; }
@@ -603,7 +612,7 @@ const LORE = {
   gingerbread: ['The gingerbread cottage', 'The Lane gathers storybook homes together: here stands a gingerbread cottage, beside shops and a bakery. It appears when old stories are brought back to life. The lane had waited a hundred years.'],
   ash: ['Ash’s bakery', 'Ash used to be called the Big Bad Wolf. Now he is rounder, kind, and bakes sourdough. He offers a seat and says, “Sit down, kid. Let me tell you what the books got wrong.”'],
 };
-async function showLore(id) { const item = LORE[id]; if (!item) return; await modal(`<p class="kicker">Where the Stories Live</p><h2>${esc(item[0])}</h2><p>${esc(item[1])}</p>`, [{ label: 'Keep exploring', primary: true }]); }
+async function showLore(id){const item=LORE[id];if(!item)return;const o={bridge:['🌉','Help check the repaired crossing'],welcome:['🏠','Set out a warm welcome'],family:['🎸','Join the family song'],school:['📚','Try a learning station'],bakery:['🥖','Help Wally prepare the next loaf'],letter:['✉️','Help Harold sort the route'],statue:['🧹','Polish the town statue'],belonging:['🧺','Prepare a place for a newcomer'],shared:['🍯','Share honey and porridge'],cabins:['🪚','Help raise a cabin beam'],square:['⛲','Tend the fountain and flowers'],footbridge:['🌉','Walk across the footbridge'],firewood:['🪵','Stack firewood for neighbors'],garden:['🌱','Water Goldilocks’ garden'],blueflower:['🍯','Inspect the blue-flower honey jar'],hives:['🐝','Tend the golden-honey hives'],hollowbakery:['🥣','Stir the porridge pot'],hearth:['🔥','Warm the kettle'],love:['💛','Leave a kindness for a neighbor'],voices:['🌲','Listen for the voice between the trees'],forgotten:['📖','Bring a story out of the fog'],mysterious:['✨','Follow the light at the tree line']}[id]||['🐻','Help with this place'];showPlayableAction($('#area-spots'),{kicker:'WHERE THE STORIES LIVE · TAKE PART',title:item[0],description:item[1],icon:o[0],verb:o[1],key:'story-'+id});}
 async function showStoryTrail() {
   const lane = S.woodsOpen;
   const choices = [
@@ -870,12 +879,12 @@ const Stay = {
     };
     const task=specs[station];if(!task)return;this.schoolTask={station,answered:false};
     let panel=$('#school-task');if(!panel){panel=document.createElement('aside');panel.id='school-task';panel.className='school-task panel paper';panel.setAttribute('aria-live','polite');$('#home-room').appendChild(panel);}
-    panel.innerHTML='<p class="kicker">'+task.kicker+'</p><h2>'+esc(title)+': '+task.title+'</h2><p class="school-passage">'+task.passage+'</p><p><b>'+task.question+'</b></p><div class="school-answers">'+task.answers.map((a,i)=>'<button type="button" class="btn" data-school-answer="'+i+'">'+a+'</button>').join('')+'</div><p class="school-feedback" id="school-feedback">Choose an answer to see what happens.</p><div class="school-task-actions"><button type="button" class="btn btn-small btn-ghost" data-school-close>Back to the classroom</button></div>';
+    panel.innerHTML='<p class="kicker">'+task.kicker+'</p><h2>'+esc(title)+': '+task.title+'</h2><p class="school-passage">'+task.passage+'</p><div class="action-stage school-vignette" role="img" aria-label="A student is working at this learning station"><span class="action-spark">✦</span><span class="action-bear">🐻</span><span class="action-prop">'+(station==='books'?'📖':station==='board'?'🧩':'🪵')+'</span><span class="action-result">✨</span></div><p><b>'+task.question+'</b></p><div class="school-answers">'+task.answers.map((a,i)=>'<button type="button" class="btn" data-school-answer="'+i+'">'+a+'</button>').join('')+'</div><p class="school-feedback" id="school-feedback">Choose an answer to see what happens.</p><div class="school-task-actions"><button type="button" class="btn btn-small btn-ghost" data-school-close>Back to the classroom</button></div>';
     panel.dataset.correct=task.correct;panel.dataset.why=task.why;panel.hidden=false;panel.scrollIntoView({block:'nearest',behavior:'smooth'});
   },
   schoolAnswer(index){
     const panel=$('#school-task');if(!panel||!this.schoolTask)return;const correct=Number(panel.dataset.correct),feedback=$('#school-feedback');
-    if(index===correct){feedback.innerHTML='<b>That works!</b> '+esc(panel.dataset.why);feedback.classList.add('is-correct');this.schoolTask.answered=true;panel.querySelectorAll('[data-school-answer]').forEach(b=>{b.disabled=true;if(Number(b.dataset.schoolAnswer)===correct)b.classList.add('btn-sage');});Snd.sfx('good');}
+    if(index===correct){feedback.innerHTML='<b>That works!</b> '+esc(panel.dataset.why);feedback.classList.add('is-correct');panel.querySelector('.school-vignette')?.classList.add('is-working');this.schoolTask.answered=true;panel.querySelectorAll('[data-school-answer]').forEach(b=>{b.disabled=true;if(Number(b.dataset.schoolAnswer)===correct)b.classList.add('btn-sage');});Snd.sfx('good');}
     else{feedback.textContent='Try once more. Look closely at the detail or the pattern, then choose again.';feedback.classList.remove('is-correct');Snd.sfx('meh');}
   },
   closeSchoolTask(){const panel=$('#school-task');if(panel)panel.hidden=true;this.schoolTask=null;},
@@ -903,19 +912,21 @@ const Stay = {
     this.returnArea=p.returnArea || (key.startsWith('home-')?'den':'town');
     const room=$('#home-room'); room.className='home-room '+key; room.classList.toggle('home-cottage',key.startsWith('home-'));
     const box=$('#home-objects'); box.innerHTML='';
-    p.objects.forEach(([id,icon,label])=>{const b=document.createElement('button');b.className='home-object object-'+(p.objects.findIndex(o=>o[0]===id)+1);b.dataset.homeObject=id;b.setAttribute('aria-label',label);b.innerHTML='<span class="home-hotspot-mark" aria-hidden="true"></span><b>'+esc(label)+'</b>';box.appendChild(b);});
+    p.objects.forEach((raw,index)=>{const id=raw[0],label=raw.length>=4?raw[2]:raw[1];const b=document.createElement('button');b.className='home-object object-'+(index+1);b.dataset.homeObject=id;b.setAttribute('aria-label',label);b.innerHTML='<span class="home-hotspot-mark" aria-hidden="true"></span><b>'+esc(label)+'</b>';box.appendChild(b);});
+    if(key==='town-bridge'){const bridge=document.createElement('div');bridge.className='bridge-cross-scene';bridge.innerHTML='<span class="bridge-water-flow" aria-hidden="true"></span><span class="bridge-traveler" aria-hidden="true">🐻</span><button type="button" class="btn btn-small bridge-cross-button" data-bridge-cross>Walk across the bridge</button><span class="bridge-cross-status" aria-live="polite"></span>';room.appendChild(bridge);}
     $('#home-back').textContent=this.returnLabel();
     if(p.owner){S.homeGift=S.homeGift||{};if(!S.homeGift[p.owner]){S.homeGift[p.owner]=true;const g=HOMES[p.owner].gift;if(g.coins)S.coins+=g.coins;if(g.glow)S.glow=clamp((S.glow||0)+g.glow,0,100);updateHUD();Save.push(true);toast(g.text);}}
   },
   async touch(id){
-    Snd.sfx('click');const p=STAY_PLACES[this.stayPlace],item=p.objects.find(o=>o[0]===id);if(!item)return;
+    Snd.sfx('click');const p=STAY_PLACES[this.stayPlace],raw=p?.objects.find(o=>o[0]===id);if(!raw)return;
+    const icon=raw.length>=4?raw[1]:(ACTION_ICONS[id]||'🐻'),label=raw.length>=4?raw[2]:raw[1],description=raw.length>=4?raw[3]:raw[2],room=$('#home-room');
     if(this.stayPlace==='town-welcome'&&id==='table'){
-      const v=await modal('<p class="kicker">The Welcome House</p><h2>What sounds good?</h2><p>Take a warm bowl, ask for bread, or sit quietly before you talk.</p>',[{label:'Warm porridge'},{label:'Bread and honey',primary:true},{label:'Just rest'}]);
-      const line=v===0?'The bowl is warm in your paws.':v===1?'Bread and honey—food first, questions later.':'You rest without anyone asking a thing.';
-      await modal('<p class="kicker">You are welcome here</p><h2>Stay as long as you need</h2><p>'+line+'</p>',[{label:'Thank you',primary:true}]);return;
+      let panel=$('#home-action');if(!panel){panel=document.createElement('aside');panel.id='home-action';panel.className='home-action panel paper';panel.setAttribute('aria-live','polite');room.appendChild(panel);}panel.hidden=false;panel.innerHTML='<p class="kicker">THE WELCOME HOUSE · FOOD FIRST</p><h2>Choose what to do at the table</h2><p>A traveler has arrived tired and hungry. Set something out before asking a single question.</p><div class="home-choice-actions"><button class="btn" data-home-choice="porridge">🥣 Serve warm porridge</button><button class="btn" data-home-choice="bread">🍯 Bring bread and honey</button><button class="btn" data-home-choice="rest">🪑 Pull out a chair</button></div><button type="button" class="btn btn-small btn-ghost" data-home-action-close>Back to the room</button>';
+      panel.querySelectorAll('[data-home-choice]').forEach(b=>b.addEventListener('click',()=>{const choice=b.dataset.homeChoice,opts={porridge:['Serve warm porridge','🥣','You ladle a warm bowl and set it within easy reach. Sammy nudges the plate closer.'],bread:['Bring bread and honey','🍞','You bring over fresh bread and a little honey. The newcomer gets to eat first, without questions.'],rest:['Pull out a chair','🪑','You make room at the table. The traveler can rest before deciding whether to talk.']}[choice];showPlayableAction(room,{kicker:'THE WELCOME HOUSE · FOOD FIRST',title:opts[0],description:opts[2],icon:opts[1],verb:'Help welcome them',key:'welcome-'+choice});}));return;
     }
-    if(this.stayPlace==='town-school'&&(id==='books'||id==='board'||id==='bench')){ this.openSchoolTask(id,item[2]); return; }
-    const room=$('#home-room');let panel=$('#home-action');if(!panel){panel=document.createElement('aside');panel.id='home-action';panel.className='home-action panel paper';panel.setAttribute('aria-live','polite');room.appendChild(panel);}panel.innerHTML='<p class="kicker">'+esc(p.kicker)+'</p><h2>'+esc(item[2])+'</h2><p>'+esc(item[3])+'</p><button type="button" class="btn btn-small btn-ghost" data-home-action-close>Back to the room</button>';panel.hidden=false;panel.scrollIntoView({block:'nearest',behavior:'smooth'});
+    if(this.stayPlace==='town-school'&&(id==='books'||id==='board'||id==='bench')){this.openSchoolTask(id,label);return;}
+    if(this.stayPlace==='town-bridge'&&id==='planks'){showPlayableAction(room,{kicker:p.kicker,title:'Help Tom secure the bridge planks',description:'Tom holds the board steady while you tap the last wooden peg into place. The crossing feels firm under your feet.',icon:'🪚',verb:'Hammer the final peg',key:'bridge-planks'});return;}
+    showPlayableAction(room,{kicker:p.kicker,title:label,description,icon,verb:id==='hearth'?'Tend the fire':id==='table'?'Help at the table':id==='garden'?'Tend the garden':id==='window'?'Look outside together':'Join in',key:this.stayPlace+'-'+id});
   }
 };
 const FriendBook = {
@@ -2498,6 +2509,7 @@ const Carnival = {
     popcorn: { name: 'Popcorn & Lemonade', icon: '🍿', cost: 3, line: 'A little salty, a little sweet, and nice to share.' }
   },
   async visit(kind) {
+    if(S.scene!=='carnival')return;
     if (this.snack[kind]) return this.buy(kind);
     if (kind === 'wheel' || kind === 'carousel') return this.ride(kind);
     if (kind === 'prizes') return this.prizes();
@@ -2505,15 +2517,18 @@ const Carnival = {
     if (kind === 'circus') { go('circus'); return; }
   },
   async buy(kind) {
+    if(S.scene!=='carnival')return;const epoch=S.sceneEpoch;
     const item = this.snack[kind];
     if (S.coins < item.cost) {
       await modal(`<p class="kicker">Midway Treats</p><h2>${item.icon} ${item.name}</h2><p>${item.line}</p><p>This treat costs <b>${item.cost} coins</b>. You have <b>${S.coins}</b>. You can earn coins at the market stall or enjoy the rides and shows for free.</p>`, [{label:'Back to the midway',primary:true}]);
       return;
     }
+    if(S.scene!=='carnival'||S.sceneEpoch!==epoch)return;
     const choice = await modal(`<p class="kicker">A little carnival treat</p><h2>${item.icon} ${item.name}</h2><p>${item.line}</p><p>Spend <b>${item.cost} coins</b>? You have ${S.coins} coins. Treats are saved in your Fair keepsakes.</p>`, [{label:'Maybe later'}, {label:`Enjoy one · ${item.cost} coins`,primary:true,value:'buy'}]);
-    if (choice !== 'buy') return;
+    if (choice !== 'buy'||S.scene!=='carnival'||S.sceneEpoch!==epoch) return;
     S.coins -= item.cost; S.carnivalTreats = S.carnivalTreats || []; S.carnivalTreats.push(kind);
     Snd.sfx('good'); updateHUD(); Save.push(true);
+    if(S.scene!=='carnival'||S.sceneEpoch!==epoch)return;
     await modal(`<p class="kicker">Fresh from the midway</p><h2>Yum! ${item.name}</h2><p>${item.line}</p><p>You have enjoyed ${S.carnivalTreats.length} carnival ${S.carnivalTreats.length === 1 ? 'treat' : 'treats'} so far. Take your time—there is no rush to leave the Fair.</p>`, [{label:'Back to the carnival',primary:true}]);
   },
   action(kind, phase = 'play') {
@@ -2531,6 +2546,7 @@ const Carnival = {
     return '<div class="midway-action phase-' + phase + '" role="img" aria-label="' + scene.label + '">' + scene.svg + '</div>';
   },
   async ride(kind) {
+    if(S.scene!=='carnival')return;const epoch=S.sceneEpoch;
     const wheel = kind === 'wheel';
     const name = wheel ? 'Honeywheel' : 'Honey-Go-Round';
     const text = wheel
@@ -2538,7 +2554,7 @@ const Carnival = {
       : 'Painted ponies circle beneath strings of golden lights. You choose a honey-colored pony with a blue saddle.';
     const value = await modal(`<p class="kicker">A gentle Fair ride</p><button type="button" class="btn btn-small btn-ghost challenge-back" data-val="back">← Back to the midway</button><h2>${wheel ? '🎡' : '🎠'} ${name}</h2><div class="carnival-act ride-act"><div class="ride-picture">${this.action(wheel ? 'wheel' : 'carousel')}</div><span class="act-icon" aria-hidden="true">${wheel ? '🎡' : '🐴'}</span><p>${text}</p><p class="ride-question">${wheel ? 'The wheel makes 3 turns. If you count 4 lanterns on each side, how many lanterns can you spot altogether?' : 'The carousel has 8 ponies. Two are resting behind the curtain. How many ponies are ready to ride?'}</p></div>`,
       (wheel ? [{label:'2'}, {label:'6'}, {label:'8',primary:true,value:'correct'}, {label:'12'}] : [{label:'2'}, {label:'6',primary:true,value:'correct'}, {label:'8'}, {label:'12'}]));
-    if (value === 'back') return;
+    if (value === 'back'||S.scene!=='carnival'||S.sceneEpoch!==epoch) return;
     S.usedSlot = true;
     if (value === 'correct') {
       Snd.sfx('good'); toast(wheel ? 'Eight lanterns—nice counting!' : 'Six ponies are ready—well counted!');
@@ -2549,6 +2565,7 @@ const Carnival = {
     }
   },
   async game(kind) {
+    if(S.scene!=='carnival')return;const epoch=S.sceneEpoch;
     const q = {
       rings: { title:'Ring Toss', icon:'🎯', intro:'The rings have to land around the bottle neck. Before you toss, solve the midway number riddle:', prompt:'A prize shelf has 3 honey jars and 4 berry jars. How many jars are there altogether?', answers:[['6','6'],['7','7'],['8','8']], correct:'7', tickets:3, hint:'Try counting on from 3: 4, 5, 6, 7.' },
       ducks: { title:'Lucky Duck Pond', icon:'🦆', intro:'Three ducks drift by. Pick the one with the word that has a long A sound:', prompt:'Which duck carries a long A word?', answers:[['CAT','cat'],['CAKE','cake'],['CAN','can']], correct:'cake', tickets:2, hint:'The silent e at the end helps the A say its name: cake.' },
@@ -2556,7 +2573,7 @@ const Carnival = {
     }[kind];
     const ans = await modal(`<p class="kicker">Midway challenge · Just for fun</p><button type="button" class="btn btn-small btn-ghost challenge-back" data-val="back">← Back to the midway</button><h2>${q.icon} ${q.title}</h2><p>${q.intro}</p><div class="carnival-act game-act"><div class="ride-picture">${this.action(kind)}</div><p><b>${q.prompt}</b></p></div><p>Take a thoughtful guess. A wrong answer is just another chance to learn.</p>`,
       q.answers.map(([label,val])=>({label,primary:val===q.correct,value:val})));
-    if (ans === 'back') return;
+    if (ans === 'back'||S.scene!=='carnival'||S.sceneEpoch!==epoch) return;
     S.usedSlot = true;
     if (ans === q.correct) {
       S.carnivalTickets = (S.carnivalTickets || 0) + q.tickets;
@@ -2569,13 +2586,17 @@ const Carnival = {
     }
   },
   async circus() {
+    if(S.scene!=='circus')return;const epoch=S.sceneEpoch;
     const robin = await modal(`<p class="kicker">Under the big top</p><button type="button" class="btn btn-small btn-ghost challenge-back" data-val="back">← Back to the carnival</button><h2>🎪 The Honeybrook Little Circus</h2><div class="ride-picture">${this.action('robin')}</div><p>Find a seat beneath the striped tent. Robin is ready to sing, Templar has brought a clockwork bee, and Big Mama Mary is saving a story for the finale. The acts are friendly, the audience can join in, and everyone gets a warm welcome.</p><div class="carnival-act"><span class="act-icon">🎤</span><b>Act One · Robin’s rhyme</b><p>Robin sings: “A bear brought a pear, and sat in a ___.” Which word rhymes?</p></div>`,[{label:'chair',primary:true,value:'right'},{label:'river',value:'wrong'},{label:'honey',value:'wrong'}]);
+    if(S.scene!=='circus'||S.sceneEpoch!==epoch)return;
     if (robin === 'back') { go('carnival'); return; }
     let score = robin === 'right' ? 1 : 0; $('#circus-act-line').textContent = 'Act One: Robin leads the audience in a rhyme.';
     const bee = await modal(`<p class="kicker">Act Two · Templar’s clockwork bee</p><button type="button" class="btn btn-small btn-ghost challenge-back" data-val="back">← Back to the carnival</button><h2>🐝 Follow the golden lights</h2><div class="ride-picture">${this.action('bee')}</div><p>The bee blinks a pattern: <b>gold, blue, gold, blue, gold…</b> Which light should blink next?</p>`,[{label:'Gold',value:'wrong'},{label:'Blue',primary:true,value:'right'},{label:'Green',value:'wrong'}]);
+    if(S.scene!=='circus'||S.sceneEpoch!==epoch)return;
     if (bee === 'back') { go('carnival'); return; }
     if (bee === 'right') score++; $('#circus-act-line').textContent = 'Act Two: Templar’s clockwork bee loops around the golden ring.';
     const story = await modal(`<p class="kicker">Act Three · Big Mama Mary’s story</p><button type="button" class="btn btn-small btn-ghost challenge-back" data-val="back">← Back to the carnival</button><h2>📖 The traveler at the door</h2><div class="ride-picture">${this.action('story')}</div><p>A new cub arrives in the rain. What does Sammy’s Honeybrook welcome say first?</p>`,[{label:'“Tell us everything.”',value:'wrong'},{label:'“You can eat first.”',primary:true,value:'right'},{label:'“Come back tomorrow.”',value:'wrong'}]);
+    if(S.scene!=='circus'||S.sceneEpoch!==epoch)return;
     if (story === 'back') { go('carnival'); return; }
     if (story === 'right') score++; $('#circus-act-line').textContent = 'Act Three: Big Mama Mary brings the traveler in from the rain.';
     S.usedSlot = true;
@@ -2586,14 +2607,16 @@ const Carnival = {
     if (finale === 'back') go('carnival');
   },
   async prizes() {
+    if(S.scene!=='carnival')return;const epoch=S.sceneEpoch;
     const choice = await modal(`<p class="kicker">Prize Booth</p><h2>🎟️ Trade tickets for a Fair ribbon</h2><p>Choose a keepsake for your collection. A ribbon costs 6 tickets. You have <b>${S.carnivalTickets || 0}</b>.</p><p>Ribbons are just for fun. You can keep exploring even if you save your tickets.</p>`,[{label:'Keep my tickets'},{label:'Trade 6 tickets for a ribbon',primary:true,disabled:(S.carnivalTickets||0)<6,value:'trade'}]);
+    if(S.scene!=='carnival'||S.sceneEpoch!==epoch)return;
     if (choice === 'trade') { S.carnivalTickets -= 6; S.ribbons = (S.ribbons || 0) + 1; Snd.sfx('good'); updateHUD(); Save.push(true); toast('A shiny Fair ribbon joins your keepsakes!'); }
   }
 };
-document.querySelectorAll('[data-carnival]').forEach(button => button.addEventListener('click', () => { Snd.sfx('click'); Carnival.visit(button.dataset.carnival); }));
+document.querySelectorAll('[data-carnival]').forEach(button => button.addEventListener('click', () => { if(!button.closest('.scene.active')||S.scene!=='carnival')return;Snd.sfx('click'); Carnival.visit(button.dataset.carnival); }));
 $('#work-card').addEventListener('click', e => { const b=e.target.closest('[data-work-craft],[data-work-color],[data-work-back],[data-work-gallery],[data-work-leave]');if(!b)return;if(b.hasAttribute('data-work-craft'))Work.choose(b.dataset.workCraft);else if(b.hasAttribute('data-work-color'))Work.chooseColor(b.dataset.workColor);else if(b.hasAttribute('data-work-back')){Work.pendingCraft=null;Work.renderMenu();}else if(b.hasAttribute('data-work-gallery'))Work.choose('__gallery');else if(b.hasAttribute('data-work-leave'))Work.choose('__leave'); });
 $('#recipe-card').addEventListener('click',e=>{const b=e.target.closest('[data-bake-recipe],[data-bake-leave]');if(!b)return;if(b.hasAttribute('data-bake-leave')){go('village');return;}const recipe=RECIPES.find(r=>r.id===b.dataset.bakeRecipe);if(recipe)Bakery.start(recipe);});
-$('#home-room').addEventListener('click',e=>{const answer=e.target.closest('[data-school-answer]');if(answer){Stay.schoolAnswer(Number(answer.dataset.schoolAnswer));return;}if(e.target.closest('[data-school-close]')){Stay.closeSchoolTask();return;}if(e.target.closest('[data-home-action-close]')){const panel=$('#home-action');if(panel)panel.hidden=true;}});
+$('#home-room').addEventListener('click',e=>{const b=e.target.closest('[data-bridge-cross]');if(b){const room=$('#home-room'),status=room.querySelector('.bridge-cross-status');room.classList.remove('bridge-crossed');void room.offsetWidth;room.classList.add('bridge-crossed');status.textContent='Amelia meets you on the far bank. The bridge holds firm.';Snd.sfx('splash');S.restDay=S.restDay||{};if(S.restDay.bridgeWalk!==S.day){S.restDay.bridgeWalk=S.day;addGlow(1);Save.push(true);}setTimeout(()=>room.classList.remove('bridge-crossed'),2600);return;}const answer=e.target.closest('[data-school-answer]');if(answer){Stay.schoolAnswer(Number(answer.dataset.schoolAnswer));return;}if(e.target.closest('[data-school-close]')){Stay.closeSchoolTask();return;}if(e.target.closest('[data-home-action-close]')){const panel=$('#home-action');if(panel)panel.hidden=true;}});
 $('#btn-neighbors').addEventListener('click', () => FriendBook.open());
 $('#circus-back').addEventListener('click', () => go('carnival'));
 $('#circus-start').addEventListener('click', () => { Snd.sfx('ding'); $('#scene-circus').classList.add('showtime'); $('#circus-act-line').textContent = 'The curtains open. Robin steps into the golden ring…'; Carnival.circus(); });
