@@ -476,3 +476,21 @@ h1 span{color:var(--berry);font-size:.78em}
 .midway-action [class^="duck-"],.midway-action [class^="balloon-"]{will-change:transform}
 @media(max-width:600px){.modal-card:has(.midway-action){padding:.75em}.midway-action{height:clamp(12em,30vh,16em);min-height:12em}.modal-card h2{font-size:1.25em}}
 @media(prefers-reduced-motion:reduce){.carousel-riders,.ferris-wheel-spin,.ferris-cars,.toss-ring,.duck-one,.duck-two,.duck-three,.balloon-red,.balloon-gold,.balloon-blue,.dart,.singing-bear,.music-notes text,.clockwork-bee,.bee-wing,.welcome-door,.welcome-bear,.rain-streaks{animation:none!important}}
+
+/* In-room activity stations: keep choices on the scene instead of blocking play with dialogs. */
+.craft-card:has(.work-recipe-grid){width:min(34em,45%);max-height:88%;overflow:auto;transform:none;right:1.5em;top:5em}
+.work-recipe-grid{grid-template-columns:1fr;max-height:48vh;overflow:auto;padding:.15em}
+#recipe-card:has(.recipe-grid){width:min(31em,44%);max-height:88%;overflow:auto;transform:none;right:1.5em;top:5em}
+#recipe-card .recipe-grid{grid-template-columns:1fr;max-height:50vh;overflow:auto;padding:.15em}
+.school-task,.home-action{position:absolute;z-index:20;right:2.5%;top:17%;width:min(42em,48%);max-height:76%;overflow:auto;padding:1.2em 1.35em;background:rgba(255,250,240,.97);border:2px solid #d5b16e;box-shadow:0 14px 38px #28180c66}
+.school-task[hidden],.home-action[hidden]{display:none}
+.school-task h2,.home-action h2{font:800 1.25em/1.12 var(--font-d);margin:.25em 0 .5em}
+.school-passage{padding:.75em .9em;border-left:4px solid var(--honey);background:#fff6e4;line-height:1.55}
+.school-answers{display:grid;gap:.5em;margin:.8em 0}
+.school-answers .btn{text-align:left;white-space:normal}
+.school-feedback{min-height:2.5em;padding:.55em .7em;border-radius:.65em;background:#f4ead4}
+.school-feedback.is-correct{background:#e3efd9;color:#31593e}
+.school-task-actions{display:flex;justify-content:flex-end}
+.home-action{top:auto;bottom:15%;width:min(33em,42%);right:2.5%}
+@media(max-width:760px){.craft-card:has(.work-recipe-grid),#recipe-card:has(.recipe-grid){left:3%;right:3%;top:10%;width:auto;max-height:72%}.school-task,.home-action{left:4%;right:4%;top:15%;bottom:auto;width:auto;max-height:70%;font-size:.9em}}
+@media(prefers-reduced-motion:reduce){.school-task,.home-action{scroll-behavior:auto}}
