@@ -422,3 +422,6 @@ h1 span{color:var(--berry);font-size:.78em}
 @keyframes balloon-float{to{transform:translateY(-1em) rotate(7deg)}}
 @media(max-width:520px){.midway-action{height:7.8em;min-height:7.8em}.midway-canopy{left:20%;right:20%;font-size:1.7em}.midway-ponies span{font-size:1.45em}.midway-rest{font-size:.84em}.midway-wheel{transform:scale(.82);transform-origin:top center}}
 @media(prefers-reduced-motion:reduce){.midway-lights,.midway-deck,.midway-ponies span,.midway-wheel,.midway-jar,.midway-ring,.midway-water span,.midway-balloons span{animation:none!important}}
+
+.scene-back{position:absolute;z-index:24;left:.8%;top:.8%;max-width:40%;white-space:nowrap;box-shadow:0 3px 12px #2e1b1555}
+@media(max-width:520px){.scene-back{left:2%;top:2%;font-size:.64em;max-width:48%}}
