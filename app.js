@@ -1111,7 +1111,7 @@ updateMemoryBadge();
  document.addEventListener("DOMContentLoaded",()=>{let nav=document.getElementById("districtNav");if(nav)nav.innerHTML=Object.keys(D).map(n=>`<button data-district="${n}">${D[n].i} ${n}</button>`).join("");document.querySelectorAll("[data-district]").forEach(b=>b.onclick=()=>go(b.dataset.district));go(localStorage.getItem(K)||"Town Square")});
 })();
 
-document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll("[data-frontgo]").forEach(b=>b.addEventListener("click",()=>{let e=document.getElementById(b.dataset.frontgo);if(e)e.scrollIntoView({behavior:"smooth",block:"start"})}))});
+document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll("[data-frontgo]").forEach(b=>b.addEventListener("click",()=>{const key=b.dataset.frontgo;const target=document.getElementById(key==="connectedTown"?"hbPlayableWorld":key);if(!target)return;const town=document.getElementById("town");if(town&&target.closest("#town")&&!town.classList.contains("active")){document.getElementById("welcome")?.classList.remove("active");town.classList.add("active");}requestAnimationFrame(()=>target.scrollIntoView({behavior:"smooth",block:"start"}));}))});
 
 (function(){
  function read(k,d){try{return JSON.parse(localStorage.getItem(k)||JSON.stringify(d))}catch(e){return d}}
