@@ -2514,8 +2514,13 @@ const Carnival = {
       (wheel ? [{label:'2'}, {label:'6'}, {label:'8',primary:true,value:'correct'}, {label:'12'}] : [{label:'2'}, {label:'6',primary:true,value:'correct'}, {label:'8'}, {label:'12'}]));
     if (value === 'back') return;
     S.usedSlot = true;
-    if (value === 'correct') { Snd.sfx('good'); toast(wheel ? 'Eight lanterns—nice counting!' : 'Six ponies are ready—well counted!'); }
-    else { Snd.sfx('click'); toast('The ride is the prize. Want to count it together next time?'); }
+    if (value === 'correct') {
+      Snd.sfx('good'); toast(wheel ? 'Eight lanterns—nice counting!' : 'Six ponies are ready—well counted!');
+      await modal(`<p class="kicker">Your Fair ride is underway</p>${this.action(wheel ? 'wheel' : 'carousel','success')}<h2>${wheel ? 'Up above Honeybrook!' : 'Round and round we go!'}</h2><p>${wheel ? 'The wheel turns while you count eight glowing lanterns across the Fair.' : 'The painted ponies circle beneath the lights. Six are ready to ride; two are resting.'}</p>`,[{label:'Back to the midway',primary:true}]);
+    } else {
+      Snd.sfx('click'); toast('The ride is the prize. Want to count it together next time?');
+      await modal(`<p class="kicker">Watch the ride</p>${this.action(wheel ? 'wheel' : 'carousel','play')}<h2>Let’s count it together</h2><p>${wheel ? 'Four lanterns on each side makes 4 + 4 = 8.' : 'Eight ponies, with two resting: 8 − 2 = 6 ponies ready to ride.'}</p>`,[{label:'Back to the midway',primary:true}]);
+    }
   },
   async game(kind) {
     const q = {
@@ -2530,21 +2535,21 @@ const Carnival = {
     if (ans === q.correct) {
       S.carnivalTickets = (S.carnivalTickets || 0) + q.tickets;
       Snd.sfx('good'); updateHUD(); Save.push(true);
-      await modal(`<p class="kicker">Well done!</p><h2>${q.icon} ${q.title}</h2><p>${q.hint}</p><p>You earned <b>${q.tickets} carnival tickets</b>. Your purse now holds ${S.carnivalTickets}.</p>`,[{label:'Back to the midway',primary:true}]);
+      await modal(`<p class="kicker">Well done!</p><h2>${q.icon} ${q.title}</h2>${this.action(kind,'success')}<p>${q.hint}</p><p>You earned <b>${q.tickets} carnival tickets</b>. Your purse now holds ${S.carnivalTickets}.</p>`,[{label:'Back to the midway',primary:true}]);
     } else {
       S.carnivalTickets = (S.carnivalTickets || 0) + 1;
       Snd.sfx('click'); updateHUD(); Save.push(true);
-      await modal(`<p class="kicker">A good try</p><h2>Let’s work it out together</h2><p>${q.hint}</p><p>You still earned <b>1 carnival ticket</b> for giving it a try. Your purse now holds ${S.carnivalTickets}.</p>`,[{label:'Back to the midway',primary:true}]);
+      await modal(`<p class="kicker">A good try</p><h2>Let’s work it out together</h2>${this.action(kind,'retry')}<p>${q.hint}</p><p>You still earned <b>1 carnival ticket</b> for giving it a try. Your purse now holds ${S.carnivalTickets}.</p>`,[{label:'Back to the midway',primary:true}]);
     }
   },
   async circus() {
-    const robin = await modal(`<p class="kicker">Under the big top</p><button type="button" class="btn btn-small btn-ghost challenge-back" data-val="back">← Back to the carnival</button><h2>🎪 The Honeybrook Little Circus</h2><p>Find a seat beneath the striped tent. Robin is ready to sing, Templar has brought a clockwork bee, and Big Mama Mary is saving a story for the finale. The acts are friendly, the audience can join in, and everyone gets a warm welcome.</p><div class="carnival-act"><span class="act-icon">🎤</span><b>Act One · Robin’s rhyme</b><p>Robin sings: “A bear brought a pear, and sat in a ___.” Which word rhymes?</p></div>`,[{label:'chair',primary:true,value:'right'},{label:'river',value:'wrong'},{label:'honey',value:'wrong'}]);
+    const robin = await modal(`<p class="kicker">Under the big top</p><button type="button" class="btn btn-small btn-ghost challenge-back" data-val="back">← Back to the carnival</button><h2>🎪 The Honeybrook Little Circus</h2><div class="ride-picture">${this.action('robin')}</div><p>Find a seat beneath the striped tent. Robin is ready to sing, Templar has brought a clockwork bee, and Big Mama Mary is saving a story for the finale. The acts are friendly, the audience can join in, and everyone gets a warm welcome.</p><div class="carnival-act"><span class="act-icon">🎤</span><b>Act One · Robin’s rhyme</b><p>Robin sings: “A bear brought a pear, and sat in a ___.” Which word rhymes?</p></div>`,[{label:'chair',primary:true,value:'right'},{label:'river',value:'wrong'},{label:'honey',value:'wrong'}]);
     if (robin === 'back') { go('carnival'); return; }
     let score = robin === 'right' ? 1 : 0; $('#circus-act-line').textContent = 'Act One: Robin leads the audience in a rhyme.';
-    const bee = await modal(`<p class="kicker">Act Two · Templar’s clockwork bee</p><button type="button" class="btn btn-small btn-ghost challenge-back" data-val="back">← Back to the carnival</button><h2>🐝 Follow the golden lights</h2><p>The bee blinks a pattern: <b>gold, blue, gold, blue, gold…</b> Which light should blink next?</p>`,[{label:'Gold',value:'wrong'},{label:'Blue',primary:true,value:'right'},{label:'Green',value:'wrong'}]);
+    const bee = await modal(`<p class="kicker">Act Two · Templar’s clockwork bee</p><button type="button" class="btn btn-small btn-ghost challenge-back" data-val="back">← Back to the carnival</button><h2>🐝 Follow the golden lights</h2><div class="ride-picture">${this.action('bee')}</div><p>The bee blinks a pattern: <b>gold, blue, gold, blue, gold…</b> Which light should blink next?</p>`,[{label:'Gold',value:'wrong'},{label:'Blue',primary:true,value:'right'},{label:'Green',value:'wrong'}]);
     if (bee === 'back') { go('carnival'); return; }
     if (bee === 'right') score++; $('#circus-act-line').textContent = 'Act Two: Templar’s clockwork bee loops around the golden ring.';
-    const story = await modal(`<p class="kicker">Act Three · Big Mama Mary’s story</p><button type="button" class="btn btn-small btn-ghost challenge-back" data-val="back">← Back to the carnival</button><h2>📖 The traveler at the door</h2><p>A new cub arrives in the rain. What does Sammy’s Honeybrook welcome say first?</p>`,[{label:'“Tell us everything.”',value:'wrong'},{label:'“You can eat first.”',primary:true,value:'right'},{label:'“Come back tomorrow.”',value:'wrong'}]);
+    const story = await modal(`<p class="kicker">Act Three · Big Mama Mary’s story</p><button type="button" class="btn btn-small btn-ghost challenge-back" data-val="back">← Back to the carnival</button><h2>📖 The traveler at the door</h2><div class="ride-picture">${this.action('story')}</div><p>A new cub arrives in the rain. What does Sammy’s Honeybrook welcome say first?</p>`,[{label:'“Tell us everything.”',value:'wrong'},{label:'“You can eat first.”',primary:true,value:'right'},{label:'“Come back tomorrow.”',value:'wrong'}]);
     if (story === 'back') { go('carnival'); return; }
     if (story === 'right') score++; $('#circus-act-line').textContent = 'Act Three: Big Mama Mary brings the traveler in from the rain.';
     S.usedSlot = true;
