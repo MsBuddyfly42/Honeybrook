@@ -262,11 +262,11 @@ h1 span{color:var(--berry);font-size:.78em}
 .home-object{position:absolute;pointer-events:auto;min-width:10%;min-height:13%;border:2px solid #d5b16e;border-radius:50% 50% 12px 12px;background:#fff4d9e8;box-shadow:0 4px 0 #78502e;cursor:pointer;display:grid;place-items:center;padding:.3em;color:#402c1c}
 .home-object span{font-size:2em;line-height:1}.home-object b{font-size:.62em}.home-object:hover{transform:translateY(-5px);filter:brightness(1.08)}
 .object-1{left:9%;top:49%}.object-2{left:31%;top:56%}.object-3{right:8%;top:38%}.object-4{right:26%;top:57%}
-.home-town-school{background:linear-gradient(#bdd4da 0 57%,#98704a 57%)}.home-town-school:before{background:repeating-linear-gradient(90deg,transparent 0 14%,#875b38 14.2% 14.6%,transparent 14.8% 29%),linear-gradient(#cfdaa9,#f3dfaa)}
-.home-town-school .home-fireplace{background:#537086;border-color:#354d60;border-radius:4px;width:29%;height:28%;left:36%;top:28%;font-size:1em;padding:1em;color:white;place-items:start center}.home-town-school .home-fireplace:after{content:"READ · BUILD · WONDER";font:800 1.4em var(--font-d)}
-.home-town-school .home-bear{right:14%;font-size:4em}
-.home-town-bridge{background:linear-gradient(#d7c18e 0 55%,#98704a 55%)}.home-town-bridge:before{background:linear-gradient(#cbdde1 0 62%,#83bfc5 63% 72%,#bc9360 73%)}.home-town-bridge .home-fireplace{display:none}.home-town-bridge .home-window{left:31%;width:40%;height:18%;top:29%;border:0;border-radius:50%;background:linear-gradient(#b4e3e8,#277c98);font-size:1em}.home-town-bridge .home-table{bottom:28%;transform:rotate(-4deg);width:50%;left:25%;height:13%;background:repeating-linear-gradient(90deg,#80502f 0 9%,#b47a45 9% 11%)}.home-town-bridge .home-bear{right:13%;bottom:23%;font-size:4em}
-.home-town-homes .home-bear{right:14%;font-size:4em}.home-town-welcome .home-window{background:linear-gradient(#adcfdd,#5a8460)}
+.home-room.town-school{background:linear-gradient(#bdd4da 0 57%,#98704a 57%)}.home-room.town-school:before{background:repeating-linear-gradient(90deg,transparent 0 14%,#875b38 14.2% 14.6%,transparent 14.8% 29%),linear-gradient(#cfdaa9,#f3dfaa)}
+.home-room.town-school .home-fireplace{background:#537086;border-color:#354d60;border-radius:4px;width:29%;height:28%;left:36%;top:28%;font-size:1em;padding:1em;color:white;place-items:start center}.home-room.town-school .home-fireplace:after{content:"READ · BUILD · WONDER";font:800 1.4em var(--font-d)}
+.home-room.town-school .home-bear{right:14%;font-size:4em}
+.home-room.town-bridge{background:linear-gradient(#d7c18e 0 55%,#98704a 55%)}.home-room.town-bridge:before{background:linear-gradient(#cbdde1 0 62%,#83bfc5 63% 72%,#bc9360 73%)}.home-room.town-bridge .home-fireplace{display:none}.home-room.town-bridge .home-window{left:31%;width:40%;height:18%;top:29%;border:0;border-radius:50%;background:linear-gradient(#b4e3e8,#277c98);font-size:1em}.home-room.town-bridge .home-table{bottom:28%;transform:rotate(-4deg);width:50%;left:25%;height:13%;background:repeating-linear-gradient(90deg,#80502f 0 9%,#b47a45 9% 11%)}.home-room.town-bridge .home-bear{right:13%;bottom:23%;font-size:4em}
+.home-room.town-homes .home-bear{right:14%;font-size:4em}.home-room.town-welcome .home-window{background:linear-gradient(#adcfdd,#5a8460)}
 @media(max-width:760px){.home-sign{top:5%;width:52%;padding:.34em}.home-sign h2{font-size:.95em}.home-sign p:last-child{font-size:.58em}.home-object{min-width:14%;min-height:12%}.home-object span{font-size:1.45em}.home-object b{font-size:.55em}.home-bear{font-size:4em}.home-back{font-size:.6em}}
 /* A full little tent with a ring, curtains, cast, and audience */
 .circus-scene{background:#371820;color:#fff4df}.circus-canvas{position:absolute;inset:0;overflow:hidden;background:radial-gradient(ellipse at 50% 58%,#d9a95e 0 24%,#5b2d35 25% 61%,#28131d 100%)}
@@ -297,12 +297,12 @@ h1 span{color:var(--berry);font-size:.78em}
 
 /* Creek Bridge has its own close view: the town map is panned to the bridge so its
    quiet details, not the whole town, fill the screen. */
-.home-town-bridge .home-background{transform:scale(1.62) translateY(-18%);transform-origin:center center}
-.home-town-bridge .object-1{left:31%;top:58%}
-.home-town-bridge .object-2{left:48%;top:38%}
-.home-town-bridge .object-3{left:72%;top:25%}
-.home-town-bridge .object-4{left:55%;top:58%}
-.home-town-bridge .home-sign{background:rgba(255,247,226,.94);box-shadow:0 4px 18px #2e1b1566}
+.home-room.town-bridge .home-background{transform:scale(1.62) translateY(-18%);transform-origin:center center}
+.home-room.town-bridge .object-1{left:31%;top:58%}
+.home-room.town-bridge .object-2{left:48%;top:38%}
+.home-room.town-bridge .object-3{left:72%;top:25%}
+.home-room.town-bridge .object-4{left:55%;top:58%}
+.home-room.town-bridge .home-sign{background:rgba(255,247,226,.94);box-shadow:0 4px 18px #2e1b1566}
 
 .home-objects{z-index:6}
 .home-sign{top:1.5%;left:50%;transform:translateX(-50%);width:min(31%,24em);padding:.36em .7em;background:rgba(255,247,226,.91);pointer-events:none}
@@ -494,3 +494,43 @@ h1 span{color:var(--berry);font-size:.78em}
 .home-action{top:auto;bottom:15%;width:min(33em,42%);right:2.5%}
 @media(max-width:760px){.craft-card:has(.work-recipe-grid),#recipe-card:has(.recipe-grid){left:3%;right:3%;top:10%;width:auto;max-height:72%}.school-task,.home-action{left:4%;right:4%;top:15%;bottom:auto;width:auto;max-height:70%;font-size:.9em}}
 @media(prefers-reduced-motion:reduce){.school-task,.home-action{scroll-behavior:auto}}
+
+/* In-place actions: every story hotspot now shows a moving scene and a real
+   "join in" step without taking the player away from the room. */
+.play-action-card{position:absolute;z-index:24;right:2.5%;bottom:5%;width:min(37em,43%);max-height:83%;overflow:auto;padding:1em 1.15em;background:rgba(255,250,240,.97);border:2px solid #d5b16e;box-shadow:0 14px 38px #28180c70}
+.play-action-card h2{font:800 1.35em/1.1 var(--font-d);margin:.2em 0 .55em}
+.action-stage{position:relative;height:9.2em;overflow:hidden;border:2px solid #c49a5d;border-radius:.8em;background:linear-gradient(#d8e7df 0 61%,#8e754c 62% 70%,#b67c49 70%);box-shadow:inset 0 -12px 0 #855833}
+.action-stage:before{content:"";position:absolute;left:-5%;right:-5%;bottom:22%;height:2.3em;background:repeating-linear-gradient(90deg,#80502e 0 18%,#c18b52 18.5% 20%,#80502e 20.5% 39%);opacity:.82}
+.action-bear{position:absolute;z-index:2;left:16%;bottom:16%;font-size:3.7em;filter:drop-shadow(0 5px 3px #4a311b66);animation:action-idle 1.8s ease-in-out infinite alternate}
+.action-prop{position:absolute;z-index:2;right:23%;bottom:20%;font-size:2.8em;filter:drop-shadow(0 4px 3px #4a311b66);transition:transform .35s}
+.action-spark,.action-result{position:absolute;z-index:3;opacity:0;color:#ffdc75;font-size:2em}
+.action-spark{left:48%;top:15%}.action-result{right:12%;top:14%}
+.action-copy{margin:.55em 0}.action-feedback{min-height:2.6em;margin:.35em 0;padding:.55em .7em;border-radius:.65em;background:#f4ead4}
+.action-controls{display:flex;justify-content:flex-end;gap:.5em;flex-wrap:wrap}
+.action-stage.is-working .action-bear,.school-vignette.is-working .action-bear{animation:action-help .65s ease-in-out 2}
+.action-stage.is-working .action-prop,.school-vignette.is-working .action-prop{animation:prop-help .65s ease-in-out 2}
+.action-stage.is-working .action-spark,.action-stage.is-done .action-result{animation:action-spark .65s ease-out 2}
+@keyframes action-idle{to{transform:translateY(-5px) rotate(-2deg)}}
+@keyframes action-help{0%,100%{transform:translate(0,0) rotate(0)}50%{transform:translate(125%, -12%) rotate(7deg)}}
+@keyframes prop-help{0%,100%{transform:translate(0,0) rotate(0)}50%{transform:translate(-35%, -28%) rotate(14deg)}}
+@keyframes action-spark{0%{opacity:0;transform:scale(.4)}45%{opacity:1;transform:scale(1.15)}100%{opacity:0;transform:scale(1.7)}}
+.home-choice-actions{display:grid;gap:.5em;margin:.8em 0}
+.home-choice-actions .btn{text-align:left;white-space:normal}
+.school-vignette{height:5.8em;margin:.65em 0}
+.school-vignette .action-bear{font-size:2.8em}
+.school-vignette .action-prop{font-size:2em}
+#area-spots .play-action-card{right:2.5%;bottom:5%;width:min(37em,44%)}
+#area-spots .area-title{z-index:12}
+.home-room.town-bridge .home-background{transform:scale(2.05) translateY(-23%);transform-origin:center center;filter:saturate(1.06) contrast(1.02)}
+.home-room.town-bridge .home-sign{z-index:12}
+.home-room.town-bridge .bridge-cross-scene{position:absolute;z-index:8;left:19%;right:18%;top:52%;height:32%;pointer-events:none}
+.bridge-water-flow{position:absolute;left:-4%;right:-4%;bottom:4%;height:29%;border-radius:45%;background:repeating-linear-gradient(170deg,rgba(118,220,232,.62) 0 4%,rgba(31,126,155,.52) 5% 10%,rgba(181,231,232,.8) 11% 14%);background-size:160% 100%;animation:creek-flow 2.3s linear infinite;filter:drop-shadow(0 2px 4px #194f5d77)}
+.bridge-traveler{position:absolute;z-index:2;left:9%;bottom:26%;font-size:clamp(2em,5vw,4.4em);filter:drop-shadow(0 5px 3px #35231388)}
+.bridge-cross-button{position:absolute;z-index:4;left:50%;top:18%;transform:translateX(-50%);opacity:0;pointer-events:auto;white-space:nowrap}
+.bridge-cross-scene:hover .bridge-cross-button,.bridge-cross-button:focus-visible{opacity:1}
+.bridge-cross-status{position:absolute;z-index:3;left:50%;bottom:-7%;transform:translateX(-50%);padding:.35em .7em;border-radius:2em;background:#fff8e9d9;font-weight:800;white-space:nowrap}
+.home-room.bridge-crossed .bridge-traveler{animation:bridge-walk 2.4s ease-in-out forwards}
+@keyframes creek-flow{to{background-position:160% 0}}
+@keyframes bridge-walk{0%{left:9%;bottom:26%}35%{left:43%;bottom:48%;transform:translateY(-20%)}70%{left:69%;bottom:29%;transform:translateY(-10%)}100%{left:85%;bottom:24%;transform:translateY(0)}}
+@media(hover:none){.bridge-cross-button{opacity:1}}
+@media(max-width:760px){.play-action-card,#area-spots .play-action-card{left:3%;right:3%;bottom:3%;width:auto;max-height:63%;padding:.75em}.action-stage{height:6.5em}.home-room.town-bridge .bridge-cross-scene{left:6%;right:6%;top:53%;height:32%}.bridge-cross-button{top:0}.bridge-cross-status{font-size:.78em;white-space:normal;width:90%;text-align:center}}
