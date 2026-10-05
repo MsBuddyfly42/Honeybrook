@@ -361,3 +361,16 @@ h1 span{color:var(--berry);font-size:.78em}
 @media (prefers-reduced-motion:reduce){
  .home-object,.carnival-stop,.town-marker,.spot .sign{transition:none}
 }
+
+
+/* Keep the game HUD tucked away until a player opens the menu or reaches it. */
+#hud{transform:translateY(calc(-100% - .25em));transition:transform .22s ease,background .22s ease;pointer-events:none}
+#hud.hud-open,#hud:hover,#hud:focus-within,#hud-toggle:hover+#hud,#hud-toggle:focus-visible+#hud{transform:translateY(0);pointer-events:auto;background:rgba(35,25,17,.9);backdrop-filter:blur(6px)}
+#hud-toggle{position:absolute;z-index:22;top:.45em;right:.65em;padding:.4em .8em}
+#hud-toggle[hidden]{display:none!important}
+@media(max-width:760px){
+ #hud{max-height:86%;overflow-y:auto;align-content:flex-start;align-items:flex-start;padding:3.1em .45em .55em}
+ .hud-left,.hud-right{width:100%;justify-content:flex-start}
+ #hud-toggle{top:.4em;right:.45em}
+}
+@media(prefers-reduced-motion:reduce){#hud{transition:none}}
