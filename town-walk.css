@@ -83,6 +83,11 @@
 #town .hb-entry-arrival b{font:800 .9rem Fraunces,Georgia,serif}
 #town .hb-entry-scene.hb-entry-leave{animation:hbSceneLeave .2s ease both}
 #town .hb-scene-burst .hb-entry-host{animation:hbHostReact .6s ease}
+#town .hb-entry-scene[data-place="bridge"] .hb-entry-bg{object-position:center 88%;transform:scale(1.42)}
+#town .hb-entry-scene[data-place="bridge"] .hb-entry-dock{position:absolute;right:1.5%;bottom:1.6%;width:min(455px,38%);max-height:78%;overflow:auto;margin:0;padding:.78rem;background:rgba(33,48,39,.96)}
+#town .hb-entry-scene[data-place="bridge"] .hb-entry-story>p{font-size:.82rem}
+#town .hb-entry-scene[data-place="bridge"] .hb-entry-host{left:31%;top:56%;transform:translate(-50%,-50%) scale(1.2)}
+#town .hb-entry-scene[data-place="bridge"] .hb-entry-arrival{left:31%;top:38%}
 #town .hb-entry-host{position:absolute;z-index:1;left:50%;top:44%;width:75px;height:125px;transform:translate(-50%,-50%);pointer-events:none;filter:drop-shadow(0 8px 7px #18140f59);animation:hbHostIdle 2.4s ease-in-out infinite}
 #town .hb-entry-host-ear{position:absolute;top:0;width:32px;height:36px;border:3px solid #67462e;border-radius:50%;background:radial-gradient(circle at 45% 44%,#8b5f3c 0 28%,#d2a06b 31% 100%);z-index:1}
 #town .hb-entry-host-ear.left{left:5px}
@@ -99,6 +104,6 @@
 @keyframes hbArrival{0%{opacity:1;transform:translate(-50%,-50%) scale(.82)}60%{opacity:1;transform:translate(-50%,-50%) scale(1.04)}100%{opacity:0;transform:translate(-50%,-68%) scale(.98)}}
 @keyframes hbHostIdle{50%{transform:translate(-50%,-52%)}}
 @keyframes hbHostReact{50%{transform:translate(-50%,-63%) scale(1.12)}}
-@media(max-width:760px){#town .hb-entry-scene{inset:0}.hb-entry-header{padding:.5rem}.hb-entry-back{font-size:.7rem;padding:.45rem .58rem}.hb-entry-live{display:none}.hb-entry-dock{width:96%;margin-top:28vh;padding:.68rem;border-radius:14px}.hb-entry-story>p{font-size:.82rem}.hb-entry-story details{max-width:130px}.hb-entry-action-set [data-hb-place-action]{font-size:.67rem;padding:.42rem .55rem}.hb-task-item{font-size:.68rem;padding:.4rem .48rem}.hb-entry-host{top:39%;transform:translate(-50%,-50%) scale(.82)}.hb-entry-arrival{top:38%;max-width:90%;font-size:.75rem;white-space:nowrap}}
+@media(max-width:760px){#town .hb-entry-scene{inset:0}#town .hb-entry-scene[data-place="bridge"] .hb-entry-dock{right:2%;left:2%;bottom:1%;width:auto;max-height:54%;margin:0;padding:.55rem}.hb-entry-header{padding:.5rem}.hb-entry-back{font-size:.7rem;padding:.45rem .58rem}.hb-entry-live{display:none}.hb-entry-dock{width:96%;margin-top:28vh;padding:.68rem;border-radius:14px}.hb-entry-story>p{font-size:.82rem}.hb-entry-story details{max-width:130px}.hb-entry-action-set [data-hb-place-action]{font-size:.67rem;padding:.42rem .55rem}.hb-task-item{font-size:.68rem;padding:.4rem .48rem}.hb-entry-host{top:39%;transform:translate(-50%,-50%) scale(.82)}.hb-entry-arrival{top:38%;max-width:90%;font-size:.75rem;white-space:nowrap}}
 @media(max-height:700px) and (min-width:761px){#town .hb-entry-dock{margin-top:31vh;max-height:59vh;overflow:auto}}
 @media(prefers-reduced-motion:reduce){#town .hb-entry-scene,#town .hb-entry-host,#town .hb-entry-arrival{animation:none}#town .hb-task-track i,#town .hb-task-item{transition:none}}
