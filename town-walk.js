@@ -162,7 +162,7 @@
     function loop(now) {
       const dt=Math.min(.05, lastTime ? (now-lastTime)/1000 : .016);lastTime=now;
       if(!reduceMotion())elapsed+=dt;
-      if (town.classList.contains('active') && !document.hidden && !document.getElementById('hbWorldDialog')?.open && document.getElementById('modal')?.classList.contains('hidden')) {
+      if (town.classList.contains('active') && !document.body.classList.contains('visit-open') && !document.hidden && !document.getElementById('hbWorldDialog')?.open && document.getElementById('modal')?.classList.contains('hidden')) {
         if (goal) {
           const dx=(goal.x-x)*W,dy=(goal.y-y)*H,d=Math.hypot(dx,dy);
           if(d>3){const step=Math.min(d,235*dt);x+=dx/d*step/W;y+=dy/d*step/H;facing=dx>=0?1:-1;walkPhase+=dt*9;}
@@ -271,7 +271,7 @@
     });
     document.addEventListener('keyup',event=>{const k=keyName(event.key);if(k){held.delete(k);save();}});
     function stopWalking(){held.clear();goal=null;goalDone=null;save();}
-    window.addEventListener('blur',stopWalking);window.addEventListener('pagehide',stopWalking);document.addEventListener('visibilitychange',()=>{if(document.hidden)stopWalking();});
+    window.addEventListener('honeybrook-visit-open',stopWalking);window.addEventListener('blur',stopWalking);window.addEventListener('pagehide',stopWalking);document.addEventListener('visibilitychange',()=>{if(document.hidden)stopWalking();});
     canvas.addEventListener('blur',()=>{held.clear();save();});
     document.getElementById('hbWorldDialog')?.addEventListener('close',()=>held.clear());
     setInterval(()=>{if(held.size||goal)save();},1000);
