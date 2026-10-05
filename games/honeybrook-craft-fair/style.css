@@ -425,3 +425,54 @@ h1 span{color:var(--berry);font-size:.78em}
 
 .scene-back{position:absolute;z-index:24;left:.8%;top:.8%;max-width:40%;white-space:nowrap;box-shadow:0 3px 12px #2e1b1555}
 @media(max-width:520px){.scene-back{left:2%;top:2%;font-size:.64em;max-width:48%}}
+
+
+/* Large, illustrated action scenes replace text-only descriptions in Fair prompts. */
+.modal-card:has(.midway-action){width:min(52em,96%);max-height:96%;padding:1em 1.25em}
+.carnival-act.ride-act,.carnival-act.game-act{padding:.65em .8em}
+.ride-picture{clear:both;margin:.45em 0 .65em}
+.midway-action{position:relative;display:block;width:100%;height:clamp(14em,31vh,22em);min-height:14em;overflow:hidden;isolation:isolate;border:2px solid #d0ad67;border-radius:14px;background:#8ab7ce;box-shadow:0 5px 0 #84603d,inset 0 0 20px #fff4d5}
+.midway-action svg{display:block;width:100%;height:100%;object-fit:cover}
+.carousel-riders{transform-box:view-box;transform-origin:240px 145px;animation:carousel-orbit 8s linear infinite}
+@keyframes carousel-orbit{to{transform:rotate(360deg)}}
+.ferris-wheel-spin,.ferris-cars{transform-box:view-box;transform-origin:240px 104px;animation:ferris-turn 12s linear infinite}
+@keyframes ferris-turn{to{transform:rotate(360deg)}}
+.toss-ring{animation:ring-toss-flight 2.8s cubic-bezier(.3,.15,.6,1) infinite}
+@keyframes ring-toss-flight{0%,12%{transform:translate(0,0) rotate(0)}58%{transform:translate(55px,25px) rotate(250deg)}82%,100%{transform:translate(54px,31px) rotate(360deg)}}
+.phase-success .toss-ring{animation:ring-toss-land 1.3s ease-out forwards}
+@keyframes ring-toss-land{0%{transform:translate(0,0) rotate(0)}72%{transform:translate(58px,24px) rotate(310deg)}100%{transform:translate(54px,31px) rotate(360deg)}}
+.duck-one{animation:duck-paddle-one 4.2s ease-in-out infinite alternate}
+.duck-two{animation:duck-paddle-two 3.5s ease-in-out infinite alternate}
+.duck-three{animation:duck-paddle-three 4.7s ease-in-out infinite alternate}
+@keyframes duck-paddle-one{to{transform:translate(26px,-5px)}}
+@keyframes duck-paddle-two{to{transform:translate(-19px,4px)}}
+@keyframes duck-paddle-three{to{transform:translate(-24px,-4px)}}
+.phase-success .duck-two{animation:duck-splash .8s ease-in-out 2 alternate}
+@keyframes duck-splash{to{transform:translateY(-16px) rotate(-7deg)}}
+.balloon-red,.balloon-gold,.balloon-blue{transform-box:fill-box;transform-origin:center bottom;animation:balloon-sway 1.8s ease-in-out infinite alternate}
+.balloon-gold{animation-delay:-.7s}.balloon-blue{animation-delay:-1.1s}
+@keyframes balloon-sway{to{transform:translateY(-8px) rotate(3deg)}}
+.phase-success .balloon-blue{animation:balloon-pop .55s ease-out .65s forwards}
+@keyframes balloon-pop{35%{transform:scale(1.5);opacity:1;filter:brightness(1.6)}100%{transform:scale(2.2);opacity:0}}
+.dart{animation:dart-fly 2.4s ease-in infinite}
+@keyframes dart-fly{0%,8%{transform:translate(0,0);opacity:0}28%{opacity:1}78%{transform:translate(184px,87px);opacity:1}82%,100%{transform:translate(184px,87px);opacity:0}}
+.singing-bear{transform-box:view-box;transform-origin:238px 140px;animation:sing-bounce .8s ease-in-out infinite alternate}
+@keyframes sing-bounce{to{transform:translateY(-7px) rotate(1deg)}}
+.music-notes text{animation:note-rise 2.3s ease-out infinite}
+.music-notes text:nth-child(2){animation-delay:-.8s}.music-notes text:nth-child(3){animation-delay:-1.5s}
+@keyframes note-rise{0%{opacity:0;transform:translateY(16px)}25%{opacity:1}100%{opacity:0;transform:translateY(-30px)}}
+.clockwork-bee{transform-box:view-box;transform-origin:240px 110px;animation:bee-loop 4s ease-in-out infinite alternate}
+@keyframes bee-loop{to{transform:translate(88px,-28px) rotate(12deg)}}
+.bee-wing{transform-box:fill-box;transform-origin:center;animation:wing-flutter .12s linear infinite alternate}
+.wing-b{animation-delay:-.06s}
+@keyframes wing-flutter{to{transform:scaleY(.25)}}
+.welcome-door{transform-box:view-box;transform-origin:211px 159px;animation:welcome-door-open 3.8s ease-in-out infinite alternate}
+@keyframes welcome-door-open{to{transform:perspective(220px) rotateY(-35deg)}}
+.welcome-bear{animation:welcome-wave 1s ease-in-out infinite alternate;transform-box:view-box;transform-origin:238px 161px}
+@keyframes welcome-wave{to{transform:translateY(-5px) rotate(2deg)}}
+.rain-streaks{animation:rain-fall .55s linear infinite}
+@keyframes rain-fall{to{transform:translateY(20px)}}
+.phase-retry .toss-ring{animation-duration:1.5s}
+.midway-action [class^="duck-"],.midway-action [class^="balloon-"]{will-change:transform}
+@media(max-width:600px){.modal-card:has(.midway-action){padding:.75em}.midway-action{height:clamp(12em,30vh,16em);min-height:12em}.modal-card h2{font-size:1.25em}}
+@media(prefers-reduced-motion:reduce){.carousel-riders,.ferris-wheel-spin,.ferris-cars,.toss-ring,.duck-one,.duck-two,.duck-three,.balloon-red,.balloon-gold,.balloon-blue,.dart,.singing-bear,.music-notes text,.clockwork-bee,.bee-wing,.welcome-door,.welcome-bear,.rain-streaks{animation:none!important}}
