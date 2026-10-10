@@ -56,7 +56,7 @@ document.addEventListener('click',e=>{
  const district=e.target.closest('[data-town-place]');if(district){const name=district.dataset.townPlace,target=document.getElementById(districts[name]);if(target){e.preventDefault();e.stopImmediatePropagation();target.scrollIntoView({behavior:'smooth',block:'start'});return;}if(name==='Welcome House'){e.preventDefault();e.stopImmediatePropagation();navigate('Welcome House');return;}}
  const door=e.target.closest(selector);if(door){e.preventDefault();e.stopImmediatePropagation();const k=attributes.find(k=>door.hasAttribute('data-'+k));let name=k?door.getAttribute('data-'+k):null;if(!name&&typeof destinations!=='undefined')name=destinations[door.dataset.district]?.[Number(door.dataset.destination)]?.[0];if(name==='Return to Honeybrook'){document.getElementById('hbPlayableWorld')?.scrollIntoView({behavior:'smooth',block:'start'});return;}if(name)navigate(name,door.closest('section')?.id);return;}
  if(!current)return;
- if(e.target.closest('[data-visit-back]')){if(history.state?.honeybrookVisit)history.back();else{history.replaceState(null,'',location.pathname+location.search);leave();}return;}
+ if(e.target.closest('[data-visit-back]')){const source=current?.source;history.replaceState(null,'',location.pathname+location.search);leave();const district=document.getElementById(source);if(district){district.scrollIntoView({block:'start'});const heading=district.querySelector('h2');if(heading){heading.tabIndex=-1;heading.focus({preventScroll:true});}}return;}
  const next=e.target.closest('[data-visit-door]');if(next){navigate(next.dataset.visitDoor);return;}
  const b=e.target.closest('[data-visit-action]');if(!b)return;const s=state(),a=b.dataset.visitAction;
  if(a==='plot'){const i=+b.dataset.plot;if(s.plots[i]===2)s.harvest=(s.harvest||0)+1;s.plots[i]=(s.plots[i]+1)%3;}
@@ -82,3 +82,4 @@ function route(){const match=location.hash.match(/^#visit=(.+)$/);if(match){try{
 addEventListener('honeybrook-enter-place',event=>{const name=event.detail?.name;if(typeof name!=='string'||name.length>120)return;document.getElementById('hbWorldDialog')?.close();navigate(name);});
 addEventListener('popstate',route);route();
 })();
+
