@@ -56,7 +56,16 @@
       {title:'A little afternoon picnic',watch:'Sammy spreads a cloth beside the path. Wally brings bread, and Benny parks his cart nearby. There is an empty seat for you.',join:'You set out the cups. Sammy slides the bread closer. “Stay as long as you like.”',bear:'Sammy'},
       {title:'Lanterns and a goodnight wave',watch:'Amelia lights the welcome lantern. Wally closes his shutters while Harold tips his cap to the neighbors heading home.',join:'You help carry a lantern to the bridge. Its warm light dances on the creek as Amelia waves goodnight.',bear:'Amelia'}
     ];
-    let chosenTime='auto', dailySlot=-1;
+    let chosenTime='auto', dailySlot=-1, activity=null, watchTimer=null;
+    const activitySteps=[['Place the first flower','Place the second flower','Place the last flower'],['Spread the picnic blanket','Set out the cups','Bring the honey bread','Share the berry bowl'],['Light your lantern','Walk to the creek path','Carry it across the bridge','Walk to the welcome post','Hang the lantern']];
+    const flowerColors={honey:'#edb94d',rose:'#ce6d87',lavender:'#9b85cd'};
+    memory.dailyPlay=memory.dailyPlay&&typeof memory.dailyPlay==='object'&&!Array.isArray(memory.dailyPlay)?memory.dailyPlay:{};
+    function activityDay(){return new Intl.DateTimeFormat('en-CA',{timeZone:'America/Chicago',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());}
+    function activityState(slot,old){
+      const today=activityDay(), valid=old&&old.day===today;
+      return {day:today,step:valid&&Number.isInteger(old.step)?Math.max(0,Math.min(activitySteps[slot].length,old.step)):0,color:valid&&Object.hasOwn(flowerColors,old.color)?old.color:'honey',recorded:!!(valid&&old.recorded)};
+    }
+    function advanceActivity(slot,state){if(state.step>=activitySteps[slot].length)return false;state.step++;return true;}
     function timeSlot() {
       if(chosenTime!=='auto')return Number(chosenTime);
       const hour=Number(new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',hour:'numeric',hourCycle:'h23'}).format(new Date()));
@@ -71,19 +80,82 @@
     const daily=document.createElement('section');
     daily.className='hb-walk-hud';daily.style.position='relative';daily.style.inset='auto';daily.style.width='auto';daily.style.maxWidth='none';daily.style.margin='16px 0';
     daily.setAttribute('aria-label','Honeybrook daily life');
-    daily.innerHTML='<h3>A cozy day in Honeybrook</h3><p>The neighbors have their own day. Watch, join in, or carry on wandering—nothing is required.</p><label>Town time <select id="hbDailyTime"><option value="auto">Follow Arkansas time</option><option value="0">Morning</option><option value="1">Afternoon</option><option value="2">Evening</option></select></label><p id="hbDailyClock"></p><ul id="hbDailyRoutines"></ul><h4 id="hbDailyEvent"></h4><div class="hb-walk-choices"><button type="button" id="hbDailyWatch">Watch the neighborhood moment</button><button type="button" id="hbDailyJoin">Join in for a moment</button></div><p id="hbDailyReply" role="status"></p><p><small>Conversations and shared moments are remembered on this browser.</small></p>';
+    daily.innerHTML='<h3>A cozy day in Honeybrook</h3><p>The neighbors have their own day. Watch, join in, or carry on wandering—nothing is required.</p><label>Town time <select id="hbDailyTime"><option value="auto">Follow Arkansas time</option><option value="0">Morning</option><option value="1">Afternoon</option><option value="2">Evening</option></select></label><p id="hbDailyClock"></p><ul id="hbDailyRoutines"></ul><h4 id="hbDailyEvent"></h4><div class="hb-walk-choices"><button type="button" id="hbDailyWatch">Watch the neighborhood moment</button><button type="button" id="hbDailyJoin">Join in for a moment</button></div><div id="hbDailyStage"></div><div id="hbDailyControls" class="hb-walk-choices"></div><p id="hbDailyReply" role="status"></p><p><small>Conversations and completed shared moments are remembered on this browser. Your adventure progress stays saved when a new day begins.</small></p>';
     world.appendChild(daily);
     function renderDaily() {
       const slot=timeSlot();if(slot===dailySlot)return;dailySlot=slot;
+      stopWatch();activity=null;
       daily.querySelector('#hbDailyClock').textContent=['Morning: the town is waking up.','Afternoon: neighbors cross paths.','Evening: the welcome lights come on.'][slot];
       const list=daily.querySelector('#hbDailyRoutines');list.replaceChildren();
       Object.entries(routines).forEach(([name,activities])=>{const li=document.createElement('li');li.textContent=name+' is '+activities[slot]+'.';list.appendChild(li);});
       daily.querySelector('#hbDailyEvent').textContent=happenings[slot].title;
       daily.querySelector('#hbDailyReply').textContent='You can just enjoy being here.';
+      renderActivity();
     }
     daily.querySelector('#hbDailyTime').addEventListener('change',e=>{chosenTime=e.target.value;renderDaily();paint();});
-    daily.querySelector('#hbDailyWatch').addEventListener('click',()=>{renderDaily();daily.querySelector('#hbDailyReply').textContent=happenings[dailySlot].watch;});
-    daily.querySelector('#hbDailyJoin').addEventListener('click',()=>{renderDaily();const event=happenings[dailySlot];friendship(event.bear).help=event.title;daily.querySelector('#hbDailyReply').textContent=event.join;addMemory('Joined '+event.title);});
+    function stopWatch(){clearTimeout(watchTimer);watchTimer=null;}
+    function beginActivity(watching){
+      renderDaily();stopWatch();
+      activity={slot:dailySlot,watching,state:activityState(dailySlot,watching?null:memory.dailyPlay[dailySlot])};
+      renderActivity();
+      daily.querySelector('#hbDailyReply').textContent=watching?'Watch the neighbors act out their little moment.':activity.state.step===activitySteps[dailySlot].length?'You already shared this moment today. You can play it again.':'Take each step at your own pace. Leaving and coming back keeps your place.';
+      if(watching)watchTimer=setTimeout(watchNext,1400);
+    }
+    function watchNext(){
+      if(!activity?.watching)return;
+      if(document.hidden||!town.classList.contains('active')||document.body.classList.contains('visit-open')){stopWatch();daily.querySelector('#hbDailyReply').textContent='The scene is paused. Choose Watch to start it again, or Join to take part.';return;}
+      advanceActivity(activity.slot,activity.state);renderActivity();
+      if(activity.state.step<activitySteps[activity.slot].length)watchTimer=setTimeout(watchNext,1400);
+      else daily.querySelector('#hbDailyReply').textContent=happenings[activity.slot].watch+' You can join whenever you like.';
+    }
+    function finishActivity(){
+      if(!activity||activity.watching||activity.state.step!==activitySteps[activity.slot].length)return;
+      const event=happenings[activity.slot];
+      if(!activity.state.recorded){activity.state.recorded=true;friendship(event.bear).help=event.title;memory.dailyPlay[activity.slot]={...activity.state};addMemory('Joined '+event.title);}
+      daily.querySelector('#hbDailyReply').textContent=event.join+' Your shared moment is saved.';
+    }
+    function renderActivity(){
+      const host=daily.querySelector('#hbDailyStage'), controls=daily.querySelector('#hbDailyControls');
+      controls.replaceChildren();
+      const slot=activity?.slot??dailySlot, step=activity?.state.step||0,color=flowerColors[activity?.state.color||'honey'];
+      const person=slot===1?'sammy':'amelia';
+      const visitorName=document.getElementById('sessionBear')?.textContent||'Visitor Bear';
+      host.innerHTML='<div class="hb-daily-scene" data-scene="'+slot+'" data-step="'+step+'" role="img" aria-label="'+(slot===0?'Amelia and your bear arranging flowers beside the bridge':slot===1?'Sammy and your bear setting a creekside picnic':'Your bear carrying a lantern across the bridge')+'"><div class="hb-daily-sky"></div><div class="hb-daily-creek"></div><div class="hb-daily-bridge"><i></i><i></i><i></i></div><div class="hb-daily-post"></div><div class="hb-daily-neighbor"><img src="assets/'+person+'.webp" alt=""><b>'+(slot===1?'Sammy':'Amelia')+'</b><span class="hb-daily-paw" aria-hidden="true">🐾</span></div><div class="hb-daily-visitor"><img src="assets/visitor.webp" alt=""><b></b><span class="hb-daily-paw" aria-hidden="true">🐾</span><span class="hb-daily-carried" aria-hidden="true"></span></div><div class="hb-daily-props"></div><div class="hb-daily-caption"></div></div>';
+      const scene=host.firstElementChild;
+      scene.querySelector('.hb-daily-visitor b').textContent=visitorName;
+      const props=scene.querySelector('.hb-daily-props');
+      let caption='';
+      if(slot===0){
+        props.innerHTML='<div class="hb-daily-vase"></div>'+Array.from({length:step},(_,i)=>'<span class="hb-daily-flower" style="--flower:'+color+';--stem:'+i+'"><i></i><b>✿</b></span>').join('');
+        caption=step===3?'A full vase—and a welcome for the next visitor.':step?step+' of 3 flowers placed in the vase.':'An empty vase waits on the bridge table.';
+      }else if(slot===1){
+        props.innerHTML=(step>0?'<div class="hb-daily-blanket"></div>':'<div class="hb-daily-folded">🧺</div>')+(step>1?'<span class="hb-daily-cups">☕ ☕ ☕</span>':'')+(step>2?'<span class="hb-daily-bread">🍞</span>':'')+(step>3?'<span class="hb-daily-berries">🫐</span>':'');
+        caption=['Sammy has brought the picnic basket.','The blanket opens beside the creek.','Everyone has a cup.','Honey bread sits in the middle.','The picnic is ready. There is a seat for you.'][step];
+      }else{
+        const lantern='<span class="hb-daily-lantern '+(step?'is-lit':'')+'">🏮</span>';
+        if(step>=5)props.innerHTML='<span class="hb-daily-hung">'+lantern+'</span>';
+        else scene.querySelector('.hb-daily-carried').innerHTML=lantern;
+        caption=['Your bear holds an unlit lantern.','The lantern lights up in your paw.','You reach the creek path.','Warm light crosses the bridge with you.','Amelia waits beside the welcome post.','Your lantern glows on the welcome post.'][step];
+      }
+      scene.querySelector('.hb-daily-caption').textContent=caption;
+      if(!activity)return;
+      function control(label,fn){const b=document.createElement('button');b.type='button';b.textContent=label;b.addEventListener('click',fn);controls.appendChild(b);return b;}
+      if(activity.watching){control('Stop watching',()=>{stopWatch();activity=null;renderActivity();daily.querySelector('#hbDailyReply').textContent='You are free to wander, watch again, or join in.';});return;}
+      if(slot===0&&step===0)Object.keys(flowerColors).forEach(name=>{const b=control('Choose '+name+' flowers',()=>{activity.state.color=name;memory.dailyPlay[slot]={...activity.state};save();renderActivity();});b.setAttribute('aria-pressed',String(activity.state.color===name));});
+      if(step<activitySteps[slot].length)control(activitySteps[slot][step],()=>{
+        if(!activity||activity.watching||activity.slot!==slot)return;
+        advanceActivity(slot,activity.state);memory.dailyPlay[slot]={...activity.state};save();renderActivity();
+        daily.querySelector('#hbDailyReply').textContent=host.querySelector('.hb-daily-caption').textContent;
+        finishActivity();
+        // Keep keyboard users on the next hands-on action as the controls change.
+        controls.querySelector('button:last-child')?.focus({preventScroll:true});
+      });
+      else control('Play this moment again',()=>{const recorded=activity.state.recorded;activity.state={day:activityDay(),step:0,color:activity.state.color,recorded};memory.dailyPlay[slot]={...activity.state};save();renderActivity();daily.querySelector('#hbDailyReply').textContent='Ready for another little moment together.';});
+    }
+    daily.querySelector('#hbDailyWatch').addEventListener('click',()=>beginActivity(true));
+    daily.querySelector('#hbDailyJoin').addEventListener('click',()=>beginActivity(false));
+    document.addEventListener('visibilitychange',()=>{if(document.hidden&&activity?.watching){stopWatch();daily.querySelector('#hbDailyReply').textContent='Watching is paused. Choose Watch to start again.';}});
+    window.addEventListener('pagehide',stopWatch);
     renderDaily();setInterval(renderDaily,60000);
     let x = Math.max(.03, Math.min(.97, Number(memory.x) || .5));
     let y = Math.max(.06, Math.min(.94, Number(memory.y) || .73));
