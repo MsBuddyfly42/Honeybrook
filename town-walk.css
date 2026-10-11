@@ -110,3 +110,5 @@ body.hb-reduced-motion #town .hb-passing-walk{animation:none!important}
 #town .hb-daily-scene[data-scene="0"] .hb-daily-visitor .hb-action-pose{transform:scaleX(-1)}
 #town .hb-daily-scene[data-scene="1"][data-step="4"] .hb-daily-neighbor{left:15%;z-index:5}
 #town .hb-daily-scene[data-scene="1"][data-step="4"] .hb-daily-visitor{left:77%;z-index:5}
+
+#town .hb-daily-scene[data-scene="1"] .hb-daily-creek{height:10%;bottom:5%}
