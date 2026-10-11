@@ -119,8 +119,11 @@
       controls.replaceChildren();
       const slot=activity?.slot??dailySlot, step=activity?.state.step||0,color=flowerColors[activity?.state.color||'honey'];
       const person=slot===1?'sammy':'amelia';
+      const posed=(who,pose)=>pose===null?'<img src="assets/'+who+'.webp" alt="">':'<span class="hb-action-pose" data-pose="'+pose+'" aria-hidden="true"></span>';
+      const neighborPose=slot===0&&step>0?0:slot===1&&step===4?1:null;
+      const visitorPose=slot===0&&step>0?3:slot===1&&step===4?2:slot===2&&step>0&&step<5?3:null;
       const visitorName=document.getElementById('sessionBear')?.textContent||'Visitor Bear';
-      host.innerHTML='<div class="hb-daily-scene" data-scene="'+slot+'" data-step="'+step+'" role="img" aria-label="'+(slot===0?'Amelia and your bear arranging flowers beside the bridge':slot===1?'Sammy and your bear setting a creekside picnic':'Your bear carrying a lantern across the bridge')+'"><div class="hb-daily-sky"></div><div class="hb-daily-creek"></div><div class="hb-daily-bridge"><i></i><i></i><i></i></div><div class="hb-daily-post"></div><div class="hb-daily-neighbor"><img src="assets/'+person+'.webp" alt=""><b>'+(slot===1?'Sammy':'Amelia')+'</b><span class="hb-daily-paw" aria-hidden="true">🐾</span></div><div class="hb-daily-visitor"><img src="assets/visitor.webp" alt=""><b></b><span class="hb-daily-paw" aria-hidden="true">🐾</span><span class="hb-daily-carried" aria-hidden="true"></span></div><div class="hb-daily-props"></div><div class="hb-daily-caption"></div></div>';
+      host.innerHTML='<div class="hb-daily-scene" data-scene="'+slot+'" data-step="'+step+'" role="img" aria-label="'+(slot===0?'Amelia and your bear reaching to arrange flowers beside the bridge':slot===1&&step===4?'Sammy and your bear sitting at their creekside picnic':slot===1?'Sammy and your bear setting a creekside picnic':'Your bear carrying a lantern across the bridge')+'"><div class="hb-daily-sky"></div><div class="hb-daily-creek"></div><div class="hb-daily-bridge"><i></i><i></i><i></i></div><div class="hb-daily-post"></div><div class="hb-daily-neighbor">'+posed(person,neighborPose)+'<b>'+(slot===1?'Sammy':'Amelia')+'</b></div><div class="hb-daily-visitor">'+posed('visitor',visitorPose)+'<b></b><span class="hb-daily-carried" aria-hidden="true"></span></div><div class="hb-daily-props"></div><div class="hb-daily-caption"></div></div>';
       const scene=host.firstElementChild;
       scene.querySelector('.hb-daily-visitor b').textContent=visitorName;
       const props=scene.querySelector('.hb-daily-props');
@@ -156,6 +159,25 @@
     daily.querySelector('#hbDailyJoin').addEventListener('click',()=>beginActivity(false));
     document.addEventListener('visibilitychange',()=>{if(document.hidden&&activity?.watching){stopWatch();daily.querySelector('#hbDailyReply').textContent='Watching is paused. Choose Watch to start again.';}});
     window.addEventListener('pagehide',stopWatch);
+    const encounters=[
+      {name:'Harold Pawst',image:'harold',line:'Harold pauses on his rounds. “A new neighbor has a parcel at the Welcome House. I deliver mail—not gossip!”',reply:'You help straighten the parcel label. Harold checks the address and tips his cap.',help:'the parcel on your mail route'},
+      {name:'Benny Scoops',image:'benny',line:'Benny rings his cart bell. “I brought honey-vanilla today. Care to keep me company while I park?”',reply:'You guide Benny to a clear spot beside the path. He raises a scoop in thanks.',help:'parking your ice-cream cart'},
+      {name:'Amelia',image:'amelia',line:'Amelia arrives with a small welcome basket. “Someone new is settling in. A friendly wave makes a difference.”',reply:'You carry the basket together. Amelia leaves it by the Welcome House door and waves.',help:'welcoming our new neighbor'},
+      {name:'Wally',image:'wally',line:'Wally comes out carrying extra rolls. “The dough rose beautifully. Let’s find somebody to share these with.”',reply:'You help Wally set the rolls in a basket by the path. The first passerby stops with a smile.',help:'sharing the extra rolls'},
+      {name:'Sammy',image:'sammy',line:'Sammy stops to show you a fallen leaf. “Look at the colors! Would you help me clear a little space for the seedlings?”',reply:'You move the leaves beside the garden instead of throwing them away. Sammy waters the newly cleared patch.',help:'clearing the garden path'}
+    ];
+    let encounterIndex=0,encounterDay='';
+    const passing=document.createElement('section');passing.className='hb-passing-neighbor';passing.innerHTML='<h4>Around the neighborhood</h4><p>A different mix of neighbors crosses your path each day. Every visit is optional.</p><button type="button" id="hbMeetPassing">Meet a passing neighbor</button><div id="hbPassingScene"></div><p id="hbPassingReply" role="status"></p><div id="hbPassingChoices" class="hb-walk-choices"></div>';daily.appendChild(passing);
+    passing.querySelector('#hbMeetPassing').addEventListener('click',()=>{
+      const day=activityDay();if(day!==encounterDay){encounterDay=day;encounterIndex=0;}
+      const seed=Array.from(day).reduce((total,c)=>total+c.charCodeAt(0),0), event=encounters[(seed+encounterIndex++)%encounters.length];
+      const stage=passing.querySelector('#hbPassingScene');stage.innerHTML='<div class="hb-passing-walk"><img src="assets/'+event.image+'.webp" alt="'+event.name+' arriving along the path"></div>';
+      passing.querySelector('#hbPassingReply').textContent=event.line;
+      const controls=passing.querySelector('#hbPassingChoices');controls.replaceChildren();
+      for(const [label,reply,help] of [['Wave hello',event.name+' waves back. There is no hurry to do anything else.',false],['Lend a paw',event.reply,true],['Keep wandering','You carry on at your own pace. '+event.name+' continues the day.',false]]){
+        const b=document.createElement('button');b.type='button';b.textContent=label;controls.appendChild(b);b.addEventListener('click',()=>{passing.querySelector('#hbPassingReply').textContent=reply;if(help){friendship(event.name).help=event.help;addMemory('Helped '+event.name+' around the neighborhood');}stage.classList.toggle('hb-passing-helped',help);controls.replaceChildren();});
+      }
+    });
     renderDaily();setInterval(renderDaily,60000);
     let x = Math.max(.03, Math.min(.97, Number(memory.x) || .5));
     let y = Math.max(.06, Math.min(.94, Number(memory.y) || .73));

@@ -90,4 +90,21 @@
 @keyframes hb-lantern-glow{from{opacity:.65}to{opacity:1}}
 @media(prefers-reduced-motion:reduce){#town .hb-daily-scene *{animation:none!important;transition:none!important}}
 body.hb-reduced-motion #town .hb-daily-scene *{animation:none!important;transition:none!important}
+.hb-action-pose{display:block;width:100%;height:auto;aspect-ratio:1;background-image:url('assets/action-poses/honeybrook-actions.webp');background-size:400% 200%;background-repeat:no-repeat}
+.hb-action-pose[data-pose="0"]{background-position:0 0}.hb-action-pose[data-pose="1"]{background-position:33.333333% 0}.hb-action-pose[data-pose="2"]{background-position:66.666667% 0}.hb-action-pose[data-pose="3"]{background-position:100% 0}
+.hb-action-pose[data-pose="4"]{background-position:0 100%}.hb-action-pose[data-pose="5"]{background-position:33.333333% 100%}.hb-action-pose[data-pose="6"]{background-position:66.666667% 100%}.hb-action-pose[data-pose="7"]{background-position:100% 100%}
+#town .hb-daily-scene[data-scene="1"][data-step="4"] .hb-daily-neighbor,#town .hb-daily-scene[data-scene="1"][data-step="4"] .hb-daily-visitor{bottom:20%}
+#town .hb-daily-scene[data-scene="2"] .hb-daily-carried{right:-4%;top:52%}
+#town .hb-passing-neighbor{border-top:2px solid #c9a96e;margin-top:20px;padding-top:12px}
+#town #hbPassingScene:empty{display:none}
+#town #hbPassingScene{height:150px;overflow:hidden;border-radius:15px;background:linear-gradient(#cbdcbc 60%,#cab28a 61%);margin:12px 0}
+#town .hb-passing-walk{height:100%;width:110px;margin-left:45%;animation:hb-neighbor-arrives 1.8s ease-out}
+#town .hb-passing-walk img{height:100%;width:100%;object-fit:contain}
+#town .hb-passing-helped .hb-passing-walk{animation:hb-neighbor-thanks .7s ease-in-out}
+@keyframes hb-neighbor-arrives{from{margin-left:0;opacity:0}to{margin-left:45%;opacity:1}}
+@keyframes hb-neighbor-thanks{50%{transform:rotate(-5deg) translateY(-6px)}}
+@media(prefers-reduced-motion:reduce){#town .hb-passing-walk{animation:none!important}}
+body.hb-reduced-motion #town .hb-passing-walk{animation:none!important}
 
+
+#town .hb-daily-scene[data-scene="0"] .hb-daily-visitor .hb-action-pose{transform:scaleX(-1)}
