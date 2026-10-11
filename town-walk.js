@@ -65,6 +65,7 @@
     function friendship(name) {
       const old=memory.friendships[name];
       if(!old || typeof old!=='object' || Array.isArray(old))memory.friendships[name]={visits:0};
+      if(typeof memory.friendships[name].help!=='string')delete memory.friendships[name].help;
       return memory.friendships[name];
     }
     const daily=document.createElement('section');
@@ -152,8 +153,8 @@
       void px; void py;
     }
     function npcPoint(bear, t) {
-      const slot=timeSlot(), p=bear.path, k=(t*bear.speed)%p.length, i=Math.floor(k), q=k-i, a=p[i], b=p[(i+1)%p.length];
-      return {x:a[0]+(b[0]-a[0])*q+(slot===0?-.025:slot===2?.025:0),y:a[1]+(b[1]-a[1])*q+(slot===2?.015:0),walking:true};
+      const slot=timeSlot(), p=bear.path, k=(t*bear.speed)%(p.length+2), i=Math.min(p.length-1,Math.floor(k)), q=k>=p.length?1:k-i, a=p[i], b=p[(i+1)%p.length];
+      return {x:a[0]+(b[0]-a[0])*q+(slot===0?-.025:slot===2?.025:0),y:a[1]+(b[1]-a[1])*q+(slot===2?.015:0),walking:k<p.length};
     }
     function resize() {
       const r=art.getBoundingClientRect(), d=Math.min(window.devicePixelRatio||1,2);
