@@ -43,6 +43,47 @@
     const memory = readMemory();
     memory.visits = Array.isArray(memory.visits) ? memory.visits : [];
     memory.moments = Array.isArray(memory.moments) ? memory.moments : [];
+    memory.friendships = memory.friendships && typeof memory.friendships === 'object' && !Array.isArray(memory.friendships) ? memory.friendships : {};
+    const routines = {
+      Amelia: ['setting out welcome flowers by the bridge','visiting neighbors along the bridge path','lighting the welcome lantern'],
+      'Harold Pawst': ['sorting letters for his rounds','delivering the afternoon post','taking his last letters home'],
+      Sammy: ['checking the garden seedlings','sharing a picnic beside the path','watching fireflies near the garden'],
+      Wally: ['kneading the morning bread','setting warm rolls on the bakery counter','putting the bakery kitchen to bed'],
+      'Benny Scoops': ['getting his ice-cream cart ready','ringing his cart bell for the neighborhood','cleaning his cart after the last scoop']
+    };
+    const happenings = [
+      {title:'Welcome flowers at the bridge',watch:'Amelia straightens a vase. Harold pauses with his mailbag while Sammy picks a fallen petal from the path.',join:'You hold the vase steady while Amelia adds the last flower. “There. A welcome for whoever comes next.”',bear:'Amelia'},
+      {title:'A little afternoon picnic',watch:'Sammy spreads a cloth beside the path. Wally brings bread, and Benny parks his cart nearby. There is an empty seat for you.',join:'You set out the cups. Sammy slides the bread closer. “Stay as long as you like.”',bear:'Sammy'},
+      {title:'Lanterns and a goodnight wave',watch:'Amelia lights the welcome lantern. Wally closes his shutters while Harold tips his cap to the neighbors heading home.',join:'You help carry a lantern to the bridge. Its warm light dances on the creek as Amelia waves goodnight.',bear:'Amelia'}
+    ];
+    let chosenTime='auto', dailySlot=-1;
+    function timeSlot() {
+      if(chosenTime!=='auto')return Number(chosenTime);
+      const hour=Number(new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',hour:'numeric',hourCycle:'h23'}).format(new Date()));
+      return hour<12?0:hour<18?1:2;
+    }
+    function friendship(name) {
+      const old=memory.friendships[name];
+      if(!old || typeof old!=='object' || Array.isArray(old))memory.friendships[name]={visits:0};
+      return memory.friendships[name];
+    }
+    const daily=document.createElement('section');
+    daily.className='hb-walk-hud';daily.style.position='relative';daily.style.inset='auto';daily.style.width='auto';daily.style.maxWidth='none';daily.style.margin='16px 0';
+    daily.setAttribute('aria-label','Honeybrook daily life');
+    daily.innerHTML='<h3>A cozy day in Honeybrook</h3><p>The neighbors have their own day. Watch, join in, or carry on wandering—nothing is required.</p><label>Town time <select id="hbDailyTime"><option value="auto">Follow Arkansas time</option><option value="0">Morning</option><option value="1">Afternoon</option><option value="2">Evening</option></select></label><p id="hbDailyClock"></p><ul id="hbDailyRoutines"></ul><h4 id="hbDailyEvent"></h4><div class="hb-walk-choices"><button type="button" id="hbDailyWatch">Watch the neighborhood moment</button><button type="button" id="hbDailyJoin">Join in for a moment</button></div><p id="hbDailyReply" role="status"></p><p><small>Conversations and shared moments are remembered on this browser.</small></p>';
+    world.appendChild(daily);
+    function renderDaily() {
+      const slot=timeSlot();if(slot===dailySlot)return;dailySlot=slot;
+      daily.querySelector('#hbDailyClock').textContent=['Morning: the town is waking up.','Afternoon: neighbors cross paths.','Evening: the welcome lights come on.'][slot];
+      const list=daily.querySelector('#hbDailyRoutines');list.replaceChildren();
+      Object.entries(routines).forEach(([name,activities])=>{const li=document.createElement('li');li.textContent=name+' is '+activities[slot]+'.';list.appendChild(li);});
+      daily.querySelector('#hbDailyEvent').textContent=happenings[slot].title;
+      daily.querySelector('#hbDailyReply').textContent='You can just enjoy being here.';
+    }
+    daily.querySelector('#hbDailyTime').addEventListener('change',e=>{chosenTime=e.target.value;renderDaily();paint();});
+    daily.querySelector('#hbDailyWatch').addEventListener('click',()=>{renderDaily();daily.querySelector('#hbDailyReply').textContent=happenings[dailySlot].watch;});
+    daily.querySelector('#hbDailyJoin').addEventListener('click',()=>{renderDaily();const event=happenings[dailySlot];friendship(event.bear).help=event.title;daily.querySelector('#hbDailyReply').textContent=event.join;addMemory('Joined '+event.title);});
+    renderDaily();setInterval(renderDaily,60000);
     let x = Math.max(.03, Math.min(.97, Number(memory.x) || .5));
     let y = Math.max(.06, Math.min(.94, Number(memory.y) || .73));
     let W = 1, H = 1, lastTime = 0, elapsed = 0, goal = null, goalDone = null;
@@ -111,8 +152,8 @@
       void px; void py;
     }
     function npcPoint(bear, t) {
-      const p=bear.path, k=(t*bear.speed)%p.length, i=Math.floor(k), q=k-i, a=p[i], b=p[(i+1)%p.length];
-      return {x:a[0]+(b[0]-a[0])*q,y:a[1]+(b[1]-a[1])*q,walking:true};
+      const slot=timeSlot(), p=bear.path, k=(t*bear.speed)%p.length, i=Math.floor(k), q=k-i, a=p[i], b=p[(i+1)%p.length];
+      return {x:a[0]+(b[0]-a[0])*q+(slot===0?-.025:slot===2?.025:0),y:a[1]+(b[1]-a[1])*q+(slot===2?.015:0),walking:true};
     }
     function resize() {
       const r=art.getBoundingClientRect(), d=Math.min(window.devicePixelRatio||1,2);
@@ -205,11 +246,14 @@
       activeNpc=bear;clearChoices();
       status.textContent=bear.name+' is here with you.';
       const lines=dialogue[bear.name]||['“Good to see you. Stay awhile if you like.”'];
-      const line=lines[Math.floor(elapsed*1.7)%lines.length];
-      showResponse(bear.name+': '+line);
+      const friend=friendship(bear.name), count=Number(friend.visits)||0;
+      const line=lines[count%lines.length];
+      const welcome=count?'“Good to see you again.” '+(friend.help?'“I remember '+friend.help.toLowerCase()+'. Thank you for being there.” ':''):'';
+      friend.visits=count+1;
+      showResponse(bear.name+': '+welcome+line);
       addMemory('Talked with '+bear.name);
-      makeChoice('Ask what is happening',()=>{showResponse(bear.name+': '+lines[(Math.floor(elapsed*1.7)+1)%lines.length]+' The day can wait a little.');addMemory('Shared a conversation with '+bear.name);});
-      makeChoice('Offer a hand',()=>{const reply=bear.name==='Sammy'?'Sammy moves a plate closer. “You can eat first.”':bear.name+' smiles and lets you help for a moment. Together, the small job gets done.';showResponse(reply);addMemory('Helped '+bear.name+' for a moment');});
+      makeChoice('Ask what is happening',()=>{showResponse(bear.name+' is '+routines[bear.name][timeSlot()]+'. '+lines[(count+1)%lines.length]+' You can keep me company if you like.');addMemory('Shared a conversation with '+bear.name);});
+      makeChoice('Offer a hand',()=>{const reply=bear.name==='Sammy'?'Sammy moves a plate closer. “You can eat first.”':bear.name+' smiles and lets you help for a moment. Together, the small job gets done.';friend.help='our little helping moment';showResponse(reply);addMemory('Helped '+bear.name+' for a moment');});
       makeChoice('Wave goodbye',()=>{showResponse(bear.name+' waves back. You can meet again whenever you like.');choices.replaceChildren();});
       canvas.focus({preventScroll:true});
     }
