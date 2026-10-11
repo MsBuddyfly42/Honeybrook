@@ -45,3 +45,5 @@ body.hb-reduced-motion #destinationVisit .visit-room::before,body.hb-reduced-mot
 
 
 .living-action-bear{display:flex;align-items:flex-end;justify-content:center}
+.living-action-room.rest .living-action-bear{left:30%;width:min(42%,360px);height:80%;bottom:16%}
+.living-action-room.rest .living-bed i{left:auto;right:10px}
