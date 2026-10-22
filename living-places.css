@@ -23,7 +23,7 @@
 .living-reading-rug{position:absolute;left:25%;right:20%;height:70px;bottom:17%;background:#b5917c;border:6px solid #744458;border-radius:50%}
 .living-open-book{position:absolute;left:35%;bottom:28%;font-size:40px}
 .living-action-room.home.sit .living-action-bear{z-index:4}
-.living-action-room.garden{background:linear-gradient(#cee3c1 0 55%,#8caa69 56%)}
+.living-action-room.garden{inset:auto;background:linear-gradient(#cee3c1 0 55%,#8caa69 56%)}
 .living-garden-bed{position:absolute;left:47%;right:7%;bottom:22%;display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:14px;background:#72533c;border:7px solid #a27c53;border-radius:15px;transform:skewX(-8deg)}
 .living-garden-bed span{font-size:32px;text-align:center}
 .living-watered{background:#387c8966;border-radius:50%;animation:living-water 1s ease-out}

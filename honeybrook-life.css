@@ -1,0 +1,35 @@
+/* Additive life dashboard: retain the original Honeybrook palette and scenes. */
+.hb-life[hidden],.hb-life [hidden]{display:none!important}
+.hb-life{max-width:1160px;margin:28px auto;padding:26px;background:var(--paper,#fffdf6);border:2px solid #dbc5a5;border-radius:24px;color:#33271f;scroll-margin-top:160px;line-height:1.6}
+.hb-life h2,.hb-life h3,.hb-life h4{color:#51352a;line-height:1.3}
+.hb-life h2{font-size:clamp(26px,4vw,38px);margin:8px 0}
+.hb-life h3{font-size:24px}.hb-life h4{font-size:20px;margin:8px 0}
+.hb-life p{margin:10px 0}.hb-life small{color:#604a3c}
+.hb-life button,.hb-life .life-file{border:1px solid #bda180;border-radius:12px;padding:11px 15px;background:#fff7e6;color:#493024;min-height:46px;font-size:17px;line-height:1.4;cursor:pointer}
+.hb-life button:hover{background:#f5e3b9}.hb-life button:disabled{opacity:1;color:#756b5d;background:#ede8df;cursor:default}
+.hb-life button[aria-pressed=true],.hb-life .life-primary{background:#4c6248;color:#fffef5;border-color:#4c6248}
+.hb-life :focus-visible{outline:3px solid #3c6289;outline-offset:3px}
+.hb-life input,.hb-life select{font:inherit;max-width:100%;padding:10px;border:1px solid #af987c;border-radius:8px;background:#fffdf6;color:#33271f}
+.hb-life label{display:grid;gap:5px;font-weight:bold}.hb-life .life-file{display:inline-block}
+.life-bar,.life-actions,.life-tabs{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:14px 0}
+.life-bar{padding:15px;background:#f4e8cf;border-radius:14px;justify-content:space-between}.life-bar b{display:block}
+.life-tabs{border-bottom:1px solid #dbc5a5;padding-bottom:14px}
+.life-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(270px,100%),1fr));gap:16px;align-items:start}
+.life-card{padding:18px;border:1px solid #d8c4a7;border-radius:16px;background:#fff9ed;min-width:0;overflow-wrap:anywhere}
+.life-card ul{padding-left:22px}.life-card .life-actions{margin-bottom:0}
+.life-scene{position:relative;border-radius:18px;overflow:hidden;background:#e8ddc9;isolation:isolate}
+.life-scene>img{display:block;width:100%;height:340px;object-fit:cover}.life-scene[data-hour="21"]>img{filter:brightness(.55) saturate(.8)}.life-scene[data-hour="19"]>img{filter:sepia(.2) brightness(.85)}
+.life-scene .life-scene-note{position:absolute;bottom:12px;left:12px;right:12px;padding:9px 14px;background:#fff9edf2;color:#33271f;border-radius:10px;font-weight:bold}
+.life-stage{display:flex;gap:12px;align-items:center;padding:18px;background:#edf1e5;border-radius:14px;font-size:19px;margin-top:16px}
+.life-stage-icon{font-size:46px;line-height:1.2}.life-stage p{margin:0}
+.life-status{padding:14px 18px;min-height:58px;border-left:5px solid #56734a;background:#edf1e5;border-radius:8px;margin:16px 0;overflow-wrap:anywhere}.life-status[data-error=true]{border-color:#a44232;background:#fff0e6;color:#713024}
+.life-roster{display:flex;gap:14px;align-items:center}.life-roster img{width:80px;height:100px;object-fit:contain}
+.life-place{width:100%;text-align:left}.life-place small{display:block;margin-top:5px}
+.hb-life progress{width:100%;accent-color:#4c6248}
+.life-table{overflow:auto}.life-table table{width:100%;border-collapse:collapse;font-size:16px}.life-table td,.life-table th{padding:10px;text-align:left;vertical-align:top;border-bottom:1px solid #dbc5a5}
+.life-log{padding-left:22px}.life-log li{padding:10px 0;border-bottom:1px solid #e4d6be;overflow-wrap:anywhere}
+.life-caption{font-size:15px;color:#604a3c}.life-warning{border:2px solid #a06c31;padding:16px;border-radius:12px;background:#fff3d7}
+.life-check{color:#335832;font-weight:bold}.hb-life [role=tabpanel]{min-height:300px}
+.life-notice-count{font-size:14px;background:#ede1bd;padding:3px 7px;border-radius:12px}
+@media(max-width:600px){.hb-life{margin:16px 10px;padding:18px;scroll-margin-top:180px}.life-bar>div{flex:1 0 40%}.life-tabs button{flex:1 0 40%}.life-actions>*{max-width:100%}.life-scene>img{height:240px}.life-grid{grid-template-columns:1fr}.life-stage{align-items:flex-start}}
+@media(max-width:620px){#welcome h1{font-size:clamp(1.8rem,8vw,3.1rem)}}
