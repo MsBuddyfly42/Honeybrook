@@ -1,0 +1,267 @@
+{
+  "release": "40ca509",
+  "files": [
+    {
+      "path": "activities.html",
+      "match": true,
+      "sha256": "a3146bb9b8f3118e5caf94ab6768b79b9da9a8a0833094a08fe7cc1da4d32ef0",
+      "expected": "a3146bb9b8f3118e5caf94ab6768b79b9da9a8a0833094a08fe7cc1da4d32ef0"
+    },
+    {
+      "path": "activity-links.js",
+      "match": true,
+      "sha256": "00e6b093d48759b2bdd73de19447d64cb0083bb37b7fbbc96c98df7554e5973a",
+      "expected": "00e6b093d48759b2bdd73de19447d64cb0083bb37b7fbbc96c98df7554e5973a"
+    },
+    {
+      "path": "assets/camp-scenes/README.md",
+      "match": true,
+      "sha256": "6cc979eec7462ef94239ae624c72e7a1b5980c7d8311227480cbfec70912fbeb",
+      "expected": "6cc979eec7462ef94239ae624c72e7a1b5980c7d8311227480cbfec70912fbeb"
+    },
+    {
+      "path": "assets/camp-scenes/housing.webp",
+      "match": true,
+      "sha256": "316176a785374968ca120eff6a418a39a929e7b0120b577065676a5d693ad565",
+      "expected": "316176a785374968ca120eff6a418a39a929e7b0120b577065676a5d693ad565"
+    },
+    {
+      "path": "assets/camp-scenes/infrastructure.webp",
+      "match": true,
+      "sha256": "ee0e27c56d605a793b2f84b869184c97464743abcdb360050cc41847b0c33193",
+      "expected": "ee0e27c56d605a793b2f84b869184c97464743abcdb360050cc41847b0c33193"
+    },
+    {
+      "path": "assets/camp-scenes/manifest.json",
+      "match": true,
+      "sha256": "32013819c5563f6eeb71e4bd5fdc40b6ab15bbbfe0f5edf2f3e51d5d32c6db1e",
+      "expected": "32013819c5563f6eeb71e4bd5fdc40b6ab15bbbfe0f5edf2f3e51d5d32c6db1e"
+    },
+    {
+      "path": "assets/camp-scenes/shelter-01.webp",
+      "match": true,
+      "sha256": "b4460e83f83fc17182792cc627ef4db8136ec86e845ccdaa8069c0d09334187b",
+      "expected": "b4460e83f83fc17182792cc627ef4db8136ec86e845ccdaa8069c0d09334187b"
+    },
+    {
+      "path": "assets/camp-scenes/shelter-02.webp",
+      "match": true,
+      "sha256": "d2c44835b6c1f47c8b4fb8251948ed66fa0099a78ecbb6262c208dfd8c288602",
+      "expected": "d2c44835b6c1f47c8b4fb8251948ed66fa0099a78ecbb6262c208dfd8c288602"
+    },
+    {
+      "path": "camp-data.js",
+      "match": true,
+      "sha256": "5d731d24abbc409ea3b3bcf8d3dd62a8c2ba95fd3e45484c554d1a14b1767041",
+      "expected": "5d731d24abbc409ea3b3bcf8d3dd62a8c2ba95fd3e45484c554d1a14b1767041"
+    },
+    {
+      "path": "camp-data.json",
+      "match": true,
+      "sha256": "ccbf60a387b78c364c8aea6a9c63448d8ee98408311bcf12b735c2b383775a02",
+      "expected": "ccbf60a387b78c364c8aea6a9c63448d8ee98408311bcf12b735c2b383775a02"
+    },
+    {
+      "path": "camp-engine.js",
+      "match": true,
+      "sha256": "e1dff5ab013392d1b78fa5765828fe995dcb8824c816b0834780bfaccb641aa2",
+      "expected": "e1dff5ab013392d1b78fa5765828fe995dcb8824c816b0834780bfaccb641aa2"
+    },
+    {
+      "path": "camp.html",
+      "match": true,
+      "sha256": "084544b436b812af88c5ff64117b8357846ef61b72f8bceb594151ea8febae9d",
+      "expected": "084544b436b812af88c5ff64117b8357846ef61b72f8bceb594151ea8febae9d"
+    },
+    {
+      "path": "camp.js",
+      "match": true,
+      "sha256": "9459e2d672b139a4d3339c418c1897bd48e8a3aeb42a2192011f402eaa80cf35",
+      "expected": "9459e2d672b139a4d3339c418c1897bd48e8a3aeb42a2192011f402eaa80cf35"
+    },
+    {
+      "path": "canon-integration.js",
+      "match": true,
+      "sha256": "378b10c22287c468c4ce82c8cb013f7c337ccec01d5884b0daf2bff025774da9",
+      "expected": "378b10c22287c468c4ce82c8cb013f7c337ccec01d5884b0daf2bff025774da9"
+    },
+    {
+      "path": "chapter-games.js",
+      "match": true,
+      "sha256": "7b8edc9da9b832ad532c2dca32330435ba837ca066720e30108a523c25b1a8f3",
+      "expected": "7b8edc9da9b832ad532c2dca32330435ba837ca066720e30108a523c25b1a8f3"
+    },
+    {
+      "path": "chronicles.css",
+      "match": true,
+      "sha256": "359b37f8382bd7c36e64a7ea0ef8ce5966f1682b58dca7cd95e320ea9d5d427e",
+      "expected": "359b37f8382bd7c36e64a7ea0ef8ce5966f1682b58dca7cd95e320ea9d5d427e"
+    },
+    {
+      "path": "chronicles.html",
+      "match": true,
+      "sha256": "76e6db48739002a7168cc1533f20012b889be1b80b729e62a9b42463be94674d",
+      "expected": "76e6db48739002a7168cc1533f20012b889be1b80b729e62a9b42463be94674d"
+    },
+    {
+      "path": "chronicles.js",
+      "match": true,
+      "sha256": "2e6ed19f88245fd4654d4d05e488fa1ce08a7ade2adc36cdc18418e356d674c0",
+      "expected": "2e6ed19f88245fd4654d4d05e488fa1ce08a7ade2adc36cdc18418e356d674c0"
+    },
+    {
+      "path": "country-style.css",
+      "match": true,
+      "sha256": "df7f4382ef772ed064e8e75d7d83ccde2651f332290d16ca2ca30670f5e47637",
+      "expected": "df7f4382ef772ed064e8e75d7d83ccde2651f332290d16ca2ca30670f5e47637"
+    },
+    {
+      "path": "daily-quiz.js",
+      "match": true,
+      "sha256": "8d567a94b4bc58b974f536347a5a847668faba4d997f7437ae9936404379de39",
+      "expected": "8d567a94b4bc58b974f536347a5a847668faba4d997f7437ae9936404379de39"
+    },
+    {
+      "path": "games/honeybrook-craft-fair/game.js",
+      "match": true,
+      "sha256": "7799b610c4b79d4d8245e0b140e0b444962aef810dce94e4ca9143ef9fe0a50f",
+      "expected": "7799b610c4b79d4d8245e0b140e0b444962aef810dce94e4ca9143ef9fe0a50f"
+    },
+    {
+      "path": "games/honeybrook-craft-fair/index.html",
+      "match": true,
+      "sha256": "4efab1f0407b513fc33369b9a2b9c2778958c19ec7d401c5b7f214cca15d2a64",
+      "expected": "4efab1f0407b513fc33369b9a2b9c2778958c19ec7d401c5b7f214cca15d2a64"
+    },
+    {
+      "path": "honeybrook-life.js",
+      "match": true,
+      "sha256": "15670127fd5605bc0ad5b5369a31fa8e52340cfd16183971ef4e67ab09add5b2",
+      "expected": "15670127fd5605bc0ad5b5369a31fa8e52340cfd16183971ef4e67ab09add5b2"
+    },
+    {
+      "path": "index.html",
+      "match": true,
+      "sha256": "96366f65382f33a3a0f1e9a05ca643e839910e72416ee3130569323bd48ef5c5",
+      "expected": "96366f65382f33a3a0f1e9a05ca643e839910e72416ee3130569323bd48ef5c5"
+    },
+    {
+      "path": "learning-data.js",
+      "match": true,
+      "sha256": "80ec5547df5c02f372769898988a7ce537dc87e3c46c65b54bd9fb6386d3986f",
+      "expected": "80ec5547df5c02f372769898988a7ce537dc87e3c46c65b54bd9fb6386d3986f"
+    },
+    {
+      "path": "learning.html",
+      "match": true,
+      "sha256": "10263f24746d6bf70601c3f7bf2eef683f621ffbb16fe91a18a657ef6a79d70e",
+      "expected": "10263f24746d6bf70601c3f7bf2eef683f621ffbb16fe91a18a657ef6a79d70e"
+    },
+    {
+      "path": "learning.js",
+      "match": true,
+      "sha256": "14e74dcae5cd48c7368b2b9ab6dc9e4ea5522e8d0ce4907a7cf5e28bfb97ed36",
+      "expected": "14e74dcae5cd48c7368b2b9ab6dc9e4ea5522e8d0ce4907a7cf5e28bfb97ed36"
+    },
+    {
+      "path": "life-engine.js",
+      "match": true,
+      "sha256": "2bdb6554c69611d1ac087c6b7ff9335c3c444360adad8c4267dd26d49d9ef902",
+      "expected": "2bdb6554c69611d1ac087c6b7ff9335c3c444360adad8c4267dd26d49d9ef902"
+    },
+    {
+      "path": "location-activity-catalog.js",
+      "match": true,
+      "sha256": "c87547263b0058c8f9daa6d04adcbb49ad3c9694246a1b9cca3422f7f72add81",
+      "expected": "c87547263b0058c8f9daa6d04adcbb49ad3c9694246a1b9cca3422f7f72add81"
+    },
+    {
+      "path": "location-activity-catalog.json",
+      "match": true,
+      "sha256": "0520eb2b9e0fa5a27010aa71e6cd3845940dc9fac676cc5bff05a517eeb14fc2",
+      "expected": "0520eb2b9e0fa5a27010aa71e6cd3845940dc9fac676cc5bff05a517eeb14fc2"
+    },
+    {
+      "path": "map-activities.css",
+      "match": true,
+      "sha256": "5b92e5874fea0eed209b382f8e803cd36fcaa2e6d881783f0d970e7227e206cd",
+      "expected": "5b92e5874fea0eed209b382f8e803cd36fcaa2e6d881783f0d970e7227e206cd"
+    },
+    {
+      "path": "map-activities.js",
+      "match": true,
+      "sha256": "b680eb00ab87ff2c695dda51e5bd52dc84176b245804662683908d3642817a83",
+      "expected": "b680eb00ab87ff2c695dda51e5bd52dc84176b245804662683908d3642817a83"
+    },
+    {
+      "path": "map-activity-engine.js",
+      "match": true,
+      "sha256": "5300151631928e63a659b2e3331d9ba043450a7c66583ae3a05e9113ce86edd9",
+      "expected": "5300151631928e63a659b2e3331d9ba043450a7c66583ae3a05e9113ce86edd9"
+    },
+    {
+      "path": "navigation-boot.js",
+      "match": true,
+      "sha256": "49db68ed73acfbe4404dc8de6ca3bc21df16ebb14ca15d0cbdac5ae46eaee79c",
+      "expected": "49db68ed73acfbe4404dc8de6ca3bc21df16ebb14ca15d0cbdac5ae46eaee79c"
+    },
+    {
+      "path": "story-engine.js",
+      "match": true,
+      "sha256": "d4c659eeae3482855e700ced7f92443687b640b3acc9d3fb7b23afa12fde9b2c",
+      "expected": "d4c659eeae3482855e700ced7f92443687b640b3acc9d3fb7b23afa12fde9b2c"
+    },
+    {
+      "path": "town-activities.js",
+      "match": true,
+      "sha256": "819b807f84ecaec46c39eb86856bd18ac9ce021b112ee0bdc728424c4ddfaf1a",
+      "expected": "819b807f84ecaec46c39eb86856bd18ac9ce021b112ee0bdc728424c4ddfaf1a"
+    },
+    {
+      "path": "assets/bear-country/fonts/fraunces.ttf",
+      "match": true,
+      "sha256": "177ff6c0f14e5550a3c624247cd1189611d4eb65d000b14944c63d967958abbb",
+      "expected": "177ff6c0f14e5550a3c624247cd1189611d4eb65d000b14944c63d967958abbb"
+    },
+    {
+      "path": "assets/bear-country/fonts/nunito.ttf",
+      "match": true,
+      "sha256": "bb55a5ca5c2042335b3991af27c4d0705d0ef41cac6164ac737fd8f2a1e85207",
+      "expected": "bb55a5ca5c2042335b3991af27c4d0705d0ef41cac6164ac737fd8f2a1e85207"
+    }
+  ],
+  "verifiedAtUTC": "2026-10-23T18:25:03.434549+00:00",
+  "site": "https://honeybrook.onrender.com/",
+  "runtimeRelease": "40ca509",
+  "fullVisitRelease": "6e0f960",
+  "transport": "TLS-verified HTTPS using canonical indexes and fresh release query parameters; certificate verification enabled. Unqueried homepage and camp entry were also compared.",
+  "liveBrowserResults": {
+    "camp-visit-final": [
+      "PASS 1440px full seven-night visit: 25 cubs, five teams, real store purchase, illustrated book previews, actual gardening and obstacle controls, 36 checklists, Wednesday notification, all daily gatherings, Saturday family meal, Sunday farewell/next cohort, all 35 photographic facilities, reload, backup and original account preservation.",
+      "PASS 390px full seven-night visit: 25 cubs, five teams, real store purchase, illustrated book previews, actual gardening and obstacle controls, 36 checklists, Wednesday notification, all daily gatherings, Saturday family meal, Sunday farewell/next cohort, all 35 photographic facilities, reload, backup and original account preservation."
+    ],
+    "map-activities": [
+      "PASS 1440px: all 215 location menus \u00d7 ten choices, unchanged photos, every actual activity control/solution, saved reload/results, camp date, backup export/invalid restore and original account preservation.",
+      "PASS 390px: all 215 location menus \u00d7 ten choices, unchanged photos, every actual activity control/solution, saved reload/results, camp date, backup export/invalid restore and original account preservation."
+    ],
+    "book-and-games": [
+      "PASS 1440px: all 71 complete two-page spreads and unchanged photos, responsive geometry, chapter turns/reload, actual jigsaw swaps/reload, mismatched and matched memory cards, word undo/solution, hints, saved wins and game collection.",
+      "PASS 390px: all 71 complete two-page spreads and unchanged photos, responsive geometry, chapter turns/reload, actual jigsaw swaps/reload, mismatched and matched memory cards, word undo/solution, hints, saved wins and game collection."
+    ],
+    "learning-camp": [
+      "PASS 1440px: twelve learning subject options, full pro lore session, partial reload and saved review.",
+      "PASS 390px: twelve learning subject options, full pro lore session, partial reload and saved review."
+    ],
+    "activity-connections-final": [
+      "PASS 1440px: actual kitchen-specific activity link, life-room deep-link/return, nested Hollow cottage activity links, ten choices, direct city-map camp entrance and no runtime errors.",
+      "PASS 390px: actual kitchen-specific activity link, life-room deep-link/return, nested Hollow cottage activity links, ten choices, direct city-map camp entrance and no runtime errors."
+    ],
+    "camp-navigation": [
+      "PASS 1440px final live camp navigation: explicit tabs start at section beginning, refresh calls no scrolling, stored visit preserved.",
+      "PASS 390px final live camp navigation: explicit tabs start at section beginning, refresh calls no scrolling, stored visit preserved."
+    ]
+  },
+  "saveScope": "Isolated synthetic browser accounts only; no owner saves accessed. Local checkpoints, export, valid/invalid restore, newer-tab protection, old account preservation. Private cross-device synchronization remains unimplemented.",
+  "contentScope": "215 photographic location menus; all ten activity-control families in a representative location; full 25-cub seven-night visit through actual controls; all 35 camp photos decoded; every full chapter/opposite-photo spread; complete learning sessions. Pure rule tests additionally solve every place/family/level and all 45 exact camp contexts.",
+  "unchangedManuscriptSHA256": "8c3c52318cd77fe5253987fbf77850d8c0ebc49bb15bb6fa142dbe38f4822cab"
+}
