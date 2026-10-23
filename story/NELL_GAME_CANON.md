@@ -51,3 +51,29 @@ Owner’s wording, saved for the later story revision:
 > “I don’t decide to talk to Harold yet...I’m curious to know more about the place before I do...the bears immediately welcome me because they say I look so much like Goldilocks (someone the whole Honeybrook and Bear Hollow idolized)....they don’t know who I am yet...but they feel Goldilocks spirit through me so they embrace me....they actually think I’m her reincarnated.”
 
 > “Build my character around that theory.”
+
+## Family research, the tears and the letter home · latest owner direction
+
+The human family researched the woods thoroughly and searched over the years, but fear of bears kept them from going deep enough. They did not know that bears had been the sanctuary of their own kin. Had they known about Bear Hollow and Honeybrook, they might have found Goldilocks. She was famous deep, deep in the woods; all the woodland animals knew about her, while that knowledge never reached the human searchers. Their effort and their fear must both be acknowledged. Do not rewrite them as uncaring or claim that finding her would have been guaranteed.
+
+Nell’s fourteen family-story case files lead toward Harold: listen to the unexplained welcome, compare woodland memory with human knowledge, reconstruct the search boundary, follow family beekeeping, hear Bear Hollow’s remembrance, and assemble questions at the monument. Each file requires visiting its real place and comparing three pieces of evidence. The expanded trail has 42 evidence decisions, including eight movable-card boards covering names, search maps, assumptions, genealogy, ordinary life, animal knowledge, chronology and the final packet. Return visits ask new questions rather than simply repeating the first visit. These are additive game adaptation scenes, not recovered manuscript quotations. They do not force every unrelated town, Fair or camp activity into a family-history quest.
+
+Nell does not speak to Harold until this research is complete and the player explicitly chooses the conversation. Her existing 22 saved journey labels remain unchanged. Already completed conversations and older journeys are not erased or forced backward.
+
+When Nell reads Goldilocks’s letter, she immediately cries. She mourns the lost beekeepers, the waiting relatives, the years apart and her grandfather’s death before he could hear the answer. Relief and love coexist with that grief: Goldilocks lived, found a home among bears and remembered her human family. Nell wants to send word home immediately. The game offers a personal, editable letter through Harold’s fictional outgoing post, saves its draft and keeps a posted copy. No real message or email is sent.
+
+The expanded Goldilocks letter is a proposed adaptation, not an original manuscript transcription. Goldilocks describes her own survival, loss, welcome and hope that someone would come; she does not somehow know the details of relatives’ later research. Nell learns those through the investigation. The full draft is preserved in `nell-data.js` and in the generated author reference.
+
+## Family response · ideas to develop, not yet settled canon
+
+The owner asks what would happen when the richest man in the United Kingdom learned that his granddaughter had lived and, in the owner’s words, “built a bear empire.” Preserve this as an important story question. Under the current chronology, Goldilocks’s searching grandfather belongs to an earlier generation; Nell’s present-day letter reaches surviving descendants, and Nell’s own grandfather is deceased. Do not silently resurrect either ancestor. If the author chooses a different timeline, revise it explicitly.
+
+Possible continuation: the family receives Nell’s account and Goldilocks’s copied words with tears, disbelief, gratitude and lingering fear. Some relatives might want to visit immediately; others might need reassurance. A gradual visit could lead from the woodland boundary to a welcoming bear and then to Bear Hollow and Honeybrook. These reactions and a family visit are suggestions awaiting the author’s direction, not already completed events in the game. Do not insert additional present-day humans before the appropriate later arrival.
+
+“Bear empire” can express the family’s astonishment at Goldilocks’s enduring legacy of sanctuary and belonging. The existing manuscript still distinguishes that legacy from Amelia Honeybrook and Tom Bridgewell’s later founding/building of Honeybrook. A new literal empire, royal title or reassignment of the town’s founding has not been established.
+
+## Nell’s profession · latest owner clarification
+
+Nell is a **private investigator**. In her spare time she keeps bees, and she knows beekeeping thoroughly. She belongs to a long family lineage of beekeepers; almost everyone in her family loves bees. This is the family’s shared tradition, not a personal legacy Nell established or owns. Her profession shapes her research habits—careful observation, source comparison, distinguishing belief from proof, reconstructing routes and timelines, and listening before concluding. Keep her warm, curious, loving personality and the bears’ Goldilocks theory; professional investigation and family beekeeping belong to the same character. This is the fictional game character’s identity, not a new claim about the author’s real employment.
+
+Latest owner correction, superseding any personal-legacy wording: “It’s not Nell’s personal family legacy … she is a part of a family legacy … almost everybody in her family loves bees … THEY’RE BEEKEEPERS … it’s in their lineage.” Nell’s profession remains private investigation; her expert spare-time beekeeping connects her to that wider family tradition.

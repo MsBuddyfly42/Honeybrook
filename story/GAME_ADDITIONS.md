@@ -329,7 +329,7 @@ The directory preserves all 41 original manuscript cast entries. The following 8
 
 ### Nell
 
-The familiar stranger · Goldilocks’s echo. Nell’s golden hair is the first resemblance the bears see. Her patient care for bees, loving attention to others, curious questions and lifelong ease around bears make the resemblance feel deeper. She is drawn to Honeybrook before she understands the connection; she wants to know its paths, homes and people before seeking Harold. The bears’ belief surrounds her arrival, while her grandfather’s promise and the goddess’s dream remain her own story to share. Nell is Honeybrook’s first present-day human arrival. She comes to discover the place she heard about as a child; her welcome is never something she must buy. Beekeeper in the family business. Nell has loved bears for as long as she can remember. She wonders whether that instinctive fondness has always drawn her toward this place. Before they know who Nell is, bears across Honeybrook and Bear Hollow immediately welcome her. Her golden hair, curious and loving nature, beekeeper’s care and instinctive affection for bears remind them so strongly of the beloved Goldilocks that they feel her spirit in Nell. Some believe Nell is Goldilocks reincarnated. This is their belief, not a confirmed answer to Nell’s identity. Keep the promise to her grandfather: visit Honeybrook and learn what happened to the beekeepers. Follow the goddess’s dream instruction to ask for Harold. Goldilocks’s mother was the daughter of the owner of oil-rich land. The same landowner is Nell’s great-great-great-grandfather. Her late grandfather left her an $800 trillion inheritance; her visit is about family history and the promise, not claiming a fortune.
+The familiar stranger · investigator from a lineage of beekeepers. Nell’s golden hair is the first resemblance the bears see. As a private investigator, she compares records, separates belief from evidence and listens before drawing conclusions. In her spare time she keeps bees. She is part of a long family lineage of beekeepers; almost everyone in the family loves bees. Her own thorough knowledge belongs within that shared tradition. Her patient care, loving attention, curious questions and lifelong ease around bears make the resemblance feel deeper. She is drawn to Honeybrook before she understands the connection; she wants to know its paths, homes and people before seeking Harold. The bears’ belief surrounds her arrival, while her grandfather’s promise and the goddess’s dream remain her own story to share. Nell is Honeybrook’s first present-day human arrival. She comes to discover the place she heard about as a child; her welcome is never something she must buy. Private investigator; she keeps bees in her spare time. Nell belongs to a long family line of beekeepers. Almost everyone in her family loves bees, and she knows their shared trade thoroughly. Nell has loved bears for as long as she can remember. She wonders whether that instinctive fondness has always drawn her toward this place. Before they know who Nell is, bears across Honeybrook and Bear Hollow immediately welcome her. Her golden hair, curious and loving nature, beekeeper’s care and instinctive affection for bears remind them so strongly of the beloved Goldilocks that they feel her spirit in Nell. Some believe Nell is Goldilocks reincarnated. This is their belief, not a confirmed answer to Nell’s identity. Keep the promise to her grandfather: visit Honeybrook and learn what happened to the beekeepers. Follow the goddess’s dream instruction to ask for Harold. Goldilocks’s mother was the daughter of the owner of oil-rich land. The same landowner is Nell’s great-great-great-grandfather. Her late grandfather left her an $800 trillion inheritance; her visit is about family history and the promise, not claiming a fortune.
 
 - kind: British human woman · player protagonist
 - age: 42
@@ -1407,21 +1407,53 @@ Owner’s wording, saved for the later story revision:
 
 > “Build my character around that theory.”
 
+## Family research, the tears and the letter home · latest owner direction
+
+The human family researched the woods thoroughly and searched over the years, but fear of bears kept them from going deep enough. They did not know that bears had been the sanctuary of their own kin. Had they known about Bear Hollow and Honeybrook, they might have found Goldilocks. She was famous deep, deep in the woods; all the woodland animals knew about her, while that knowledge never reached the human searchers. Their effort and their fear must both be acknowledged. Do not rewrite them as uncaring or claim that finding her would have been guaranteed.
+
+Nell’s fourteen family-story case files lead toward Harold: listen to the unexplained welcome, compare woodland memory with human knowledge, reconstruct the search boundary, follow family beekeeping, hear Bear Hollow’s remembrance, and assemble questions at the monument. Each file requires visiting its real place and comparing three pieces of evidence. The expanded trail has 42 evidence decisions, including eight movable-card boards covering names, search maps, assumptions, genealogy, ordinary life, animal knowledge, chronology and the final packet. Return visits ask new questions rather than simply repeating the first visit. These are additive game adaptation scenes, not recovered manuscript quotations. They do not force every unrelated town, Fair or camp activity into a family-history quest.
+
+Nell does not speak to Harold until this research is complete and the player explicitly chooses the conversation. Her existing 22 saved journey labels remain unchanged. Already completed conversations and older journeys are not erased or forced backward.
+
+When Nell reads Goldilocks’s letter, she immediately cries. She mourns the lost beekeepers, the waiting relatives, the years apart and her grandfather’s death before he could hear the answer. Relief and love coexist with that grief: Goldilocks lived, found a home among bears and remembered her human family. Nell wants to send word home immediately. The game offers a personal, editable letter through Harold’s fictional outgoing post, saves its draft and keeps a posted copy. No real message or email is sent.
+
+The expanded Goldilocks letter is a proposed adaptation, not an original manuscript transcription. Goldilocks describes her own survival, loss, welcome and hope that someone would come; she does not somehow know the details of relatives’ later research. Nell learns those through the investigation. The full draft is preserved in `nell-data.js` and in the generated author reference.
+
+## Family response · ideas to develop, not yet settled canon
+
+The owner asks what would happen when the richest man in the United Kingdom learned that his granddaughter had lived and, in the owner’s words, “built a bear empire.” Preserve this as an important story question. Under the current chronology, Goldilocks’s searching grandfather belongs to an earlier generation; Nell’s present-day letter reaches surviving descendants, and Nell’s own grandfather is deceased. Do not silently resurrect either ancestor. If the author chooses a different timeline, revise it explicitly.
+
+Possible continuation: the family receives Nell’s account and Goldilocks’s copied words with tears, disbelief, gratitude and lingering fear. Some relatives might want to visit immediately; others might need reassurance. A gradual visit could lead from the woodland boundary to a welcoming bear and then to Bear Hollow and Honeybrook. These reactions and a family visit are suggestions awaiting the author’s direction, not already completed events in the game. Do not insert additional present-day humans before the appropriate later arrival.
+
+“Bear empire” can express the family’s astonishment at Goldilocks’s enduring legacy of sanctuary and belonging. The existing manuscript still distinguishes that legacy from Amelia Honeybrook and Tom Bridgewell’s later founding/building of Honeybrook. A new literal empire, royal title or reassignment of the town’s founding has not been established.
+
+## Nell’s profession · latest owner clarification
+
+Nell is a **private investigator**. In her spare time she keeps bees, and she knows beekeeping thoroughly. She belongs to a long family lineage of beekeepers; almost everyone in her family loves bees. This is the family’s shared tradition, not a personal legacy Nell established or owns. Her profession shapes her research habits—careful observation, source comparison, distinguishing belief from proof, reconstructing routes and timelines, and listening before concluding. Keep her warm, curious, loving personality and the bears’ Goldilocks theory; professional investigation and family beekeeping belong to the same character. This is the fictional game character’s identity, not a new claim about the author’s real employment.
+
+Latest owner correction, superseding any personal-legacy wording: “It’s not Nell’s personal family legacy … she is a part of a family legacy … almost everybody in her family loves bees … THEY’RE BEEKEEPERS … it’s in their lineage.” Nell’s profession remains private investigation; her expert spare-time beekeeping connects her to that wider family tradition.
+
 ### Goldilocks’s special game letter · adaptation draft
 
 To the family who came looking,
 
-If Harold has placed this letter in your hands, you have come asking about the beekeepers. You have followed the part of our story that never found its way home.
+I do not know your name, or how many years this letter has waited. But if Harold has put it into your hands, then someone in our family still remembers us. Before anything else, please know this: the little girl lived.
 
-I was their little girl. The river carried my parents away. I survived with a jar of honey in my satchel and, later, the kindness of a family of bears. They fed me porridge. They gave me a place beside them. In time, their cottage became my home.
+My mother and father were lost in the river. I wish there were a gentler truth to give you. I wish I could write that I found them waiting on the other bank. I cannot. I carried what my mother had given me—a satchel, a jar of honey, and the blue-flowered cloth—and for a while I did not know where I belonged in the world.
 
-I wondered whether someone in our family still spoke our names. I hoped that one day someone would ask what became of us. I could not know who would come or how long the road would take. That is why I asked Harold to keep this letter.
+Then a family of bears made a place for me. There was porridge, a chair, a bed. There were ordinary mornings after days when I had thought there could be no more ordinary mornings. Their home became my home. They did not replace my parents. They loved the child my parents had loved.
 
-Please know this: I was not forgotten here. I was loved. I grew older among those who made room for me. There was sorrow, but there was also a life beyond the river.
+If you have spent years wondering whether I was frightened, I was, at first. If you have wondered whether I was alone, please let that worry rest now. I was not left alone in the woods. I grew older among those who knew my name and made room for me. There was grief here, but there was laughter too. There was a life beyond the river.
 
-Harold knows the story I entrusted to him. Ask him what he remembers. Then tell your family that the little girl lived, and that she remembered them too.
+I wondered about you. I wondered whether someone still spoke my mother's name, whether a place at a family table had remained empty because no one knew what to do with it. I hoped someone would come. I could not know what you had heard, where you had searched, or what had kept our paths apart.
 
-With love,
+So I asked Harold to keep this letter. If any human ever came to Honeybrook or Bear Hollow asking about the beekeepers, he was to give it to them. I wanted the answer to be waiting, even if I could no longer answer the door myself.
+
+Please do not carry this home as another reason to punish yourselves. Tell them what you have learned. Tell them that their little girl was loved. Tell them that loving the family I found never meant forgetting the family I came from.
+
+And if someone who searched for us is no longer there to hear you, speak their name when you tell the story. Let them have a place in the answer they waited for. I cannot give back the years. I can leave you these words: I lived. I remembered. You were never strangers to my heart.
+
+With all my love,
 Goldilocks
 
 ## Honeybrook bear lingo
@@ -1477,3 +1509,147 @@ Goldilocks
 - **Templar Hearthwell**: One pawstep at a time. We can learn the next bit together.
 - **Buddy Hearthwell**: Keep the path clear, check the BEARnecessities, and leave room for everyone.
 - **Miss Patty**: Mind your honey and your manners, sugar. There’s enough welcome to go around.
+
+## Nell’s fourteen family investigations · exact game case files
+
+### A welcome before a name
+
+Place: Welcome House · index.html#visit=Welcome%20House
+
+The bears welcome a golden-haired stranger before knowing her family. They speak of Goldilocks with the affection usually reserved for someone from their own household. Nell decides to listen before asking Harold anything.
+
+- Listen to the welcome. What do the bears actually know? **Finding:** They see a resemblance and feel Goldilocks’s spirit in her. A resemblance and a belief are clues to their affection, not proof of reincarnation or family identity.
+- Choose Nell’s next research question. **Finding:** Why is Goldilocks remembered so deeply here? Follow the community’s memory of Goldilocks. Nell’s welcome is freely given.
+- Record what remains private. **Finding:** Nell has not explained her ancestry or spoken to Harold. Her grandfather’s promise and the dream are still hers to share. Next: the library’s woodland account.
+### Famous beyond human hearing
+
+Place: Honeybrook Library · index.html#visit=Honeybrook%20Library
+
+Compare two accounts: the human family’s years of searching and the woodland community’s beloved Goldilocks. Every kind of animal in the deep woods knew about her. Her fame never reached the people looking from outside.
+
+- Sort the woodland account into the right audience. **Finding:** Deep-woodland animals who knew Goldilocks. Goldilocks was famous within the woods, deep inside them. Human searchers did not share that network.
+- Compare fame with being found. What is missing? **Finding:** A route by which woodland knowledge could reach the human family. Being loved and widely known in one community did not make her whereabouts known outside it.
+- Choose the next source to examine. **Finding:** The family’s search notes and the point where fear stopped them. Next: compare the search record at a safe creek-side stop. The depth of the woods matters.
+### One girl, two kinds of record
+
+Place: Honeybrook Library · index.html#visit=Honeybrook%20Library
+
+The library account says “Goldilocks.” The family account follows a missing beekeeper’s child. Nell has no recovered birth certificate linking the descriptions. Separate a nickname, a family relationship and a resemblance instead of merging them because the answer feels right.
+
+- Sort “Goldilocks” into the evidence it actually supplies. **Finding:** A woodland name people remember. A remembered name can be the start of a search without being a certified identity.
+- What would connect the two accounts responsibly? **Finding:** Details about the beekeepers, the child and who personally knew her. Look for shared events and personal testimony rather than wealth or resemblance.
+- Arrange the research method before following a name. **Finding:** Find the two accounts → Compare the shared details → Keep the unproven link marked as a question Nell keeps a possible connection on the board. She has not turned it into a fact.
+### The search that stopped too soon
+
+Place: Old Bridge · index.html#visit=Old%20Bridge
+
+At this safe crossing, lay out the family’s old search account. This is a research stop, not an assertion that this bridge was the site of the tragedy. The family researched the woods thoroughly, returned over the years, and still never went deep enough. They feared bears and did not imagine them offering sanctuary.
+
+- Put the two search boundaries in order: human search area → ? **Finding:** Deep woodland settlements unknown to the family. Their efforts were real. The search account must also acknowledge the deep places they never reached.
+- Why did they stop short of the sanctuary? **Finding:** They were naturally afraid of bears and never imagined bears as protectors of their kin. Fear hid a possibility from them: the bears might have saved and sheltered someone they loved.
+- Label this conclusion honestly. **Finding:** Had they known about Bear Hollow and Honeybrook, they might have found Goldilocks. “Might have” preserves the heartbreak without inventing certainty or blaming the searchers. Next: follow the beekeeping thread.
+### The empty space on the family map
+
+Place: Old Bridge · index.html#visit=Old%20Bridge
+
+The human search account feels thorough until Nell lays it beside a map of the places she can actually enter. An unsearched depth is not an empty forest. Map the human boundary and the known bear settlements without inventing an exact flood route.
+
+- Which blank belongs on the human search map? **Finding:** The family did not know what lay farther inside. A gap in the searchers’ knowledge is not proof of a gap in the world.
+- What does the safe crossing let Nell study? **Finding:** How paths and settlements extend beyond the search boundary. Keep the old bridges distinct. This research stop does not relocate the river tragedy.
+- Build the map overlay from the known to the unknown. **Finding:** The family’s documented search area → The deeper woodland area they did not reach → Bear Hollow and Honeybrook, now known to Nell The map begins to explain how real searching could coexist with a missing answer.
+### The frightening story at the edge
+
+Place: Welcome House · index.html#visit=Welcome%20House
+
+Nell returns with the map. Compare what the family feared with what she has personally experienced. She need not mock their fear to recognize that it hid the possibility of sanctuary.
+
+- Keep the searchers’ fear in the correct column. **Finding:** A belief that influenced their choices. Nell can grieve the consequences of fear without condemning those who searched.
+- Choose an observation Nell can support herself. **Finding:** She has been welcomed and offered a place to stay. Present experience can challenge an assumption without proving the whole family history.
+- Separate the two columns, then form the question. **Finding:** Record the family’s fear → Record Nell’s own welcome → Ask whether the bears could have offered sanctuary The next question grows from evidence: what if the place they feared held the people they sought?
+### The beekeeper’s thread
+
+Place: The Honey House · games/honeybrook-craft-fair/?portal=town&place=hollow-honey&city=1
+
+Among honey jars and beekeeping tools, Nell explains that she is a private investigator and keeps bees in her spare time. She knows beekeeping thoroughly and belongs to a whole lineage of beekeepers. Almost everyone in the family loves bees. Her patient familiarity gives the bears another reason to see Goldilocks in her. Match the family trade to the missing-beekeeper account; do not treat resemblance as proof.
+
+- Match Nell’s knowledge to the family account. **Finding:** Beekeeping, honey and care for the hives. The trade is a real family thread Nell can bring to the conversation.
+- What does shared beekeeping establish? **Finding:** A meaningful lead to investigate, not the full answer. Their affection can be sincere while the family evidence still needs careful work.
+- Choose the next place to understand the bears’ care. **Finding:** Bear Hollow, where the animals remember Goldilocks. Next: listen in Bear Hollow before assuming that the family’s fear described the bears who lived there.
+### A family trade is not a family tree
+
+Place: The Honey House · games/honeybrook-craft-fair/?portal=town&place=hollow-honey&city=1
+
+The scent of honey feels familiar, but familiarity can mislead. Compare the tools of a shared trade, Nell’s known family branch and the parts she still cannot prove. Her expert knowledge is her part in a shared family lineage of beekeepers; almost everyone in that family loves bees. Her professional investigation still requires evidence.
+
+- Which detail belongs to Nell’s own account? **Finding:** Beekeeping is the family business. Her experience is a useful thread, not a shortcut through the investigation.
+- What must stay separate for now? **Finding:** Shared trade and a proven connection to the missing child. The missing personal account must connect details the trade alone cannot connect.
+- Lay out the family branch Nell already knows. **Finding:** Goldilocks’s mother’s brother → His child → His grandson: Nell’s grandfather → Nell’s parent → Nell This is the maternal-uncle branch. Do not replace it with a descent from Goldilocks’s brother.
+### The ordinary life behind a legend
+
+Place: Goldilocks’ Kitchen Garden · games/honeybrook-craft-fair/?portal=town&place=hollow-garden&city=1
+
+Nell pauses at the garden. The old woodland accounts contain a person living ordinary days, while the family’s missing-person account stops at the disappearance. Consider the difference between being remembered as a legend and having had a life. The present game garden does not prove that every plant here was planted by Goldilocks herself.
+
+- Which question follows the missing-person account forward? **Finding:** What life might she have had after the day the family lost her? Nell begins looking for the life beyond the disappearance rather than only its last known moment.
+- What can this present garden tell Nell by itself? **Finding:** How the community values the ordinary work of tending and feeding. A place can help Nell understand the community without being a preserved original artifact.
+- Arrange the questions from loss toward a possible life. **Finding:** What happened at the river? → What might have happened afterward? → Who remembered her as a person? There may be grief and a life beyond it. Nell still needs someone’s own account.
+### What the family could not imagine
+
+Place: Bear Hollow · games/honeybrook-craft-fair/?portal=town&place=hollow&city=1
+
+Nell listens to Bear Hollow’s oldest bears. They remember Goldilocks as someone cherished, not a stranger from a distant human tale. Other woodland animals knew her too. Nell begins to understand why her family’s searches and the animals’ memories never met.
+
+- Compare the human fear with the community you encounter. **Finding:** The bears are capable of hospitality and protection. The sanctuary was a possibility the frightened searchers had never imagined.
+- Whose knowledge stayed inside the deep woods? **Finding:** The animals’ knowledge of Goldilocks and her place among them. Goldilocks’s woodland fame could not answer relatives who did not know where or whom to ask.
+- What is still needed before Nell tells her family what happened? **Finding:** A personal account entrusted to someone who can explain it. Next: gather your questions at the monument. Harold may hold the personal thread that public remembrance cannot supply.
+### A name passed through the woodland
+
+Place: Bear Hollow · games/honeybrook-craft-fair/?portal=town&place=hollow&city=1
+
+Listen again, now with better questions. The animals knew Goldilocks, but a name shared along woodland paths did not reach relatives who never entered those paths. Build the missing communication chain; no new talking-animal witness is assigned an invented name.
+
+- Who knew about Goldilocks deep in the woods? **Finding:** The woodland animals. The owner’s adaptation makes her known throughout woodland animal life, beyond just the bears.
+- Where did the communication chain fail? **Finding:** Between a woodland community and human relatives who did not know it existed. The tragedy includes a missing connection between two communities, not an absence of remembrance.
+- Reconstruct the broken chain. **Finding:** Goldilocks known inside the woodland → Accounts passed among its animals → The human family still without the woodland account Nell can finally explain why woodland fame did not end the human search.
+### Two lives measured in waiting
+
+Place: Honeybrook Library · index.html#visit=Honeybrook%20Library
+
+Back in the library, place the known events in order without adding dates. Goldilocks grew older and died before Nell’s arrival. The family’s questions continued through generations. Nell cannot promise a reunion that time has already taken away.
+
+- Which detail belongs to the preserved chronology? **Finding:** Goldilocks’s life and death precede Nell’s arrival. The answer can still matter deeply even though a living reunion with Goldilocks is no longer possible.
+- Why must Nell tell this carefully? **Finding:** The family needs truth about survival, loss and years apart. Relief will not erase grief. Both belong in the discovery.
+- Build the timeline without inventing years. **Finding:** The child disappears in the river tragedy → Goldilocks grows older among woodland bears → The family’s unanswered search continues through generations → Nell follows the promise and arrives The searches span the story’s generations; this ordering does not supply unrecorded calendar dates.
+### What Nell can carry to Harold
+
+Place: Welcome House · index.html#visit=Welcome%20House
+
+Nell opens her notebook at Welcome House. Lay the clues in three groups: things she knows, things the bears believe, and questions that require a personal account. Her grandfather’s promise and the dream finally meet a researched reason to seek Harold.
+
+- Keep the reincarnation theory where it belongs. **Finding:** The bears’ sincere belief, separate from proven ancestry. Their embrace stays meaningful without turning belief into a certified family record.
+- Which question has not been answered by the public trail? **Finding:** What the beekeepers’ daughter herself wanted her human family to know. Public remembrance cannot replace a personal message. Harold is the next source, not the game’s automatic next action.
+- Pack Nell’s questions for the post office. **Finding:** Explain the missing-beekeeper inquiry → Describe the family’s long search → Ask whether a personal message was left → Listen to Harold when Nell chooses The packet leads to Harold after research. No conversation or letter opening is completed for you.
+### Questions worth carrying
+
+Place: Goldilocks & Three Bears Monument · index.html#visit=Goldilocks%20%26%20Three%20Bears%20Monument
+
+At the monument, arrange six research notes: a familiar stranger; a woodland name; a long human search; fear at the woodland boundary; the family’s beekeeping; the bears’ hospitality. Nell now knows why she needs Harold, without yet knowing what his kept letter says.
+
+- Separate the bears’ belief from a verified family account. **Finding:** They believe Goldilocks has returned in Nell; the family history still needs its own evidence. Keep their loving belief intact without making it an answer Nell has already received.
+- Choose the questions to take to Harold. **Finding:** What happened to the beekeepers, what became of their daughter, and did she leave word for family? Nell’s questions now grow from her research, her grandfather’s promise and the dream’s instruction.
+- Choose what happens next. **Finding:** Keep the research and approach Harold only when I choose. Your fourteen case files are ready. You can continue exploring. Harold’s first conversation remains your next deliberate story choice.
+
+## Nell’s editable letter home · draft
+
+My dear family,
+
+I have found the part of our story we could never reach. The beekeepers were lost in the river, but their little girl survived. Goldilocks was sheltered and loved by bears, deep in the woods, in a community we did not know existed.
+
+We searched for years. We were afraid to go far enough into bear country, never imagining that bears could be the sanctuary of our own kin. She was known and loved by the woodland animals while we still thought her lost. Had we known about Bear Hollow and Honeybrook, perhaps we could have found her.
+
+Goldilocks left a letter for whichever member of our family came looking. Harold kept it. I cried as I read it. She wanted us to know she lived, that she was loved, and that she had not forgotten us. There is grief in this answer, but there is love in it too.
+
+Granddad did not live to hear it, but I have kept my promise. I wanted you to know as soon as I knew. I will bring her words home.
+
+With love,
+Nell
