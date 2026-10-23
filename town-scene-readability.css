@@ -76,3 +76,10 @@ body.hb-reduced-motion .scene-weather{animation:none!important}
 #town .hb-world-marker:focus-visible{outline:3px solid #305e8d;outline-offset:4px}
 @media(max-width:620px){#destinationVisit header{gap:10px}#destinationVisit header button{padding:10px 14px;font-size:16px!important}#destinationVisit .visit-room{min-height:0}#destinationVisit .visit-find{padding:14px}#destinationVisit .visit-find button{width:100%}}
 @media(prefers-reduced-motion:reduce){#destinationVisit .visit-room-sign{transition:none}}
+/* The Town tab's free-roam directory uses the same actual destination photos. */
+#travelGrid>button{padding:0;overflow:hidden;background:#fff9ed;color:#392c31;display:flex;flex-direction:column;align-items:stretch}
+#travelGrid>button>img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;display:block}
+#travelGrid>button>span{padding:14px;display:block}
+#arrivalCard .wandering-photo{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:12px}
+#arrivalCard .wandering-doors{display:flex;flex-wrap:wrap;gap:10px}
+#arrivalCard .wandering-doors button{background:#493343;color:#fff8ed;padding:12px;border-radius:10px;border:1px solid #493343}
