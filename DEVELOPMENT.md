@@ -59,3 +59,7 @@ Run `node tests/city-map.mjs` with the same Playwright environment above. It che
 ## Focused navigation checks
 
 `tests/navigation-usability.mjs` checks all fifteen top area tabs, all 86 venues in the direct selector, focused district views, real classroom exercises, accent-insensitive popup search, favorites/recent places and Escape. It instruments scroll methods and verifies that map, district, room and walking-view refreshes do not call scripted scrolling. The earlier city-map, connected-town, world-routes and browser regression checks remain applicable; their entry selectors now use the top tabs and direct selector.
+
+## Town assignment extension
+
+`town-activity-data.js` defines the 86 town work orders and their typed preparation/work/inspection rules. `daily-quiz.js` generates reproducible twenty-question real-date sessions at six levels. Load both before `life-engine.js`; `town-activities.js` adds the work dialog after the existing destination/navigation modules. The controller in `honeybrook-life.js` remains the sole life-save writer, using its existing lock, revision/conflict checks and checkpoint. Optional `townPlans`, `townWorks`, `townResults` and `dailyQuiz` fields preserve compatibility with earlier life saves. Never create another wallet or reset existing keys for these activities.

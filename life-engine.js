@@ -1,9 +1,9 @@
 /* Single-player Honeybrook life rules. No network, timers, or storage side effects. */
 (function (root, factory) {
-  const engine = factory();
+  const engine = factory(typeof module === 'object' && module.exports ? require('./town-activity-data.js') : root.HoneybrookTownActivities, typeof module === 'object' && module.exports ? require('./daily-quiz.js') : root.HoneybrookDailyQuiz);
   if (typeof module === 'object' && module.exports) module.exports = engine;
   else root.HoneybrookLife = engine;
-})(typeof globalThis === 'object' ? globalThis : this, function () {
+})(typeof globalThis === 'object' ? globalThis : this, function (Town,Quiz) {
   'use strict';
   const VERSION = 1;
   const realDate = (now = new Date()) => new Intl.DateTimeFormat('en-CA', {timeZone: 'America/Chicago', year:'numeric',month:'2-digit',day:'2-digit'}).format(now);
@@ -12,7 +12,7 @@
   function season(date) {const month=Number(date.slice(5,7));return seasons[Math.floor((month%12)/3)];}
   function weather(date) {const n=Number(date.replaceAll('-',''));return ({Winter:['Snow','Clear and cold','Sleet'],Spring:['Gentle rain','Clear','Thunderstorm'],Summer:['Clear','Warm breeze','Thunderstorm'],Autumn:['Clear','Gentle rain','Cool breeze']})[season(date)][n%3];}
   const residents = [
-    {id:'sammy',name:'Sammy Patchwell',family:'Welcoming bear · Amelia and Tom’s first welcomed neighbor',routine:'Morning: Welcome House · Afternoon: paths · Evening: cottage',intro:'Your father trusted Amelia and Tom to care for his land. I kept his survey envelope safe. We can look at it together, when you feel at home.'},
+    {id:'sammy',name:'Sammy Patchwell',family:'Welcoming bear · Amelia and Tom’s first welcomed neighbor',routine:'Morning: Welcome House · Afternoon: paths · Evening: cottage',intro:'Your grandparents’ oil-producing land funds the family trust. They trusted Amelia and Tom to keep Honeybrook welcoming. I kept their land letter safe. We can look at it together, when you feel at home.'},
     {id:'wally',name:'Wally Crumbwell',family:'Bear baker · Harold’s longtime friend',routine:'Morning and afternoon: bakery · Evening: supper at home',intro:'Let’s make enough for our neighbors and save a loaf for supper.'},
     {id:'maya',name:'Maya Williams',family:'Black American mother · nurse · Williams family',routine:'Morning: infirmary · Afternoon: family cabins · Evening: sunset gathering',intro:'Care starts with listening and checking what each family actually needs.'},
     {id:'daniel',name:'Daniel Miller',family:'White American father · carpenter · Miller family',routine:'Morning: workshop · Afternoon: maintenance · Evening: family supper',intro:'Measure, make a safe plan, then inspect the work together.'},
@@ -62,10 +62,10 @@
   // Choices have practical feedback and a checked outcome, rather than a click counter.
   const step = (prompt, choices, correct, result) => ({prompt, choices, correct, result});
   const tasks = {
-    welcome:{name:'Open Father’s survey envelope with Sammy',role:'Family member',skill:'Discovery',person:'sammy',pay:0,steps:[
-      step('Sammy approaches at the Welcome Bridge. You are startled by a town of bears and people. What will help you feel safe?',['Run into the unmarked woods','Listen from the open Welcome House porch'],1,'Sammy gives you space, introduces Amelia and Tom, and offers a seat. You decide to stay while you learn about Father’s land.'),
-      step('Father’s envelope contains a survey, a trust letter and a note. Which should you record?',['Record the marked land and keep the originals safe','Dig anywhere immediately'],0,'The survey names Honeybrook’s northern orchard boundary. Sammy remembers your father helping protect the bridge approach; the gold is part of your family’s unfinished story.'),
-      step('The trust provides spending money, but what earns a place in town life?',['Buying everybody’s loyalty','Listening, learning and helping'],1,'You keep the survey as a permanent keepsake. Your father’s trillion-dollar estate backs your $250,000 spending account; friendship and responsibility must be earned.')],once:true},
+    welcome:{name:'Open the family survey envelope with Sammy',role:'Family member',skill:'Discovery',person:'sammy',pay:0,steps:[
+      step('Sammy approaches at the Welcome Bridge. You are startled by a town of bears and people. What will help you feel safe?',['Run into the unmarked woods','Listen from the open Welcome House porch'],1,'Sammy gives you space, introduces Amelia and Tom, and offers a seat. You decide to stay while you learn about your grandparents’ land.'),
+      step('Your grandparents’ envelope contains a survey, an oil trust letter and a note. Which should you record?',['Record the marked land and keep the originals safe','Dig anywhere immediately'],0,'The survey names Honeybrook’s northern orchard boundary. Sammy remembers your grandparents helping protect the bridge approach. Oil from their land funded the trust; their connection to Honeybrook is part of your family’s continuing story.'),
+      step('The trust provides spending money, but what earns a place in town life?',['Buying everybody’s loyalty','Listening, learning and helping'],1,'You keep the survey as a permanent keepsake. Your grandparents’ trillion-dollar oil estate backs your $250,000 spending account; friendship and responsibility must be earned.')],once:true},
     cook:{name:'Prepare today’s cafeteria meal',role:'Cook',skill:'Cooking',person:'sofia',pay:25000,steps:[
       step('Read today’s menu and count 12 portions, including an allergy-safe alternative.',['Guess the ingredients','Check the menu, portion card and allergy notes'],1,'The portion card is ready for 12 diners. Sofía sets aside an appropriate alternative before preparation.'),
       step('Before preparing the ingredients, choose your tools.',['Wash hands; clean surfaces; separate raw ingredients','Use one unwashed board for everything'],0,'Clean boards, measuring tools and separate preparation stations are laid out.'),
@@ -117,7 +117,7 @@
   ]};
   const location = (name,image,parent,activities,description) => ({name,image,parent,activities,description});
   const locations = {
-    home:location('My Honeybrook cottage','bear-hollow-cottage.png',null,['welcome'],'Your father’s survey envelope waits beside a welcoming note from Sammy. Connected rooms lead through your own cottage.'),
+    home:location('My Honeybrook cottage','bear-hollow-cottage.png',null,['welcome'],'Your grandparents’ survey envelope waits beside a welcoming note from Sammy. Connected rooms lead through your own cottage.'),
     living:location('Cottage living room','room.jpg','home',['fellowship'],'A connected family sitting room, with doors to your bedroom, kitchen, study and porch.'),
     bedroom:location('Cottage bedroom','rest.jpg','living',[],'A quiet room for deliberate rest. Use the calendar to advance to tomorrow; browsing never advances a day.'),
     bathroom:location('Cottage bathroom','room.jpg','bedroom',['housekeeping'],'Fresh linens and a connected doorway back to the bedroom.'),
@@ -127,7 +127,7 @@
     porch:location('Cottage porch and garden','garden.jpg','living',['garden','paint'],'Relax outdoors or take the path toward town and camp.'),
     square:location('Honeybrook Town Square','village.jpg','porch',['welcome','sunset'],'The bridge connects your story to Amelia, Tom and Sammy. The original illustrated town remains open from the navigation bar.'),
     bakery:location('Wally’s Bakery','bakery.jpg','square',['bake'],'Prepare bread with Wally and keep one loaf for his supper.'),
-    campgate:location('Living Word family camp entrance','welcome-house.webp','square',['shelter'],'A peaceful family camp on the land your father entrusted to Honeybrook. Security check-in leads to cabins and administration.'),
+    campgate:location('Living Word family camp entrance','welcome-house.webp','square',['shelter'],'A peaceful family camp on the land your grandparents entrusted to Honeybrook. Security check-in leads to cabins and administration.'),
     cabins:location('Family cabins and staff quarters','bear-hollow-cabin.png','campgate',['housekeeping','fellowship'],'Family cabins, staff accommodation and connected facilities support a substantial stay.'),
     scouts:location('Boy and girl scout camp','hollow.jpg','cabins',['teach','inventory'],'Bunkhouses and tents share supervised practical learning, with separate sleeping arrangements and family meeting places.'),
     dining:location('Dining hall and cafeteria kitchen','cakes.jpg','cabins',['cook','bake'],'A rotating seven-day menu supplies breakfast, lunch and dinner. Preparation follows portions, ingredients and inspections.'),
@@ -143,22 +143,24 @@
     studio:location('Painting and textile studio','paint.jpg','school',['paint','textile'],'Supervised tools and step-by-step work turn practice into lasting keepsakes.'),
     garden:location('Camp gardens','garden.jpg','cabins',['garden'],'Garden work leaves recorded crops, maintained beds and shared produce.'),
     waterfront:location('Fishing pond and waterfront','pond.jpg','garden',['water','paint'],'Practice supervised water preparation and paint the pond’s light.'),
-    wilderness:location('Wilderness Store — Camping Equipment ONLY','barn.jpg','campgate',['inventory'],'Shelter, sleeping gear, safe cooking equipment, light, power, maps, tools, first aid and weather protection. Connected directly to the general Camp Store.'),
+    wilderness:location('Wilderness Store — For Camping Equipment ONLY','barn.jpg','campgate',['inventory'],'Shelter, sleeping gear, safe cooking equipment, light, power, maps, tools, first aid and weather protection. Connected directly to the general Camp Store.'),
     campstore:location('General Camp Store','hive.jpg','wilderness',['stock'],'Food, drinks, s’mores, toiletries, fishing gear, recreation, souvenirs, clothing, crafts and books. Camping equipment belongs next door.'),
     hills:location('Hills campsite','hollow.jpg','scouts',['hiking','campfire'],'Check every camper and shared item first. Only the notification’s Begin camping trip button can start your stay.'),
     gathering:location('Sunset gathering and night fire circle','hollow.jpg','cabins',['sunset','campfire','firewood'],'Join the whole camp at sunset. Campfires happen only at night, with supervision and safe weather.')
   };
   locations.studio.activities.push(...craftProjects.map(p=>p[0]));
   locations.waterfront.activities.push('fishing');
+  Town.install(tasks,locations);
+  const roles=['Family member','Camper','Cook','Counselor','Worker','Owner','Villager','Manager'];
   const ranks = [{name:'New neighbor',work:0,trust:0,skills:0},{name:'Helpful camper',work:3,trust:3,skills:2},{name:'Camp worker',work:8,trust:8,skills:4},{name:'Counselor',work:16,trust:16,skills:6},{name:'Camp steward',work:30,trust:30,skills:8},{name:'Community leader',work:50,trust:50,skills:10}];
   function rank(s){return ranks.filter(r=>s.completed>=r.work&&s.trust>=r.trust&&Object.keys(s.skills).length>=r.skills).at(-1);}
-  function initial(today=realDate()){return {version:VERSION,revision:0,updatedAt:0,date:today,day:1,hour:9,location:'home',role:'Family member',balance:250000,reserve:999999750000,trust:0,completed:0,skills:{},counts:{},progress:{},history:[],keepsakes:[],relationships:{},businesses:{},inventory:{},prepared:{},trip:false,tripNights:0,partner:'sammy',unread:[{id:'arrival',title:'A letter from Sammy',body:'Your father’s envelope is safe at your cottage. Welcome to the town Amelia and Tom built. Take all the time you need.'}],quizDates:[],condition:100};}
+  function initial(today=realDate()){return {version:VERSION,revision:0,updatedAt:0,date:today,day:1,hour:9,location:'home',role:'Family member',balance:250000,reserve:999999750000,trust:0,completed:0,skills:{},counts:{},progress:{},history:[],keepsakes:[],relationships:{},businesses:{},inventory:{},prepared:{},trip:false,tripNights:0,partner:'sammy',unread:[{id:'arrival',title:'A letter from Sammy',body:'Your grandparents’ land-trust letter is safe at your cottage. Welcome to the town Amelia and Tom built. Take all the time you need.'}],quizDates:[],condition:100};}
   function record(s,text,kind='memory'){s.history.push({day:s.day,date:s.date,hour:s.hour,text,kind});}
   function replenish(s){if(s.balance<25000&&s.reserve>0){const transfer=Math.min(250000-s.balance,s.reserve);s.balance+=transfer;s.reserve-=transfer;record(s,'Family trust transfer: $'+transfer.toLocaleString('en-US')+'.','finance');}}
   function valid(s){
     const plain=x=>x&&typeof x==='object'&&!Array.isArray(x)&&Object.getPrototypeOf(x)===Object.prototype;
     if(!plain(s)||s.version!==VERSION||!Number.isSafeInteger(s.revision)||s.revision<0||!Number.isFinite(s.updatedAt)||s.updatedAt<0||!/^\d{4}-\d{2}-\d{2}$/.test(s.date)||!Number.isFinite(Date.parse(s.date+'T12:00:00Z'))||!Number.isSafeInteger(s.day)||s.day<1||![9,13,17,19,21].includes(s.hour)||!locations[s.location])return false;
-    if(!['Family member','Camper','Cook','Counselor','Worker','Owner'].includes(s.role)||!residents.some(p=>p.id===s.partner))return false;
+    if(!roles.includes(s.role)||!residents.some(p=>p.id===s.partner))return false;
     if(!['balance','reserve','trust','completed','condition','tripNights'].every(k=>Number.isSafeInteger(s[k])&&s[k]>=0)||s.condition>100||typeof s.trip!=='boolean')return false;
     if(!['skills','counts','progress','relationships','businesses','inventory','prepared'].every(k=>plain(s[k])&&!Object.keys(s[k]).some(key=>['__proto__','constructor','prototype'].includes(key))))return false;
     if(!Object.values(s.skills).every(n=>Number.isSafeInteger(n)&&n>=0)||!Object.entries(s.counts).every(([id,n])=>tasks[id]&&Number.isInteger(n)&&n>=0&&n<=3))return false;
@@ -170,15 +172,19 @@
     if(!Array.isArray(s.history)||!s.history.every(h=>plain(h)&&typeof h.text==='string'&&typeof h.kind==='string'&&Number.isInteger(h.day)&&h.day>0&&typeof h.date==='string'&&Number.isInteger(h.hour)))return false;
     if(!Array.isArray(s.keepsakes)||!s.keepsakes.every(k=>typeof k==='string')||!Array.isArray(s.quizDates)||!s.quizDates.every(d=>typeof d==='string'))return false;
     if(s.cookingPlan!=null&&(!plain(s.cookingPlan)||!Number.isSafeInteger(s.cookingPlan.day)||s.cookingPlan.day<1||![9,13,17,19,21].includes(s.cookingPlan.hour)))return false;
+    if(!Quiz.valid(s.dailyQuiz))return false;
+    if(s.townPlans!=null&&(!plain(s.townPlans)||!Object.entries(s.townPlans).every(([id,p])=>tasks[id]?.town&&plain(p)&&Number.isInteger(p.day)&&p.day>0&&[9,13,17,19,21].includes(p.hour))))return false;
+    if(s.townWorks!=null&&(!plain(s.townWorks)||!Object.entries(s.townWorks).every(([id,v])=>tasks[id]?.town&&v!=null&&typeof v==='object'&&JSON.stringify(v).length<=5000)))return false;
+    if(s.townResults!=null&&(!plain(s.townResults)||!Object.entries(s.townResults).every(([id,p])=>tasks[id]?.town&&plain(p)&&Number.isInteger(p.day)&&p.day>0&&Number.isInteger(p.total)&&p.total>0)))return false;
     return Array.isArray(s.unread)&&s.unread.every(m=>plain(m)&&['id','title','body'].every(k=>typeof m[k]==='string'));
   }
   const people=['You','Noah','Grace']; // Authored single-player family companions.
   function ready(s){return people.every(p=>s.prepared[p])&&s.prepared.Shared&&gear.slice(0,8).every(g=>(s.inventory[g[0]]||0)>=(['sleep','water','wash'].includes(g[0])?3:1));}
   function blocked(s,id){const t=tasks[id];if(!t)return 'This activity is unavailable.';
-    if(t.once&&s.keepsakes.includes(t.name))return 'This discovery is already preserved in your scrapbook.';
+    if(t.once&&(s.keepsakes.includes(t.name)||id==='welcome'&&s.keepsakes.includes('Open Father’s survey envelope with Sammy')))return 'This discovery is already preserved in your scrapbook.';
     if((s.counts[id]||0)>=3)return 'Three completions today. This activity refreshes after a deliberate night’s rest.';
     if(t.hour&&s.hour!==t.hour)return t.hour===21?'Return at night (9 PM) for the supervised campfire.':'Return at sunset (7 PM) for the whole-camp gathering.';
-    if(['water','campfire','hiking','fishing'].includes(id)&&['Thunderstorm','Sleet','Snow'].includes(weather(s.date)))return 'Unsafe outing weather. Choose indoor practice or wait for suitable weather.';
+    if((t.outdoor||['water','campfire','hiking','fishing'].includes(id))&&['Thunderstorm','Sleet','Snow'].includes(weather(s.date)))return 'Unsafe outing weather. Choose indoor practice or wait for suitable weather.';
     if(t.item&&!s.inventory[t.item])return t.item==='fish'?'Collect fishing tackle from the Camp Store first.':'Collect s’mores supplies from the Camp Store first.';
     if(t.trip&&!s.trip)return 'Prepare the whole group and choose Begin camping trip in notifications first.';
     return '';
@@ -189,10 +195,10 @@
     function spend(amount){if(s.balance<amount)throw new Error('There is not enough spending money for this purchase.');s.balance-=amount;replenish(s);}
     switch(a.type){
       case 'visit':if(!locations[a.id])throw new Error('Unknown location.');s.location=a.id;message='You arrived at '+locations[a.id].name+'.';break;
-      case 'role':if(!['Family member','Camper','Cook','Counselor','Worker','Owner'].includes(a.id))throw new Error('Unknown role.');s.role=a.id;message='You are experiencing today as '+a.id+'. All roles remain playable.';break;
+      case 'role':if(!roles.includes(a.id))throw new Error('Unknown role.');s.role=a.id;message='You are experiencing today as '+a.id+'. All roles remain playable.';break;
       case 'partner':if(!residents.some(p=>p.id===a.id))throw new Error('Unknown neighbor.');s.partner=a.id;message='Your next completed activity will become a shared memory.';break;
       case 'task':{
-        const t=tasks[a.id];const reason=blocked(s,a.id);if(reason)throw new Error(reason);
+        const t=tasks[a.id];if(t?.town)throw new Error('Use this location’s hands-on activity workbench.');const reason=blocked(s,a.id);if(reason)throw new Error(reason);
         if(!locations[s.location].activities.includes(a.id))throw new Error('Visit the activity’s location first.');
         const index=s.progress[a.id]||0,p=t.steps[index];if(a.step!==undefined&&a.step!==index)throw new Error('This project has moved to the next step. Choose a decision from the current step.');if(!Number.isInteger(a.choice)||!p.choices[a.choice])throw new Error('Choose one of the available tools or decisions.');
         if(a.choice!==p.correct){message='Try a safer, more useful approach. Your progress and money are unchanged.';break;}
@@ -205,8 +211,20 @@
           if(a.id==='cook')s.cookingPlan=null;
           s.keepsakes.push(t.name);s.condition=Math.min(100,s.condition+5);
           if(t.item==='smores')s.inventory[t.item]--;
-          for(const e of enterprises.filter(e=>e[4]===a.id)){const b=s.businesses[e[0]];if(b&&b.staff>0&&b.supplies>0){b.servedDay=s.day;b.quality=Math.min(100,b.quality+15);}}
+          for(const e of enterprises.filter(e=>e[4]===a.id||e[4]===t.service)){const b=s.businesses[e[0]];if(b&&b.staff>0&&b.supplies>0){b.servedDay=s.day;b.quality=Math.min(100,b.quality+15);}}
           message+=' Completed: $'+t.pay.toLocaleString('en-US')+' earned; '+t.skill+' practice, trust and a shared memory recorded.';
+        }break;}
+      case 'townTask':{
+        const t=tasks[a.id],reason=blocked(s,a.id);if(!t?.town)throw new Error('Unknown town assignment.');if(reason)throw new Error(reason);if(s.location!==t.location)throw new Error('Enter this activity’s actual location first.');
+        const index=s.progress[a.id]||0;if(a.step!==index)throw new Error('This assignment has moved to another step. Use the current workbench.');
+        if(!Town.check(t,s,index,a.input,recipe)){message='The work needs another check. Compare the work order and try again; nothing is charged or awarded.';break;}
+        if(index===0){if(t.cost)spend(t.cost);s.townPlans=s.townPlans||{};s.townPlans[a.id]={day:s.day,hour:s.hour};if(t.cost)record(s,t.name+': $'+t.cost+' of materials issued.','finance');}
+        if(index===2){s.townWorks=s.townWorks||{};s.townWorks[a.id]=JSON.parse(JSON.stringify(a.input));}message=Town.outcome(t,index);record(s,message,'work');s.progress[a.id]=index+1;s.role=t.role;
+        if(index===4){const finished=Town.work(t,s,recipe).title;delete s.progress[a.id];delete s.townPlans[a.id];s.counts[a.id]=(s.counts[a.id]||0)+1;s.completed++;s.trust++;s.skills[t.skill]=(s.skills[t.skill]||0)+1;s.balance+=t.pay;
+          for(const id of new Set([t.person,s.partner]))s.relationships[id]=(s.relationships[id]||0)+1;s.keepsakes.push(t.artifact);s.condition=Math.min(100,s.condition+5);s.townResults=s.townResults||{};s.townResults[a.id]={workTitle:finished,day:s.day,total:(s.townResults[a.id]?.total||0)+1};
+          const shared=residents.find(p=>p.id===s.partner).name;record(s,t.name+' completed with '+shared+'. Kept: '+t.artifact+'. Earned $'+t.pay.toLocaleString('en-US')+'.','accomplishment');
+          for(const e of enterprises.filter(e=>e[4]===t.service)){const b=s.businesses[e[0]];if(b&&b.staff>0&&b.supplies>0){b.servedDay=s.day;b.quality=Math.min(100,b.quality+15);}}
+          message+=' '+t.skill+' practice and a shared memory recorded. '+(t.pay?'Earned $'+t.pay.toLocaleString('en-US')+'.':'Your accomplishment is kept in the family scrapbook.');
         }break;}
       case 'buyGear':{const g=gear.find(g=>g[0]===a.id);if(!g)throw new Error('Unknown item.');if((s.inventory[a.id]||0)>=4)throw new Error('You have enough of this item for your group.');spend(g[2]);s.inventory[a.id]=(s.inventory[a.id]||0)+1;record(s,'Purchased '+g[1]+' for $'+g[2]+'.','finance');message='Item added to your checked inventory.';break;}
       case 'prepare':{
@@ -221,7 +239,7 @@
       case 'rest':{
         if(s.trip&&s.tripNights>=(rank(s).work>=16?14:7))throw new Error('This visit has reached its stay limit. Return home to rest; a new prepared visit is always available. Counselor standing unlocks fourteen nights.');
         const done=s.history.filter(h=>h.day===s.day&&h.kind==='accomplishment').length;
-        s.date=addDay(s.date);s.day++;s.hour=9;s.counts={};s.progress={};s.cookingPlan=null;if(s.trip)s.tripNights++;
+        s.date=addDay(s.date);s.day++;s.hour=9;s.counts={};s.progress=Object.fromEntries(Object.entries(s.progress).filter(([id])=>tasks[id]?.town));s.cookingPlan=null;if(s.trip)s.tripNights++;
         s.condition=Math.max(0,s.condition-(done?1:8));
         for(const b of Object.values(s.businesses))b.quality=Math.max(0,b.quality-5);
         s.unread.push({id:'morning-'+s.day,title:'Honeybrook Gazette · Day '+s.day,body:'Yesterday: '+done+' completed activities. '+Object.keys(s.businesses).length+' owned enterprises. Camp condition '+s.condition+'/100. '+(done?'Neighbors remember your completed service.':'The paths and cabins could use a helping hand today.')});
@@ -235,6 +253,8 @@
         else if(a.job==='revenue'){if(!b.staff||!b.supplies||b.servedDay!==s.day||b.collectedDay===s.day)throw new Error('Complete today’s service with staff and supplies before closing the accounts once.');if(b.quality<50)throw new Error('Standards need another inspected service task before accounts can close.');
           const gross=10000+Math.floor(b.quality/10)*1000,wages=b.staff*1000,net=gross-wages;b.supplies--;b.collectedDay=s.day;s.balance+=net;record(s,enterprises.find(e=>e[0]===a.id)[1]+': customers served; gross $'+gross+', wages $'+wages+', net $'+net+'.','finance');message='Accounts closed. Gross $'+gross.toLocaleString('en-US')+'; staff wages $'+wages.toLocaleString('en-US')+'; net revenue $'+net.toLocaleString('en-US')+'.';}
         else throw new Error('Unknown management task.');break;}
+      case 'dailyQuizStart':if(!Quiz.levels.includes(a.level))throw new Error('Choose one of the six quiz levels.');if(s.dailyQuiz?.date===today)throw new Error('Continue today’s existing quiz. A camp rest does not reset it.');s.dailyQuiz={date:today,level:a.level,answers:[]};message='Today’s twenty-question quiz is ready. Take your time.';break;
+      case 'dailyQuizAnswer':{const q=s.dailyQuiz;if(!q||q.date!==today)throw new Error('Start today’s real-calendar quiz.');const qs=Quiz.questions(today,q.level),index=q.answers.length;if(index>=20)throw new Error('Today’s twenty questions are already recorded.');if(a.step!==index||!Number.isInteger(a.choice)||a.choice<0||a.choice>2)throw new Error('Choose an answer from the current question.');q.answers.push(a.choice);message=(a.choice===qs[index].correct?'Correct. ':'Review: ')+qs[index].review;if(q.answers.length===20){const score=q.answers.filter((v,i)=>v===qs[i].correct).length;s.skills['Daily learning']=(s.skills['Daily learning']||0)+1;record(s,'Completed the '+q.level+' real-calendar quiz for '+today+': '+score+'/20.','learning');message+=' Quiz complete: '+score+'/20. Your review is saved.';}break;}
       case 'quiz':{
         if(s.quizDates.includes(today))throw new Error('Today’s real-calendar learning review is already recorded. Resting does not reset it.');
         if(a.choice!==1){message='A map shows your route and helps you find the way back. Try again.';break;}
@@ -243,5 +263,5 @@
     }
     s.revision++;s.updatedAt=Date.now();if(!valid(s))throw new Error('The action could not be saved safely.');return {state:s,message};
   }
-  return {VERSION,realDate,addDay,season,weather,residents,menu,meal,recipe,gear,enterprises,tasks,locations,ranks,rank,initial,valid,ready,blocked,people,action};
+  return {VERSION,realDate,addDay,season,weather,residents,menu,meal,recipe,gear,enterprises,tasks,locations,ranks,rank,initial,valid,ready,blocked,people,action,roles,Town,Quiz};
 });

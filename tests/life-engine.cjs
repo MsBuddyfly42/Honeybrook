@@ -31,7 +31,7 @@ test('Completion awards once, shared relationships, skill, permanent menu record
  const history=s.history.length;s=act(s,'rest');assert.equal(s.date,'2026-10-23');assert.equal(s.counts.cook,undefined);assert(s.history.length>history);assert(!E.blocked(s,'cook'));
 });
 test('Every activity executes meaningful decision sequence and reaches a checked completion',()=>{
- for(const [id,t] of Object.entries(E.tasks)){
+ for(const [id,t] of Object.entries(E.tasks).filter(([,t])=>!t.town)){
   let s=E.initial('2026-10-23'); // Suitable outdoor weather.
   const place=Object.keys(E.locations).find(p=>E.locations[p].activities.includes(id));assert(place,id);
   if(t.hour)s.hour=t.hour;if(t.item)s.inventory[t.item]=1;if(t.trip)s.trip=true;

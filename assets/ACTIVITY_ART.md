@@ -1,0 +1,3 @@
+# Completed-work photography
+
+`activity-results.webp` was generated for Honeybrook with OpenAI image generation on October 23, 2026, using the established Honeybrook schoolroom as a material/lighting reference. The four photographic-style scenes show a substantial chicken/rice/vegetable family meal, vegetable garden, repaired workshop bench and finished textile keepsakes. The original generated PNG remains outside the repository. WebP encoding changes only format/quality. Outcome code selects matching scenes, retains the destination's photograph for other work and displays the player's actual painting for painting outcomes.

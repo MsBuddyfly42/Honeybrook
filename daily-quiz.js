@@ -1,0 +1,33 @@
+/* Real-calendar, authored single-player quizzes. No camp-time reset or network. */
+(function(root,factory){const q=factory();if(typeof module==='object'&&module.exports)module.exports=q;else root.HoneybrookDailyQuiz=q;})(typeof globalThis==='object'?globalThis:this,function(){'use strict';
+const levels=['beginner','easy','normal','intermediate','hard','pro'];
+function random(seed){let n=2166136261;for(const c of seed)n=Math.imul(n^c.charCodeAt(0),16777619);return()=>{n+=0x6D2B79F5;let x=Math.imul(n^n>>>15,1|n);x^=x+Math.imul(x^x>>>7,61|x);return((x^x>>>14)>>>0)/4294967296;};}
+function shuffle(a,r){a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(r()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+const facts=[
+['In Psalm 23:1 KJV, who is called “my shepherd”?','The LORD',['A king','A merchant'],'“The LORD is my shepherd; I shall not want.”'],
+['Which fruit of the Spirit in Galatians 5:22 KJV describes a peaceful camp atmosphere?','Peace',['Pride','Quarreling'],'Galatians 5:22 includes love, joy and peace.'],
+['Who built an ark in Genesis?','Noah',['Moses','David'],'Noah obeyed God’s instruction to build the ark.'],
+['Who led the Israelites out of Egypt?','Moses',['Noah','Solomon'],'Moses led the Exodus.'],
+['Which Psalm begins “The LORD is my shepherd”?','Psalm 23',['Psalm 1','Psalm 150'],'Psalm 23 begins with this familiar KJV verse.'],
+['How should a shared family plan become a recorded memory?','Complete the planned activity together',['Only talk about it','Buy a friendship'],'A shared memory follows the activity actually completed.'],
+['When may a supervised campfire begin?','At night, after conditions and equipment are checked',['At any time','During a thunderstorm'],'Nighttime, supervision and safe conditions are all required.'],
+['What should happen before beginning the hills trip?','Every camper and shared checklist must be complete',['A single person packs','The trip starts automatically'],'The whole group must be ready before the Begin camping trip notification appears.'],
+['What belongs in the camping-equipment Wilderness Store?','Shelter and sleeping equipment',['Cafeteria groceries','Souvenir sweets'],'General merchandise belongs in the connected Camp Store.'],
+['What should a helper check before serving a family meal?','The recipe, portions and dietary needs with the supervisor',['Only its color','Only its price'],'Substantial meals require checked portions, safe preparation and suitable alternatives.'],
+['What should you do during unsafe outdoor weather?','Follow staff into the camp shelter',['Continue swimming','Begin a long exposed hike'],'Outdoor recreation closes when conditions require shelter.'],
+['What is a good first repair step?','Inspect and measure with the supervisor',['Claim the repair is finished','Paint over the problem'],'A checked plan comes before supervised repairs.'],
+['Which calendar refreshes the daily quiz?','The real U.S. calendar',['Resting in camp','Changing a role'],'Camp rest never changes the real-calendar quiz date.'],
+['Which action begins the next camp day?','Deliberate rest',['Browsing a room','Waiting a few real seconds'],'Honeybrook days remain unhurried until the player chooses rest.'],
+['How is leadership earned?','Through completed service, trust and practiced skills',['By purchasing a title','By skipping inspections'],'Money cannot buy leadership qualifications.'],
+['What should happen to a read letter?','File its event in history and remove it from unread mail',['Keep it marked unread','Erase the whole family history'],'The unread inbox contains only unread mail.'],
+['What helps a planting bed thrive?','Suitable soil, careful planting and appropriate watering',['Trampling roots','Never inspecting plants'],'Gardening follows the plant’s needs.'],
+['Which order supports a useful research finding?','Question, sources, comparison, supported conclusion',['Conclusion first, sources never','Guess and publish'],'Research distinguishes evidence from guesses.'],
+['What makes a safe return route?','Marked connected paths and a known destination',['Unmarked shortcuts','Ignoring the map'],'Public paths and clear return directions support a safe visit.'],
+['How should children take part away from their parents?','With an assigned camp supervisor',['Without any check-in','Without age-appropriate rules'],'Staff supervision and age-appropriate activities remain essential.'],
+['What does an accurate business ledger include?','Customers served, supplies, wages and net income',['Only ownership','Only a name'],'Management includes service, standards and accounts.'],
+['What is a wholesome campfire story choice?','A family memory or encouraging testimony',['A ghost story','A manufactured argument'],'Honeybrook’s gatherings remain peaceful and welcoming.'],
+['What is a useful inspection?','Compare the finished work with the actual work order',['Tick a box before doing the work','Skip the handover'],'Inspection follows real preparation and work.'],
+['How can a completed craft last beyond today?','Keep the inspected project in the scrapbook',['Reset all possessions','Discard every project'],'Kept work becomes a lasting accomplishment.']];
+function questions(date,level){if(!levels.includes(level))throw Error('Choose a quiz level.');const d=levels.indexOf(level),r=random(date+'|'+level),bank=facts.map((f,i)=>({id:'fact-'+i,prompt:f[0],answer:f[1],wrong:f[2],review:f[3]}));for(let i=0;i<24;i++){const a=1+Math.floor(r()*(5+d*7)),b=1+Math.floor(r()*(4+d*5)),multiply=d>=3&&i%2===0,answer=multiply?a*b:a+b;bank.push({id:'number-'+i,prompt:multiply?`${a} family tables need ${b} places each. How many places are needed?`:`A camp team prepares ${a} parcels, then ${b} more. How many parcels are ready?`,answer:String(answer),wrong:[String(answer+1+d),String(Math.max(0,answer-1-d))],review:multiply?`${a} × ${b} = ${answer}.`:`${a} + ${b} = ${answer}.`});}return shuffle(bank,r).slice(0,20).map(q=>{const options=shuffle([q.answer,...q.wrong],r);return{id:q.id,prompt:q.prompt,options,correct:options.indexOf(q.answer),review:q.review};});}
+function valid(s){return s==null||typeof s==='object'&&!Array.isArray(s)&&typeof s.date==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(s.date)&&levels.includes(s.level)&&Array.isArray(s.answers)&&s.answers.length<=20&&s.answers.every(n=>Number.isInteger(n)&&n>=0&&n<3);}
+return {levels,questions,valid};});

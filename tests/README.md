@@ -29,3 +29,7 @@ Run `tests/adventure.mjs` for house rooms and object changes, native map entry, 
 Run `tests/venues.mjs` for the 24 venue-specific activities: bowling and golf scoring, memory pairs, quiz answers, directional sequences, film choices, orchard harvest, picnic serving, the mill, field journals, dental cleaning, station kits, clinic requests, quiet modes, sports shots, and playground movement. Use only local TEST_URL values.
 
 Run `tests/venue-recovery.mjs` for memory-card reload recovery and a full playground run, including jumping both obstacles, saved completion, restart, and stopping held movement when the window loses focus.
+
+`node tests/town-activities.cjs` verifies all 86 town assignments: preparation costs, typed hands-on work, delivery-only rewards, step/bypass guards, histories, relationships, valid serialized saves, three-per-day limits, unfinished preparations across rest, and all six real-date twenty-question quiz levels.
+
+`PLAYWRIGHT_MODULE=/workspace/.honeybrook-tools/node_modules/playwright/index.mjs CHROMIUM_PATH=/usr/bin/chromium node tests/town-activities.mjs` checks every town activity entrance and exercises every work-interaction type through its actual controls at 1440px and 390px. It verifies photos, payments, recorded results, reload, quiz interruption/resume and deliberate rest. Isolated browser contexts contain only synthetic test saves.

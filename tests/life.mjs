@@ -17,7 +17,7 @@ try{
   await button('task','welcome').filter({hasText:'Record the marked'}).click();await button('task','welcome').filter({hasText:'Listening, learning'}).click();assert.equal((await snapshot()).completed,1);
   assert.match(await root.textContent(),/survey/);assert.equal(await button('task','welcome').first().isDisabled(),true);
   const places=await p.evaluate(()=>Object.keys(HoneybrookLife.locations));
-  for(const id of places){await visit(id);const photo=root.locator('.life-scene>img');await photo.evaluate(n=>n.decode());assert(await photo.evaluate(n=>n.naturalWidth>0));assert.match(await root.locator('.eyebrow').last().textContent(),/YOU ARE HERE/);assert(await root.evaluate(n=>n.scrollWidth<=n.clientWidth+1),id+' layout');}
+  for(const id of places){await visit(id);const photo=root.locator('.life-scene img');await photo.evaluate(n=>n.decode());assert(await photo.evaluate(n=>n.naturalWidth>0));assert.match(await root.locator('.eyebrow').last().textContent(),/YOU ARE HERE/);assert(await root.evaluate(n=>n.scrollWidth<=n.clientWidth+1),id+' layout');}
   await visit('dining');
   const completeCook=async()=>{await button('task','cook').filter({hasText:'Check the menu'}).click();await button('task','cook').filter({hasText:'Wash hands'}).click();await button('task','cook').filter({hasText:'Check the recipe'}).click();};
   const balance=(await snapshot()).balance;await button('task','cook').filter({hasText:'Guess the ingredients'}).click();assert.equal((await snapshot()).balance,balance);
