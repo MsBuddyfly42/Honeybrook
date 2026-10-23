@@ -1,6 +1,6 @@
 # Request coverage and remaining work
 
-This is an additive local implementation, not completion of the owner's entire world specification and not evidence of a Render release. See WORLD_PREFERENCES.md for the standing requirements.
+This document records the original implementation and subsequent dated releases. Later entries supersede earlier story and artwork descriptions; release evidence is recorded with each publication. The complete camp wishlist remains broader than the implemented systems. See WORLD_PREFERENCES.md and story/CANON.md for current authority.
 
 ## Implemented in My Honeybrook Life
 
