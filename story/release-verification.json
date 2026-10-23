@@ -1,0 +1,360 @@
+{
+  "release": "3caf317",
+  "files": [
+    {
+      "path": "app.js",
+      "match": true,
+      "sha256": "5e6bc7d0e794c32bfc08d05b4d6795a7a193b174d20822349b79e464b4aafc67",
+      "expected": "5e6bc7d0e794c32bfc08d05b4d6795a7a193b174d20822349b79e464b4aafc67"
+    },
+    {
+      "path": "assets/story-scenes/book-01.webp",
+      "match": true,
+      "sha256": "a9b8502e3b4c5adaa56c2f87dbef67603b4e2a4a28945dfa512eb82ddaf87cfa",
+      "expected": "a9b8502e3b4c5adaa56c2f87dbef67603b4e2a4a28945dfa512eb82ddaf87cfa"
+    },
+    {
+      "path": "assets/story-scenes/book-02.webp",
+      "match": true,
+      "sha256": "8928bdfa6f063aeeebbff475a51baff0f9dd0fa59358addb1a7f6f3cb513b4b3",
+      "expected": "8928bdfa6f063aeeebbff475a51baff0f9dd0fa59358addb1a7f6f3cb513b4b3"
+    },
+    {
+      "path": "assets/story-scenes/book-03.webp",
+      "match": true,
+      "sha256": "e560b41d1d3d42c7abffc6b761f4e36b42ce81c870a97311ec571c58c1851b81",
+      "expected": "e560b41d1d3d42c7abffc6b761f4e36b42ce81c870a97311ec571c58c1851b81"
+    },
+    {
+      "path": "assets/story-scenes/book-04.webp",
+      "match": true,
+      "sha256": "4c8a673e57aa2d81ebf26bed59f2a2c18f2ff8e30542798a5c68b143a6409a65",
+      "expected": "4c8a673e57aa2d81ebf26bed59f2a2c18f2ff8e30542798a5c68b143a6409a65"
+    },
+    {
+      "path": "assets/story-scenes/book-05.webp",
+      "match": true,
+      "sha256": "b9a2050f298e20ea1a41bd4eadf19c17f7ba246b2f44e9488424d302c5848421",
+      "expected": "b9a2050f298e20ea1a41bd4eadf19c17f7ba246b2f44e9488424d302c5848421"
+    },
+    {
+      "path": "assets/story-scenes/book-06.webp",
+      "match": true,
+      "sha256": "c307461bca50c63892e51acc6af0a164b40888e0b273da57c6c767266a735217",
+      "expected": "c307461bca50c63892e51acc6af0a164b40888e0b273da57c6c767266a735217"
+    },
+    {
+      "path": "assets/story-scenes/book-07.webp",
+      "match": true,
+      "sha256": "d2792b0f5207ae73771bfb7c217476c31df0eda8fa4a3c6d3d6fc942999ec015",
+      "expected": "d2792b0f5207ae73771bfb7c217476c31df0eda8fa4a3c6d3d6fc942999ec015"
+    },
+    {
+      "path": "assets/story-scenes/book-08.webp",
+      "match": true,
+      "sha256": "8d3719f633b077778514d68e7be5c679f9d8dd895a60c754b1c9ff17d254a5e2",
+      "expected": "8d3719f633b077778514d68e7be5c679f9d8dd895a60c754b1c9ff17d254a5e2"
+    },
+    {
+      "path": "assets/story-scenes/book-09.webp",
+      "match": true,
+      "sha256": "d5887eb88b417e51983f6a582addb9261ebc177fbcb33ce597c80fa706cb74b2",
+      "expected": "d5887eb88b417e51983f6a582addb9261ebc177fbcb33ce597c80fa706cb74b2"
+    },
+    {
+      "path": "assets/story-scenes/book-10.webp",
+      "match": true,
+      "sha256": "065e28944c6e9d9e813dead8fcfa7b15161daa4b165502120e5744a17250653b",
+      "expected": "065e28944c6e9d9e813dead8fcfa7b15161daa4b165502120e5744a17250653b"
+    },
+    {
+      "path": "assets/story-scenes/book-11.webp",
+      "match": true,
+      "sha256": "e57b85632046e39a42b34afce1acd7639e6558e20b00d1f9db4c39c7241c3fef",
+      "expected": "e57b85632046e39a42b34afce1acd7639e6558e20b00d1f9db4c39c7241c3fef"
+    },
+    {
+      "path": "assets/story-scenes/book-12.webp",
+      "match": true,
+      "sha256": "422a069abb38e9acf9d4dcb0d29ccf5fc354e261c5e4bbdce9b4912228f59083",
+      "expected": "422a069abb38e9acf9d4dcb0d29ccf5fc354e261c5e4bbdce9b4912228f59083"
+    },
+    {
+      "path": "assets/story-scenes/book-13.webp",
+      "match": true,
+      "sha256": "dace81cfe2934232c3bec0a4f647a37526e5cf12a6c4b2593b7c2d64d3d6a6db",
+      "expected": "dace81cfe2934232c3bec0a4f647a37526e5cf12a6c4b2593b7c2d64d3d6a6db"
+    },
+    {
+      "path": "assets/story-scenes/book-14.webp",
+      "match": true,
+      "sha256": "31c8c0052a03ffe3226f4ed7f47a1fd9369998085440d6cb98db26a425529046",
+      "expected": "31c8c0052a03ffe3226f4ed7f47a1fd9369998085440d6cb98db26a425529046"
+    },
+    {
+      "path": "assets/story-scenes/book-15.webp",
+      "match": true,
+      "sha256": "783dc18db3b26a9b9a69b2f9a9cea9f4495ce495b1e4966671ab6aac63e81d4e",
+      "expected": "783dc18db3b26a9b9a69b2f9a9cea9f4495ce495b1e4966671ab6aac63e81d4e"
+    },
+    {
+      "path": "assets/story-scenes/book-16.webp",
+      "match": true,
+      "sha256": "b4c64863f97a8d9c067756d98fa37e91b1a79afd84870c9b81fa16e00ab997a9",
+      "expected": "b4c64863f97a8d9c067756d98fa37e91b1a79afd84870c9b81fa16e00ab997a9"
+    },
+    {
+      "path": "assets/story-scenes/book-17.webp",
+      "match": true,
+      "sha256": "79f73c9e1b190ebcfe7bcc8be360e5fd8646deded60ddcd879efe32881c959ce",
+      "expected": "79f73c9e1b190ebcfe7bcc8be360e5fd8646deded60ddcd879efe32881c959ce"
+    },
+    {
+      "path": "assets/story-scenes/book-18.webp",
+      "match": true,
+      "sha256": "1e85fbdd2e8a6221c9a9ed3e2af6131586ddd33d7ae748f216d5bb8f30bba88e",
+      "expected": "1e85fbdd2e8a6221c9a9ed3e2af6131586ddd33d7ae748f216d5bb8f30bba88e"
+    },
+    {
+      "path": "assets/story-scenes/book-19.webp",
+      "match": true,
+      "sha256": "55675984558ac8566f03c7912134900509fb8ee3c51df1e360b5530151a59db2",
+      "expected": "55675984558ac8566f03c7912134900509fb8ee3c51df1e360b5530151a59db2"
+    },
+    {
+      "path": "assets/story-scenes/book-20.webp",
+      "match": true,
+      "sha256": "2b83eabd2ae347f56342909180ef2bcf7430a5398b330c5cd083ca0472b6f0fa",
+      "expected": "2b83eabd2ae347f56342909180ef2bcf7430a5398b330c5cd083ca0472b6f0fa"
+    },
+    {
+      "path": "assets/story-scenes/cast-founders.webp",
+      "match": true,
+      "sha256": "3fb3b80800ac91939300632c6c045ea0cb94b221ddc22aa19f46b5eaa561d3f5",
+      "expected": "3fb3b80800ac91939300632c6c045ea0cb94b221ddc22aa19f46b5eaa561d3f5"
+    },
+    {
+      "path": "assets/story-scenes/cast-hearthwells.webp",
+      "match": true,
+      "sha256": "8c66d04254764ff8d44ba84632e1788e0fcbfccf569f19f226b7467d379174eb",
+      "expected": "8c66d04254764ff8d44ba84632e1788e0fcbfccf569f19f226b7467d379174eb"
+    },
+    {
+      "path": "assets/story-scenes/cast-neighbors.webp",
+      "match": true,
+      "sha256": "29bc19e4eba05d5684d52a155875fbd05d01c65efb90c3ec7266be81c702a5f0",
+      "expected": "29bc19e4eba05d5684d52a155875fbd05d01c65efb90c3ec7266be81c702a5f0"
+    },
+    {
+      "path": "assets/story-scenes/cast-origins.webp",
+      "match": true,
+      "sha256": "9aace084e72315da8aaeda10686f82f8b1c9e5a8d55b4eb1b0793f63f40833e8",
+      "expected": "9aace084e72315da8aaeda10686f82f8b1c9e5a8d55b4eb1b0793f63f40833e8"
+    },
+    {
+      "path": "assets/story-scenes/manifest.json",
+      "match": true,
+      "sha256": "5fd1f10482675719a3d8ed5d5ea881508f74cd817d54e5289c0d2d3d1757369c",
+      "expected": "5fd1f10482675719a3d8ed5d5ea881508f74cd817d54e5289c0d2d3d1757369c"
+    },
+    {
+      "path": "bear-hollow-data.js",
+      "match": true,
+      "sha256": "76e9531da92e75a9fcf014f69e0adf6d3aec1acc5b155588e851825d1643710e",
+      "expected": "76e9531da92e75a9fcf014f69e0adf6d3aec1acc5b155588e851825d1643710e"
+    },
+    {
+      "path": "canon-integration.js",
+      "match": true,
+      "sha256": "c2e8f30aed8cbae1829c0a90c88a03e7705a842aaced8bbb4bab946a9ecbb052",
+      "expected": "c2e8f30aed8cbae1829c0a90c88a03e7705a842aaced8bbb4bab946a9ecbb052"
+    },
+    {
+      "path": "chronicles.css",
+      "match": true,
+      "sha256": "9a7d809006cd4961e3c03b0e6fea38d06306d68d05cd8e570a3237d36c716547",
+      "expected": "9a7d809006cd4961e3c03b0e6fea38d06306d68d05cd8e570a3237d36c716547"
+    },
+    {
+      "path": "chronicles.html",
+      "match": true,
+      "sha256": "4a94f9854597a02e34ff0372add1c5b9d27e25f2181644c2238b0d67a2658a22",
+      "expected": "4a94f9854597a02e34ff0372add1c5b9d27e25f2181644c2238b0d67a2658a22"
+    },
+    {
+      "path": "chronicles.js",
+      "match": true,
+      "sha256": "46aabe56bf1df1a515719de712ff64b14a00c5cd5dbc4bb173c7772d46ed4415",
+      "expected": "46aabe56bf1df1a515719de712ff64b14a00c5cd5dbc4bb173c7772d46ed4415"
+    },
+    {
+      "path": "country-style.css",
+      "match": true,
+      "sha256": "1a2188dad30034bd80c3a1b633bca0412222d303c125555aca3c2217accd42c8",
+      "expected": "1a2188dad30034bd80c3a1b633bca0412222d303c125555aca3c2217accd42c8"
+    },
+    {
+      "path": "games/honeybrook-craft-fair/bear-country.js",
+      "match": true,
+      "sha256": "09a35dcaf3fc448de424fed3d6c2bf0a78dc117cda57a4eaa72b290b006a7e1d",
+      "expected": "09a35dcaf3fc448de424fed3d6c2bf0a78dc117cda57a4eaa72b290b006a7e1d"
+    },
+    {
+      "path": "games/honeybrook-craft-fair/game.js",
+      "match": true,
+      "sha256": "bdbe6492f10f5fba5049985210c4c3ad1f9d75828038a61f917bb406a037ccb7",
+      "expected": "bdbe6492f10f5fba5049985210c4c3ad1f9d75828038a61f917bb406a037ccb7"
+    },
+    {
+      "path": "games/honeybrook-craft-fair/index.html",
+      "match": true,
+      "sha256": "45406f7148f9bc93f9e071bf7ea3532c21f62df7666453a5464ff4982543eb0a",
+      "expected": "45406f7148f9bc93f9e071bf7ea3532c21f62df7666453a5464ff4982543eb0a"
+    },
+    {
+      "path": "honeybrook-life.js",
+      "match": true,
+      "sha256": "6bca8865af15428c7038173100415ec602967db923b176ff8b38f7bae6d7492b",
+      "expected": "6bca8865af15428c7038173100415ec602967db923b176ff8b38f7bae6d7492b"
+    },
+    {
+      "path": "index.html",
+      "match": true,
+      "sha256": "affd935a3f2b81787fa676f2efcaaf7542e269f431f1bd0af0631877a4682695",
+      "expected": "affd935a3f2b81787fa676f2efcaaf7542e269f431f1bd0af0631877a4682695"
+    },
+    {
+      "path": "life-engine.js",
+      "match": true,
+      "sha256": "5f0221425872ece66012d9894e22b2d59eea07d69b329369eb26c7e6281af6ee",
+      "expected": "5f0221425872ece66012d9894e22b2d59eea07d69b329369eb26c7e6281af6ee"
+    },
+    {
+      "path": "living-places.js",
+      "match": true,
+      "sha256": "e9ebede99133dde21a8cbd06d7efc08aaa646749174f4a2b2dac6c5660b40942",
+      "expected": "e9ebede99133dde21a8cbd06d7efc08aaa646749174f4a2b2dac6c5660b40942"
+    },
+    {
+      "path": "story-data.js",
+      "match": true,
+      "sha256": "7b3da9d49e907c40e5a360eb95df5289c330360bfe732f222958a72853d1d542",
+      "expected": "7b3da9d49e907c40e5a360eb95df5289c330360bfe732f222958a72853d1d542"
+    },
+    {
+      "path": "story-engine.js",
+      "match": true,
+      "sha256": "f423591bba1ff9c821ee4e4682cec7871e4e672b976557b2318abd97286ed4c7",
+      "expected": "f423591bba1ff9c821ee4e4682cec7871e4e672b976557b2318abd97286ed4c7"
+    },
+    {
+      "path": "story/CANON.md",
+      "match": true,
+      "sha256": "d6d35510092c688a6db736b7d6e9b7448edfa8d18144fc6dfb3452253b2827d5",
+      "expected": "d6d35510092c688a6db736b7d6e9b7448edfa8d18144fc6dfb3452253b2827d5"
+    },
+    {
+      "path": "story/Honeybrook_Complete_Story_Manuscript.docx",
+      "match": true,
+      "sha256": "8c3c52318cd77fe5253987fbf77850d8c0ebc49bb15bb6fa142dbe38f4822cab",
+      "expected": "8c3c52318cd77fe5253987fbf77850d8c0ebc49bb15bb6fa142dbe38f4822cab"
+    },
+    {
+      "path": "story/SCENE_CREDITS.html",
+      "match": true,
+      "sha256": "98e9d166bacd764c6e15322d744a2f26b1ab5d2d4b9ec058c2a9218853177869",
+      "expected": "98e9d166bacd764c6e15322d744a2f26b1ab5d2d4b9ec058c2a9218853177869"
+    },
+    {
+      "path": "story/SCENE_REVIEW.md",
+      "match": true,
+      "sha256": "8bca0cdf13359f3519c90970b6b5ec62d5213675d78d1f49bd6fbfd526aa9a03",
+      "expected": "8bca0cdf13359f3519c90970b6b5ec62d5213675d78d1f49bd6fbfd526aa9a03"
+    },
+    {
+      "path": "story/additional-scene-plan.json",
+      "match": true,
+      "sha256": "81ad7b44d2ac70e2015141157727016bb83f9e0641aeb54d7d0ba3634c2311ad",
+      "expected": "81ad7b44d2ac70e2015141157727016bb83f9e0641aeb54d7d0ba3634c2311ad"
+    },
+    {
+      "path": "story/cast.json",
+      "match": true,
+      "sha256": "1c61a946a21af266febcd6b2ac8ae2397590938c4a266750a92141b5b51710b1",
+      "expected": "1c61a946a21af266febcd6b2ac8ae2397590938c4a266750a92141b5b51710b1"
+    },
+    {
+      "path": "story/image-plan.json",
+      "match": true,
+      "sha256": "e1dad7187682c0f4633c3ddeda95140803e7ce6b3c2957407a8c9e593627c684",
+      "expected": "e1dad7187682c0f4633c3ddeda95140803e7ce6b3c2957407a8c9e593627c684"
+    },
+    {
+      "path": "story/manuscript.json",
+      "match": true,
+      "sha256": "928b90d6b2b5677ab4d3bb240a5796134efab2dc8ebad83262ddfd9599283671",
+      "expected": "928b90d6b2b5677ab4d3bb240a5796134efab2dc8ebad83262ddfd9599283671"
+    },
+    {
+      "path": "story/manuscript.txt",
+      "match": true,
+      "sha256": "c0cca66c22301fe1b2531c08d488d47601e5dddb863ce69c67c2bc6b84adb55d",
+      "expected": "c0cca66c22301fe1b2531c08d488d47601e5dddb863ce69c67c2bc6b84adb55d"
+    },
+    {
+      "path": "story/scene-coverage.json",
+      "match": true,
+      "sha256": "a89a689373cbcf2fe2cd3f8aaf9f5285d1163863a9471473f537319148b29e2c",
+      "expected": "a89a689373cbcf2fe2cd3f8aaf9f5285d1163863a9471473f537319148b29e2c"
+    },
+    {
+      "path": "story/scene-plan.tsv",
+      "match": true,
+      "sha256": "1145c5facc3cc5ac7868f626adfd46ab045053734e7ce467816960116b95691e",
+      "expected": "1145c5facc3cc5ac7868f626adfd46ab045053734e7ce467816960116b95691e"
+    },
+    {
+      "path": "town-activity-data.js",
+      "match": true,
+      "sha256": "239a4563cb61f0021f390a2c6ad2274d76e7034696cb15d70a1eed6110a92cbe",
+      "expected": "239a4563cb61f0021f390a2c6ad2274d76e7034696cb15d70a1eed6110a92cbe"
+    },
+    {
+      "path": "town-walk.js",
+      "match": true,
+      "sha256": "6e504d74d87d75acaa3d49baf5ff7ab8d6b89a943ca2981da214e8b958dc9787",
+      "expected": "6e504d74d87d75acaa3d49baf5ff7ab8d6b89a943ca2981da214e8b958dc9787"
+    },
+    {
+      "path": "assets/bear-country/fonts/fraunces.ttf",
+      "match": true,
+      "sha256": "177ff6c0f14e5550a3c624247cd1189611d4eb65d000b14944c63d967958abbb",
+      "expected": "177ff6c0f14e5550a3c624247cd1189611d4eb65d000b14944c63d967958abbb"
+    },
+    {
+      "path": "assets/bear-country/fonts/nunito.ttf",
+      "match": true,
+      "sha256": "bb55a5ca5c2042335b3991af27c4d0705d0ef41cac6164ac737fd8f2a1e85207",
+      "expected": "bb55a5ca5c2042335b3991af27c4d0705d0ef41cac6164ac737fd8f2a1e85207"
+    }
+  ],
+  "date": "2026-10-23",
+  "storyGameplayRelease": "a59a07f",
+  "finalPresentationRelease": "3caf317",
+  "tlsVerification": true,
+  "ownerSavesAccessed": false,
+  "newServices": false,
+  "liveBrowserChecks": {
+    "completeStory": [
+      "PASS 1440px: all 71 scene activities through actual controls, every full chapter paragraph, all photos decoded, 41 source characters, 29 places, partial/reloaded progress, once-only memories, notes, backup/invalid preview/conflicting restore, earlier game saves untouched, no overflow/runtime errors.",
+      "PASS 390px: all 71 scene activities through actual controls, every full chapter paragraph, all photos decoded, 41 source characters, 29 places, partial/reloaded progress, once-only memories, notes, backup/invalid preview/conflicting restore, earlier game saves untouched, no overflow/runtime errors.",
+      "PASS malformed story data preserved; full prose remains readable."
+    ],
+    "finalTownIntegration": [
+      "PASS 1440px: original family/companions, archived paid-work save untouched, source-linked Hearthwell room and native school, distinct bridges, complete native neighbor roster and supported nonspeaking Lena visit.",
+      "PASS 390px: original family/companions, archived paid-work save untouched, source-linked Hearthwell room and native school, distinct bridges, complete native neighbor roster and supported nonspeaking Lena visit."
+    ]
+  },
+  "unqueriedHomeMatches": true,
+  "method": "Published HTTPS responses downloaded with certificate-verified curl and used in isolated Chromium contexts through a response harness. Canonical index pages and fresh verification queries avoided stale Render CDN entries; the unqueried homepage also matched the final release."
+}
