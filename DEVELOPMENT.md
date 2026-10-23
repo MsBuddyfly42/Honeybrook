@@ -51,3 +51,7 @@ Serve the repository root as the existing Render static site does; no new runtim
 The new life record is `honeybrook_life_v1`; its previous-state checkpoint is `honeybrook_life_checkpoint_v1`. Legacy town and Fair save keys remain intact. World backups preserve the original string formats of matching `honeybrook_` keys and `honeybrookTownJournal`, rather than assuming every older record is JSON. Checkpoints apply to the new life record; they are not full legacy-world snapshots.
 
 Import previews explain what will be replaced. Confirming restore downloads the current browser's backup, applies the selected records with rollback on storage-write failure, and reloads before legacy modules can continue with stale in-memory data. Changes from another tab stop a stale save. Supported browsers serialize life writes with Web Locks; other browsers use a synchronous revision comparison. Private cross-device synchronization remains unimplemented until the existing authenticated save service can be inspected.
+
+## Unified city map checks
+
+Run `node tests/city-map.mjs` with the same Playwright environment above. It checks the shared fifteen-area city map at desktop and phone widths, all thirteen district round trips, searchable classroom/venue entrances, real legacy town and Bear Hollow rooms, automatic continuation of an existing save, city-map returns, the separate Fair gate, keyboard/zoom and preservation of existing learning/life/game progress. `tests/connected-town.mjs` and `tests/browser.mjs` also cover the pre-existing routes and save/backup flows.

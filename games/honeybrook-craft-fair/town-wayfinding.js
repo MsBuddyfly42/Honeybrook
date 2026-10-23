@@ -2,7 +2,7 @@
 (()=>{'use strict';
 const geography=window.HoneybrookGeography;
 function element(tag,text){const n=document.createElement(tag);if(text)n.textContent=text;return n;}
-function refresh(){const api=window.HoneybrookTownNavigation;if(!api?.isTown)return;const c=api.context();let drawer=document.getElementById('connected-town-paths');if(c.scene==='title'){if(drawer)drawer.hidden=true;return;}
+function refresh(){const api=window.HoneybrookTownNavigation;if(!api?.isTown)return;const c=api.context();let map=document.querySelector('.city-map-launch');if(!map){map=element('a','🗺️ Whole Honeybrook City Map');map.className='city-map-launch';document.body.append(map);}const cityKey=c.parent==='hollow'||c.key==='hollow'?'hollow':c.key==='town'?'town':geography.districts[c.parent]?c.parent:'ts';map.href='../../index.html#citymap&from='+cityKey;let drawer=document.getElementById('connected-town-paths');if(c.scene==='title'){if(drawer)drawer.hidden=true;return;}
 if(!drawer){drawer=element('details');drawer.id='connected-town-paths';document.body.append(drawer);}drawer.hidden=false;const wasOpen=drawer.open;drawer.replaceChildren();drawer.append(element('summary','Town paths · '+c.name));const body=element('div');drawer.append(body);body.append(element('p','You are in '+c.name+'. The Fairgrounds have their own entrance from Town Square.'));
 function open(text,key){const b=element('button',text);b.type='button';b.dataset.townRoute=key;b.onclick=()=>{api.open(key);drawer.open=false;};body.append(b);}
 function district(text,key){const a=element('a',text);a.href='../../index.html#district='+key;a.dataset.districtRoute=key;body.append(a);}
@@ -29,7 +29,8 @@ if(c.scene==='town'||c.key==='hollow'){
 if(c.scene==='town'){
  const fair=element('a','Town Square gate → Fairgrounds (separate portal)');fair.href='?portal=fair&return=ts';fair.className='connected-fair-gate';body.append(fair);
 }
-drawer.open=wasOpen;document.title=c.name+' · Honeybrook town';const back=document.querySelector('.town-return-portal');if(back){const parent=c.parent==='hollow'?'bv':c.parent;back.textContent='← Exit to '+(geography.districts[parent]?.name||'Honeybrook districts');back.href='../../index.html#district='+parent;}
+drawer.open=wasOpen;document.title=c.name+' · Honeybrook town';const back=document.querySelector('.town-return-portal');if(back&&new URLSearchParams(location.search).get('city')==='1'){back.textContent='← Whole Honeybrook City Map';back.href=map.href;}else if(back){const parent=c.parent==='hollow'?'bv':c.parent;back.textContent='← Exit to '+(geography.districts[parent]?.name||'Honeybrook districts');back.href='../../index.html#district='+parent;}
 }
+if(new URLSearchParams(location.search).get('city')==='1'){addEventListener('DOMContentLoaded',()=>{if(window.HoneybrookTownNavigation?.isTown&&!document.querySelector('#continue-box')?.hidden)document.querySelector('#btn-continue')?.click();});}
 addEventListener('honeybrook-scene-change',refresh);if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',refresh);else refresh();
 })();

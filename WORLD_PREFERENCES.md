@@ -93,3 +93,7 @@ Connect all town districts, paths, entrances, exits and home stairs logically. K
 ## Classroom visual clarification
 
 The owner explicitly rejects illustrated artwork for classrooms. Match the photographic-style materials, warm lighting and room treatment of the existing Honeybrook schoolroom, with working lessons and connected corridor exits.
+
+## Unified city map clarification
+
+The owner wants all thirteen districts, Honeybrook town and Bear Hollow visible together on one connected city map, with clear travel and return routes, city-wide location search and a separate Fairgrounds portal. Add this without replacing or damaging the previously approved rooms, photographic-style scenery, activities, navigation or existing saves.
