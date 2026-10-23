@@ -11,7 +11,7 @@ try{for(const width of [1440,390]){
  const partners=await p.locator('[data-life="partner"]').evaluateAll(bs=>bs.map(b=>b.dataset.id));
  for(const id of ['templar','buddy','mary','lena','landis','sammy','harold','ranger','older-cub'])assert(partners.includes(id));
  assert(!partners.includes('carmen'),'Carmen waits for her arrival');
- await p.evaluate(()=>localStorage.setItem('honeybrook_craft_fair_save_v1',JSON.stringify({storyPts:28})));await p.reload();await p.locator('[data-life-open="continue"]').first().click();await p.locator('.life-tabs [data-id="family"]').click();assert.equal(await p.locator('[data-life="partner"][data-id="carmen"]').count(),1);
+ await p.evaluate(()=>localStorage.setItem('honeybrook_craft_fair_save_v1',JSON.stringify({storyPts:28})));await p.reload();await p.locator('[data-life-open="continue"]').first().click();await p.locator('.life-tabs [data-id="family"]').click();assert.equal(await p.locator('[data-life="partner"][data-id="carmen"]').count(),0);assert.match(await p.locator('#honeybrookLife').textContent(),/Nell/);
  assert(!partners.includes('maya'));assert(!partners.includes('sofia'));
  assert.deepEqual(await p.evaluate(()=>JSON.parse(localStorage.getItem('honeybrook_life_v1'))),fixture,'Browsing original cast never rewrites old balances, relationships or paid work');
  await p.goto(base+'#visit='+encodeURIComponent('Hearthwell Home'));

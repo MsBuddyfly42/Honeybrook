@@ -14,3 +14,10 @@ html[data-honeybrook-light=night] #bake-canvas,html[data-honeybrook-light=night]
 .hb-fixture{width:8%;height:35%;opacity:.8}.hb-indoor-fixtures .hb-fixture{width:7%;height:25%}.hb-scene-fixtures{opacity:.6}html[data-honeybrook-light=night] .fixture-glass{filter:drop-shadow(0 0 2px #edb96b55)}html[data-honeybrook-light=night] .fixture-bloom{opacity:.6}
 /* Leave scroll space below the last action so the compact sound control never covers it. */
 body:has(>.honeybrook-sound){padding-bottom:120px}.honeybrook-sound{max-height:75vh;overflow:auto}
+.nell-character-portrait{height:340px;display:flex;justify-content:center;background:#e8dcc4;border-radius:14px;overflow:hidden}.nell-character-portrait img{height:100%;width:auto;max-width:100%;object-fit:contain}.nell-player-figure{object-fit:contain!important;object-position:bottom!important}.nell-action-figure{max-height:230px;max-width:45%;object-fit:contain;object-position:bottom}.nell-action-figure[data-pose="6"]{transform:rotate(75deg);transform-origin:center}
+/* Sound controls live in navigation rather than covering game actions. */
+.honeybrook-sound{position:relative!important;bottom:auto;right:auto;margin:8px;box-shadow:none;flex:0 1 auto}.honeybrook-sound summary{font-size:14px}.honeybrook-sound[open]{min-width:210px}.community-header .honeybrook-sound{color:#263e2e}
+.bear-lingo-chatter{background:#fff2cc;border-left:3px solid #ac8137;padding:12px;color:#294b35}#lingoWords dt,#lingoPhrases dt{font-weight:bold;color:#33543c;margin-top:18px}#lingoWords dd,#lingoPhrases dd{margin:6px 0 12px;line-height:1.6}
+
+/* Fair sound controls are available inside its deliberately opened menu. */
+#hud:not(.hud-open):not(:focus-within) .honeybrook-sound{display:none}

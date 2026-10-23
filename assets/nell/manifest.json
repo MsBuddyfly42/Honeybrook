@@ -1,0 +1,33 @@
+[
+  {
+    "path": "assets/nell/arrival.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "0c94e1b85501187fcb62cf4eac240c7f1eec843186835b7a296bf07ee64a048b"
+  },
+  {
+    "path": "assets/nell/room.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "1bdf082b0ddd9b8f5c3327c9b4f1f4d70944954313f3d4b1354b1bb54498a01b"
+  },
+  {
+    "path": "assets/nell/letter.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "a2cfa740a56a135b9acb9875b1d060b71d90da88bffd090d79c1073ea34f8e39"
+  },
+  {
+    "path": "assets/nell/night.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "f491cffec21df4793657fd249bb88128c0620d56d68669ce5f6caa99bf054cae"
+  },
+  {
+    "path": "assets/nell/nell.webp",
+    "width": 1024,
+    "height": 1536,
+    "sha256": "1c1f1abdf2c53d655699a0f18cfede53bba545a39d5cb27739564501e326af49",
+    "alpha": true
+  }
+]

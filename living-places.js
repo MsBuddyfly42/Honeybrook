@@ -23,8 +23,8 @@ const person=personFor(k),panel=document.createElement('section');panel.classNam
 
 function renderHandsOn(k,s){
  const stage=root.querySelector('.living-hands-on');if(!stage)return;
- const pose=n=>'<div class="hb-action-pose" data-pose="'+n+'" aria-hidden="true"></div>';
- const sprite=n=>'<img src="assets/'+n+'.webp" alt="">';
+ const pose=n=>'<img class="nell-action-figure" data-pose="'+n+'" src="assets/nell/nell.webp" alt="Nell, a British human woman">';
+ const sprite=n=>'<img src="assets/'+(n==='visitor'?'nell/nell':n)+'.webp" alt="'+(n==='visitor'?'Nell, a British human woman':'')+'">';
  let image='',props='',caption='',mode=k;
  if(k==='bake'){
   const phase=s.phase,ingredients=s.ingredients||[];
@@ -32,16 +32,16 @@ function renderHandsOn(k,s){
   if(phase==='measure'||phase==='mix')props='<div class="living-counter-bowl"><div class="living-bowl-fill" style="height:'+Math.min(80,ingredients.length*24)+'%"></div>'+(phase==='mix'?'<i class="living-mixing-spoon" style="--stir:'+(s.stirs||0)+'"></i>':'')+'</div><div class="living-ingredient-labels">'+ingredients.map(esc).join(' · ')+'</div>';
   if(phase==='oven')props='<div class="living-oven"><div class="living-oven-window">🍪 🍪 🍪</div><i>● ●</i></div><div class="living-steam">♨</div>';
   if(phase==='done')props='<div class="living-cookie-tray">🍪 🍪 🍪</div>';
-  caption=phase==='measure'?ingredients.length+' of 3 ingredients measured into the bowl.':phase==='mix'?'Wally is mixing the dough · '+(s.stirs||0)+' of 5 stirs.':phase==='oven'?'The cookies bake behind the warm oven window.':'The golden cookies are out on the tray.';
+  caption=phase==='measure'?ingredients.length+' of 3 ingredients measured into the bowl.':phase==='mix'?'Nell is mixing the dough with Wally · '+(s.stirs||0)+' of 5 stirs.':phase==='oven'?'The cookies bake behind the warm oven window.':'The golden cookies are out on the tray.';
  }else if(k==='home'){
   image=s.pose==='rest'?pose(6):s.pose==='sit'?pose(2):sprite('visitor');
   props=s.pose==='rest'?'<div class="living-bed"><i></i></div><div class="living-sleep">Z z z</div>':s.pose==='sit'?'<div class="living-reading-rug"></div><div class="living-open-book">📖</div>':'';
-  caption=s.pose==='rest'?'Your bear lies down beneath a blanket. Rest as long as you like.':s.pose==='sit'?'Your bear is sitting down with an open book.':'Your bear is up and ready to enjoy the room.';
+  caption=s.pose==='rest'?'Nell lies down beneath a blanket. Rest as long as you like.':s.pose==='sit'?'Nell is sitting down with an open book.':'Nell is up and ready to enjoy the room.';
   mode+=' '+(s.pose||'stand');
  }else if(k==='garden'){
   const watering=Date.now()<(s.wateringUntil||0);image=watering?pose(5):sprite('visitor');
   props='<div class="living-garden-bed">'+(s.plots||[]).map((p,i)=>'<span class="'+(i===s.wateredPlot&&watering?'living-watered':'')+'">'+(!p?'🟤':!p.wateredAt?'🌱':Date.now()-p.wateredAt>=(p.crop==='flower'?60000:30000)?(p.crop==='flower'?'🌻':'🥕'):'🌿')+'</span>').join('')+'</div>';
-  caption=watering?'Your bear tips the watering can over plot '+((s.wateredPlot||0)+1)+'.':'Plant and water a plot below. Your bear will water it here.';
+  caption=watering?'Nell tips the watering can over plot '+((s.wateredPlot||0)+1)+'.':'Plant and water a plot below. Nell will water it here.';
  }
  const signature=mode+'|'+caption+'|'+props;
  if(stage.dataset.sceneSignature===signature)return;

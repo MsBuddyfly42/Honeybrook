@@ -22,7 +22,9 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;',
 /* ------------------------------------------------------------------ */
 const stage = $('#stage');
 function fit() {
-  const w = Math.min(innerWidth, innerHeight * 1.5);
+  const reserved = document.body.classList.contains('has-red-alert') ? document.getElementById('honeybrookRedAlert')?.offsetHeight || 0 : 0;
+  const w = Math.min(innerWidth, Math.max(180, innerHeight - reserved) * 1.5);
+  stage.style.top = 'calc(50% + ' + reserved / 2 + 'px)';
   const h = w / 1.5;
   stage.style.setProperty('--sw', w + 'px');
   stage.style.setProperty('--sh', h + 'px');
@@ -172,7 +174,7 @@ FOLKS.push({"name": "Milo", "fur": "#8a6343", "top": "#5f7861", "lines": ["Do I 
 for(const f of FOLKS){if(f.name==='Carmen'){f.hair='#493328';f.top='#773747';}if(f.name==='Templar')f.top='#6e3554';if(f.name==='Buddy')f.top='#3e6481';if(f.name==='Lena')f.top='#b198be';if(f.name==='Sammy')f.cub=false;}
 FOLKS.push({name:'The ranger',fur:'#735138',top:'#526747',lines:['We can inspect the old arch from the marked public path.']});
 FOLKS.push({name:'The older cub from Bear Hollow',fur:'#886142',top:'#92745a',lines:['The welcome came before anyone asked what I could do.']});
-const present = f => f.name==='Carmen'?(window.HoneybrookCastPresence?.carmenArrived()||storyUnlocked()>11):!f.after||storyUnlocked()>f.after;
+const present = f => f.name==='Carmen'?(!window.HoneybrookNell&&(window.HoneybrookCastPresence?.carmenArrived()||storyUnlocked()>11)):!f.after||storyUnlocked()>f.after;
 window.HoneybrookCarmenArrived=()=>storyUnlocked()>11;
 const RECIPES = [
   { id: 'sugar', name: 'Sugar Cookies', note: 'A classic. Good for learning.', dough: '#f3dfb5', ing: [['Flour', 0.75, '#f6f1e7', 0.32], ['Sugar', 0.5, '#fffdf6', 0.38], ['Butter', 0.5, '#f2d074', 0.3], ['Vanilla', 0.25, '#6b3b17', 0.45]] },
@@ -585,7 +587,7 @@ function storyPoint(n) {
 async function checkWoods() {
   if (!S.woodsCall || S.woodsOpen) return;
   S.woodsCall = false; S.woodsOpen = true; Snd.sfx('ding'); updateHUD();
-  await modal(`<p class="kicker">Three in the morning</p><h2>Come and see</h2><p>In chapter 69, Carmen wakes in the Welcome House at three in the morning. The voice from the Northern Woods calls Carmen, not a replacement player character. Her ancestral letter and Sammy’s honey bun are beside her.</p><p style="font-family:var(--font-d);font-size:1.25em;text-align:center">"Carmen. Come and see."</p><p>Far past the rooftops, a single light appears in the Northern Woods, then another, like windows being lit along a lane no one can see.</p>`, [{ label: 'Look north', primary: true }]);
+  await modal(`<p class="kicker">Three in the morning</p><h2>Come and see</h2><p>In Nell’s owner-directed game story, she wakes in the Welcome House at three in the morning. The woods call Nell. Goldilocks’s kept letter and Sammy’s honey bun are beside her. <a href="../../nell.html">Play Nell’s promise, first Harold conversation and letter reveal</a>. The original Carmen chapter remains unchanged in the book.</p><p style="font-family:var(--font-d);font-size:1.25em;text-align:center">"Nell. Come and see."</p><p>Far past the rooftops, a single light appears in the Northern Woods, then another, like windows being lit along a lane no one can see.</p>`, [{ label: 'Look north', primary: true }]);
 }
 async function showStory(){S.storyNew=false;updateHUD();await checkWoods();Save.push(true);location.assign('../../chronicles.html?view=book');}
 const LORE = {
