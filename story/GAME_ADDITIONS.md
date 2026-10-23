@@ -1543,7 +1543,7 @@ The library account says “Goldilocks.” The family account follows a missing 
 
 Place: Old Bridge · index.html#visit=Old%20Bridge
 
-At this safe crossing, lay out the family’s old search account. This is a research stop, not an assertion that this bridge was the site of the tragedy. The family researched the woods thoroughly, returned over the years, and still never went deep enough. They feared bears and did not imagine them offering sanctuary.
+At this safe crossing, lay out the family’s old search account. The family researched the woods thoroughly, returned over the years, and still never went deep enough. They feared bears and did not imagine them offering sanctuary.
 
 - Put the two search boundaries in order: human search area → ? **Finding:** Deep woodland settlements unknown to the family. Their efforts were real. The search account must also acknowledge the deep places they never reached.
 - Why did they stop short of the sanctuary? **Finding:** They were naturally afraid of bears and never imagined bears as protectors of their kin. Fear hid a possibility from them: the bears might have saved and sheltered someone they loved.
@@ -1588,7 +1588,7 @@ The scent of honey feels familiar, but familiarity can mislead. Compare the tool
 
 Place: Goldilocks’ Kitchen Garden · games/honeybrook-craft-fair/?portal=town&place=hollow-garden&city=1
 
-Nell pauses at the garden. The old woodland accounts contain a person living ordinary days, while the family’s missing-person account stops at the disappearance. Consider the difference between being remembered as a legend and having had a life. The present game garden does not prove that every plant here was planted by Goldilocks herself.
+Nell pauses at the garden. The old woodland accounts contain a person living ordinary days, while the family’s missing-person account stops at the disappearance. Consider the difference between being remembered as a legend and having had a life. Here, everyday tending gives Nell a quieter way to think about the person behind the legend.
 
 - Which question follows the missing-person account forward? **Finding:** What life might she have had after the day the family lost her? Nell begins looking for the life beyond the disappearance rather than only its last known moment.
 - What can this present garden tell Nell by itself? **Finding:** How the community values the ordinary work of tending and feeding. A place can help Nell understand the community without being a preserved original artifact.
@@ -1606,9 +1606,9 @@ Nell listens to Bear Hollow’s oldest bears. They remember Goldilocks as someon
 
 Place: Bear Hollow · games/honeybrook-craft-fair/?portal=town&place=hollow&city=1
 
-Listen again, now with better questions. The animals knew Goldilocks, but a name shared along woodland paths did not reach relatives who never entered those paths. Build the missing communication chain; no new talking-animal witness is assigned an invented name.
+Listen again, now with better questions. The animals knew Goldilocks, but a name shared along woodland paths did not reach relatives who never entered those paths. Build the missing communication chain.
 
-- Who knew about Goldilocks deep in the woods? **Finding:** The woodland animals. The owner’s adaptation makes her known throughout woodland animal life, beyond just the bears.
+- Who knew about Goldilocks deep in the woods? **Finding:** The woodland animals. Goldilocks was known throughout woodland animal life, beyond just the bears.
 - Where did the communication chain fail? **Finding:** Between a woodland community and human relatives who did not know it existed. The tragedy includes a missing connection between two communities, not an absence of remembrance.
 - Reconstruct the broken chain. **Finding:** Goldilocks known inside the woodland → Accounts passed among its animals → The human family still without the woodland account Nell can finally explain why woodland fame did not end the human search.
 ### Two lives measured in waiting

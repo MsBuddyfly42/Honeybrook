@@ -144,7 +144,7 @@ const tasks=[
     "place": "Old Bridge",
     "route": "index.html#visit=Old%20Bridge",
     "photo": "arrival",
-    "intro": "At this safe crossing, lay out the family’s old search account. This is a research stop, not an assertion that this bridge was the site of the tragedy. The family researched the woods thoroughly, returned over the years, and still never went deep enough. They feared bears and did not imagine them offering sanctuary.",
+    "intro": "At this safe crossing, lay out the family’s old search account. The family researched the woods thoroughly, returned over the years, and still never went deep enough. They feared bears and did not imagine them offering sanctuary.",
     "steps": [
       {
         "question": "Put the two search boundaries in order: human search area → ?",
@@ -383,7 +383,7 @@ const tasks=[
     "place": "Goldilocks’ Kitchen Garden",
     "route": "games/honeybrook-craft-fair/?portal=town&place=hollow-garden&city=1",
     "photo": "room",
-    "intro": "Nell pauses at the garden. The old woodland accounts contain a person living ordinary days, while the family’s missing-person account stops at the disappearance. Consider the difference between being remembered as a legend and having had a life. The present game garden does not prove that every plant here was planted by Goldilocks herself.",
+    "intro": "Nell pauses at the garden. The old woodland accounts contain a person living ordinary days, while the family’s missing-person account stops at the disappearance. Consider the difference between being remembered as a legend and having had a life. Here, everyday tending gives Nell a quieter way to think about the person behind the legend.",
     "steps": [
       {
         "question": "Which question follows the missing-person account forward?",
@@ -476,7 +476,7 @@ const tasks=[
     "place": "Bear Hollow",
     "route": "games/honeybrook-craft-fair/?portal=town&place=hollow&city=1",
     "photo": "room",
-    "intro": "Listen again, now with better questions. The animals knew Goldilocks, but a name shared along woodland paths did not reach relatives who never entered those paths. Build the missing communication chain; no new talking-animal witness is assigned an invented name.",
+    "intro": "Listen again, now with better questions. The animals knew Goldilocks, but a name shared along woodland paths did not reach relatives who never entered those paths. Build the missing communication chain.",
     "steps": [
       {
         "question": "Who knew about Goldilocks deep in the woods?",
@@ -486,7 +486,7 @@ const tasks=[
           "Nobody at all."
         ],
         "answer": 1,
-        "note": "The owner’s adaptation makes her known throughout woodland animal life, beyond just the bears."
+        "note": "Goldilocks was known throughout woodland animal life, beyond just the bears."
       },
       {
         "question": "Where did the communication chain fail?",
