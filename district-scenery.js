@@ -1,7 +1,7 @@
 /* Fair-style district maps; existing destination buttons retain their handlers. */
 (()=>{'use strict';
 const districts={nw:'woods',ne:'edge',se:'entrance',fr:'reflection',os:'outskirts',pk:'park',ep:'entertainment',cc:'care',hh:'harmony',ts:'square',sq:'scholars',ms:'mainstreet',bv:'bridgeview',town:'overview'};
-const points={woods:[[55,31],[19,30],[78,65],[86,83],[46,73],[88,23]],edge:[[22,25],[50,29],[83,30],[15,59],[49,59],[80,80]],entrance:[[17,25],[48,26],[85,28],[20,72],[64,76],[86,81]],reflection:[[16,24],[51,32],[85,28],[17,65],[53,76],[86,56]],outskirts:[[15,23],[49,26],[86,24],[18,57],[52,61],[86,76]]};
+const points={entertainment:[[13,29],[41,32],[67,32],[90,34],[15,66],[39,68],[67,69],[90,74]],bridgeview:[[22,25],[55,31],[85,28],[26,65],[78,57]],square:[[16,28],[50,30],[84,30],[16,68],[50,69],[86,57]],woods:[[55,31],[19,30],[78,65],[86,83],[46,73],[88,23]],edge:[[22,25],[50,29],[83,30],[15,59],[49,59],[80,80]],entrance:[[17,25],[48,26],[85,28],[20,72],[64,76],[86,81]],reflection:[[16,24],[51,32],[85,28],[17,65],[53,76],[86,56]],outskirts:[[15,23],[49,26],[86,24],[18,57],[52,61],[86,76]]};
 function mount(){for(const [key,art] of Object.entries(districts)){
  const scene=document.querySelector(key==='bv'?'.bridgeview-scene':'.'+key+'-scene');if(!scene||scene.dataset.fairScene)continue;
  scene.dataset.fairScene=art;scene.classList.add('fair-district-scene');
