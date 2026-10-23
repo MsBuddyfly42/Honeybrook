@@ -179,8 +179,10 @@
       }
     });
     renderDaily();setInterval(renderDaily,60000);
-    let x = Math.max(.03, Math.min(.97, Number(memory.x) || .5));
-    let y = Math.max(.06, Math.min(.94, Number(memory.y) || .73));
+    const groundLeft=art.dataset.photographic==='true'?.53:.025;
+    let x = Math.max(groundLeft, Math.min(.97, Number(memory.x) || .5));
+    const groundFloor=art.dataset.photographic==='true'?.78:.04;
+    let y = Math.max(groundFloor, Math.min(.94, Number(memory.y) || .73));
     let W = 1, H = 1, lastTime = 0, elapsed = 0, goal = null, goalDone = null;
     let activeNpc = null, facing = 1, walkPhase = 0, footstep = 0;
     const held = new Set();
@@ -201,9 +203,9 @@
       'Wally':['“I kept one loaf for supper. Amelia will be proud.”','“Want to smell the cinnamon? The oven’s almost ready.”','“Take a warm roll. I made plenty.”'],
       'Benny Scoops':['“I rang my cart bell one time. Everybody heard it.”','“Blueberry, honey-vanilla, or just a wave today?”','“The cubs say my cart is impossible to miss.”']
     };
-    const places = () => Array.from(art.querySelectorAll('.hb-world-marker')).map(button => {
+    const places = () => Array.from(world.querySelectorAll('.hb-world-marker')).map(button => {
       const r = button.getBoundingClientRect(), a = art.getBoundingClientRect();
-      return { button:button, x:(r.left+r.width/2-a.left)/a.width, y:(r.top+r.height/2-a.top)/a.height, name:(button.querySelector('b')||button).textContent.trim() };
+      return { button:button, x:button.dataset.photoX?Number(button.dataset.photoX):(r.left+r.width/2-a.left)/a.width, y:button.dataset.photoY?Number(button.dataset.photoY):(r.top+r.height/2-a.top)/a.height, name:(button.querySelector('b')||button).textContent.trim() };
     });
     function save() {
       memory.x=x; memory.y=y;
@@ -248,7 +250,7 @@
     }
     function npcPoint(bear, t) {
       const slot=timeSlot(), p=bear.path, k=(t*bear.speed)%(p.length+2), i=Math.min(p.length-1,Math.floor(k)), q=k>=p.length?1:k-i, a=p[i], b=p[(i+1)%p.length];
-      return {x:a[0]+(b[0]-a[0])*q+(slot===0?-.025:slot===2?.025:0),y:a[1]+(b[1]-a[1])*q+(slot===2?.015:0),walking:k<p.length};
+      const px=a[0]+(b[0]-a[0])*q+(slot===0?-.025:slot===2?.025:0),py=a[1]+(b[1]-a[1])*q+(slot===2?.015:0);return {x:art.dataset.photographic==='true'?.55+(px-.25)*.6:px,y:art.dataset.photographic==='true'?.8+(py-.6)*.7:py,walking:k<p.length};
     }
     function resize() {
       const r=art.getBoundingClientRect(), d=Math.min(window.devicePixelRatio||1,2);
@@ -305,7 +307,7 @@
         } else if(held.size){
           let dx=0,dy=0;
           if(held.has('left'))dx--;if(held.has('right'))dx++;if(held.has('up'))dy--;if(held.has('down'))dy++;
-          const m=Math.hypot(dx,dy)||1,s=210*dt; x=Math.max(.025,Math.min(.975,x+dx/m*s/W));y=Math.max(.04,Math.min(.96,y+dy/m*s/H));facing=dx<0?-1:dx>0?1:facing;walkPhase+=dt*9;
+          const m=Math.hypot(dx,dy)||1,s=210*dt; x=Math.max(groundLeft,Math.min(.975,x+dx/m*s/W));y=Math.max(groundFloor,Math.min(.96,y+dy/m*s/H));facing=dx<0?-1:dx>0?1:facing;walkPhase+=dt*9;
         }
         paint(now);
         updateHud();
@@ -313,7 +315,7 @@
       requestAnimationFrame(loop);
     }
     function walkTo(tx,ty,done,message) {
-      goal={x:Math.max(.025,Math.min(.975,tx)),y:Math.max(.04,Math.min(.96,ty))};goalDone=done||null;held.clear();
+      goal={x:Math.max(groundLeft,Math.min(.975,tx)),y:Math.max(groundFloor,Math.min(.96,ty))};goalDone=done||null;held.clear();
       status.textContent='Visitor Bear is on the move.';
       say(message||'Taking the town path at your own pace.');
       clearChoices();canvas.focus({preventScroll:true});
