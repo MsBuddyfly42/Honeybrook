@@ -55,3 +55,7 @@ Import previews explain what will be replaced. Confirming restore downloads the 
 ## Unified city map checks
 
 Run `node tests/city-map.mjs` with the same Playwright environment above. It checks the shared fifteen-area city map at desktop and phone widths, all thirteen district round trips, searchable classroom/venue entrances, real legacy town and Bear Hollow rooms, automatic continuation of an existing save, city-map returns, the separate Fair gate, keyboard/zoom and preservation of existing learning/life/game progress. `tests/connected-town.mjs` and `tests/browser.mjs` also cover the pre-existing routes and save/backup flows.
+
+## Focused navigation checks
+
+`tests/navigation-usability.mjs` checks all fifteen top area tabs, all 86 venues in the direct selector, focused district views, real classroom exercises, accent-insensitive popup search, favorites/recent places and Escape. It instruments scroll methods and verifies that map, district, room and walking-view refreshes do not call scripted scrolling. The earlier city-map, connected-town, world-routes and browser regression checks remain applicable; their entry selectors now use the top tabs and direct selector.

@@ -97,3 +97,9 @@ The owner explicitly rejects illustrated artwork for classrooms. Match the photo
 ## Unified city map clarification
 
 The owner wants all thirteen districts, Honeybrook town and Bear Hollow visible together on one connected city map, with clear travel and return routes, city-wide location search and a separate Fairgrounds portal. Add this without replacing or damaging the previously approved rooms, photographic-style scenery, activities, navigation or existing saves.
+
+## Navigation and Eldoria polish clarification
+
+Keep Honeybrook’s photographic bear-world scenery and combine it with the scene-first polish of https://eldermere-fairy-tale-bloodlines.onrender.com/: a compact header, clear location context, photographic play area and a useful city panel. Do not import elves or replace Honeybrook’s identity.
+
+Place all district/town/Bear Hollow location tabs together at the top of Enter Honeybrook. Each tab must enter its actual area directly; provide a direct room/business selector in the same top panel. Stop automatic scrolling on refresh and avoid navigating by scrolling through a long page of unrelated sections. Keep one focused district view, clear return controls, a popup finder, favorites and recent places, while preserving the original activities, walking and save records.
