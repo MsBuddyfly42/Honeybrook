@@ -1,0 +1,4 @@
+/* Rebuild the browser catalog from the reviewed JSON without changing imagery. */
+const fs=require('node:fs'),path=require('node:path'),root=path.resolve(__dirname,'..'),D=require('../location-activity-catalog.json');
+const ids=new Set();for(const p of D.locations){if(ids.has(p.id))throw Error('Duplicate place ID '+p.id);ids.add(p.id);if(!fs.existsSync(path.join(root,p.photo.src)))throw Error('Missing existing photo '+p.name);if((D.programs[p.profile]||[]).length!==10)throw Error('Ten program choices required: '+p.name);}
+fs.writeFileSync(path.join(root,'location-activity-catalog.js'),'/* Reviewed mapped places, contextual programs, project cases and unchanged photographs. */\nwindow.HoneybrookActivityCatalog='+JSON.stringify(D)+';\n');console.log(D.locations.length+' reviewed locations; ten activity choices each.');

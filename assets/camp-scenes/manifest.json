@@ -1,0 +1,30 @@
+[
+  {
+    "file": "housing.webp",
+    "width": 1536,
+    "height": 1024,
+    "views": 4,
+    "sha256": "316176a785374968ca120eff6a418a39a929e7b0120b577065676a5d693ad565"
+  },
+  {
+    "file": "infrastructure.webp",
+    "width": 1536,
+    "height": 1024,
+    "views": 4,
+    "sha256": "ee0e27c56d605a793b2f84b869184c97464743abcdb360050cc41847b0c33193"
+  },
+  {
+    "file": "shelter-01.webp",
+    "width": 1536,
+    "height": 1024,
+    "views": 4,
+    "sha256": "b4460e83f83fc17182792cc627ef4db8136ec86e845ccdaa8069c0d09334187b"
+  },
+  {
+    "file": "shelter-02.webp",
+    "width": 1536,
+    "height": 1024,
+    "views": 4,
+    "sha256": "d2c44835b6c1f47c8b4fb8251948ed66fa0099a78ecbb6262c208dfd8c288602"
+  }
+]

@@ -142,3 +142,23 @@ The owner explicitly approves the new Bear Hollow photographic bear-country desi
 ## Original manuscript — October 23, 2026
 
 The owner supplied the complete *Honeybrook Chronicles — Where the Stories Live, Book One*, by Templar Hughes-Bryant, and asked to use the whole story without omissions. Its original cast, history, family relationships, distinct locations and open mysteries take precedence over earlier invented biographies. Photographic scenes must depict their actual chapter/setting. Read `story/CANON.md` before related changes. Preserve the complete source and existing progress. Camp/finance additions are game extensions, not changes to the manuscript or Carmen's ancestral letter. Keep the approved bear-country presentation and separate Fair portal.
+
+## Book, activity depth, learning and cub camp — October 23, 2026
+
+Keep the existing photographic images. An Open the Book tab should open every full chapter opposite its matching photographic scene as a two-page spread. Carry that reader through all chapters and story entry points.
+
+Every mapped location should offer at least ten meaningful activities. The owner wants enjoyable, understandable hands-on challenges and varied location-specific projects that develop with progress, rather than repeating a few shallow games everywhere. Keep meaningful preparation, visible outcomes, saved accomplishments and increasing possibilities throughout Town, Bear Hollow and the separate Fair. Do not promise an infinite authored content bank.
+
+Learning should include challenging Honeybrook/Bear Hollow lore and all core school subjects, alongside optional Bible study, rather than Bible questions alone. Preserve in-progress quiz content when expanding the curriculum.
+
+Honeybrook families send cubs of all ages to summer camp every year. Make camp visible and connected to the map, with suitable supervised preschool, child and teen programs, whole-family options, and family-informed accessibility support. Do not assign invented ages or speech/walking requirements to original characters.
+
+## Twenty-five-cub camp specification — October 23, 2026
+
+The latest camp design replaces the earlier seven-family visit specification: each Sunday welcomes 25 cubs in five mixed boy-and-girl teams, each with a colored shirt and an adult male or female bear leader. Visits last seven nights across eight dates; earned two-week stays remain possible. Keep all player roles available, age-adapted supervised programs for ages 2–5, 6–11 and 12–18, daily sunset gatherings, safe night-only campfires/bonfires with s’mores, worship, optional testimony and actual Goldilocks/Three Bears/Honeybrook founding stories. Never replace them with ghost stories.
+
+Keep the prepared hills trip Wednesday–Friday, every traveler’s actual supply checklist, a ready-notification-only departure and a final Friday adapted obstacle competition with distinct top-three prizes and gift baskets for everyone else. Saturday brings family meals/fellowship; departure Sunday brings Scripture, gratitude, optional testimonies and actual remembered accomplishments before the next cohort arrives. Preserve returning-cub friendships, scrapbooks, keepsakes and every original cabin/account/career/possession. Shared plans award memories only after actual corresponding completions.
+
+Provide the listed housing, chapel, kitchen/pantry, recreation, healthcare, sanitation, security, administration, maintenance/storage, mail, wood preparation, trade studios, gardens, fishing/waterfront, photographic hills campsite and sacred well, plus ten enterprises. The shelter must fit the full roster, with individual check-in, real supply inspections, staff all-clear and connected underground comfort, dining, sanitation, recreation and study rooms. Severe weather closes outdoor activities. Keep the real U.S. clock separate from deliberate camp dates and real-date quizzes.
+
+Stock the equipment-only Wilderness Store separately from its adjoining general Camp Store; show real book sample pages and illustrations. Supply substantial weekly meals and fresh unread-only camp mail/news based on recorded events in camp, Bear Hollow and Honeybrook. Keep prices affordable and service/maintenance consequences understandable; money never purchases trust, knowledge, spiritual standing or earned qualifications.

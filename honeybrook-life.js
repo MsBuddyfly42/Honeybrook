@@ -132,6 +132,6 @@
   });
   addEventListener('storage',event=>{if(event.key===KEY||event.key===null){saveProblem='Progress changed in another tab. Reload this page before continuing; this tab will not overwrite it.';if(!root.hidden)tell(saveProblem,true);}});
   document.addEventListener('visibilitychange',()=>{if(document.hidden&&audio){audio.suspend();}else if(audio&&!muted){audio.resume().catch(()=>tell('Choose Play to resume the atmosphere.',true));}});
-  window.HoneybrookLifeController={state:()=>state?JSON.parse(JSON.stringify(state)):null,dispatch,openTab(id){tab=id;return open('continue');},message:()=>root.querySelector('#lifeMessage').textContent,backup:download};
+  window.HoneybrookLifeController={async openPlace(id){if(!Object.hasOwn(E.locations,id))return;root.hidden=false;tab='places';if(state&&state.location!==id)await dispatch({type:'visit',id});else{if(!known&&state)save(state);render();}},state:()=>state?JSON.parse(JSON.stringify(state)):null,dispatch,openTab(id){tab=id;return open('continue');},message:()=>root.querySelector('#lifeMessage').textContent,backup:download};
   setInterval(()=>{if(!root.hidden)renderSummary();},60000);
 })();

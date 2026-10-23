@@ -584,7 +584,7 @@ async function checkWoods() {
   S.woodsCall = false; S.woodsOpen = true; Snd.sfx('ding'); updateHUD();
   await modal(`<p class="kicker">Three in the morning</p><h2>Come and see</h2><p>In chapter 69, Carmen wakes in the Welcome House at three in the morning. The voice from the Northern Woods calls Carmen, not a replacement player character. Her ancestral letter and Sammy’s honey bun are beside her.</p><p style="font-family:var(--font-d);font-size:1.25em;text-align:center">"Carmen. Come and see."</p><p>Far past the rooftops, a single light appears in the Northern Woods, then another, like windows being lit along a lane no one can see.</p>`, [{ label: 'Look north', primary: true }]);
 }
-async function showStory(){S.storyNew=false;updateHUD();await checkWoods();Save.push(true);location.assign('../../chronicles.html?view=chapters');}
+async function showStory(){S.storyNew=false;updateHUD();await checkWoods();Save.push(true);location.assign('../../chronicles.html?view=book');}
 const LORE = {
   bridge: ['The bridge into Honeybrook', 'During a storm, Amelia sheltered beneath a broken bridge. A woman watched from the far tree line without speaking; Amelia later learned she was her guardian angel. The next day Amelia met Tom Bridgewell, a carpenter and stoneworker. They repaired the bridge together and built a small shelter for whoever needed it. That shelter became Honeybrook.'],
   welcome: ['The Welcome House', 'The shelter grew into the Welcome House. When Sammy arrived, the welcome was simple: “You can eat first.” Food comes before questions here, and newcomers only tell their story when they want to.'],
