@@ -28,7 +28,7 @@
       const encoded=JSON.stringify(next);localStorage.setItem(KEY,encoded);known=encoded;state=next;saveProblem='';return true;
     }catch(error){saveProblem=error.message||'Browser saving is unavailable. Free space or download a backup.';tell(saveProblem,true);return false;}
   }
-  function applyAction(a){if(!state){tell(saveProblem,true);return false;}try{const result=E.action(state,a);if(!save(result.state))return false;render();tell(result.message);dispatchEvent(new CustomEvent('honeybrook-life-change',{detail:{message:result.message}}));return true;}catch(error){tell(error.message,true);return false;}}
+  function applyAction(a){if(!state){tell(saveProblem,true);return false;}try{const civic=window.HoneybrookCommunityAlerts?.blockedLife(a,state);if(civic)throw Error(civic);const result=E.action(state,a);if(!save(result.state))return false;render();tell(result.message);dispatchEvent(new CustomEvent('honeybrook-life-change',{detail:{message:result.message}}));return true;}catch(error){tell(error.message,true);return false;}}
   let activeWrites=0;
   async function dispatch(a){activeWrites++;root.dataset.busy='true';try{return navigator.locks?await navigator.locks.request('honeybrook-life-write',()=>applyAction(a)):applyAction(a);}finally{activeWrites--;root.dataset.busy=String(activeWrites>0);}}
   async function open(mode='continue'){

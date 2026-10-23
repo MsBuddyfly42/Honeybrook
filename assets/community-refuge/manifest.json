@@ -1,0 +1,50 @@
+{
+  "sleep": {
+    "src": "assets/community-refuge/sleep.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "a3449d48956e3c443561d185d3a6f4ba712c5357f81d265a78533198e569ab06"
+  },
+  "quiet": {
+    "src": "assets/community-refuge/quiet.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "4c068fb17fd4f7644b1d3218228ea10b728ba20b2c42a126643cb2bd15206b68"
+  },
+  "hall": {
+    "src": "assets/community-refuge/hall.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "c7b31557c7b95dd9118d35a9bf86bd765f0809d08082ef869a9328c7b494289d"
+  },
+  "care": {
+    "src": "assets/community-refuge/care.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "dc53b0dd5bb49c9271b86512114aa69212a72e961981693a59ad4db0977919b4"
+  },
+  "entrance": {
+    "src": "assets/community-refuge/entrance.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "64bc822300fc511b61207d7da46dfc0bb20984d2f7a7f1c6ac90ea374de81d7a"
+  },
+  "kitchen": {
+    "src": "assets/community-refuge/kitchen.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "79a6ec42d24a91e6329854a5f07580ff06bbb8fd6eb4dbc5c3fb479ee2e5ea06"
+  },
+  "bathroom": {
+    "src": "assets/community-refuge/bathroom.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "0c2158f593dde7f64d847cbd81095a5b021a02fa88e77a2f6dead84ca86a04fe"
+  },
+  "power": {
+    "src": "assets/community-refuge/power.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "07d33aed4f77e1c2fc01eeb1f76096add9f3a2ea80e2a5c2040b6850787feaf8"
+  }
+}

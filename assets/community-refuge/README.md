@@ -1,0 +1,3 @@
+# Community refuge scenery
+
+Eight individual ImageGen photographic-style fictional bear-country views: entrance, reception hall, family sleeping wing, quiet supported family room, first-aid room, community kitchen/water, accessible bathrooms and battery/radio utility room. Prompts specify realistic furred clothed bears only, timber-trimmed below-ground concrete rooms, wide accessible paths, warm cream/pine/honey/plum materials, no humans, text, collage or watermark. Each is a new distinct scene; no original room or manuscript illustration is replaced. Manifest records dimensions and hashes. These are game settings, not architectural or emergency-service certifications.
