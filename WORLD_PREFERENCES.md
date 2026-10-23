@@ -134,3 +134,7 @@ This section records requirements; it is not a claim that every camp system is i
 ## Bear Hollow neighborhood clarification — October 23, 2026
 
 Expand **Cabins for New Neighbors**, beside Bear Hollow, into a genuine cottage neighborhood with more individual homes and bear households. Replace vague Bear Hollow activity hotspots with understandable, imaginative, purpose-specific work and visible results. The player should understand where they are, what they are doing and why it helps the community. Preserve the approved photographic Honeybrook identity and existing progress. Use warm bear-country typography, lettering, scene framing and naturally placed bear families so visiting feels like living in Honeybrook. Keep the neighborhood connected to Bear Hollow, Bridgeview and the city map; the Fair stays separate.
+
+## Whole-game Bear Hollow presentation — October 23, 2026
+
+The owner explicitly approves the new Bear Hollow photographic bear-country design and requests that same look throughout **the entire game**, including Honeybrook town and the separate Fair. Carry its warm country typography, photographic bear families, woodland room framing, cream/pine/honey palette and readable controls through public districts, interiors, classrooms, camp rooms, workshops and Fair activities. Preserve existing gameplay, earned progress, logical city connections and the Fair's own portal.

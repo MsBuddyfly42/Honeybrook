@@ -1,0 +1,138 @@
+/* Shared Bear Hollow country design for Honeybrook town, camp and the Fair. */
+@font-face{font-family:'Honeybrook Hearth';src:url('assets/bear-country/fonts/fraunces.ttf') format('truetype');font-style:normal;font-weight:400 800;font-display:optional}
+@font-face{font-family:'Honeybrook Rounded';src:url('assets/bear-country/fonts/nunito.ttf') format('truetype');font-style:normal;font-weight:400 800;font-display:optional}
+html.honeybrook-country{--country-pine:#294734;--country-ink:#302e22;--country-cream:#fff8e7;--country-honey:#b77c29;--font-d:'Honeybrook Hearth',Georgia,serif;--font-b:'Honeybrook Rounded','Trebuchet MS',sans-serif;background:#f2e7cd;color:var(--country-ink)}
+.honeybrook-country body{font-family:var(--font-b);background:#f2e7cd;color:var(--country-ink)}
+.honeybrook-country :is(button,input,select,textarea,p,li,label,small,summary){font-family:var(--font-b)!important}
+.honeybrook-country :is(h1,h2,h3,h4,.hb-motto,.hb-front-content h1){font-family:var(--font-d)!important;font-variation-settings:'SOFT' 70,'WONK' 1;letter-spacing:-.025em}
+.honeybrook-country :is(input,select,textarea){color:#263f2f;background:#fffcf4;border-color:#aa9467;accent-color:#3c6946}
+.honeybrook-country :is(button,a,input,select,textarea):focus-visible{outline:3px solid #ad7321;outline-offset:3px}
+.honeybrook-country :is(.hb-sticky-nav,#honeybrookCompass,#destinationVisit>header){background:#294734!important;color:#fff4d7!important;border-color:#bc944e!important}
+.honeybrook-country :is(.hb-sticky-nav,#honeybrookCompass,#destinationVisit>header) button{background:#355941!important;color:#fff5da!important;border-color:#78926a!important;font-family:var(--font-b)!important}
+.honeybrook-country .hb-compass-brand>strong{font-family:var(--font-d)!important;font-size:27px;letter-spacing:-.02em;color:#f3dc9c}
+.honeybrook-country #honeybrookPlaceTabs{background:#eee1bf!important;border-bottom-color:#bc9f64!important}
+.honeybrook-country .hb-place-tabs button{font-family:var(--font-b)!important;background:#fff8e7;color:#2b4935;border-color:#b29b67;border-radius:8px}
+.honeybrook-country .hb-place-tabs button[aria-current=location]{background:#355941;color:#fff5da;border-color:#b79650}
+.honeybrook-country :is(.hb-nav-active.section,#honeybrookCityMap,#destinationVisit,#honeybrookLife){background:#f5ecd6!important;color:#302e22}
+.honeybrook-country :is(.hb-nav-active .section-heading h2,#destinationVisit h1,#honeybrookLife h2,.city-heading h2){color:#2c4b36!important}
+.honeybrook-country :is(.hb-nav-active .section-heading .eyebrow,.visit-heading>p:first-child,.life-caption){color:#765428}
+.honeybrook-country :is(#honeybrookAtlas,.city-current){background:#e4e8d2!important;color:#35513b!important}
+.honeybrook-country #honeybrookAtlas :is(h2,.hb-atlas-current,.hb-atlas-life b){font-family:var(--font-d)!important}
+.honeybrook-country :is(.city-enter,.city-map-return,.hb-atlas-fair,.fair-district-routes button,.town-assignment button){border-radius:9px!important}
+.honeybrook-country :is(.hb-townscene,.hb-world-art,.visit-room,.fair-district-art,.life-scene){border:6px solid #8c663c!important;border-radius:16px!important;box-shadow:0 8px 24px #45331826!important;overflow:hidden}
+.honeybrook-country .hb-front-content{color:#2c4934}.honeybrook-country .hb-front-content h1{color:#2c4934;line-height:1.05}
+.honeybrook-country .hb-front-content :is(.hb-kicker,.hb-motto,.hb-arrival){color:#654c2d}
+.honeybrook-country .hb-townseal{background:#e7c57e;color:#294734;border-color:#967140}
+.honeybrook-country .hb-entry-buttons button{background:#355941;color:#fff5da;border-color:#a88d58;border-radius:10px;font-family:var(--font-b)!important}
+.honeybrook-country #destinationVisit main{max-width:1440px;margin:auto;padding:22px 3vw 40px}
+.honeybrook-country .visit-heading h1{font-size:clamp(32px,4vw,56px)!important;line-height:1.16;margin:.25em 0 .4em}
+.honeybrook-country .visit-heading>p:first-child{font-size:11px;font-weight:800;letter-spacing:.15em}
+.honeybrook-country .visit-heading>p{max-width:950px;line-height:1.65}
+.honeybrook-country .visit-room{aspect-ratio:3/2!important;min-height:0!important;max-height:none}
+.honeybrook-country .visit-room-sign{background:#fff8e7;color:#294734;border:1px solid #a88c54;border-radius:8px}
+.honeybrook-country .town-assignment{background:#fff9e8;color:#302e22;border:1px solid #bea16e;border-radius:15px;padding:24px;box-shadow:0 4px 14px #3f30131c;display:block!important;margin:0}
+.honeybrook-country .town-assignment h2{font-family:var(--font-d)!important;font-size:30px!important;line-height:1.25;color:#2c4b36}
+.honeybrook-country .town-assignment small{color:#7b5527;letter-spacing:.13em;font-size:10px}
+.honeybrook-country .town-assignment>div:last-child{margin-top:22px;display:grid;gap:10px}
+.honeybrook-country .town-assignment button{padding:12px 16px!important;min-height:44px;background:#355941!important;color:#fff6dc!important;border-color:#355941!important}
+.honeybrook-country .town-assignment-progress{padding:12px;background:#e8eddb;border-radius:8px;color:#36503a;font-size:14px;line-height:1.7}
+.honeybrook-country :is(.visit-workspace,.visit-find,.visit-neighbors,.life-card,.scene-choice-result,.activity-play){background:#fff9e8!important;color:#302e22;border-color:#bea16e!important;border-radius:13px}
+.honeybrook-country :is(.visit-workspace h2,.visit-workspace h3,.life-card h3,.activity-play h3){font-family:var(--font-d)!important;color:#2c4b36}
+.honeybrook-country :is(.visit-workspace button,.visit-find button,.visit-neighbors button,.life-actions button,.life-tabs button){background:#355941;color:#fff6dc;border-color:#a98d54;border-radius:8px}
+.honeybrook-country .visit-workspace{padding:24px}.honeybrook-country .scene-photo-credit{font-size:11px;color:#6c634c}
+.honeybrook-country .scene-visitor{background:#e8eddb;border-color:#b3b68b;padding:10px 14px;font-size:13px;border-radius:8px}
+.honeybrook-country .country-visit-brand{font:800 23px/1.1 var(--font-d);color:#f3dc9c;display:flex;align-items:center;gap:9px;margin-right:auto}
+.honeybrook-country .country-visit-brand svg{width:27px;height:27px;fill:#dfb564;flex:none}
+.honeybrook-country .country-visit-brand small{font:800 9px/1.4 var(--font-b);display:block;letter-spacing:.17em;color:#fff2cb}
+.honeybrook-country #honeybrookWork{background:#fff8e7;border-color:#b69b61;color:#302e22;font-family:var(--font-b)!important}
+.honeybrook-country #honeybrookWork :is(h2,h3){font-family:var(--font-d)!important;color:#2c4b36}
+.honeybrook-country #honeybrookWork button{font-family:var(--font-b)!important;background:#355941;color:#fff4d7;border-color:#a88e57}
+.honeybrook-country #honeybrookWork .work-place-photo{margin:0;max-width:none;border:5px solid #8c663c;border-radius:14px;overflow:hidden;align-self:start}
+.honeybrook-country #honeybrookWork .work-place-photo .fair-scene-frame{border:0!important;border-radius:0!important}
+.honeybrook-country #honeybrookWork .work-plan{padding:18px;background:#fffbed;border:1px solid #c5b482;border-radius:12px;min-width:0}
+.honeybrook-country #honeybrookWork .work-controls{background:#e7ebd7;color:#304632}
+.honeybrook-country .life-tabs [aria-pressed=true]{background:#e6c882;color:#2e4632;border-color:#9b773b}
+.honeybrook-country .life-scene{height:auto;aspect-ratio:3/2;max-height:none}.honeybrook-country .life-scene>.fair-scene-frame{height:100%;border:0;border-radius:0}
+.honeybrook-country .life-card{box-shadow:0 4px 12px #4b35131c}.honeybrook-country .life-status{background:#e8eddb;color:#36503a;border-color:#b6bc8e}
+.honeybrook-country :is(#honeybrookFinder,.world-dialog,.hb-world-dialog){background:#fff8e7;color:#302e22;border-color:#b79657}
+.honeybrook-country .hb-finder-result{background:#fffbed;border-color:#bca772;border-radius:10px}
+.honeybrook-country .hb-finder-result-actions button{background:#355941;color:#fff5dc;border-color:#a88e57;border-radius:8px}
+.honeybrook-country .country-district-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.honeybrook-country .country-district-grid button{min-width:0;padding:0!important;text-align:left;border:1px solid #bea16e!important;border-radius:12px!important;background:#fff9e8!important;color:#2f4935!important;overflow:hidden;box-shadow:0 4px 12px #4b35131a}
+.honeybrook-country .country-district-grid .country-door-text{display:block;padding:13px;font-family:var(--font-d);font-size:19px;line-height:1.35;color:#2f4935}
+.honeybrook-country .country-district-grid .fair-scene-frame{border:0;border-radius:0!important;box-shadow:none}
+.honeybrook-country .country-district-grid small{display:block;font:500 13px/1.5 var(--font-b);color:#57563f;margin-top:7px}
+/* The legacy Fair retains its stage geometry and all active game canvases. */
+.honeybrook-country #stage{border:4px solid #8c663c;border-radius:16px;box-shadow:0 16px 50px #1c2e2360;background:#294734;font-family:var(--font-b)}
+.honeybrook-country #stage :is(.paper,.panel,#modal-card,.modal-card,.hud-menu){background-color:#fff7e5;color:#302e22;border-color:#c2a56f}
+.honeybrook-country #stage :is(.btn,.recipe-btn){font-family:var(--font-b)!important;border-radius:.65em}
+.honeybrook-country #stage .btn-primary{background:#355941;color:#fff5da;border-color:#a88d58;box-shadow:0 2px 0 #203f2c}
+.honeybrook-country #stage :is(h1,h2,h3,.title-logo,.area-title){font-family:var(--font-d)!important;font-variation-settings:'SOFT' 70,'WONK' 1}
+.honeybrook-country .town-return-portal,.honeybrook-country .city-map-launch,.honeybrook-country .city-finder-launch{font-family:var(--font-b)!important;background:#fff6e4;color:#2f4d38;border-color:#a78b51}
+@media(min-width:1001px){
+ .honeybrook-country #destinationVisit main{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:14px 26px;align-items:start}
+ .honeybrook-country #destinationVisit .visit-heading{grid-column:1/-1;grid-row:1}
+ .honeybrook-country #destinationVisit .visit-room{grid-column:1;grid-row:2;margin:0}
+ .honeybrook-country #destinationVisit .town-assignment{grid-column:2;grid-row:2/span 3;align-self:start}
+ .honeybrook-country #destinationVisit .scene-photo-credit{grid-column:1;grid-row:3;margin:0}
+ .honeybrook-country #destinationVisit .scene-visitor{grid-column:1;grid-row:4}
+ .honeybrook-country #destinationVisit :is(.visit-find,.visit-workspace,.visit-neighbors,.world-location-routes){grid-column:1/-1}
+ .honeybrook-country #honeybrookWork[open]:has(.work-plan){display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:16px 22px}
+ .honeybrook-country #honeybrookWork .work-dialog-heading{grid-column:1/-1;grid-row:1}
+ .honeybrook-country #honeybrookWork .work-feedback{grid-column:1/-1;grid-row:2;margin:0}
+ .honeybrook-country #honeybrookWork .work-place-photo{grid-column:1;grid-row:3}
+ .honeybrook-country #honeybrookWork .work-ledger{grid-column:1;grid-row:4;margin:0}
+ .honeybrook-country #honeybrookWork .work-plan{grid-column:2;grid-row:3/span 3}
+ .honeybrook-country #honeybrookWork .work-result{grid-column:1;grid-row:5}
+ .honeybrook-country #honeybrookWork .work-controls{grid-column:1/-1;grid-row:6}
+}
+@media(max-width:1000px){.honeybrook-country .country-district-grid{grid-template-columns:1fr 1fr}.honeybrook-country #destinationVisit .town-assignment{margin:18px 0}.honeybrook-country .country-visit-brand{font-size:21px}}
+@media(max-width:600px){.honeybrook-country #destinationVisit main{padding:16px 14px 30px}.honeybrook-country .visit-heading h1{font-size:32px!important}.honeybrook-country .town-assignment{padding:18px}.honeybrook-country .town-assignment h2{font-size:26px!important}.honeybrook-country .country-district-grid{gap:10px}.honeybrook-country .country-door-text{font-size:16px!important;padding:10px!important}.honeybrook-country .country-visit-brand{width:100%;font-size:22px}.honeybrook-country .country-visit-brand small{display:inline;margin-left:8px;font-size:8px}.honeybrook-country #honeybrookWork .work-place-photo{max-width:400px}.honeybrook-country #honeybrookWork .work-plan{padding:13px}.honeybrook-country :is(.hb-townscene,.hb-world-art,.visit-room,.fair-district-art,.life-scene){border-width:4px!important}}
+@media(prefers-reduced-motion:reduce){.honeybrook-country *{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+.honeybrook-country #town .fair-district-scene{aspect-ratio:auto!important;height:auto!important;overflow:hidden!important;border:0!important;background:transparent!important;box-shadow:none!important;isolation:auto}
+.honeybrook-country .country-district-picture{position:relative;aspect-ratio:3/2;overflow:hidden;border:6px solid #8c663c;border-radius:16px;background:#c1b08a;box-shadow:0 7px 20px #45331820;margin:0 0 20px}
+.honeybrook-country #town .country-district-picture>.fair-district-art{position:absolute;display:block;width:200%;height:200%;max-width:none;border:0!important;border-radius:0!important;object-fit:fill;pointer-events:none}
+.honeybrook-country #town .country-district-grid>button{position:relative!important;inset:auto!important;transform:none!important;width:100%!important;height:auto!important;display:block!important;margin:0!important;min-height:44px!important;z-index:auto}
+.honeybrook-country #town .country-district-grid>button::after{display:none!important}
+.honeybrook-country #town .country-district-grid>button>span{display:block!important}
+.honeybrook-country #town .country-district-grid>button small{display:block!important}
+.honeybrook-country #town .country-district-grid .fair-scene-frame{position:relative!important;aspect-ratio:3/2!important;width:100%!important;overflow:hidden}
+.honeybrook-country .country-district-grid{margin-bottom:18px}.honeybrook-country .fair-district-scene+.fair-district-routes{background:#e6ebd8;color:#2f4935}
+.honeybrook-country .visit-room{height:auto!important;width:100%!important}
+.honeybrook-country .country-fair-preview{position:relative;display:block;max-width:520px;aspect-ratio:3/2;height:auto;max-height:none;margin:14px auto;overflow:hidden;border:4px solid #8c663c;border-radius:13px;background:#b49d70}
+.honeybrook-country .country-fair-picture{position:relative;width:100%;aspect-ratio:3/2;overflow:hidden}
+.honeybrook-country .country-fair-preview>.country-fair-picture{border:0;margin:0}
+.honeybrook-country .country-fair-preview svg{display:none!important}
+.honeybrook-country #stage .modal-card,.honeybrook-country #modal>div{max-height:90%;overflow:auto}
+html.honeybrook-country{--cream:#fff8e7;--paper:#fff9e8;--honey:#bb8731;--green:#355941;--sage:#8c9c6c;--brown:#60482c;--ink:#302e22;--plum:#294734;--plum-deep:#20392a}
+.honeybrook-country #destinationVisit .scene-real-clock{font-size:13px;line-height:1.5;color:#615438;margin:8px 0}
+.honeybrook-country #destinationVisit main>.scene-appearance{grid-column:1/-1;background:#fff9e8;border:1px solid #bea16e;border-radius:10px;padding:12px}
+.honeybrook-country #honeybrookWork .work-plan{font-size:15px;line-height:1.6}.honeybrook-country #honeybrookWork .work-tool-list label{margin:0!important;padding:7px;font-size:14px}.honeybrook-country #honeybrookWork .work-tool-list{gap:7px}
+.honeybrook-country #honeybrookWork .work-dialog-heading{position:sticky;top:-24px;z-index:5;background:#fff8e7;padding:12px 0}
+.honeybrook-country #stage :is(.bg,.home-background):not([data-country-scene]){visibility:hidden}
+@media(max-width:600px){.honeybrook-country #destinationVisit>header{justify-content:flex-start;gap:5px;padding:10px 12px}.honeybrook-country #destinationVisit>header button{font-size:11px!important;padding:8px!important;min-height:38px!important}.honeybrook-country #destinationVisit>header .visit-save{display:none}.honeybrook-country #destinationVisit>header [data-room-direct]{min-width:0;min-height:40px;font-size:13px}.honeybrook-country .hb-room-breadcrumb{font-size:10px;line-height:1.5}.honeybrook-country #destinationVisit .visit-heading>p{font-size:15px}.honeybrook-country #destinationVisit .visit-heading>p:first-child{font-size:10px}.honeybrook-country #honeybrookWork .work-dialog-heading{top:-16px}}
+.honeybrook-country #town .fair-district-scene>.country-district-picture{display:block!important;pointer-events:auto}.honeybrook-country #town .fair-district-scene>.country-district-grid{display:grid!important;pointer-events:auto}
+.honeybrook-country #town .fair-district-scene>.country-route-original{display:none!important}
+.honeybrook-country #honeybrookHome .hb-townscene{aspect-ratio:3/2;min-height:260px;position:relative}.honeybrook-country #honeybrookHome .hb-townscene>img{max-height:none!important;animation:none!important}.honeybrook-country #honeybrookHome .world-hotspots{position:absolute;bottom:0;left:0;right:0;z-index:3}
+/* A readable Fair directory replaces overlapping invisible midway hit areas. */
+.honeybrook-country #scene-carnival .carnival-hotspots{inset:auto 18px 76px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;padding:10px;background:#fff8e7ed;border:1px solid #b99a60;border-radius:12px;pointer-events:auto}
+.honeybrook-country #scene-carnival .carnival-stop{position:static!important;inset:auto!important;display:block!important;min-width:0!important;width:100%!important;height:auto!important;min-height:44px;padding:10px 6px!important;opacity:1!important;transform:none!important;background:#355941!important;border:1px solid #78926a!important;border-radius:8px;box-shadow:none!important}
+.honeybrook-country #scene-carnival .carnival-stop b{position:static!important;display:block;transform:none!important;min-width:0!important;max-width:100%!important;padding:0!important;opacity:1!important;background:transparent!important;border:0!important;box-shadow:none!important;color:#fff5da!important;font:800 14px/1.3 var(--font-b)}
+.honeybrook-country #scene-carnival .carnival-stop small{display:none!important}.honeybrook-country .carnival-ticket-purse button{opacity:1!important}.honeybrook-country .carnival-heading{top:60px!important}.honeybrook-country .carnival-footnote{display:none}
+@media(max-width:650px){.honeybrook-country #scene-carnival .carnival-hotspots{grid-template-columns:1fr 1fr;inset:auto 10px 70px;gap:6px;padding:8px}.honeybrook-country #scene-carnival .carnival-stop{padding:8px 4px!important;min-height:38px}.honeybrook-country #scene-carnival .carnival-stop b{font-size:12px}.honeybrook-country .carnival-heading{top:62px!important;max-width:75%;font-size:12px!important}.honeybrook-country .carnival-ticket-purse{top:120px!important;font-size:12px!important}}
+.honeybrook-country #modal .modal-card{background:#fff8e7;color:#302e22;border:2px solid #b99a60;border-radius:14px}.honeybrook-country #modal .btn-primary{background:#355941;color:#fff5da;border-color:#a88d58}.honeybrook-country .country-fair-picture img{pointer-events:none}
+.honeybrook-country #circus-back{top:72px;left:12px;font-size:15px;min-height:44px}.honeybrook-country .circus-sign{top:72px;right:12px;width:min(340px,55%);font-size:15px}.honeybrook-country .circus-sign h2{font-size:25px}.honeybrook-country .circus-sign p{font-size:14px}.honeybrook-country .circus-sign .btn{font-size:15px;min-height:44px}
+@media(max-width:650px){.honeybrook-country #circus-back{top:72px;max-width:40%;font-size:12px;padding:8px}.honeybrook-country .circus-sign{top:130px;width:75%}}
+.honeybrook-country .country-fair-background{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+@media(max-width:650px) and (orientation:portrait){
+ html.honeybrook-country[data-country-portal=fair] #stage{top:76px;left:10px;transform:none;width:calc(100% - 20px);height:calc(100dvh - 150px);min-height:620px;font-size:16px}
+ .honeybrook-country[data-country-portal=fair] .country-fair-background{inset:80px 0 auto;aspect-ratio:3/2}
+ .honeybrook-country[data-country-portal=fair] #scene-carnival .carnival-hotspots{inset:calc(80px + (100vw - 28px)*2/3 + 12px) 10px auto;gap:7px}
+ .honeybrook-country[data-country-portal=fair] .carnival-heading{top:0!important;left:4px;width:auto;max-width:calc(100% - 8px);padding:6px 10px}
+ .honeybrook-country[data-country-portal=fair] .carnival-heading h2{font-size:20px}.honeybrook-country[data-country-portal=fair] .carnival-heading p{font-size:12px;margin:3px 0}
+ .honeybrook-country[data-country-portal=fair] .carnival-ticket-purse{top:auto!important;bottom:8px;right:8px;font-size:12px!important}
+ .honeybrook-country[data-country-portal=fair] #circus-back{top:8px;left:8px;max-width:65%}
+ .honeybrook-country[data-country-portal=fair] .circus-sign{top:calc(80px + (100vw - 28px)*2/3 + 12px);bottom:auto;width:calc(100% - 24px)}
+ .honeybrook-country[data-country-portal=fair] #rotate-hint{display:none}
+}
+.honeybrook-country #stage .scene{transition:none!important}.honeybrook-country .country-fair-preview{min-height:0!important;box-shadow:none!important}.honeybrook-country .country-fair-preview::before,.honeybrook-country .country-fair-preview::after{display:none!important}
