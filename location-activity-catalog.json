@@ -1057,8 +1057,8 @@
       "name": "The Honey Mug Café",
       "profile": "cook",
       "photo": {
-        "src": "assets/story-scenes/book-19.webp",
-        "tile": 0
+        "src": "assets/festival/cafe.webp",
+        "single": true
       },
       "route": "index.html#visit=The%20Honey%20Mug%20Caf%C3%A9",
       "aliases": [
@@ -2306,8 +2306,8 @@
       "name": "Fair Treat Stall",
       "profile": "games",
       "photo": {
-        "src": "assets/fair-scenes/bear-country/country-39.webp",
-        "tile": 3
+        "src": "assets/festival/cotton.webp",
+        "single": true
       },
       "route": "games/honeybrook-craft-fair/?portal=fair"
     },

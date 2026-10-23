@@ -24,7 +24,7 @@
     {id:'elijah',name:'Elijah Campbell',family:'Jamaican American grandfather · music mentor · Campbell family',routine:'Morning: recreation hall · Afternoon: waterfront · Evening: fellowship',intro:'There is room for your voice in our sunset songs.'},
     {id:'amina',name:'Amina Okafor',family:'Nigerian American mother · scout counselor · Okafor family',routine:'Morning: scout camp · Afternoon: hills preparation · Evening: gathering',intro:'Preparation and kindness help every camper belong.'}
   ];
-  const canonicalIds=["amelia", "tom", "sammy", "templar", "buddy", "mary", "jonesha", "jamya", "jamon", "robin", "rheanna", "lena", "lance", "landis", "landric", "theodore", "harold", "wally", "patty", "daisy", "mabel", "toby", "nora", "milo", "carmen"];
+  const canonicalIds=["amelia", "tom", "sammy", "templar", "buddy", "mary", "jonesha", "jamya", "jamon", "robin", "rheanna", "lena", "lance", "landis", "landric", "theodore", "harold", "wally", "patty", "daisy", "mabel", "toby", "nora", "milo", "carmen", "ranger", "older-cub"];
   const residents=Story.cast.filter(p=>canonicalIds.includes(p.id)).map(p=>({id:p.id,name:p.name,family:p.kind,routine:'Story place: '+p.place+' · '+(p.chapters.length?'Chapters '+p.chapters.join(', '):'Prologue'),intro:p.fact}));
   for(const p of earlierResidents)if(!residents.some(c=>c.id===p.id))residents.push({...p,archived:true});
   const canonicalPerson={maya:'nora',daniel:'tom',lin:'theodore',aiko:'templar',sofia:'wally',arjun:'buddy',marie:'jamya',elijah:'robin',amina:'buddy'};

@@ -1,0 +1,13 @@
+# Original cast and chronology audit
+
+Audited all 41 entries against the complete retained Word manuscript, full paragraph extraction, CANON.md and the source chapter references. `cast-presence-audit.json` records each entry, source location, chapters and presentation. The Word file remains SHA-256 `8c3c52318cd77fe5253987fbf77850d8c0ebc49bb15bb6fa142dbe38f4822cab`.
+
+The complete Hearthwell household remains together at home. Templar/Ja’Mya connect to technology and Helping House; Buddy/Tom to practical work; Jonesha/Lance and the unnamed ranger to the old stone arch; Robin/Rheanna to music; the Professor/Sammy/Lance/Landis to learning. Lena stays supported with familiar family company, without invented dialogue or walking. Wally/Patty/Daisy connect to the bakery and café. Harold connects to the post office. Amelia/Tom connect to the repaired wooden bridge. Mabel, Toby, Nora, Milo and the distinct older cub connect to Welcome House. The ranger and older cub were missing from the playable companion/native neighbor roster; they have been restored without inventing personal names or biographies.
+
+The Honey Mug Café's present-day photograph now contains only bears. It does not reuse the original book illustration that includes a human. Each of the eight Fair concessions has its own correct food image and purchase handler. These new images are fictional generated photographic-style scenery, matching Honeybrook's established visual approach.
+
+Carmen appears in present-day welcome/companion/native encounters only after the original Fair arrival milestone (28 story points) or reading/completing chapter 68. She remains an adult human with her own family letter. Her arrival, full prose and chapter photographs remain freely readable; reading other chapters does not put historical people in the modern café. Earlier saved Carmen relationship records are retained.
+
+Goldilocks, Mama/Papa Bear, the beekeepers, searching father, prince/princess, first shelter cook and Willie stay in the appropriate source scenes or explicitly labeled memories. Baby Bear's growth and monument remain source-grounded; no invented present-day role is assigned. The guardian angel and Guardian Goddess are linked as unresolved story presences, never ordinary café customers. Ash remains the wolf baker within the original discovery-gated Storybook Lane. The source directory still includes every named and unnamed original role.
+
+The 47 new Fair programs are optional game extensions. Their adult supervision/crew roles are not new manuscript facts. Original town, Fair, life, camp, story, archived companion IDs, paid work, balances and keepsakes are not migrated or reset.

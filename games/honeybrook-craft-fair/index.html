@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="comfort.css?v=20261005-v2"><style>.town-return-portal{position:fixed;bottom:12px;left:12px;z-index:1000;padding:12px 18px;background:#fff8ea;color:#3a2a1c;border:2px solid #c9a96e;border-radius:999px;font:bold 16px Georgia,serif;text-decoration:none}</style>
 <script>if(new URLSearchParams(location.search).get('portal')==='town'&&((new URLSearchParams(location.hash.slice(1)).get('place')||new URLSearchParams(location.search).get('place')||'').startsWith('hollow'))){document.documentElement.classList.add('bear-country-loading');for(const file of ['fraunces','nunito']){const link=document.createElement('link');link.rel='preload';link.as='font';link.type='font/ttf';link.crossOrigin='anonymous';link.href='../../assets/bear-country/fonts/'+file+'.ttf';document.head.append(link);}}</script><link rel="stylesheet" href="bear-country.css?v=20261023-hollow-1"><link rel="stylesheet" href="town-wayfinding.css?v=20261022-connected-1">
 <link rel="stylesheet" href="../../city-map.css?v=20261023-find-1">
-<link rel="stylesheet" href="../../country-style.css?v=20261023-camp-2"></head>
+<link rel="stylesheet" href="../../country-style.css?v=20261023-festival-1"></head>
 <body>
 <div id="stage" aria-live="polite">
 
@@ -105,13 +105,18 @@
     <button class="carnival-stop food-stop cotton-stop" data-carnival="cotton" aria-label="Cotton candy stand"><b>Cotton Candy</b><small>Cloud-soft and spun fresh</small></button>
     <button class="carnival-stop food-stop apple-stop" data-carnival="apple" aria-label="Candy apples stand"><b>Candy Apples</b><small>Shiny, crisp, and sweet</small></button>
     <button class="carnival-stop food-stop funnel-stop" data-carnival="funnel" aria-label="Funnel cake stand"><b>Funnel Cakes</b><small>Warm with powdered sugar</small></button>
-    <button class="carnival-stop food-stop popcorn-stop" data-carnival="popcorn" aria-label="Popcorn and lemonade stand"><b>Popcorn &amp; Lemonade</b><small>Classic midway snacks</small></button>
+    <button class="carnival-stop food-stop popcorn-stop" data-carnival="popcorn" aria-label="Popcorn stand"><b>Popcorn</b><small>Classic midway snacks</small></button>
+<button class="carnival-stop food-stop" data-carnival="corndog"><b>Corn Dogs</b><small>Visit this concession</small></button>
+<button class="carnival-stop food-stop" data-carnival="lemonade"><b>Lemonade</b><small>Visit this concession</small></button>
+<button class="carnival-stop food-stop" data-carnival="icecream"><b>Ice Cream</b><small>Visit this concession</small></button>
+<button class="carnival-stop food-stop" data-carnival="honeybun"><b>Honey Buns</b><small>Visit this concession</small></button>
     <button class="carnival-stop ride-stop wheel-stop" data-carnival="wheel" aria-label="Ride the Honeywheel Ferris wheel"><b>Honeywheel</b><small>A slow ride above the lights</small></button>
     <button class="carnival-stop ride-stop carousel-stop" data-carnival="carousel" aria-label="Ride the Honey-Go-Round carousel"><b>Honey-Go-Round</b><small>Pick a painted pony</small></button>
     <button class="carnival-stop game-stop ring-stop" data-carnival="rings" aria-label="Play ring toss"><b>Ring Toss</b><small>Win tickets on the midway</small></button>
     <button class="carnival-stop game-stop duck-stop" data-carnival="ducks" aria-label="Play Lucky Duck Pond"><b>Lucky Duck Pond</b><small>Pick a duck and see what you find</small></button>
     <button class="carnival-stop game-stop balloon-stop" data-carnival="balloons" aria-label="Play Balloon Pop"><b>Balloon Pop</b><small>Choose the right balloon</small></button>
     <button class="carnival-stop circus-stop" data-carnival="circus" aria-label="Enter the Honeybrook circus show"><b>Little Circus Show</b><small>Three acts · one golden finale</small></button>
+    <a class="carnival-stop festival-entry" href="../../festival.html"><b>Hands-on Fair · 47 programs</b><small>Perform, make, judge and compete</small></a>
   </div>
   <div class="carnival-ticket-purse"><span>🎟 Carnival tickets</span><b id="carnivalTickets">0</b><button type="button" data-carnival="prizes">Prize Booth</button></div>
   <div class="carnival-footnote">You are inside Honeybrook Fair. Return through the town portal for homes, shops and community places.</div>
@@ -140,7 +145,7 @@
     <p class="town-kicker">UNDER THE BIG TOP</p><h2>Honeybrook’s Little Circus</h2>
     <p>Robin, Templar, and Big Mama Mary are ready for the show.</p>
     <p id="circus-act-line" class="circus-act-line" aria-live="polite">Three acts · one story about making room.</p>
-    <button id="circus-start" class="btn btn-primary">Start the show</button>
+    <a class="btn" href="../../festival.html?area=ring">Perform in the circus</a><a class="btn" href="../../festival.html?area=backstage">Join the backstage crew</a><button id="circus-start" class="btn btn-primary">Start the show</button>
   </aside>
 </section>
   <!-- GARDEN -->
@@ -202,9 +207,9 @@
 
   <div id="rotate-hint">Turn your phone sideways for the best view of Honeybrook.</div>
 </div>
-<input id="fair-backup-file" type="file" accept="application/json,.json" hidden><script src="../../story-data.js?v=20261023-story-1"></script><script src="../../bear-hollow-data.js?v=20261023-story-1"></script><script src="../../learning-data.js?v=20261023-camp-2"></script><script src="../../daily-quiz.js?v=20261023-camp-2"></script><script src="../../town-activity-data.js?v=20261023-story-1"></script><script src="../../life-engine.js?v=20261023-camp-2"></script><script src="../../town-geography.js?v=20261023-hollow-1"></script><script src="../../country-scenes.js?v=20261023-world-1"></script><script src="game.js?v=20261023-book-1"></script>
+<input id="fair-backup-file" type="file" accept="application/json,.json" hidden><script src="../../story-data.js?v=20261023-story-1"></script><script src="../../bear-hollow-data.js?v=20261023-story-1"></script><script src="../../learning-data.js?v=20261023-camp-2"></script><script src="../../daily-quiz.js?v=20261023-camp-2"></script><script src="../../town-activity-data.js?v=20261023-story-1"></script><script src="../../life-engine.js?v=20261023-festival-1"></script><script src="../../town-geography.js?v=20261023-hollow-1"></script><script src="../../cast-presence.js?v=20261023-festival-1"></script><script src="../../country-scenes.js?v=20261023-festival-1"></script><script src="../../festival-photos.js?v=20261023-festival-1"></script><script src="game.js?v=20261023-festival-1"></script>
 <script src="town-wayfinding.js?v=20261023-find-1"></script>
-<script src="../../country-interface.js?v=20261023-world-1"></script><script src="bear-country.js?v=20261023-story-1"></script><script src="comfort.js?v=20261005-v2"></script><script data-pplx-inline-edit>
+<script src="../../country-interface.js?v=20261023-festival-1"></script><script src="bear-country.js?v=20261023-story-1"></script><script src="comfort.js?v=20261005-v2"></script><script data-pplx-inline-edit>
 (function () {
   if (window === window.top) return;
 
@@ -550,5 +555,5 @@
 
 </script><a class="town-return-portal" href="../../#district=ts">← Return to Honeybrook town</a>
 <script>document.querySelector(".town-return-portal").href="../../#district="+(["se","ts","ms","bv","os","ne","nw","sq","hh","ep","pk","fr","cc"].includes(new URLSearchParams(location.search).get("return"))?new URLSearchParams(location.search).get("return"):"ts");</script>
-<script src="../../canon-integration.js?v=20261023-book-1"></script><script src="../../activity-links.js?v=20261023-camp-2"></script></body>
+<script src="../../canon-integration.js?v=20261023-festival-1"></script><script src="../../activity-links.js?v=20261023-festival-1"></script></body>
 </html>

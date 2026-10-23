@@ -1,0 +1,128 @@
+{
+  "apple": {
+    "src": "assets/festival/apple.webp",
+    "width": 506,
+    "height": 335,
+    "sha256": "6340ba6bea282af1a17964c6d82791374d938054158c4f99ba352398f645b7ee",
+    "description": "apple \u00b7 original generated bear-country photographic-style setting; no humans"
+  },
+  "popcorn": {
+    "src": "assets/festival/popcorn.webp",
+    "width": 506,
+    "height": 335,
+    "sha256": "a9bf5c43f6c1bcfef9be7b155d86bbf0ab3ad0e188d5f07ce22fbc9718e3bdb7",
+    "description": "popcorn \u00b7 original generated bear-country photographic-style setting; no humans"
+  },
+  "funnel": {
+    "src": "assets/festival/funnel.webp",
+    "width": 506,
+    "height": 335,
+    "sha256": "008431fe20cebac4bc65384f6f8ecd753e3b4cc85ba0ddc7d78acd718a45b4ea",
+    "description": "funnel \u00b7 original generated bear-country photographic-style setting; no humans"
+  },
+  "cotton": {
+    "src": "assets/festival/cotton.webp",
+    "width": 506,
+    "height": 335,
+    "sha256": "030b1351830db19f87ef7f5b73fce2721e1843f149b662cfdbb1b812691da221",
+    "description": "cotton \u00b7 original generated bear-country photographic-style setting; no humans"
+  },
+  "corndog": {
+    "src": "assets/festival/corndog.webp",
+    "width": 506,
+    "height": 335,
+    "sha256": "6bd0306758237c25ce9b0eac876c2de3f45fcc0108127fc1ac32e21fd4add590",
+    "description": "corndog \u00b7 original generated bear-country photographic-style setting; no humans"
+  },
+  "lemonade": {
+    "src": "assets/festival/lemonade.webp",
+    "width": 506,
+    "height": 335,
+    "sha256": "0b0e7c722ae2b99d1bebabaee53e598c655d437d4cac30d9588c50c75d9168b2",
+    "description": "lemonade \u00b7 original generated bear-country photographic-style setting; no humans"
+  },
+  "icecream": {
+    "src": "assets/festival/icecream.webp",
+    "width": 506,
+    "height": 336,
+    "sha256": "2655a5a15b4ba7daa67f86f06493c66fca293063a30465d065f4c27fb0a8a4d8",
+    "description": "icecream \u00b7 original generated bear-country photographic-style setting; no humans"
+  },
+  "honeybun": {
+    "src": "assets/festival/honeybun.webp",
+    "width": 506,
+    "height": 336,
+    "sha256": "09a27c3aaba6e73dd5eaac028d18b3fb941a8fc4f3574025874fb1026ac82cb7",
+    "description": "honeybun \u00b7 original generated bear-country photographic-style setting; no humans"
+  },
+  "cafe": {
+    "src": "assets/festival/cafe.webp",
+    "width": 506,
+    "height": 336,
+    "sha256": "4901e828e5e98d8a5e8ae59604f14d536196d6e8e3a8fe82b3f36b0104807e7e",
+    "description": "cafe \u00b7 original generated bear-country photographic-style setting; no humans"
+  },
+  "performance": {
+    "src": "assets/festival/performance.webp",
+    "width": 412,
+    "height": 412,
+    "sha256": "aa6d3fef3076e70f47670edb5ba61504d9a2733b9ed9cc1e8d20aea147920981",
+    "description": "performance \u00b7 original bear-only photographic-style Fair activity setting"
+  },
+  "backstage": {
+    "src": "assets/festival/backstage.webp",
+    "width": 412,
+    "height": 412,
+    "sha256": "4044ca1cfee4fa3afc31cca68377d469fa98d3ef3c93e58ee5296855715a31b4",
+    "description": "backstage \u00b7 original bear-only photographic-style Fair activity setting"
+  },
+  "ridecrew": {
+    "src": "assets/festival/ridecrew.webp",
+    "width": 412,
+    "height": 412,
+    "sha256": "a42689fd13351eb90e085727ff23a9490e61fa08b5386612c3020d6c1dcbf5f2",
+    "description": "ridecrew \u00b7 original bear-only photographic-style Fair activity setting"
+  },
+  "judging": {
+    "src": "assets/festival/judging.webp",
+    "width": 412,
+    "height": 412,
+    "sha256": "dba458a869540d945966d5ea4341dd7fdbdd421b59e524b2e5234e23f41a8a44",
+    "description": "judging \u00b7 original bear-only photographic-style Fair activity setting"
+  },
+  "livestock": {
+    "src": "assets/festival/livestock.webp",
+    "width": 412,
+    "height": 412,
+    "sha256": "f71f5dad7a3cf0da05775a93aab21606b6723a91bc513145b204013fb69469ee",
+    "description": "livestock \u00b7 original bear-only photographic-style Fair activity setting"
+  },
+  "textiles": {
+    "src": "assets/festival/textiles.webp",
+    "width": 412,
+    "height": 412,
+    "sha256": "b8be5501ca3204c47eeaef03c71f7ff6e09e294e6033cd21b5344a0f21a01ea8",
+    "description": "textiles \u00b7 original bear-only photographic-style Fair activity setting"
+  },
+  "pottery": {
+    "src": "assets/festival/pottery.webp",
+    "width": 412,
+    "height": 412,
+    "sha256": "ada2f5634fffd9a284fecc05877c8942218a2cf7467cd61b662b897177fda6d4",
+    "description": "pottery \u00b7 original bear-only photographic-style Fair activity setting"
+  },
+  "music": {
+    "src": "assets/festival/music.webp",
+    "width": 412,
+    "height": 412,
+    "sha256": "21cd8d27c6f0eb520297c1735285ca4640ce39aba0ac914af8e43ae940298005",
+    "description": "music \u00b7 original bear-only photographic-style Fair activity setting"
+  },
+  "relay": {
+    "src": "assets/festival/relay.webp",
+    "width": 412,
+    "height": 412,
+    "sha256": "3264defb9fe8817b62f6762e72827f146c9f42d285486ea48c0197cfad84c978",
+    "description": "relay \u00b7 original bear-only photographic-style Fair activity setting"
+  }
+}

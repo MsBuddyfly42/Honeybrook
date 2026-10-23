@@ -170,7 +170,10 @@ FOLKS.push({"name": "Toby Trailpaw", "fur": "#8a6343", "top": "#5f7861", "lines"
 FOLKS.push({"name": "Nora Kindpaw", "fur": "#8a6343", "top": "#5f7861", "lines": ["Your story can wait until you want to tell it."]});
 FOLKS.push({"name": "Milo", "fur": "#8a6343", "top": "#5f7861", "lines": ["Do I have to go to the bridge?"]});
 for(const f of FOLKS){if(f.name==='Carmen'){f.hair='#493328';f.top='#773747';}if(f.name==='Templar')f.top='#6e3554';if(f.name==='Buddy')f.top='#3e6481';if(f.name==='Lena')f.top='#b198be';if(f.name==='Sammy')f.cub=false;}
-const present = f => !f.after || storyUnlocked() > f.after;
+FOLKS.push({name:'The ranger',fur:'#735138',top:'#526747',lines:['We can inspect the old arch from the marked public path.']});
+FOLKS.push({name:'The older cub from Bear Hollow',fur:'#886142',top:'#92745a',lines:['The welcome came before anyone asked what I could do.']});
+const present = f => f.name==='Carmen'?(window.HoneybrookCastPresence?.carmenArrived()||storyUnlocked()>11):!f.after||storyUnlocked()>f.after;
+window.HoneybrookCarmenArrived=()=>storyUnlocked()>11;
 const RECIPES = [
   { id: 'sugar', name: 'Sugar Cookies', note: 'A classic. Good for learning.', dough: '#f3dfb5', ing: [['Flour', 0.75, '#f6f1e7', 0.32], ['Sugar', 0.5, '#fffdf6', 0.38], ['Butter', 0.5, '#f2d074', 0.3], ['Vanilla', 0.25, '#6b3b17', 0.45]] },
   { id: 'choc', name: 'Chocolate Chip', note: 'Everybody\'s favorite.', dough: '#e9c690', chips: '#3b2416', ing: [['Flour', 0.67, '#f6f1e7', 0.32], ['Brown Sugar', 0.5, '#b57a3c', 0.36], ['Butter', 0.5, '#f2d074', 0.3], ['Chocolate Chips', 0.75, '#3b2416', 0.42]] },
@@ -2518,10 +2521,14 @@ window.__reelDbg = () => Pond.st && Pond.st.reel && { fish: Pond.st.reel.fish, b
 /* ------------------------------------------------------------------ */
 const Carnival = {
   snack: {
+    corndog: {name:'Corn Dog',icon:'🌭',cost:3,line:'A golden corn-battered hot dog on a stick, served in its own sleeve.'},
+    lemonade: {name:'Fresh Lemonade',icon:'🍋',cost:2,line:'Fresh lemons and cool lemonade at its own stand.'},
+    icecream: {name:'Ice Cream',icon:'🍦',cost:3,line:'A scoop in a waffle cone from the cold display.'},
+    honeybun: {name:'Honey Bun',icon:'🍯',cost:3,line:'A glazed spiral bun from the Fair bakery counter.'},
     cotton: { name: 'Cotton Candy', icon: '🍭', cost: 2, line: 'A cloud-soft swirl spun fresh at the midway.' },
     apple: { name: 'Candy Apple', icon: '🍎', cost: 3, line: 'A crisp apple with a shiny red sugar shell.' },
     funnel: { name: 'Funnel Cake', icon: '🍰', cost: 4, line: 'Warm, golden ribbons dusted with powdered sugar.' },
-    popcorn: { name: 'Popcorn & Lemonade', icon: '🍿', cost: 3, line: 'A little salty, a little sweet, and nice to share.' }
+    popcorn: { name: 'Popcorn', icon: '🍿', cost: 3, line: 'A little salty, a little sweet, and nice to share.' }
   },
   async visit(kind) {
     if(S.scene!=='carnival')return;
