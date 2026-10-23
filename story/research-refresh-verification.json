@@ -1,0 +1,216 @@
+{
+  "date": "2026-10-23",
+  "releaseCommit": "d2a80ad7b7dde4c489b5e9c0a76cf78b659b3be2",
+  "renderDeploy": "dep-dbdugge1egvs73fajn4g",
+  "renderStatus": "live",
+  "liveSite": "https://honeybrook.onrender.com/",
+  "liveFiles": [
+    {
+      "path": "DEVELOPMENT.md",
+      "sha256": "3a893e5ab6644eead981c51a3e3cfd509c6d81963817a1a2e12eda6f4549f323",
+      "bytes": 23052
+    },
+    {
+      "path": "IMPLEMENTATION_STATUS.md",
+      "sha256": "1a47933cc3db7b63d1e7dffc640512a04db1a714cac373e6998108ec2a7166a1",
+      "bytes": 46045
+    },
+    {
+      "path": "activities.html",
+      "sha256": "f6583a581ab244b5d7656e64a1b48b30589e14769effa98df0d283485fbcbe22",
+      "bytes": 2945
+    },
+    {
+      "path": "camp.html",
+      "sha256": "d1535eff3c523aa307ac4058d80670615b45182fa96d5bd330a89ac47377fac0",
+      "bytes": 3242
+    },
+    {
+      "path": "characters.html",
+      "sha256": "d3d0560de584029230661181a0d2df509c4d987eb1f3742e712a1fb40e81874d",
+      "bytes": 2785
+    },
+    {
+      "path": "chronicles.html",
+      "sha256": "b0e1d2b917cbd7b50e9aab96177a5f3d4a42e231917bde994b14d6fd9b03e496",
+      "bytes": 3409
+    },
+    {
+      "path": "community-data.js",
+      "sha256": "d08c089c2c58cf2d9debce19f9dfa419e053756813cc432eda43c6fa94dff46b",
+      "bytes": 117869
+    },
+    {
+      "path": "community-data.json",
+      "sha256": "ec84ee8a7b34f6598b5df68f537be80aee580c24fea96d4706d9a48680215e00",
+      "bytes": 149552
+    },
+    {
+      "path": "community-links.js",
+      "sha256": "cfdd7c58a3d78ebd8dfa2adddb5b77a6dda664b7191e4124453f936c02d41623",
+      "bytes": 7055
+    },
+    {
+      "path": "festival.html",
+      "sha256": "e9b44c600dd52606f20546dd6668a8b87244f3411f56c3cc516ae2087339fd7a",
+      "bytes": 2587
+    },
+    {
+      "path": "games/honeybrook-craft-fair/index.html",
+      "sha256": "9784b50d0edf302e7cc22ae785408dc7635e9b227325f4eadef384f86e980e45",
+      "bytes": 33856
+    },
+    {
+      "path": "holidays.html",
+      "sha256": "e61da302e06ead5a61926d3b8d93d2494e84cedd034cd255d4a8c484255c3d9b",
+      "bytes": 2782
+    },
+    {
+      "path": "honeybrook-ready.js",
+      "sha256": "7d859ece39db8538bcad864f81b1bc0a7d2afe64ae073068b767ac28c30d3515",
+      "bytes": 1024
+    },
+    {
+      "path": "index.html",
+      "sha256": "b0cb0f6d1d48378b4842547c61be531f66fa6e89ed89064784a8e16faaadf7af",
+      "bytes": 64357
+    },
+    {
+      "path": "learning.html",
+      "sha256": "8804629635dd89b25f348c37e64fc854c74c24977dcf4b5774cb7298f2d9a8ff",
+      "bytes": 2744
+    },
+    {
+      "path": "lingo.html",
+      "sha256": "6d658b2beda056304743b70a1e51c740971fadef389429418455a5d51e13beb2",
+      "bytes": 3154
+    },
+    {
+      "path": "nell-data.js",
+      "sha256": "ec8895b3787a589e29fcb4c948b627a986c5815cbf8092b971ed3a41491550c5",
+      "bytes": 11644
+    },
+    {
+      "path": "nell-engine.js",
+      "sha256": "8903f8dcf49debbcf94537cfebfde6d8276605362a92accb649f0286bb1f61e2",
+      "bytes": 2980
+    },
+    {
+      "path": "nell-research-ui.js",
+      "sha256": "6c72c7a58cfc4e47ce59b792aa7b9a57df3560d90199de01bb19d81eea1ef6d8",
+      "bytes": 9430
+    },
+    {
+      "path": "nell-research.html",
+      "sha256": "52a27451f5b9685465359d8436ce5aefe1f7b4fea77ed3b13e37d4c4db6f9839",
+      "bytes": 2712
+    },
+    {
+      "path": "nell-research.js",
+      "sha256": "fb6957c5cd87831b9bfcc971e6e64e979bfd2238e9a68e4557897eb6136a19b9",
+      "bytes": 30670
+    },
+    {
+      "path": "nell.css",
+      "sha256": "89fa55d69486f10a118476bd60c667c8bc72eb3f60d3a7ba9b66049955c30d78",
+      "bytes": 1805
+    },
+    {
+      "path": "nell.html",
+      "sha256": "dab1f666b835b51173fc7a474f0fffa1fa0d63684370b122208417a301c3077a",
+      "bytes": 2746
+    },
+    {
+      "path": "nell.js",
+      "sha256": "ae26524a753a88ec6b9a117a235a1b3036cff627ea143c6c44abb7ba6d5542bc",
+      "bytes": 11225
+    },
+    {
+      "path": "refuge.html",
+      "sha256": "4072f4829303da4f87d7b933aa5f676001fbb8e7b42aa81c3b00f84b8c6a2639",
+      "bytes": 2916
+    },
+    {
+      "path": "scripts/build-story-additions.cjs",
+      "sha256": "6133a23063acbb255d7ce0b9554879139fd694d23cce177bebb1771df66fad95",
+      "bytes": 5898
+    },
+    {
+      "path": "story/CANON.md",
+      "sha256": "99d22652f7c0a1623349899ca75afe7ce7be807362d713a8d361465fe94678e5",
+      "bytes": 11486
+    },
+    {
+      "path": "story/GAME_ADDITIONS.md",
+      "sha256": "8df0ec9d2af2e1a3424135c718d18ddf5f6929fccc19958db0781b664fdaf941",
+      "bytes": 113088
+    },
+    {
+      "path": "story/NELL_GAME_CANON.md",
+      "sha256": "17f6955b1399fcbf86f54a10385a67e532cb19865f81cd824ffe6bed7d7f595d",
+      "bytes": 14035
+    },
+    {
+      "path": "tests/README.md",
+      "sha256": "311364cfb4aeaabaff63cca48380fc22755cc09d48b432d71ce38fd2fdf0acc7",
+      "bytes": 7261
+    },
+    {
+      "path": "tests/fixtures/nell-research-flow.mjs",
+      "sha256": "df0cb454faa577d87064b2ed0bcd41ce0dfd0e72c0cab084eaf0522631240517",
+      "bytes": 1927
+    },
+    {
+      "path": "tests/lingo.mjs",
+      "sha256": "1485d1fed48b14e91ce48d48c3bc299b1ad8f412060508695c2f6882d8480244",
+      "bytes": 2435
+    },
+    {
+      "path": "tests/nell-research.cjs",
+      "sha256": "53b69d2fa4edd62999aa363de3d8aeacc2aeeeb5355575d0cd32d248255950dd",
+      "bytes": 1726
+    },
+    {
+      "path": "tests/nell.cjs",
+      "sha256": "4e6ac5341403ed4c75f587acc394ee5d408649af67d7c5b5bc8b5139ad8bde36",
+      "bytes": 1733
+    },
+    {
+      "path": "tests/nell.mjs",
+      "sha256": "d812391f3ef19678137c5607db2d5a9d0b01e64973a6ee3f566f0d8e00bd1e3d",
+      "bytes": 6287
+    },
+    {
+      "path": "tests/refresh.mjs",
+      "sha256": "6e880f72a743728d810cc2590687831aea0fe22359c85e3c15a55fd04b5a07ed",
+      "bytes": 2329
+    },
+    {
+      "path": "story/Honeybrook_Complete_Story_Manuscript.docx",
+      "sha256": "8c3c52318cd77fe5253987fbf77850d8c0ebc49bb15bb6fa142dbe38f4822cab",
+      "bytes": 83226
+    }
+  ],
+  "localChecks": [
+    "tests/nell.cjs",
+    "tests/nell-research.cjs",
+    "tests/community.cjs",
+    "tests/story-engine.cjs",
+    "tests/nell.mjs at 1440/390",
+    "tests/lingo.mjs at 1440/390",
+    "tests/refresh.mjs at 1440/390",
+    "tests/canon-world.mjs at 1440/390",
+    "tests/sound-alert.mjs at 1440/390"
+  ],
+  "liveBrowserLimit": "Full remote browser replay could not be completed reliably: remote fetches returned HTTP 403. Earlier runs also exposed automation navigation waits, now fixed in the test helper. Do not claim a complete passing live browser replay. All 37 changed file/source-manuscript byte checks passed against this release.",
+  "scope": {
+    "researchFiles": 14,
+    "evidenceDecisions": 42,
+    "movableEvidenceBoards": 8,
+    "existingJourneyLabels": 22,
+    "savedKeys": "Original keys and 22 labels retained. Additive research/mail key honeybrook_nell_research_v1. Tests use isolated synthetic contexts, never the owner\u2019s browser save.",
+    "character": "Nell is a private investigator. She keeps bees in her spare time and belongs to a long family lineage of beekeepers; almost everyone in that family loves bees.",
+    "refresh": "Restored route/lighting/fonts/visible images settle before the page is revealed; a fail-open timer prevents indefinite hiding.",
+    "letters": "Expanded Goldilocks adaptation draft, immediate tears upon the explicit reading step, editable fictional letter home and saved posted copy. No real messages sent."
+  }
+}
