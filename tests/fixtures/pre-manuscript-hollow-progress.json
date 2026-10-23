@@ -1,0 +1,1315 @@
+{
+  "source": "Pre-manuscript Hollow work models from release 3527b92; synthetic accounts only",
+  "cases": [
+    {
+      "id": "honey",
+      "saved": {
+        "version": 1,
+        "revision": 0,
+        "updatedAt": 0,
+        "date": "2026-10-23",
+        "day": 1,
+        "hour": 9,
+        "location": "home",
+        "role": "Family member",
+        "balance": 274400,
+        "reserve": 999999750000,
+        "trust": 0,
+        "completed": 1,
+        "skills": {},
+        "counts": {},
+        "progress": {},
+        "history": [],
+        "keepsakes": [],
+        "relationships": {
+          "maya": 7,
+          "sofia": 4
+        },
+        "businesses": {},
+        "inventory": {},
+        "prepared": {},
+        "trip": false,
+        "tripNights": 0,
+        "partner": "maya",
+        "unread": [
+          {
+            "id": "arrival",
+            "title": "A letter from Sammy",
+            "body": "You can eat first. Welcome to the town Amelia and Tom built. Harold’s sealed ancestral letter belongs to Carmen’s family story, not your account. Your existing player finances remain separate."
+          }
+        ],
+        "quizDates": [],
+        "condition": 100,
+        "hollow": {
+          "day": 1,
+          "counts": {
+            "honey": 1
+          },
+          "progress": {
+            "honey": {
+              "stage": 2,
+              "work": [
+                {
+                  "filled": true,
+                  "sealed": true,
+                  "label": "cedar"
+                },
+                {
+                  "filled": true,
+                  "sealed": true,
+                  "label": "willow"
+                },
+                {
+                  "filled": true,
+                  "sealed": true,
+                  "label": "clover"
+                },
+                {
+                  "filled": true,
+                  "sealed": true,
+                  "label": "maple"
+                },
+                {
+                  "filled": true,
+                  "sealed": true,
+                  "label": "fern"
+                },
+                {
+                  "filled": true,
+                  "sealed": true,
+                  "label": "bluebell"
+                }
+              ],
+              "draft": {}
+            }
+          },
+          "results": {
+            "honey": {
+              "total": 1,
+              "day": 1,
+              "work": [
+                {
+                  "filled": true,
+                  "sealed": true,
+                  "label": "cedar"
+                },
+                {
+                  "filled": true,
+                  "sealed": true,
+                  "label": "willow"
+                },
+                {
+                  "filled": true,
+                  "sealed": true,
+                  "label": "clover"
+                },
+                {
+                  "filled": true,
+                  "sealed": true,
+                  "label": "maple"
+                },
+                {
+                  "filled": true,
+                  "sealed": true,
+                  "label": "fern"
+                },
+                {
+                  "filled": true,
+                  "sealed": true,
+                  "label": "bluebell"
+                }
+              ]
+            }
+          },
+          "friends": {
+            "cedar": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "porridge",
+      "saved": {
+        "version": 1,
+        "revision": 0,
+        "updatedAt": 0,
+        "date": "2026-10-23",
+        "day": 1,
+        "hour": 9,
+        "location": "home",
+        "role": "Family member",
+        "balance": 274500,
+        "reserve": 999999750000,
+        "trust": 0,
+        "completed": 1,
+        "skills": {},
+        "counts": {},
+        "progress": {},
+        "history": [],
+        "keepsakes": [],
+        "relationships": {
+          "maya": 7,
+          "sofia": 4
+        },
+        "businesses": {},
+        "inventory": {},
+        "prepared": {},
+        "trip": false,
+        "tripNights": 0,
+        "partner": "maya",
+        "unread": [
+          {
+            "id": "arrival",
+            "title": "A letter from Sammy",
+            "body": "You can eat first. Welcome to the town Amelia and Tom built. Harold’s sealed ancestral letter belongs to Carmen’s family story, not your account. Your existing player finances remain separate."
+          }
+        ],
+        "quizDates": [],
+        "condition": 100,
+        "hollow": {
+          "day": 1,
+          "counts": {
+            "porridge": 1
+          },
+          "progress": {
+            "porridge": {
+              "stage": 2,
+              "work": {
+                "measures": [
+                  3,
+                  6,
+                  1
+                ],
+                "order": [
+                  "Measure",
+                  "Combine",
+                  "Cook with Mama Maple",
+                  "Portion six bowls"
+                ],
+                "portions": [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              },
+              "draft": {}
+            }
+          },
+          "results": {
+            "porridge": {
+              "total": 1,
+              "day": 1,
+              "work": {
+                "measures": [
+                  3,
+                  6,
+                  1
+                ],
+                "order": [
+                  "Measure",
+                  "Combine",
+                  "Cook with Mama Maple",
+                  "Portion six bowls"
+                ],
+                "portions": [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              }
+            }
+          },
+          "friends": {
+            "cedar": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "wood",
+      "saved": {
+        "version": 1,
+        "revision": 0,
+        "updatedAt": 0,
+        "date": "2026-10-23",
+        "day": 1,
+        "hour": 9,
+        "location": "home",
+        "role": "Family member",
+        "balance": 269800,
+        "reserve": 999999750000,
+        "trust": 0,
+        "completed": 1,
+        "skills": {},
+        "counts": {},
+        "progress": {},
+        "history": [],
+        "keepsakes": [],
+        "relationships": {
+          "maya": 7,
+          "sofia": 4
+        },
+        "businesses": {},
+        "inventory": {},
+        "prepared": {},
+        "trip": false,
+        "tripNights": 0,
+        "partner": "maya",
+        "unread": [
+          {
+            "id": "arrival",
+            "title": "A letter from Sammy",
+            "body": "You can eat first. Welcome to the town Amelia and Tom built. Harold’s sealed ancestral letter belongs to Carmen’s family story, not your account. Your existing player finances remain separate."
+          }
+        ],
+        "quizDates": [],
+        "condition": 100,
+        "hollow": {
+          "day": 1,
+          "counts": {
+            "wood": 1
+          },
+          "progress": {
+            "wood": {
+              "stage": 2,
+              "work": [
+                "ready",
+                "season",
+                "ready",
+                "season",
+                "ready",
+                "season"
+              ],
+              "draft": {}
+            }
+          },
+          "results": {
+            "wood": {
+              "total": 1,
+              "day": 1,
+              "work": [
+                "ready",
+                "season",
+                "ready",
+                "season",
+                "ready",
+                "season"
+              ]
+            }
+          },
+          "friends": {
+            "cedar": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "bridge",
+      "saved": {
+        "version": 1,
+        "revision": 0,
+        "updatedAt": 0,
+        "date": "2026-10-23",
+        "day": 1,
+        "hour": 9,
+        "location": "home",
+        "role": "Family member",
+        "balance": 289200,
+        "reserve": 999999750000,
+        "trust": 0,
+        "completed": 1,
+        "skills": {},
+        "counts": {},
+        "progress": {},
+        "history": [],
+        "keepsakes": [],
+        "relationships": {
+          "maya": 7,
+          "sofia": 4
+        },
+        "businesses": {},
+        "inventory": {},
+        "prepared": {},
+        "trip": false,
+        "tripNights": 0,
+        "partner": "maya",
+        "unread": [
+          {
+            "id": "arrival",
+            "title": "A letter from Sammy",
+            "body": "You can eat first. Welcome to the town Amelia and Tom built. Harold’s sealed ancestral letter belongs to Carmen’s family story, not your account. Your existing player finances remain separate."
+          }
+        ],
+        "quizDates": [],
+        "condition": 100,
+        "hollow": {
+          "day": 1,
+          "counts": {
+            "bridge": 1
+          },
+          "progress": {
+            "bridge": {
+              "stage": 2,
+              "work": {
+                "measures": [
+                  240,
+                  4
+                ],
+                "fitted": [
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              },
+              "draft": {}
+            }
+          },
+          "results": {
+            "bridge": {
+              "total": 1,
+              "day": 1,
+              "work": {
+                "measures": [
+                  240,
+                  4
+                ],
+                "fitted": [
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              }
+            }
+          },
+          "friends": {
+            "cedar": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "garden",
+      "saved": {
+        "version": 1,
+        "revision": 0,
+        "updatedAt": 0,
+        "date": "2026-10-23",
+        "day": 1,
+        "hour": 9,
+        "location": "home",
+        "role": "Family member",
+        "balance": 274600,
+        "reserve": 999999750000,
+        "trust": 0,
+        "completed": 1,
+        "skills": {},
+        "counts": {},
+        "progress": {},
+        "history": [],
+        "keepsakes": [],
+        "relationships": {
+          "maya": 7,
+          "sofia": 4
+        },
+        "businesses": {},
+        "inventory": {},
+        "prepared": {},
+        "trip": false,
+        "tripNights": 0,
+        "partner": "maya",
+        "unread": [
+          {
+            "id": "arrival",
+            "title": "A letter from Sammy",
+            "body": "You can eat first. Welcome to the town Amelia and Tom built. Harold’s sealed ancestral letter belongs to Carmen’s family story, not your account. Your existing player finances remain separate."
+          }
+        ],
+        "quizDates": [],
+        "condition": 100,
+        "hollow": {
+          "day": 1,
+          "counts": {
+            "garden": 1
+          },
+          "progress": {
+            "garden": {
+              "stage": 2,
+              "work": [
+                {
+                  "seed": "Carrot",
+                  "watered": true
+                },
+                {
+                  "seed": "Lettuce",
+                  "watered": true
+                },
+                {
+                  "seed": "Bean",
+                  "watered": true
+                },
+                {
+                  "seed": "Carrot",
+                  "watered": true
+                },
+                {
+                  "seed": "Lettuce",
+                  "watered": true
+                },
+                {
+                  "seed": "Bean",
+                  "watered": true
+                }
+              ],
+              "draft": {}
+            }
+          },
+          "results": {
+            "garden": {
+              "total": 1,
+              "day": 1,
+              "work": [
+                {
+                  "seed": "Carrot",
+                  "watered": true
+                },
+                {
+                  "seed": "Lettuce",
+                  "watered": true
+                },
+                {
+                  "seed": "Bean",
+                  "watered": true
+                },
+                {
+                  "seed": "Carrot",
+                  "watered": true
+                },
+                {
+                  "seed": "Lettuce",
+                  "watered": true
+                },
+                {
+                  "seed": "Bean",
+                  "watered": true
+                }
+              ]
+            }
+          },
+          "friends": {
+            "cedar": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "flowers",
+      "saved": {
+        "version": 1,
+        "revision": 0,
+        "updatedAt": 0,
+        "date": "2026-10-23",
+        "day": 1,
+        "hour": 9,
+        "location": "home",
+        "role": "Family member",
+        "balance": 269600,
+        "reserve": 999999750000,
+        "trust": 0,
+        "completed": 1,
+        "skills": {},
+        "counts": {},
+        "progress": {},
+        "history": [],
+        "keepsakes": [],
+        "relationships": {
+          "maya": 7,
+          "sofia": 4
+        },
+        "businesses": {},
+        "inventory": {},
+        "prepared": {},
+        "trip": false,
+        "tripNights": 0,
+        "partner": "maya",
+        "unread": [
+          {
+            "id": "arrival",
+            "title": "A letter from Sammy",
+            "body": "You can eat first. Welcome to the town Amelia and Tom built. Harold’s sealed ancestral letter belongs to Carmen’s family story, not your account. Your existing player finances remain separate."
+          }
+        ],
+        "quizDates": [],
+        "condition": 100,
+        "hollow": {
+          "day": 1,
+          "counts": {
+            "flowers": 1
+          },
+          "progress": {
+            "flowers": {
+              "stage": 2,
+              "work": [
+                {
+                  "seed": "Bluebell",
+                  "watered": true
+                },
+                {
+                  "seed": "Daisy",
+                  "watered": true
+                },
+                {
+                  "seed": "Marigold",
+                  "watered": true
+                },
+                {
+                  "seed": "Bluebell",
+                  "watered": true
+                },
+                {
+                  "seed": "Daisy",
+                  "watered": true
+                },
+                {
+                  "seed": "Marigold",
+                  "watered": true
+                }
+              ],
+              "draft": {}
+            }
+          },
+          "results": {
+            "flowers": {
+              "total": 1,
+              "day": 1,
+              "work": [
+                {
+                  "seed": "Bluebell",
+                  "watered": true
+                },
+                {
+                  "seed": "Daisy",
+                  "watered": true
+                },
+                {
+                  "seed": "Marigold",
+                  "watered": true
+                },
+                {
+                  "seed": "Bluebell",
+                  "watered": true
+                },
+                {
+                  "seed": "Daisy",
+                  "watered": true
+                },
+                {
+                  "seed": "Marigold",
+                  "watered": true
+                }
+              ]
+            }
+          },
+          "friends": {
+            "cedar": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "bakery",
+      "saved": {
+        "version": 1,
+        "revision": 0,
+        "updatedAt": 0,
+        "date": "2026-10-23",
+        "day": 1,
+        "hour": 9,
+        "location": "home",
+        "role": "Family member",
+        "balance": 279400,
+        "reserve": 999999750000,
+        "trust": 0,
+        "completed": 1,
+        "skills": {},
+        "counts": {},
+        "progress": {},
+        "history": [],
+        "keepsakes": [],
+        "relationships": {
+          "maya": 7,
+          "sofia": 4
+        },
+        "businesses": {},
+        "inventory": {},
+        "prepared": {},
+        "trip": false,
+        "tripNights": 0,
+        "partner": "maya",
+        "unread": [
+          {
+            "id": "arrival",
+            "title": "A letter from Sammy",
+            "body": "You can eat first. Welcome to the town Amelia and Tom built. Harold’s sealed ancestral letter belongs to Carmen’s family story, not your account. Your existing player finances remain separate."
+          }
+        ],
+        "quizDates": [],
+        "condition": 100,
+        "hollow": {
+          "day": 1,
+          "counts": {
+            "bakery": 1
+          },
+          "progress": {
+            "bakery": {
+              "stage": 2,
+              "work": {
+                "measures": [
+                  2,
+                  1,
+                  1,
+                  0.5
+                ],
+                "order": [
+                  "Measure",
+                  "Mix",
+                  "Shape",
+                  "Bake with Marjorie",
+                  "Cool"
+                ],
+                "portions": [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              },
+              "draft": {}
+            }
+          },
+          "results": {
+            "bakery": {
+              "total": 1,
+              "day": 1,
+              "work": {
+                "measures": [
+                  2,
+                  1,
+                  1,
+                  0.5
+                ],
+                "order": [
+                  "Measure",
+                  "Mix",
+                  "Shape",
+                  "Bake with Marjorie",
+                  "Cool"
+                ],
+                "portions": [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              }
+            }
+          },
+          "friends": {
+            "cedar": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "fellowship",
+      "saved": {
+        "version": 1,
+        "revision": 0,
+        "updatedAt": 0,
+        "date": "2026-10-23",
+        "day": 1,
+        "hour": 9,
+        "location": "home",
+        "role": "Family member",
+        "balance": 250000,
+        "reserve": 999999750000,
+        "trust": 0,
+        "completed": 1,
+        "skills": {},
+        "counts": {},
+        "progress": {},
+        "history": [],
+        "keepsakes": [],
+        "relationships": {
+          "maya": 7,
+          "sofia": 4
+        },
+        "businesses": {},
+        "inventory": {},
+        "prepared": {},
+        "trip": false,
+        "tripNights": 0,
+        "partner": "maya",
+        "unread": [
+          {
+            "id": "arrival",
+            "title": "A letter from Sammy",
+            "body": "You can eat first. Welcome to the town Amelia and Tom built. Harold’s sealed ancestral letter belongs to Carmen’s family story, not your account. Your existing player finances remain separate."
+          }
+        ],
+        "quizDates": [],
+        "condition": 100,
+        "hollow": {
+          "day": 1,
+          "counts": {
+            "fellowship": 1
+          },
+          "progress": {
+            "fellowship": {
+              "stage": 2,
+              "work": {
+                "families": [
+                  "The Bramblepaws",
+                  "The Mizumori bears",
+                  "The Jean-Baptiste bears",
+                  "The Campbell bears",
+                  "The Chen bears",
+                  "The Rivera bears"
+                ],
+                "order": [
+                  "Read Psalm 23:1",
+                  "Sing together",
+                  "Share thanks",
+                  "Offer practical help"
+                ]
+              },
+              "draft": {
+                "families": [
+                  "The Bramblepaws",
+                  "The Mizumori bears",
+                  "The Jean-Baptiste bears"
+                ]
+              }
+            }
+          },
+          "results": {
+            "fellowship": {
+              "total": 1,
+              "day": 1,
+              "work": {
+                "families": [
+                  "The Bramblepaws",
+                  "The Mizumori bears",
+                  "The Jean-Baptiste bears",
+                  "The Campbell bears",
+                  "The Chen bears",
+                  "The Rivera bears"
+                ],
+                "order": [
+                  "Read Psalm 23:1",
+                  "Sing together",
+                  "Share thanks",
+                  "Offer practical help"
+                ]
+              }
+            }
+          },
+          "friends": {
+            "cedar": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "welcome-cedar",
+      "saved": {
+        "version": 1,
+        "revision": 0,
+        "updatedAt": 0,
+        "date": "2026-10-23",
+        "day": 1,
+        "hour": 9,
+        "location": "home",
+        "role": "Family member",
+        "balance": 264300,
+        "reserve": 999999750000,
+        "trust": 0,
+        "completed": 1,
+        "skills": {},
+        "counts": {},
+        "progress": {},
+        "history": [],
+        "keepsakes": [],
+        "relationships": {
+          "maya": 7,
+          "sofia": 4
+        },
+        "businesses": {},
+        "inventory": {},
+        "prepared": {},
+        "trip": false,
+        "tripNights": 0,
+        "partner": "maya",
+        "unread": [
+          {
+            "id": "arrival",
+            "title": "A letter from Sammy",
+            "body": "You can eat first. Welcome to the town Amelia and Tom built. Harold’s sealed ancestral letter belongs to Carmen’s family story, not your account. Your existing player finances remain separate."
+          }
+        ],
+        "quizDates": [],
+        "condition": 100,
+        "hollow": {
+          "day": 1,
+          "counts": {
+            "welcome-cedar": 1
+          },
+          "progress": {
+            "welcome-cedar": {
+              "stage": 2,
+              "work": {
+                "color": "#a84836",
+                "packed": [
+                  "Clean folded blanket",
+                  "Honey-bread basket",
+                  "Fresh drinking water"
+                ]
+              },
+              "draft": {}
+            }
+          },
+          "results": {
+            "welcome-cedar": {
+              "total": 1,
+              "day": 1,
+              "work": {
+                "color": "#a84836",
+                "packed": [
+                  "Clean folded blanket",
+                  "Honey-bread basket",
+                  "Fresh drinking water"
+                ]
+              }
+            }
+          },
+          "friends": {
+            "cedar": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "welcome-willow",
+      "saved": {
+        "version": 1,
+        "revision": 0,
+        "updatedAt": 0,
+        "date": "2026-10-23",
+        "day": 1,
+        "hour": 9,
+        "location": "home",
+        "role": "Family member",
+        "balance": 264300,
+        "reserve": 999999750000,
+        "trust": 0,
+        "completed": 1,
+        "skills": {},
+        "counts": {},
+        "progress": {},
+        "history": [],
+        "keepsakes": [],
+        "relationships": {
+          "maya": 7,
+          "sofia": 4
+        },
+        "businesses": {},
+        "inventory": {},
+        "prepared": {},
+        "trip": false,
+        "tripNights": 0,
+        "partner": "maya",
+        "unread": [
+          {
+            "id": "arrival",
+            "title": "A letter from Sammy",
+            "body": "You can eat first. Welcome to the town Amelia and Tom built. Harold’s sealed ancestral letter belongs to Carmen’s family story, not your account. Your existing player finances remain separate."
+          }
+        ],
+        "quizDates": [],
+        "condition": 100,
+        "hollow": {
+          "day": 1,
+          "counts": {
+            "welcome-willow": 1
+          },
+          "progress": {
+            "welcome-willow": {
+              "stage": 2,
+              "work": {
+                "color": "#a84836",
+                "packed": [
+                  "Clean folded blanket",
+                  "Honey-bread basket",
+                  "Fresh drinking water"
+                ]
+              },
+              "draft": {}
+            }
+          },
+          "results": {
+            "welcome-willow": {
+              "total": 1,
+              "day": 1,
+              "work": {
+                "color": "#a84836",
+                "packed": [
+                  "Clean folded blanket",
+                  "Honey-bread basket",
+                  "Fresh drinking water"
+                ]
+              }
+            }
+          },
+          "friends": {
+            "cedar": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "welcome-clover",
+      "saved": {
+        "version": 1,
+        "revision": 0,
+        "updatedAt": 0,
+        "date": "2026-10-23",
+        "day": 1,
+        "hour": 9,
+        "location": "home",
+        "role": "Family member",
+        "balance": 264300,
+        "reserve": 999999750000,
+        "trust": 0,
+        "completed": 1,
+        "skills": {},
+        "counts": {},
+        "progress": {},
+        "history": [],
+        "keepsakes": [],
+        "relationships": {
+          "maya": 7,
+          "sofia": 4
+        },
+        "businesses": {},
+        "inventory": {},
+        "prepared": {},
+        "trip": false,
+        "tripNights": 0,
+        "partner": "maya",
+        "unread": [
+          {
+            "id": "arrival",
+            "title": "A letter from Sammy",
+            "body": "You can eat first. Welcome to the town Amelia and Tom built. Harold’s sealed ancestral letter belongs to Carmen’s family story, not your account. Your existing player finances remain separate."
+          }
+        ],
+        "quizDates": [],
+        "condition": 100,
+        "hollow": {
+          "day": 1,
+          "counts": {
+            "welcome-clover": 1
+          },
+          "progress": {
+            "welcome-clover": {
+              "stage": 2,
+              "work": {
+                "color": "#a84836",
+                "packed": [
+                  "Clean folded blanket",
+                  "Honey-bread basket",
+                  "Fresh drinking water"
+                ]
+              },
+              "draft": {}
+            }
+          },
+          "results": {
+            "welcome-clover": {
+              "total": 1,
+              "day": 1,
+              "work": {
+                "color": "#a84836",
+                "packed": [
+                  "Clean folded blanket",
+                  "Honey-bread basket",
+                  "Fresh drinking water"
+                ]
+              }
+            }
+          },
+          "friends": {
+            "cedar": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "welcome-maple",
+      "saved": {
+        "version": 1,
+        "revision": 0,
+        "updatedAt": 0,
+        "date": "2026-10-23",
+        "day": 1,
+        "hour": 9,
+        "location": "home",
+        "role": "Family member",
+        "balance": 264300,
+        "reserve": 999999750000,
+        "trust": 0,
+        "completed": 1,
+        "skills": {},
+        "counts": {},
+        "progress": {},
+        "history": [],
+        "keepsakes": [],
+        "relationships": {
+          "maya": 7,
+          "sofia": 4
+        },
+        "businesses": {},
+        "inventory": {},
+        "prepared": {},
+        "trip": false,
+        "tripNights": 0,
+        "partner": "maya",
+        "unread": [
+          {
+            "id": "arrival",
+            "title": "A letter from Sammy",
+            "body": "You can eat first. Welcome to the town Amelia and Tom built. Harold’s sealed ancestral letter belongs to Carmen’s family story, not your account. Your existing player finances remain separate."
+          }
+        ],
+        "quizDates": [],
+        "condition": 100,
+        "hollow": {
+          "day": 1,
+          "counts": {
+            "welcome-maple": 1
+          },
+          "progress": {
+            "welcome-maple": {
+              "stage": 2,
+              "work": {
+                "color": "#a84836",
+                "packed": [
+                  "Clean folded blanket",
+                  "Honey-bread basket",
+                  "Fresh drinking water"
+                ]
+              },
+              "draft": {}
+            }
+          },
+          "results": {
+            "welcome-maple": {
+              "total": 1,
+              "day": 1,
+              "work": {
+                "color": "#a84836",
+                "packed": [
+                  "Clean folded blanket",
+                  "Honey-bread basket",
+                  "Fresh drinking water"
+                ]
+              }
+            }
+          },
+          "friends": {
+            "cedar": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "welcome-fern",
+      "saved": {
+        "version": 1,
+        "revision": 0,
+        "updatedAt": 0,
+        "date": "2026-10-23",
+        "day": 1,
+        "hour": 9,
+        "location": "home",
+        "role": "Family member",
+        "balance": 264300,
+        "reserve": 999999750000,
+        "trust": 0,
+        "completed": 1,
+        "skills": {},
+        "counts": {},
+        "progress": {},
+        "history": [],
+        "keepsakes": [],
+        "relationships": {
+          "maya": 7,
+          "sofia": 4
+        },
+        "businesses": {},
+        "inventory": {},
+        "prepared": {},
+        "trip": false,
+        "tripNights": 0,
+        "partner": "maya",
+        "unread": [
+          {
+            "id": "arrival",
+            "title": "A letter from Sammy",
+            "body": "You can eat first. Welcome to the town Amelia and Tom built. Harold’s sealed ancestral letter belongs to Carmen’s family story, not your account. Your existing player finances remain separate."
+          }
+        ],
+        "quizDates": [],
+        "condition": 100,
+        "hollow": {
+          "day": 1,
+          "counts": {
+            "welcome-fern": 1
+          },
+          "progress": {
+            "welcome-fern": {
+              "stage": 2,
+              "work": {
+                "color": "#a84836",
+                "packed": [
+                  "Clean folded blanket",
+                  "Honey-bread basket",
+                  "Fresh drinking water"
+                ]
+              },
+              "draft": {}
+            }
+          },
+          "results": {
+            "welcome-fern": {
+              "total": 1,
+              "day": 1,
+              "work": {
+                "color": "#a84836",
+                "packed": [
+                  "Clean folded blanket",
+                  "Honey-bread basket",
+                  "Fresh drinking water"
+                ]
+              }
+            }
+          },
+          "friends": {
+            "cedar": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "welcome-bluebell",
+      "saved": {
+        "version": 1,
+        "revision": 0,
+        "updatedAt": 0,
+        "date": "2026-10-23",
+        "day": 1,
+        "hour": 9,
+        "location": "home",
+        "role": "Family member",
+        "balance": 264300,
+        "reserve": 999999750000,
+        "trust": 0,
+        "completed": 1,
+        "skills": {},
+        "counts": {},
+        "progress": {},
+        "history": [],
+        "keepsakes": [],
+        "relationships": {
+          "maya": 7,
+          "sofia": 4
+        },
+        "businesses": {},
+        "inventory": {},
+        "prepared": {},
+        "trip": false,
+        "tripNights": 0,
+        "partner": "maya",
+        "unread": [
+          {
+            "id": "arrival",
+            "title": "A letter from Sammy",
+            "body": "You can eat first. Welcome to the town Amelia and Tom built. Harold’s sealed ancestral letter belongs to Carmen’s family story, not your account. Your existing player finances remain separate."
+          }
+        ],
+        "quizDates": [],
+        "condition": 100,
+        "hollow": {
+          "day": 1,
+          "counts": {
+            "welcome-bluebell": 1
+          },
+          "progress": {
+            "welcome-bluebell": {
+              "stage": 2,
+              "work": {
+                "color": "#a84836",
+                "packed": [
+                  "Clean folded blanket",
+                  "Honey-bread basket",
+                  "Fresh drinking water"
+                ]
+              },
+              "draft": {}
+            }
+          },
+          "results": {
+            "welcome-bluebell": {
+              "total": 1,
+              "day": 1,
+              "work": {
+                "color": "#a84836",
+                "packed": [
+                  "Clean folded blanket",
+                  "Honey-bread basket",
+                  "Fresh drinking water"
+                ]
+              }
+            }
+          },
+          "friends": {
+            "cedar": 2
+          }
+        }
+      }
+    }
+  ]
+}

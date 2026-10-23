@@ -138,3 +138,7 @@ Expand **Cabins for New Neighbors**, beside Bear Hollow, into a genuine cottage 
 ## Whole-game Bear Hollow presentation — October 23, 2026
 
 The owner explicitly approves the new Bear Hollow photographic bear-country design and requests that same look throughout **the entire game**, including Honeybrook town and the separate Fair. Carry its warm country typography, photographic bear families, woodland room framing, cream/pine/honey palette and readable controls through public districts, interiors, classrooms, camp rooms, workshops and Fair activities. Preserve existing gameplay, earned progress, logical city connections and the Fair's own portal.
+
+## Original manuscript — October 23, 2026
+
+The owner supplied the complete *Honeybrook Chronicles — Where the Stories Live, Book One*, by Templar Hughes-Bryant, and asked to use the whole story without omissions. Its original cast, history, family relationships, distinct locations and open mysteries take precedence over earlier invented biographies. Photographic scenes must depict their actual chapter/setting. Read `story/CANON.md` before related changes. Preserve the complete source and existing progress. Camp/finance additions are game extensions, not changes to the manuscript or Carmen's ancestral letter. Keep the approved bear-country presentation and separate Fair portal.

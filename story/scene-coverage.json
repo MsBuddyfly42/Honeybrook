@@ -1,0 +1,1245 @@
+{
+  "sourceSha256": "8c3c52318cd77fe5253987fbf77850d8c0ebc49bb15bb6fa142dbe38f4822cab",
+  "sections": [
+    {
+      "id": "prologue",
+      "label": "Prologue",
+      "title": "The Kiss",
+      "paragraphs": 5,
+      "place": "Ancient forest clearing",
+      "cast": [
+        "prince",
+        "princess"
+      ],
+      "activity": "inspect",
+      "photo": "assets/story-scenes/book-01.webp",
+      "tile": 0,
+      "photoSha256": "a9b8502e3b4c5adaa56c2f87dbef67603b4e2a4a28945dfa512eb82ddaf87cfa"
+    },
+    {
+      "id": "chapter-1",
+      "label": "Chapter 1",
+      "title": "The River",
+      "paragraphs": 8,
+      "place": "River district memory",
+      "cast": [
+        "gold",
+        "beekeepers"
+      ],
+      "activity": "pack",
+      "photo": "assets/story-scenes/book-01.webp",
+      "tile": 1,
+      "photoSha256": "a9b8502e3b4c5adaa56c2f87dbef67603b4e2a4a28945dfa512eb82ddaf87cfa"
+    },
+    {
+      "id": "chapter-2",
+      "label": "Chapter 2",
+      "title": "The Cottage",
+      "paragraphs": 9,
+      "place": "Three Bears’ Cottage",
+      "cast": [
+        "gold",
+        "mama",
+        "papa",
+        "baby"
+      ],
+      "activity": "sequence",
+      "photo": "assets/story-scenes/book-01.webp",
+      "tile": 2,
+      "photoSha256": "a9b8502e3b4c5adaa56c2f87dbef67603b4e2a4a28945dfa512eb82ddaf87cfa"
+    },
+    {
+      "id": "chapter-3",
+      "label": "Chapter 3",
+      "title": "The Mascot",
+      "paragraphs": 10,
+      "place": "Bear Hollow",
+      "cast": [
+        "gold",
+        "mama",
+        "papa",
+        "baby"
+      ],
+      "activity": "layout",
+      "photo": "assets/story-scenes/book-01.webp",
+      "tile": 3,
+      "photoSha256": "a9b8502e3b4c5adaa56c2f87dbef67603b4e2a4a28945dfa512eb82ddaf87cfa"
+    },
+    {
+      "id": "chapter-4",
+      "label": "Chapter 4",
+      "title": "The Winter",
+      "paragraphs": 5,
+      "place": "Three Bears’ Cottage",
+      "cast": [
+        "gold",
+        "baby"
+      ],
+      "activity": "inspect",
+      "photo": "assets/story-scenes/book-02.webp",
+      "tile": 0,
+      "photoSha256": "8928bdfa6f063aeeebbff475a51baff0f9dd0fa59358addb1a7f6f3cb513b4b3"
+    },
+    {
+      "id": "chapter-5",
+      "label": "Chapter 5",
+      "title": "The Rule",
+      "paragraphs": 10,
+      "place": "Bear Hollow",
+      "cast": [
+        "gold",
+        "baby"
+      ],
+      "activity": "inspect",
+      "photo": "assets/story-scenes/book-02.webp",
+      "tile": 1,
+      "photoSha256": "8928bdfa6f063aeeebbff475a51baff0f9dd0fa59358addb1a7f6f3cb513b4b3"
+    },
+    {
+      "id": "chapter-6",
+      "label": "Chapter 6",
+      "title": "The Bear with No Answer",
+      "paragraphs": 12,
+      "place": "First Wooden Bridge",
+      "cast": [
+        "amelia",
+        "angel"
+      ],
+      "activity": "pack",
+      "photo": "assets/story-scenes/book-02.webp",
+      "tile": 2,
+      "photoSha256": "8928bdfa6f063aeeebbff475a51baff0f9dd0fa59358addb1a7f6f3cb513b4b3"
+    },
+    {
+      "id": "chapter-7",
+      "label": "Chapter 7",
+      "title": "All the Doors behind Her",
+      "paragraphs": 17,
+      "place": "First Wooden Bridge",
+      "cast": [
+        "amelia"
+      ],
+      "activity": "inspect",
+      "photo": "assets/story-scenes/book-02.webp",
+      "tile": 3,
+      "photoSha256": "8928bdfa6f063aeeebbff475a51baff0f9dd0fa59358addb1a7f6f3cb513b4b3"
+    },
+    {
+      "id": "chapter-8",
+      "label": "Chapter 8",
+      "title": "A Builder on the Move",
+      "paragraphs": 18,
+      "place": "First Wooden Bridge",
+      "cast": [
+        "tom"
+      ],
+      "activity": "sequence",
+      "photo": "assets/story-scenes/book-03.webp",
+      "tile": 0,
+      "photoSha256": "e560b41d1d3d42c7abffc6b761f4e36b42ce81c870a97311ec571c58c1851b81"
+    },
+    {
+      "id": "chapter-9",
+      "label": "Chapter 9",
+      "title": "Across the Water",
+      "paragraphs": 16,
+      "place": "First Wooden Bridge",
+      "cast": [
+        "amelia",
+        "tom",
+        "angel"
+      ],
+      "activity": "sort",
+      "photo": "assets/story-scenes/book-03.webp",
+      "tile": 1,
+      "photoSha256": "e560b41d1d3d42c7abffc6b761f4e36b42ce81c870a97311ec571c58c1851b81"
+    },
+    {
+      "id": "chapter-10",
+      "label": "Chapter 10",
+      "title": "Many Paws",
+      "paragraphs": 26,
+      "place": "Bridge Worksite",
+      "cast": [
+        "amelia",
+        "tom",
+        "cook"
+      ],
+      "activity": "sequence",
+      "photo": "assets/story-scenes/book-03.webp",
+      "tile": 2,
+      "photoSha256": "e560b41d1d3d42c7abffc6b761f4e36b42ce81c870a97311ec571c58c1851b81"
+    },
+    {
+      "id": "chapter-11",
+      "label": "Chapter 11",
+      "title": "The First Crossing",
+      "paragraphs": 16,
+      "place": "First Wooden Bridge",
+      "cast": [
+        "amelia",
+        "tom"
+      ],
+      "activity": "sequence",
+      "photo": "assets/story-scenes/book-03.webp",
+      "tile": 3,
+      "photoSha256": "e560b41d1d3d42c7abffc6b761f4e36b42ce81c870a97311ec571c58c1851b81"
+    },
+    {
+      "id": "chapter-12",
+      "label": "Chapter 12",
+      "title": "The Door on the Drawing",
+      "paragraphs": 13,
+      "place": "First Shelter",
+      "cast": [
+        "amelia",
+        "tom"
+      ],
+      "activity": "layout",
+      "photo": "assets/story-scenes/book-04.webp",
+      "tile": 0,
+      "photoSha256": "4c8a673e57aa2d81ebf26bed59f2a2c18f2ff8e30542798a5c68b143a6409a65"
+    },
+    {
+      "id": "chapter-13",
+      "label": "Chapter 13",
+      "title": "A Roof and a Promise",
+      "paragraphs": 23,
+      "place": "First Shelter",
+      "cast": [
+        "amelia",
+        "tom",
+        "angel"
+      ],
+      "activity": "inspect",
+      "photo": "assets/story-scenes/book-04.webp",
+      "tile": 1,
+      "photoSha256": "4c8a673e57aa2d81ebf26bed59f2a2c18f2ff8e30542798a5c68b143a6409a65"
+    },
+    {
+      "id": "chapter-14",
+      "label": "Chapter 14",
+      "title": "Strong and Useful",
+      "paragraphs": 25,
+      "place": "First Shelter",
+      "cast": [
+        "amelia",
+        "tom"
+      ],
+      "activity": "layout",
+      "photo": "assets/story-scenes/book-04.webp",
+      "tile": 2,
+      "photoSha256": "4c8a673e57aa2d81ebf26bed59f2a2c18f2ff8e30542798a5c68b143a6409a65"
+    },
+    {
+      "id": "chapter-15",
+      "label": "Chapter 15",
+      "title": "Room for a Little Bundle",
+      "paragraphs": 8,
+      "place": "First Shelter",
+      "cast": [
+        "amelia"
+      ],
+      "activity": "pack",
+      "photo": "assets/story-scenes/book-04.webp",
+      "tile": 3,
+      "photoSha256": "4c8a673e57aa2d81ebf26bed59f2a2c18f2ff8e30542798a5c68b143a6409a65"
+    },
+    {
+      "id": "chapter-16",
+      "label": "Chapter 16",
+      "title": "The Bag by the Door",
+      "paragraphs": 25,
+      "place": "First Shelter",
+      "cast": [
+        "tom",
+        "amelia"
+      ],
+      "activity": "inspect",
+      "photo": "assets/story-scenes/book-05.webp",
+      "tile": 0,
+      "photoSha256": "b9a2050f298e20ea1a41bd4eadf19c17f7ba246b2f44e9488424d302c5848421"
+    },
+    {
+      "id": "chapter-17",
+      "label": "Chapter 17",
+      "title": "Tom Stays",
+      "paragraphs": 17,
+      "place": "Tom’s Workshop",
+      "cast": [
+        "tom",
+        "amelia"
+      ],
+      "activity": "layout",
+      "photo": "assets/story-scenes/book-05.webp",
+      "tile": 1,
+      "photoSha256": "b9a2050f298e20ea1a41bd4eadf19c17f7ba246b2f44e9488424d302c5848421"
+    },
+    {
+      "id": "chapter-18",
+      "label": "Chapter 18",
+      "title": "What the Coat Remembered",
+      "paragraphs": 9,
+      "place": "Creek Road",
+      "cast": [
+        "sammy"
+      ],
+      "activity": "inspect",
+      "photo": "assets/story-scenes/book-05.webp",
+      "tile": 2,
+      "photoSha256": "b9a2050f298e20ea1a41bd4eadf19c17f7ba246b2f44e9488424d302c5848421"
+    },
+    {
+      "id": "chapter-19",
+      "label": "Chapter 19",
+      "title": "Only Sammy",
+      "paragraphs": 19,
+      "place": "First Shelter",
+      "cast": [
+        "sammy",
+        "amelia",
+        "tom"
+      ],
+      "activity": "sequence",
+      "photo": "assets/story-scenes/book-05.webp",
+      "tile": 3,
+      "photoSha256": "b9a2050f298e20ea1a41bd4eadf19c17f7ba246b2f44e9488424d302c5848421"
+    },
+    {
+      "id": "chapter-20",
+      "label": "Chapter 20",
+      "title": "Bread for Tomorrow",
+      "paragraphs": 7,
+      "place": "Covered Welcome Bench",
+      "cast": [
+        "sammy",
+        "amelia"
+      ],
+      "activity": "layout",
+      "photo": "assets/story-scenes/book-06.webp",
+      "tile": 0,
+      "photoSha256": "c307461bca50c63892e51acc6af0a164b40888e0b273da57c6c767266a735217"
+    },
+    {
+      "id": "chapter-21",
+      "label": "Chapter 21",
+      "title": "A Hammer Is Not a Test",
+      "paragraphs": 8,
+      "place": "Tom’s Workshop",
+      "cast": [
+        "sammy",
+        "tom"
+      ],
+      "activity": "inspect",
+      "photo": "assets/story-scenes/book-06.webp",
+      "tile": 1,
+      "photoSha256": "c307461bca50c63892e51acc6af0a164b40888e0b273da57c6c767266a735217"
+    },
+    {
+      "id": "chapter-22",
+      "label": "Chapter 22",
+      "title": "The Name He Chose",
+      "paragraphs": 23,
+      "place": "Welcome House",
+      "cast": [
+        "sammy",
+        "amelia",
+        "tom"
+      ],
+      "activity": "pack",
+      "photo": "assets/story-scenes/book-06.webp",
+      "tile": 2,
+      "photoSha256": "c307461bca50c63892e51acc6af0a164b40888e0b273da57c6c767266a735217"
+    },
+    {
+      "id": "chapter-23",
+      "label": "Chapter 23",
+      "title": "The New Bear at the Door",
+      "paragraphs": 21,
+      "place": "Covered Welcome Bench",
+      "cast": [
+        "sammy"
+      ],
+      "activity": "layout",
+      "photo": "assets/story-scenes/book-06.webp",
+      "tile": 3,
+      "photoSha256": "c307461bca50c63892e51acc6af0a164b40888e0b273da57c6c767266a735217"
+    },
+    {
+      "id": "chapter-24",
+      "label": "Chapter 24",
+      "title": "You Can Eat First",
+      "paragraphs": 7,
+      "place": "First Shelter",
+      "cast": [
+        "sammy",
+        "amelia",
+        "older-cub"
+      ],
+      "activity": "sequence",
+      "photo": "assets/story-scenes/book-07.webp",
+      "tile": 0,
+      "photoSha256": "d2792b0f5207ae73771bfb7c217476c31df0eda8fa4a3c6d3d6fc942999ec015"
+    },
+    {
+      "id": "chapter-25",
+      "label": "Chapter 25",
+      "title": "The Family at the Bridge",
+      "paragraphs": 12,
+      "place": "Hearthwell House",
+      "cast": [
+        "templar",
+        "buddy",
+        "mary",
+        "jonesha",
+        "jamya",
+        "jamon",
+        "robin",
+        "rheanna",
+        "lena",
+        "lance",
+        "landis",
+        "landric",
+        "amelia"
+      ],
+      "activity": "pack",
+      "photo": "assets/story-scenes/book-07.webp",
+      "tile": 1,
+      "photoSha256": "d2792b0f5207ae73771bfb7c217476c31df0eda8fa4a3c6d3d6fc942999ec015"
+    },
+    {
+      "id": "chapter-26",
+      "label": "Chapter 26",
+      "title": "The Idea before the Journey",
+      "paragraphs": 19,
+      "place": "Hearthwell House",
+      "cast": [
+        "templar",
+        "buddy",
+        "mary",
+        "jonesha",
+        "jamya",
+        "jamon",
+        "robin",
+        "rheanna",
+        "lena",
+        "lance",
+        "landis",
+        "landric"
+      ],
+      "activity": "sort",
+      "photo": "assets/story-scenes/book-07.webp",
+      "tile": 2,
+      "photoSha256": "d2792b0f5207ae73771bfb7c217476c31df0eda8fa4a3c6d3d6fc942999ec015"
+    },
+    {
+      "id": "chapter-27",
+      "label": "Chapter 27",
+      "title": "The Long Way around",
+      "paragraphs": 14,
+      "place": "Covered Road Stop",
+      "cast": [
+        "templar",
+        "buddy",
+        "mary",
+        "jamya",
+        "jamon",
+        "robin",
+        "rheanna",
+        "lena",
+        "lance",
+        "landis",
+        "landric",
+        "jonesha"
+      ],
+      "activity": "sequence",
+      "photo": "assets/story-scenes/book-07.webp",
+      "tile": 3,
+      "photoSha256": "d2792b0f5207ae73771bfb7c217476c31df0eda8fa4a3c6d3d6fc942999ec015"
+    },
+    {
+      "id": "chapter-28",
+      "label": "Chapter 28",
+      "title": "A Welcome before a Question",
+      "paragraphs": 12,
+      "place": "First Shelter",
+      "cast": [
+        "templar",
+        "buddy",
+        "mary",
+        "amelia",
+        "tom",
+        "sammy"
+      ],
+      "activity": "layout",
+      "photo": "assets/story-scenes/book-08.webp",
+      "tile": 0,
+      "photoSha256": "8d3719f633b077778514d68e7be5c679f9d8dd895a60c754b1c9ff17d254a5e2"
+    },
+    {
+      "id": "chapter-29",
+      "label": "Chapter 29",
+      "title": "A House with Everyone in It",
+      "paragraphs": 23,
+      "place": "Hearthwell House",
+      "cast": [
+        "templar",
+        "buddy",
+        "mary",
+        "jonesha",
+        "jamya",
+        "jamon",
+        "robin",
+        "rheanna",
+        "lena",
+        "lance",
+        "landis",
+        "landric",
+        "willie",
+        "tom"
+      ],
+      "activity": "layout",
+      "photo": "assets/story-scenes/book-08.webp",
+      "tile": 1,
+      "photoSha256": "8d3719f633b077778514d68e7be5c679f9d8dd895a60c754b1c9ff17d254a5e2"
+    },
+    {
+      "id": "chapter-30",
+      "label": "Chapter 30",
+      "title": "The Skills in the Dusty Box",
+      "paragraphs": 30,
+      "place": "Templar’s Workshop",
+      "cast": [
+        "templar",
+        "buddy",
+        "robin",
+        "lance",
+        "jamya"
+      ],
+      "activity": "sequence",
+      "photo": "assets/story-scenes/book-08.webp",
+      "tile": 2,
+      "photoSha256": "8d3719f633b077778514d68e7be5c679f9d8dd895a60c754b1c9ff17d254a5e2"
+    },
+    {
+      "id": "chapter-31",
+      "label": "Chapter 31",
+      "title": "The First Little Workshop",
+      "paragraphs": 12,
+      "place": "Templar’s Workshop",
+      "cast": [
+        "templar",
+        "buddy",
+        "mary",
+        "jonesha",
+        "jamya",
+        "jamon",
+        "robin",
+        "rheanna",
+        "lena",
+        "lance",
+        "landis",
+        "landric",
+        "tom"
+      ],
+      "activity": "sort",
+      "photo": "assets/story-scenes/book-08.webp",
+      "tile": 3,
+      "photoSha256": "8d3719f633b077778514d68e7be5c679f9d8dd895a60c754b1c9ff17d254a5e2"
+    },
+    {
+      "id": "chapter-32",
+      "label": "Chapter 32",
+      "title": "Buddy's Quiet Plan",
+      "paragraphs": 13,
+      "place": "Honeybrook Works Yard",
+      "cast": [
+        "buddy",
+        "jamon",
+        "tom",
+        "templar",
+        "lance"
+      ],
+      "activity": "layout",
+      "photo": "assets/story-scenes/book-09.webp",
+      "tile": 0,
+      "photoSha256": "d5887eb88b417e51983f6a582addb9261ebc177fbcb33ce597c80fa706cb74b2"
+    },
+    {
+      "id": "chapter-33",
+      "label": "Chapter 33",
+      "title": "The Helping House",
+      "paragraphs": 16,
+      "place": "Helping House",
+      "cast": [
+        "templar",
+        "buddy",
+        "mary",
+        "jamya",
+        "landis"
+      ],
+      "activity": "sort",
+      "photo": "assets/story-scenes/book-09.webp",
+      "tile": 1,
+      "photoSha256": "d5887eb88b417e51983f6a582addb9261ebc177fbcb33ce597c80fa706cb74b2"
+    },
+    {
+      "id": "chapter-34",
+      "label": "Chapter 34",
+      "title": "The Name on the Door",
+      "paragraphs": 6,
+      "place": "Hearthwell House",
+      "cast": [
+        "templar",
+        "buddy",
+        "mary",
+        "jonesha",
+        "jamya",
+        "jamon",
+        "robin",
+        "rheanna",
+        "lena",
+        "lance",
+        "landis",
+        "landric"
+      ],
+      "activity": "inspect",
+      "photo": "assets/story-scenes/book-09.webp",
+      "tile": 2,
+      "photoSha256": "d5887eb88b417e51983f6a582addb9261ebc177fbcb33ce597c80fa706cb74b2"
+    },
+    {
+      "id": "chapter-35",
+      "label": "Chapter 35",
+      "title": "A Very Proper Arrival",
+      "paragraphs": 11,
+      "place": "Honeybrook School",
+      "cast": [
+        "theodore",
+        "sammy",
+        "robin",
+        "amelia",
+        "mary",
+        "templar",
+        "lance",
+        "jonesha",
+        "landis"
+      ],
+      "activity": "pack",
+      "photo": "assets/story-scenes/book-09.webp",
+      "tile": 3,
+      "photoSha256": "d5887eb88b417e51983f6a582addb9261ebc177fbcb33ce597c80fa706cb74b2"
+    },
+    {
+      "id": "chapter-36",
+      "label": "Chapter 36",
+      "title": "Lessons before Honeybrook",
+      "paragraphs": 18,
+      "place": "Honeybrook School",
+      "cast": [
+        "theodore"
+      ],
+      "activity": "inspect",
+      "photo": "assets/story-scenes/book-10.webp",
+      "tile": 0,
+      "photoSha256": "065e28944c6e9d9e813dead8fcfa7b15161daa4b165502120e5744a17250653b"
+    },
+    {
+      "id": "chapter-37",
+      "label": "Chapter 37",
+      "title": "The First Morning",
+      "paragraphs": 15,
+      "place": "Honeybrook School",
+      "cast": [
+        "theodore",
+        "templar",
+        "lena",
+        "lance",
+        "landis",
+        "jonesha"
+      ],
+      "activity": "layout",
+      "photo": "assets/story-scenes/book-10.webp",
+      "tile": 1,
+      "photoSha256": "065e28944c6e9d9e813dead8fcfa7b15161daa4b165502120e5744a17250653b"
+    },
+    {
+      "id": "chapter-38",
+      "label": "Chapter 38",
+      "title": "The Bear Who Stayed outside",
+      "paragraphs": 22,
+      "place": "Quiet Learning Table",
+      "cast": [
+        "theodore",
+        "sammy"
+      ],
+      "activity": "sort",
+      "photo": "assets/story-scenes/book-10.webp",
+      "tile": 2,
+      "photoSha256": "065e28944c6e9d9e813dead8fcfa7b15161daa4b165502120e5744a17250653b"
+    },
+    {
+      "id": "chapter-39",
+      "label": "Chapter 39",
+      "title": "Lena's Place",
+      "paragraphs": 7,
+      "place": "Hearthwell House",
+      "cast": [
+        "lena",
+        "templar",
+        "buddy",
+        "robin",
+        "mary",
+        "theodore"
+      ],
+      "activity": "sequence",
+      "photo": "assets/story-scenes/book-10.webp",
+      "tile": 3,
+      "photoSha256": "065e28944c6e9d9e813dead8fcfa7b15161daa4b165502120e5744a17250653b"
+    },
+    {
+      "id": "chapter-40",
+      "label": "Chapter 40",
+      "title": "Another Way",
+      "paragraphs": 18,
+      "place": "Honeybrook School",
+      "cast": [
+        "theodore",
+        "sammy",
+        "lance",
+        "landis",
+        "jonesha",
+        "lena",
+        "templar"
+      ],
+      "activity": "sort",
+      "photo": "assets/story-scenes/book-11.webp",
+      "tile": 0,
+      "photoSha256": "e57b85632046e39a42b34afce1acd7639e6558e20b00d1f9db4c39c7241c3fef"
+    },
+    {
+      "id": "chapter-41",
+      "label": "Chapter 41",
+      "title": "The Day the Teacher Was Wrong",
+      "paragraphs": 20,
+      "place": "Honeybrook School",
+      "cast": [
+        "theodore",
+        "jonesha",
+        "tom",
+        "sammy",
+        "lance"
+      ],
+      "activity": "sequence",
+      "photo": "assets/story-scenes/book-11.webp",
+      "tile": 1,
+      "photoSha256": "e57b85632046e39a42b34afce1acd7639e6558e20b00d1f9db4c39c7241c3fef"
+    },
+    {
+      "id": "chapter-42",
+      "label": "Chapter 42",
+      "title": "A Game with Room to Think",
+      "paragraphs": 18,
+      "place": "Gamer Bear Game Show Studio",
+      "cast": [
+        "theodore",
+        "lance",
+        "landis",
+        "templar"
+      ],
+      "activity": "layout",
+      "photo": "assets/story-scenes/book-11.webp",
+      "tile": 2,
+      "photoSha256": "e57b85632046e39a42b34afce1acd7639e6558e20b00d1f9db4c39c7241c3fef"
+    },
+    {
+      "id": "chapter-43",
+      "label": "Chapter 43",
+      "title": "A Lesson without a Deadline",
+      "paragraphs": 30,
+      "place": "Learning Hall",
+      "cast": [
+        "theodore",
+        "sammy",
+        "templar"
+      ],
+      "activity": "sort",
+      "photo": "assets/story-scenes/book-11.webp",
+      "tile": 3,
+      "photoSha256": "e57b85632046e39a42b34afce1acd7639e6558e20b00d1f9db4c39c7241c3fef"
+    },
+    {
+      "id": "chapter-44",
+      "label": "Chapter 44",
+      "title": "The Professor Unpacks",
+      "paragraphs": 10,
+      "place": "Honeybrook School",
+      "cast": [
+        "theodore",
+        "lena",
+        "templar",
+        "mary",
+        "sammy"
+      ],
+      "activity": "inspect",
+      "photo": "assets/story-scenes/book-12.webp",
+      "tile": 0,
+      "photoSha256": "422a069abb38e9acf9d4dcb0d29ccf5fc354e261c5e4bbdce9b4912228f59083"
+    },
+    {
+      "id": "chapter-45",
+      "label": "Chapter 45",
+      "title": "The House That Asked Less",
+      "paragraphs": 11,
+      "place": "Welcome House",
+      "cast": [
+        "sammy",
+        "amelia",
+        "tom",
+        "mabel",
+        "toby",
+        "nora"
+      ],
+      "activity": "layout",
+      "photo": "assets/story-scenes/book-12.webp",
+      "tile": 1,
+      "photoSha256": "422a069abb38e9acf9d4dcb0d29ccf5fc354e261c5e4bbdce9b4912228f59083"
+    },
+    {
+      "id": "chapter-46",
+      "label": "Chapter 46",
+      "title": "The Woman in the Rain",
+      "paragraphs": 22,
+      "place": "First Wooden Bridge",
+      "cast": [
+        "amelia",
+        "tom",
+        "angel",
+        "goddess"
+      ],
+      "activity": "inspect",
+      "photo": "assets/story-scenes/book-12.webp",
+      "tile": 2,
+      "photoSha256": "422a069abb38e9acf9d4dcb0d29ccf5fc354e261c5e4bbdce9b4912228f59083"
+    },
+    {
+      "id": "chapter-47",
+      "label": "Chapter 47",
+      "title": "Goldilocks Stood with Them",
+      "paragraphs": 16,
+      "place": "Goldilocks & Three Bears Monument",
+      "cast": [
+        "gold",
+        "papa",
+        "mama",
+        "baby",
+        "sammy",
+        "amelia",
+        "theodore",
+        "tom",
+        "goddess"
+      ],
+      "activity": "inspect",
+      "photo": "assets/story-scenes/book-12.webp",
+      "tile": 3,
+      "photoSha256": "422a069abb38e9acf9d4dcb0d29ccf5fc354e261c5e4bbdce9b4912228f59083"
+    },
+    {
+      "id": "chapter-48",
+      "label": "Chapter 48",
+      "title": "Harold Pawst and the Creek Road",
+      "paragraphs": 5,
+      "place": "Honeybrook Post Office",
+      "cast": [
+        "harold"
+      ],
+      "activity": "sort",
+      "photo": "assets/story-scenes/book-13.webp",
+      "tile": 0,
+      "photoSha256": "dace81cfe2934232c3bec0a4f647a37526e5cf12a6c4b2593b7c2d64d3d6a6db"
+    },
+    {
+      "id": "chapter-49",
+      "label": "Chapter 49",
+      "title": "A Basket Full of Crumbs",
+      "paragraphs": 9,
+      "place": "Cub Cakes & Crumbs",
+      "cast": [
+        "wally",
+        "amelia"
+      ],
+      "activity": "pack",
+      "photo": "assets/story-scenes/book-13.webp",
+      "tile": 1,
+      "photoSha256": "dace81cfe2934232c3bec0a4f647a37526e5cf12a6c4b2593b7c2d64d3d6a6db"
+    },
+    {
+      "id": "chapter-50",
+      "label": "Chapter 50",
+      "title": "The Baker with Too Many Buns",
+      "paragraphs": 17,
+      "place": "Cub Cakes & Crumbs",
+      "cast": [
+        "wally"
+      ],
+      "activity": "numbers",
+      "photo": "assets/story-scenes/book-13.webp",
+      "tile": 2,
+      "photoSha256": "dace81cfe2934232c3bec0a4f647a37526e5cf12a6c4b2593b7c2d64d3d6a6db"
+    },
+    {
+      "id": "chapter-51",
+      "label": "Chapter 51",
+      "title": "The Wind and the Basket",
+      "paragraphs": 15,
+      "place": "Covered Road Stop",
+      "cast": [
+        "wally"
+      ],
+      "activity": "sequence",
+      "photo": "assets/story-scenes/book-13.webp",
+      "tile": 3,
+      "photoSha256": "dace81cfe2934232c3bec0a4f647a37526e5cf12a6c4b2593b7c2d64d3d6a6db"
+    },
+    {
+      "id": "chapter-52",
+      "label": "Chapter 52",
+      "title": "Supper without a Sales Pitch",
+      "paragraphs": 14,
+      "place": "Welcome House Kitchen",
+      "cast": [
+        "wally",
+        "amelia",
+        "sammy"
+      ],
+      "activity": "sequence",
+      "photo": "assets/story-scenes/book-14.webp",
+      "tile": 0,
+      "photoSha256": "31c8c0052a03ffe3226f4ed7f47a1fd9369998085440d6cb98db26a425529046"
+    },
+    {
+      "id": "chapter-53",
+      "label": "Chapter 53",
+      "title": "Miss Patty's Question",
+      "paragraphs": 24,
+      "place": "Helping House",
+      "cast": [
+        "wally",
+        "patty",
+        "templar",
+        "theodore"
+      ],
+      "activity": "sort",
+      "photo": "assets/story-scenes/book-14.webp",
+      "tile": 1,
+      "photoSha256": "31c8c0052a03ffe3226f4ed7f47a1fd9369998085440d6cb98db26a425529046"
+    },
+    {
+      "id": "chapter-54",
+      "label": "Chapter 54",
+      "title": "The Little Shop",
+      "paragraphs": 13,
+      "place": "Cub Cakes & Crumbs",
+      "cast": [
+        "wally",
+        "tom",
+        "buddy",
+        "patty",
+        "templar",
+        "lance",
+        "landis"
+      ],
+      "activity": "layout",
+      "photo": "assets/story-scenes/book-14.webp",
+      "tile": 2,
+      "photoSha256": "31c8c0052a03ffe3226f4ed7f47a1fd9369998085440d6cb98db26a425529046"
+    },
+    {
+      "id": "chapter-55",
+      "label": "Chapter 55",
+      "title": "The First Batch",
+      "paragraphs": 22,
+      "place": "Cub Cakes & Crumbs",
+      "cast": [
+        "wally",
+        "patty",
+        "lance",
+        "landis"
+      ],
+      "activity": "sequence",
+      "photo": "assets/story-scenes/book-14.webp",
+      "tile": 3,
+      "photoSha256": "31c8c0052a03ffe3226f4ed7f47a1fd9369998085440d6cb98db26a425529046"
+    },
+    {
+      "id": "chapter-56",
+      "label": "Chapter 56",
+      "title": "Enough for Today",
+      "paragraphs": 15,
+      "place": "Cub Cakes & Crumbs",
+      "cast": [
+        "wally",
+        "sammy"
+      ],
+      "activity": "pack",
+      "photo": "assets/story-scenes/book-15.webp",
+      "tile": 0,
+      "photoSha256": "783dc18db3b26a9b9a69b2f9a9cea9f4495ce495b1e4966671ab6aac63e81d4e"
+    },
+    {
+      "id": "chapter-57",
+      "label": "Chapter 57",
+      "title": "The Recipe on the Wall",
+      "paragraphs": 22,
+      "place": "Cub Cakes & Crumbs",
+      "cast": [
+        "wally",
+        "daisy",
+        "patty",
+        "templar",
+        "lance",
+        "landis",
+        "harold"
+      ],
+      "activity": "inspect",
+      "photo": "assets/story-scenes/book-15.webp",
+      "tile": 1,
+      "photoSha256": "783dc18db3b26a9b9a69b2f9a9cea9f4495ce495b1e4966671ab6aac63e81d4e"
+    },
+    {
+      "id": "chapter-58",
+      "label": "Chapter 58",
+      "title": "Crumbwell Comes Home",
+      "paragraphs": 16,
+      "place": "Welcome House",
+      "cast": [
+        "wally",
+        "sammy"
+      ],
+      "activity": "sequence",
+      "photo": "assets/story-scenes/book-15.webp",
+      "tile": 2,
+      "photoSha256": "783dc18db3b26a9b9a69b2f9a9cea9f4495ce495b1e4966671ab6aac63e81d4e"
+    },
+    {
+      "id": "chapter-59",
+      "label": "Chapter 59",
+      "title": "Pull Up a Paw",
+      "paragraphs": 9,
+      "place": "Big Mama’s Porch",
+      "cast": [
+        "templar",
+        "buddy",
+        "mary",
+        "jonesha",
+        "jamya",
+        "jamon",
+        "robin",
+        "rheanna",
+        "lena",
+        "lance",
+        "landis",
+        "landric",
+        "sammy"
+      ],
+      "activity": "layout",
+      "photo": "assets/story-scenes/book-15.webp",
+      "tile": 3,
+      "photoSha256": "783dc18db3b26a9b9a69b2f9a9cea9f4495ce495b1e4966671ab6aac63e81d4e"
+    },
+    {
+      "id": "chapter-60",
+      "label": "Chapter 60",
+      "title": "Bears He Had Never Met",
+      "paragraphs": 8,
+      "place": "Honeybrook Works Yard",
+      "cast": [
+        "tom",
+        "buddy",
+        "lance"
+      ],
+      "activity": "sequence",
+      "photo": "assets/story-scenes/book-16.webp",
+      "tile": 0,
+      "photoSha256": "b4c64863f97a8d9c067756d98fa37e91b1a79afd84870c9b81fa16e00ab997a9"
+    },
+    {
+      "id": "chapter-61",
+      "label": "Chapter 61",
+      "title": "The Bridge Before the Bridge",
+      "paragraphs": 13,
+      "place": "Old Stone Bridge",
+      "cast": [
+        "jonesha",
+        "lance",
+        "tom",
+        "theodore",
+        "templar",
+        "buddy",
+        "mary",
+        "amelia",
+        "ranger"
+      ],
+      "activity": "sort",
+      "photo": "assets/story-scenes/book-16.webp",
+      "tile": 1,
+      "photoSha256": "b4c64863f97a8d9c067756d98fa37e91b1a79afd84870c9b81fa16e00ab997a9"
+    },
+    {
+      "id": "chapter-62",
+      "label": "Chapter 62",
+      "title": "A Chair for Milo",
+      "paragraphs": 17,
+      "place": "Welcome House",
+      "cast": [
+        "milo",
+        "jonesha",
+        "tom",
+        "templar",
+        "lance"
+      ],
+      "activity": "layout",
+      "photo": "assets/story-scenes/book-16.webp",
+      "tile": 2,
+      "photoSha256": "b4c64863f97a8d9c067756d98fa37e91b1a79afd84870c9b81fa16e00ab997a9"
+    },
+    {
+      "id": "chapter-63",
+      "label": "Chapter 63",
+      "title": "First Bear Welcomed Home",
+      "paragraphs": 11,
+      "place": "Welcome House",
+      "cast": [
+        "sammy",
+        "amelia",
+        "theodore"
+      ],
+      "activity": "inspect",
+      "photo": "assets/story-scenes/book-16.webp",
+      "tile": 3,
+      "photoSha256": "b4c64863f97a8d9c067756d98fa37e91b1a79afd84870c9b81fa16e00ab997a9"
+    },
+    {
+      "id": "chapter-64",
+      "label": "Chapter 64",
+      "title": "The Valley at Evening",
+      "paragraphs": 12,
+      "place": "First Wooden Bridge",
+      "cast": [
+        "amelia",
+        "tom",
+        "angel",
+        "wally",
+        "harold",
+        "theodore",
+        "templar",
+        "buddy",
+        "mary",
+        "sammy"
+      ],
+      "activity": "inspect",
+      "photo": "assets/story-scenes/book-17.webp",
+      "tile": 0,
+      "photoSha256": "79f73c9e1b190ebcfe7bcc8be360e5fd8646deded60ddcd879efe32881c959ce"
+    },
+    {
+      "id": "chapter-65",
+      "label": "Chapter 65",
+      "title": "The Letter",
+      "paragraphs": 12,
+      "place": "Honeybrook Post Office",
+      "cast": [
+        "harold",
+        "gold",
+        "ancestor",
+        "beekeepers"
+      ],
+      "activity": "sequence",
+      "photo": "assets/story-scenes/book-17.webp",
+      "tile": 1,
+      "photoSha256": "79f73c9e1b190ebcfe7bcc8be360e5fd8646deded60ddcd879efe32881c959ce"
+    },
+    {
+      "id": "chapter-66",
+      "label": "Chapter 66",
+      "title": "The Sacred Dark",
+      "paragraphs": 10,
+      "place": "Northern Woods Boundary",
+      "cast": [
+        "angel",
+        "goddess",
+        "carmen"
+      ],
+      "activity": "inspect",
+      "photo": "assets/story-scenes/book-17.webp",
+      "tile": 2,
+      "photoSha256": "79f73c9e1b190ebcfe7bcc8be360e5fd8646deded60ddcd879efe32881c959ce"
+    },
+    {
+      "id": "chapter-67",
+      "label": "Chapter 67",
+      "title": "Storybook Lane",
+      "paragraphs": 8,
+      "place": "Storybook Lane",
+      "cast": [
+        "ash"
+      ],
+      "activity": "sort",
+      "photo": "assets/story-scenes/book-17.webp",
+      "tile": 3,
+      "photoSha256": "79f73c9e1b190ebcfe7bcc8be360e5fd8646deded60ddcd879efe32881c959ce"
+    },
+    {
+      "id": "chapter-68",
+      "label": "Chapter 68",
+      "title": "Carmen",
+      "paragraphs": 16,
+      "place": "Welcome House Spare Room",
+      "cast": [
+        "carmen",
+        "harold",
+        "amelia",
+        "buddy",
+        "sammy",
+        "gold"
+      ],
+      "activity": "sequence",
+      "photo": "assets/story-scenes/book-18.webp",
+      "tile": 0,
+      "photoSha256": "1e85fbdd2e8a6221c9a9ed3e2af6131586ddd33d7ae748f216d5bb8f30bba88e"
+    },
+    {
+      "id": "chapter-69",
+      "label": "Chapter 69",
+      "title": "The Voice",
+      "paragraphs": 11,
+      "place": "Welcome House Spare Room",
+      "cast": [
+        "carmen",
+        "sammy"
+      ],
+      "activity": "inspect",
+      "photo": "assets/story-scenes/book-18.webp",
+      "tile": 1,
+      "photoSha256": "1e85fbdd2e8a6221c9a9ed3e2af6131586ddd33d7ae748f216d5bb8f30bba88e"
+    },
+    {
+      "id": "epilogue",
+      "label": "Epilogue",
+      "title": "The Telling",
+      "paragraphs": 7,
+      "place": "Northern Woods Boundary",
+      "cast": [
+        "carmen",
+        "sammy",
+        "amelia",
+        "harold",
+        "ash"
+      ],
+      "activity": "inspect",
+      "photo": "assets/story-scenes/book-18.webp",
+      "tile": 2,
+      "photoSha256": "1e85fbdd2e8a6221c9a9ed3e2af6131586ddd33d7ae748f216d5bb8f30bba88e"
+    }
+  ]
+}

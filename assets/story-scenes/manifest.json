@@ -1,0 +1,1079 @@
+{
+  "book-01": {
+    "src": "assets/story-scenes/book-01.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "a9b8502e3b4c5adaa56c2f87dbef67603b4e2a4a28945dfa512eb82ddaf87cfa",
+    "views": [
+      {
+        "tile": 0,
+        "id": "prologue",
+        "place": "Ancient forest clearing",
+        "cast": [
+          "prince",
+          "princess"
+        ]
+      },
+      {
+        "tile": 1,
+        "id": "chapter-1",
+        "place": "River district memory",
+        "cast": [
+          "gold",
+          "beekeepers"
+        ]
+      },
+      {
+        "tile": 2,
+        "id": "chapter-2",
+        "place": "Three Bears’ Cottage",
+        "cast": [
+          "gold",
+          "mama",
+          "papa",
+          "baby"
+        ]
+      },
+      {
+        "tile": 3,
+        "id": "chapter-3",
+        "place": "Bear Hollow",
+        "cast": [
+          "gold",
+          "mama",
+          "papa",
+          "baby"
+        ]
+      }
+    ]
+  },
+  "book-02": {
+    "src": "assets/story-scenes/book-02.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "8928bdfa6f063aeeebbff475a51baff0f9dd0fa59358addb1a7f6f3cb513b4b3",
+    "views": [
+      {
+        "tile": 0,
+        "id": "chapter-4",
+        "place": "Three Bears’ Cottage",
+        "cast": [
+          "gold",
+          "baby"
+        ]
+      },
+      {
+        "tile": 1,
+        "id": "chapter-5",
+        "place": "Bear Hollow",
+        "cast": [
+          "gold",
+          "baby"
+        ]
+      },
+      {
+        "tile": 2,
+        "id": "chapter-6",
+        "place": "First Wooden Bridge",
+        "cast": [
+          "amelia",
+          "angel"
+        ]
+      },
+      {
+        "tile": 3,
+        "id": "chapter-7",
+        "place": "First Wooden Bridge",
+        "cast": [
+          "amelia"
+        ]
+      }
+    ]
+  },
+  "book-03": {
+    "src": "assets/story-scenes/book-03.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "e560b41d1d3d42c7abffc6b761f4e36b42ce81c870a97311ec571c58c1851b81",
+    "views": [
+      {
+        "tile": 0,
+        "id": "chapter-8",
+        "place": "First Wooden Bridge",
+        "cast": [
+          "tom"
+        ]
+      },
+      {
+        "tile": 1,
+        "id": "chapter-9",
+        "place": "First Wooden Bridge",
+        "cast": [
+          "amelia",
+          "tom",
+          "angel"
+        ]
+      },
+      {
+        "tile": 2,
+        "id": "chapter-10",
+        "place": "Bridge Worksite",
+        "cast": [
+          "amelia",
+          "tom",
+          "cook"
+        ]
+      },
+      {
+        "tile": 3,
+        "id": "chapter-11",
+        "place": "First Wooden Bridge",
+        "cast": [
+          "amelia",
+          "tom"
+        ]
+      }
+    ]
+  },
+  "book-04": {
+    "src": "assets/story-scenes/book-04.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "4c8a673e57aa2d81ebf26bed59f2a2c18f2ff8e30542798a5c68b143a6409a65",
+    "views": [
+      {
+        "tile": 0,
+        "id": "chapter-12",
+        "place": "First Shelter",
+        "cast": [
+          "amelia",
+          "tom"
+        ]
+      },
+      {
+        "tile": 1,
+        "id": "chapter-13",
+        "place": "First Shelter",
+        "cast": [
+          "amelia",
+          "tom",
+          "angel"
+        ]
+      },
+      {
+        "tile": 2,
+        "id": "chapter-14",
+        "place": "First Shelter",
+        "cast": [
+          "amelia",
+          "tom"
+        ]
+      },
+      {
+        "tile": 3,
+        "id": "chapter-15",
+        "place": "First Shelter",
+        "cast": [
+          "amelia"
+        ]
+      }
+    ]
+  },
+  "book-05": {
+    "src": "assets/story-scenes/book-05.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "b9a2050f298e20ea1a41bd4eadf19c17f7ba246b2f44e9488424d302c5848421",
+    "views": [
+      {
+        "tile": 0,
+        "id": "chapter-16",
+        "place": "First Shelter",
+        "cast": [
+          "tom",
+          "amelia"
+        ]
+      },
+      {
+        "tile": 1,
+        "id": "chapter-17",
+        "place": "Tom’s Workshop",
+        "cast": [
+          "tom",
+          "amelia"
+        ]
+      },
+      {
+        "tile": 2,
+        "id": "chapter-18",
+        "place": "Creek Road",
+        "cast": [
+          "sammy"
+        ]
+      },
+      {
+        "tile": 3,
+        "id": "chapter-19",
+        "place": "First Shelter",
+        "cast": [
+          "sammy",
+          "amelia",
+          "tom"
+        ]
+      }
+    ]
+  },
+  "book-06": {
+    "src": "assets/story-scenes/book-06.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "c307461bca50c63892e51acc6af0a164b40888e0b273da57c6c767266a735217",
+    "views": [
+      {
+        "tile": 0,
+        "id": "chapter-20",
+        "place": "Covered Welcome Bench",
+        "cast": [
+          "sammy",
+          "amelia"
+        ]
+      },
+      {
+        "tile": 1,
+        "id": "chapter-21",
+        "place": "Tom’s Workshop",
+        "cast": [
+          "sammy",
+          "tom"
+        ]
+      },
+      {
+        "tile": 2,
+        "id": "chapter-22",
+        "place": "Welcome House",
+        "cast": [
+          "sammy",
+          "amelia",
+          "tom"
+        ]
+      },
+      {
+        "tile": 3,
+        "id": "chapter-23",
+        "place": "Covered Welcome Bench",
+        "cast": [
+          "sammy"
+        ]
+      }
+    ]
+  },
+  "book-07": {
+    "src": "assets/story-scenes/book-07.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "d2792b0f5207ae73771bfb7c217476c31df0eda8fa4a3c6d3d6fc942999ec015",
+    "views": [
+      {
+        "tile": 0,
+        "id": "chapter-24",
+        "place": "First Shelter",
+        "cast": [
+          "sammy",
+          "amelia",
+          "older-cub"
+        ]
+      },
+      {
+        "tile": 1,
+        "id": "chapter-25",
+        "place": "Hearthwell House",
+        "cast": [
+          "templar",
+          "buddy",
+          "mary",
+          "jonesha",
+          "jamya",
+          "jamon",
+          "robin",
+          "rheanna",
+          "lena",
+          "lance",
+          "landis",
+          "landric",
+          "amelia"
+        ]
+      },
+      {
+        "tile": 2,
+        "id": "chapter-26",
+        "place": "Hearthwell House",
+        "cast": [
+          "templar",
+          "buddy",
+          "mary",
+          "jonesha",
+          "jamya",
+          "jamon",
+          "robin",
+          "rheanna",
+          "lena",
+          "lance",
+          "landis",
+          "landric"
+        ]
+      },
+      {
+        "tile": 3,
+        "id": "chapter-27",
+        "place": "Covered Road Stop",
+        "cast": [
+          "templar",
+          "buddy",
+          "mary",
+          "jamya",
+          "jamon",
+          "robin",
+          "rheanna",
+          "lena",
+          "lance",
+          "landis",
+          "landric",
+          "jonesha"
+        ]
+      }
+    ]
+  },
+  "book-08": {
+    "src": "assets/story-scenes/book-08.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "8d3719f633b077778514d68e7be5c679f9d8dd895a60c754b1c9ff17d254a5e2",
+    "views": [
+      {
+        "tile": 0,
+        "id": "chapter-28",
+        "place": "First Shelter",
+        "cast": [
+          "templar",
+          "buddy",
+          "mary",
+          "amelia",
+          "tom",
+          "sammy"
+        ]
+      },
+      {
+        "tile": 1,
+        "id": "chapter-29",
+        "place": "Hearthwell House",
+        "cast": [
+          "templar",
+          "buddy",
+          "mary",
+          "jonesha",
+          "jamya",
+          "jamon",
+          "robin",
+          "rheanna",
+          "lena",
+          "lance",
+          "landis",
+          "landric",
+          "willie",
+          "tom"
+        ]
+      },
+      {
+        "tile": 2,
+        "id": "chapter-30",
+        "place": "Templar’s Workshop",
+        "cast": [
+          "templar",
+          "buddy",
+          "robin",
+          "lance",
+          "jamya"
+        ]
+      },
+      {
+        "tile": 3,
+        "id": "chapter-31",
+        "place": "Templar’s Workshop",
+        "cast": [
+          "templar",
+          "buddy",
+          "mary",
+          "jonesha",
+          "jamya",
+          "jamon",
+          "robin",
+          "rheanna",
+          "lena",
+          "lance",
+          "landis",
+          "landric",
+          "tom"
+        ]
+      }
+    ]
+  },
+  "book-09": {
+    "src": "assets/story-scenes/book-09.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "d5887eb88b417e51983f6a582addb9261ebc177fbcb33ce597c80fa706cb74b2",
+    "views": [
+      {
+        "tile": 0,
+        "id": "chapter-32",
+        "place": "Honeybrook Works Yard",
+        "cast": [
+          "buddy",
+          "jamon",
+          "tom",
+          "templar",
+          "lance"
+        ]
+      },
+      {
+        "tile": 1,
+        "id": "chapter-33",
+        "place": "Helping House",
+        "cast": [
+          "templar",
+          "buddy",
+          "mary",
+          "jamya",
+          "landis"
+        ]
+      },
+      {
+        "tile": 2,
+        "id": "chapter-34",
+        "place": "Hearthwell House",
+        "cast": [
+          "templar",
+          "buddy",
+          "mary",
+          "jonesha",
+          "jamya",
+          "jamon",
+          "robin",
+          "rheanna",
+          "lena",
+          "lance",
+          "landis",
+          "landric"
+        ]
+      },
+      {
+        "tile": 3,
+        "id": "chapter-35",
+        "place": "Honeybrook School",
+        "cast": [
+          "theodore",
+          "sammy",
+          "robin",
+          "amelia",
+          "mary",
+          "templar",
+          "lance",
+          "jonesha",
+          "landis"
+        ]
+      }
+    ]
+  },
+  "book-10": {
+    "src": "assets/story-scenes/book-10.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "065e28944c6e9d9e813dead8fcfa7b15161daa4b165502120e5744a17250653b",
+    "views": [
+      {
+        "tile": 0,
+        "id": "chapter-36",
+        "place": "Honeybrook School",
+        "cast": [
+          "theodore"
+        ]
+      },
+      {
+        "tile": 1,
+        "id": "chapter-37",
+        "place": "Honeybrook School",
+        "cast": [
+          "theodore",
+          "templar",
+          "lena",
+          "lance",
+          "landis",
+          "jonesha"
+        ]
+      },
+      {
+        "tile": 2,
+        "id": "chapter-38",
+        "place": "Quiet Learning Table",
+        "cast": [
+          "theodore",
+          "sammy"
+        ]
+      },
+      {
+        "tile": 3,
+        "id": "chapter-39",
+        "place": "Hearthwell House",
+        "cast": [
+          "lena",
+          "templar",
+          "buddy",
+          "robin",
+          "mary",
+          "theodore"
+        ]
+      }
+    ]
+  },
+  "book-11": {
+    "src": "assets/story-scenes/book-11.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "e57b85632046e39a42b34afce1acd7639e6558e20b00d1f9db4c39c7241c3fef",
+    "views": [
+      {
+        "tile": 0,
+        "id": "chapter-40",
+        "place": "Honeybrook School",
+        "cast": [
+          "theodore",
+          "sammy",
+          "lance",
+          "landis",
+          "jonesha",
+          "lena",
+          "templar"
+        ]
+      },
+      {
+        "tile": 1,
+        "id": "chapter-41",
+        "place": "Honeybrook School",
+        "cast": [
+          "theodore",
+          "jonesha",
+          "tom",
+          "sammy",
+          "lance"
+        ]
+      },
+      {
+        "tile": 2,
+        "id": "chapter-42",
+        "place": "Gamer Bear Game Show Studio",
+        "cast": [
+          "theodore",
+          "lance",
+          "landis",
+          "templar"
+        ]
+      },
+      {
+        "tile": 3,
+        "id": "chapter-43",
+        "place": "Learning Hall",
+        "cast": [
+          "theodore",
+          "sammy",
+          "templar"
+        ]
+      }
+    ]
+  },
+  "book-12": {
+    "src": "assets/story-scenes/book-12.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "422a069abb38e9acf9d4dcb0d29ccf5fc354e261c5e4bbdce9b4912228f59083",
+    "views": [
+      {
+        "tile": 0,
+        "id": "chapter-44",
+        "place": "Honeybrook School",
+        "cast": [
+          "theodore",
+          "lena",
+          "templar",
+          "mary",
+          "sammy"
+        ]
+      },
+      {
+        "tile": 1,
+        "id": "chapter-45",
+        "place": "Welcome House",
+        "cast": [
+          "sammy",
+          "amelia",
+          "tom",
+          "mabel",
+          "toby",
+          "nora"
+        ]
+      },
+      {
+        "tile": 2,
+        "id": "chapter-46",
+        "place": "First Wooden Bridge",
+        "cast": [
+          "amelia",
+          "tom",
+          "angel",
+          "goddess"
+        ]
+      },
+      {
+        "tile": 3,
+        "id": "chapter-47",
+        "place": "Goldilocks & Three Bears Monument",
+        "cast": [
+          "gold",
+          "papa",
+          "mama",
+          "baby",
+          "sammy",
+          "amelia",
+          "theodore",
+          "tom",
+          "goddess"
+        ]
+      }
+    ]
+  },
+  "book-13": {
+    "src": "assets/story-scenes/book-13.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "dace81cfe2934232c3bec0a4f647a37526e5cf12a6c4b2593b7c2d64d3d6a6db",
+    "views": [
+      {
+        "tile": 0,
+        "id": "chapter-48",
+        "place": "Honeybrook Post Office",
+        "cast": [
+          "harold"
+        ]
+      },
+      {
+        "tile": 1,
+        "id": "chapter-49",
+        "place": "Cub Cakes & Crumbs",
+        "cast": [
+          "wally",
+          "amelia"
+        ]
+      },
+      {
+        "tile": 2,
+        "id": "chapter-50",
+        "place": "Cub Cakes & Crumbs",
+        "cast": [
+          "wally"
+        ]
+      },
+      {
+        "tile": 3,
+        "id": "chapter-51",
+        "place": "Covered Road Stop",
+        "cast": [
+          "wally"
+        ]
+      }
+    ]
+  },
+  "book-14": {
+    "src": "assets/story-scenes/book-14.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "31c8c0052a03ffe3226f4ed7f47a1fd9369998085440d6cb98db26a425529046",
+    "views": [
+      {
+        "tile": 0,
+        "id": "chapter-52",
+        "place": "Welcome House Kitchen",
+        "cast": [
+          "wally",
+          "amelia",
+          "sammy"
+        ]
+      },
+      {
+        "tile": 1,
+        "id": "chapter-53",
+        "place": "Helping House",
+        "cast": [
+          "wally",
+          "patty",
+          "templar",
+          "theodore"
+        ]
+      },
+      {
+        "tile": 2,
+        "id": "chapter-54",
+        "place": "Cub Cakes & Crumbs",
+        "cast": [
+          "wally",
+          "tom",
+          "buddy",
+          "patty",
+          "templar",
+          "lance",
+          "landis"
+        ]
+      },
+      {
+        "tile": 3,
+        "id": "chapter-55",
+        "place": "Cub Cakes & Crumbs",
+        "cast": [
+          "wally",
+          "patty",
+          "lance",
+          "landis"
+        ]
+      }
+    ]
+  },
+  "book-15": {
+    "src": "assets/story-scenes/book-15.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "783dc18db3b26a9b9a69b2f9a9cea9f4495ce495b1e4966671ab6aac63e81d4e",
+    "views": [
+      {
+        "tile": 0,
+        "id": "chapter-56",
+        "place": "Cub Cakes & Crumbs",
+        "cast": [
+          "wally",
+          "sammy"
+        ]
+      },
+      {
+        "tile": 1,
+        "id": "chapter-57",
+        "place": "Cub Cakes & Crumbs",
+        "cast": [
+          "wally",
+          "daisy",
+          "patty",
+          "templar",
+          "lance",
+          "landis",
+          "harold"
+        ]
+      },
+      {
+        "tile": 2,
+        "id": "chapter-58",
+        "place": "Welcome House",
+        "cast": [
+          "wally",
+          "sammy"
+        ]
+      },
+      {
+        "tile": 3,
+        "id": "chapter-59",
+        "place": "Big Mama’s Porch",
+        "cast": [
+          "templar",
+          "buddy",
+          "mary",
+          "jonesha",
+          "jamya",
+          "jamon",
+          "robin",
+          "rheanna",
+          "lena",
+          "lance",
+          "landis",
+          "landric",
+          "sammy"
+        ]
+      }
+    ]
+  },
+  "book-16": {
+    "src": "assets/story-scenes/book-16.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "b4c64863f97a8d9c067756d98fa37e91b1a79afd84870c9b81fa16e00ab997a9",
+    "views": [
+      {
+        "tile": 0,
+        "id": "chapter-60",
+        "place": "Honeybrook Works Yard",
+        "cast": [
+          "tom",
+          "buddy",
+          "lance"
+        ]
+      },
+      {
+        "tile": 1,
+        "id": "chapter-61",
+        "place": "Old Stone Bridge",
+        "cast": [
+          "jonesha",
+          "lance",
+          "tom",
+          "theodore",
+          "templar",
+          "buddy",
+          "mary",
+          "amelia",
+          "ranger"
+        ]
+      },
+      {
+        "tile": 2,
+        "id": "chapter-62",
+        "place": "Welcome House",
+        "cast": [
+          "milo",
+          "jonesha",
+          "tom",
+          "templar",
+          "lance"
+        ]
+      },
+      {
+        "tile": 3,
+        "id": "chapter-63",
+        "place": "Welcome House",
+        "cast": [
+          "sammy",
+          "amelia",
+          "theodore"
+        ]
+      }
+    ]
+  },
+  "book-17": {
+    "src": "assets/story-scenes/book-17.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "79f73c9e1b190ebcfe7bcc8be360e5fd8646deded60ddcd879efe32881c959ce",
+    "views": [
+      {
+        "tile": 0,
+        "id": "chapter-64",
+        "place": "First Wooden Bridge",
+        "cast": [
+          "amelia",
+          "tom",
+          "angel",
+          "wally",
+          "harold",
+          "theodore",
+          "templar",
+          "buddy",
+          "mary",
+          "sammy"
+        ]
+      },
+      {
+        "tile": 1,
+        "id": "chapter-65",
+        "place": "Honeybrook Post Office",
+        "cast": [
+          "harold",
+          "gold",
+          "ancestor",
+          "beekeepers"
+        ]
+      },
+      {
+        "tile": 2,
+        "id": "chapter-66",
+        "place": "Northern Woods Boundary",
+        "cast": [
+          "angel",
+          "goddess",
+          "carmen"
+        ]
+      },
+      {
+        "tile": 3,
+        "id": "chapter-67",
+        "place": "Storybook Lane",
+        "cast": [
+          "ash"
+        ]
+      }
+    ]
+  },
+  "book-18": {
+    "src": "assets/story-scenes/book-18.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "1e85fbdd2e8a6221c9a9ed3e2af6131586ddd33d7ae748f216d5bb8f30bba88e",
+    "views": [
+      {
+        "tile": 0,
+        "id": "chapter-68",
+        "place": "Welcome House Spare Room",
+        "cast": [
+          "carmen",
+          "harold",
+          "amelia",
+          "buddy",
+          "sammy",
+          "gold"
+        ]
+      },
+      {
+        "tile": 1,
+        "id": "chapter-69",
+        "place": "Welcome House Spare Room",
+        "cast": [
+          "carmen",
+          "sammy"
+        ]
+      },
+      {
+        "tile": 2,
+        "id": "epilogue",
+        "place": "Northern Woods Boundary",
+        "cast": [
+          "carmen",
+          "sammy",
+          "amelia",
+          "harold",
+          "ash"
+        ]
+      },
+      {
+        "tile": 3,
+        "id": "cover",
+        "place": "Honeybrook",
+        "cast": []
+      }
+    ]
+  },
+  "book-19": {
+    "src": "assets/story-scenes/book-19.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "55675984558ac8566f03c7912134900509fb8ee3c51df1e360b5530151a59db2",
+    "views": [
+      {
+        "tile": 0,
+        "id": "cafe",
+        "place": "The Honey Mug Café",
+        "cast": [
+          "patty"
+        ]
+      },
+      {
+        "tile": 1,
+        "id": "mailroom",
+        "place": "Honeybrook Post Office",
+        "cast": [
+          "harold"
+        ]
+      },
+      {
+        "tile": 2,
+        "id": "founder-cottage",
+        "place": "Amelia’s Cottage",
+        "cast": [
+          "amelia"
+        ]
+      },
+      {
+        "tile": 3,
+        "id": "worksyard",
+        "place": "Honeybrook Works Yard",
+        "cast": [
+          "tom",
+          "buddy"
+        ]
+      }
+    ]
+  },
+  "book-20": {
+    "src": "assets/story-scenes/book-20.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "2b83eabd2ae347f56342909180ef2bcf7430a5398b330c5cd083ca0472b6f0fa",
+    "views": [
+      {
+        "tile": 0,
+        "id": "hearthwell-kitchen",
+        "place": null,
+        "cast": [
+          "templar",
+          "buddy",
+          "mary",
+          "lena",
+          "landis"
+        ]
+      },
+      {
+        "tile": 1,
+        "id": "hearthwell-attic",
+        "place": null,
+        "cast": [
+          "templar",
+          "buddy",
+          "landis"
+        ]
+      },
+      {
+        "tile": 2,
+        "id": "mary-kitchen",
+        "place": null,
+        "cast": [
+          "mary",
+          "templar"
+        ]
+      },
+      {
+        "tile": 3,
+        "id": "welcome-attic",
+        "place": null,
+        "cast": [
+          "theodore",
+          "harold"
+        ]
+      }
+    ]
+  },
+  "cast-founders": {
+    "src": "assets/story-scenes/cast-founders.webp",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "3fb3b80800ac91939300632c6c045ea0cb94b221ddc22aa19f46b5eaa561d3f5"
+  },
+  "cast-hearthwells": {
+    "src": "assets/story-scenes/cast-hearthwells.webp",
+    "width": 1448,
+    "height": 1086,
+    "sha256": "8c66d04254764ff8d44ba84632e1788e0fcbfccf569f19f226b7467d379174eb"
+  },
+  "cast-neighbors": {
+    "src": "assets/story-scenes/cast-neighbors.webp",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "29bc19e4eba05d5684d52a155875fbd05d01c65efb90c3ec7266be81c702a5f0"
+  },
+  "cast-origins": {
+    "src": "assets/story-scenes/cast-origins.webp",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "9aace084e72315da8aaeda10686f82f8b1c9e5a8d55b4eb1b0793f63f40833e8"
+  }
+}

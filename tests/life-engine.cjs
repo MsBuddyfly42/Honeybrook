@@ -26,7 +26,7 @@ test('Every weekly meal has a portion card, and a cooking assignment keeps its m
  s=act(s,'task',{id:'cook',choice:0,step:1});s=act(s,'task',{id:'cook',choice:0,step:2});assert(s.history.at(-1).text.includes(breakfast));assert.equal(E.meal(s),E.menu[0][1]);
 });
 test('Completion awards once, shared relationships, skill, permanent menu record and three-per-day cap',()=>{
- let s=E.initial(today);s=act(s,'partner',{id:'maya'});s=complete(s,'cook','dining');assert.equal(s.balance,275000);assert.equal(s.completed,1);assert.equal(s.skills.Cooking,1);assert.equal(s.relationships.maya,1);assert.equal(s.relationships.sofia,1);assert(s.history.at(-1).text.includes(E.meal(s)));
+ let s=E.initial(today);s=act(s,'partner',{id:'nora'});s=complete(s,'cook','dining');assert.equal(s.balance,275000);assert.equal(s.completed,1);assert.equal(s.skills.Cooking,1);assert.equal(s.relationships.nora,1);assert.equal(s.relationships.wally,1);assert(s.history.at(-1).text.includes(E.meal(s)));
  s=complete(s,'cook','dining');s=complete(s,'cook','dining');assert.equal(s.counts.cook,3);assert.throws(()=>act(s,'task',{id:'cook',choice:1}),/Three completions/);
  const history=s.history.length;s=act(s,'rest');assert.equal(s.date,'2026-10-23');assert.equal(s.counts.cook,undefined);assert(s.history.length>history);assert(!E.blocked(s,'cook'));
 });

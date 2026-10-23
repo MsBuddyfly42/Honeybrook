@@ -1,0 +1,687 @@
+[
+  {
+    "id": "gold",
+    "name": "Goldilocks",
+    "kind": "Human · historical",
+    "place": "Three Bears’ Cottage",
+    "chapters": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      47,
+      65
+    ],
+    "fact": "Seven when the spring river takes her beekeeper parents; survives three days on honey, reaches the cottage on the fourth day. Mama Bear welcomes her. Her hair later silvers; she dies old and beloved before Carmen arrives. She entrusts Harold with the sealed family letter.",
+    "visual": "Human girl with golden hair in childhood; human woman and silver-haired elder in later memories. Never a bear.",
+    "historical": true
+  },
+  {
+    "id": "mama",
+    "name": "Mama Bear",
+    "kind": "Bear · historical",
+    "place": "Three Bears’ Cottage",
+    "chapters": [
+      2,
+      3,
+      4,
+      47
+    ],
+    "fact": "Sees a lost child rather than an intruder, says ‘She stays,’ and offers care without demanding her story. Dies with Papa Bear during the cruel winter.",
+    "historical": true
+  },
+  {
+    "id": "papa",
+    "name": "Papa Bear",
+    "kind": "Bear · historical",
+    "place": "Three Bears’ Cottage",
+    "chapters": [
+      2,
+      3,
+      4,
+      47
+    ],
+    "fact": "At first roars over the empty bowls, then lowers his head when Mama sees the child. Teaches cubs to mend a fence. Dies with Mama Bear in winter.",
+    "historical": true
+  },
+  {
+    "id": "baby",
+    "name": "Baby Bear",
+    "kind": "Bear · grows older",
+    "place": "Three Bears’ Cottage",
+    "chapters": [
+      2,
+      3,
+      4,
+      47
+    ],
+    "fact": "Shares his toy, bed and world with Goldilocks. Grows broad and quiet. He and Goldilocks tend the home after Mama and Papa die."
+  },
+  {
+    "id": "amelia",
+    "name": "Amelia Honeybrook",
+    "kind": "Bear · Founder Bear",
+    "place": "First Wooden Bridge",
+    "chapters": [
+      6,
+      7,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      19,
+      22,
+      24,
+      28,
+      45,
+      46,
+      47,
+      64,
+      68
+    ],
+    "fact": "Arrives rootless with half an apple, saved string and cloth. Helps Thomas Bridgewell repair the wooden crossing. Wants a path-facing door, bench and water. Co-founds Honeybrook through a welcome that does not require usefulness. Her guardian angel protects her without controlling her choices."
+  },
+  {
+    "id": "tom",
+    "name": "Thomas ‘Tom’ Bridgewell",
+    "kind": "Bear · carpenter and stoneworker",
+    "place": "Honeybrook Works Yard",
+    "chapters": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      16,
+      17,
+      19,
+      21,
+      29,
+      32,
+      45,
+      54,
+      60,
+      61,
+      64
+    ],
+    "fact": "Traveling builder who becomes a neighbor. Inspects before opening work, accepts a second experienced review, makes wide routes and usable benches. Works with Buddy at the Works Yard. The repaired wooden bridge is not the ancient stone arch."
+  },
+  {
+    "id": "sammy",
+    "name": "Samuel ‘Sammy’ Patchwell",
+    "kind": "Bear · First Bear Welcomed Home",
+    "place": "Welcome House",
+    "chapters": [
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      28,
+      38,
+      43,
+      45,
+      47,
+      52,
+      56,
+      58,
+      59,
+      63,
+      64,
+      68,
+      69
+    ],
+    "fact": "Arrives about eleven in an oversized coat with uneven patches, including a blue patch. Chooses Patchwell privately; Samuel Patchwell goes on the list. Learning remains uneven. He is never a secret prince or genius. His old coat is displayed later. His bed was unconditional before anyone knew how he might help."
+  },
+  {
+    "id": "templar",
+    "name": "Templar Hearthwell",
+    "kind": "Bear · mother · First Techie Bear",
+    "place": "Templar’s Workshop",
+    "chapters": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      33,
+      34,
+      35,
+      37,
+      39,
+      43,
+      53,
+      57,
+      59,
+      61,
+      64
+    ],
+    "fact": "Relearns her technology skills through honest practice. Starts a work corner, then the first technology workshop and Helping House for notices, records and business plans. Makes room for family, rest and Lena’s full participation."
+  },
+  {
+    "id": "buddy",
+    "name": "Buddy Hearthwell",
+    "kind": "Bear · family protector and practical planner",
+    "place": "Honeybrook Works Yard",
+    "chapters": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      39,
+      54,
+      59,
+      60,
+      61,
+      64,
+      68
+    ],
+    "fact": "His disciplined service informs clear routes, sensible supplies and quiet practical care. Plans with Tom and family rather than imposing changes. Asks Templar to include rest. Reacts tensely when Carmen first arrives."
+  },
+  {
+    "id": "mary",
+    "name": "Big Mama Mary",
+    "kind": "Bear · family elder",
+    "place": "Big Mama’s Porch",
+    "chapters": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      31,
+      33,
+      34,
+      35,
+      39,
+      44,
+      59,
+      61,
+      64
+    ],
+    "fact": "Keeps the family near, checks that helpers eat, remembers Willie with tenderness, and makes room on the porch beside Lena. Her welcome is ‘Pull up a paw.’"
+  },
+  {
+    "id": "jonesha",
+    "name": "Jonesha Hearthwell",
+    "kind": "Bear · explorer and map-maker",
+    "place": "Old Stone Bridge",
+    "chapters": [
+      25,
+      26,
+      27,
+      29,
+      31,
+      34,
+      35,
+      37,
+      40,
+      41,
+      59,
+      61,
+      62
+    ],
+    "fact": "Carries a notebook of paths, corrects the outdated map, discovers the old stone arch with Lance from the marked public path. Learns to leave Milo room for quiet and separate choices."
+  },
+  {
+    "id": "jamya",
+    "name": "Ja’Mya Hearthwell",
+    "kind": "Bear · thoughtful family helper",
+    "place": "Hearthwell House",
+    "chapters": [
+      25,
+      26,
+      27,
+      29,
+      30,
+      31,
+      33,
+      34,
+      59
+    ],
+    "fact": "Packs useful supplies, notices the right route mark, labels drawers and folders, spots a cupboard blocking a path. Helping never makes her responsible for everything."
+  },
+  {
+    "id": "jamon",
+    "name": "Jamon Hearthwell",
+    "kind": "Bear · quiet observer",
+    "place": "Hearthwell House",
+    "chapters": [
+      25,
+      26,
+      27,
+      29,
+      31,
+      34,
+      32,
+      59
+    ],
+    "fact": "Keeps familiar blankets and bags secure, folds the temporary paper dinosaur for Landis and notices access problems beside Buddy."
+  },
+  {
+    "id": "robin",
+    "name": "Robin Hearthwell",
+    "kind": "Bear · singer",
+    "place": "Harmony Hall",
+    "chapters": [
+      25,
+      26,
+      27,
+      29,
+      30,
+      31,
+      34,
+      35,
+      39,
+      44,
+      59
+    ],
+    "fact": "Brings songs and offers company or quiet. Sings a familiar gentle phrase with Lena; helps recover the Professor’s scattered papers."
+  },
+  {
+    "id": "rheanna",
+    "name": "Rheanna Hearthwell",
+    "kind": "Bear · bright family presence",
+    "place": "Hearthwell House",
+    "chapters": [
+      25,
+      26,
+      27,
+      29,
+      31,
+      34,
+      59
+    ],
+    "fact": "Chooses a picture and a bright window, adds rhythm to a traveling song, brightens the workshop noticeboard and makes an ordinary doorway feel like a stage entrance."
+  },
+  {
+    "id": "lena",
+    "name": "Lena Hearthwell",
+    "kind": "Bear · beloved family member",
+    "place": "Hearthwell House",
+    "chapters": [
+      25,
+      26,
+      27,
+      29,
+      31,
+      34,
+      37,
+      39,
+      40,
+      44,
+      59
+    ],
+    "fact": "Does not use spoken words or walk to a lesson as some others do. Recognizes loved ones and responds through expressions her family understands. Comfort, familiar voices, time and participation are planned with her family. No cure or change into a different learner is promised.",
+    "visual": "Comfortably supported in seated family space; never shown standing, walking or speaking written dialogue."
+  },
+  {
+    "id": "lance",
+    "name": "Lance Hearthwell",
+    "kind": "Bear · games and learning",
+    "place": "Gamer Bear Game Show Studio",
+    "chapters": [
+      25,
+      26,
+      27,
+      29,
+      30,
+      31,
+      34,
+      35,
+      37,
+      40,
+      41,
+      42,
+      54,
+      55,
+      57,
+      59,
+      60,
+      61,
+      62
+    ],
+    "fact": "Brings games, turns numbers into points and helps make an untimed practice game show with a pass option and quiet alternative. Explores the old arch with Jonesha and marks the safe route."
+  },
+  {
+    "id": "landis",
+    "name": "Landis Hearthwell",
+    "kind": "Bear · dinosaur enthusiast",
+    "place": "Hearthwell House",
+    "chapters": [
+      25,
+      26,
+      27,
+      29,
+      31,
+      33,
+      34,
+      35,
+      37,
+      40,
+      42,
+      54,
+      55,
+      57,
+      59
+    ],
+    "fact": "The toy dinosaur is lost on the journey and later found in a blanket box. Jamon’s folded paper dinosaur remains on the workshop shelf. Uses dinosaurs as counters and requests a bonus question."
+  },
+  {
+    "id": "landric",
+    "name": "Landric Hearthwell",
+    "kind": "Bear · youngest child",
+    "place": "Hearthwell House",
+    "chapters": [
+      25,
+      26,
+      27,
+      29,
+      34,
+      44,
+      59
+    ],
+    "fact": "The little one asks for snacks, enjoys the lunch stop, and finds the kitchen important. The manuscript does not give him an exact age."
+  },
+  {
+    "id": "willie",
+    "name": "Willie",
+    "kind": "Family memory",
+    "place": "Hearthwell House",
+    "chapters": [
+      29
+    ],
+    "fact": "Not present to enter the new house. Big Mama tells his stories tenderly and the family carries his memory into its home. Never a living visitor or a speaking quest-giver.",
+    "historical": true
+  },
+  {
+    "id": "theodore",
+    "name": "Professor Theodore Honeywell",
+    "kind": "Bear · teacher who learns",
+    "place": "Honeybrook School",
+    "chapters": [
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      47,
+      53,
+      63,
+      64
+    ],
+    "fact": "Arrives in a waistcoat with spectacles, books and a tidy plan. Learns to ask, adapt, repeat familiar objects, offer privacy and adult learning, include Lena, admit the map error and use checked references."
+  },
+  {
+    "id": "harold",
+    "name": "Harold Pawst",
+    "kind": "Bear · mail carrier",
+    "place": "Honeybrook Post Office",
+    "chapters": [
+      48,
+      57,
+      64,
+      65,
+      68
+    ],
+    "fact": "The oldest bear in two towns. Keeps Goldilocks’s century-old letter sealed, private and separate from any player finances. Gives it to Carmen on her fourth day asking about beekeepers, then tells her what he knows."
+  },
+  {
+    "id": "wally",
+    "name": "Wally Crumbwell",
+    "kind": "Bear · baker",
+    "place": "Cub Cakes & Crumbs",
+    "chapters": [
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      64
+    ],
+    "fact": "Arrives with recipe book, mixing bowl and broken wrapped cookies. Learns portions, sales records, truthful descriptions, safe storage, manageable promises and keeping his own supper. His shop is Cub Cakes & Crumbs."
+  },
+  {
+    "id": "patty",
+    "name": "Miss Patty Peaches",
+    "kind": "Bear · café neighbor and planning help",
+    "place": "The Honey Mug Café",
+    "chapters": [
+      53,
+      54,
+      55,
+      56,
+      57
+    ],
+    "fact": "Asks Wally about actual customers, realistic batches and reliable opening products. Wants his kindness to last longer than one tray; later collects café orders."
+  },
+  {
+    "id": "daisy",
+    "name": "Daisy Bellweather",
+    "kind": "Bear · still finding her direction",
+    "place": "Cub Cakes & Crumbs",
+    "chapters": [
+      57
+    ],
+    "fact": "May sit without deciding her whole future. Talks with Wally about experiments and unfinished ideas; he offers a chair rather than a solution to her entire life."
+  },
+  {
+    "id": "mabel",
+    "name": "Mabel Welcomeberry",
+    "kind": "Bear · later Welcome House neighbor",
+    "place": "Welcome House",
+    "chapters": [
+      45
+    ],
+    "fact": "Named among the later bears who carry on Welcome House’s work. The manuscript does not supply an elaborate personal biography."
+  },
+  {
+    "id": "toby",
+    "name": "Toby Trailpaw",
+    "kind": "Bear · later Welcome House neighbor",
+    "place": "Welcome House",
+    "chapters": [
+      45
+    ],
+    "fact": "Named among the later bears who improve Welcome House while keeping its bench. Additional personal history is not specified."
+  },
+  {
+    "id": "nora",
+    "name": "Nora Kindpaw",
+    "kind": "Bear · later Welcome House neighbor",
+    "place": "Welcome House",
+    "chapters": [
+      45
+    ],
+    "fact": "Named among the later Welcome House bears who keep the welcome and the bench. Her exact professional credentials are not specified."
+  },
+  {
+    "id": "milo",
+    "name": "Milo",
+    "kind": "Bear · newcomer",
+    "place": "Welcome House",
+    "chapters": [
+      62
+    ],
+    "fact": "A young bear offered a quiet chair by Jonesha. Chooses Big Mama’s porch, then the festival on different days; neither choice earns his supper."
+  },
+  {
+    "id": "carmen",
+    "name": "Carmen",
+    "kind": "Human · descendant searching family history",
+    "place": "Welcome House Spare Room",
+    "chapters": [
+      68,
+      69
+    ],
+    "fact": "Arrives Tuesday in a rental car with a dented fender, notebook and camera. Calls herself an investigator while following her family’s missing beekeeper story. Opens the ancestor’s letter on day four and stays. The voice calls her at 3 AM; her entry into the woods is the next beginning, not an already resolved sequel.",
+    "visual": "Adult HUMAN woman, not Goldilocks herself and not a bear."
+  },
+  {
+    "id": "angel",
+    "name": "Amelia’s guardian angel",
+    "kind": "Guardian · identity not fully explained",
+    "place": "First Wooden Bridge",
+    "chapters": [
+      6,
+      9,
+      13,
+      46,
+      64,
+      66
+    ],
+    "fact": "The woman at the creek protects Amelia without controlling her choices. Names herself her guardian angel in chapter 46 and is connected to the Guardian Goddess. The complete relationship remains unknown.",
+    "visual": "A woman with quiet brightness. The text does not specify wings."
+  },
+  {
+    "id": "goddess",
+    "name": "The Guardian Goddess",
+    "kind": "Guardian · older mystery",
+    "place": "Northern Woods Boundary",
+    "chapters": [
+      46,
+      47,
+      64,
+      66
+    ],
+    "fact": "Protects Honeybrook and surrounding land. Her older history and exact relationship to the guardian angel remain deliberately unresolved. Never substitute the angel’s revealed identity for the Goddess’s unknown one.",
+    "unseen": true
+  },
+  {
+    "id": "ash",
+    "name": "Ash",
+    "kind": "Wolf · former Big Bad Wolf",
+    "place": "Storybook Lane",
+    "chapters": [
+      67
+    ],
+    "fact": "The older, rounder, now-kind Big Bad Wolf bakes sourdough in Storybook Lane. The Lane appears when its stories are brought back to life, not as a routine road district.",
+    "visual": "WOLF baker, never a bear."
+  },
+  {
+    "id": "beekeepers",
+    "name": "Goldilocks’s parents",
+    "kind": "Humans · historical beekeepers",
+    "place": "River district memory",
+    "chapters": [
+      1,
+      65
+    ],
+    "fact": "A husband and wife lost in the spring river. Her mother gives her the satchel, honey jar and blue-flowered cloth. Their names are not supplied.",
+    "historical": true
+  },
+  {
+    "id": "ancestor",
+    "name": "The searching father",
+    "kind": "Human · historical letter writer",
+    "place": "Honeybrook Post Office",
+    "chapters": [
+      65,
+      68
+    ],
+    "fact": "Father of the beekeeper’s wife and grandfather of Goldilocks. Searches for his missing daughter, not knowing about the river or surviving granddaughter. Carmen descends from the family’s other branch. The manuscript does not provide the full letter text or all names.",
+    "historical": true
+  },
+  {
+    "id": "prince",
+    "name": "The prince",
+    "kind": "Human · ancient prologue",
+    "place": "Ancient forest clearing",
+    "chapters": [],
+    "fact": "The unnamed prince kneels beneath the moon; true love’s kiss wakes the sleeping princess. The warmth enters roots, seeds and soil. No supplied royal name or connection to later family ancestry.",
+    "historical": true
+  },
+  {
+    "id": "princess",
+    "name": "The sleeping princess",
+    "kind": "Human · ancient prologue",
+    "place": "Ancient forest clearing",
+    "chapters": [],
+    "fact": "The unnamed princess wakes through true love’s kiss. The forest keeps its warmth after her awakening.",
+    "historical": true
+  },
+  {
+    "id": "cook",
+    "name": "The first shelter’s cook",
+    "kind": "Bear · unnamed in the manuscript",
+    "place": "First Shelter",
+    "chapters": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      19
+    ],
+    "fact": "Feeds the bridge builders, walks with Amelia after spilled water, helps plan bowls and welcome, and jokes about the roof drip. This early cook is not retrospectively identified as Wally."
+  },
+  {
+    "id": "ranger",
+    "name": "The ranger",
+    "kind": "Bear · unnamed in the manuscript",
+    "place": "Old Stone Bridge",
+    "chapters": [
+      61
+    ],
+    "fact": "Visits the old stone arch with Tom while the children remain behind the boundary rope. No supplied personal name or invented biography."
+  },
+  {
+    "id": "older-cub",
+    "name": "The older cub from Bear Hollow",
+    "kind": "Bear · unnamed in the manuscript",
+    "place": "Welcome House",
+    "chapters": [
+      24
+    ],
+    "fact": "A separate traveler from Sammy. Does not say why he left at first; later helps Tom raise a beam and shows others the way. Do not merge his identity with Sammy."
+  },
+  {
+    "id": "travelers",
+    "name": "Travelers and neighbors",
+    "kind": "Bears · unnamed supporting characters",
+    "place": "First Shelter",
+    "chapters": [
+      9,
+      10,
+      11,
+      15,
+      16,
+      23,
+      24,
+      45,
+      48
+    ],
+    "fact": "The medicine-basket traveler, relative-bound traveler, pinecone-offering cub, water-giving elder, careful helpers, newcomers and adult learners have their own places in the text. Their unprovided names stay unprovided."
+  }
+]

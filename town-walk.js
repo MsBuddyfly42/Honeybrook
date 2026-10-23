@@ -49,7 +49,7 @@
       'Harold Pawst': ['sorting letters for his rounds','delivering the afternoon post','taking his last letters home'],
       Sammy: ['checking the garden seedlings','sharing a picnic beside the path','watching fireflies near the garden'],
       Wally: ['kneading the morning bread','setting warm rolls on the bakery counter','putting the bakery kitchen to bed'],
-      'Benny Scoops': ['getting his ice-cream cart ready','ringing his cart bell for the neighborhood','cleaning his cart after the last scoop']
+      'the ice-cream seller': ['getting his ice-cream cart ready','ringing his cart bell for the neighborhood','cleaning his cart after the last scoop']
     };
     const happenings = [
       {title:'Welcome flowers at the bridge',watch:'Amelia straightens a vase. Harold pauses with his mailbag while Sammy picks a fallen petal from the path.',join:'You hold the vase steady while Amelia adds the last flower. “There. A welcome for whoever comes next.”',bear:'Amelia'},
@@ -161,7 +161,7 @@
     window.addEventListener('pagehide',stopWatch);
     const encounters=[
       {name:'Harold Pawst',image:'harold',line:'Harold pauses on his rounds. “A new neighbor has a parcel at the Welcome House. I deliver mail—not gossip!”',reply:'You help straighten the parcel label. Harold checks the address and tips his cap.',help:'the parcel on your mail route'},
-      {name:'Benny Scoops',image:'benny',line:'Benny rings his cart bell. “I brought honey-vanilla today. Care to keep me company while I park?”',reply:'You guide Benny to a clear spot beside the path. He raises a scoop in thanks.',help:'parking your ice-cream cart'},
+      {name:'the ice-cream seller',image:'benny',line:'Benny rings his cart bell. “I brought honey-vanilla today. Care to keep me company while I park?”',reply:'You guide Benny to a clear spot beside the path. He raises a scoop in thanks.',help:'parking your ice-cream cart'},
       {name:'Amelia',image:'amelia',line:'Amelia arrives with a small welcome basket. “Someone new is settling in. A friendly wave makes a difference.”',reply:'You carry the basket together. Amelia leaves it by the Welcome House door and waves.',help:'welcoming our new neighbor'},
       {name:'Wally',image:'wally',line:'Wally comes out carrying extra rolls. “The dough rose beautifully. Let’s find somebody to share these with.”',reply:'You help Wally set the rolls in a basket by the path. The first passerby stops with a smile.',help:'sharing the extra rolls'},
       {name:'Sammy',image:'sammy',line:'Sammy stops to show you a fallen leaf. “Look at the colors! Would you help me clear a little space for the seedlings?”',reply:'You move the leaves beside the garden instead of throwing them away. Sammy waters the newly cleared patch.',help:'clearing the garden path'}
@@ -188,7 +188,7 @@
     const held = new Set();
     const motionPreference=window.matchMedia('(prefers-reduced-motion: reduce)');const reduceMotion=()=>motionPreference.matches||document.body.classList.contains('hb-reduced-motion');
     const spriteNames=['visitor','amelia','harold','sammy','wally','benny'];const bearSprites=spriteNames.map(name=>{const image=new Image();image.src='assets/'+name+'.webp';image.onload=()=>paint();return image;});
-    const names = ['Amelia','Harold Pawst','Sammy','Wally','Benny Scoops'];
+    const names = ['Amelia','Harold Pawst','Sammy','Wally','the ice-cream seller'];
     const bears = [
       {name:names[0], fur:'#b88655', coat:'#618a69', path:[[.55,.66],[.59,.68],[.62,.70],[.61,.73],[.56,.71]], speed:.038},
       {name:names[1], fur:'#9b9289', coat:'#486087', path:[[.40,.61],[.44,.64],[.49,.65],[.47,.69],[.42,.68]], speed:.05},
@@ -201,7 +201,7 @@
       'Harold Pawst':['“I DELIVER MAIL. I DO NOT DELIVER MESSAGES.”','“The route is quiet today. That never lasts.”','“I saved a letter for Wally. The loaf beside it is not mail.”'],
       'Sammy':['“You can eat first.”','“You don’t have to tell me where you came from.”','“I saved you a seat. You can leave it empty if you want.”'],
       'Wally':['“I kept one loaf for supper. Amelia will be proud.”','“Want to smell the cinnamon? The oven’s almost ready.”','“Take a warm roll. I made plenty.”'],
-      'Benny Scoops':['“I rang my cart bell one time. Everybody heard it.”','“Blueberry, honey-vanilla, or just a wave today?”','“The cubs say my cart is impossible to miss.”']
+      'the ice-cream seller':['“I rang my cart bell one time. Everybody heard it.”','“Blueberry, honey-vanilla, or just a wave today?”','“The cubs say my cart is impossible to miss.”']
     };
     const places = () => Array.from(world.querySelectorAll('.hb-world-marker')).map(button => {
       const r = button.getBoundingClientRect(), a = art.getBoundingClientRect();

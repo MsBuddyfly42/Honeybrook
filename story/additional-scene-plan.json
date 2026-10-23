@@ -1,0 +1,81 @@
+[
+  {
+    "id": "book-19",
+    "views": [
+      {
+        "id": "cafe",
+        "place": "The Honey Mug Café",
+        "cast": [
+          "patty"
+        ],
+        "visual": "Miss Patty Peaches, mature light brown BEAR in peach cardigan, greets neighbor in cozy Honey Mug Café, breakfast tables, safe food service counter, morning light from ground floor window showing Main Street timber shops; no gossip drama"
+      },
+      {
+        "id": "mailroom",
+        "place": "Honeybrook Post Office",
+        "cast": [
+          "harold"
+        ],
+        "visual": "VERY OLD gray-furred mail bear Harold Pawst in dark blue cap with weathered brown satchel in rustic Honeybrook Post Office, sealed private letter safely in pocket, addressed outgoing trays, no opened private correspondence"
+      },
+      {
+        "id": "founder-cottage",
+        "place": "Amelia’s Cottage",
+        "cast": [
+          "amelia"
+        ],
+        "visual": "Adult female brown BEAR Amelia sage shawl cream dress at her modest welcoming cottage front room, half apple keepsake drawing, path-facing door, covered bench and water cup, warm modern-day Honeybrook memory-aware room, not a palace"
+      },
+      {
+        "id": "worksyard",
+        "place": "Honeybrook Works Yard",
+        "cast": [
+          "tom",
+          "buddy"
+        ],
+        "visual": "Tom brown bear in brown work coat and Buddy dark brown bear in blue work shirt at practical woodland Honeybrook Works Yard; inspected timber, safe tools stored, clear accessible routes and rail, meaningful careful completed maintenance"
+      }
+    ]
+  },
+  {
+    "id": "book-20",
+    "views": [
+      {
+        "id": "hearthwell-kitchen",
+        "visual": "A connected practical Hearthwell family KITCHEN with stove pantry dining table and family-safe clear routes, chestnut mother Templar plum cardigan and dark brown father Buddy blue shirt preparing a family meal, Big Mama floral shawl, some bear children seated naturally, Lena comfortably supported near family voices, Landis dinosaur at shelf, warm morning window onto Bridgeview, no written signs",
+        "cast": [
+          "templar",
+          "buddy",
+          "mary",
+          "lena",
+          "landis"
+        ]
+      },
+      {
+        "id": "hearthwell-attic",
+        "visual": "Hearthwell timber ATTIC keepsake room reached by sensible staircase with rail, stored travel blankets and labeled closed boxes without readable words, Templar plum cardigan and Buddy blue shirt looking at old journey notebook, folded PAPER dinosaur and recovered wooden toy dinosaur together on low shelf, memories kept not ghost mystery, roof-height window shows treetops not street level, no Lena climbing stairs",
+        "cast": [
+          "templar",
+          "buddy",
+          "landis"
+        ]
+      },
+      {
+        "id": "mary-kitchen",
+        "visual": "Big Mama Mary elder gray-brown bear in cream floral shawl in cozy actual woodland KITCHEN, sensible stove and baking counter, soup bread and vegetables for family supper, Templar mother plum cardigan pulls chair beside her, ground-floor window onto her shaded porch with another comfortable chair, warm realistic country photography",
+        "cast": [
+          "mary",
+          "templar"
+        ]
+      },
+      {
+        "id": "welcome-attic",
+        "visual": "Welcome House upstairs ARCHIVE LOFT, comfortable timber room with paper records closed keepsake trunks and orderly shelves, Professor Theodore bear spectacles navy waistcoat checks references with gray mail bear Harold blue cap and worn satchel; no private ancestral letter opened; roof-height window overlooks town roofs and northern pines; no false claim the public coat case is in this attic",
+        "cast": [
+          "theodore",
+          "harold"
+        ]
+      }
+    ]
+  }
+]

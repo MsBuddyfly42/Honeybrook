@@ -1,0 +1,35 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+const {chromium}=await import(process.env.PLAYWRIGHT_MODULE||'playwright');
+const base=(process.env.TEST_URL||'http://127.0.0.1:8792/').replace(/\/?$/,'/');
+const fixture=JSON.parse(readFileSync(new URL('fixtures/pre-manuscript-hollow-progress.json',import.meta.url))).cases.find(c=>c.id==='fellowship').saved;
+const b=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',args:['--no-sandbox']});
+try{for(const width of [1440,390]){
+ const c=await b.newContext({viewport:{width,height:1000}}),p=await c.newPage(),errors=[];p.on('pageerror',e=>errors.push(e.message));
+ await p.goto(base);await p.evaluate(s=>localStorage.setItem('honeybrook_life_v1',JSON.stringify(s)),fixture);await p.reload();
+ await p.locator('[data-life-open="continue"]').first().click();await p.locator('.life-tabs [data-id="family"]').click();
+ const partners=await p.locator('[data-life="partner"]').evaluateAll(bs=>bs.map(b=>b.dataset.id));
+ for(const id of ['templar','buddy','mary','lena','landis','sammy','carmen','harold'])assert(partners.includes(id));
+ assert(!partners.includes('maya'));assert(!partners.includes('sofia'));
+ assert.deepEqual(await p.evaluate(()=>JSON.parse(localStorage.getItem('honeybrook_life_v1'))),fixture,'Browsing original cast never rewrites old balances, relationships or paid work');
+ await p.goto(base+'#visit='+encodeURIComponent('Hearthwell Home'));
+ await p.locator('.visit-room-photo').evaluate(n=>n.decode());
+ assert.match(await p.locator('.visit-room-photo').getAttribute('src'),/story-scenes\/book-09/,'Hearthwell porch shows its own family scene');
+ await p.locator('[data-canon-room] a').first().waitFor();
+ assert.match(await p.locator('[data-canon-room]').textContent(),/Chapter 29/);
+ const bridges=await p.evaluate(()=>['Welcome Bridge','Ancient Bridge'].map(n=>HoneybrookPhotos.record(n)));
+ assert.notEqual(bridges[0].chapter,bridges[1].chapter);assert.equal(bridges[0].chapter,'chapter-11');assert.equal(bridges[1].chapter,'chapter-61');
+ await p.goto(base+'games/honeybrook-craft-fair/?portal=town&place=school');
+ await p.locator('#btn-start').click();await p.locator('#modal-actions button').first().click();
+ await p.locator('#connected-town-paths>summary').click();await p.locator('[data-canon-native] a').waitFor();
+ assert.match(await p.locator('[data-canon-native] a').getAttribute('href'),/chapter-40/);
+ await p.locator('#connected-town-paths>summary').click();await p.locator('#hud-toggle').click();await p.locator('#btn-neighbors').click();
+ assert(await p.locator('.neighbor-row').filter({hasText:'Templar'}).count());
+ await p.locator('.neighbor-row').filter({hasText:/^.*Lena/}).getByRole('button',{name:'Visit',exact:true}).click();
+ await p.locator('[data-canon-context] a').waitFor();
+ assert.match(await p.locator('#modal-body').textContent(),/comfortable|support|familiar/);
+ assert.doesNotMatch(await p.locator('#modal-body').textContent(),/Lena says|Lena walks|Lena sings/);
+ await p.locator('#modal-actions button').nth(1).click();assert.match(await p.locator('#modal-body').textContent(),/rests comfortably/);
+ assert.deepEqual(await p.evaluate(()=>JSON.parse(localStorage.getItem('honeybrook_life_v1'))),fixture);
+ assert.deepEqual(errors,[]);await c.close();console.log('PASS '+width+'px: original family/companions, archived paid-work save untouched, source-linked Hearthwell room and native school, distinct bridges, complete native neighbor roster and supported nonspeaking Lena visit.');
+}}finally{await b.close();}
