@@ -1,0 +1,341 @@
+{
+  "verifiedAt": "2026-10-23T21:52:12.971643+00:00",
+  "runtimeCommit": "1a19bce998602100bf83d4b27629fde98e03edd0",
+  "runtimeTree": "9c016177be70df63de81bb5e7dcb93a21eabc7d0",
+  "liveSite": "https://honeybrook.onrender.com/",
+  "render": {
+    "service": "srv-dautmo0473hc73ckhmbg",
+    "deploy": "dep-dbdtc4ek1f9s73ej3ijg",
+    "status": "live",
+    "finishedAt": "2026-10-23T21:48:23.260546Z"
+  },
+  "coverage": {
+    "holidays": 20,
+    "holidayStations": 114,
+    "holidayArtworkFiles": 9,
+    "directoryRecords": 126,
+    "manuscriptCast": 41,
+    "refugeCoverageZones": 16,
+    "refugeRooms": 8,
+    "priorFairProgramsPreserved": 47
+  },
+  "localTests": [
+    "tests/holidays.cjs: all 20 complete rule paths, malformed saves, limits, immutable progress and nine exact artwork hashes",
+    "tests/community.cjs: all 41 source entries / 126 directory records, complete refuge scenarios, families, Lena support, stock, food, power, repair, sanitation, capacity and all-clear",
+    "tests/holidays.mjs: all 114 stations across all twenty events at 1440px and 390px, real carol notes, six-object photo hunt, Christmas and New Year countdowns, keepsakes, reloads, checked backups/restoration, original save strings, storm closures and corrupt-save protection",
+    "tests/community.mjs: desktop/phone full directory home/work travel, notes conflicts, full combined-roster refuge drills, outdoor closure, backup and original-save preservation",
+    "tests/world-country.mjs: desktop/phone 13 districts, 86 venue and 30 room coverage, original Fair games/rides/snack rewards and reloads",
+    "tests/sound-alert.mjs: desktop/phone enabled audio, volume, alarm state, red warning, persistent clock, district route, silence and all-clear",
+    "tests/lighting.mjs: reversible photo lighting, reload/persistence and visual screenshot"
+  ],
+  "productionTests": [
+    "tests/holidays.mjs: all twenty complete gatherings, all 114 stations, countdowns, actual saved keepsakes, restores, original save strings and closures passed on live files at both widths",
+    "tests/sound-alert.mjs: loud audio graph state, red alert, route, persistent clock, silence and all-clear passed on live files at both widths"
+  ],
+  "liveFileChecks": [
+    {
+      "path": "DEVELOPMENT.md",
+      "expectedSha256": "6a481a82667a8ceba2c4313e570014cd912cc1997e2eba71d562f51713c8e03e",
+      "liveSha256": "6a481a82667a8ceba2c4313e570014cd912cc1997e2eba71d562f51713c8e03e",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "IMPLEMENTATION_STATUS.md",
+      "expectedSha256": "f41a91d2387da8bf00de4ada565cfded1db9d3ad45a2e723b9d7273fd87dfcaf",
+      "liveSha256": "f41a91d2387da8bf00de4ada565cfded1db9d3ad45a2e723b9d7273fd87dfcaf",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "activities.html",
+      "expectedSha256": "a082ae3dc76755bbc360f75af67f9a8a2decd6204734268280948223e5fa88ff",
+      "liveSha256": "a082ae3dc76755bbc360f75af67f9a8a2decd6204734268280948223e5fa88ff",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "assets/holidays/README.md",
+      "expectedSha256": "9a486cf782154e65a6e9f3fd4bcc23fa924827c82e148d618ee8d494f81a0c25",
+      "liveSha256": "9a486cf782154e65a6e9f3fd4bcc23fa924827c82e148d618ee8d494f81a0c25",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "assets/holidays/christmas-unlit.webp",
+      "expectedSha256": "2f770163ff18fb25e746c6c0827f40ac1c3bb259ea8755dac22a99d578823e42",
+      "liveSha256": "2f770163ff18fb25e746c6c0827f40ac1c3bb259ea8755dac22a99d578823e42",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "assets/holidays/christmas.webp",
+      "expectedSha256": "87074c32503625db597d8185940f47ed9f21a3ed50ae6c54f67311e009fb1296",
+      "liveSha256": "87074c32503625db597d8185940f47ed9f21a3ed50ae6c54f67311e009fb1296",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "assets/holidays/easter.webp",
+      "expectedSha256": "bb3ae4b3da4aacd50bb0aa23595e667f03e2a88407d803b19d6818c27edf5540",
+      "liveSha256": "bb3ae4b3da4aacd50bb0aa23595e667f03e2a88407d803b19d6818c27edf5540",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "assets/holidays/halloween.webp",
+      "expectedSha256": "bde0a5ef14810b8be698046306343f2838cd9758dad0f809d7024791a1564937",
+      "liveSha256": "bde0a5ef14810b8be698046306343f2838cd9758dad0f809d7024791a1564937",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "assets/holidays/manifest.json",
+      "expectedSha256": "16a53cec1840222373f15149b388934e5fe4ef6db532eda42a0f1c47b557b785",
+      "liveSha256": "16a53cec1840222373f15149b388934e5fe4ef6db532eda42a0f1c47b557b785",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "assets/holidays/square-autumn.webp",
+      "expectedSha256": "0a9a9909828b3cb4728b75a5411d3af4049111b5c7bcac50a50cf709026883ee",
+      "liveSha256": "0a9a9909828b3cb4728b75a5411d3af4049111b5c7bcac50a50cf709026883ee",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "assets/holidays/square-spring.webp",
+      "expectedSha256": "1b6cf094994055462642e319d857bd304e4a422d7399a1223bb13201b32bea0e",
+      "liveSha256": "1b6cf094994055462642e319d857bd304e4a422d7399a1223bb13201b32bea0e",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "assets/holidays/square-summer.webp",
+      "expectedSha256": "74bad2226f55af01733cd726549e3e2a5289aa682463040f52f49ff52c5613d2",
+      "liveSha256": "74bad2226f55af01733cd726549e3e2a5289aa682463040f52f49ff52c5613d2",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "assets/holidays/square-winter.webp",
+      "expectedSha256": "832bc9f7234804a855f345aecdeb164932291141d2e705c1a43ad3237d2ba256",
+      "liveSha256": "832bc9f7234804a855f345aecdeb164932291141d2e705c1a43ad3237d2ba256",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "assets/holidays/thanksgiving.webp",
+      "expectedSha256": "7de975e4cc15c37bccabaee42d3b1b5d129eaaed4a2ed60a1a8a1e673b148610",
+      "liveSha256": "7de975e4cc15c37bccabaee42d3b1b5d129eaaed4a2ed60a1a8a1e673b148610",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "camp.html",
+      "expectedSha256": "9ae45efeee4b2c09ec422a2e121b32ba0562db6ade849b4b5433015f516b883e",
+      "liveSha256": "9ae45efeee4b2c09ec422a2e121b32ba0562db6ade849b4b5433015f516b883e",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "characters.html",
+      "expectedSha256": "9a36f14f5c4acc1a673e2d3606d9b6fb76f8570e04d1482dc09bd50bc62020cd",
+      "liveSha256": "9a36f14f5c4acc1a673e2d3606d9b6fb76f8570e04d1482dc09bd50bc62020cd",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "chronicles.html",
+      "expectedSha256": "92dab2eedc49f839abcbb4faf6f544f45378f08d9a56fbae7c6643a51a48bfc3",
+      "liveSha256": "92dab2eedc49f839abcbb4faf6f544f45378f08d9a56fbae7c6643a51a48bfc3",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "community-links.js",
+      "expectedSha256": "8002eaf7be66a528c346c2aeadab670deaaa2050dbd4226d250a97ca2382c884",
+      "liveSha256": "8002eaf7be66a528c346c2aeadab670deaaa2050dbd4226d250a97ca2382c884",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "community.css",
+      "expectedSha256": "8b5e4200424372c8b44c291d0fcaac9efb201b03c30abbffc98d4bfde81df9f1",
+      "liveSha256": "8b5e4200424372c8b44c291d0fcaac9efb201b03c30abbffc98d4bfde81df9f1",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "festival.html",
+      "expectedSha256": "175ef1d57cf21eea6db4cd3a7b78eda0d244fa5daae25172fd464bfaf2b5246e",
+      "liveSha256": "175ef1d57cf21eea6db4cd3a7b78eda0d244fa5daae25172fd464bfaf2b5246e",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "games/honeybrook-craft-fair/index.html",
+      "expectedSha256": "ec6ba9e822a5863ea6fac715b1ab093bfc854d1c3dbb50e74f4de380a75f2bb3",
+      "liveSha256": "ec6ba9e822a5863ea6fac715b1ab093bfc854d1c3dbb50e74f4de380a75f2bb3",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "holiday-data.js",
+      "expectedSha256": "4da849723c5c61404b1d1689f87b2df9b391ed545fddfdb4a02451da1ec3aff3",
+      "liveSha256": "4da849723c5c61404b1d1689f87b2df9b391ed545fddfdb4a02451da1ec3aff3",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "holiday-engine.js",
+      "expectedSha256": "a54fb28db578ed8fa73ae2beb86c3e8c0238a5431dbe9ea8c5694b136359bcc1",
+      "liveSha256": "a54fb28db578ed8fa73ae2beb86c3e8c0238a5431dbe9ea8c5694b136359bcc1",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "holidays.css",
+      "expectedSha256": "de82d6d5abeb003ac6863547a504a1dd60d60bb8744da57662883102caffc3f7",
+      "liveSha256": "de82d6d5abeb003ac6863547a504a1dd60d60bb8744da57662883102caffc3f7",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "holidays.html",
+      "expectedSha256": "867c0565044ac3cb53ea88b75069f3213646781b9880a9fdce8a48d837197341",
+      "liveSha256": "867c0565044ac3cb53ea88b75069f3213646781b9880a9fdce8a48d837197341",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "holidays.js",
+      "expectedSha256": "c5aecaae2186aed7be8a252e7a4417514b2c72181054346654b54059ac147c7b",
+      "liveSha256": "c5aecaae2186aed7be8a252e7a4417514b2c72181054346654b54059ac147c7b",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "honeybrook-sound.js",
+      "expectedSha256": "be567bea42f02a68da470af48bb9d86da9677c6835129a9dbf3236663d50d05c",
+      "liveSha256": "be567bea42f02a68da470af48bb9d86da9677c6835129a9dbf3236663d50d05c",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "index.html",
+      "expectedSha256": "7da8c7b6fa722e3c581f82d778bd60f8b8c540039b2ba44bfa8b62dd6dcce778",
+      "liveSha256": "7da8c7b6fa722e3c581f82d778bd60f8b8c540039b2ba44bfa8b62dd6dcce778",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "learning.html",
+      "expectedSha256": "2824d89c0969433058d8ee1bf5ebc6ccb7244205c5d5092e3276a3707509c2c7",
+      "liveSha256": "2824d89c0969433058d8ee1bf5ebc6ccb7244205c5d5092e3276a3707509c2c7",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "refuge.html",
+      "expectedSha256": "1f4986facbe7bbb8d678e234f7fed81b40f54bbdcc60c739dac0c21592e9a3ab",
+      "liveSha256": "1f4986facbe7bbb8d678e234f7fed81b40f54bbdcc60c739dac0c21592e9a3ab",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "scene-lights.js",
+      "expectedSha256": "a9d70826b4710d253e02b97c82c5cf2c61299fbb1ac58dac4a7b5f1c23fc02f7",
+      "liveSha256": "a9d70826b4710d253e02b97c82c5cf2c61299fbb1ac58dac4a7b5f1c23fc02f7",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "scripts/build-story-additions.cjs",
+      "expectedSha256": "1a20e6c0572d5b1fff5dfc12ee4a30493ee366cfadff9bb781504077baf7fec4",
+      "liveSha256": "1a20e6c0572d5b1fff5dfc12ee4a30493ee366cfadff9bb781504077baf7fec4",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "story/CANON.md",
+      "expectedSha256": "f6a5d345db5d410cb797c20286c6483d69cc29e81cf1a8915063af410cd4b122",
+      "liveSha256": "f6a5d345db5d410cb797c20286c6483d69cc29e81cf1a8915063af410cd4b122",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "story/GAME_ADDITIONS.md",
+      "expectedSha256": "a3b6fcc77f0e5bf28ca35630538b751df85f13f8b52b36800224079872583bff",
+      "liveSha256": "a3b6fcc77f0e5bf28ca35630538b751df85f13f8b52b36800224079872583bff",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "tests/holidays.cjs",
+      "expectedSha256": "e8ef7c851b7da3c26882fa8288069f96c14294201107ca3b759b3c4442d683c7",
+      "liveSha256": "e8ef7c851b7da3c26882fa8288069f96c14294201107ca3b759b3c4442d683c7",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "tests/holidays.mjs",
+      "expectedSha256": "bb08de8ad8bc052a5658676b89ddd93d3e416fd32780030e9c16075dddde1742",
+      "liveSha256": "bb08de8ad8bc052a5658676b89ddd93d3e416fd32780030e9c16075dddde1742",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "story/Honeybrook_Complete_Story_Manuscript.docx",
+      "expectedSha256": "8c3c52318cd77fe5253987fbf77850d8c0ebc49bb15bb6fa142dbe38f4822cab",
+      "liveSha256": "8c3c52318cd77fe5253987fbf77850d8c0ebc49bb15bb6fa142dbe38f4822cab",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "characters.js",
+      "expectedSha256": "707edfa5c9335fedd467b9ffbf7071d8e1e00af5d29ca203626731b465c3c03d",
+      "liveSha256": "707edfa5c9335fedd467b9ffbf7071d8e1e00af5d29ca203626731b465c3c03d",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "refuge-engine.js",
+      "expectedSha256": "095dd3d9f54304de8f742ce9ae730242fcbd9fcc3a23ae2a43607cc6cb540487",
+      "liveSha256": "095dd3d9f54304de8f742ce9ae730242fcbd9fcc3a23ae2a43607cc6cb540487",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "refuge.js",
+      "expectedSha256": "f65f90a8b542985821763cd914902726faec72b39d7046772d635e8e22546309",
+      "liveSha256": "f65f90a8b542985821763cd914902726faec72b39d7046772d635e8e22546309",
+      "match": true,
+      "error": ""
+    },
+    {
+      "path": "community-data.json",
+      "expectedSha256": "6b7cb88bfa821955e315e3edb634d24a766a6114e7a3f6447722b9c5430b7b61",
+      "liveSha256": "6b7cb88bfa821955e315e3edb634d24a766a6114e7a3f6447722b9c5430b7b61",
+      "match": true,
+      "error": ""
+    }
+  ],
+  "manuscriptSha256": "8c3c52318cd77fe5253987fbf77850d8c0ebc49bb15bb6fa142dbe38f4822cab",
+  "limits": [
+    "Headless audio checks verify context/gain/siren state, not measured physical speaker loudness. Audio activation requires a browser gesture.",
+    "Day/night uses reversible photo lighting; this does not claim independently photographed night artwork at every location.",
+    "Sixteen additional holidays share four seasonal photographs of the same Town Square. Four principal holidays have distinct scenes; Christmas additionally has an unlit/lit pair.",
+    "Scenarios are fictional game weather; no real emergency alert or weather feed was added.",
+    "No cloud synchronization, backend, service configuration, pricing or original manuscript changes. Verification used isolated browser saves, never owner save data."
+  ],
+  "transport": "Browser fetched actual deployed static bytes through TLS-verified curl response adapter for the environment proxy; certificates were not bypassed.",
+  "shelterFirstTapFix": {
+    "commit": "814570e329b698c566a156b7436118307b6c5d0f",
+    "deploy": "dep-dbdtfcg473hc73bhdse0",
+    "status": "live",
+    "finishedAt": "2026-10-23T21:55:19.09908Z",
+    "local": "Desktop/phone one-tap shelter guide survives first-gesture audio activation.",
+    "production": "Fresh phone browser: 41-source directory filter, actual Hearthwell home entrance, active town refuge drill, alert retained across pages, first-tap guide navigation and Shelter reached confirmation passed."
+  }
+}
