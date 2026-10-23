@@ -1,9 +1,9 @@
 /* Single-player Honeybrook life rules. No network, timers, or storage side effects. */
 (function (root, factory) {
-  const engine = factory(typeof module === 'object' && module.exports ? require('./town-activity-data.js') : root.HoneybrookTownActivities, typeof module === 'object' && module.exports ? require('./daily-quiz.js') : root.HoneybrookDailyQuiz);
+  const engine = factory(typeof module === 'object' && module.exports ? require('./town-activity-data.js') : root.HoneybrookTownActivities, typeof module === 'object' && module.exports ? require('./daily-quiz.js') : root.HoneybrookDailyQuiz,typeof module==='object'&&module.exports?require('./bear-hollow-data.js'):root.HoneybrookHollow);
   if (typeof module === 'object' && module.exports) module.exports = engine;
   else root.HoneybrookLife = engine;
-})(typeof globalThis === 'object' ? globalThis : this, function (Town,Quiz) {
+})(typeof globalThis === 'object' ? globalThis : this, function (Town,Quiz,Hollow) {
   'use strict';
   const VERSION = 1;
   const realDate = (now = new Date()) => new Intl.DateTimeFormat('en-CA', {timeZone: 'America/Chicago', year:'numeric',month:'2-digit',day:'2-digit'}).format(now);
@@ -172,7 +172,7 @@
     if(!Array.isArray(s.history)||!s.history.every(h=>plain(h)&&typeof h.text==='string'&&typeof h.kind==='string'&&Number.isInteger(h.day)&&h.day>0&&typeof h.date==='string'&&Number.isInteger(h.hour)))return false;
     if(!Array.isArray(s.keepsakes)||!s.keepsakes.every(k=>typeof k==='string')||!Array.isArray(s.quizDates)||!s.quizDates.every(d=>typeof d==='string'))return false;
     if(s.cookingPlan!=null&&(!plain(s.cookingPlan)||!Number.isSafeInteger(s.cookingPlan.day)||s.cookingPlan.day<1||![9,13,17,19,21].includes(s.cookingPlan.hour)))return false;
-    if(!Quiz.valid(s.dailyQuiz))return false;
+    if(!Quiz.valid(s.dailyQuiz)||!Hollow.valid(s.hollow))return false;
     if(s.townPlans!=null&&(!plain(s.townPlans)||!Object.entries(s.townPlans).every(([id,p])=>tasks[id]?.town&&plain(p)&&Number.isInteger(p.day)&&p.day>0&&[9,13,17,19,21].includes(p.hour))))return false;
     if(s.townWorks!=null&&(!plain(s.townWorks)||!Object.entries(s.townWorks).every(([id,v])=>tasks[id]?.town&&v!=null&&typeof v==='object'&&JSON.stringify(v).length<=5000)))return false;
     if(s.townResults!=null&&(!plain(s.townResults)||!Object.entries(s.townResults).every(([id,p])=>tasks[id]?.town&&plain(p)&&Number.isInteger(p.day)&&p.day>0&&Number.isInteger(p.total)&&p.total>0)))return false;
@@ -194,6 +194,9 @@
     const s=JSON.parse(JSON.stringify(state));let message='';replenish(s);
     function spend(amount){if(s.balance<amount)throw new Error('There is not enough spending money for this purchase.');s.balance-=amount;replenish(s);}
     switch(a.type){
+      case 'hollowDraft':{const t=Hollow.tasks[a.id];if(!t||s.hollow?.progress[a.id]?.stage!==1)throw Error('Open the making step first.');const value=JSON.stringify(a.input);if(value.length>5000)throw Error('This work draft is too large.');s.hollow.progress[a.id].draft=JSON.parse(value);message='Your work in progress is saved.';break;}
+      case 'hollowWork':{const t=Hollow.tasks[a.id];if(!t)throw Error('Unknown Hollow work order.');const unsafe=['Thunderstorm','Sleet','Snow'].includes(weather(s.date));const result=Hollow.run(s,{...a,unsafe},spend);message=result.message;if(Hollow.check(t,a.stage,a.input))s.role=['porridge','bakery'].includes(t.kind)?'Cook':t.kind==='fellowship'?'Family member':t.kind==='welcome'?'Villager':'Worker';if(result.charged)record(s,t.name+': $'+result.charged+' in checked materials.','finance');if(result.completed){s.completed++;s.trust++;s.balance+=t.pay;s.skills[t.skill]=(s.skills[t.skill]||0)+1;s.relationships[t.person]=(s.relationships[t.person]||0)+1;s.keepsakes.push(t.artifact);s.condition=Math.min(100,s.condition+5);record(s,'Bear Hollow · '+t.name+' completed with '+t.mentor+'. Kept '+t.artifact+'. Earned $'+t.pay.toLocaleString('en-US')+'.','accomplishment');message+=' '+(t.pay?'Earned $'+t.pay.toLocaleString('en-US')+'. ':'')+'Practice, a keepsake and shared memories are saved.';}else if(Hollow.check(t,a.stage,a.input))record(s,'Bear Hollow · '+t.name+': '+message,'work');break;}
+
       case 'visit':if(!locations[a.id])throw new Error('Unknown location.');s.location=a.id;message='You arrived at '+locations[a.id].name+'.';break;
       case 'role':if(!roles.includes(a.id))throw new Error('Unknown role.');s.role=a.id;message='You are experiencing today as '+a.id+'. All roles remain playable.';break;
       case 'partner':if(!residents.some(p=>p.id===a.id))throw new Error('Unknown neighbor.');s.partner=a.id;message='Your next completed activity will become a shared memory.';break;
@@ -263,5 +266,5 @@
     }
     s.revision++;s.updatedAt=Date.now();if(!valid(s))throw new Error('The action could not be saved safely.');return {state:s,message};
   }
-  return {VERSION,realDate,addDay,season,weather,residents,menu,meal,recipe,gear,enterprises,tasks,locations,ranks,rank,initial,valid,ready,blocked,people,action,roles,Town,Quiz};
+  return {VERSION,realDate,addDay,season,weather,residents,menu,meal,recipe,gear,enterprises,tasks,locations,ranks,rank,initial,valid,ready,blocked,people,action,roles,Town,Quiz,Hollow};
 });

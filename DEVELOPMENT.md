@@ -63,3 +63,9 @@ Run `node tests/city-map.mjs` with the same Playwright environment above. It che
 ## Town assignment extension
 
 `town-activity-data.js` defines the 86 town work orders and their typed preparation/work/inspection rules. `daily-quiz.js` generates reproducible twenty-question real-date sessions at six levels. Load both before `life-engine.js`; `town-activities.js` adds the work dialog after the existing destination/navigation modules. The controller in `honeybrook-life.js` remains the sole life-save writer, using its existing lock, revision/conflict checks and checkpoint. Optional `townPlans`, `townWorks`, `townResults` and `dailyQuiz` fields preserve compatibility with earlier life saves. Never create another wallet or reset existing keys for these activities.
+
+## Bear Hollow country interface
+
+`bear-hollow-data.js` contains the six households, neighborhood geography, fourteen work orders, strict typed work/draft validation and completion rules. It loads before the shared `life-engine.js` on both entry pages. Optional `hollow` state extends the existing life save without changing its version or existing keys. `games/honeybrook-craft-fair/bear-country.js` presents only town-portal Hollow locations; it does not activate in the Fair. Its save adapter uses the same `honeybrook-life-write` Web Lock, raw-save conflict guard and previous-state checkpoint as the life dashboard. The legacy town/Fair engine and save keys remain intact.
+
+Cottage/venue deep links use the existing `place=` parameter; within the Hollow, `#place=…&view=inside` preserves the chosen view across refresh. Geography supplies the city-wide finder and direct selector. Original `hollow-work` entry links resolve to the new Honey House, with the porridge kitchen separately reachable. Assets and locally hosted font licenses are documented in `assets/bear-country/README.md`.

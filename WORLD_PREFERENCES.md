@@ -130,3 +130,7 @@ The latest inheritance preference supersedes the earlier father/hidden-gold prem
 - Preserve approved photographic Honeybrook/Fair scenery with Eldoria polish. Every place/room/major activity/gathering/business/book/underground room needs appropriate imagery; show completed work, day/night, seasons/weather, visible grounded people, logical door/window views, hover/focus labels and readable contrast. Avoid flashes, screen jumps and old layouts. Home, Go Back, search and direct connected routes must work without unnecessary scrolling.
 
 This section records requirements; it is not a claim that every camp system is implemented. See IMPLEMENTATION_STATUS.md for actual coverage.
+
+## Bear Hollow neighborhood clarification — October 23, 2026
+
+Expand **Cabins for New Neighbors**, beside Bear Hollow, into a genuine cottage neighborhood with more individual homes and bear households. Replace vague Bear Hollow activity hotspots with understandable, imaginative, purpose-specific work and visible results. The player should understand where they are, what they are doing and why it helps the community. Preserve the approved photographic Honeybrook identity and existing progress. Use warm bear-country typography, lettering, scene framing and naturally placed bear families so visiting feels like living in Honeybrook. Keep the neighborhood connected to Bear Hollow, Bridgeview and the city map; the Fair stays separate.
