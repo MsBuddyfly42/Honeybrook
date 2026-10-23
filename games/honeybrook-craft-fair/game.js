@@ -3,7 +3,8 @@
 'use strict';
 const portalParams=new URLSearchParams(location.search),townPortal=portalParams.get('portal')==='town';
 let portalEntered=false;
-const portalLaunch={bakery:['bakery'],pond:['pond'],garden:['garden'],den:['area','den'],hive:['area','hive'],rest:['area','rest'],welcome:['home','town-welcome'],school:['home','town-school'],hearthwell:['home','home-hearthwell'],amelia:['home','home-amelia'],harold:['home','home-harold'],wally:['home','home-wally'],bridge:['home','town-bridge'],hollow:['area','bear-hollow']};
+const geography=window.HoneybrookGeography;
+const portalLaunch=Object.fromEntries(Object.entries(geography.places).map(([key,p])=>[key,[p.scene,p.arg]]));
 const townReturnKeys=['se','ts','ms','bv','os','ne','nw','sq','hh','ep','pk','fr','cc'];
 const returnDistrict=townReturnKeys.includes(portalParams.get('return'))?portalParams.get('return'):'ts';
 function returnToTown(){Save.push(true);location.assign('../../#district='+returnDistrict);}
@@ -260,7 +261,8 @@ function updateHUD() {
   $('#btn-home').hidden = S.scene === 'village' || S.scene === 'title' || S.scene === 'home';
   updateSceneBack();
   $('#hud-toggle').hidden = $('#hud').hidden;
-  $('#btn-town').hidden = S.scene !== 'village';
+  $('#btn-town').hidden = townPortal ? ['title','town'].includes(S.scene) : true;
+  if(!townPortal)$('#btn-home').hidden=true;
   $('#teddy').hidden = !S.owned.teddy;
   $('#hud-glow').textContent = (S.glow || 0) + '%';
   $('#story-badge').textContent = S.storyNew ? 'New' : '';
@@ -287,9 +289,10 @@ function backOut() { const r = S.returnTo; S.returnTo = null; if (r === 'town') 
 function go(scene, arg) {
   if(scene!=='title'){
     if(!portalEntered){portalEntered=true;const launch=townPortal?(portalLaunch[portalParams.get('place')]||['area','den']):['carnival'];scene=launch[0];arg=launch[1];}
-    else if(townPortal&&(scene==='town'||scene==='village')){returnToTown();return;}
+    else if(townPortal&&['carnival','circus'].includes(scene)){Save.push(true);location.assign('?portal=fair&return=ts');return;}
     else if(!townPortal&&!['carnival','circus'].includes(scene)){returnToTown();return;}
   }
+  if(townPortal&&scene==='area'&&arg==='storybook-lane'&&!S.woodsOpen){arg='northern-woods';}
   const sceneChanged=scene!==S.scene||(scene==='area'&&arg!==S.area)||(scene==='home'&&arg!==Stay.stayPlace);
   if(sceneChanged){S.sceneEpoch=(S.sceneEpoch||0)+1;if(!$('#modal').hidden)closeModal();}
   if (scene === 'home' && S.scene !== 'home') Stay.returnTarget = { scene: S.scene, area: S.area };
@@ -305,6 +308,7 @@ function go(scene, arg) {
   if (scene === 'garden') Garden.enter();
   if (scene === 'area') Area.enter(arg);
   if (scene === 'home') Stay.enter(arg);
+  dispatchEvent(new Event('honeybrook-scene-change'));
   if (scene === 'circus') { $('#circus-act-line').textContent = 'Three acts · one story about making room.'; $('#scene-circus').classList.remove('showtime'); }
 }
 
@@ -854,7 +858,7 @@ $('#scene-village').addEventListener('click', e => { if (!e.target.closest('.vil
 
 async function onTownPlace(place) {
   Snd.sfx('click');
-  if (place === 'square') { go('village'); toast('Welcome to the Fair shops and little carnival.'); return; }
+  if (place === 'square') { Save.push(true);location.assign('../../index.html#district=ts');return; }
   if (place === 'den' || place === 'hive' || place === 'rest') { S.returnTo = 'town'; go('area', place); return; }
   if (place === 'bear-hollow') { S.returnTo = 'town'; go('area', 'bear-hollow'); return; }
   if (place === 'bakery') { S.returnTo = 'town'; go('bakery'); return; }
@@ -2509,6 +2513,13 @@ $('#btn-start').onclick = async () => {
   await modal(townPortal?'<h2>Welcome to Honeybrook town</h2><p>Your rooms, shops and practical activities are inside the town. Use Return to Honeybrook to leave through the district paths.</p>':'<h2>Welcome to Honeybrook Fair</h2><p>Enjoy the midway, treats, games, prizes and circus. Your town, homes and everyday businesses are through the Return to Honeybrook portal.</p>',[{label:townPortal?'Enter this town location':'Enter the Fair',primary:true}]);
 };
 
+window.HoneybrookTownNavigation={
+ isTown:townPortal,
+ context(){const arg=S.scene==='home'?Stay.stayPlace:S.scene==='area'?S.area:S.scene==='work'?S.wsPlace:undefined;const found=Object.entries(geography.places).find(([,p])=>p.scene===S.scene&&p.arg===arg);return {scene:S.scene,arg,key:found?.[0],name:found?.[1].name||S.scene,parent:found?.[1].parent||returnDistrict,woodsOpen:!!S.woodsOpen,spots:S.scene==='area'?(AREAS[S.area]?.spots||[]).map(p=>({id:p.id,label:p.label})):[]};},
+ open(key){if(!townPortal||S.scene==='title')return;const p=geography.places[key];if(!p||(p.requiresWoods&&!S.woodsOpen))return;S.returnTo=p.parent==='hollow'?'bear-hollow':p.scene==='work'?(WORKSHOPS[p.arg]?.area||'village'):null;go(p.scene,p.arg);},
+ spot(id){if(townPortal&&S.scene==='area'&&AREAS[S.area]?.spots.some(p=>p.id===id))Area.spot(id);},
+ district(key){if(!geography.districts[key])return;Save.push(true);location.assign('../../index.html#district='+key);}
+};
 /* testing hooks */
 window.render_game_to_text = () => JSON.stringify({ scene: S.scene, day: S.day, slot: SLOTS[S.slot], weather: S.weather, coins: S.coins, ribbons: S.ribbons, basket: S.basket.length, orders: S.orders.map(o => o.who + ':' + o.text), work: Work.st && { craft: Work.st.craft.id, done: Work.st.done }, garden: S.garden.map(b => b.crop ? b.crop + ':' + b.stage : '-').join(','), bake: Bakery.st && { phase: Bakery.st.phase, i: Bakery.st.i, fill: +Bakery.st.fill.toFixed(2), mix: +Bakery.st.mix.toFixed(2), bake: +Bakery.st.bake.toFixed(2) }, pond: Pond.st && { phase: Pond.st.phase, casts: Pond.st.casts, reel: Pond.st.reel && { prog: +Pond.st.reel.prog.toFixed(2) } } });
 window.__S = S; window.__Work = Work; window.__Garden = Garden; window.__WS = WORKSHOPS;

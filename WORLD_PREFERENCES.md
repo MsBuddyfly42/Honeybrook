@@ -89,3 +89,7 @@ Recorded from the owner's request on October 22, 2026. Apply general preferences
 Use **Visit Honeybrook Fair** as the visual reference throughout Honeybrook: warm, colorful, detailed photographic-quality storybook scenery, cohesive wood/stone cottages and interiors, small scene hotspots with hover/keyboard labels, and readable cream/plum controls. The owner explicitly preferred this established look over unrelated real-world stock photographs. Apply it to all rooms and locations previously updated, including district maps and activity scenes.
 
 Connect all town districts, paths, entrances, exits and home stairs logically. Keep the Fair in its own portal, entered from the town and returning to Town Square. Homes, businesses, parks, services, workshops and other everyday locations belong to Honeybrook town. Preserve progress in the existing town and activity saves.
+
+## Classroom visual clarification
+
+The owner explicitly rejects illustrated artwork for classrooms. Match the photographic-style materials, warm lighting and room treatment of the existing Honeybrook schoolroom, with working lessons and connected corridor exits.

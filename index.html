@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="cottage-adventure.css?v=20261005-trail-v1">
 <link rel="stylesheet" href="venue-activities.css?v=20261005-venues-v1">
 <link rel="stylesheet" href="honeybrook-life.css?v=20261022-life-1">
-<link rel="stylesheet" href="town-scene-readability.css?v=20261023-fair-town-1">
+<link rel="stylesheet" href="town-scene-readability.css?v=20261022-classrooms-2">
 <link rel="stylesheet" href="district-scenery.css?v=20261023-fair-2">
 </head><body>
 <section class="hb-townfront" id="honeybrookHome">
@@ -411,7 +411,7 @@
   <div class="old-stone">🪨 ᚨ 🪨<small>weathered markings</small></div>
   <div class="os-sign">HONEYBROOK OUTSKIRTS<br><small>Town behind you. Older country ahead.</small></div>
  </div>
- <div id="outskirtsInfo" class="district-info"><strong>Honeybrook Outskirts:</strong> This is lived-in country, not a waiting room for the Northern Woods. Farms, homes and old community routes are part of Honeybrook life.</div>
+ <div class="connected-venue-doors"><button data-os="Farm Market"><b>Farm Market</b><small>Outskirts · produce and honey</small></button></div><div id="outskirtsInfo" class="district-info"><strong>Honeybrook Outskirts:</strong> This is lived-in country, not a waiting room for the Northern Woods. Farms, homes and old community routes are part of Honeybrook life.</div>
 </section>
 
 <section class="section park-world" id="parkWorld">
@@ -428,7 +428,7 @@
   <div class="pk-bear family">🧸🧸🧸</div><div class="pk-bear napper" title="This bear has accomplished enough today.">🧸💤</div><div class="pk-bear fisher">🧸🎣</div>
   <div class="benny-cart" title="Benny Scoops">🧸🍦<small>BEARy COLD</small></div><div class="lemon-cart">🍋<small>LEMONADE</small></div><div class="pk-sign">COMMUNITY PARK<br><small>Stay five minutes or stay all afternoon.</small></div>
  </div>
- <div id="parkInfo" class="district-info"><strong>Community Park:</strong> Honeybrook's outdoor living room. Nothing here needs to become a task.</div>
+ <div class="connected-venue-doors"><button data-pk="Outdoor Movie Lawn"><b>Outdoor Movie Lawn</b><small>Park · evening screenings</small></button><button data-pk="Food Cart Loop"><b>Food Cart Loop</b><small>Park · snack carts</small></button></div><div id="parkInfo" class="district-info"><strong>Community Park:</strong> Honeybrook's outdoor living room. Nothing here needs to become a task.</div>
 </section>
 
 <section class="section fun-world" id="funWorld">
@@ -463,7 +463,7 @@
   <div class="cc-bear mabel" title="Mabel Welcomeberry">🧸🗝️</div><div class="cc-bear toby" title="Toby Trailpaw">🧸🗺️</div><div class="cc-bear nora" title="Nora Kindpaw">🧸❤️</div><div class="cc-bear calvin" title="Calvin Stillwater">🧸☕</div>
   <div class="cc-sign">WELCOME HOUSE<br><small>You don't have to bring anything but yourself.</small></div>
  </div>
- <div id="careInfo" class="district-info"><strong>Care & Community:</strong> Honeybrook does not confuse needing help with failing. Different buildings handle different kinds of care, and the Welcome House remains a home-like place rather than an institution.</div>
+ <div class="connected-venue-doors"><button data-cc="Wellness Center"><b>Wellness Center</b><small>Care district · everyday wellbeing</small></button></div><div id="careInfo" class="district-info"><strong>Care & Community:</strong> Honeybrook does not confuse needing help with failing. Different buildings handle different kinds of care, and the Welcome House remains a home-like place rather than an institution.</div>
 </section>
 
 <section class="section harmony-world" id="harmonyWorld">
@@ -495,7 +495,13 @@
   <div class="sq-bear professor" title="Professor Theodore Honeywell">🧸📚</div><div class="sq-bear student1">🧸🎒</div><div class="sq-bear student2">🧸💻</div><div class="sq-bear reader">🧸📖</div>
   <div class="sq-bench">🪑🌻🪑</div><div class="sq-sign">SCHOLARS’ QUARTER<br><small>“Never ask whether a bear can learn. Ask how.”</small></div>
  </div>
- <div id="scholarsInfo" class="district-info"><strong>Scholars’ Quarter:</strong> School-age cubs, adults returning to learning, readers, coders, researchers and bears who simply came to find a good book all belong here.</div>
+ <section class="classroom-wing"><h3>Classrooms and practice rooms</h3><p>Enter through the Technology Center, Learning Commons or library corridors. Each room connects back to its own building.</p><div class="classroom-door-list">
+<button type="button" data-sq="Coding Classroom"><b>Coding Classroom</b><small>Technology Center · computer lab</small></button>
+<button type="button" data-sq="Troubleshooting Classroom"><b>Troubleshooting Classroom</b><small>Technology Center · practice lab</small></button>
+<button type="button" data-sq="Office Skills Classroom"><b>Office Skills Classroom</b><small>Learning Commons · documents and spreadsheets</small></button>
+<button type="button" data-sq="Reading & Research Classroom"><b>Reading &amp; Research Classroom</b><small>Library · reading and evidence</small></button>
+</div></section>
+<div id="scholarsInfo" class="district-info"><strong>Scholars’ Quarter:</strong> School-age cubs, adults returning to learning, readers, coders, researchers and bears who simply came to find a good book all belong here.</div>
 </section>
 
 <section class="section townsquare-world" id="townSquareWorld">
@@ -606,9 +612,10 @@
 <footer><span>🍯 Honeybrook v3</span><span>There’s a place for every bear.</span><span id="footerRole">Visitor</span><span id="memoryBadge" class="memory-badge"></span></footer></section>
 
 <div id="modal" class="modal hidden"><div class="modal-card"><button class="close" id="closeModal" aria-label="Close dialog">×</button><div id="modalContent"></div></div></div>
-</div><script src="photo-catalog.js?v=20261022-photos-1"></script><script src="fair-style-catalog.js?v=20261023-fair-1"></script><script src="town-photography.js?v=20261023-fair-1"></script><script src="app.js?v=20261023-fair-town-1"></script><script src="town-walk.js?v=20261022-photos-1"></script><script src="destination-visits.js?v=20261022-photos-1"></script><script src="living-places.js?v=20261022-photos-1"></script><script src="cottage-adventure.js?v=20261023-paths-1"></script><script src="venue-activities.js?v=20261022-photos-1"></script>
+</div><script src="photo-catalog.js?v=20261022-photos-1"></script><script src="fair-style-catalog.js?v=20261023-fair-1"></script><script src="classroom-scene-catalog.js?v=20261022-classrooms-2"></script><script src="town-photography.js?v=20261023-fair-1"></script><script src="town-geography.js?v=20261022-connected-1"></script><script src="app.js?v=20261022-classrooms-2"></script><script src="town-walk.js?v=20261022-photos-1"></script><script src="location-links.js?v=20261022-connected-1"></script><script src="destination-visits.js?v=20261022-classrooms-2"></script><script src="living-places.js?v=20261022-photos-1"></script><script src="cottage-adventure.js?v=20261023-paths-1"></script><script src="venue-activities.js?v=20261022-photos-1"></script>
 <script src="life-engine.js?v=20261022-life-1"></script><script src="honeybrook-life.js?v=20261022-life-1"></script>
 <script src="district-scenery.js?v=20261023-fair-2"></script>
-<script src="world-routes.js?v=20261023-paths-2"></script>
+<script src="world-routes.js?v=20261022-connected-1"></script>
+<script src="classroom-visits.js?v=20261022-classrooms-2"></script>
 </body></html>
 

@@ -10,6 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,800&family=Nunito:wght@500;600;700;800&display=swap" rel="stylesheet">
 <link rel="icon" href="data:,"><link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="comfort.css?v=20261005-v2"><style>.town-return-portal{position:fixed;bottom:12px;left:12px;z-index:1000;padding:12px 18px;background:#fff8ea;color:#3a2a1c;border:2px solid #c9a96e;border-radius:999px;font:bold 16px Georgia,serif;text-decoration:none}</style>
+<link rel="stylesheet" href="town-wayfinding.css?v=20261022-connected-1">
 </head>
 <body>
 <div id="stage" aria-live="polite">
@@ -69,7 +70,7 @@
       <button class="town-marker" data-town-place="homes" style="left:34%;top:48%"><span class="town-icon">🏘️</span><span><b>Neighbors' Homes</b><small>Built together, one by one</small></span></button>
       <button class="town-marker" data-town-place="bakery" style="left:88%;top:62%"><span class="town-icon">🥖</span><span><b>Wally's Bakery</b><small>Step inside and bake</small></span></button>
       <button class="town-marker" data-town-place="bridge" style="left:50%;top:80%"><span class="town-icon">🌉</span><span><b>Creek Bridge</b><small>Amelia and Tom's first work</small></span></button>
-      <button class="town-marker town-marker-square" data-town-place="square" style="left:70%;top:50%"><span class="town-icon">⛲</span><span><b>Town Square &amp; Fair</b><small>Shops, treats, rides, and circus</small></span></button>
+      <button class="town-marker town-marker-square" data-town-place="square" style="left:70%;top:50%"><span class="town-icon">⛲</span><span><b>Town Square</b><small>Civic centre · district paths</small></span></button>
       <button class="town-marker town-district-marker" data-town-place="den" style="left:17%;top:70%"><span class="town-icon">🏡</span><span><b>Bear’s Den</b><small>Neighborhood homes</small></span></button>
       <button class="town-marker town-district-marker" data-town-place="hive" style="left:54%;top:24%"><span class="town-icon">🍯</span><span><b>Bear’s Hive</b><small>Town market and shops</small></span></button>
       <button class="town-marker town-district-marker" data-town-place="rest" style="left:69%;top:77%"><span class="town-icon">🌿</span><span><b>Bear’s Rest</b><small>Quiet garden and memory</small></span></button>
@@ -200,7 +201,8 @@
 
   <div id="rotate-hint">Turn your phone sideways for the best view of Honeybrook.</div>
 </div>
-<input id="fair-backup-file" type="file" accept="application/json,.json" hidden><script src="game.js?v=20261023-portals-1"></script>
+<input id="fair-backup-file" type="file" accept="application/json,.json" hidden><script src="../../town-geography.js?v=20261022-connected-1"></script><script src="game.js?v=20261022-connected-1"></script>
+<script src="town-wayfinding.js?v=20261022-connected-1"></script>
 <script src="comfort.js?v=20261005-v2"></script><script data-pplx-inline-edit>
 (function () {
   if (window === window.top) return;

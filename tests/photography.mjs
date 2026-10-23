@@ -23,7 +23,7 @@ try{for(const width of [1440,390]){
   await p.locator(`#hbWorldDialog [data-hb-place="${key}"]`).click();const image=p.locator('#hbWorldDialog .hb-place-art');await image.evaluate(n=>n.decode());assert.match(await image.getAttribute('src'),/^assets\/fair-scenes\//);
  }
  await p.keyboard.press('Escape');await p.evaluate(()=>dispatchEvent(new CustomEvent('honeybrook-enter-place',{detail:{name:'Honeybrook School'}})));
- const destinations=await p.locator('#visitLocations option').evaluateAll(options=>options.map(n=>n.value));assert.equal(destinations.length,78);
+ const destinations=await p.locator('#visitLocations option').evaluateAll(options=>options.map(n=>n.value));assert.equal(destinations.length,86);
  await p.evaluate(()=>{window.outdatedSceneSources=[];new MutationObserver(records=>{for(const r of records){for(const n of r.addedNodes){if(n.nodeType!==1)continue;for(const im of [...(n.matches?.('.visit-room-photo')?[n]:[]),...n.querySelectorAll('.visit-room-photo')])if(!im.getAttribute('src').startsWith('assets/fair-scenes/'))window.outdatedSceneSources.push(im.getAttribute('src'));}if(r.type==='attributes'&&r.target.matches('.visit-room-photo')&&!r.target.getAttribute('src').startsWith('assets/fair-scenes/'))window.outdatedSceneSources.push(r.target.getAttribute('src'));}}).observe(document.querySelector('#destinationVisit'),{subtree:true,childList:true,attributes:true,attributeFilter:['src']});});
  const go=async name=>{await p.locator('#visitFind input').fill(name);await p.locator('#visitFind button').click();await p.waitForFunction(n=>document.querySelector('#destinationVisit h1')?.textContent===n,name);};
  for(const name of destinations){
@@ -31,7 +31,7 @@ try{for(const width of [1440,390]){
   assert.match(await p.locator('#destinationVisit > main > .scene-photo-credit').textContent(),/Generated Fair-style scenery/);assert(await p.locator('.scene-visitor .visit-bear').isVisible());assert(await p.locator('[data-visit-home]').isVisible());assert(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),name+' overflow');
  }
  assert.deepEqual(await p.evaluate(()=>window.outdatedSceneSources),[]);
- console.log(`PASS ${width}px: all 78 destination Fair-style scenes, both navigation entries, seven town previews, credits, visible visitor context, no old-scene image flashes or overflow.`);
+ console.log(`PASS ${width}px: all 86 destination Fair-style scenes, both navigation entries, seven town previews, credits, visible visitor context, no old-scene image flashes or overflow.`);
  for(const name of ['Hearthwell Home',"Big Mama's Cottage",'Country Homes','Goodberry Outreach House','Welcome House']){
   await go(name);const seen=[];for(const room of ['porch','kitchen','attic']){if(room==='porch'&&await p.locator('[data-room="porch"]').isHidden())await p.locator('[data-room="kitchen"]').click();await p.locator(`[data-adventure="room"][data-room="${room}"]`).click();await p.locator('.visit-room-photo').evaluate(n=>n.decode());seen.push(await p.locator('.visit-room-photo').evaluate(n=>n.getAttribute('src')+'#'+n.dataset.sceneTile));assert.equal(seen.at(-1),manifest[name+' '+room].src+'#'+(manifest[name+' '+room].tile??''));}
   assert.equal(new Set(seen).size,3,name+' distinct rooms');await p.reload();await p.locator('#destinationVisit h1').waitFor();assert.equal(await p.locator('.visit-room-photo').evaluate(n=>n.getAttribute('src')+'#'+n.dataset.sceneTile),manifest[name+' attic'].src+'#'+(manifest[name+' attic'].tile??''),name+' reload');

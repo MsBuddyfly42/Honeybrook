@@ -30,7 +30,7 @@
   function presentation(root,name,area){
     const p=record(name,area),room=root.querySelector('.visit-room'),image=root.querySelector('.visit-room-photo');
     if(!p||!room||!image)return;tileImage(image,p);
-    image.alt='Honeybrook storybook setting for '+name+(area?' · '+area:'');
+    image.alt='Honeybrook setting for '+name+(area?' · '+area:'');
     room.dataset.photoScene=name;room.dataset.sceneArea=area||'';room.dataset.sceneInterior=String(p.interior===true);
     room.style.setProperty('--scene-photo','url("'+p.src+'")');
     root.style.setProperty('--scene-photo','url("'+p.src+'")');root.style.setProperty('--scene-photo-size',Number.isInteger(p.tile)?'200% 200%':'cover');root.style.setProperty('--scene-photo-position',Number.isInteger(p.tile)?(p.tile%2)*100+'% '+Math.floor(p.tile/2)*100+'%':'center');
