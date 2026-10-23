@@ -2,7 +2,7 @@
 (() => {
   'use strict';
   const esc=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  const aliases={'The Welcome House':'Welcome House','Amelia & Tom’s Creek Bridge':'Welcome Bridge','The Neighbors’ Homes':'Hearthwell Home','Wally’s Bakery':"Wally's Bakery",'Town Square & Honeybrook Fair':'Enter Honeybrook town','The Road to Bear Hollow':'Ranger Boundary'};
+  const aliases={'The Welcome House':'Welcome House','Amelia & Tom’s Creek Bridge':'Welcome Bridge','The Neighbors’ Homes':'Hearthwell Home','Wally’s Bakery':"Wally's Bakery",'Town Square & Honeybrook Fair':'Enter Honeybrook town','Town Square':'Enter Honeybrook town','The Road to Bear Hollow':'Old Northern Road'};
   const houses=['Hearthwell Home',"Big Mama's Cottage",'Country Homes','Goodberry Outreach House','Welcome House'];
   const choices={light:['auto','day','sunset','night'],season:['auto','spring','summer','autumn','winter'],weather:['clear','rain','sleet','snow','thunderstorm','blizzard','tornado']};
   let appearance={light:'auto',season:'auto',weather:'clear'};
@@ -22,15 +22,18 @@
     if(!area&&houses.includes(name)){try{area=JSON.parse(localStorage.getItem('honeybrook_lantern_trail_v1')||'{}').rooms?.[name]?.area||'porch';}catch{area='porch';}}
     return catalog[area?name+' '+area:name]||catalog[name];
   }
+  function imageMarkup(p,alt,cls=''){if(!p)return '';const style=Number.isInteger(p.tile)?'position:absolute;width:200%;height:200%;max-width:none;left:'+(-(p.tile%2)*100)+'%;top:'+(-Math.floor(p.tile/2)*100)+'%;':'';return '<div class="fair-scene-frame"><img class="'+esc(cls)+'" src="'+esc(p.src)+'" width="1536" height="1024" alt="'+esc(alt)+'" style="'+style+'"></div>';}
   function path(name,area){return record(name,area)?.src;}
   function clock(){const now=new Date(),date=new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',dateStyle:'full'}).format(now),time=new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',hour:'numeric',minute:'2-digit'}).format(now);return date+' · '+time+' Central';}
+  function tileImage(image,p){if(!image||!p)return;const tiled=Number.isInteger(p.tile);for(const key of ['position','width','height','left','top'])image.style[key]='';if(tiled){image.style.position='absolute';image.style.width='200%';image.style.height='200%';image.style.left=-(p.tile%2)*100+'%';image.style.top=-Math.floor(p.tile/2)*100+'%';}image.dataset.sceneTile=tiled?String(p.tile):'';}
+  function background(panel,p){panel.style.backgroundImage='url("'+p.src+'")';panel.style.backgroundSize=Number.isInteger(p.tile)?'200% 200%':'cover';panel.style.backgroundPosition=Number.isInteger(p.tile)?(p.tile%2)*100+'% '+Math.floor(p.tile/2)*100+'%':'center';}
   function presentation(root,name,area){
     const p=record(name,area),room=root.querySelector('.visit-room'),image=root.querySelector('.visit-room-photo');
-    if(!p||!room||!image)return;
-    image.alt='Photographic setting for '+name+(area?' · '+area:'');
+    if(!p||!room||!image)return;tileImage(image,p);
+    image.alt='Honeybrook storybook setting for '+name+(area?' · '+area:'');
     room.dataset.photoScene=name;room.dataset.sceneArea=area||'';room.dataset.sceneInterior=String(p.interior===true);
     room.style.setProperty('--scene-photo','url("'+p.src+'")');
-    root.style.setProperty('--scene-photo','url("'+p.src+'")');
+    root.style.setProperty('--scene-photo','url("'+p.src+'")');root.style.setProperty('--scene-photo-size',Number.isInteger(p.tile)?'200% 200%':'cover');root.style.setProperty('--scene-photo-position',Number.isInteger(p.tile)?(p.tile%2)*100+'% '+Math.floor(p.tile/2)*100+'%':'center');
     if(!room.querySelector('.scene-weather')){const weather=document.createElement('div');weather.className='scene-weather';weather.setAttribute('aria-hidden','true');room.append(weather);}
     if(!root.querySelector('.scene-appearance'))root.querySelector('.visit-heading')?.append(appearanceControls());
     applyAppearance();
@@ -52,11 +55,11 @@
     if(kind==='bake')key={measure:'Activity · Measure baking ingredients',mix:'Activity · Mix dough',oven:'Activity · Oven baking',done:'Activity · Finished baking'}[state.phase];
     if(kind==='garden')key=Date.now()<(state.wateringUntil||0)?'Activity · Watering':state.harvest?'Activity · Harvest':'Activity · Seedlings';
     const p=key?record(key):null;if(!p)return;
-    panel.style.backgroundImage='url("'+p.src+'")';panel.dataset.photographic='true';
+    background(panel,p);panel.dataset.photographic='true';
     let credit=stage.querySelector('.scene-activity-credit');if(!credit){credit=document.createElement('p');credit.className='scene-activity-credit scene-photo-credit';stage.append(credit);}
-    credit.innerHTML='Activity photograph: <a href="'+esc(p.page)+'" target="_blank" rel="noopener noreferrer">'+esc(p.artist||'Wikimedia Commons contributor')+'</a> · '+esc(p.license);
+    credit.innerHTML='Activity scenery: <a href="'+esc(p.page)+'" target="_blank" rel="noopener noreferrer">'+esc(p.artist||'Wikimedia Commons contributor')+'</a> · '+esc(p.license);
   }
-  window.HoneybrookPhotos={record,path,presentation,replace,activity};
+  window.HoneybrookPhotos={record,path,presentation,replace,activity,tileImage,imageMarkup};
   document.addEventListener('DOMContentLoaded',()=>{
     const world=document.getElementById('hbPlayableWorld'),art=world?.querySelector('.hb-world-art');if(!world||!art)return;
     const wayfinding=document.createElement('nav');wayfinding.className='hb-photo-wayfinding';wayfinding.setAttribute('aria-label','Paths from Honeybrook town square');
@@ -64,7 +67,7 @@
     const heading=document.createElement('div');heading.className='hb-photo-heading';
     for(const selector of ['.hb-world-sign','.hb-world-date']){const node=art.querySelector(selector);if(node)heading.append(node);}
     world.insertBefore(heading,art);art.after(wayfinding);art.querySelector('.hb-world-map-button')?.remove();art.dataset.photographic='true';
-    const photo=record('Enter Honeybrook town');if(photo){const credit=document.createElement('p');credit.className='scene-photo-credit';credit.innerHTML='Town-square photograph: <a href="'+esc(photo.page)+'" target="_blank" rel="noopener noreferrer">'+esc(photo.artist||'Wikimedia Commons contributor')+'</a> · '+esc(photo.license)+' · <a href="assets/scene-photos/credits.html">All scene photo credits</a>';art.after(credit);}
+    const photo=record('Enter Honeybrook town');if(photo){const image=art.querySelector(':scope>img');image.src=photo.src;tileImage(image,photo);const credit=document.createElement('p');credit.className='scene-photo-credit';credit.innerHTML='Town-square scenery: <a href="'+esc(photo.page)+'" target="_blank" rel="noopener noreferrer">'+esc(photo.artist||'Wikimedia Commons contributor')+'</a> · '+esc(photo.license)+' · <a href="assets/scene-photos/credits.html">All scene photo credits</a>';art.after(credit);}
     const date=heading.querySelector('.hb-world-date');if(date){const now=document.createElement('time');now.className='scene-real-clock';now.textContent=clock();date.append(now);}
     const weather=document.createElement('div');weather.className='scene-weather';weather.setAttribute('aria-hidden','true');art.append(weather);world.insertBefore(appearanceControls(),art);applyAppearance();
   });

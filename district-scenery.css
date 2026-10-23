@@ -1,0 +1,18 @@
+/* Scenery-led navigation inspired by Visit Honeybrook's Fair. */
+#town .fair-district-scene{display:block!important;position:relative!important;width:100%;height:auto!important;min-height:0!important;aspect-ratio:3/2;padding:0!important;overflow:visible;border:3px solid #c9a96e;border-radius:18px;background:#d5c493!important;box-shadow:0 12px 30px #3929192b;isolation:isolate}
+#town .fair-district-scene>.fair-district-art{display:block!important;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:14px;pointer-events:none}
+#town .fair-district-scene>button.fair-district-door{position:absolute!important;inset:auto!important;left:var(--door-x)!important;top:var(--door-y)!important;transform:translate(-50%,-50%)!important;width:26%!important;height:30%!important;min-height:44px!important;max-width:none!important;padding:0!important;margin:0!important;display:block!important;background:transparent!important;border:0!important;box-shadow:none!important;border-radius:14px;z-index:2;color:#3a2a1c}
+#town .fair-district-scene>button.fair-district-door>span,#town .fair-district-scene>button.fair-district-door>small{display:none!important}
+#town .fair-district-scene>button.fair-district-door>b{position:absolute;left:50%;bottom:0;transform:translate(-50%,35%);width:max-content;max-width:95%;padding:6px 10px;border:1px solid #a17a43;border-radius:6px;background:#fff6e0;color:#3a2a1c;box-shadow:0 2px 6px #39291940;font:700 clamp(11px,1.2vw,17px)/1.25 Georgia,serif;opacity:0;pointer-events:none}
+#town .fair-district-scene>button.fair-district-door:hover,#town .fair-district-scene>button.fair-district-door:focus-visible{background:#ffecaa22!important;box-shadow:inset 0 0 0 3px #fff0be!important;outline:2px solid #72512f;outline-offset:2px}
+#town .fair-district-scene>button.fair-district-door:hover>b,#town .fair-district-scene>button.fair-district-door:focus>b{opacity:1}
+#town .fair-district-routes{display:flex;flex-wrap:wrap;gap:9px;padding:15px;margin:14px 0;border:1px solid #d3b786;border-radius:14px;background:#fff8ea;color:#3a2a1c}
+#town .fair-district-routes button{font:700 15px/1.3 Nunito,sans-serif;padding:11px 16px;min-height:44px;border:1px solid #c9a96e;border-radius:999px;background:#fff8ea;color:#3a2a1c;cursor:pointer;box-shadow:0 2px 0 #d6bf93}
+#town .fair-district-routes button:focus-visible{outline:3px solid #305e8d;outline-offset:3px}
+#town .fair-district-scene>button.fair-district-door::after{content:'◆';position:absolute;left:50%;bottom:4%;transform:translateX(-50%);color:#fff6df;font-size:14px;text-shadow:0 1px 3px #3a2a1c,1px 0 2px #3a2a1c;pointer-events:none}
+.world-location-routes,.world-district-paths{display:flex;flex-wrap:wrap;gap:10px;padding:16px;border:1px solid #c9a96e;border-radius:14px;background:#fff8ea;color:#3a2a1c;margin:16px 0}
+.world-location-routes>p,.world-district-paths>p{flex-basis:100%;margin:0 0 8px;font-weight:bold}
+.world-district-paths>button{padding:12px 18px;min-height:44px;border:1px solid #c9a96e;border-radius:999px;background:#493343;color:#fff8ed;font:700 16px Nunito,sans-serif}
+.town-activity-link{display:inline-flex;align-items:center;min-height:44px;padding:11px 16px;border:1px solid #b18a53;border-radius:999px;background:#fff6e0;color:#3a2a1c;text-decoration:none;font-weight:bold;line-height:1.4}
+.town-activity-link:hover,.town-activity-link:focus-visible{background:#ead6ad;outline:2px solid #72512f;outline-offset:2px}
+.fair-entry-portal{background:#744458;color:#fff8ed}

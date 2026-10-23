@@ -1,3 +1,5 @@
+> Historical photo release. Superseded by the owner’s Fair-style visual clarification; see FAIR_TOWN_VALIDATION.md for the current design.
+
 # Enter Honeybrook photographic presentation
 
 Scope: the original Enter Honeybrook route. The front-page design and separate My Honeybrook Life system remain intact. Existing progress keys, rewards and activity rules are retained.

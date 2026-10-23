@@ -3,7 +3,8 @@
 <link rel="stylesheet" href="cottage-adventure.css?v=20261005-trail-v1">
 <link rel="stylesheet" href="venue-activities.css?v=20261005-venues-v1">
 <link rel="stylesheet" href="honeybrook-life.css?v=20261022-life-1">
-<link rel="stylesheet" href="town-scene-readability.css?v=20261023-town-directory-1">
+<link rel="stylesheet" href="town-scene-readability.css?v=20261023-fair-town-1">
+<link rel="stylesheet" href="district-scenery.css?v=20261023-fair-1">
 </head><body>
 <section class="hb-townfront" id="honeybrookHome">
  <div class="hb-sky"><span class="cloud c1">☁️</span><span class="cloud c2">☁️</span><span class="sun">☀️</span></div>
@@ -13,7 +14,7 @@
   <p class="hb-kicker">WELCOME TO</p>
   <h1>HONEYBROOK</h1>
   <p class="hb-motto">There’s a place for every bear.</p>
-  <div class="hb-townscene illustrated-world" aria-label="Honeybrook illustrated town map"><img src="games/honeybrook-craft-fair/img/honeybrook-town-map.jpg" alt="Honeybrook's storybook village with the creek bridge, cottages, school, bakery, Welcome House and town square" width="1500" height="1000"><div class="world-hotspots"><button type="button" data-frontgo="connectedTown">🗺️ Enter Honeybrook</button><a href="games/honeybrook-craft-fair/">🎪 Visit Honeybrook Fair</a><button type="button" data-frontgo="bundledStoryWorld">📖 Read the town stories</button></div></div>
+  <div class="hb-townscene illustrated-world" aria-label="Honeybrook illustrated town map"><img src="games/honeybrook-craft-fair/img/honeybrook-town-map.jpg" alt="Honeybrook's storybook village with the creek bridge, cottages, school, bakery, Welcome House and town square" width="1500" height="1000"><div class="world-hotspots"><button type="button" data-frontgo="connectedTown">🗺️ Enter Honeybrook</button><a href="games/honeybrook-craft-fair/?portal=fair&return=ts">🎪 Visit Honeybrook Fair</a><button type="button" data-frontgo="bundledStoryWorld">📖 Read the town stories</button></div></div>
   <p class="hb-arrival">Explore. Learn. Play. Follow a mystery. Visit somebody. Or do absolutely nothing.</p>
   <div class="hb-entry-buttons">
    <button data-frontgo="connectedTown">🗺️ Enter Town</button>
@@ -41,7 +42,7 @@
 
 <section id="town" class="screen"><header><button id="homeBtn" class="brand">🧸 <b>HONEYBROOK</b></button><div class="top-actions"><button id="roleBtn">🎭 Visitor Mode</button><button id="journeyBtn" class="ghost">📖 My Journey</button><button id="todayBtn">📅 Today</button><button id="bearBtn">📖 Beartionary</button></div></header>
 <section class="hb-playable-world" id="hbPlayableWorld" aria-label="Walk around Honeybrook">
- <div class="hb-world-art"><img src="assets/scene-photos/enter-honeybrook-town.jpg" width="1500" height="1000" fetchpriority="high" alt="Photographic town-square setting with trees, paths and places to meet Honeybrook neighbors">
+ <div class="hb-world-art"><img src="games/honeybrook-craft-fair/img/honeybrook-town-map.jpg" width="1500" height="1000" fetchpriority="high" alt="Photographic town-square setting with trees, paths and places to meet Honeybrook neighbors">
  <div class="hb-world-shade"></div>
  <div class="hb-world-sign"><small>THE PLACE AMELIA &amp; TOM BUILT</small><strong>Welcome to Honeybrook</strong><span>There’s a place for every bear.</span></div>
  <nav class="hb-world-rail" aria-label="Town tools">
@@ -59,7 +60,7 @@
   <button type="button" class="hb-world-marker" data-hb-place="homes" style="left:34%;top:48%"><span class="hb-marker-icon">🏘️</span><span><b>Neighbors’ Homes</b><small>Raised together, one roof at a time</small></span></button>
   <button type="button" class="hb-world-marker" data-hb-place="bakery" style="left:88%;top:62%"><span class="hb-marker-icon">🥖</span><span><b>Wally’s Bakery</b><small>Save one loaf for supper</small></span></button>
   <button type="button" class="hb-world-marker" data-hb-place="bridge" style="left:50%;top:80%"><span class="hb-marker-icon">🌉</span><span><b>Amelia &amp; Tom’s Bridge</b><small>Where Honeybrook began</small></span></button>
-  <button type="button" class="hb-world-marker hb-marker-square" data-hb-place="square" style="left:70%;top:50%"><span class="hb-marker-icon">🎪</span><span><b>Town Square &amp; Fair</b><small>Statue, neighbors, autumn gathering</small></span></button>
+  <button type="button" class="hb-world-marker hb-marker-square" data-hb-place="square" style="left:70%;top:50%"><span class="hb-marker-icon">🎪</span><span><b>Town Square</b><small>Statue, neighbors, autumn gathering</small></span></button>
   <button type="button" class="hb-world-marker hb-marker-hollow" data-hb-place="hollow" style="left:55%;top:23%"><span class="hb-marker-icon">🍯</span><span><b>Road to Bear Hollow</b><small>A neighbor across the creek road</small></span></button>
  </div>
  <div class="hb-world-toolbar" role="toolbar" aria-label="Town actions">
@@ -605,7 +606,9 @@
 <footer><span>🍯 Honeybrook v3</span><span>There’s a place for every bear.</span><span id="footerRole">Visitor</span><span id="memoryBadge" class="memory-badge"></span></footer></section>
 
 <div id="modal" class="modal hidden"><div class="modal-card"><button class="close" id="closeModal" aria-label="Close dialog">×</button><div id="modalContent"></div></div></div>
-</div><script src="photo-catalog.js?v=20261022-photos-1"></script><script src="town-photography.js?v=20261022-photos-1"></script><script src="app.js?v=20261023-town-directory-1"></script><script src="town-walk.js?v=20261022-photos-1"></script><script src="destination-visits.js?v=20261022-photos-1"></script><script src="living-places.js?v=20261022-photos-1"></script><script src="cottage-adventure.js?v=20261022-photos-1"></script><script src="venue-activities.js?v=20261022-photos-1"></script>
+</div><script src="photo-catalog.js?v=20261022-photos-1"></script><script src="fair-style-catalog.js?v=20261023-fair-1"></script><script src="town-photography.js?v=20261023-fair-1"></script><script src="app.js?v=20261023-fair-town-1"></script><script src="town-walk.js?v=20261022-photos-1"></script><script src="destination-visits.js?v=20261022-photos-1"></script><script src="living-places.js?v=20261022-photos-1"></script><script src="cottage-adventure.js?v=20261023-paths-1"></script><script src="venue-activities.js?v=20261022-photos-1"></script>
 <script src="life-engine.js?v=20261022-life-1"></script><script src="honeybrook-life.js?v=20261022-life-1"></script>
+<script src="district-scenery.js?v=20261023-fair-1"></script>
+<script src="world-routes.js?v=20261023-paths-1"></script>
 </body></html>
 

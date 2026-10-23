@@ -83,3 +83,9 @@ Recorded from the owner's request on October 22, 2026. Apply general preferences
 - Generate fresh morning mail/newspapers from actual camp characters and completed events. Automatically remove read mail from the inbox; retain only unread letters. Apply the unread-mail rule to Sands of the Covenant too, when working in that project.
 - In the appropriate historical setting, build believable towns with homes, temples, markets, granaries, administration, gates, walls, gathering places, agriculture and appropriate burial areas. Give every location appropriate distinct scenery and activities, affordable ownership/revenue and earned careers.
 - Carry the same navigation, actions, readability, saves, sound and deployment reliability standards across worlds. Do not claim changes to a separate project's code without inspecting and updating it.
+
+## Honeybrook visual and geography clarification — October 23, 2026
+
+Use **Visit Honeybrook Fair** as the visual reference throughout Honeybrook: warm, colorful, detailed photographic-quality storybook scenery, cohesive wood/stone cottages and interiors, small scene hotspots with hover/keyboard labels, and readable cream/plum controls. The owner explicitly preferred this established look over unrelated real-world stock photographs. Apply it to all rooms and locations previously updated, including district maps and activity scenes.
+
+Connect all town districts, paths, entrances, exits and home stairs logically. Keep the Fair in its own portal, entered from the town and returning to Town Square. Homes, businesses, parks, services, workshops and other everyday locations belong to Honeybrook town. Preserve progress in the existing town and activity saves.

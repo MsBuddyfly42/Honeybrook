@@ -1,6 +1,12 @@
 /* Honeybrook Craft Fair — Wally's Bakery + Fishing Pond (v1) */
 (() => {
 'use strict';
+const portalParams=new URLSearchParams(location.search),townPortal=portalParams.get('portal')==='town';
+let portalEntered=false;
+const portalLaunch={bakery:['bakery'],pond:['pond'],garden:['garden'],den:['area','den'],hive:['area','hive'],rest:['area','rest'],welcome:['home','town-welcome'],school:['home','town-school'],hearthwell:['home','home-hearthwell'],amelia:['home','home-amelia'],harold:['home','home-harold'],wally:['home','home-wally'],bridge:['home','town-bridge'],hollow:['area','bear-hollow']};
+const townReturnKeys=['se','ts','ms','bv','os','ne','nw','sq','hh','ep','pk','fr','cc'];
+const returnDistrict=townReturnKeys.includes(portalParams.get('return'))?portalParams.get('return'):'ts';
+function returnToTown(){Save.push(true);location.assign('../../#district='+returnDistrict);}
 const W = 1500, H = 1000;
 const $ = s => document.querySelector(s);
 const $$ = s => [...document.querySelectorAll(s)];
@@ -279,6 +285,11 @@ function applyAtmosphere() {
 /* ------------------------------------------------------------------ */
 function backOut() { const r = S.returnTo; S.returnTo = null; if (r === 'town') go('town'); else if (r === 'village') go('village'); else if (r) go('area', r); else go('village'); }
 function go(scene, arg) {
+  if(scene!=='title'){
+    if(!portalEntered){portalEntered=true;const launch=townPortal?(portalLaunch[portalParams.get('place')]||['area','den']):['carnival'];scene=launch[0];arg=launch[1];}
+    else if(townPortal&&(scene==='town'||scene==='village')){returnToTown();return;}
+    else if(!townPortal&&!['carnival','circus'].includes(scene)){returnToTown();return;}
+  }
   const sceneChanged=scene!==S.scene||(scene==='area'&&arg!==S.area)||(scene==='home'&&arg!==Stay.stayPlace);
   if(sceneChanged){S.sceneEpoch=(S.sceneEpoch||0)+1;if(!$('#modal').hidden)closeModal();}
   if (scene === 'home' && S.scene !== 'home') Stay.returnTarget = { scene: S.scene, area: S.area };
@@ -2446,8 +2457,8 @@ async function continueGame(d) {
   Snd.init(); Snd.ctx && Snd.ctx.resume(); Snd.sfx('good');
   Save.apply(d); refreshOrders();
   $('#hud').hidden = false; go('village');
-  toast(`Welcome back to Honeybrook, ${S.name}.`);
-  S.found = S.found || {}; if (!S.found.v4) { S.found.v4 = true; setTimeout(() => modal(`<p class="kicker">New in Honeybrook</p><h2>Three new places</h2><p>Open the Town Map from the Fair square to visit all three places in Honeybrook town:</p><ul class="list"><li class="row"><div class="grow"><b>Bears' Den</b><small>The homes of Honeybrook, including your own room to decorate with things you make</small></div></li><li class="row"><div class="grow"><b>Bears' Hive</b><small>A market stall for selling, plus the Cake Shop, Bead & Jewel Shop, Woodshop, and Braiding Salon</small></div></li><li class="row"><div class="grow"><b>Bears' Rest</b><small>A quiet meadow with Willie's Bench, the Remembrance Stones, and wildflowers</small></div></li></ul><p>Talk to neighbors every day and give them gifts. Friends invite you into their homes.</p>`, [{ label: 'Go explore', primary: true }]), 900); }
+  toast(`Welcome back to ${townPortal?'Honeybrook town':'Honeybrook Fair'}, ${S.name}.`);
+  S.found = S.found || {}; S.found.v4 = true;
   if (d.usedSlot) await advanceTime();
   Save.push(true);
 }
@@ -2495,7 +2506,7 @@ $('#btn-start').onclick = async () => {
   S.name = (($('#player-name').value || '').trim() || 'Friend').slice(0,80);
   S.weather = 'Sunny'; refreshOrders();
   $('#hud').hidden = false; go('village'); Save.push(true);
-  await modal(`<p class="kicker">The bridge into Honeybrook</p><h2>Welcome, ${esc(S.name)}</h2><p>You came over the creek in the rain with tired feet and nowhere in particular to go. On the far side of Tom Bridgewell's bridge, a bear named Amelia was waiting with a lantern.</p><p style="font-family:var(--font-d);font-size:1.1em">"If you need a place," she said, "we'll make one."</p><p>Sammy pushed a plate toward you. "You can eat first." They gave you the spare room at the Welcome House.</p><p>In <b>${FAIR_DAY - 1} days</b>, Honeybrook holds its annual County Craft Fair beneath the bronze statue of Goldilocks and the Three Bears. Every shop is open: <b>Wally's Bakery</b>, the <b>Sewing Cottage</b>, <b>Yarn Shop</b>, <b>Painter's Studio</b>, Tom's <b>Craft Barn</b>, the <b>Fishing Pond</b>, your own <b>Garden Plot</b>, and up the old creek road, <b>Bear Hollow</b>, with its hives and porridge pots. Harold Pawst brings <b>orders</b>. Fill them to earn coins.</p><p>Use the new <b>Story Trail</b> button to explore Honeybrook, Bear Hollow, and the Northern Woods as the book describes them. Storybook Lane appears when the whole first book has been told. Bear's Den, Bear's Hive and Bear's Rest are all in Honeybrook town. Return to the Fair square for its craft shops, midway games, and little circus.</p><p>Each visit to a shop takes one part of the day. Garden chores don't. Kindness makes the honey glow brighter here, and golden honey makes everything sweeter.</p><p>Big Mama Mary carries the town's stories. Finish projects and fill orders, and she'll tell you the story of Goldilocks and Bear Hollow, one chapter at a time.</p>`, [{ label: 'Step into the square', primary: true }]);
+  await modal(townPortal?'<h2>Welcome to Honeybrook town</h2><p>Your rooms, shops and practical activities are inside the town. Use Return to Honeybrook to leave through the district paths.</p>':'<h2>Welcome to Honeybrook Fair</h2><p>Enjoy the midway, treats, games, prizes and circus. Your town, homes and everyday businesses are through the Return to Honeybrook portal.</p>',[{label:townPortal?'Enter this town location':'Enter the Fair',primary:true}]);
 };
 
 /* testing hooks */

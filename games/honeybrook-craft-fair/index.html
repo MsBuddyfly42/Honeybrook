@@ -9,7 +9,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,800&family=Nunito:wght@500;600;700;800&display=swap" rel="stylesheet">
 <link rel="icon" href="data:,"><link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="comfort.css?v=20261005-v2"></head>
+<link rel="stylesheet" href="comfort.css?v=20261005-v2"><style>.town-return-portal{position:fixed;bottom:12px;left:12px;z-index:1000;padding:12px 18px;background:#fff8ea;color:#3a2a1c;border:2px solid #c9a96e;border-radius:999px;font:bold 16px Georgia,serif;text-decoration:none}</style>
+</head>
 <body>
 <div id="stage" aria-live="polite">
 
@@ -111,7 +112,7 @@
     <button class="carnival-stop circus-stop" data-carnival="circus" aria-label="Enter the Honeybrook circus show"><b>Little Circus Show</b><small>Three acts · one golden finale</small></button>
   </div>
   <div class="carnival-ticket-purse"><span>🎟 Carnival tickets</span><b id="carnivalTickets">0</b><button type="button" data-carnival="prizes">Prize Booth</button></div>
-  <div class="carnival-footnote">The Fair is part of Honeybrook. Homes and gathering places are just across the map.</div>
+  <div class="carnival-footnote">You are inside Honeybrook Fair. Return through the town portal for homes, shops and community places.</div>
 </section>
 
   <!-- AREAS: Bears' Den, Hive, Rest, Your Room -->
@@ -199,7 +200,7 @@
 
   <div id="rotate-hint">Turn your phone sideways for the best view of Honeybrook.</div>
 </div>
-<input id="fair-backup-file" type="file" accept="application/json,.json" hidden><script src="game.js?v=20261005-local-save-v2"></script>
+<input id="fair-backup-file" type="file" accept="application/json,.json" hidden><script src="game.js?v=20261023-portals-1"></script>
 <script src="comfort.js?v=20261005-v2"></script><script data-pplx-inline-edit>
 (function () {
   if (window === window.top) return;
@@ -544,5 +545,7 @@
 })();
 
 
-</script></body>
+</script><a class="town-return-portal" href="../../#district=ts">← Return to Honeybrook town</a>
+<script>document.querySelector(".town-return-portal").href="../../#district="+(["se","ts","ms","bv","os","ne","nw","sq","hh","ep","pk","fr","cc"].includes(new URLSearchParams(location.search).get("return"))?new URLSearchParams(location.search).get("return"):"ts");</script>
+</body>
 </html>

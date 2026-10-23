@@ -83,3 +83,11 @@ body.hb-reduced-motion .scene-weather{animation:none!important}
 #arrivalCard .wandering-photo{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:12px}
 #arrivalCard .wandering-doors{display:flex;flex-wrap:wrap;gap:10px}
 #arrivalCard .wandering-doors button{background:#493343;color:#fff8ed;padding:12px;border-radius:10px;border:1px solid #493343}
+#town #hbPlayableWorld .hb-world-art{aspect-ratio:3/2;min-height:0;overflow:hidden}
+#destinationVisit .visit-room-photo[data-scene-tile]:not([data-scene-tile=""]){max-width:none!important}
+#town #hbPlayableWorld .hb-world-art>img[data-scene-tile]:not([data-scene-tile=""]){max-width:none!important}
+.house-rooms button[hidden]{display:none!important}
+.fair-scene-frame{position:relative;aspect-ratio:3/2;width:100%;overflow:hidden;border-radius:12px;background:#e5dccb}
+.fair-scene-frame>img{display:block;width:100%;height:100%;object-fit:cover}
+#destinationVisit .living-action-room.home{background-size:var(--scene-photo-size,cover);background-position:var(--scene-photo-position,center)}
+.fair-scene-frame>.hb-place-art{display:block;width:100%;height:100%;object-fit:cover;margin:0}

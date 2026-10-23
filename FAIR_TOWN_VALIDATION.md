@@ -1,0 +1,9 @@
+# Honeybrook Fair-style town update
+
+This update follows the owner's clarified visual reference: Visit Honeybrook Fair. It supersedes the earlier use of real-world stock photographs. The scene catalog retains 102 named records with 95 distinct room/activity views; related names for the same physical place share their appropriate view. Original generated scenery is stored locally in optimized WebP assets. Scenery sheets supply separate room views without fetching external images. Thirteen district maps and the town overview use scenery-led hotspots and readable direct-route lists.
+
+The town route graph has 13 connected districts and reciprocal district paths. All 78 existing district destinations have a parent district and an explicit exit. House navigation follows porch, front door, kitchen and attic stairs. Linked legacy rooms and work activities use town entrances. The Fair portal opens the midway/circus separately and returns to Town Square. Town rooms continue using the existing activity engine and its unchanged save key, preserving prior inventory, money and accomplishments.
+
+Local checks cover both desktop (1440px) and phone (390px), catalog checksums and all destination scenery, district signs and direct routes, room changes/reload, cooking scenery stages, district graph connectivity, physical room stairs, Fair/town entry and return, and existing activity/save/backup behavior. Live verification is reported separately after deployment.
+
+The art is representational game scenery; exact window sightlines and architectural continuity across every generated room are not asserted. The visual weather/lighting controls remain previews, not live forecasts or newly implemented storm consequences. No new service or external AI/chat feature is introduced. This visual/navigation update does not claim that every broader standing world-system preference is complete.

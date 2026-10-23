@@ -896,11 +896,11 @@ updateMemoryBadge();
  function doors(n){return destinations[n]||[...document.querySelectorAll('[data-'+districtKeys[n]+']')].map(b=>b.getAttribute('data-'+districtKeys[n])).filter(x=>x!=='Return to Honeybrook');}
  function go(n){let v=P[n],p=period(),e=document.getElementById("arrivalCard");let timeNote=p==="night"&&n==="Northern Edge"?"Rangers recommend casual visitors remain on the town side after dark. You can look without continuing into the woods.":`It's ${p} in Honeybrook. ${v[2]}`;
  const photo=window.HoneybrookPhotos?.record(sceneNames[n]),places=doors(n);
- if(e){e.innerHTML=`<h3>${v[0]} ${n}</h3>${photo?`<img class="wandering-photo" src="${photo.src}" width="1500" height="1000" alt="Photographic setting for ${n}"><p class="scene-photo-credit">Photo: <a href="${photo.page}" target="_blank" rel="noopener noreferrer">${photo.artist}</a> · ${photo.license}</p>`:''}<p><strong>${v[1]}</strong></p><p>${timeNote}</p><p>${v[3]}</p><h4>Go inside</h4><div class="wandering-doors"></div>`;for(const name of places){const b=document.createElement('button');b.type='button';b.textContent='Enter '+name;b.onclick=()=>dispatchEvent(new CustomEvent('honeybrook-enter-place',{detail:{name}}));e.querySelector('.wandering-doors').append(b);}}
+ if(e){e.innerHTML=`<h3>${v[0]} ${n}</h3>${photo?`${window.HoneybrookPhotos.imageMarkup(photo,'Honeybrook scenery for '+n,'wandering-photo')}<p class="scene-photo-credit">Scenery: <a href="${photo.page}" target="_blank" rel="noopener noreferrer">${photo.artist}</a> · ${photo.license}</p>`:''}<p><strong>${v[1]}</strong></p><p>${timeNote}</p><p>${v[3]}</p><h4>Go inside</h4><div class="wandering-doors"></div>`;for(const name of places){const b=document.createElement('button');b.type='button';b.textContent='Enter '+name;b.onclick=()=>dispatchEvent(new CustomEvent('honeybrook-enter-place',{detail:{name}}));e.querySelector('.wandering-doors').append(b);}}
  let a=journal();a.push({place:n,icon:v[0],period:p,note:v[3]});if(a.length>12)a=a.slice(-12);save(a);renderJournal();
  }
 
- document.addEventListener("DOMContentLoaded",()=>{let g=document.getElementById("travelGrid");if(g){Object.keys(P).forEach(n=>{let b=document.createElement("button");const photo=window.HoneybrookPhotos?.record(sceneNames[n]);b.innerHTML=(photo?`<img src="${photo.src}" width="300" height="200" alt="" loading="lazy">`:``)+`<span>${P[n][0]} ${n}</span>`;b.onclick=()=>go(n);g.appendChild(b)})}let c=document.getElementById("clearDay");if(c)c.onclick=()=>{localStorage.removeItem(K);renderJournal();let a=document.getElementById("arrivalCard");if(a)a.innerHTML="<h3>🧸 Fresh Wandering Day</h3><p>Go somewhere, stay somewhere, or do nothing for a minute. Honeybrook is still here.</p>"};renderJournal()});
+ document.addEventListener("DOMContentLoaded",()=>{let g=document.getElementById("travelGrid");if(g){Object.keys(P).forEach(n=>{let b=document.createElement("button");const photo=window.HoneybrookPhotos?.record(sceneNames[n]);b.innerHTML=(photo?window.HoneybrookPhotos.imageMarkup(photo,''):``)+`<span>${P[n][0]} ${n}</span>`;b.onclick=()=>go(n);g.appendChild(b)})}let c=document.getElementById("clearDay");if(c)c.onclick=()=>{localStorage.removeItem(K);renderJournal();let a=document.getElementById("arrivalCard");if(a)a.innerHTML="<h3>🧸 Fresh Wandering Day</h3><p>Go somewhere, stay somewhere, or do nothing for a minute. Honeybrook is still here.</p>"};renderJournal()});
 })();
 
 (function(){
@@ -1225,9 +1225,9 @@ document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll("[da
       image:'img/bakery.jpg', links:[['Visit Main Street','mainStreetWorld'],['Go to Honeybrook Fair','fair']]
     },
     square: {
-      title:'Town Square & Honeybrook Fair', kicker:'The heart of a town that grew together',
+      title:'Town Square', kicker:'The heart of a town that grew together',
       text:'The square holds a bronze statue of Goldilocks beside the Three Bears. It is where neighbors gather, share news, and celebrate together.',
-      detail:'Honeybrook Fair is one of the square’s special gatherings. The Fair’s original village, shops, and activities are ready to explore.',
+      detail:'Honeybrook Fair is one of the square’s special gatherings. The Fair has its own portal from Town Square. Homes, shops and everyday activities belong to Honeybrook town.',
       image:'img/village.jpg', links:[['Open Honeybrook Fair','fair','primary-action'],['Explore the town square','townSquareWorld']]
     },
     hollow: {
@@ -1272,12 +1272,12 @@ document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll("[da
   function place(key) {
     const p=places[key]; if(!p) return;
     selected=key; markVisited(key);
-    const photo=window.HoneybrookPhotos?.record(p.title);const image=photo?'<img class="hb-place-art" width="1500" height="1000" src="'+photo.src+'" alt="Photographic setting for '+escapeHtml(p.title)+'">':p.image?'<img class="hb-place-art" src="'+fairRoot+p.image+'" alt="'+escapeHtml(p.title)+' setting">':'';
-    const attribution=photo?'<p class="scene-photo-credit">Photo: <a href="'+escapeHtml(photo.page)+'" target="_blank" rel="noopener noreferrer">'+escapeHtml(photo.artist||'Wikimedia Commons contributor')+'</a> · '+escapeHtml(photo.license)+'</p>':'';
+    const photo=window.HoneybrookPhotos?.record(p.title);const image=photo?window.HoneybrookPhotos.imageMarkup(photo,'Honeybrook setting for '+p.title,'hb-place-art'):p.image?'<img class="hb-place-art" src="'+fairRoot+p.image+'" alt="'+escapeHtml(p.title)+' setting">':'';
+    const attribution=photo?'<p class="scene-photo-credit">Scenery: <a href="'+escapeHtml(photo.page)+'" target="_blank" rel="noopener noreferrer">'+escapeHtml(photo.artist||'Wikimedia Commons contributor')+'</a> · '+escapeHtml(photo.license)+'</p>':'';
     const links=p.links.map(link => link[1]==='fair'
       ? '<a class="hb-fair-link '+(link[2]||'')+'" href="'+fairRoot+'">'+escapeHtml(link[0])+'</a>'
       : '<button type="button" data-hb-dive="'+escapeHtml(sectionMap[link[1]]||link[1])+'">'+escapeHtml(link[0])+'</button>').join('');
-    const entrance={welcome:'Welcome House',homes:'Hearthwell Home',bakery:'Cub Cakes & Crumbs',bridge:'Old Bridge',school:'Honeybrook School',square:'Honeybrook Town Hall',hollow:'Ranger Boundary'}[key];const door=entrance?'<button type="button" data-hb-enter="'+escapeHtml(entrance)+'">Enter this place →</button>':'';
+    const entrance={welcome:'Welcome House',homes:'Hearthwell Home',bakery:'Cub Cakes & Crumbs',bridge:'Welcome Bridge',school:'Honeybrook School',square:'Honeybrook Town Hall',hollow:'Ranger Boundary'}[key];const door=key==='square'?'<button type="button" data-hb-dive="townSquareWorld">Walk into Town Square →</button>':key==='hollow'?'<a class="hb-fair-link" href="'+fairRoot+'?portal=town&amp;place=hollow&amp;return=ne">Follow the creek road to Bear Hollow →</a>':entrance?'<button type="button" data-hb-enter="'+escapeHtml(entrance)+'">Enter this place →</button>':'';
     const actions=sceneActions[key]||['Look around this place','Talk with a neighbor','Try a small task'];const back='<button type="button" class="hb-back-town" data-hb-back-map>'+(fromPlacesList?'← Back to all Honeybrook places':'← Back to Honeybrook map')+'</button>';const play='<section class="hb-place-action"><h3>Step into the scene</h3><p>Choose what you want to do here.</p><div class="hb-dialog-actions">'+actions.map((a,i)=>'<button type="button" data-hb-place-action="'+i+'">'+escapeHtml(a)+' →</button>').join('')+'</div><div class="hb-action-result" id="hbPlaceActionResult" aria-live="polite">The scene is waiting for you.</div></section>';show(p.title,back+'<p class="hb-dialog-kicker">'+escapeHtml(p.kicker)+'</p>'+image+attribution+'<p>'+escapeHtml(p.text)+'</p><p>'+escapeHtml(p.detail)+'</p>'+door+play+'<div class="hb-dialog-actions">'+links+'</div>');
   }
   function openTool(tool) {
