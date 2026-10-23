@@ -1,0 +1,301 @@
+{
+  "release": "8d6cdc0998cb1c92ce0a8c7065e4d26cdc24ea07",
+  "site": "https://honeybrook.onrender.com/",
+  "verifiedAtUTC": "2026-10-23T20:19:59.320835+00:00",
+  "files": [
+    {
+      "path": "activities.html",
+      "match": true,
+      "sha256": "5d961eb7c845be12fcb5405be590535ce5a7104a029a8a53a199e8648f401741",
+      "expected": "5d961eb7c845be12fcb5405be590535ce5a7104a029a8a53a199e8648f401741"
+    },
+    {
+      "path": "activity-links.js",
+      "match": true,
+      "sha256": "7495410e79d6346679a42a3b3ed9ca790c4e44f17054a023c6cfc88a8ca98644",
+      "expected": "7495410e79d6346679a42a3b3ed9ca790c4e44f17054a023c6cfc88a8ca98644"
+    },
+    {
+      "path": "assets/festival/apple.webp",
+      "match": true,
+      "sha256": "6340ba6bea282af1a17964c6d82791374d938054158c4f99ba352398f645b7ee",
+      "expected": "6340ba6bea282af1a17964c6d82791374d938054158c4f99ba352398f645b7ee"
+    },
+    {
+      "path": "assets/festival/backstage.webp",
+      "match": true,
+      "sha256": "4044ca1cfee4fa3afc31cca68377d469fa98d3ef3c93e58ee5296855715a31b4",
+      "expected": "4044ca1cfee4fa3afc31cca68377d469fa98d3ef3c93e58ee5296855715a31b4"
+    },
+    {
+      "path": "assets/festival/cafe.webp",
+      "match": true,
+      "sha256": "4901e828e5e98d8a5e8ae59604f14d536196d6e8e3a8fe82b3f36b0104807e7e",
+      "expected": "4901e828e5e98d8a5e8ae59604f14d536196d6e8e3a8fe82b3f36b0104807e7e"
+    },
+    {
+      "path": "assets/festival/corndog.webp",
+      "match": true,
+      "sha256": "6bd0306758237c25ce9b0eac876c2de3f45fcc0108127fc1ac32e21fd4add590",
+      "expected": "6bd0306758237c25ce9b0eac876c2de3f45fcc0108127fc1ac32e21fd4add590"
+    },
+    {
+      "path": "assets/festival/cotton.webp",
+      "match": true,
+      "sha256": "030b1351830db19f87ef7f5b73fce2721e1843f149b662cfdbb1b812691da221",
+      "expected": "030b1351830db19f87ef7f5b73fce2721e1843f149b662cfdbb1b812691da221"
+    },
+    {
+      "path": "assets/festival/funnel.webp",
+      "match": true,
+      "sha256": "008431fe20cebac4bc65384f6f8ecd753e3b4cc85ba0ddc7d78acd718a45b4ea",
+      "expected": "008431fe20cebac4bc65384f6f8ecd753e3b4cc85ba0ddc7d78acd718a45b4ea"
+    },
+    {
+      "path": "assets/festival/honeybun.webp",
+      "match": true,
+      "sha256": "09a27c3aaba6e73dd5eaac028d18b3fb941a8fc4f3574025874fb1026ac82cb7",
+      "expected": "09a27c3aaba6e73dd5eaac028d18b3fb941a8fc4f3574025874fb1026ac82cb7"
+    },
+    {
+      "path": "assets/festival/icecream.webp",
+      "match": true,
+      "sha256": "2655a5a15b4ba7daa67f86f06493c66fca293063a30465d065f4c27fb0a8a4d8",
+      "expected": "2655a5a15b4ba7daa67f86f06493c66fca293063a30465d065f4c27fb0a8a4d8"
+    },
+    {
+      "path": "assets/festival/judging.webp",
+      "match": true,
+      "sha256": "dba458a869540d945966d5ea4341dd7fdbdd421b59e524b2e5234e23f41a8a44",
+      "expected": "dba458a869540d945966d5ea4341dd7fdbdd421b59e524b2e5234e23f41a8a44"
+    },
+    {
+      "path": "assets/festival/lemonade.webp",
+      "match": true,
+      "sha256": "0b0e7c722ae2b99d1bebabaee53e598c655d437d4cac30d9588c50c75d9168b2",
+      "expected": "0b0e7c722ae2b99d1bebabaee53e598c655d437d4cac30d9588c50c75d9168b2"
+    },
+    {
+      "path": "assets/festival/livestock.webp",
+      "match": true,
+      "sha256": "f71f5dad7a3cf0da05775a93aab21606b6723a91bc513145b204013fb69469ee",
+      "expected": "f71f5dad7a3cf0da05775a93aab21606b6723a91bc513145b204013fb69469ee"
+    },
+    {
+      "path": "assets/festival/manifest.json",
+      "match": true,
+      "sha256": "35dd0033ee37d4f33d1daf760d4e5c57e659403a144d6c3741f45effad0faa5f",
+      "expected": "35dd0033ee37d4f33d1daf760d4e5c57e659403a144d6c3741f45effad0faa5f"
+    },
+    {
+      "path": "assets/festival/music.webp",
+      "match": true,
+      "sha256": "21cd8d27c6f0eb520297c1735285ca4640ce39aba0ac914af8e43ae940298005",
+      "expected": "21cd8d27c6f0eb520297c1735285ca4640ce39aba0ac914af8e43ae940298005"
+    },
+    {
+      "path": "assets/festival/performance.webp",
+      "match": true,
+      "sha256": "aa6d3fef3076e70f47670edb5ba61504d9a2733b9ed9cc1e8d20aea147920981",
+      "expected": "aa6d3fef3076e70f47670edb5ba61504d9a2733b9ed9cc1e8d20aea147920981"
+    },
+    {
+      "path": "assets/festival/popcorn.webp",
+      "match": true,
+      "sha256": "a9bf5c43f6c1bcfef9be7b155d86bbf0ab3ad0e188d5f07ce22fbc9718e3bdb7",
+      "expected": "a9bf5c43f6c1bcfef9be7b155d86bbf0ab3ad0e188d5f07ce22fbc9718e3bdb7"
+    },
+    {
+      "path": "assets/festival/pottery.webp",
+      "match": true,
+      "sha256": "ada2f5634fffd9a284fecc05877c8942218a2cf7467cd61b662b897177fda6d4",
+      "expected": "ada2f5634fffd9a284fecc05877c8942218a2cf7467cd61b662b897177fda6d4"
+    },
+    {
+      "path": "assets/festival/relay.webp",
+      "match": true,
+      "sha256": "3264defb9fe8817b62f6762e72827f146c9f42d285486ea48c0197cfad84c978",
+      "expected": "3264defb9fe8817b62f6762e72827f146c9f42d285486ea48c0197cfad84c978"
+    },
+    {
+      "path": "assets/festival/ridecrew.webp",
+      "match": true,
+      "sha256": "a42689fd13351eb90e085727ff23a9490e61fa08b5386612c3020d6c1dcbf5f2",
+      "expected": "a42689fd13351eb90e085727ff23a9490e61fa08b5386612c3020d6c1dcbf5f2"
+    },
+    {
+      "path": "assets/festival/textiles.webp",
+      "match": true,
+      "sha256": "b8be5501ca3204c47eeaef03c71f7ff6e09e294e6033cd21b5344a0f21a01ea8",
+      "expected": "b8be5501ca3204c47eeaef03c71f7ff6e09e294e6033cd21b5344a0f21a01ea8"
+    },
+    {
+      "path": "canon-integration.js",
+      "match": true,
+      "sha256": "d82006bb8c249dd7a00979138cf7f047c7081c810ec077829ec8bae289b8a421",
+      "expected": "d82006bb8c249dd7a00979138cf7f047c7081c810ec077829ec8bae289b8a421"
+    },
+    {
+      "path": "cast-presence.js",
+      "match": true,
+      "sha256": "3580916a539c6dc47bd8b68604995e7e1eac2845abfb263b0c99d070749240e9",
+      "expected": "3580916a539c6dc47bd8b68604995e7e1eac2845abfb263b0c99d070749240e9"
+    },
+    {
+      "path": "country-interface.js",
+      "match": true,
+      "sha256": "41f19097fff0a1240d24a5987f8a56f3c06d70ac3a53d4b0c79ce4dcb37c68a7",
+      "expected": "41f19097fff0a1240d24a5987f8a56f3c06d70ac3a53d4b0c79ce4dcb37c68a7"
+    },
+    {
+      "path": "country-scenes.js",
+      "match": true,
+      "sha256": "df86edb1aac0424b58e93764e2f46ecd335439bd07418a6f71f73fbbd6d17349",
+      "expected": "df86edb1aac0424b58e93764e2f46ecd335439bd07418a6f71f73fbbd6d17349"
+    },
+    {
+      "path": "country-style.css",
+      "match": true,
+      "sha256": "29e5901d0b21985a342aaf71a4a8cbe2ce7ee5bc6c03a4cb592e42acfc6f880d",
+      "expected": "29e5901d0b21985a342aaf71a4a8cbe2ce7ee5bc6c03a4cb592e42acfc6f880d"
+    },
+    {
+      "path": "festival-data.js",
+      "match": true,
+      "sha256": "5f5cd2e82f82b540267e0fef47b05f8b51184e395fb8846af9f13eced0c3520d",
+      "expected": "5f5cd2e82f82b540267e0fef47b05f8b51184e395fb8846af9f13eced0c3520d"
+    },
+    {
+      "path": "festival-data.json",
+      "match": true,
+      "sha256": "e8603c04459a99c4721d0621501d05a1f571e202d85955cdfbbcc6a44d578152",
+      "expected": "e8603c04459a99c4721d0621501d05a1f571e202d85955cdfbbcc6a44d578152"
+    },
+    {
+      "path": "festival-engine.js",
+      "match": true,
+      "sha256": "58c1b65f695266b380c95b3e9f6a8a4efed88bf1eb3f86bdf7978ed345495220",
+      "expected": "58c1b65f695266b380c95b3e9f6a8a4efed88bf1eb3f86bdf7978ed345495220"
+    },
+    {
+      "path": "festival-photos.js",
+      "match": true,
+      "sha256": "f4cf14dcaafa8745e201c545b8177973557517874d021d191f763dd3debd7e08",
+      "expected": "f4cf14dcaafa8745e201c545b8177973557517874d021d191f763dd3debd7e08"
+    },
+    {
+      "path": "festival.css",
+      "match": true,
+      "sha256": "ade93202a15ac5fd0f98a62715458ffb60139f623d8fd76df72b9447f24912e8",
+      "expected": "ade93202a15ac5fd0f98a62715458ffb60139f623d8fd76df72b9447f24912e8"
+    },
+    {
+      "path": "festival.html",
+      "match": true,
+      "sha256": "2304e0bae0e7a0c427de3953ce49be71e6685bede224494ca59c92ae38e18dc4",
+      "expected": "2304e0bae0e7a0c427de3953ce49be71e6685bede224494ca59c92ae38e18dc4"
+    },
+    {
+      "path": "festival.js",
+      "match": true,
+      "sha256": "ab89215e8529eebe853a624ebc9f31f8308c59428854a3347011d5dda097f3bb",
+      "expected": "ab89215e8529eebe853a624ebc9f31f8308c59428854a3347011d5dda097f3bb"
+    },
+    {
+      "path": "games/honeybrook-craft-fair/game.js",
+      "match": true,
+      "sha256": "6c413f3af9dc66388ae446a062baa20226f182d9a50191a6c6ba46035ac2a0b7",
+      "expected": "6c413f3af9dc66388ae446a062baa20226f182d9a50191a6c6ba46035ac2a0b7"
+    },
+    {
+      "path": "games/honeybrook-craft-fair/index.html",
+      "match": true,
+      "sha256": "fd7ab3dcc8fda6b0c302dd87d87810d167cece6557d1aa56aa5a51d1edbafda3",
+      "expected": "fd7ab3dcc8fda6b0c302dd87d87810d167cece6557d1aa56aa5a51d1edbafda3"
+    },
+    {
+      "path": "honeybrook-life.js",
+      "match": true,
+      "sha256": "2a1cd853b65c55fcfba84ef048ea82cdec9f8f88b028ef6ecdd72f3c4b6c1a7d",
+      "expected": "2a1cd853b65c55fcfba84ef048ea82cdec9f8f88b028ef6ecdd72f3c4b6c1a7d"
+    },
+    {
+      "path": "index.html",
+      "match": true,
+      "sha256": "77e5076094fe73623164915f2dd0b2f03dff8713070f274cf04e2aa4bc692913",
+      "expected": "77e5076094fe73623164915f2dd0b2f03dff8713070f274cf04e2aa4bc692913"
+    },
+    {
+      "path": "life-engine.js",
+      "match": true,
+      "sha256": "22449ba99cbc15c4e002ebdb49609902b6f96bbd72f05c1f503ba3647171ebb0",
+      "expected": "22449ba99cbc15c4e002ebdb49609902b6f96bbd72f05c1f503ba3647171ebb0"
+    },
+    {
+      "path": "location-activity-catalog.js",
+      "match": true,
+      "sha256": "e2cadd79f7253840cd16b43a344903be140eb03a53f252c8e6efd29d1d8400a5",
+      "expected": "e2cadd79f7253840cd16b43a344903be140eb03a53f252c8e6efd29d1d8400a5"
+    },
+    {
+      "path": "location-activity-catalog.json",
+      "match": true,
+      "sha256": "c030abb33a2fcef0751667fc563145e79f461703036648b5d8a9b56acdc43a35",
+      "expected": "c030abb33a2fcef0751667fc563145e79f461703036648b5d8a9b56acdc43a35"
+    },
+    {
+      "path": "map-activities.js",
+      "match": true,
+      "sha256": "0e6db74f65b07d229e58291851c9ba6db09c29da70be09c4c1bf58c5dac1c396",
+      "expected": "0e6db74f65b07d229e58291851c9ba6db09c29da70be09c4c1bf58c5dac1c396"
+    },
+    {
+      "path": "story/cast-presence-audit.json",
+      "match": true,
+      "sha256": "679b679e1a86ad3b29bdd48e17dc54c2d55f463bff27237a194435b69eb7dab1",
+      "expected": "679b679e1a86ad3b29bdd48e17dc54c2d55f463bff27237a194435b69eb7dab1"
+    },
+    {
+      "path": "assets/bear-country/fonts/fraunces.ttf",
+      "match": true,
+      "sha256": "177ff6c0f14e5550a3c624247cd1189611d4eb65d000b14944c63d967958abbb",
+      "expected": "177ff6c0f14e5550a3c624247cd1189611d4eb65d000b14944c63d967958abbb"
+    },
+    {
+      "path": "assets/bear-country/fonts/nunito.ttf",
+      "match": true,
+      "sha256": "bb55a5ca5c2042335b3991af27c4d0705d0ef41cac6164ac737fd8f2a1e85207",
+      "expected": "bb55a5ca5c2042335b3991af27c4d0705d0ef41cac6164ac737fd8f2a1e85207"
+    },
+    {
+      "path": "story/Honeybrook_Complete_Story_Manuscript.docx",
+      "match": true,
+      "sha256": "8c3c52318cd77fe5253987fbf77850d8c0ebc49bb15bb6fa142dbe38f4822cab",
+      "expected": "8c3c52318cd77fe5253987fbf77850d8c0ebc49bb15bb6fa142dbe38f4822cab"
+    }
+  ],
+  "transport": "TLS-verified HTTPS with release query parameters. Certificates remain verified.",
+  "saveScope": "Isolated synthetic local browser accounts only; no owner saves accessed.",
+  "liveBrowserResults": {
+    "festival": [
+      "PASS 1440px: all 47 actual program workflows, all 8 concession photos, corn-dog purchase/reload, bear-only café, archived saves, partial reload, prizes, valid/invalid restore and stale tabs.",
+      "PASS 390px: all 47 actual program workflows, all 8 concession photos, corn-dog purchase/reload, bear-only café, archived saves, partial reload, prizes, valid/invalid restore and stale tabs."
+    ],
+    "originalFairAndTown": [
+      "PASS 1440px: 13 country districts and photographic doors, 86 venue/30 room coverage, original navigation/save preservation, local country fonts, separate Fair, actual photographed midway games/rides/snack rewards and reload.",
+      "PASS 390px: 13 country districts and photographic doors, 86 venue/30 room coverage, original navigation/save preservation, local country fonts, separate Fair, actual photographed midway games/rides/snack rewards and reload."
+    ],
+    "castAndChronology": [
+      "PASS 1440px: original family/companions, archived paid-work save untouched, source-linked Hearthwell room and native school, distinct bridges, complete native neighbor roster and supported nonspeaking Lena visit.",
+      "PASS 390px: original family/companions, archived paid-work save untouched, source-linked Hearthwell room and native school, distinct bridges, complete native neighbor roster and supported nonspeaking Lena visit."
+    ],
+    "deliberateRestAndRecovery": [
+      "PASS actual life calendar rest refreshes Fair program limit; malformed program data remains protected."
+    ]
+  },
+  "unqueriedEntrypoints": {
+    "https://honeybrook.onrender.com/": "byte-for-byte match",
+    "https://honeybrook.onrender.com/festival.html": "byte-for-byte match"
+  },
+  "scope": "Every one of 47 hands-on program workflows and eight correct concession photos at 1440px and 390px, corn-dog purchase/reload, original Fair rewards/rides/circus, 13 district/86 destination coverage, original cast/arrival gate, preserved synthetic account strings, partial program reload, prizes, valid/invalid program restore, stale tabs, actual life rest refresh, and malformed-program protection. The whole manuscript remains unchanged. Private cross-device synchronization is outside this release."
+}
