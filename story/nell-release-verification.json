@@ -1,0 +1,305 @@
+{
+  "release": "Nell \u00b7 the familiar stranger / Honeybrook bear lingo",
+  "date": "2026-10-23",
+  "commit": "b8394a45273d32ccc6c3cadba4f3c0be445964aa",
+  "renderDeploy": "dep-dbdu4k6i0phs73bhu020",
+  "renderStatus": "live",
+  "liveSite": "https://honeybrook.onrender.com/",
+  "files": [
+    {
+      "path": "DEVELOPMENT.md",
+      "sha256": "450289070418a7fc1cd9557942699564bd59ba18190c9a8d655caf6dc6423a16",
+      "bytes": 22211
+    },
+    {
+      "path": "IMPLEMENTATION_STATUS.md",
+      "sha256": "5e6b5bcc4ccfe708c7f1595f73908590220383c1ba57bfd7e21eed41f59f8c5f",
+      "bytes": 43150
+    },
+    {
+      "path": "activities.html",
+      "sha256": "9187a104134253415c04e95336dd776beab14ca8481b7b63249c1753ade02875",
+      "bytes": 1820
+    },
+    {
+      "path": "app.js",
+      "sha256": "1fd800e9a70e4872f811dda3f6283980a4258bb3a5b1ac47ac986b161e42b44d",
+      "bytes": 209532
+    },
+    {
+      "path": "assets/nell/README.md",
+      "sha256": "f1c7ef76e5fcbcd0339172103e44298c371592c188f4f5c1c3185930e32d0f7b",
+      "bytes": 2131
+    },
+    {
+      "path": "assets/nell/arrival.webp",
+      "sha256": "0c94e1b85501187fcb62cf4eac240c7f1eec843186835b7a296bf07ee64a048b",
+      "bytes": 569792
+    },
+    {
+      "path": "assets/nell/letter.webp",
+      "sha256": "a2cfa740a56a135b9acb9875b1d060b71d90da88bffd090d79c1073ea34f8e39",
+      "bytes": 346998
+    },
+    {
+      "path": "assets/nell/manifest.json",
+      "sha256": "44f4847c7a864422792d449595f3fe1d356aec55c25192d98b61eed4b7c5f130",
+      "bytes": 857
+    },
+    {
+      "path": "assets/nell/nell.webp",
+      "sha256": "1c1f1abdf2c53d655699a0f18cfede53bba545a39d5cb27739564501e326af49",
+      "bytes": 184044
+    },
+    {
+      "path": "assets/nell/night.webp",
+      "sha256": "f491cffec21df4793657fd249bb88128c0620d56d68669ce5f6caa99bf054cae",
+      "bytes": 308324
+    },
+    {
+      "path": "assets/nell/room.webp",
+      "sha256": "1bdf082b0ddd9b8f5c3327c9b4f1f4d70944954313f3d4b1354b1bb54498a01b",
+      "bytes": 403462
+    },
+    {
+      "path": "bear-lingo-world.js",
+      "sha256": "4f6a7cac4987293c5f8e9522664b2ee9d08bac4dd4ec5d26dcb91b9619555bad",
+      "bytes": 778
+    },
+    {
+      "path": "bear-lingo.js",
+      "sha256": "0897b25594c47f6d23b5efe88b7a0ca20a5551e6572b6632bc679c448f413cf7",
+      "bytes": 4064
+    },
+    {
+      "path": "camp.html",
+      "sha256": "192157ad7487ec92b1e68625ba40611cc66330427f129b692d25d57e5b94e505",
+      "bytes": 2117
+    },
+    {
+      "path": "canon-integration.js",
+      "sha256": "17aad26c6201c7341a6a22134bb7f6dff2a4f3733c39a710fb71d0313ce79a53",
+      "bytes": 13440
+    },
+    {
+      "path": "cast-presence.js",
+      "sha256": "3970e8c10150241867d072eaabf38edac82e5e26bd0080fad72579d455b5c398",
+      "bytes": 2388
+    },
+    {
+      "path": "characters.html",
+      "sha256": "1769484a6840bea1e66ff8b1752f6ac9ba6c16996f7366d80c090af16fbd1458",
+      "bytes": 1668
+    },
+    {
+      "path": "characters.js",
+      "sha256": "8c40f7018f9a2f0c32f6167d233a63a5ccbe0dbd308f0a1d0d853c225c1548c9",
+      "bytes": 12733
+    },
+    {
+      "path": "chronicles.html",
+      "sha256": "b885a1bf4588ddf1adbaeaffa7f9c4544950b56771704785bca2be1dad5876db",
+      "bytes": 2286
+    },
+    {
+      "path": "community-data.js",
+      "sha256": "668bc4d7f1b1b3138eb7cf94fc750c847ceb6937c3948aa069bd0ddfd0840873",
+      "bytes": 117349
+    },
+    {
+      "path": "community-data.json",
+      "sha256": "b8eb7fb97b59e0b91f4477651fea4785e20f3c0e1d1a2c85ddb269bc61ce9433",
+      "bytes": 149023
+    },
+    {
+      "path": "community-links.js",
+      "sha256": "f4e168a8ed1659d2c28f1e480cea6ba6f0fc4d472db89533df8b75f155488a57",
+      "bytes": 7011
+    },
+    {
+      "path": "community.css",
+      "sha256": "350e9e13e79f716a99ab58af3c106ba55c6de3664825097d43b4700a6de7da14",
+      "bytes": 11637
+    },
+    {
+      "path": "destination-visits.js",
+      "sha256": "ca08f9c76b71a3afd71e38d20216c9141fabf9c875cbb6487d6de8cc2ae53cba",
+      "bytes": 20710
+    },
+    {
+      "path": "festival.html",
+      "sha256": "937869fc11913d9be12b8239acbedff21cefce39249b0a60e09d0fe7e7c5ba4b",
+      "bytes": 1464
+    },
+    {
+      "path": "games/honeybrook-craft-fair/game.js",
+      "sha256": "66cb6e26b2e86f057aad9289daaf94b48bed3a97e3170bb95ee68327b4e144ea",
+      "bytes": 280565
+    },
+    {
+      "path": "games/honeybrook-craft-fair/index.html",
+      "sha256": "c4a35e10184038af6198cddaf93024bd5427dbc04eb2603ceeaba049be95f539",
+      "bytes": 32721
+    },
+    {
+      "path": "holidays.html",
+      "sha256": "eb19aa31711378b7feef9454a66cd447c4442588083082bfa0369a401afb2698",
+      "bytes": 1659
+    },
+    {
+      "path": "honeybrook-life.js",
+      "sha256": "a52e4cae3667aec6cf408e064657ffe33e5e94329a2fcd4116116c00918da748",
+      "bytes": 30990
+    },
+    {
+      "path": "honeybrook-sound.js",
+      "sha256": "e6779783aa124b0d03c8e2d11e7a0e840a6ff79cbe763fdc95511b860c0084f7",
+      "bytes": 10407
+    },
+    {
+      "path": "index.html",
+      "sha256": "1109d3cdaa17ef67a5c7146da981797295885c2723e22aeba054370c80807681",
+      "bytes": 63246
+    },
+    {
+      "path": "learning.html",
+      "sha256": "2ccf29bd649747b8e78bb28549762e45a2824efee3f89bb08333ebd6a2b8633e",
+      "bytes": 1621
+    },
+    {
+      "path": "lingo.html",
+      "sha256": "6acbe9f8f86abf8822df397dfce3f5f9f5fc2c966b00ec5d6939dabc7a3ccc78",
+      "bytes": 2142
+    },
+    {
+      "path": "living-places.js",
+      "sha256": "a17a809d570ef966d877395fe7251d84bf74bb4d22808c3ef362a3c18e2e25fd",
+      "bytes": 13543
+    },
+    {
+      "path": "nell-data.js",
+      "sha256": "8acdac3a142bee7bd7deb11760163ae02154d038951d1bd26da9740c8331c3a6",
+      "bytes": 9190
+    },
+    {
+      "path": "nell-engine.js",
+      "sha256": "f80cf5eda034179d4ac9e5e220f00685040a5c758d12d2073f6b671222182022",
+      "bytes": 2736
+    },
+    {
+      "path": "nell-world.js",
+      "sha256": "823c8f01fdcd93767313752ecbf2d7b20a5ebbad34b510f1f01bcc3ecaf519cd",
+      "bytes": 4140
+    },
+    {
+      "path": "nell.css",
+      "sha256": "dc503bc93f4d46b94c6a80f543cfa559d93b54ed5481258200808f295417a950",
+      "bytes": 917
+    },
+    {
+      "path": "nell.html",
+      "sha256": "b22b850fd24190555f8cfdd30973c4f45133b54c8a6743d2fa92d5a0fed94554",
+      "bytes": 1576
+    },
+    {
+      "path": "nell.js",
+      "sha256": "606f1a9b1cd21f099ddee94c26d1ddc1fddc1747a34f31b1bf5173cdae3647d3",
+      "bytes": 9972
+    },
+    {
+      "path": "refuge-engine.js",
+      "sha256": "ca47e1303951585f3d6a3a7793733db6320736ed7c147287086d4bbbb7c68ec0",
+      "bytes": 11784
+    },
+    {
+      "path": "refuge.html",
+      "sha256": "79d170fde4fb43bb2d0e237cc520409c345bc6086799b6fdbe0e03337c62804e",
+      "bytes": 1799
+    },
+    {
+      "path": "scripts/build-community-data.cjs",
+      "sha256": "39653900ffb8bc18e1550cfc4c8bb76040f5367bacb06e4dfb8f300e6c2991c7",
+      "bytes": 11381
+    },
+    {
+      "path": "scripts/build-story-additions.cjs",
+      "sha256": "65e5013b1104f0a84f05010b4d762e7b39d5ae7285b0faf2f26c4e8bd173dd25",
+      "bytes": 5439
+    },
+    {
+      "path": "story/CANON.md",
+      "sha256": "99eab3ea8743cfd8aaeb9efaeada90703012311932f9877a0c9c77e9a48f2df9",
+      "bytes": 10795
+    },
+    {
+      "path": "story/GAME_ADDITIONS.md",
+      "sha256": "de55e5da6d10887101b5c0979ef37c6c60b7d13c189483725d5fe88c83b9b7fb",
+      "bytes": 90110
+    },
+    {
+      "path": "story/NELL_GAME_CANON.md",
+      "sha256": "8bfb6ccda4e4f4635807cdf85321d6a821d2f5fe76e5b5c9081c9f57310d0ed4",
+      "bytes": 8740
+    },
+    {
+      "path": "tests/README.md",
+      "sha256": "36ef9e7357069a548afa95ff6ab0cfea558c3b946f1e931c9efc0ec98de81969",
+      "bytes": 6820
+    },
+    {
+      "path": "tests/canon-world.mjs",
+      "sha256": "32a0221f704b3617fff2bba91c0fac1430079e89af6d79652061c6eed38a1104",
+      "bytes": 4064
+    },
+    {
+      "path": "tests/community.cjs",
+      "sha256": "39574f370eb41b358dbe62403e3db0f47872f32e641fe6e2f7c53f57ffb3723d",
+      "bytes": 4433
+    },
+    {
+      "path": "tests/community.mjs",
+      "sha256": "339affd0cf42c85e56e4ab9893d95070a30aa86219a0a8ec0b50a3b9734a735d",
+      "bytes": 9511
+    },
+    {
+      "path": "tests/lingo.mjs",
+      "sha256": "5c6a7950f54d3ca1bc66cd5a04ff355b72a008ebc25b880eb34d6e299019638b",
+      "bytes": 2325
+    },
+    {
+      "path": "tests/nell.cjs",
+      "sha256": "7cecb1d12c2a6b97cc1e50057a1d347f31995d4139ad3bf8581a5231275f3466",
+      "bytes": 1457
+    },
+    {
+      "path": "tests/nell.mjs",
+      "sha256": "386310aaf240990fd8e33016e6adb2a8d7e1645baab11900f5efb43f1a75464d",
+      "bytes": 4833
+    },
+    {
+      "path": "story/Honeybrook_Complete_Story_Manuscript.docx",
+      "sha256": "8c3c52318cd77fe5253987fbf77850d8c0ebc49bb15bb6fa142dbe38f4822cab",
+      "bytes": 83226
+    }
+  ],
+  "localChecks": [
+    "tests/nell.cjs",
+    "tests/community.cjs",
+    "tests/story-engine.cjs",
+    "tests/holidays.cjs",
+    "tests/festival.cjs",
+    "tests/nell.mjs (1440 and 390)",
+    "tests/lingo.mjs (1440 and 390)",
+    "tests/canon-world.mjs (1440 and 390)",
+    "tests/community.mjs (1440 and 390)",
+    "tests/world-country.mjs (1440 and 390)",
+    "tests/sound-alert.mjs (1440 and 390)"
+  ],
+  "liveChecks": [
+    "tests/lingo.mjs (1440 and 390)",
+    "tests/nell.mjs (1440 and 390)",
+    "tests/sound-alert.mjs (1440 and 390)"
+  ],
+  "saveCheck": "Isolated synthetic contexts; original town, life, source-story and Fair save strings checked unchanged. No owner browser save was accessed. Nell begins with haroldMet false.",
+  "manuscript": "Original Word document preserved byte for byte. Author-directed Nell, immediate welcome, reincarnation belief and bear-lingo additions are in story/NELL_GAME_CANON.md and story/GAME_ADDITIONS.md."
+}
