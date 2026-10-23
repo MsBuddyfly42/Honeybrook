@@ -1,0 +1,56 @@
+[
+  {
+    "path": "assets/holidays/christmas-unlit.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "2f770163ff18fb25e746c6c0827f40ac1c3bb259ea8755dac22a99d578823e42"
+  },
+  {
+    "path": "assets/holidays/christmas.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "87074c32503625db597d8185940f47ed9f21a3ed50ae6c54f67311e009fb1296"
+  },
+  {
+    "path": "assets/holidays/easter.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "bb3ae4b3da4aacd50bb0aa23595e667f03e2a88407d803b19d6818c27edf5540"
+  },
+  {
+    "path": "assets/holidays/halloween.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "bde0a5ef14810b8be698046306343f2838cd9758dad0f809d7024791a1564937"
+  },
+  {
+    "path": "assets/holidays/square-autumn.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "0a9a9909828b3cb4728b75a5411d3af4049111b5c7bcac50a50cf709026883ee"
+  },
+  {
+    "path": "assets/holidays/square-spring.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "1b6cf094994055462642e319d857bd304e4a422d7399a1223bb13201b32bea0e"
+  },
+  {
+    "path": "assets/holidays/square-summer.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "74bad2226f55af01733cd726549e3e2a5289aa682463040f52f49ff52c5613d2"
+  },
+  {
+    "path": "assets/holidays/square-winter.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "832bc9f7234804a855f345aecdeb164932291141d2e705c1a43ad3237d2ba256"
+  },
+  {
+    "path": "assets/holidays/thanksgiving.webp",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "7de975e4cc15c37bccabaee42d3b1b5d129eaaed4a2ed60a1a8a1e673b148610"
+  }
+]
