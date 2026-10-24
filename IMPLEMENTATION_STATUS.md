@@ -192,3 +192,11 @@ Checks: `tests/town-revenue.cjs` exercises every offer and all money/booking rul
 ## Town-page scrolling repair — October 23, 2026
 
 Town map, district and walking views now use the document’s natural vertical flow instead of a fixed viewport-height grid with independently scrolling main/sidebar panels. The compass and location tabs scroll out of the way with the page; the existing compact top menu remains available. Map zoom/panning and the separate room overlay retain their controls. This is a presentation-only change and never writes a game save. `tests/town-scroll.mjs` passes wheel scrolling over the main view and sidebar, keyboard End reaching the page bottom, city-map scroll, room-overlay behavior, no horizontal overflow, reload and save preservation at 1440×900, 1093×600, 1024×650 and 390×844.
+
+## Photographic town welcome — October 23, 2026
+
+The root entrance now matches the current cream/pine photographic country design. The old giant `WELCOME TO HONEYBROOK` bridge/emoji card is permanently hidden, with its legacy element IDs retained for script compatibility. A single new entrance presents the current Welcome House photograph, the Honeybrook wordmark, saved-state-aware Begin/Continue My Journey, Town and separate Fair entry, and grouped secondary links. Town-page scrolling repair remains intact.
+
+`front-entry.js` provides a five-scene introduction before entry: Sammy at Welcome House; Amelia and the square; Wally and Main Street; Bridgeview and the way toward Bear Hollow; the separate Fair. Existing original bear cutouts appear with gentle idle motion where the panoramic photos need a guide. Play/pause, previous/next and optional British-English speech narration are available. It plays once, pauses when leaving the entrance or hiding the tab, and starts paused for reduced-motion preferences. New greetings are game-adaptation dialogue, not literal manuscript quotations. Viewing/hearing them never advances Nell, speaks to Harold, awards items or resets saves.
+
+`tests/front-entry.mjs` checks all five photographs, original actors, pause/next, narration dispatch, compact grouped navigation, saved Continue wording, Town/Home/Journey/Fair entry, no clipping/overflow, unchanged journey data and reduced-motion behavior at 1440px, 1093px and 390px. Source images and old gameplay systems are reused without replacement.
