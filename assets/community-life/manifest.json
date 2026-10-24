@@ -1,0 +1,30 @@
+[
+  {
+    "path": "assets/community-life/apiary.webp",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "04084794c685db29aee614f5b60fdc1ead51751da204c07a47ed36eb511912b2"
+  },
+  {
+    "path": "assets/community-life/bee-props.webp",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGBA",
+    "sha256": "e704d37bd08b9a050b88eb3b709c41819a53cb6835ef60475acbfe77f1525546"
+  },
+  {
+    "path": "assets/community-life/home-props.webp",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGBA",
+    "sha256": "cf1e6d55b1c0f0d0946fb5ba8b45ea8919541e5b1ce2d64dbfad0035b34c5d54"
+  },
+  {
+    "path": "assets/nell/welcome.webp",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "163313d8bb7a393c2ce9530b2666365effa11cd06bd80b84109f04cc5902365c"
+  }
+]

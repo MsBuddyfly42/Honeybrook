@@ -3771,6 +3771,26 @@
       "availability": "guest",
       "cohort": 1,
       "team": "Purple Lanterns"
+    },
+    {
+      "id": "game-treasurer",
+      "sourceId": "treasurer",
+      "name": "The town treasurer",
+      "source": "game",
+      "group": "Unnamed game supporting role",
+      "kind": "Bear · civic finance officer",
+      "details": "Keeps Honeybrook’s Fair fund, records sales and operating reserves, and publishes balanced receipts. The author has not assigned a personal name or manuscript biography.",
+      "family": "Not supplied.",
+      "age": "Adult; exact age unrecorded.",
+      "status": "New game role · not yet in Book One",
+      "home": null,
+      "work": {
+        "name": "Town Hall · Treasury Office",
+        "route": "treasury.html"
+      },
+      "location": "Honeybrook Town Hall",
+      "chapters": [],
+      "availability": "resident"
     }
   ],
   "zones": [

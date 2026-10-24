@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-23",
+  "scope": "Local isolated browser contexts; no owner save accessed",
+  "layout": {
+    "states": 54,
+    "visibleControls": 756,
+    "widths": [
+      1440,
+      1024,
+      390
+    ],
+    "coveredHitTargets": 0,
+    "horizontalOverflowStates": 0,
+    "limit": "Finite primary-page and Fair-menu states, not every dynamic state of every legacy mini-game"
+  },
+  "gameplay": {
+    "journeyWidths": [
+      1440,
+      390
+    ],
+    "openingScenes": 8,
+    "citizenCasePlayed": "case-01, all three places/accounts/observations, ordering board, conclusion and resolution",
+    "roomPlayed": "six object placements; finished state and reload",
+    "economyWidths": [
+      1440,
+      390
+    ],
+    "economy": "actual ticket office purchases, midway admission/prizes, wristband ride, concession, Fair save/reload and Town Hall ledger",
+    "otherSavePreservation": true
+  },
+  "ruleChecks": [
+    "40 complete citizen cases",
+    "32 apiary actions and stock deliveries",
+    "24 room actions",
+    "60 crew job actions",
+    "later-family milestones",
+    "unreleased-letter gate",
+    "original Nell 22 moments and research 14 files/42 decisions",
+    "refuge complete scenarios",
+    "47 Fair program progression"
+  ],
+  "originalManuscriptSha256": "8c3c52318cd77fe5253987fbf77850d8c0ebc49bb15bb6fa142dbe38f4822cab",
+  "live": {
+    "status": "pending deployment verification",
+    "fullLiveGameplayReplay": false
+  }
+}

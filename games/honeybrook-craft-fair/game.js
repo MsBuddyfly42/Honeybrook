@@ -22,7 +22,7 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;',
 /* ------------------------------------------------------------------ */
 const stage = $('#stage');
 function fit() {
-  const reserved = document.body.classList.contains('has-red-alert') ? document.getElementById('honeybrookRedAlert')?.offsetHeight || 0 : 0;
+  const reserved = (document.body.classList.contains('has-red-alert') ? document.getElementById('honeybrookRedAlert')?.offsetHeight || 0 : 0) + (document.getElementById('fairNavigationDock')?.hidden === false ? document.getElementById('fairNavigationDock').getBoundingClientRect().height : 0);
   const w = Math.min(innerWidth, Math.max(180, innerHeight - reserved) * 1.5);
   stage.style.top = 'calc(50% + ' + reserved / 2 + 'px)';
   const h = w / 1.5;
@@ -207,7 +207,7 @@ const UPGRADES = [
 /* ------------------------------------------------------------------ */
 const S = {
   name: 'Friend', day: 1, slot: 0, weather: 'Sunny', season: 1,
-  coins: 20, ribbons: 0, basket: [], orders: [], owned: {}, delivered: 0, carnivalTickets: 0, carnivalTreats: [],
+  coins: 20, ribbons: 0, basket: [], orders: [], owned: {}, delivered: 0, carnivalTickets: 0, carnivalTreats: [], civicFair: HoneybrookFairEconomy.initial(),
   best: {}, gallery: [], garden: Array.from({ length: 6 }, () => ({ crop: null })), scene: 'title', usedSlot: false,
   storyPts: 0, glow: 20, woodsOpen: false, woodsCall: false,
 };
@@ -2415,12 +2415,12 @@ const Save = {
   last: '', ok: null, busy: false,
   snapshot() {
     return { v: 1, name: S.name, day: S.day, slot: S.slot, weather: S.weather, season: S.season, coins: S.coins, ribbons: S.ribbons,
-      basket: S.basket, orders: S.orders, owned: S.owned, delivered: S.delivered, best: S.best, gallery: S.gallery, garden: S.garden, carnivalTickets: S.carnivalTickets || 0, carnivalTreats: S.carnivalTreats || [],
+      basket: S.basket, orders: S.orders, owned: S.owned, delivered: S.delivered, best: S.best, gallery: S.gallery, garden: S.garden, carnivalTickets: S.carnivalTickets || 0, carnivalTreats: S.carnivalTreats || [], civicFair:S.civicFair||HoneybrookFairEconomy.initial(),
       friend: S.friend || {}, talked: S.talked || {}, made: S.made || [], room: S.room || {}, restDay: S.restDay || {}, homeGift: S.homeGift || {}, storyPts: S.storyPts || 0, glow: S.glow ?? 20, woodsOpen: !!S.woodsOpen, woodsCall: !!S.woodsCall, storyNew: !!S.storyNew, found: S.found || {}, usedSlot: !!S.usedSlot, savedAt: Date.now() };
   },
   valid(d) {
     const object=v=>v&&typeof v==='object'&&!Array.isArray(v);
-    return object(d)&&d.v===1&&typeof d.name==='string'&&d.name.length<=80&&
+    return object(d)&&(d.civicFair===undefined||HoneybrookFairEconomy.valid(d.civicFair))&&d.v===1&&typeof d.name==='string'&&d.name.length<=80&&
       ['day','slot','season','coins','ribbons','delivered'].every(k=>Number.isSafeInteger(d[k])&&d[k]>=0)&&d.day>=1&&d.season>=1&&d.slot<=3&&['Sunny','Cloudy','Rainy'].includes(d.weather)&&
       ['basket','orders','gallery','garden'].every(k=>Array.isArray(d[k])&&d[k].length<=5000)&&d.garden.length===6&&d.garden.every(object)&&
       ['owned','best'].every(k=>object(d[k]));
@@ -2438,7 +2438,7 @@ const Save = {
   async wipe(){try{localStorage.removeItem(this.key);this.last='';return true;}catch{saveIndicator('Could not erase browser save',true);return false;}},
   export(){const url=URL.createObjectURL(new Blob([JSON.stringify(this.snapshot(),null,2)],{type:'application/json'}));const link=document.createElement('a');link.href=url;link.download='honeybrook-fair-backup.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);},
   apply(d) {
-    const keys = ['name', 'day', 'slot', 'weather', 'season', 'coins', 'ribbons', 'basket', 'orders', 'owned', 'delivered', 'best', 'gallery', 'garden', 'carnivalTickets', 'carnivalTreats', 'found', 'friend', 'talked', 'made', 'room', 'restDay', 'homeGift', 'storyPts', 'glow', 'woodsOpen', 'woodsCall', 'storyNew'];
+    const keys = ['civicFair', 'name', 'day', 'slot', 'weather', 'season', 'coins', 'ribbons', 'basket', 'orders', 'owned', 'delivered', 'best', 'gallery', 'garden', 'carnivalTickets', 'carnivalTreats', 'found', 'friend', 'talked', 'made', 'room', 'restDay', 'homeGift', 'storyPts', 'glow', 'woodsOpen', 'woodsCall', 'storyNew'];
     for (const k of keys) if (d[k] !== undefined) S[k] = d[k];
     if (!Array.isArray(S.garden) || S.garden.length !== 6) S.garden = Array.from({ length: 6 }, () => ({ crop: null }));
     S.usedSlot = false;
@@ -2521,16 +2521,25 @@ window.__reelDbg = () => Pond.st && Pond.st.reel && { fish: Pond.st.reel.fish, b
 /* ------------------------------------------------------------------ */
 /* Honeybrook Fair's little midway                                    */
 /* ------------------------------------------------------------------ */
+const FairOffice={
+busy:false,
+account(){if(!S.civicFair)S.civicFair=HoneybrookFairEconomy.initial();return S.civicFair;},
+transact(a){const result=HoneybrookFairEconomy.run(this.account(),a,S.coins,S.day);S.civicFair=result.state;S.coins=result.coins;updateHUD();Save.push(true);return result;},
+async office(){if(this.busy)return;this.busy=true;try{const a=this.account(),v=await modal(`<p class="kicker">Honeybrook Fair ticket office</p><h2>Tickets & day wristbands</h2><p>One Fair coin is $1 in-game. Admission tickets cost <b>$2 each</b>; a game uses one ticket, a ride uses two. A <b>$30 wristband</b> covers rides for the current Fair day; games and food are separate.</p><p>Your wallet: $${S.coins} · Admission tickets: ${a.tokens} · ${a.wristbandDay===S.day?'Wristband valid today':'No wristband for today'}</p><p>Prize tickets earned by playing remain separate and unchanged.</p>`,[{label:'Close'},{label:'1 ticket · $2',value:'one'},{label:'5 tickets · $10',value:'five'},{label:'10 tickets · $20',value:'ten'},{label:'Ride wristband · $30',value:'band',disabled:a.wristbandDay===S.day},{label:'Town treasury ledger',value:'ledger'}]);if(v==='ledger')return this.ledger();if(['one','five','ten','band'].includes(v)){this.transact(v==='band'?{type:'wristband'}:{type:'tokens',quantity:{one:1,five:5,ten:10}[v]});toast('Purchase recorded. Honeybrook’s treasury ledger is updated.');}}catch(e){await modal('<h2>Ticket office</h2><p>'+esc(e.message)+'</p>',[{label:'Back to the Fair',primary:true}]);}finally{this.busy=false;}},
+async ledger(){const a=this.account();await modal(`<p class="kicker">Honeybrook Treasury · Fair account</p><h2>Community funds</h2><p>Custodian: the town treasurer, an unnamed bear civic role added for this game. Receipts are kept for public review.</p><p>Gross Fair sales: <b>$${a.gross}</b><br>Recorded operating costs: <b>$${a.costs}</b><br>Retained for Honeybrook: <b>$${a.treasury}</b></p><p>Food costs reserve ingredients and stall supplies; wristbands reserve ride operations. Ticket sales are retained in the town’s Fair fund. These are game accounts, with no real payments.</p><ol>${a.receipts.slice(-30).reverse().map(x=>'<li>Receipt '+x.id+' · Fair day '+x.day+' · '+esc(x.kind)+' · $'+x.amount+' sale, $'+x.cost+' cost, $'+(x.amount-x.cost)+' retained</li>').join('')}</ol>`,[{label:'Back to the Fair',primary:true}]);},
+async admit(ride){const a=this.account();if(!(ride&&a.wristbandDay===S.day)&&a.tokens<(ride?2:1)){await this.office();return false;}const v=await modal('<h2>'+(ride?'Ride admission':'Midway game admission')+'</h2><p>'+(ride&&a.wristbandDay===S.day?'Your wristband covers this ride.':(ride?2:1)+' admission ticket'+(ride?'s':'')+' will be used.')+'</p>',[{label:'Maybe later'},{label:'Enter and play',value:'enter',primary:true}]);if(v!=='enter')return false;this.transact({type:'admit',ride});return true;}
+};
+window.HoneybrookFairOffice=FairOffice;
 const Carnival = {
   snack: {
-    corndog: {name:'Corn Dog',icon:'🌭',cost:3,line:'A golden corn-battered hot dog on a stick, served in its own sleeve.'},
-    lemonade: {name:'Fresh Lemonade',icon:'🍋',cost:2,line:'Fresh lemons and cool lemonade at its own stand.'},
-    icecream: {name:'Ice Cream',icon:'🍦',cost:3,line:'A scoop in a waffle cone from the cold display.'},
-    honeybun: {name:'Honey Bun',icon:'🍯',cost:3,line:'A glazed spiral bun from the Fair bakery counter.'},
-    cotton: { name: 'Cotton Candy', icon: '🍭', cost: 2, line: 'A cloud-soft swirl spun fresh at the midway.' },
-    apple: { name: 'Candy Apple', icon: '🍎', cost: 3, line: 'A crisp apple with a shiny red sugar shell.' },
-    funnel: { name: 'Funnel Cake', icon: '🍰', cost: 4, line: 'Warm, golden ribbons dusted with powdered sugar.' },
-    popcorn: { name: 'Popcorn', icon: '🍿', cost: 3, line: 'A little salty, a little sweet, and nice to share.' }
+    corndog: {name:'Corn Dog',icon:'🌭',cost:7,line:'A golden corn-battered hot dog on a stick, served in its own sleeve.'},
+    lemonade: {name:'Fresh Lemonade',icon:'🍋',cost:4,line:'Fresh lemons and cool lemonade at its own stand.'},
+    icecream: {name:'Ice Cream',icon:'🍦',cost:5,line:'A scoop in a waffle cone from the cold display.'},
+    honeybun: {name:'Honey Bun',icon:'🍯',cost:5,line:'A glazed spiral bun from the Fair bakery counter.'},
+    cotton: { name: 'Cotton Candy', icon: '🍭', cost: 5, line: 'A cloud-soft swirl spun fresh at the midway.' },
+    apple: { name: 'Candy Apple', icon: '🍎', cost: 6, line: 'A crisp apple with a shiny red sugar shell.' },
+    funnel: { name: 'Funnel Cake', icon: '🍰', cost: 9, line: 'Warm, golden ribbons dusted with powdered sugar.' },
+    popcorn: { name: 'Popcorn', icon: '🍿', cost: 5, line: 'A little salty, a little sweet, and nice to share.' }
   },
   async visit(kind) {
     if(S.scene!=='carnival')return;
@@ -2544,13 +2553,13 @@ const Carnival = {
     if(S.scene!=='carnival')return;const epoch=S.sceneEpoch;
     const item = this.snack[kind];
     if (S.coins < item.cost) {
-      await modal(`<p class="kicker">Midway Treats</p><h2>${item.icon} ${item.name}</h2><p>${item.line}</p><p>This treat costs <b>${item.cost} coins</b>. You have <b>${S.coins}</b>. You can earn coins at the market stall or enjoy the rides and shows for free.</p>`, [{label:'Back to the midway',primary:true}]);
+      await modal(`<p class="kicker">Midway Treats</p><h2>${item.icon} ${item.name}</h2><p>${item.line}</p><p>This treat costs <b>${item.cost} coins</b>. You have <b>${S.coins}</b>. You can earn coins at the market stall or explore the midway without buying admission.</p>`, [{label:'Back to the midway',primary:true}]);
       return;
     }
     if(S.scene!=='carnival'||S.sceneEpoch!==epoch)return;
     const choice = await modal(`<p class="kicker">A little carnival treat</p><h2>${item.icon} ${item.name}</h2><p>${item.line}</p><p>Spend <b>${item.cost} coins</b>? You have ${S.coins} coins. Treats are saved in your Fair keepsakes.</p>`, [{label:'Maybe later'}, {label:`Enjoy one · ${item.cost} coins`,primary:true,value:'buy'}]);
     if (choice !== 'buy'||S.scene!=='carnival'||S.sceneEpoch!==epoch) return;
-    S.coins -= item.cost; S.carnivalTreats = S.carnivalTreats || []; S.carnivalTreats.push(kind);
+    FairOffice.transact({type:'food',kind}); S.carnivalTreats = S.carnivalTreats || []; S.carnivalTreats.push(kind);
     Snd.sfx('good'); updateHUD(); Save.push(true);
     if(S.scene!=='carnival'||S.sceneEpoch!==epoch)return;
     await modal(`<p class="kicker">Fresh from the midway</p><h2>Yum! ${item.name}</h2><p>${item.line}</p><p>You have enjoyed ${S.carnivalTreats.length} carnival ${S.carnivalTreats.length === 1 ? 'treat' : 'treats'} so far. Take your time—there is no rush to leave the Fair.</p>`, [{label:'Back to the carnival',primary:true}]);
@@ -2570,7 +2579,7 @@ const Carnival = {
     return '<div class="midway-action phase-' + phase + '" role="img" aria-label="' + scene.label + '">' + scene.svg + '</div>';
   },
   async ride(kind) {
-    if(S.scene!=='carnival')return;const epoch=S.sceneEpoch;
+    if(S.scene!=='carnival')return;const epoch=S.sceneEpoch;if(!await FairOffice.admit(true)||S.scene!=='carnival'||S.sceneEpoch!==epoch)return;
     const wheel = kind === 'wheel';
     const name = wheel ? 'Honeywheel' : 'Honey-Go-Round';
     const text = wheel
@@ -2589,7 +2598,7 @@ const Carnival = {
     }
   },
   async game(kind) {
-    if(S.scene!=='carnival')return;const epoch=S.sceneEpoch;
+    if(S.scene!=='carnival')return;const epoch=S.sceneEpoch;if(!await FairOffice.admit(false)||S.scene!=='carnival'||S.sceneEpoch!==epoch)return;
     const q = {
       rings: { title:'Ring Toss', icon:'🎯', intro:'The rings have to land around the bottle neck. Before you toss, solve the midway number riddle:', prompt:'A prize shelf has 3 honey jars and 4 berry jars. How many jars are there altogether?', answers:[['6','6'],['7','7'],['8','8']], correct:'7', tickets:3, hint:'Try counting on from 3: 4, 5, 6, 7.' },
       ducks: { title:'Lucky Duck Pond', icon:'🦆', intro:'Three ducks drift by. Pick the one with the word that has a long A sound:', prompt:'Which duck carries a long A word?', answers:[['CAT','cat'],['CAKE','cake'],['CAN','can']], correct:'cake', tickets:2, hint:'The silent e at the end helps the A say its name: cake.' },
@@ -2659,3 +2668,5 @@ $('#fair-backup-file').onchange=async event=>{
 };
 
 })();
+
+const officeButton=document.createElement('button');officeButton.id='fairTicketOffice';officeButton.className='btn btn-small';officeButton.textContent='Tickets · $2 / Wristband · $30';officeButton.onclick=()=>window.HoneybrookFairOffice.office();document.body.append(officeButton);

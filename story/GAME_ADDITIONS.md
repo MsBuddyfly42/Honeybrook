@@ -325,7 +325,7 @@ Photographic Day, Night and Follow game time views cover the connected world. Ex
 
 ## Added game characters
 
-The directory preserves all 41 original manuscript cast entries. The following 86 records are earlier game/camp additions, separately labeled in the directory. The author may adapt them for the story. Similar names in different earlier game datasets remain separate records, not an invented relationship. Unknown homes are not filled in as manuscript facts.
+The directory preserves all 41 original manuscript cast entries. The following 87 records are earlier game/camp additions, separately labeled in the directory. The author may adapt them for the story. Similar names in different earlier game datasets remain separate records, not an invented relationship. Unknown homes are not filled in as manuscript facts.
 
 ### Nell
 
@@ -1295,6 +1295,15 @@ creative and encouraging; enjoys science and building.
 - home: Camp family cabins · visiting lodging, not permanent home — camp.html?tab=buildings&room=life-cabins
 - work: Supervised camp programs / recreation — camp.html?tab=buildings&room=life-recreation
 
+### The town treasurer
+
+Keeps Honeybrook’s Fair fund, records sales and operating reserves, and publishes balanced receipts. The author has not assigned a personal name or manuscript biography.
+
+- kind: Bear · civic finance officer
+- age: Adult; exact age unrecorded.
+- family: Not supplied.
+- work: Town Hall · Treasury Office — treasury.html
+
 ## Fair and circus programs
 
 The separate Fair portal includes these 47 expanded programs, with preparation, hands-on work, inspection and delivery. Progression has three levels, prizes and keepsakes; a program can be completed up to three times per camp day.
@@ -1432,6 +1441,12 @@ Possible continuation: the family receives Nell’s account and Goldilocks’s c
 Nell is a **private investigator**. In her spare time she keeps bees, and she knows beekeeping thoroughly. She belongs to a long family lineage of beekeepers; almost everyone in her family loves bees. This is the family’s shared tradition, not a personal legacy Nell established or owns. Her profession shapes her research habits—careful observation, source comparison, distinguishing belief from proof, reconstructing routes and timelines, and listening before concluding. Keep her warm, curious, loving personality and the bears’ Goldilocks theory; professional investigation and family beekeeping belong to the same character. This is the fictional game character’s identity, not a new claim about the author’s real employment.
 
 Latest owner correction, superseding any personal-legacy wording: “It’s not Nell’s personal family legacy … she is a part of a family legacy … almost everybody in her family loves bees … THEY’RE BEEKEEPERS … it’s in their lineage.” Nell’s profession remains private investigation; her expert spare-time beekeeping connects her to that wider family tradition.
+
+## Love on both sides of the woods · approved discovery reflection
+
+The owner asked to weave the emotional reflections into the story: the family may have come close enough to hear bees, feared being mauled after seeing bear tracks, and turned back to avoid losing another loved one. Goldilocks waited for them beyond the part of the woods they feared. There was love on both sides, and the creatures they feared were sheltering their kin. Keep the imagined closeness conditional; no exact search location or distance has been established. The scene must also convey the joy of Goldilocks’s full life among the bears and the answer Nell can finally carry home.
+
+The discovery scene is inserted in the playable Nell narrative after the existing letter’s explicit reading step and preserved as prose in `NELL_DISCOVERY_SCENE.md`. The uploaded original manuscript remains untouched. The author is still editing the newly drafted final letter from Abigail Kensington; this request does not authorize replacing the game letter or inserting that held letter into the original manuscript. The new scene avoids quoting its unapproved wording.
 
 ### Goldilocks’s special game letter · adaptation draft
 
@@ -1653,3 +1668,836 @@ Granddad did not live to hear it, but I have kept my promise. I wanted you to kn
 
 With love,
 Nell
+
+## Nell’s discovery scene
+
+Nell lowered the letter, but she could not loosen her fingers from its edges. For a while she could see very little of the room. She kept thinking of a child watching a path, and of a family searching from the other side of the woods.
+
+They might have come closer than any of them ever knew.
+
+Perhaps they had stood close enough to hear the bees. Perhaps someone had called her name, waited, and called again. Nell imagined a searcher noticing bear tracks in the earth, looking towards the thicker trees and thinking of the people who still had to be brought safely home.
+
+She could imagine the frightened decision to turn back. They had already lost people they loved. Going farther might have seemed like risking another loss.
+
+There was no record that could tell Nell exactly where they had stood, or how near their voices might have carried. She could not make a certainty out of something she wished so desperately had ended differently. But the possibility hurt enough.
+
+Somewhere beyond the place where they stopped, a little girl might have been watching another path, waiting for a familiar face.
+
+The family had wanted to find her. Goldilocks had wanted to be found. There had been love on both sides of the trees, and neither side had known how to reach the other.
+
+Nell pressed her lips together. It did not keep her from crying.
+
+They had feared the very creatures keeping her safe.
+
+To the searchers, bear tracks had meant danger. To Goldilocks, the bears had meant food, a bed, and someone who came when she woke frightened. The place her family had been afraid to enter had become her home.
+
+Nell thought of the years that had followed: birthdays her relatives never saw, ordinary mornings they could not picture, the familiar voices Goldilocks had carried in her memory as she grew older. She thought of her grandfather asking his old question, never knowing that there was an answer waiting in a bear’s care.
+
+If only they had known where to ask.
+
+The words came to her again and again. Each time, they opened the same impossible wish. She wanted to go back to the woodland boundary, take those frightened people by the hand and show them the way. She wanted to tell the child to keep watching just a little longer.
+
+She could do neither.
+
+Harold set a glass of water within reach and sat quietly beside her. Nell looked at his paw resting near the letter. She remembered the welcomes she had received since arriving, before anyone knew whose family she belonged to. No one had asked her to earn a place at the table.
+
+Goldilocks had known that kindness too. For years. For a whole life.
+
+Nell read the letter again, more slowly. This time she tried to make room for the life it described as well as the years her family had missed. There had been meals shared, work learned, friends loved and days worth waking for. Goldilocks had been mourned here because she had belonged here.
+
+A small laugh escaped Nell when she remembered how warmly the bears had fussed over her own arrival. It broke into another sob, and she wiped her face with an impatient hand. She could almost understand how a frightened child might gradually have learned to laugh in this place.
+
+She wished her family could see it. She wanted them to understand that the bears had loved the little girl they were searching for.
+
+Nell reached for her notebook. She would have to tell them about the river and the waiting. She would have to tell them why she was crying. But she would tell them about the home beyond the trees as well, and the kindness that had filled it.
+
+For generations, the family had been left with the day Goldilocks disappeared. Now Nell could bring them the rest of her life.
+
+## My Journey · ordered opening scenes
+
+### The promise I brought
+
+You are Nell: a British woman, a private investigator, and an expert beekeeper from a family of beekeepers. Your dying grandfather wondered what happened to his auntie. You promised to go to Honeybrook, although at first you said yes mainly to ease his mind.
+
+- Open the notebook: Your promise is written here. You can choose how slowly to follow it.
+- Hold the family keepsake: His question stayed with you after the room fell quiet.
+
+Responses: I will follow the promise at my own pace. / I am uncertain, but I will give it an honest chance.
+
+### The voice in my dream
+
+You thought about the promise all evening before sleep. In your dream, a goddess’s voice told you to do as your grandfather asked. When you arrived, you were to ask for Harold. You saw no face and were given no explanation of who she was.
+
+- Look toward the night: The dream gave you a name: Harold. It did not tell you what he would say.
+- Record the name: You write Harold beneath your grandfather’s question.
+
+Responses: Remember the words without inventing an answer. / Keep the dream private while I explore.
+
+### My first view of Honeybrook
+
+Your car is stopped beside a warm timber house and a wooden bridge. Then you notice bears on the path. You are the first present-day human to arrive. For a moment you want to get straight back into the car; then curiosity makes you look again.
+
+- Look at the approaching path: There is space between you and the bears. Nobody blocks your way back.
+- Pick up my notebook: The private investigator in you notices an ordinary community: baskets, doorsteps, flowers and a place to sit.
+
+Responses: Stay by the car and listen first. / Take one careful step toward the welcome.
+
+### A small bear makes room
+
+A small bear in an unevenly patched coat pauses rather than rushing you. This is Sammy Patchwell. His kindness makes the place feel less impossible. A seat and something to eat are offered before anyone asks you to explain yourself.
+
+- Listen to Sammy: “You can sit for a bit. You don’t have to know what to say yet.”
+- Notice the covered bench: The bench faces the path. You can see your way out and choose your own pace.
+
+Responses: Thank Sammy and accept a quiet seat. / Ask Sammy to sit nearby while I take it in.
+
+### The golden-haired stranger
+
+An older bear looks at your golden hair, then at your face with unexpected tenderness. Another whispers Goldilocks. They do not know your family or why you came. They see a resemblance to someone loved throughout Honeybrook and Bear Hollow.
+
+- Listen to the older bears: “There is something of her in you.” Their affection is real, but resemblance is not proof of ancestry.
+- Keep an honest observation: Some bears think Goldilocks has returned. You record this as their belief, not an established fact.
+
+Responses: Let their kindness settle without claiming to be Goldilocks. / Say gently: “My name is Nell.”
+
+### Something familiar between us
+
+A hive catches your attention. You speak of bees with the ease of a lifetime around them. Almost everyone in your family loves beekeeping. The bears recognize the patient curiosity, loving manner and golden hair they remember in Goldilocks—and your delight in bears seems to delight them in return.
+
+- Observe without disturbing the colony: An expert looks before acting. You listen to the entrance activity and leave the colony undisturbed.
+- Look at the pollinator planting: Bees, flowers and careful observation give you something familiar to share in this strange new place.
+
+Responses: Share that beekeeping runs through my family. / Ask about their bees before talking about myself.
+
+### A room before an explanation
+
+Amelia offers a spare room. Her welcome does not depend on solving a case, paying for belonging or revealing your ancestry. You set down the notebook. For now, this is a place to rest while you learn what Honeybrook is.
+
+- Set down my belongings: Your notebook and family question have a safe place. You have not met Harold yet.
+- Look out at the wooden bridge: A path connects this room to a whole community. You are allowed to discover it slowly.
+
+Responses: Accept the room and thank Amelia. / Ask where I might begin learning about the town.
+
+### First, I want to understand
+
+You know to look for Harold, but you are not ready for that conversation. First you want to learn the places, listen to the bears, and follow what can actually be checked. Your investigator’s notebook will hold the evidence, not guesses dressed up as answers.
+
+- Open the connected town map: Fourteen research files will lead through real places, observations and evidence boards.
+- Prepare the first research page: A welcome before a name is your first file. Future leads will open one at a time.
+
+Responses: Begin my research before I speak to Harold. / Explore slowly and start with the first welcome.
+
+
+## Later community scenes · gated game drafts
+
+### A place to stay
+
+Gate: letter; place: welcome.
+
+You have read the family letter. Beyond its grief, you can see a life the bears made possible. You do not want to hurry away from the place that kept your kin safe.
+
+Action: I want to stay and get to know this community.
+
+Amelia makes room for you without asking what you can provide. You tell her that, as a private investigator, you would like to help when neighbors need a careful listener.
+
+Action: Offer my skills without making my welcome a bargain.
+
+Goldilocks’s legacy of care belongs here alongside the town Amelia and Tom built. You can carry that care forward as yourself: Nell, a human neighbor from a family of beekeepers.
+
+Action: Choose to stay in Honeybrook.
+
+### A notebook with room for others
+
+Gate: stayed; place: welcome.
+
+A clear place on the spare-room desk becomes your investigation corner. Your own family research stays in its folder. There is room beside it for someone else’s question.
+
+Action: Set out a notebook for citizen cases.
+
+You promise to listen before deciding, ask permission before examining possessions, and return what belongs to others.
+
+Action: Write my working principles.
+
+The first requests are ordinary things that matter to the people who lost them. A keepsake can carry an entire childhood.
+
+Action: Open the citizen casebook.
+
+### The first thank you
+
+Gate: case1; place: welcome.
+
+The citizen whose case you resolved comes looking for you. They remember that you asked what the missing thing meant before asking where it went.
+
+Action: Listen to what the returned keepsake means.
+
+Their thanks are a little awkward and very sincere. You do not need to make a speech.
+
+Action: Thank them for trusting me.
+
+You record the shared memory. Honeybrook is becoming a place where people know Nell’s own work as well as her resemblance to Goldilocks.
+
+Action: Keep the memory and continue.
+
+### Familiar work in an unfamiliar home
+
+Gate: bee1; place: honey.
+
+Among frames and honey jars, your hands know the work. Almost everyone in your family loves bees; you are part of that long beekeeping lineage.
+
+Action: Remember the family’s shared beekeeping knowledge.
+
+The bears listen while you explain a careful observation. Your profession is investigation, but the family trade has always been close to your heart.
+
+Action: Share one observation with the Honey House.
+
+The familiar work eases the strangeness of a new place. You can belong to the family far away and the community welcoming you here.
+
+Action: Record this first season together.
+
+### The honey goes farther
+
+Gate: order1; place: bakery.
+
+Your labelled honey delivery has reached its destination. A jar that began at the apiary now belongs to the work of another place.
+
+Action: Check the signed delivery record.
+
+Wally talks through what the kitchen can prepare with its checked supplies. You see your work becoming someone else’s supper or Fair treat.
+
+Action: Listen to how the honey will be used.
+
+The jar’s batch stays traceable. The delivery and the thanks both remain in your notebook.
+
+Action: Keep the shared-work memory.
+
+### Before the curtain rises
+
+Gate: fair1; place: circus.
+
+The public sees the performance; you have seen the rehearsal marks and the clear paths that make it possible.
+
+Action: Check my crew’s handover.
+
+A performer pauses long enough to thank the people who put everything where it belonged.
+
+Action: Credit the whole crew.
+
+You step back from the route as the evening begins. The applause will reach backstage too.
+
+Action: Watch the opening from the agreed place.
+
+### After the midway empties
+
+Gate: fair3; place: fair.
+
+The last visitors have left. Familiar music quiets, and the Fair becomes a place of folded cloths, counted pieces and tired friends.
+
+Action: Walk the closing route with the crew.
+
+Nobody needs another performance. Someone offers a seat and asks how your day went.
+
+Action: Sit and tell them one small thing.
+
+The Fair is ready for another day, and the conversation asks nothing more of you.
+
+Action: Keep the quiet closing memory.
+
+### They remember Nell
+
+Gate: camp2; place: camp.
+
+A supervised group remembers your earlier visit. One cub points out an observation they made after your bee workshop.
+
+Action: Listen before offering an explanation.
+
+The counselor shows you how the group kept using its notebooks. Your afternoon mattered after you left.
+
+Action: Credit the cubs for their own work.
+
+You are welcomed back as an adult visitor and helper. Nobody has mistaken Nell for a cub or a bear.
+
+Action: Record the returning-group memory.
+
+### A place beside the counselor
+
+Gate: camp5; place: camp.
+
+The counselor invites you to help plan a supervised afternoon. You have earned responsibility through useful, completed visits.
+
+Action: Read the group’s actual needs first.
+
+You plan accessible observation, a quiet participation choice and enough materials for each registered camper.
+
+Action: Prepare the plan with the counselor.
+
+The counselor remains responsible for the cubs. Your new role gives you more ways to help without replacing their care.
+
+Action: Accept the visiting workshop-leader role.
+
+### A chair beneath the refuge roof
+
+Gate: storm; place: refuge.
+
+The current community alert has brought people inside. The existing shelter crew keeps families together while the storm scenario continues outside.
+
+Action: Join the assigned quiet seating area.
+
+A neighbor asks whether you have somewhere comfortable to sit. Even here, welcome is offered before useful work.
+
+Action: Accept a seat and listen.
+
+The crew’s instructions and the red alert remain in charge. Your conversation can wait whenever they need your attention.
+
+Action: Keep company without blocking the crew.
+
+### The first walk after the all clear
+
+Gate: recovery1; place: bridge.
+
+The confirmed all-clear has allowed the assigned recovery crew to work. Your completed route report is one small part of reopening the community.
+
+Action: Read the signed crew report.
+
+You notice what people are checking first: a neighbor’s door, a family’s supplies, the route someone needs to get home.
+
+Action: Ask whose practical need comes next.
+
+The town’s recovery continues through homes, Fair stalls and camp. You can return to those jobs at your own pace.
+
+Action: Keep helping after the alarm is quiet.
+
+### Room at the recovery table
+
+Gate: recovery4; place: welcome.
+
+The recovery jobs have connected several places again. A shared table is being prepared for the people who helped and the people who needed help.
+
+Action: Set another checked place.
+
+Nobody is asked to prove they carried enough baskets to deserve supper. You remember how important that has always been here.
+
+Action: Welcome the next neighbor to sit.
+
+There is relief in the ordinary sound of a meal starting.
+
+Action: Sit down when my place is ready.
+
+### Word from home
+
+Gate: familyReply; place: post.
+
+A reply to your posted discovery has reached the fictional family post. Your relatives have read what you learned. Their relief is tangled with grief for the years they cannot recover.
+
+Action: Open the family’s reply.
+
+“We keep reading her words. We never imagined the bears were keeping our own kin safe. We are still frightened of the woods, but we want to understand the people who loved her.”
+
+Action: Read the reply again without hurrying.
+
+The family asks whether a carefully arranged visit might be possible. The invitation is your next choice, not an arrival that has already happened.
+
+Action: Keep the reply safely.
+
+### An invitation through the woods
+
+Gate: invite; place: post.
+
+You have received the family’s reply and built trust through citizen cases. You can describe a real route, a real welcome and people you know.
+
+Action: Choose to invite the family.
+
+You explain that they can meet you at the boundary and take the journey one place at a time. You name no promise that fear will disappear at once.
+
+Action: Write a patient invitation.
+
+The invitation goes into Harold’s fictional outgoing post. No real message is sent. Their visit remains a later step.
+
+Action: Seal and post the invitation in the game.
+
+### At the woodland boundary
+
+Gate: familyVisit; place: bridge.
+
+After the invitation has had time to reach them, your human relatives have chosen to meet you at the agreed boundary. Nell was the first human arrival; this is a later, deliberately unlocked visit.
+
+Action: Meet the arriving relatives.
+
+They notice tracks and pause. This time you are beside them. You tell them about the first welcome you received and the neighbors waiting farther along the route.
+
+Action: Offer to walk together at their pace.
+
+They choose to follow you towards Welcome House. Nobody is carried past their fear by a game timer.
+
+Action: Begin the escorted visit.
+
+### The welcome they could not imagine
+
+Gate: familyEscorted; place: welcome.
+
+Your relatives arrive with you. Amelia offers the same ordinary hospitality she offered Nell, while the visitors work out how to answer a bear who has just asked whether they would like something to eat.
+
+Action: Make the introductions gently.
+
+One relative begins to cry. You let them finish. They have spent generations imagining a different ending for their lost kin.
+
+Action: Stay beside them while they take it in.
+
+There is food, a chair and time to speak. They are beginning to understand how a frightened little girl could have found a home here.
+
+Action: Share the first family visit with the bears.
+
+### The path they can walk now
+
+Gate: familyWelcomed; place: hollow.
+
+The family continues with you into Bear Hollow. They know that reaching it now cannot return the years when Goldilocks waited.
+
+Action: Walk the remembered paths together.
+
+They listen to the bears’ remembrance of her. Gratitude and sorrow sit close together, and nobody asks them to choose only one.
+
+Action: Listen with the family.
+
+You have brought the two sides of the story into the same place at last.
+
+Action: Keep this new family memory.
+
+### Another family chapter
+
+Gate: heldLetter; place: post.
+
+Harold has another part of the family story to discuss. This chapter remains unreleased until the author’s revised letter and its related history are ready.
+
+Action: Listen when this chapter is released.
+
+The later conversation concerns earlier writings kept from public view. It must unfold as its own discovery, not be treated as something Nell already knew on arrival.
+
+Action: Examine the later discovery carefully.
+
+Keep its chronology separate from the final letter and from the unchanged original manuscript.
+
+Action: Record what this later chapter establishes.
+
+### The afternoon nobody needed solving
+
+Gate: cozy3; place: mary.
+
+Rain keeps a quiet rhythm beyond the porch. Big Mama has saved a chair, and there is no case waiting on the table.
+
+Action: Take the offered chair.
+
+You talk about something ordinary. The conversation wanders, and nobody tries to turn it into an assignment.
+
+Action: Stay for the unhurried conversation.
+
+You leave with a shared memory and no score to defend.
+
+Action: Thank her for the afternoon.
+
+### A drawing in the learning basket
+
+Gate: case4; place: library.
+
+A drawing of the community includes you: a golden-haired human with a notebook, standing among bears.
+
+Action: Look at the drawing with its maker.
+
+They have remembered Nell herself. You ask what they noticed, and their answer has more to do with listening than with being famous.
+
+Action: Thank them for showing me.
+
+You keep a copy with permission.
+
+Action: Place the drawing in my keepsakes.
+
+### The envelope that grows
+
+Gate: order3; place: garden.
+
+A thank-you envelope holds a few seeds and a note about the work your deliveries made possible.
+
+Action: Read the note at the garden bench.
+
+You find a place for the seeds in the pollinator plan. Something shared can become another season’s work.
+
+Action: Add them to the agreed planting plan.
+
+The note stays in your notebook. The flowers will belong to the bees as much as to the people who planted them.
+
+Action: Keep the growing thank-you memory.
+
+### Honey beside the winter window
+
+Gate: winter; place: honey.
+
+Winter apiary work has moved indoors where it can. You check the observation records without opening a colony just to have something to do.
+
+Action: Respect the colony’s quiet season.
+
+A sealed jar on the shelf carries a batch you remember preparing. It recalls the places that honey reached.
+
+Action: Read the batch’s delivery memories.
+
+You make room in the notebook for spring. There will be more seasons here if you choose to stay for them.
+
+Action: Keep the winter-to-spring plan.
+
+### An evening for the careful listener
+
+Gate: case12; place: square.
+
+Several citizens whose cases you helped resolve have arranged a small gathering. Nobody has made you a ruler or rewritten who founded Honeybrook.
+
+Action: Accept their invitation as Nell.
+
+They remember returned keepsakes, corrected misunderstandings and the care you took with their stories.
+
+Action: Thank them for trusting my work.
+
+You leave knowing that there are still people to meet and cases to solve. Being appreciated has not ended your adventure.
+
+Action: Keep serving as Honeybrook’s investigator.
+
+### There is another page
+
+Gate: case32; place: welcome.
+
+Your casebook is thick with finished work. The community is still full of ordinary lives that occasionally need a careful pair of eyes.
+
+Action: Review what I have learned.
+
+You leave space for new requests without forgetting the promises already made.
+
+Action: Check my outstanding promises.
+
+The notebook remains open. Nell’s life in Honeybrook can continue.
+
+Action: Begin another unhurried day.
+
+
+## Forty citizen investigations
+
+### The blue-button keepsake
+
+A treasured button has vanished from a little keepsake packet.
+
+A round impression remains in a soft bookmark. → A reading basket was carried outside. → The button is caught in the basket’s loose lining.
+
+The button travelled inside the reading basket. Mend the lining and return the keepsake.
+
+### The twice-delivered parcel
+
+Two homes believe the same parcel belongs to them.
+
+One wrapper has an old forwarding label. → The delivery book records one parcel, not two. → The address inside the wrapping belongs to Welcome House.
+
+An old label caused two delivery expectations. Correct the forwarding entry and deliver it once.
+
+### The missing honey biscuits
+
+A tray of biscuits appears to have disappeared before an order.
+
+A spare tray was marked for visitors. → The Fair order is still cooling on another shelf. → Welcome House received only the marked spare tray.
+
+The visitor tray and sale order were confused. Label the trays and finish the correct delivery.
+
+### The library book that hummed
+
+Readers hear a little hum near a returned book.
+
+The book itself has no moving parts. → A pressed flower has stuck beside its cover. → A bee is resting by the open reading-room window.
+
+The sound came from a bee near the window. Give it a clear outdoor route and return the book.
+
+### The garden’s crooked labels
+
+A planting plan no longer matches the garden labels.
+
+The watering route crosses the label tray. → The labels were gathered before the path was swept. → The original notebook still records the correct rows.
+
+A tidying mix-up moved the labels. Restore the labels from the recorded plan.
+
+### A chair saved for nobody
+
+A reserved chair stays empty at every supper.
+
+The note says next Thursday but has no date. → The visitor asked about a later gathering. → The invitation was filed with last week’s post.
+
+The invitation was placed in the wrong week. Send the corrected date and keep the welcome open.
+
+### The squeak beneath the bridge
+
+Neighbors hear an unfamiliar squeak near the crossing.
+
+The sound comes from the approach, not the arch. → An empty handcart waits beside the railing. → Its dry wheel squeaks when turned.
+
+A handcart wheel caused the noise. Service the cart and record a separate bridge check.
+
+### The supper song nobody knew
+
+Two song sheets have different words for the same supper tune.
+
+One sheet is marked rehearsal. → The library holds the earlier verse. → The family intentionally added a welcome refrain.
+
+The sheets contain two legitimate versions. Preserve both versions with their purpose noted.
+
+### The backstage ribbon trail
+
+A costume ribbon seems to point towards the bakery.
+
+The ribbon matches a repair basket. → The basket rode on an empty delivery trolley. → The ribbon is snagged under the trolley handle.
+
+The repair basket left the ribbon on the trolley. Return it and check the costume repair.
+
+### The tickets with yesterday’s date
+
+A batch of tickets carries an incorrect date.
+
+The printing sample and final stack were stored together. → The order slip gives the correct performance. → The wrong stack is stamped sample.
+
+A sample batch was packed by mistake. Exchange the samples before the gate opens.
+
+### The silent music stand
+
+A musician’s tune cards have disappeared from the stand.
+
+The stand was moved after rehearsal. → A folder contains cards copied in another key. → The original cards are inside the stand’s carrying sleeve.
+
+The cards were stored safely in the folded stand. Restore the music and mark the sleeve.
+
+### The carousel’s missing rosette
+
+A handmade rosette is missing from an exhibit.
+
+Its fastening thread has loosened. → A cub’s drawing shows it beside the display, not taken away. → It rests behind the folded exhibit cloth.
+
+The rosette slipped behind the display cloth. Repair its fastening and credit the maker.
+
+### The funnel-cake flour puzzle
+
+Two flour orders appear to have swapped destinations.
+
+Both sacks arrived on the same trolley. → Their contents labels agree with the supplier’s book. → Only the removable destination tags were switched.
+
+The destinations were swapped on otherwise correct sacks. Check the contents and deliver each to its stand.
+
+### The midway bell at closing
+
+A game bell sounds after the midway closes.
+
+There is no player at the counter. → A loose cord crosses the closing gate. → The gate pulls the cord when the wind moves it.
+
+The closing gate is tugging the bell cord. Secure the cord and retest the gate.
+
+### The lantern that would not light
+
+One practical backstage lantern stays dark.
+
+Its service tag asks for a fresh cell. → A charged cell was delivered in a separate box. → The box remains with the unopened supply order.
+
+The replacement cell was never unpacked. Fit the prepared replacement and record the check.
+
+### The prize nobody claimed
+
+A winning craft has no matching prize collection.
+
+The judging record names the entry, not its owner. → The maker used a household nickname on the form. → The address book connects the nickname to the correct home.
+
+The maker’s nickname did not match the collection list. Verify the entry and deliver the earned prize.
+
+### The emptied hive tool rack
+
+The hive tools are missing from their usual hooks.
+
+A tool-cleaning card is signed. → The washed tools were carried away from wet shelving. → They are drying on the covered Honey House bench.
+
+The tools were moved for cleaning and drying. Return them to a clean labelled rack.
+
+### The honey with two labels
+
+One jar carries two different batch names.
+
+The lower label belongs to a reused outer sleeve. → The sealed jar’s batch mark matches the current ledger. → The contents record identifies a single inspected batch.
+
+An old sleeve label survived on the new package. Replace the sleeve and keep the batch traceable.
+
+### The flowers with no visitors
+
+A flower patch seems strangely quiet.
+
+A new path screen shades the flowers during visiting hours. → Other sunny patches are receiving pollinators. → Moving the screen restores the patch’s light.
+
+The temporary screen is shading the flowers. Move the screen and keep a comparison note.
+
+### The winter stores discrepancy
+
+The winter stores count is lower than the ledger.
+
+Some jars are reserved for community deliveries. → The dispatch column has not been added to the summary. → The shelf count plus signed deliveries matches the total.
+
+The summary omitted recorded deliveries. Reconcile the ledger without blaming a neighbor.
+
+### The clover seed envelope
+
+A seed packet has been shelved as a letter.
+
+The envelope carries a pollinator sketch. → The garden plan lists the same seed batch. → A loose bookmark covers the packet’s seed label.
+
+The bookmark hid the packet’s purpose. Return the seeds with the planting plan.
+
+### The dripping honey tap
+
+A bottling station leaves a sticky patch overnight.
+
+A jar was removed before the drip tray was positioned. → The tap’s inspection record is current. → A little honey remains in the removable spout.
+
+Residual honey drained after the tray was moved. Clean the spout and position the tray before closing.
+
+### The recipe that lost its sweetness
+
+A familiar recipe tastes different from the practice batch.
+
+The practice card uses a different spoon measure. → The honey batch is correctly recorded. → The handwritten amount belongs to a larger recipe.
+
+The larger batch measure was copied into the small recipe. Scale the recipe carefully and keep both cards.
+
+### The footprint in the garden bed
+
+A crushed seed row looks like careless trampling.
+
+A maintenance board was laid over the soft path. → Rain loosened its edge beside the bed. → The board slid into the seedlings without anyone crossing them.
+
+A slipping maintenance board damaged the row. Restore the seedlings and secure the path board.
+
+### The cub’s missing nature notebook
+
+A camper cannot find a notebook needed for a presentation.
+
+A leaf rubbing is copied on loose practice paper. → The learning basket travelled with the presentation supplies. → The notebook is under the basket’s flat drawing board.
+
+The notebook was packed beneath the drawing board. Return it privately and help finish the presentation.
+
+### The cabin with two delivery lists
+
+A cabin receives duplicate bedding requests.
+
+One list is a draft from before the roster changed. → The current roster has one signed bedding assignment. → The old list lacks the final check mark.
+
+The draft request was treated as current. Withdraw the duplicate while keeping every camper supplied.
+
+### The missing campfire verse
+
+A music sheet stops halfway through a verse.
+
+The photocopy ends at a folded edge. → The full source has another panel. → The missing verse is on the folded back of the source.
+
+The folded page was copied on only one side. Copy the complete sheet and rehearse it together.
+
+### The trail marker pointing home
+
+A temporary marker appears to point the wrong way.
+
+Its label describes the return route. → The route card has separate outward and return arrows. → The sign was mounted facing the outward approach.
+
+A return marker was mounted on the wrong approach. Remount it and walk both directions to check.
+
+### The craft box without a name
+
+A carefully made craft cannot be matched to its maker.
+
+Its name card slipped beneath a divider. → The materials record shows the correct group. → The hidden card names the maker.
+
+The maker’s card was hidden by the divider. Return the craft with its creator credited.
+
+### The lunch baskets that changed cabins
+
+Two groups receive each other’s lunch baskets.
+
+The food cards remain sealed to their proper baskets. → The detachable route cards were clipped in reverse order. → The preparation ledger confirms each intended group.
+
+The route cards were reversed. Check dietary cards and exchange the whole sealed baskets.
+
+### The telescope’s cloudy circle
+
+An evening observation shows a cloudy circle.
+
+The demonstration cover is still attached. → The lens inspection reports no damage. → Removing the cover restores the view.
+
+The demonstration cover obscured the view. Store the cover and repeat the observation.
+
+### The keepsake left at departure
+
+A keepsake remains after a visiting group leaves.
+
+Its label uses a temporary cabin name. → The visit register links the cabin to the correct group. → The group left a forwarding address.
+
+The temporary cabin label hid the return address. Pack and post it to the registered group.
+
+### The blanket with the wrong family tag
+
+A clean blanket carries another family’s temporary tag.
+
+Tags were removed for washing. → The linen record tracks bundles separately. → Two loose tags were attached to the wrong clean bundles.
+
+The loose tags were swapped during clean-linen sorting. Check the linen record and correct both tags.
+
+### The shelter’s unclaimed satchel
+
+A satchel remains after the all-clear.
+
+A route card is tucked into its outer pocket. → The check-in record identifies the visiting party. → The party’s return address matches the route card.
+
+The satchel belongs to the checked-in visiting party. Verify ownership and arrange its return.
+
+### The radio message with half a name
+
+A recovery message sounds as if it names the wrong district.
+
+The recording begins after the speaker started. → The written report gives the full district name. → The crew log confirms the same destination.
+
+The beginning of the message was clipped. Confirm the full report before dispatching supplies.
+
+### The soup count that would not balance
+
+The meal ledger seems to show missing portions.
+
+A staff meal batch is written in the margin. → The served totals include that batch. → The cooking summary excludes the marginal entry.
+
+The summary omitted the separately recorded staff batch. Reconcile the meals and keep the staff entry visible.
+
+### The lantern found outside
+
+A shelter lantern is discovered beside a path.
+
+A crew borrowed it for the route sweep. → The handover note lists the lantern’s number. → Its return was marked on the crew sheet, not the store sheet.
+
+The lantern’s handover was recorded in only one ledger. Return it and reconcile both records.
+
+### The dry room with a damp corner
+
+A corner of the emptied refuge floor is damp.
+
+The nearby water jug has a loose carrying lid. → There is no new roof stain above the corner. → The damp patch follows the jug’s carrying route.
+
+A loose jug lid spilled water during turnover. Dry the route and check the jug before storage.
+
+### The reopening notice that vanished
+
+A reopening notice is missing from the public board.
+
+The new notice was placed behind a removable weather cover. → The all-clear was properly recorded. → The cover’s back pocket contains the notice.
+
+The notice slipped into the weather cover’s pocket. Display the confirmed notice and secure the cover.
+
+### The welcome table’s empty place
+
+A recovery supper has one more setting than registered guests.
+
+A visiting crew member was invited after the main count. → The invitation is recorded beside the crew report. → The extra place matches that invitation.
+
+The extra setting belongs to the late-invited helper. Update the guest count and keep the chair ready.
+
+
+## Honeybrook Treasury and Fair prices
+
+The unnamed bear town-treasurer role is a game addition. Admission tickets cost $2; a game uses one, a ride two. A $30 wristband covers rides for one existing Fair day. Earned prize tickets are separate. Concession sales and ticket sales create balanced receipts, with operating reserves and the retained city Fair fund visible at Town Hall. No real money is collected. Original wallets and earned prizes are preserved; no historical revenue is invented.
