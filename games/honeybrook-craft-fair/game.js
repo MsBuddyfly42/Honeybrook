@@ -2669,4 +2669,4 @@ $('#fair-backup-file').onchange=async event=>{
 
 })();
 
-const officeButton=document.createElement('button');officeButton.id='fairTicketOffice';officeButton.className='btn btn-small';officeButton.textContent='Tickets · $2 / Wristband · $30';officeButton.onclick=()=>window.HoneybrookFairOffice.office();document.body.append(officeButton);
+const officeButton=document.createElement('button');officeButton.id='fairTicketOffice';officeButton.hidden=!!window.HoneybrookTownNavigation?.isTown;officeButton.className='btn btn-small';officeButton.textContent='Tickets · $2 / Wristband · $30';officeButton.onclick=()=>window.HoneybrookFairOffice.office();document.body.append(officeButton);
