@@ -90,5 +90,24 @@
       "quietcub08"
     ],
     "format": "PNG original; four complete landscape room views"
+  },
+  {
+    "file": "assets/welcome-house/quiet-cubs-c.png",
+    "tool": "built-in image_gen",
+    "reference": "assets/welcome-house/welcome-house-private.png \u00b7 top-right approved quiet guest bedroom",
+    "prompt": "Use case: photorealistic-natural. Asset type: Honeybrook quiet guest bedroom game photography atlas. Match ONLY the TOP RIGHT quiet guest bedroom in the reference: honey-colored wooden single bed, floral patchwork quilt, wooden wardrobe, little shaded lamp, cream plaster between timber beams, floral curtains, woodland window, oval woven rug, personal keepsake chest, simple wooden washstand with pitcher and bowl. Create an exact 2x2 grid with four equally sized landscape photographs, no gutters/borders/text/UI. Top-left: a new Birch quiet guest bedroom, one cozy carved wooden SINGLE bed with cream-and-soft-green floral quilt, wardrobe, bedside lamp, chair and keepsake chest. Top-right: a new Rose quiet guest bedroom, one cozy carved wooden SINGLE bed with rose-and-cream floral quilt, wardrobe, bedside lamp, chair and keepsake chest. Bottom-left: alternate angle of the Birch bedroom. Bottom-right: alternate angle of the Rose bedroom. Keep the modest homey cottage scale and materials of the exact approved guest-room reference. Empty rooms prepared for young bear cubs arriving alone: quiet private comfort, clear routes, restrained lighting. No humans, no characters, no double beds, bunk beds, nursery cots, institutional/hotel setting, distress, modern electronics, text or watermark.",
+    "sha256": "455d725612288720f774ae9edd8b93b1ab17b7a5a68c3e8def7a75a7144097fb",
+    "rooms": [
+      "quietcub09",
+      "quietcub10"
+    ],
+    "tiles": [
+      0,
+      1
+    ],
+    "unusedTiles": [
+      2,
+      3
+    ]
   }
 ]

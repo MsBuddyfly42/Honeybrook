@@ -1166,11 +1166,27 @@
           "via": "Front hall → quiet cottage wing",
           "floor": 0,
           "quietCubRoom": true
+        },
+        {
+          "id": "quietcub09",
+          "name": "Quiet guest bedroom · Birch",
+          "entrance": false,
+          "via": "Front hall → quiet cottage wing",
+          "floor": 0,
+          "quietCubRoom": true
+        },
+        {
+          "id": "quietcub10",
+          "name": "Quiet guest bedroom · Rose",
+          "entrance": false,
+          "via": "Front hall → quiet cottage wing",
+          "floor": 0,
+          "quietCubRoom": true
         }
       ],
       "products": [],
       "parent": null,
-      "quietCubBedrooms": 8,
+      "quietCubBedrooms": 10,
       "bunkAreas": 20,
       "sharedBerths": 40,
       "familyBedrooms": 10,
@@ -7167,7 +7183,9 @@
       "quietcub05",
       "quietcub06",
       "quietcub07",
-      "quietcub08"
+      "quietcub08",
+      "quietcub09",
+      "quietcub10"
     ],
     "community": [
       "living",

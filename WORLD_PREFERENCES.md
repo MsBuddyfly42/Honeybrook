@@ -192,3 +192,5 @@ Selecting an ordinary building's town doorway should immediately enter its entra
 ## Quiet guest rooms for cubs arriving alone — October 24, 2026
 
 Add more of the existing Welcome House quiet guest bedroom, matching the owner's screenshot of its wooden single bed, floral quilt, wardrobe, little lamp and domestic cottage furnishings. These are special private rooms for young cubs separated from family, abandoned or bereaved, who may need time before feeling social. Offer steady nearby adult care and unconditional belonging. Never require socializing, personal disclosure, chores or payment to deserve a room. Preserve Nell's existing private guest room, original source histories and all saved progress. New room names describe bedrooms, not invented characters or occupancy.
+
+Latest correction: make the special quiet guest bedrooms an even ten, adding Birch and Rose to the eight existing rooms. Nell's original private guest bedroom remains separate and unchanged.
