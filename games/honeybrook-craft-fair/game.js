@@ -2515,6 +2515,7 @@ window.HoneybrookTownNavigation={
 };
 /* testing hooks */
 window.render_game_to_text = () => JSON.stringify({ scene: S.scene, day: S.day, slot: SLOTS[S.slot], weather: S.weather, coins: S.coins, ribbons: S.ribbons, basket: S.basket.length, orders: S.orders.map(o => o.who + ':' + o.text), work: Work.st && { craft: Work.st.craft.id, done: Work.st.done }, garden: S.garden.map(b => b.crop ? b.crop + ':' + b.stage : '-').join(','), bake: Bakery.st && { phase: Bakery.st.phase, i: Bakery.st.i, fill: +Bakery.st.fill.toFixed(2), mix: +Bakery.st.mix.toFixed(2), bake: +Bakery.st.bake.toFixed(2) }, pond: Pond.st && { phase: Pond.st.phase, casts: Pond.st.casts, reel: Pond.st.reel && { prog: +Pond.st.reel.prog.toFixed(2) } } });
+window.HoneybrookNativeSound={get ctx(){return Snd.ctx;},get on(){return Snd.on;},get musicGain(){return Snd.musicGain;},toggle(){return Snd.toggle();}};
 window.__S = S; window.__Work = Work; window.__Garden = Garden; window.__WS = WORKSHOPS;
 window.__reelDbg = () => Pond.st && Pond.st.reel && { fish: Pond.st.reel.fish, bar: Pond.st.reel.bar, h: Pond.st.reel.h, prog: Pond.st.reel.prog };
 

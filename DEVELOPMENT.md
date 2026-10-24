@@ -135,3 +135,5 @@ Rebuild derived profiles and the manuscript reminder after editing `nell-data.js
 ## Added connected interiors
 
 After editing room layouts, run `node scripts/build-interiors.cjs`. Room purposes and ten local tasks live in `interior-room-types.js`; `interior-engine.js` is pure and `interiors.js` handles DOM, browser-local saving and recovery. Run `node tests/interiors.cjs`, `node tests/interiors.mjs`, and `node tests/interior-navigation.mjs` with the established Playwright harness and `TEST_URL`. Keep source/manuscript and legacy saves unchanged. The inventory is `story/INTERIOR_ROOM_INVENTORY.md`; imagery provenance is `assets/interiors/manifest.json`.
+
+Audio output check: `tests/audio-playback.mjs` measures the real Web Audio waveform, tests mute silence and explicit recovery from saved muted/zero/music-off settings, and reactivation after refresh. `tests/sound-alert.mjs` covers warning visibility, countdown, siren/silence and shelter navigation. Both use the existing `TEST_URL` / `PLAYWRIGHT_MODULE` harness.
