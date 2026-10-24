@@ -14,12 +14,25 @@
       1440,
       390
     ],
-    "enterpriseGameplay": "All ten desks and eighty actual actions per width, plan arrangement, wrong-check retry, invoice/handover, partial reload, combined treasury, all 44 guide offers and older-save preservation",
+    "enterpriseGameplay": "All ten desks and eighty actual actions per width, plan arrangement, wrong-check retry, invoice/handover, partial reload, combined treasury, all 44 guide offers and older-save preservation; checked backup export and damaged-record recovery passed.",
     "stormGameplay": "Actual town/camp weather clearance, red-banner/siren removal, restored header space, navigation/reload and quiet readiness; old save strings preserved"
   },
   "sourceManuscriptSha256": "8c3c52318cd77fe5253987fbf77850d8c0ebc49bb15bb6fa142dbe38f4822cab",
   "live": {
-    "status": "pending publishing",
+    "status": "Render live",
+    "runtimeCommit": "5704fb3f1273caddd62795cbfcaf8e43753f6abb",
+    "deploy": "dep-dbe05gek1f9s73elv01g",
+    "servedCoreFilesMatched": 18,
+    "enterpriseGameplayWidths": [
+      1440,
+      390
+    ],
+    "enterpriseGameplay": "All ten desks and eighty actual actions per width, checked invoice/receipt, partial reload, 44-offer guide, combined treasury, backup/recovery and old-save preservation passed using live-served assets.",
+    "stormGameplayWidths": [
+      1440,
+      390
+    ],
+    "stormGameplay": "Town and camp timed termination, red-banner/siren removal, layout cleanup, navigation/reload and optional quiet readiness passed using live-served assets.",
     "fullLegacyWorldReplay": false
   }
 }
