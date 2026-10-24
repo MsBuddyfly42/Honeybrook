@@ -1,0 +1,13 @@
+# Honeybrook Welcome & Supply Office
+
+This static game copy adapts the owner's Everyday Office from `MsBuddyfly42/s3lfmde-solo-office` at commit `42cd48846a2d18dd1b9ccdd8ac945a455a51b31a`. The original private office, sign-in, SQLite database and personal business records are untouched. Only selected client components, pure practice/bookkeeping rules and generated scene assets were copied. The original coastal business-world simulation and private API are not shipped.
+
+Open `index.html` from Welcome House. Working careers & ledgers provides work requests across the mapped buildings and outside work locations, with blank source worksheets, checked writing, actual physical-room completion evidence, supply handling and filed handovers. Source details differ for reception, stock, mail, editorial, civic, accounting, food, garden, repair and learning work. Receiving jobs post a real stock receipt once. Career titles derive from filed inspected jobs, not money or a Complete shortcut. Physical job work must be completed in its own saved room; accepting a job or opening its photograph is insufficient.
+
+The copied eight-room office preserves working telephone, filing, stationery, printer/copier/fax controls, optional animal care and the original office practice worksheets. Animal care is optional in Honeybrook and does not block career work. The original office's unrelated business-world navigation is replaced by Honeybrook records. The desk computer opens Honeybrook Desk Books, a separate double-entry game/practice workspace; it does not silently change the old Treasury or charge real money.
+
+The connected reception tab embeds the actual existing Welcome House, community-refuge and camp-shelter books. Names, stories, family details, room allocations, housing and source-reference corrections remain in their original reception save key. No new reception record is prefilled or fabricated.
+
+New office keys are `honeybrook_welcome_office_v1`, `honeybrook_office_operations_v1`, `honeybrook_office_writing_v1` and two `honeybrook_office_books_*_v1` modes. These use checked browser records, revision checks, pre-write checkpoints and stale-tab protection. They are separate from both the original Honeybrook saves and the private Solo Office account. Game saves are browser-local, not private cloud synchronization. Download recovery records before clearing browser data. The office manual stays available beside work; no real-time deadline applies.
+
+Build with `node scripts/build-welcome-office.cjs` and an installed esbuild/React toolchain. The checked-in bundle serves directly on Honeybrook's existing static Render service. Runtime dependency versions used for the bundle: React / ReactDOM 19.2.6 and esbuild 0.25.0.

@@ -27,3 +27,5 @@ body:has(>.honeybrook-sound){padding-bottom:120px}.honeybrook-sound{max-height:7
 .community-all-clear{flex:1 1 100%;box-sizing:border-box;max-width:100%;border-radius:8px}
 /* Light shortcut buttons in the dark header need dark labels. */
 .community-page .community-header nav>a.community-link{background:#fff9e9;color:#304a34}.community-page .community-header nav>a.community-link:hover,.community-page .community-header nav>a.community-link:focus-visible{background:#f1e4c3;color:#243b2a}
+/* In-flow settings never rise above other pages' working dialogs. Red alerts keep their own priority. */
+.honeybrook-sound{z-index:auto}
