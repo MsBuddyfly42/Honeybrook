@@ -131,3 +131,7 @@ Rebuild derived profiles and the manuscript reminder after editing `nell-data.js
 `nell-research.js` defines the fourteen sequential case files, pure research/mail rules and family-letter draft. `nell-research-ui.js` provides real-place visit entry, evidence choices, safe additive writes and fictional outgoing post. Run `node tests/nell-research.cjs` and the expanded `tests/nell.mjs` after changing these. Keep the 22 v1 journey labels stable for save compatibility. New Harold meetings require complete research; previously completed journeys do not get reset. Rebuild `story/GAME_ADDITIONS.md` for the exact case notes and both draft letters.
 
 `honeybrook-ready.js` reveals restored pages once; inline head guards are intentionally tiny and appear before styles/content. Keep saved lighting application early and keep the fail-open timer. Run `tests/refresh.mjs` after changes to first-paint routing or page headers.
+
+## Added connected interiors
+
+After editing room layouts, run `node scripts/build-interiors.cjs`. Room purposes and ten local tasks live in `interior-room-types.js`; `interior-engine.js` is pure and `interiors.js` handles DOM, browser-local saving and recovery. Run `node tests/interiors.cjs`, `node tests/interiors.mjs`, and `node tests/interior-navigation.mjs` with the established Playwright harness and `TEST_URL`. Keep source/manuscript and legacy saves unchanged. The inventory is `story/INTERIOR_ROOM_INVENTORY.md`; imagery provenance is `assets/interiors/manifest.json`.

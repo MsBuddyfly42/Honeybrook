@@ -170,3 +170,7 @@ Every question, quiz and activity must match the specific room or location where
 Keep green navigation headers compact. Secondary controls should be available through a hover menu, with equivalent tap and keyboard access, leaving room for the photographic scene.
 
 The welcome front page uses **one stationary photograph only**: the original first Welcome House image (`assets/nell/welcome.webp`). No slideshow, automatic photo changes, scene counter or slideshow controls.
+
+## Interior rooms and bear-world reference — October 24, 2026
+
+Give every business and home/cabin/cottage at least five connected interior rooms, each with ten purpose-specific assignments and appropriate photographic scenes. Homes receive seven domestic rooms. The owner rejected ordinary human-country interiors and explicitly chose the **inside of the Community Storm Refuge** as the visual reference: actual furry bears, substantial warm timber/stone architecture, bear-scale furnishings and plum/green textiles. Keep lighting restrained. Match a building's use and existing exterior family; do not turn outdoor paths/lawns into indoor buildings. New rooms remain game additions for later manuscript adaptation.

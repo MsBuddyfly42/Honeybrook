@@ -1,0 +1,138 @@
+[
+  {
+    "file": "assets/interiors/home.webp",
+    "sha256": "95c0afe87471cbfaf935408211d2aa68b7a6df77cdec89bac0e2a0996bfc9417",
+    "width": 1536,
+    "height": 1024,
+    "tool": "built-in image_gen",
+    "compositionBrief": "Top-left: cozy cottage living room with a stone fireplace, sofa, armchairs and low coffee table. Top-right: peaceful cottage bedroom with a made double bed, wardrobe and bedside table. Bottom-left: clean cottage bathroom with bath, sink, toilet and towel shelves. Bottom-right: family dining room with wooden table, chairs, sideboard and crockery.",
+    "sourceGeneration": "exec-e5e72389-0bae-41d6-b54c-796324b494d2.png",
+    "finalEdit": "exec-6139450f-921e-4229-a63e-dc4d262608e0.png",
+    "referenceStyle": "Existing Community Storm Refuge photographic brown-bear interiors: warm timber, stone, plum/green furnishings, bear anatomy, no humans, restrained lighting",
+    "tiles": [
+      "top-left",
+      "top-right",
+      "bottom-left",
+      "bottom-right"
+    ]
+  },
+  {
+    "file": "assets/interiors/household.webp",
+    "sha256": "0bd12081042f5fd215e7bea97d60d436a15500d91f192b1a63c721d1ac88ff35",
+    "width": 1536,
+    "height": 1024,
+    "tool": "built-in image_gen",
+    "compositionBrief": "Top-left: cottage kitchen with counters, sink, stove, mixing tools and cupboards. Top-right: household laundry room with washer, utility sink, drying rack and folded linen. Bottom-left: walk-in household pantry with labelled jars, grain bins and produce baskets. Bottom-right: quiet home study with writing desk, bookcase, notebook and reading lamp.",
+    "sourceGeneration": "exec-591b8548-4297-4b03-a045-b551bf491c69.png",
+    "finalEdit": null,
+    "referenceStyle": "Existing Community Storm Refuge photographic brown-bear interiors: warm timber, stone, plum/green furnishings, bear anatomy, no humans, restrained lighting",
+    "tiles": [
+      "top-left",
+      "top-right",
+      "bottom-left",
+      "bottom-right"
+    ]
+  },
+  {
+    "file": "assets/interiors/shop.webp",
+    "sha256": "f9d489bb2dcb090ed52f89a643758125a52910d03c152dbe257a7a92752f4b57",
+    "width": 1536,
+    "height": 1024,
+    "tool": "built-in image_gen",
+    "compositionBrief": "Top-left: welcoming indoor reception and waiting room with reception desk and chairs. Top-right: country shop checkout and packing room with counter, till, parcel boxes and wrapping paper. Bottom-left: tidy stockroom with numbered shelves, crates and inventory trolley. Bottom-right: practical management office with desk, computer, telephone, files and planning board.",
+    "sourceGeneration": "exec-67573b44-16c7-4239-8d52-29204adc061b.png",
+    "finalEdit": null,
+    "referenceStyle": "Existing Community Storm Refuge photographic brown-bear interiors: warm timber, stone, plum/green furnishings, bear anatomy, no humans, restrained lighting",
+    "tiles": [
+      "top-left",
+      "top-right",
+      "bottom-left",
+      "bottom-right"
+    ]
+  },
+  {
+    "file": "assets/interiors/food.webp",
+    "sha256": "de01cdae047b43dbafc00c7b70c58793af1354995b18e3f8f74600579b1bf573",
+    "width": 1536,
+    "height": 1024,
+    "tool": "built-in image_gen",
+    "compositionBrief": "Top-left: commercial food preparation kitchen with clean counters, scales, bowls and ingredient trays. Top-right: bakery oven room with bread ovens, baking racks, proofing trays and mitts. Bottom-left: dishwashing and sanitation room with deep sinks, racks, clean crockery and separate dirty return. Bottom-right: walk-in cold storage room with chilled shelves, sealed containers and a clear aisle.",
+    "sourceGeneration": "exec-e0bc5fc8-bfc4-46cb-a90b-3907d559b660.png",
+    "finalEdit": null,
+    "referenceStyle": "Existing Community Storm Refuge photographic brown-bear interiors: warm timber, stone, plum/green furnishings, bear anatomy, no humans, restrained lighting",
+    "tiles": [
+      "top-left",
+      "top-right",
+      "bottom-left",
+      "bottom-right"
+    ]
+  },
+  {
+    "file": "assets/interiors/craft.webp",
+    "sha256": "0415a4040a75aa4dc3d686e6fd200d2d4588ce2fcca67d5c7c756f631403c3f6",
+    "width": 1536,
+    "height": 1024,
+    "tool": "built-in image_gen",
+    "compositionBrief": "Top-left: carpentry workshop with workbench, wood clamps, measuring tools and timber racks. Top-right: sewing and textile workroom with sewing machine, fabric cutting table, thread and patterns. Bottom-left: art and pottery studio with easels, paints, clay table and pottery shelves. Bottom-right: computer troubleshooting laboratory with unplugged training PCs, cable diagrams, test bench and organized parts.",
+    "sourceGeneration": "exec-58d62a14-7286-41e5-93c8-4c737c6d31ec.png",
+    "finalEdit": null,
+    "referenceStyle": "Existing Community Storm Refuge photographic brown-bear interiors: warm timber, stone, plum/green furnishings, bear anatomy, no humans, restrained lighting",
+    "tiles": [
+      "top-left",
+      "top-right",
+      "bottom-left",
+      "bottom-right"
+    ]
+  },
+  {
+    "file": "assets/interiors/civic.webp",
+    "sha256": "31b6368293ee3fb981a60985aef475b98ab7543df14afdce43720bdb589604a6",
+    "width": 1536,
+    "height": 1024,
+    "tool": "built-in image_gen",
+    "compositionBrief": "Top-left: equipped classroom with desks, teaching board, books and demonstration worktable. Top-right: library archive and reading room with catalog drawers, protected documents, research desks and bookcases. Bottom-left: private first aid and visitor care room with examination couch, handwashing sink and clean supplies. Bottom-right: dental teaching and examination room with dental chair, clean instrument storage, sink and oral-health display.",
+    "sourceGeneration": "exec-680f9648-0f99-4b58-a28c-ac1ba77db076.png",
+    "finalEdit": null,
+    "referenceStyle": "Existing Community Storm Refuge photographic brown-bear interiors: warm timber, stone, plum/green furnishings, bear anatomy, no humans, restrained lighting",
+    "tiles": [
+      "top-left",
+      "top-right",
+      "bottom-left",
+      "bottom-right"
+    ]
+  },
+  {
+    "file": "assets/interiors/specialist.webp",
+    "sha256": "1e89106b8016a4552a4147a006bcb5958703b02073f6e4b8dfdb64ba199e04a0",
+    "width": 1536,
+    "height": 1024,
+    "tool": "built-in image_gen",
+    "compositionBrief": "Top-left: theater backstage dressing and costume room with makeup mirrors, garment rails and cue sheets. Top-right: acoustic music rehearsal room with piano, music stands, chairs and instrument storage. Bottom-left: hair braiding salon with styling chair, mirror, wash basin and tidy comb-and-thread trolley. Bottom-right: honey bottling and inspection room with food-safe honey extractor, sealed honey jars, batch cards and clean workbench.",
+    "sourceGeneration": "exec-34ef1c7c-11e8-4087-a936-3ade8fbbf2f5.png",
+    "finalEdit": null,
+    "referenceStyle": "Existing Community Storm Refuge photographic brown-bear interiors: warm timber, stone, plum/green furnishings, bear anatomy, no humans, restrained lighting",
+    "tiles": [
+      "top-left",
+      "top-right",
+      "bottom-left",
+      "bottom-right"
+    ]
+  },
+  {
+    "file": "assets/interiors/recreation.webp",
+    "sha256": "d4141fbbbb104c3e8da068590023e48807acd71ed092b2e5a7ffa847b6cd7245",
+    "width": 1536,
+    "height": 1024,
+    "tool": "built-in image_gen",
+    "compositionBrief": "Top-left: indoor family gym room with basketball rack, exercise mats, clear activity court and bench seating. Top-right: swimming pool changing room with private cubicles, benches, lockers and dry accessible aisle, no pool. Bottom-left: indoor bowling room with two short lanes, ball return and seating. Bottom-right: quiet indoor family game room with puzzle table, board games, accessible chairs and supply shelves.",
+    "sourceGeneration": "exec-7a0a3423-7ca6-4c85-85b0-d6375ab1a6d2.png",
+    "finalEdit": null,
+    "referenceStyle": "Existing Community Storm Refuge photographic brown-bear interiors: warm timber, stone, plum/green furnishings, bear anatomy, no humans, restrained lighting",
+    "tiles": [
+      "top-left",
+      "top-right",
+      "bottom-left",
+      "bottom-right"
+    ]
+  }
+]
