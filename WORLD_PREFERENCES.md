@@ -168,3 +168,5 @@ Stock the equipment-only Wilderness Store separately from its adjoining general 
 Every question, quiz and activity must match the specific room or location where it is offered, including classrooms, town businesses, sports venues, camp and the Fairgrounds. Troubleshooting rooms teach troubleshooting; concession work uses that concession’s food; a ride/game asks about its own operation or play. Do not reuse mixed general quizzes or unrelated activities merely by changing the location heading. Keep local daily quiz progress separate so visiting another room cannot substitute its questions into an unfinished attempt. Preserve previous records.
 
 Keep green navigation headers compact. Secondary controls should be available through a hover menu, with equivalent tap and keyboard access, leaving room for the photographic scene.
+
+The welcome front page uses **one stationary photograph only**: the original first Welcome House image (`assets/nell/welcome.webp`). No slideshow, automatic photo changes, scene counter or slideshow controls.
