@@ -25,6 +25,7 @@ jobs:
           node tests/interiors.cjs
           node tests/working-careers.cjs
           node tests/stock-careers.cjs
+          node tests/job-coaching.cjs
           node tests/room-photo-audit.cjs
       - name: Install pinned browser harness
         run: |
@@ -47,6 +48,9 @@ jobs:
           node tests/quiet-guest-rooms.mjs
           node tests/interior-navigation.mjs
           node tests/welcome-office.mjs
+          node tests/job-coaching.mjs
+          node tests/fair-coaching.mjs
+          node tests/town-job-coaching.mjs
           node tests/office-printing.mjs
           node tests/sound-layout.mjs
           node tests/room-photos.mjs
