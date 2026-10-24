@@ -162,3 +162,9 @@ Keep the prepared hills trip Wednesday–Friday, every traveler’s actual suppl
 Provide the listed housing, chapel, kitchen/pantry, recreation, healthcare, sanitation, security, administration, maintenance/storage, mail, wood preparation, trade studios, gardens, fishing/waterfront, photographic hills campsite and sacred well, plus ten enterprises. The shelter must fit the full roster, with individual check-in, real supply inspections, staff all-clear and connected underground comfort, dining, sanitation, recreation and study rooms. Severe weather closes outdoor activities. Keep the real U.S. clock separate from deliberate camp dates and real-date quizzes.
 
 Stock the equipment-only Wilderness Store separately from its adjoining general Camp Store; show real book sample pages and illustrations. Supply substantial weekly meals and fresh unread-only camp mail/news based on recorded events in camp, Bear Hollow and Honeybrook. Keep prices affordable and service/maintenance consequences understandable; money never purchases trust, knowledge, spiritual standing or earned qualifications.
+
+## Location relevance and compact controls — October 23, 2026
+
+Every question, quiz and activity must match the specific room or location where it is offered, including classrooms, town businesses, sports venues, camp and the Fairgrounds. Troubleshooting rooms teach troubleshooting; concession work uses that concession’s food; a ride/game asks about its own operation or play. Do not reuse mixed general quizzes or unrelated activities merely by changing the location heading. Keep local daily quiz progress separate so visiting another room cannot substitute its questions into an unfinished attempt. Preserve previous records.
+
+Keep green navigation headers compact. Secondary controls should be available through a hover menu, with equivalent tap and keyboard access, leaving room for the photographic scene.

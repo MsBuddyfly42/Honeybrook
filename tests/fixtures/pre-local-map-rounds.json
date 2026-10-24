@@ -1,0 +1,598 @@
+[
+  {
+    "place": "town-troubleshooting-classroom",
+    "kind": "order",
+    "context": {
+      "tools": [
+        "Connection diagram",
+        "Checked test tools",
+        "Service log"
+      ],
+      "steps": [
+        "Record the symptom",
+        "Isolate one variable",
+        "Test the connection",
+        "Document the result"
+      ],
+      "project": "A workstation repair test",
+      "labels": [
+        "Connection diagram",
+        "Checked test tools",
+        "Service log",
+        "Record the symptom",
+        "Isolate one variable",
+        "Test the connection",
+        "Document the result",
+        "Troubleshooting Classroom"
+      ]
+    },
+    "state": {
+      "version": 1,
+      "revision": 1,
+      "updatedAt": 1792813811585,
+      "rounds": {
+        "town-troubleshooting-classroom~order": {
+          "kind": "order",
+          "level": "hard",
+          "episode": 0,
+          "campActivity": null,
+          "tiles": [
+            2,
+            0,
+            1,
+            3
+          ],
+          "chosen": [],
+          "matched": [],
+          "moves": 0,
+          "hints": 0,
+          "done": false
+        }
+      },
+      "records": {
+        "town-troubleshooting-classroom~order": {
+          "day": "2026-10-23",
+          "count": 0,
+          "total": 0,
+          "best": 0
+        }
+      }
+    }
+  },
+  {
+    "place": "town-troubleshooting-classroom",
+    "kind": "word",
+    "context": {
+      "tools": [
+        "Connection diagram",
+        "Checked test tools",
+        "Service log"
+      ],
+      "steps": [
+        "Record the symptom",
+        "Isolate one variable",
+        "Test the connection",
+        "Document the result"
+      ],
+      "project": "A workstation repair test",
+      "labels": [
+        "Connection diagram",
+        "Checked test tools",
+        "Service log",
+        "Record the symptom",
+        "Isolate one variable",
+        "Test the connection",
+        "Document the result",
+        "Troubleshooting Classroom"
+      ]
+    },
+    "state": {
+      "version": 1,
+      "revision": 1,
+      "updatedAt": 1792813811586,
+      "rounds": {
+        "town-troubleshooting-classroom~word": {
+          "kind": "word",
+          "level": "hard",
+          "episode": 0,
+          "campActivity": null,
+          "tiles": [
+            6,
+            11,
+            8,
+            3,
+            4,
+            0,
+            5,
+            9,
+            7,
+            10,
+            2,
+            1
+          ],
+          "chosen": [],
+          "matched": [],
+          "moves": 0,
+          "hints": 0,
+          "done": false
+        }
+      },
+      "records": {
+        "town-troubleshooting-classroom~word": {
+          "day": "2026-10-23",
+          "count": 0,
+          "total": 0,
+          "best": 0
+        }
+      }
+    }
+  },
+  {
+    "place": "town-troubleshooting-classroom",
+    "kind": "memory",
+    "context": {
+      "tools": [
+        "Connection diagram",
+        "Checked test tools",
+        "Service log"
+      ],
+      "steps": [
+        "Record the symptom",
+        "Isolate one variable",
+        "Test the connection",
+        "Document the result"
+      ],
+      "project": "A workstation repair test",
+      "labels": [
+        "Connection diagram",
+        "Checked test tools",
+        "Service log",
+        "Record the symptom",
+        "Isolate one variable",
+        "Test the connection",
+        "Document the result",
+        "Troubleshooting Classroom"
+      ]
+    },
+    "state": {
+      "version": 1,
+      "revision": 1,
+      "updatedAt": 1792813811586,
+      "rounds": {
+        "town-troubleshooting-classroom~memory": {
+          "kind": "memory",
+          "level": "hard",
+          "episode": 0,
+          "campActivity": null,
+          "tiles": [
+            0,
+            3,
+            2,
+            7,
+            6,
+            5,
+            0,
+            6,
+            1,
+            1,
+            4,
+            4,
+            2,
+            5,
+            3,
+            7
+          ],
+          "chosen": [],
+          "matched": [],
+          "moves": 0,
+          "hints": 0,
+          "done": false
+        }
+      },
+      "records": {
+        "town-troubleshooting-classroom~memory": {
+          "day": "2026-10-23",
+          "count": 0,
+          "total": 0,
+          "best": 0
+        }
+      }
+    }
+  },
+  {
+    "place": "town-office-skills-classroom",
+    "kind": "order",
+    "context": {
+      "tools": [
+        "Invoice cards",
+        "Ledger sheet",
+        "Calculator card"
+      ],
+      "steps": [
+        "Read the source figures",
+        "Enter quantities",
+        "Check the totals",
+        "Record the verified account"
+      ],
+      "project": "A checked supply ledger",
+      "labels": [
+        "Invoice cards",
+        "Ledger sheet",
+        "Calculator card",
+        "Read the source figures",
+        "Enter quantities",
+        "Check the totals",
+        "Record the verified account",
+        "Office Skills Classroom"
+      ]
+    },
+    "state": {
+      "version": 1,
+      "revision": 1,
+      "updatedAt": 1792813811586,
+      "rounds": {
+        "town-office-skills-classroom~order": {
+          "kind": "order",
+          "level": "hard",
+          "episode": 0,
+          "campActivity": null,
+          "tiles": [
+            3,
+            0,
+            2,
+            1
+          ],
+          "chosen": [],
+          "matched": [],
+          "moves": 0,
+          "hints": 0,
+          "done": false
+        }
+      },
+      "records": {
+        "town-office-skills-classroom~order": {
+          "day": "2026-10-23",
+          "count": 0,
+          "total": 0,
+          "best": 0
+        }
+      }
+    }
+  },
+  {
+    "place": "town-office-skills-classroom",
+    "kind": "word",
+    "context": {
+      "tools": [
+        "Invoice cards",
+        "Ledger sheet",
+        "Calculator card"
+      ],
+      "steps": [
+        "Read the source figures",
+        "Enter quantities",
+        "Check the totals",
+        "Record the verified account"
+      ],
+      "project": "A checked supply ledger",
+      "labels": [
+        "Invoice cards",
+        "Ledger sheet",
+        "Calculator card",
+        "Read the source figures",
+        "Enter quantities",
+        "Check the totals",
+        "Record the verified account",
+        "Office Skills Classroom"
+      ]
+    },
+    "state": {
+      "version": 1,
+      "revision": 1,
+      "updatedAt": 1792813811587,
+      "rounds": {
+        "town-office-skills-classroom~word": {
+          "kind": "word",
+          "level": "hard",
+          "episode": 0,
+          "campActivity": null,
+          "tiles": [
+            2,
+            1,
+            0,
+            8,
+            4,
+            5,
+            7,
+            9,
+            6,
+            3
+          ],
+          "chosen": [],
+          "matched": [],
+          "moves": 0,
+          "hints": 0,
+          "done": false
+        }
+      },
+      "records": {
+        "town-office-skills-classroom~word": {
+          "day": "2026-10-23",
+          "count": 0,
+          "total": 0,
+          "best": 0
+        }
+      }
+    }
+  },
+  {
+    "place": "town-office-skills-classroom",
+    "kind": "memory",
+    "context": {
+      "tools": [
+        "Invoice cards",
+        "Ledger sheet",
+        "Calculator card"
+      ],
+      "steps": [
+        "Read the source figures",
+        "Enter quantities",
+        "Check the totals",
+        "Record the verified account"
+      ],
+      "project": "A checked supply ledger",
+      "labels": [
+        "Invoice cards",
+        "Ledger sheet",
+        "Calculator card",
+        "Read the source figures",
+        "Enter quantities",
+        "Check the totals",
+        "Record the verified account",
+        "Office Skills Classroom"
+      ]
+    },
+    "state": {
+      "version": 1,
+      "revision": 1,
+      "updatedAt": 1792813811587,
+      "rounds": {
+        "town-office-skills-classroom~memory": {
+          "kind": "memory",
+          "level": "hard",
+          "episode": 0,
+          "campActivity": null,
+          "tiles": [
+            7,
+            3,
+            6,
+            4,
+            2,
+            1,
+            7,
+            5,
+            4,
+            1,
+            2,
+            5,
+            6,
+            0,
+            0,
+            3
+          ],
+          "chosen": [],
+          "matched": [],
+          "moves": 0,
+          "hints": 0,
+          "done": false
+        }
+      },
+      "records": {
+        "town-office-skills-classroom~memory": {
+          "day": "2026-10-23",
+          "count": 0,
+          "total": 0,
+          "best": 0
+        }
+      }
+    }
+  },
+  {
+    "place": "town-honeybrook-orchard",
+    "kind": "order",
+    "context": {
+      "tools": [
+        "Seed packet",
+        "Planting tray",
+        "Watering can"
+      ],
+      "steps": [
+        "Read the seed needs",
+        "Prepare the bed",
+        "Plant at checked spacing",
+        "Water and record"
+      ],
+      "project": "Spring seed bed",
+      "labels": [
+        "Seed packet",
+        "Planting tray",
+        "Watering can",
+        "Read the seed needs",
+        "Prepare the bed",
+        "Plant at checked spacing",
+        "Water and record",
+        "Honeybrook Orchard"
+      ]
+    },
+    "state": {
+      "version": 1,
+      "revision": 1,
+      "updatedAt": 1792813811587,
+      "rounds": {
+        "town-honeybrook-orchard~order": {
+          "kind": "order",
+          "level": "hard",
+          "episode": 0,
+          "campActivity": null,
+          "tiles": [
+            2,
+            0,
+            1,
+            3
+          ],
+          "chosen": [],
+          "matched": [],
+          "moves": 0,
+          "hints": 0,
+          "done": false
+        }
+      },
+      "records": {
+        "town-honeybrook-orchard~order": {
+          "day": "2026-10-23",
+          "count": 0,
+          "total": 0,
+          "best": 0
+        }
+      }
+    }
+  },
+  {
+    "place": "town-honeybrook-orchard",
+    "kind": "word",
+    "context": {
+      "tools": [
+        "Seed packet",
+        "Planting tray",
+        "Watering can"
+      ],
+      "steps": [
+        "Read the seed needs",
+        "Prepare the bed",
+        "Plant at checked spacing",
+        "Water and record"
+      ],
+      "project": "Spring seed bed",
+      "labels": [
+        "Seed packet",
+        "Planting tray",
+        "Watering can",
+        "Read the seed needs",
+        "Prepare the bed",
+        "Plant at checked spacing",
+        "Water and record",
+        "Honeybrook Orchard"
+      ]
+    },
+    "state": {
+      "version": 1,
+      "revision": 1,
+      "updatedAt": 1792813811587,
+      "rounds": {
+        "town-honeybrook-orchard~word": {
+          "kind": "word",
+          "level": "hard",
+          "episode": 0,
+          "campActivity": null,
+          "tiles": [
+            3,
+            4,
+            5,
+            0,
+            1,
+            6,
+            8,
+            7,
+            9,
+            2
+          ],
+          "chosen": [],
+          "matched": [],
+          "moves": 0,
+          "hints": 0,
+          "done": false
+        }
+      },
+      "records": {
+        "town-honeybrook-orchard~word": {
+          "day": "2026-10-23",
+          "count": 0,
+          "total": 0,
+          "best": 0
+        }
+      }
+    }
+  },
+  {
+    "place": "town-honeybrook-orchard",
+    "kind": "memory",
+    "context": {
+      "tools": [
+        "Seed packet",
+        "Planting tray",
+        "Watering can"
+      ],
+      "steps": [
+        "Read the seed needs",
+        "Prepare the bed",
+        "Plant at checked spacing",
+        "Water and record"
+      ],
+      "project": "Spring seed bed",
+      "labels": [
+        "Seed packet",
+        "Planting tray",
+        "Watering can",
+        "Read the seed needs",
+        "Prepare the bed",
+        "Plant at checked spacing",
+        "Water and record",
+        "Honeybrook Orchard"
+      ]
+    },
+    "state": {
+      "version": 1,
+      "revision": 1,
+      "updatedAt": 1792813811587,
+      "rounds": {
+        "town-honeybrook-orchard~memory": {
+          "kind": "memory",
+          "level": "hard",
+          "episode": 0,
+          "campActivity": null,
+          "tiles": [
+            1,
+            4,
+            0,
+            2,
+            7,
+            5,
+            3,
+            5,
+            3,
+            2,
+            0,
+            4,
+            1,
+            6,
+            6,
+            7
+          ],
+          "chosen": [],
+          "matched": [],
+          "moves": 0,
+          "hints": 0,
+          "done": false
+        }
+      },
+      "records": {
+        "town-honeybrook-orchard~memory": {
+          "day": "2026-10-23",
+          "count": 0,
+          "total": 0,
+          "best": 0
+        }
+      }
+    }
+  }
+]

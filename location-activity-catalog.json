@@ -4847,6 +4847,4235 @@
           "Share the performance"
         ]
       }
+    ],
+    "town-ancient-pillars": [
+      {
+        "name": "Record the pillar patterns · practice round",
+        "tools": [
+          "Field notebook",
+          "Reference map",
+          "Soft measuring tape"
+        ],
+        "steps": [
+          "Observe the public site",
+          "Compare the reference",
+          "Record the evidence",
+          "Preserve the site"
+        ]
+      },
+      {
+        "name": "Record the pillar patterns · family challenge",
+        "tools": [
+          "Field notebook",
+          "Reference map",
+          "Soft measuring tape"
+        ],
+        "steps": [
+          "Observe the public site",
+          "Compare the reference",
+          "Record the evidence",
+          "Preserve the site"
+        ]
+      },
+      {
+        "name": "Record the pillar patterns · advanced review",
+        "tools": [
+          "Field notebook",
+          "Reference map",
+          "Soft measuring tape"
+        ],
+        "steps": [
+          "Observe the public site",
+          "Compare the reference",
+          "Record the evidence",
+          "Preserve the site"
+        ]
+      }
+    ],
+    "town-ancient-beartree": [
+      {
+        "name": "Care for the beartree roots · practice round",
+        "tools": [
+          "Seed tray",
+          "Watering can",
+          "Hand trowel"
+        ],
+        "steps": [
+          "Prepare soil",
+          "Plant six spaces",
+          "Water each space",
+          "Inspect the growth"
+        ]
+      },
+      {
+        "name": "Care for the beartree roots · family challenge",
+        "tools": [
+          "Seed tray",
+          "Watering can",
+          "Hand trowel"
+        ],
+        "steps": [
+          "Prepare soil",
+          "Plant six spaces",
+          "Water each space",
+          "Inspect the growth"
+        ]
+      },
+      {
+        "name": "Care for the beartree roots · advanced review",
+        "tools": [
+          "Seed tray",
+          "Watering can",
+          "Hand trowel"
+        ],
+        "steps": [
+          "Prepare soil",
+          "Plant six spaces",
+          "Water each space",
+          "Inspect the growth"
+        ]
+      }
+    ],
+    "town-singing-pond": [
+      {
+        "name": "Survey the pond sounds · practice round",
+        "tools": [
+          "Field notebook",
+          "Marked route map",
+          "Binoculars"
+        ],
+        "steps": [
+          "Check the marked path",
+          "Observe without disturbing",
+          "Record three findings",
+          "Return by the same route"
+        ]
+      },
+      {
+        "name": "Survey the pond sounds · family challenge",
+        "tools": [
+          "Field notebook",
+          "Marked route map",
+          "Binoculars"
+        ],
+        "steps": [
+          "Check the marked path",
+          "Observe without disturbing",
+          "Record three findings",
+          "Return by the same route"
+        ]
+      },
+      {
+        "name": "Survey the pond sounds · advanced review",
+        "tools": [
+          "Field notebook",
+          "Marked route map",
+          "Binoculars"
+        ],
+        "steps": [
+          "Check the marked path",
+          "Observe without disturbing",
+          "Record three findings",
+          "Return by the same route"
+        ]
+      }
+    ],
+    "town-giant-mushroom-hollow": [
+      {
+        "name": "Map a safe fungi observation route · practice round",
+        "tools": [
+          "Field notebook",
+          "Marked route map",
+          "Binoculars"
+        ],
+        "steps": [
+          "Check the marked path",
+          "Observe without disturbing",
+          "Record three findings",
+          "Return by the same route"
+        ]
+      },
+      {
+        "name": "Map a safe fungi observation route · family challenge",
+        "tools": [
+          "Field notebook",
+          "Marked route map",
+          "Binoculars"
+        ],
+        "steps": [
+          "Check the marked path",
+          "Observe without disturbing",
+          "Record three findings",
+          "Return by the same route"
+        ]
+      },
+      {
+        "name": "Map a safe fungi observation route · advanced review",
+        "tools": [
+          "Field notebook",
+          "Marked route map",
+          "Binoculars"
+        ],
+        "steps": [
+          "Check the marked path",
+          "Observe without disturbing",
+          "Record three findings",
+          "Return by the same route"
+        ]
+      }
+    ],
+    "town-broken-path-marker": [
+      {
+        "name": "Restore the public path marker · practice round",
+        "tools": [
+          "Measuring tape",
+          "Supervised repair kit",
+          "Inspection sheet"
+        ],
+        "steps": [
+          "Inspect the structure",
+          "Measure the parts",
+          "Fit supervised repairs",
+          "Check stability"
+        ]
+      },
+      {
+        "name": "Restore the public path marker · family challenge",
+        "tools": [
+          "Measuring tape",
+          "Supervised repair kit",
+          "Inspection sheet"
+        ],
+        "steps": [
+          "Inspect the structure",
+          "Measure the parts",
+          "Fit supervised repairs",
+          "Check stability"
+        ]
+      },
+      {
+        "name": "Restore the public path marker · advanced review",
+        "tools": [
+          "Measuring tape",
+          "Supervised repair kit",
+          "Inspection sheet"
+        ],
+        "steps": [
+          "Inspect the structure",
+          "Measure the parts",
+          "Fit supervised repairs",
+          "Check stability"
+        ]
+      }
+    ],
+    "town-distant-cottage-glimpse": [
+      {
+        "name": "Document the cottage sightline · practice round",
+        "tools": [
+          "Field notebook",
+          "Reference map",
+          "Soft measuring tape"
+        ],
+        "steps": [
+          "Observe the public site",
+          "Compare the reference",
+          "Record the evidence",
+          "Preserve the site"
+        ]
+      },
+      {
+        "name": "Document the cottage sightline · family challenge",
+        "tools": [
+          "Field notebook",
+          "Reference map",
+          "Soft measuring tape"
+        ],
+        "steps": [
+          "Observe the public site",
+          "Compare the reference",
+          "Record the evidence",
+          "Preserve the site"
+        ]
+      },
+      {
+        "name": "Document the cottage sightline · advanced review",
+        "tools": [
+          "Field notebook",
+          "Reference map",
+          "Soft measuring tape"
+        ],
+        "steps": [
+          "Observe the public site",
+          "Compare the reference",
+          "Record the evidence",
+          "Preserve the site"
+        ]
+      }
+    ],
+    "town-ranger-boundary": [
+      {
+        "name": "Prepare the ranger check-in station · practice round",
+        "tools": [
+          "Roster board",
+          "Route map",
+          "Checked supply kit"
+        ],
+        "steps": [
+          "Read the roster",
+          "Check the marked route",
+          "Inspect the supplies",
+          "Confirm the return plan"
+        ]
+      },
+      {
+        "name": "Prepare the ranger check-in station · family challenge",
+        "tools": [
+          "Roster board",
+          "Route map",
+          "Checked supply kit"
+        ],
+        "steps": [
+          "Read the roster",
+          "Check the marked route",
+          "Inspect the supplies",
+          "Confirm the return plan"
+        ]
+      },
+      {
+        "name": "Prepare the ranger check-in station · advanced review",
+        "tools": [
+          "Roster board",
+          "Route map",
+          "Checked supply kit"
+        ],
+        "steps": [
+          "Read the roster",
+          "Check the marked route",
+          "Inspect the supplies",
+          "Confirm the return plan"
+        ]
+      }
+    ],
+    "town-end-of-public-trail": [
+      {
+        "name": "Inspect the trail boundary · practice round",
+        "tools": [
+          "Roster board",
+          "Route map",
+          "Checked supply kit"
+        ],
+        "steps": [
+          "Read the roster",
+          "Check the marked route",
+          "Inspect the supplies",
+          "Confirm the return plan"
+        ]
+      },
+      {
+        "name": "Inspect the trail boundary · family challenge",
+        "tools": [
+          "Roster board",
+          "Route map",
+          "Checked supply kit"
+        ],
+        "steps": [
+          "Read the roster",
+          "Check the marked route",
+          "Inspect the supplies",
+          "Confirm the return plan"
+        ]
+      },
+      {
+        "name": "Inspect the trail boundary · advanced review",
+        "tools": [
+          "Roster board",
+          "Route map",
+          "Checked supply kit"
+        ],
+        "steps": [
+          "Read the roster",
+          "Check the marked route",
+          "Inspect the supplies",
+          "Confirm the return plan"
+        ]
+      }
+    ],
+    "town-ancient-bridge": [
+      {
+        "name": "Inspect and mend the public bridge railing · practice round",
+        "tools": [
+          "Measuring tape",
+          "Supervised repair kit",
+          "Inspection sheet"
+        ],
+        "steps": [
+          "Inspect the structure",
+          "Measure the parts",
+          "Fit supervised repairs",
+          "Check stability"
+        ]
+      },
+      {
+        "name": "Inspect and mend the public bridge railing · family challenge",
+        "tools": [
+          "Measuring tape",
+          "Supervised repair kit",
+          "Inspection sheet"
+        ],
+        "steps": [
+          "Inspect the structure",
+          "Measure the parts",
+          "Fit supervised repairs",
+          "Check stability"
+        ]
+      },
+      {
+        "name": "Inspect and mend the public bridge railing · advanced review",
+        "tools": [
+          "Measuring tape",
+          "Supervised repair kit",
+          "Inspection sheet"
+        ],
+        "steps": [
+          "Inspect the structure",
+          "Measure the parts",
+          "Fit supervised repairs",
+          "Check stability"
+        ]
+      }
+    ],
+    "town-incomplete-map-stone": [
+      {
+        "name": "Compare the old map with public paths · practice round",
+        "tools": [
+          "Field notebook",
+          "Reference map",
+          "Soft measuring tape"
+        ],
+        "steps": [
+          "Observe the public site",
+          "Compare the reference",
+          "Record the evidence",
+          "Preserve the site"
+        ]
+      },
+      {
+        "name": "Compare the old map with public paths · family challenge",
+        "tools": [
+          "Field notebook",
+          "Reference map",
+          "Soft measuring tape"
+        ],
+        "steps": [
+          "Observe the public site",
+          "Compare the reference",
+          "Record the evidence",
+          "Preserve the site"
+        ]
+      },
+      {
+        "name": "Compare the old map with public paths · advanced review",
+        "tools": [
+          "Field notebook",
+          "Reference map",
+          "Soft measuring tape"
+        ],
+        "steps": [
+          "Observe the public site",
+          "Compare the reference",
+          "Record the evidence",
+          "Preserve the site"
+        ]
+      }
+    ],
+    "town-weathered-marking": [
+      {
+        "name": "Preserve the weathered inscription · practice round",
+        "tools": [
+          "Field notebook",
+          "Reference map",
+          "Soft measuring tape"
+        ],
+        "steps": [
+          "Observe the public site",
+          "Compare the reference",
+          "Record the evidence",
+          "Preserve the site"
+        ]
+      },
+      {
+        "name": "Preserve the weathered inscription · family challenge",
+        "tools": [
+          "Field notebook",
+          "Reference map",
+          "Soft measuring tape"
+        ],
+        "steps": [
+          "Observe the public site",
+          "Compare the reference",
+          "Record the evidence",
+          "Preserve the site"
+        ]
+      },
+      {
+        "name": "Preserve the weathered inscription · advanced review",
+        "tools": [
+          "Field notebook",
+          "Reference map",
+          "Soft measuring tape"
+        ],
+        "steps": [
+          "Observe the public site",
+          "Compare the reference",
+          "Record the evidence",
+          "Preserve the site"
+        ]
+      }
+    ],
+    "town-welcome-bridge": [
+      {
+        "name": "Welcome an arriving family across the bridge · practice round",
+        "tools": [
+          "Family roster",
+          "Welcome packet",
+          "Accessible route map"
+        ],
+        "steps": [
+          "Greet the family",
+          "Check their needs",
+          "Show connected rooms",
+          "Confirm the family plan"
+        ]
+      },
+      {
+        "name": "Welcome an arriving family across the bridge · family challenge",
+        "tools": [
+          "Family roster",
+          "Welcome packet",
+          "Accessible route map"
+        ],
+        "steps": [
+          "Greet the family",
+          "Check their needs",
+          "Show connected rooms",
+          "Confirm the family plan"
+        ]
+      },
+      {
+        "name": "Welcome an arriving family across the bridge · advanced review",
+        "tools": [
+          "Family roster",
+          "Welcome packet",
+          "Accessible route map"
+        ],
+        "steps": [
+          "Greet the family",
+          "Check their needs",
+          "Show connected rooms",
+          "Confirm the family plan"
+        ]
+      }
+    ],
+    "town-visitor-welcome-stop": [
+      {
+        "name": "Prepare a newcomer orientation · practice round",
+        "tools": [
+          "Family roster",
+          "Welcome packet",
+          "Accessible route map"
+        ],
+        "steps": [
+          "Greet the family",
+          "Check their needs",
+          "Show connected rooms",
+          "Confirm the family plan"
+        ]
+      },
+      {
+        "name": "Prepare a newcomer orientation · family challenge",
+        "tools": [
+          "Family roster",
+          "Welcome packet",
+          "Accessible route map"
+        ],
+        "steps": [
+          "Greet the family",
+          "Check their needs",
+          "Show connected rooms",
+          "Confirm the family plan"
+        ]
+      },
+      {
+        "name": "Prepare a newcomer orientation · advanced review",
+        "tools": [
+          "Family roster",
+          "Welcome packet",
+          "Accessible route map"
+        ],
+        "steps": [
+          "Greet the family",
+          "Check their needs",
+          "Show connected rooms",
+          "Confirm the family plan"
+        ]
+      }
+    ],
+    "town-welcome-wagon-stop": [
+      {
+        "name": "Load the welcome wagon by family stop · practice round",
+        "tools": [
+          "Order sheet",
+          "Supply labels",
+          "Clean storage trays"
+        ],
+        "steps": [
+          "Count required supplies",
+          "Sort into family trays",
+          "Check the order sheet",
+          "Sign the delivery log"
+        ]
+      },
+      {
+        "name": "Load the welcome wagon by family stop · family challenge",
+        "tools": [
+          "Order sheet",
+          "Supply labels",
+          "Clean storage trays"
+        ],
+        "steps": [
+          "Count required supplies",
+          "Sort into family trays",
+          "Check the order sheet",
+          "Sign the delivery log"
+        ]
+      },
+      {
+        "name": "Load the welcome wagon by family stop · advanced review",
+        "tools": [
+          "Order sheet",
+          "Supply labels",
+          "Clean storage trays"
+        ],
+        "steps": [
+          "Count required supplies",
+          "Sort into family trays",
+          "Check the order sheet",
+          "Sign the delivery log"
+        ]
+      }
+    ],
+    "town-honeybrook-road": [
+      {
+        "name": "Inspect the main walking route · practice round",
+        "tools": [
+          "Roster board",
+          "Route map",
+          "Checked supply kit"
+        ],
+        "steps": [
+          "Read the roster",
+          "Check the marked route",
+          "Inspect the supplies",
+          "Confirm the return plan"
+        ]
+      },
+      {
+        "name": "Inspect the main walking route · family challenge",
+        "tools": [
+          "Roster board",
+          "Route map",
+          "Checked supply kit"
+        ],
+        "steps": [
+          "Read the roster",
+          "Check the marked route",
+          "Inspect the supplies",
+          "Confirm the return plan"
+        ]
+      },
+      {
+        "name": "Inspect the main walking route · advanced review",
+        "tools": [
+          "Roster board",
+          "Route map",
+          "Checked supply kit"
+        ],
+        "steps": [
+          "Read the roster",
+          "Check the marked route",
+          "Inspect the supplies",
+          "Confirm the return plan"
+        ]
+      }
+    ],
+    "town-creek-overlook": [
+      {
+        "name": "Create a creek wildlife observation · practice round",
+        "tools": [
+          "Field notebook",
+          "Marked route map",
+          "Binoculars"
+        ],
+        "steps": [
+          "Check the marked path",
+          "Observe without disturbing",
+          "Record three findings",
+          "Return by the same route"
+        ]
+      },
+      {
+        "name": "Create a creek wildlife observation · family challenge",
+        "tools": [
+          "Field notebook",
+          "Marked route map",
+          "Binoculars"
+        ],
+        "steps": [
+          "Check the marked path",
+          "Observe without disturbing",
+          "Record three findings",
+          "Return by the same route"
+        ]
+      },
+      {
+        "name": "Create a creek wildlife observation · advanced review",
+        "tools": [
+          "Field notebook",
+          "Marked route map",
+          "Binoculars"
+        ],
+        "steps": [
+          "Check the marked path",
+          "Observe without disturbing",
+          "Record three findings",
+          "Return by the same route"
+        ]
+      }
+    ],
+    "town-just-visit-bench": [
+      {
+        "name": "Refinish the welcoming bench · practice round",
+        "tools": [
+          "Surface inspection card",
+          "Supervised refinishing kit",
+          "Drying notice"
+        ],
+        "steps": [
+          "Inspect the seating surface",
+          "Prepare the supervised refinishing area",
+          "Apply the demonstrated finish",
+          "Check the dry usable seating"
+        ]
+      },
+      {
+        "name": "Refinish the welcoming bench · family challenge",
+        "tools": [
+          "Surface inspection card",
+          "Supervised refinishing kit",
+          "Drying notice"
+        ],
+        "steps": [
+          "Inspect the seating surface",
+          "Prepare the supervised refinishing area",
+          "Apply the demonstrated finish",
+          "Check the dry usable seating"
+        ]
+      },
+      {
+        "name": "Refinish the welcoming bench · advanced review",
+        "tools": [
+          "Surface inspection card",
+          "Supervised refinishing kit",
+          "Drying notice"
+        ],
+        "steps": [
+          "Inspect the seating surface",
+          "Prepare the supervised refinishing area",
+          "Apply the demonstrated finish",
+          "Check the dry usable seating"
+        ]
+      }
+    ],
+    "town-honeybrook-community-church": [
+      {
+        "name": "Prepare a whole-family KJV devotion · practice round",
+        "tools": [
+          "KJV Bible",
+          "Family reflection journal",
+          "Service-plan card"
+        ],
+        "steps": [
+          "Read Psalm 23:1 KJV",
+          "Listen to each family member",
+          "Choose a practical kindness",
+          "Record gratitude together"
+        ]
+      },
+      {
+        "name": "Prepare a whole-family KJV devotion · family challenge",
+        "tools": [
+          "KJV Bible",
+          "Family reflection journal",
+          "Service-plan card"
+        ],
+        "steps": [
+          "Read Psalm 23:1 KJV",
+          "Listen to each family member",
+          "Choose a practical kindness",
+          "Record gratitude together"
+        ]
+      },
+      {
+        "name": "Prepare a whole-family KJV devotion · advanced review",
+        "tools": [
+          "KJV Bible",
+          "Family reflection journal",
+          "Service-plan card"
+        ],
+        "steps": [
+          "Read Psalm 23:1 KJV",
+          "Listen to each family member",
+          "Choose a practical kindness",
+          "Record gratitude together"
+        ]
+      }
+    ],
+    "town-reflection-gardens": [
+      {
+        "name": "Plant a seasonal reflection bed · practice round",
+        "tools": [
+          "Seed tray",
+          "Watering can",
+          "Hand trowel"
+        ],
+        "steps": [
+          "Prepare soil",
+          "Plant six spaces",
+          "Water each space",
+          "Inspect the growth"
+        ]
+      },
+      {
+        "name": "Plant a seasonal reflection bed · family challenge",
+        "tools": [
+          "Seed tray",
+          "Watering can",
+          "Hand trowel"
+        ],
+        "steps": [
+          "Prepare soil",
+          "Plant six spaces",
+          "Water each space",
+          "Inspect the growth"
+        ]
+      },
+      {
+        "name": "Plant a seasonal reflection bed · advanced review",
+        "tools": [
+          "Seed tray",
+          "Watering can",
+          "Hand trowel"
+        ],
+        "steps": [
+          "Prepare soil",
+          "Plant six spaces",
+          "Water each space",
+          "Inspect the growth"
+        ]
+      }
+    ],
+    "town-goodberry-outreach-house": [
+      {
+        "name": "Prepare practical help for three households · practice round",
+        "tools": [
+          "Supervisor checklist",
+          "Clean comfort supplies",
+          "Privacy screen"
+        ],
+        "steps": [
+          "Ask the supervisor",
+          "Prepare clean supplies",
+          "Arrange private seating",
+          "Confirm each family is comfortable"
+        ]
+      },
+      {
+        "name": "Prepare practical help for three households · family challenge",
+        "tools": [
+          "Supervisor checklist",
+          "Clean comfort supplies",
+          "Privacy screen"
+        ],
+        "steps": [
+          "Ask the supervisor",
+          "Prepare clean supplies",
+          "Arrange private seating",
+          "Confirm each family is comfortable"
+        ]
+      },
+      {
+        "name": "Prepare practical help for three households · advanced review",
+        "tools": [
+          "Supervisor checklist",
+          "Clean comfort supplies",
+          "Privacy screen"
+        ],
+        "steps": [
+          "Ask the supervisor",
+          "Prepare clean supplies",
+          "Arrange private seating",
+          "Confirm each family is comfortable"
+        ]
+      }
+    ],
+    "town-remembrance-grove": [
+      {
+        "name": "Restore a remembrance planting · practice round",
+        "tools": [
+          "Seed tray",
+          "Watering can",
+          "Hand trowel"
+        ],
+        "steps": [
+          "Prepare soil",
+          "Plant six spaces",
+          "Water each space",
+          "Inspect the growth"
+        ]
+      },
+      {
+        "name": "Restore a remembrance planting · family challenge",
+        "tools": [
+          "Seed tray",
+          "Watering can",
+          "Hand trowel"
+        ],
+        "steps": [
+          "Prepare soil",
+          "Plant six spaces",
+          "Water each space",
+          "Inspect the growth"
+        ]
+      },
+      {
+        "name": "Restore a remembrance planting · advanced review",
+        "tools": [
+          "Seed tray",
+          "Watering can",
+          "Hand trowel"
+        ],
+        "steps": [
+          "Prepare soil",
+          "Plant six spaces",
+          "Water each space",
+          "Inspect the growth"
+        ]
+      }
+    ],
+    "town-stillwater-pond": [
+      {
+        "name": "Plan a quiet pond learning walk · practice round",
+        "tools": [
+          "Field notebook",
+          "Marked route map",
+          "Binoculars"
+        ],
+        "steps": [
+          "Check the marked path",
+          "Observe without disturbing",
+          "Record three findings",
+          "Return by the same route"
+        ]
+      },
+      {
+        "name": "Plan a quiet pond learning walk · family challenge",
+        "tools": [
+          "Field notebook",
+          "Marked route map",
+          "Binoculars"
+        ],
+        "steps": [
+          "Check the marked path",
+          "Observe without disturbing",
+          "Record three findings",
+          "Return by the same route"
+        ]
+      },
+      {
+        "name": "Plan a quiet pond learning walk · advanced review",
+        "tools": [
+          "Field notebook",
+          "Marked route map",
+          "Binoculars"
+        ],
+        "steps": [
+          "Check the marked path",
+          "Observe without disturbing",
+          "Record three findings",
+          "Return by the same route"
+        ]
+      }
+    ],
+    "town-south-bridge-overlook": [
+      {
+        "name": "Inspect the overlook and return route · practice round",
+        "tools": [
+          "Roster board",
+          "Route map",
+          "Checked supply kit"
+        ],
+        "steps": [
+          "Read the roster",
+          "Check the marked route",
+          "Inspect the supplies",
+          "Confirm the return plan"
+        ]
+      },
+      {
+        "name": "Inspect the overlook and return route · family challenge",
+        "tools": [
+          "Roster board",
+          "Route map",
+          "Checked supply kit"
+        ],
+        "steps": [
+          "Read the roster",
+          "Check the marked route",
+          "Inspect the supplies",
+          "Confirm the return plan"
+        ]
+      },
+      {
+        "name": "Inspect the overlook and return route · advanced review",
+        "tools": [
+          "Roster board",
+          "Route map",
+          "Checked supply kit"
+        ],
+        "steps": [
+          "Read the roster",
+          "Check the marked route",
+          "Inspect the supplies",
+          "Confirm the return plan"
+        ]
+      }
+    ],
+    "town-honeyfield-farm": [
+      {
+        "name": "Plant and tend a family vegetable bed · practice round",
+        "tools": [
+          "Seed tray",
+          "Watering can",
+          "Hand trowel"
+        ],
+        "steps": [
+          "Prepare soil",
+          "Plant six spaces",
+          "Water each space",
+          "Inspect the growth"
+        ]
+      },
+      {
+        "name": "Plant and tend a family vegetable bed · family challenge",
+        "tools": [
+          "Seed tray",
+          "Watering can",
+          "Hand trowel"
+        ],
+        "steps": [
+          "Prepare soil",
+          "Plant six spaces",
+          "Water each space",
+          "Inspect the growth"
+        ]
+      },
+      {
+        "name": "Plant and tend a family vegetable bed · advanced review",
+        "tools": [
+          "Seed tray",
+          "Watering can",
+          "Hand trowel"
+        ],
+        "steps": [
+          "Prepare soil",
+          "Plant six spaces",
+          "Water each space",
+          "Inspect the growth"
+        ]
+      }
+    ],
+    "town-honeybrook-orchard": [
+      {
+        "name": "Sort the orchard harvest for families · practice round",
+        "tools": [
+          "Harvest crates",
+          "Fruit condition card",
+          "Clean sorting trays"
+        ],
+        "steps": [
+          "Check the harvest record",
+          "Separate sound and damaged fruit",
+          "Pack the checked family portions",
+          "Record the sorted harvest"
+        ]
+      },
+      {
+        "name": "Sort the orchard harvest for families · family challenge",
+        "tools": [
+          "Harvest crates",
+          "Fruit condition card",
+          "Clean sorting trays"
+        ],
+        "steps": [
+          "Check the harvest record",
+          "Separate sound and damaged fruit",
+          "Pack the checked family portions",
+          "Record the sorted harvest"
+        ]
+      },
+      {
+        "name": "Sort the orchard harvest for families · advanced review",
+        "tools": [
+          "Harvest crates",
+          "Fruit condition card",
+          "Clean sorting trays"
+        ],
+        "steps": [
+          "Check the harvest record",
+          "Separate sound and damaged fruit",
+          "Pack the checked family portions",
+          "Record the sorted harvest"
+        ]
+      }
+    ],
+    "town-old-honeybrook-mill": [
+      {
+        "name": "Maintain the stopped waterwheel model · practice round",
+        "tools": [
+          "Stopped-wheel diagram",
+          "Supervisor lockout card",
+          "Maintenance log"
+        ],
+        "steps": [
+          "Confirm the practice wheel is stopped",
+          "Inspect the model bearings",
+          "Follow the supervised maintenance diagram",
+          "Record the checked mechanism"
+        ]
+      },
+      {
+        "name": "Maintain the stopped waterwheel model · family challenge",
+        "tools": [
+          "Stopped-wheel diagram",
+          "Supervisor lockout card",
+          "Maintenance log"
+        ],
+        "steps": [
+          "Confirm the practice wheel is stopped",
+          "Inspect the model bearings",
+          "Follow the supervised maintenance diagram",
+          "Record the checked mechanism"
+        ]
+      },
+      {
+        "name": "Maintain the stopped waterwheel model · advanced review",
+        "tools": [
+          "Stopped-wheel diagram",
+          "Supervisor lockout card",
+          "Maintenance log"
+        ],
+        "steps": [
+          "Confirm the practice wheel is stopped",
+          "Inspect the model bearings",
+          "Follow the supervised maintenance diagram",
+          "Record the checked mechanism"
+        ]
+      }
+    ],
+    "town-covered-bridge": [
+      {
+        "name": "Repair a sheltered bridge bench · practice round",
+        "tools": [
+          "Measuring tape",
+          "Supervised repair kit",
+          "Inspection sheet"
+        ],
+        "steps": [
+          "Inspect the structure",
+          "Measure the parts",
+          "Fit supervised repairs",
+          "Check stability"
+        ]
+      },
+      {
+        "name": "Repair a sheltered bridge bench · family challenge",
+        "tools": [
+          "Measuring tape",
+          "Supervised repair kit",
+          "Inspection sheet"
+        ],
+        "steps": [
+          "Inspect the structure",
+          "Measure the parts",
+          "Fit supervised repairs",
+          "Check stability"
+        ]
+      },
+      {
+        "name": "Repair a sheltered bridge bench · advanced review",
+        "tools": [
+          "Measuring tape",
+          "Supervised repair kit",
+          "Inspection sheet"
+        ],
+        "steps": [
+          "Inspect the structure",
+          "Measure the parts",
+          "Fit supervised repairs",
+          "Check stability"
+        ]
+      }
+    ],
+    "town-country-homes": [
+      {
+        "name": "Prepare a country guest room · practice round",
+        "tools": [
+          "Clean linen basket",
+          "Room checklist",
+          "Household supply tray"
+        ],
+        "steps": [
+          "Check each room",
+          "Place clean linens",
+          "Prepare family seating",
+          "Inspect doors and supplies"
+        ]
+      },
+      {
+        "name": "Prepare a country guest room · family challenge",
+        "tools": [
+          "Clean linen basket",
+          "Room checklist",
+          "Household supply tray"
+        ],
+        "steps": [
+          "Check each room",
+          "Place clean linens",
+          "Prepare family seating",
+          "Inspect doors and supplies"
+        ]
+      },
+      {
+        "name": "Prepare a country guest room · advanced review",
+        "tools": [
+          "Clean linen basket",
+          "Room checklist",
+          "Household supply tray"
+        ],
+        "steps": [
+          "Check each room",
+          "Place clean linens",
+          "Prepare family seating",
+          "Inspect doors and supplies"
+        ]
+      }
+    ],
+    "town-old-northern-road": [
+      {
+        "name": "Prepare the maintained road junction · practice round",
+        "tools": [
+          "Roster board",
+          "Route map",
+          "Checked supply kit"
+        ],
+        "steps": [
+          "Read the roster",
+          "Check the marked route",
+          "Inspect the supplies",
+          "Confirm the return plan"
+        ]
+      },
+      {
+        "name": "Prepare the maintained road junction · family challenge",
+        "tools": [
+          "Roster board",
+          "Route map",
+          "Checked supply kit"
+        ],
+        "steps": [
+          "Read the roster",
+          "Check the marked route",
+          "Inspect the supplies",
+          "Confirm the return plan"
+        ]
+      },
+      {
+        "name": "Prepare the maintained road junction · advanced review",
+        "tools": [
+          "Roster board",
+          "Route map",
+          "Checked supply kit"
+        ],
+        "steps": [
+          "Read the roster",
+          "Check the marked route",
+          "Inspect the supplies",
+          "Confirm the return plan"
+        ]
+      }
+    ],
+    "town-farm-market": [
+      {
+        "name": "Prepare a seasonal produce stall · practice round",
+        "tools": [
+          "Customer order",
+          "Stock labels",
+          "Account sheet"
+        ],
+        "steps": [
+          "Read the family order",
+          "Count the stock",
+          "Pack each order",
+          "Balance the account"
+        ]
+      },
+      {
+        "name": "Prepare a seasonal produce stall · family challenge",
+        "tools": [
+          "Customer order",
+          "Stock labels",
+          "Account sheet"
+        ],
+        "steps": [
+          "Read the family order",
+          "Count the stock",
+          "Pack each order",
+          "Balance the account"
+        ]
+      },
+      {
+        "name": "Prepare a seasonal produce stall · advanced review",
+        "tools": [
+          "Customer order",
+          "Stock labels",
+          "Account sheet"
+        ],
+        "steps": [
+          "Read the family order",
+          "Count the stock",
+          "Pack each order",
+          "Balance the account"
+        ]
+      }
+    ],
+    "town-honeybrook-playground": [
+      {
+        "name": "Set up a supervised family relay · practice round",
+        "tools": [
+          "Age-group roster",
+          "Boundary markers",
+          "Scorecard"
+        ],
+        "steps": [
+          "Explain the rules",
+          "Check clear boundaries",
+          "Play the supervised round",
+          "Record each team’s result"
+        ]
+      },
+      {
+        "name": "Set up a supervised family relay · family challenge",
+        "tools": [
+          "Age-group roster",
+          "Boundary markers",
+          "Scorecard"
+        ],
+        "steps": [
+          "Explain the rules",
+          "Check clear boundaries",
+          "Play the supervised round",
+          "Record each team’s result"
+        ]
+      },
+      {
+        "name": "Set up a supervised family relay · advanced review",
+        "tools": [
+          "Age-group roster",
+          "Boundary markers",
+          "Scorecard"
+        ],
+        "steps": [
+          "Explain the rules",
+          "Check clear boundaries",
+          "Play the supervised round",
+          "Record each team’s result"
+        ]
+      }
+    ],
+    "town-picnic-lawn": [
+      {
+        "name": "Prepare a twelve-person picnic lunch · practice round",
+        "tools": [
+          "Menu and portion card",
+          "Clean measuring tools",
+          "Supervisor’s recipe"
+        ],
+        "steps": [
+          "Measure ingredients",
+          "Prepare with the supervisor",
+          "Check recipe temperatures",
+          "Portion twelve plates"
+        ]
+      },
+      {
+        "name": "Prepare a twelve-person picnic lunch · family challenge",
+        "tools": [
+          "Menu and portion card",
+          "Clean measuring tools",
+          "Supervisor’s recipe"
+        ],
+        "steps": [
+          "Measure ingredients",
+          "Prepare with the supervisor",
+          "Check recipe temperatures",
+          "Portion twelve plates"
+        ]
+      },
+      {
+        "name": "Prepare a twelve-person picnic lunch · advanced review",
+        "tools": [
+          "Menu and portion card",
+          "Clean measuring tools",
+          "Supervisor’s recipe"
+        ],
+        "steps": [
+          "Measure ingredients",
+          "Prepare with the supervisor",
+          "Check recipe temperatures",
+          "Portion twelve plates"
+        ]
+      }
+    ],
+    "town-park-gardens": [
+      {
+        "name": "Restore the park pollinator beds · practice round",
+        "tools": [
+          "Seed tray",
+          "Watering can",
+          "Hand trowel"
+        ],
+        "steps": [
+          "Prepare soil",
+          "Plant six spaces",
+          "Water each space",
+          "Inspect the growth"
+        ]
+      },
+      {
+        "name": "Restore the park pollinator beds · family challenge",
+        "tools": [
+          "Seed tray",
+          "Watering can",
+          "Hand trowel"
+        ],
+        "steps": [
+          "Prepare soil",
+          "Plant six spaces",
+          "Water each space",
+          "Inspect the growth"
+        ]
+      },
+      {
+        "name": "Restore the park pollinator beds · advanced review",
+        "tools": [
+          "Seed tray",
+          "Watering can",
+          "Hand trowel"
+        ],
+        "steps": [
+          "Prepare soil",
+          "Plant six spaces",
+          "Water each space",
+          "Inspect the growth"
+        ]
+      }
+    ],
+    "town-sports-lawn": [
+      {
+        "name": "Run a cooperative lawn competition · practice round",
+        "tools": [
+          "Age-group roster",
+          "Boundary markers",
+          "Scorecard"
+        ],
+        "steps": [
+          "Explain the rules",
+          "Check clear boundaries",
+          "Play the supervised round",
+          "Record each team’s result"
+        ]
+      },
+      {
+        "name": "Run a cooperative lawn competition · family challenge",
+        "tools": [
+          "Age-group roster",
+          "Boundary markers",
+          "Scorecard"
+        ],
+        "steps": [
+          "Explain the rules",
+          "Check clear boundaries",
+          "Play the supervised round",
+          "Record each team’s result"
+        ]
+      },
+      {
+        "name": "Run a cooperative lawn competition · advanced review",
+        "tools": [
+          "Age-group roster",
+          "Boundary markers",
+          "Scorecard"
+        ],
+        "steps": [
+          "Explain the rules",
+          "Check clear boundaries",
+          "Play the supervised round",
+          "Record each team’s result"
+        ]
+      }
+    ],
+    "town-creekside-trail": [
+      {
+        "name": "Lead a supervised creek discovery walk · practice round",
+        "tools": [
+          "Field notebook",
+          "Marked route map",
+          "Binoculars"
+        ],
+        "steps": [
+          "Check the marked path",
+          "Observe without disturbing",
+          "Record three findings",
+          "Return by the same route"
+        ]
+      },
+      {
+        "name": "Lead a supervised creek discovery walk · family challenge",
+        "tools": [
+          "Field notebook",
+          "Marked route map",
+          "Binoculars"
+        ],
+        "steps": [
+          "Check the marked path",
+          "Observe without disturbing",
+          "Record three findings",
+          "Return by the same route"
+        ]
+      },
+      {
+        "name": "Lead a supervised creek discovery walk · advanced review",
+        "tools": [
+          "Field notebook",
+          "Marked route map",
+          "Binoculars"
+        ],
+        "steps": [
+          "Check the marked path",
+          "Observe without disturbing",
+          "Record three findings",
+          "Return by the same route"
+        ]
+      }
+    ],
+    "town-the-quiet-tree": [
+      {
+        "name": "Share a listening and gratitude session · practice round",
+        "tools": [
+          "KJV Bible",
+          "Family reflection journal",
+          "Service-plan card"
+        ],
+        "steps": [
+          "Read Psalm 23:1 KJV",
+          "Listen to each family member",
+          "Choose a practical kindness",
+          "Record gratitude together"
+        ]
+      },
+      {
+        "name": "Share a listening and gratitude session · family challenge",
+        "tools": [
+          "KJV Bible",
+          "Family reflection journal",
+          "Service-plan card"
+        ],
+        "steps": [
+          "Read Psalm 23:1 KJV",
+          "Listen to each family member",
+          "Choose a practical kindness",
+          "Record gratitude together"
+        ]
+      },
+      {
+        "name": "Share a listening and gratitude session · advanced review",
+        "tools": [
+          "KJV Bible",
+          "Family reflection journal",
+          "Service-plan card"
+        ],
+        "steps": [
+          "Read Psalm 23:1 KJV",
+          "Listen to each family member",
+          "Choose a practical kindness",
+          "Record gratitude together"
+        ]
+      }
+    ],
+    "town-outdoor-movie-lawn": [
+      {
+        "name": "Prepare a wholesome outdoor film evening · practice round",
+        "tools": [
+          "Event roster",
+          "Seating plan",
+          "Equipment checklist"
+        ],
+        "steps": [
+          "Confirm the program",
+          "Check the equipment",
+          "Seat each family",
+          "Inspect clear exits"
+        ]
+      },
+      {
+        "name": "Prepare a wholesome outdoor film evening · family challenge",
+        "tools": [
+          "Event roster",
+          "Seating plan",
+          "Equipment checklist"
+        ],
+        "steps": [
+          "Confirm the program",
+          "Check the equipment",
+          "Seat each family",
+          "Inspect clear exits"
+        ]
+      },
+      {
+        "name": "Prepare a wholesome outdoor film evening · advanced review",
+        "tools": [
+          "Event roster",
+          "Seating plan",
+          "Equipment checklist"
+        ],
+        "steps": [
+          "Confirm the program",
+          "Check the equipment",
+          "Seat each family",
+          "Inspect clear exits"
+        ]
+      }
+    ],
+    "town-food-cart-loop": [
+      {
+        "name": "Prepare the family food-cart lunch · practice round",
+        "tools": [
+          "Menu and portion card",
+          "Clean measuring tools",
+          "Supervisor’s recipe"
+        ],
+        "steps": [
+          "Measure ingredients",
+          "Prepare with the supervisor",
+          "Check recipe temperatures",
+          "Portion twelve plates"
+        ]
+      },
+      {
+        "name": "Prepare the family food-cart lunch · family challenge",
+        "tools": [
+          "Menu and portion card",
+          "Clean measuring tools",
+          "Supervisor’s recipe"
+        ],
+        "steps": [
+          "Measure ingredients",
+          "Prepare with the supervisor",
+          "Check recipe temperatures",
+          "Portion twelve plates"
+        ]
+      },
+      {
+        "name": "Prepare the family food-cart lunch · advanced review",
+        "tools": [
+          "Menu and portion card",
+          "Clean measuring tools",
+          "Supervisor’s recipe"
+        ],
+        "steps": [
+          "Measure ingredients",
+          "Prepare with the supervisor",
+          "Check recipe temperatures",
+          "Portion twelve plates"
+        ]
+      }
+    ],
+    "town-gamer-bear-game-show-studio": [
+      {
+        "name": "Host a wholesome family quiz show · practice round",
+        "tools": [
+          "Question cards",
+          "Host cue sheet",
+          "Team scorecard"
+        ],
+        "steps": [
+          "Explain the round rules",
+          "Read the current question",
+          "Allow each team to respond",
+          "Record the checked round result"
+        ]
+      },
+      {
+        "name": "Host a wholesome family quiz show · family challenge",
+        "tools": [
+          "Question cards",
+          "Host cue sheet",
+          "Team scorecard"
+        ],
+        "steps": [
+          "Explain the round rules",
+          "Read the current question",
+          "Allow each team to respond",
+          "Record the checked round result"
+        ]
+      },
+      {
+        "name": "Host a wholesome family quiz show · advanced review",
+        "tools": [
+          "Question cards",
+          "Host cue sheet",
+          "Team scorecard"
+        ],
+        "steps": [
+          "Explain the round rules",
+          "Read the current question",
+          "Allow each team to respond",
+          "Record the checked round result"
+        ]
+      }
+    ],
+    "town-rollin-bears-skate-palace": [
+      {
+        "name": "Prepare and lead a supervised skating session · practice round",
+        "tools": [
+          "Skate fit checklist",
+          "Clear rink plan",
+          "Beginner session card"
+        ],
+        "steps": [
+          "Check the fitted skates",
+          "Explain the stopping practice",
+          "Use the supervised beginner area",
+          "Return and inspect the skates"
+        ]
+      },
+      {
+        "name": "Prepare and lead a supervised skating session · family challenge",
+        "tools": [
+          "Skate fit checklist",
+          "Clear rink plan",
+          "Beginner session card"
+        ],
+        "steps": [
+          "Check the fitted skates",
+          "Explain the stopping practice",
+          "Use the supervised beginner area",
+          "Return and inspect the skates"
+        ]
+      },
+      {
+        "name": "Prepare and lead a supervised skating session · advanced review",
+        "tools": [
+          "Skate fit checklist",
+          "Clear rink plan",
+          "Beginner session card"
+        ],
+        "steps": [
+          "Check the fitted skates",
+          "Explain the stopping practice",
+          "Use the supervised beginner area",
+          "Return and inspect the skates"
+        ]
+      }
+    ],
+    "town-honeybrook-lanes": [
+      {
+        "name": "Host a three-family bowling meet · practice round",
+        "tools": [
+          "Bowling scorecard",
+          "Ball fit guide",
+          "Lane courtesy card"
+        ],
+        "steps": [
+          "Read the lane rules",
+          "Choose the suitable ball",
+          "Record the supervised frames",
+          "Check and total the scorecard"
+        ]
+      },
+      {
+        "name": "Host a three-family bowling meet · family challenge",
+        "tools": [
+          "Bowling scorecard",
+          "Ball fit guide",
+          "Lane courtesy card"
+        ],
+        "steps": [
+          "Read the lane rules",
+          "Choose the suitable ball",
+          "Record the supervised frames",
+          "Check and total the scorecard"
+        ]
+      },
+      {
+        "name": "Host a three-family bowling meet · advanced review",
+        "tools": [
+          "Bowling scorecard",
+          "Ball fit guide",
+          "Lane courtesy card"
+        ],
+        "steps": [
+          "Read the lane rules",
+          "Choose the suitable ball",
+          "Record the supervised frames",
+          "Check and total the scorecard"
+        ]
+      }
+    ],
+    "town-honeybrook-arcade": [
+      {
+        "name": "Build a peaceful pattern challenge · practice round",
+        "tools": [
+          "Pattern cards",
+          "Puzzle board",
+          "Practice notebook"
+        ],
+        "steps": [
+          "2",
+          "4",
+          "6",
+          "8"
+        ]
+      },
+      {
+        "name": "Build a peaceful pattern challenge · family challenge",
+        "tools": [
+          "Pattern cards",
+          "Puzzle board",
+          "Practice notebook"
+        ],
+        "steps": [
+          "2",
+          "4",
+          "6",
+          "8"
+        ]
+      },
+      {
+        "name": "Build a peaceful pattern challenge · advanced review",
+        "tools": [
+          "Pattern cards",
+          "Puzzle board",
+          "Practice notebook"
+        ],
+        "steps": [
+          "2",
+          "4",
+          "6",
+          "8"
+        ]
+      }
+    ],
+    "town-honeybrook-theater": [
+      {
+        "name": "Prepare a family theater matinee · practice round",
+        "tools": [
+          "Event roster",
+          "Seating plan",
+          "Equipment checklist"
+        ],
+        "steps": [
+          "Confirm the program",
+          "Check the equipment",
+          "Seat each family",
+          "Inspect clear exits"
+        ]
+      },
+      {
+        "name": "Prepare a family theater matinee · family challenge",
+        "tools": [
+          "Event roster",
+          "Seating plan",
+          "Equipment checklist"
+        ],
+        "steps": [
+          "Confirm the program",
+          "Check the equipment",
+          "Seat each family",
+          "Inspect clear exits"
+        ]
+      },
+      {
+        "name": "Prepare a family theater matinee · advanced review",
+        "tools": [
+          "Event roster",
+          "Seating plan",
+          "Equipment checklist"
+        ],
+        "steps": [
+          "Confirm the program",
+          "Check the equipment",
+          "Seat each family",
+          "Inspect clear exits"
+        ]
+      }
+    ],
+    "town-bear-creek-mini-golf": [
+      {
+        "name": "Organize a three-hole family course · practice round",
+        "tools": [
+          "Course scorecard",
+          "Suitable putter",
+          "Hole route card"
+        ],
+        "steps": [
+          "Check the clear putting route",
+          "Play the first supervised hole",
+          "Record strokes for all three holes",
+          "Check the completed scorecard"
+        ]
+      },
+      {
+        "name": "Organize a three-hole family course · family challenge",
+        "tools": [
+          "Course scorecard",
+          "Suitable putter",
+          "Hole route card"
+        ],
+        "steps": [
+          "Check the clear putting route",
+          "Play the first supervised hole",
+          "Record strokes for all three holes",
+          "Check the completed scorecard"
+        ]
+      },
+      {
+        "name": "Organize a three-hole family course · advanced review",
+        "tools": [
+          "Course scorecard",
+          "Suitable putter",
+          "Hole route card"
+        ],
+        "steps": [
+          "Check the clear putting route",
+          "Play the first supervised hole",
+          "Record strokes for all three holes",
+          "Check the completed scorecard"
+        ]
+      }
+    ],
+    "town-honeybrook-pool": [
+      {
+        "name": "Prepare a supervised family swim session · practice round",
+        "tools": [
+          "Participant roster",
+          "Fitted buoyancy aids",
+          "Supervisor’s check sheet"
+        ],
+        "steps": [
+          "Check safe conditions",
+          "Fit each buoyancy aid",
+          "Follow the supervisor",
+          "Check everyone back in"
+        ]
+      },
+      {
+        "name": "Prepare a supervised family swim session · family challenge",
+        "tools": [
+          "Participant roster",
+          "Fitted buoyancy aids",
+          "Supervisor’s check sheet"
+        ],
+        "steps": [
+          "Check safe conditions",
+          "Fit each buoyancy aid",
+          "Follow the supervisor",
+          "Check everyone back in"
+        ]
+      },
+      {
+        "name": "Prepare a supervised family swim session · advanced review",
+        "tools": [
+          "Participant roster",
+          "Fitted buoyancy aids",
+          "Supervisor’s check sheet"
+        ],
+        "steps": [
+          "Check safe conditions",
+          "Fit each buoyancy aid",
+          "Follow the supervisor",
+          "Check everyone back in"
+        ]
+      }
+    ],
+    "town-bearfit-gym": [
+      {
+        "name": "Lead an age-appropriate basketball relay · practice round",
+        "tools": [
+          "Basketball relay card",
+          "Age-group roster",
+          "Court boundary plan"
+        ],
+        "steps": [
+          "Explain the basketball handoff",
+          "Check the clear court",
+          "Run the adapted supervised relay",
+          "Record each group’s result"
+        ]
+      },
+      {
+        "name": "Lead an age-appropriate basketball relay · family challenge",
+        "tools": [
+          "Basketball relay card",
+          "Age-group roster",
+          "Court boundary plan"
+        ],
+        "steps": [
+          "Explain the basketball handoff",
+          "Check the clear court",
+          "Run the adapted supervised relay",
+          "Record each group’s result"
+        ]
+      },
+      {
+        "name": "Lead an age-appropriate basketball relay · advanced review",
+        "tools": [
+          "Basketball relay card",
+          "Age-group roster",
+          "Court boundary plan"
+        ],
+        "steps": [
+          "Explain the basketball handoff",
+          "Check the clear court",
+          "Run the adapted supervised relay",
+          "Record each group’s result"
+        ]
+      }
+    ],
+    "town-honeybrook-health-center": [
+      {
+        "name": "Prepare a supervised visitor care station · practice round",
+        "tools": [
+          "Supervisor checklist",
+          "Clean comfort supplies",
+          "Privacy screen"
+        ],
+        "steps": [
+          "Ask the supervisor",
+          "Prepare clean supplies",
+          "Arrange private seating",
+          "Confirm each family is comfortable"
+        ]
+      },
+      {
+        "name": "Prepare a supervised visitor care station · family challenge",
+        "tools": [
+          "Supervisor checklist",
+          "Clean comfort supplies",
+          "Privacy screen"
+        ],
+        "steps": [
+          "Ask the supervisor",
+          "Prepare clean supplies",
+          "Arrange private seating",
+          "Confirm each family is comfortable"
+        ]
+      },
+      {
+        "name": "Prepare a supervised visitor care station · advanced review",
+        "tools": [
+          "Supervisor checklist",
+          "Clean comfort supplies",
+          "Privacy screen"
+        ],
+        "steps": [
+          "Ask the supervisor",
+          "Prepare clean supplies",
+          "Arrange private seating",
+          "Confirm each family is comfortable"
+        ]
+      }
+    ],
+    "town-honeybrook-dental": [
+      {
+        "name": "Prepare the dental teaching station · practice round",
+        "tools": [
+          "Supervisor checklist",
+          "Clean comfort supplies",
+          "Privacy screen"
+        ],
+        "steps": [
+          "Ask the supervisor",
+          "Prepare clean supplies",
+          "Arrange private seating",
+          "Confirm each family is comfortable"
+        ]
+      },
+      {
+        "name": "Prepare the dental teaching station · family challenge",
+        "tools": [
+          "Supervisor checklist",
+          "Clean comfort supplies",
+          "Privacy screen"
+        ],
+        "steps": [
+          "Ask the supervisor",
+          "Prepare clean supplies",
+          "Arrange private seating",
+          "Confirm each family is comfortable"
+        ]
+      },
+      {
+        "name": "Prepare the dental teaching station · advanced review",
+        "tools": [
+          "Supervisor checklist",
+          "Clean comfort supplies",
+          "Privacy screen"
+        ],
+        "steps": [
+          "Ask the supervisor",
+          "Prepare clean supplies",
+          "Arrange private seating",
+          "Confirm each family is comfortable"
+        ]
+      }
+    ],
+    "town-emergency-services": [
+      {
+        "name": "Inspect a supervised readiness station · practice round",
+        "tools": [
+          "Roster board",
+          "Route map",
+          "Checked supply kit"
+        ],
+        "steps": [
+          "Read the roster",
+          "Check the marked route",
+          "Inspect the supplies",
+          "Confirm the return plan"
+        ]
+      },
+      {
+        "name": "Inspect a supervised readiness station · family challenge",
+        "tools": [
+          "Roster board",
+          "Route map",
+          "Checked supply kit"
+        ],
+        "steps": [
+          "Read the roster",
+          "Check the marked route",
+          "Inspect the supplies",
+          "Confirm the return plan"
+        ]
+      },
+      {
+        "name": "Inspect a supervised readiness station · advanced review",
+        "tools": [
+          "Roster board",
+          "Route map",
+          "Checked supply kit"
+        ],
+        "steps": [
+          "Read the roster",
+          "Check the marked route",
+          "Inspect the supplies",
+          "Confirm the return plan"
+        ]
+      }
+    ],
+    "town-welcome-house": [
+      {
+        "name": "Welcome a new bear family · practice round",
+        "tools": [
+          "Family roster",
+          "Welcome packet",
+          "Accessible route map"
+        ],
+        "steps": [
+          "Greet the family",
+          "Check their needs",
+          "Show connected rooms",
+          "Confirm the family plan"
+        ]
+      },
+      {
+        "name": "Welcome a new bear family · family challenge",
+        "tools": [
+          "Family roster",
+          "Welcome packet",
+          "Accessible route map"
+        ],
+        "steps": [
+          "Greet the family",
+          "Check their needs",
+          "Show connected rooms",
+          "Confirm the family plan"
+        ]
+      },
+      {
+        "name": "Welcome a new bear family · advanced review",
+        "tools": [
+          "Family roster",
+          "Welcome packet",
+          "Accessible route map"
+        ],
+        "steps": [
+          "Greet the family",
+          "Check their needs",
+          "Show connected rooms",
+          "Confirm the family plan"
+        ]
+      }
+    ],
+    "town-welcome-house-kitchen": [
+      {
+        "name": "Cook the weekly menu for twelve guests · practice round",
+        "tools": [
+          "Menu and portion card",
+          "Clean measuring tools",
+          "Supervisor’s recipe"
+        ],
+        "steps": [
+          "Measure ingredients",
+          "Prepare with the supervisor",
+          "Check recipe temperatures",
+          "Portion twelve plates"
+        ]
+      },
+      {
+        "name": "Cook the weekly menu for twelve guests · family challenge",
+        "tools": [
+          "Menu and portion card",
+          "Clean measuring tools",
+          "Supervisor’s recipe"
+        ],
+        "steps": [
+          "Measure ingredients",
+          "Prepare with the supervisor",
+          "Check recipe temperatures",
+          "Portion twelve plates"
+        ]
+      },
+      {
+        "name": "Cook the weekly menu for twelve guests · advanced review",
+        "tools": [
+          "Menu and portion card",
+          "Clean measuring tools",
+          "Supervisor’s recipe"
+        ],
+        "steps": [
+          "Measure ingredients",
+          "Prepare with the supervisor",
+          "Check recipe temperatures",
+          "Portion twelve plates"
+        ]
+      }
+    ],
+    "town-welcome-house-porch": [
+      {
+        "name": "Prepare an accessible family welcome · practice round",
+        "tools": [
+          "Family roster",
+          "Welcome packet",
+          "Accessible route map"
+        ],
+        "steps": [
+          "Greet the family",
+          "Check their needs",
+          "Show connected rooms",
+          "Confirm the family plan"
+        ]
+      },
+      {
+        "name": "Prepare an accessible family welcome · family challenge",
+        "tools": [
+          "Family roster",
+          "Welcome packet",
+          "Accessible route map"
+        ],
+        "steps": [
+          "Greet the family",
+          "Check their needs",
+          "Show connected rooms",
+          "Confirm the family plan"
+        ]
+      },
+      {
+        "name": "Prepare an accessible family welcome · advanced review",
+        "tools": [
+          "Family roster",
+          "Welcome packet",
+          "Accessible route map"
+        ],
+        "steps": [
+          "Greet the family",
+          "Check their needs",
+          "Show connected rooms",
+          "Confirm the family plan"
+        ]
+      }
+    ],
+    "town-wellness-center": [
+      {
+        "name": "Prepare a family wellness learning session · practice round",
+        "tools": [
+          "Supervisor checklist",
+          "Clean comfort supplies",
+          "Privacy screen"
+        ],
+        "steps": [
+          "Ask the supervisor",
+          "Prepare clean supplies",
+          "Arrange private seating",
+          "Confirm each family is comfortable"
+        ]
+      },
+      {
+        "name": "Prepare a family wellness learning session · family challenge",
+        "tools": [
+          "Supervisor checklist",
+          "Clean comfort supplies",
+          "Privacy screen"
+        ],
+        "steps": [
+          "Ask the supervisor",
+          "Prepare clean supplies",
+          "Arrange private seating",
+          "Confirm each family is comfortable"
+        ]
+      },
+      {
+        "name": "Prepare a family wellness learning session · advanced review",
+        "tools": [
+          "Supervisor checklist",
+          "Clean comfort supplies",
+          "Privacy screen"
+        ],
+        "steps": [
+          "Ask the supervisor",
+          "Prepare clean supplies",
+          "Arrange private seating",
+          "Confirm each family is comfortable"
+        ]
+      }
+    ],
+    "town-harmony-hall": [
+      {
+        "name": "Rehearse a whole-family music gathering · practice round",
+        "tools": [
+          "Practice score",
+          "Checked instrument",
+          "Family program card"
+        ],
+        "steps": [
+          "C",
+          "E",
+          "G",
+          "C"
+        ]
+      },
+      {
+        "name": "Rehearse a whole-family music gathering · family challenge",
+        "tools": [
+          "Practice score",
+          "Checked instrument",
+          "Family program card"
+        ],
+        "steps": [
+          "C",
+          "E",
+          "G",
+          "C"
+        ]
+      },
+      {
+        "name": "Rehearse a whole-family music gathering · advanced review",
+        "tools": [
+          "Practice score",
+          "Checked instrument",
+          "Family program card"
+        ],
+        "steps": [
+          "C",
+          "E",
+          "G",
+          "C"
+        ]
+      }
+    ],
+    "town-honeybrook-outdoor-stage": [
+      {
+        "name": "Prepare a sunset family concert · practice round",
+        "tools": [
+          "Event roster",
+          "Seating plan",
+          "Equipment checklist"
+        ],
+        "steps": [
+          "Confirm the program",
+          "Check the equipment",
+          "Seat each family",
+          "Inspect clear exits"
+        ]
+      },
+      {
+        "name": "Prepare a sunset family concert · family challenge",
+        "tools": [
+          "Event roster",
+          "Seating plan",
+          "Equipment checklist"
+        ],
+        "steps": [
+          "Confirm the program",
+          "Check the equipment",
+          "Seat each family",
+          "Inspect clear exits"
+        ]
+      },
+      {
+        "name": "Prepare a sunset family concert · advanced review",
+        "tools": [
+          "Event roster",
+          "Seating plan",
+          "Equipment checklist"
+        ],
+        "steps": [
+          "Confirm the program",
+          "Check the equipment",
+          "Seat each family",
+          "Inspect clear exits"
+        ]
+      }
+    ],
+    "town-poppy-s-art-studio": [
+      {
+        "name": "Paint a woodland keepsake · practice round",
+        "tools": [
+          "Reference view",
+          "Brush and palette",
+          "Prepared painting surface"
+        ],
+        "steps": [
+          "Sky",
+          "Water",
+          "Hills",
+          "Trees",
+          "Cabin",
+          "Flowers"
+        ]
+      },
+      {
+        "name": "Paint a woodland keepsake · family challenge",
+        "tools": [
+          "Reference view",
+          "Brush and palette",
+          "Prepared painting surface"
+        ],
+        "steps": [
+          "Sky",
+          "Water",
+          "Hills",
+          "Trees",
+          "Cabin",
+          "Flowers"
+        ]
+      },
+      {
+        "name": "Paint a woodland keepsake · advanced review",
+        "tools": [
+          "Reference view",
+          "Brush and palette",
+          "Prepared painting surface"
+        ],
+        "steps": [
+          "Sky",
+          "Water",
+          "Hills",
+          "Trees",
+          "Cabin",
+          "Flowers"
+        ]
+      }
+    ],
+    "town-dance-theater-studio": [
+      {
+        "name": "Rehearse a wholesome family scene · practice round",
+        "tools": [
+          "Family scene script",
+          "Clear rehearsal space",
+          "Movement cue cards"
+        ],
+        "steps": [
+          "Step left",
+          "Step right",
+          "Turn gently",
+          "Bow together"
+        ]
+      },
+      {
+        "name": "Rehearse a wholesome family scene · family challenge",
+        "tools": [
+          "Family scene script",
+          "Clear rehearsal space",
+          "Movement cue cards"
+        ],
+        "steps": [
+          "Step left",
+          "Step right",
+          "Turn gently",
+          "Bow together"
+        ]
+      },
+      {
+        "name": "Rehearse a wholesome family scene · advanced review",
+        "tools": [
+          "Family scene script",
+          "Clear rehearsal space",
+          "Movement cue cards"
+        ],
+        "steps": [
+          "Step left",
+          "Step right",
+          "Turn gently",
+          "Bow together"
+        ]
+      }
+    ],
+    "town-rehearsal-rooms": [
+      {
+        "name": "Prepare a listening and rhythm rehearsal · practice round",
+        "tools": [
+          "Practice score",
+          "Checked instrument",
+          "Family program card"
+        ],
+        "steps": [
+          "C",
+          "E",
+          "G",
+          "C"
+        ]
+      },
+      {
+        "name": "Prepare a listening and rhythm rehearsal · family challenge",
+        "tools": [
+          "Practice score",
+          "Checked instrument",
+          "Family program card"
+        ],
+        "steps": [
+          "C",
+          "E",
+          "G",
+          "C"
+        ]
+      },
+      {
+        "name": "Prepare a listening and rhythm rehearsal · advanced review",
+        "tools": [
+          "Practice score",
+          "Checked instrument",
+          "Family program card"
+        ],
+        "steps": [
+          "C",
+          "E",
+          "G",
+          "C"
+        ]
+      }
+    ],
+    "town-listening-lawn": [
+      {
+        "name": "Host a peaceful listening picnic · practice round",
+        "tools": [
+          "KJV Bible",
+          "Family reflection journal",
+          "Service-plan card"
+        ],
+        "steps": [
+          "Read Psalm 23:1 KJV",
+          "Listen to each family member",
+          "Choose a practical kindness",
+          "Record gratitude together"
+        ]
+      },
+      {
+        "name": "Host a peaceful listening picnic · family challenge",
+        "tools": [
+          "KJV Bible",
+          "Family reflection journal",
+          "Service-plan card"
+        ],
+        "steps": [
+          "Read Psalm 23:1 KJV",
+          "Listen to each family member",
+          "Choose a practical kindness",
+          "Record gratitude together"
+        ]
+      },
+      {
+        "name": "Host a peaceful listening picnic · advanced review",
+        "tools": [
+          "KJV Bible",
+          "Family reflection journal",
+          "Service-plan card"
+        ],
+        "steps": [
+          "Read Psalm 23:1 KJV",
+          "Listen to each family member",
+          "Choose a practical kindness",
+          "Record gratitude together"
+        ]
+      }
+    ],
+    "town-honeybrook-school": [
+      {
+        "name": "Teach a mixed-age practical lesson · practice round",
+        "tools": [
+          "Age-group roster",
+          "Lesson materials",
+          "Learning review sheet"
+        ],
+        "steps": [
+          "Explain one example",
+          "Practice together",
+          "Let learners demonstrate",
+          "Record a useful review"
+        ]
+      },
+      {
+        "name": "Teach a mixed-age practical lesson · family challenge",
+        "tools": [
+          "Age-group roster",
+          "Lesson materials",
+          "Learning review sheet"
+        ],
+        "steps": [
+          "Explain one example",
+          "Practice together",
+          "Let learners demonstrate",
+          "Record a useful review"
+        ]
+      },
+      {
+        "name": "Teach a mixed-age practical lesson · advanced review",
+        "tools": [
+          "Age-group roster",
+          "Lesson materials",
+          "Learning review sheet"
+        ],
+        "steps": [
+          "Explain one example",
+          "Practice together",
+          "Let learners demonstrate",
+          "Record a useful review"
+        ]
+      }
+    ],
+    "town-bear-claw-library": [
+      {
+        "name": "Prepare a family reading collection · practice round",
+        "tools": [
+          "Source list",
+          "Reference books",
+          "Evidence notebook"
+        ],
+        "steps": [
+          "Choose a clear question",
+          "Check the original source",
+          "Compare a second source",
+          "Write the supported finding"
+        ]
+      },
+      {
+        "name": "Prepare a family reading collection · family challenge",
+        "tools": [
+          "Source list",
+          "Reference books",
+          "Evidence notebook"
+        ],
+        "steps": [
+          "Choose a clear question",
+          "Check the original source",
+          "Compare a second source",
+          "Write the supported finding"
+        ]
+      },
+      {
+        "name": "Prepare a family reading collection · advanced review",
+        "tools": [
+          "Source list",
+          "Reference books",
+          "Evidence notebook"
+        ],
+        "steps": [
+          "Choose a clear question",
+          "Check the original source",
+          "Compare a second source",
+          "Write the supported finding"
+        ]
+      }
+    ],
+    "town-honeybrook-technology-center": [
+      {
+        "name": "Set up an accessible learning workstation · practice round",
+        "tools": [
+          "Accessible workstation checklist",
+          "Input device options",
+          "Display settings card"
+        ],
+        "steps": [
+          "Ask about the learner’s access needs",
+          "Arrange the input devices",
+          "Check readable display settings",
+          "Test the workstation with the learner"
+        ]
+      },
+      {
+        "name": "Set up an accessible learning workstation · family challenge",
+        "tools": [
+          "Accessible workstation checklist",
+          "Input device options",
+          "Display settings card"
+        ],
+        "steps": [
+          "Ask about the learner’s access needs",
+          "Arrange the input devices",
+          "Check readable display settings",
+          "Test the workstation with the learner"
+        ]
+      },
+      {
+        "name": "Set up an accessible learning workstation · advanced review",
+        "tools": [
+          "Accessible workstation checklist",
+          "Input device options",
+          "Display settings card"
+        ],
+        "steps": [
+          "Ask about the learner’s access needs",
+          "Arrange the input devices",
+          "Check readable display settings",
+          "Test the workstation with the learner"
+        ]
+      }
+    ],
+    "town-learning-commons": [
+      {
+        "name": "Prepare a cooperative study session · practice round",
+        "tools": [
+          "Age-group roster",
+          "Lesson materials",
+          "Learning review sheet"
+        ],
+        "steps": [
+          "Explain one example",
+          "Practice together",
+          "Let learners demonstrate",
+          "Record a useful review"
+        ]
+      },
+      {
+        "name": "Prepare a cooperative study session · family challenge",
+        "tools": [
+          "Age-group roster",
+          "Lesson materials",
+          "Learning review sheet"
+        ],
+        "steps": [
+          "Explain one example",
+          "Practice together",
+          "Let learners demonstrate",
+          "Record a useful review"
+        ]
+      },
+      {
+        "name": "Prepare a cooperative study session · advanced review",
+        "tools": [
+          "Age-group roster",
+          "Lesson materials",
+          "Learning review sheet"
+        ],
+        "steps": [
+          "Explain one example",
+          "Practice together",
+          "Let learners demonstrate",
+          "Record a useful review"
+        ]
+      }
+    ],
+    "town-learning-hall": [
+      {
+        "name": "Lead a practical learning workshop · practice round",
+        "tools": [
+          "Age-group roster",
+          "Lesson materials",
+          "Learning review sheet"
+        ],
+        "steps": [
+          "Explain one example",
+          "Practice together",
+          "Let learners demonstrate",
+          "Record a useful review"
+        ]
+      },
+      {
+        "name": "Lead a practical learning workshop · family challenge",
+        "tools": [
+          "Age-group roster",
+          "Lesson materials",
+          "Learning review sheet"
+        ],
+        "steps": [
+          "Explain one example",
+          "Practice together",
+          "Let learners demonstrate",
+          "Record a useful review"
+        ]
+      },
+      {
+        "name": "Lead a practical learning workshop · advanced review",
+        "tools": [
+          "Age-group roster",
+          "Lesson materials",
+          "Learning review sheet"
+        ],
+        "steps": [
+          "Explain one example",
+          "Practice together",
+          "Let learners demonstrate",
+          "Record a useful review"
+        ]
+      }
+    ],
+    "town-achievement-center": [
+      {
+        "name": "Verify earned learning portfolios · practice round",
+        "tools": [
+          "Completed work samples",
+          "Assessment criteria",
+          "Portfolio checklist"
+        ],
+        "steps": [
+          "Check the submitted work",
+          "Compare the assessment criteria",
+          "Record demonstrated learning",
+          "Return the verified portfolio"
+        ]
+      },
+      {
+        "name": "Verify earned learning portfolios · family challenge",
+        "tools": [
+          "Completed work samples",
+          "Assessment criteria",
+          "Portfolio checklist"
+        ],
+        "steps": [
+          "Check the submitted work",
+          "Compare the assessment criteria",
+          "Record demonstrated learning",
+          "Return the verified portfolio"
+        ]
+      },
+      {
+        "name": "Verify earned learning portfolios · advanced review",
+        "tools": [
+          "Completed work samples",
+          "Assessment criteria",
+          "Portfolio checklist"
+        ],
+        "steps": [
+          "Check the submitted work",
+          "Compare the assessment criteria",
+          "Record demonstrated learning",
+          "Return the verified portfolio"
+        ]
+      }
+    ],
+    "town-coding-classroom": [
+      {
+        "name": "Program a safe delivery robot route · practice round",
+        "tools": [
+          "Grid route card",
+          "Command tiles",
+          "Testing checklist"
+        ],
+        "steps": [
+          "RIGHT",
+          "DOWN",
+          "LEFT",
+          "UP"
+        ]
+      },
+      {
+        "name": "Program a safe delivery robot route · family challenge",
+        "tools": [
+          "Grid route card",
+          "Command tiles",
+          "Testing checklist"
+        ],
+        "steps": [
+          "RIGHT",
+          "DOWN",
+          "LEFT",
+          "UP"
+        ]
+      },
+      {
+        "name": "Program a safe delivery robot route · advanced review",
+        "tools": [
+          "Grid route card",
+          "Command tiles",
+          "Testing checklist"
+        ],
+        "steps": [
+          "RIGHT",
+          "DOWN",
+          "LEFT",
+          "UP"
+        ]
+      }
+    ],
+    "town-troubleshooting-classroom": [
+      {
+        "name": "Diagnose the classroom network fault · practice round",
+        "tools": [
+          "Unplugged practice equipment",
+          "Connection diagram",
+          "Test checklist"
+        ],
+        "steps": [
+          "Inspect the symptom",
+          "Check safe connections",
+          "Test one change",
+          "Record the result"
+        ]
+      },
+      {
+        "name": "Diagnose the classroom network fault · family challenge",
+        "tools": [
+          "Unplugged practice equipment",
+          "Connection diagram",
+          "Test checklist"
+        ],
+        "steps": [
+          "Inspect the symptom",
+          "Check safe connections",
+          "Test one change",
+          "Record the result"
+        ]
+      },
+      {
+        "name": "Diagnose the classroom network fault · advanced review",
+        "tools": [
+          "Unplugged practice equipment",
+          "Connection diagram",
+          "Test checklist"
+        ],
+        "steps": [
+          "Inspect the symptom",
+          "Check safe connections",
+          "Test one change",
+          "Record the result"
+        ]
+      }
+    ],
+    "town-office-skills-classroom": [
+      {
+        "name": "Prepare the weekly family camp schedule · practice round",
+        "tools": [
+          "Weekly calendar",
+          "Staff availability cards",
+          "Room booking sheet"
+        ],
+        "steps": [
+          "Read the requested sessions",
+          "Compare staff availability",
+          "Resolve room booking overlaps",
+          "Confirm the weekly schedule"
+        ]
+      },
+      {
+        "name": "Prepare the weekly family camp schedule · family challenge",
+        "tools": [
+          "Weekly calendar",
+          "Staff availability cards",
+          "Room booking sheet"
+        ],
+        "steps": [
+          "Read the requested sessions",
+          "Compare staff availability",
+          "Resolve room booking overlaps",
+          "Confirm the weekly schedule"
+        ]
+      },
+      {
+        "name": "Prepare the weekly family camp schedule · advanced review",
+        "tools": [
+          "Weekly calendar",
+          "Staff availability cards",
+          "Room booking sheet"
+        ],
+        "steps": [
+          "Read the requested sessions",
+          "Compare staff availability",
+          "Resolve room booking overlaps",
+          "Confirm the weekly schedule"
+        ]
+      }
+    ],
+    "town-reading-research-classroom": [
+      {
+        "name": "Research a Honeybrook history question · practice round",
+        "tools": [
+          "Source list",
+          "Reference books",
+          "Evidence notebook"
+        ],
+        "steps": [
+          "Choose a clear question",
+          "Check the original source",
+          "Compare a second source",
+          "Write the supported finding"
+        ]
+      },
+      {
+        "name": "Research a Honeybrook history question · family challenge",
+        "tools": [
+          "Source list",
+          "Reference books",
+          "Evidence notebook"
+        ],
+        "steps": [
+          "Choose a clear question",
+          "Check the original source",
+          "Compare a second source",
+          "Write the supported finding"
+        ]
+      },
+      {
+        "name": "Research a Honeybrook history question · advanced review",
+        "tools": [
+          "Source list",
+          "Reference books",
+          "Evidence notebook"
+        ],
+        "steps": [
+          "Choose a clear question",
+          "Check the original source",
+          "Compare a second source",
+          "Write the supported finding"
+        ]
+      }
+    ],
+    "town-honeybrook-town-hall": [
+      {
+        "name": "Prepare the camp service rota · practice round",
+        "tools": [
+          "Service requests",
+          "Staff availability cards",
+          "Rota checklist"
+        ],
+        "steps": [
+          "Read the service requests",
+          "Match staff availability",
+          "Check for uncovered shifts",
+          "Confirm the service rota"
+        ]
+      },
+      {
+        "name": "Prepare the camp service rota · family challenge",
+        "tools": [
+          "Service requests",
+          "Staff availability cards",
+          "Rota checklist"
+        ],
+        "steps": [
+          "Read the service requests",
+          "Match staff availability",
+          "Check for uncovered shifts",
+          "Confirm the service rota"
+        ]
+      },
+      {
+        "name": "Prepare the camp service rota · advanced review",
+        "tools": [
+          "Service requests",
+          "Staff availability cards",
+          "Rota checklist"
+        ],
+        "steps": [
+          "Read the service requests",
+          "Match staff availability",
+          "Check for uncovered shifts",
+          "Confirm the service rota"
+        ]
+      }
+    ],
+    "town-honeybrook-gazette": [
+      {
+        "name": "Verify and publish the camp event report · practice round",
+        "tools": [
+          "Source list",
+          "Reference books",
+          "Evidence notebook"
+        ],
+        "steps": [
+          "Choose a clear question",
+          "Check the original source",
+          "Compare a second source",
+          "Write the supported finding"
+        ]
+      },
+      {
+        "name": "Verify and publish the camp event report · family challenge",
+        "tools": [
+          "Source list",
+          "Reference books",
+          "Evidence notebook"
+        ],
+        "steps": [
+          "Choose a clear question",
+          "Check the original source",
+          "Compare a second source",
+          "Write the supported finding"
+        ]
+      },
+      {
+        "name": "Verify and publish the camp event report · advanced review",
+        "tools": [
+          "Source list",
+          "Reference books",
+          "Evidence notebook"
+        ],
+        "steps": [
+          "Choose a clear question",
+          "Check the original source",
+          "Compare a second source",
+          "Write the supported finding"
+        ]
+      }
+    ],
+    "town-honeybrook-post-office": [
+      {
+        "name": "Sort and deliver the family morning mail · practice round",
+        "tools": [
+          "Delivery roster",
+          "Address labels",
+          "Sorted mail tray"
+        ],
+        "steps": [
+          "Hearthwell House",
+          "Welcome House",
+          "Honeybrook School"
+        ]
+      },
+      {
+        "name": "Sort and deliver the family morning mail · family challenge",
+        "tools": [
+          "Delivery roster",
+          "Address labels",
+          "Sorted mail tray"
+        ],
+        "steps": [
+          "Hearthwell House",
+          "Welcome House",
+          "Honeybrook School"
+        ]
+      },
+      {
+        "name": "Sort and deliver the family morning mail · advanced review",
+        "tools": [
+          "Delivery roster",
+          "Address labels",
+          "Sorted mail tray"
+        ],
+        "steps": [
+          "Hearthwell House",
+          "Welcome House",
+          "Honeybrook School"
+        ]
+      }
+    ],
+    "town-public-safety": [
+      {
+        "name": "Prepare the family shelter readiness board · practice round",
+        "tools": [
+          "Roster board",
+          "Route map",
+          "Checked supply kit"
+        ],
+        "steps": [
+          "Read the roster",
+          "Check the marked route",
+          "Inspect the supplies",
+          "Confirm the return plan"
+        ]
+      },
+      {
+        "name": "Prepare the family shelter readiness board · family challenge",
+        "tools": [
+          "Roster board",
+          "Route map",
+          "Checked supply kit"
+        ],
+        "steps": [
+          "Read the roster",
+          "Check the marked route",
+          "Inspect the supplies",
+          "Confirm the return plan"
+        ]
+      },
+      {
+        "name": "Prepare the family shelter readiness board · advanced review",
+        "tools": [
+          "Roster board",
+          "Route map",
+          "Checked supply kit"
+        ],
+        "steps": [
+          "Read the roster",
+          "Check the marked route",
+          "Inspect the supplies",
+          "Confirm the return plan"
+        ]
+      }
+    ],
+    "town-goldilocks-the-three-bears-monument": [
+      {
+        "name": "Create a founding-history trail card · practice round",
+        "tools": [
+          "Field notebook",
+          "Reference map",
+          "Soft measuring tape"
+        ],
+        "steps": [
+          "Observe the public site",
+          "Compare the reference",
+          "Record the evidence",
+          "Preserve the site"
+        ]
+      },
+      {
+        "name": "Create a founding-history trail card · family challenge",
+        "tools": [
+          "Field notebook",
+          "Reference map",
+          "Soft measuring tape"
+        ],
+        "steps": [
+          "Observe the public site",
+          "Compare the reference",
+          "Record the evidence",
+          "Preserve the site"
+        ]
+      },
+      {
+        "name": "Create a founding-history trail card · advanced review",
+        "tools": [
+          "Field notebook",
+          "Reference map",
+          "Soft measuring tape"
+        ],
+        "steps": [
+          "Observe the public site",
+          "Compare the reference",
+          "Record the evidence",
+          "Preserve the site"
+        ]
+      }
+    ],
+    "town-honeybrook-town-clock": [
+      {
+        "name": "Service the town clock practice mechanism · practice round",
+        "tools": [
+          "Stopped practice clock",
+          "Gear diagram",
+          "Service log"
+        ],
+        "steps": [
+          "Confirm the practice mechanism is stopped",
+          "Compare the gear diagram",
+          "Test the demonstrated adjustment",
+          "Record the checked time display"
+        ]
+      },
+      {
+        "name": "Service the town clock practice mechanism · family challenge",
+        "tools": [
+          "Stopped practice clock",
+          "Gear diagram",
+          "Service log"
+        ],
+        "steps": [
+          "Confirm the practice mechanism is stopped",
+          "Compare the gear diagram",
+          "Test the demonstrated adjustment",
+          "Record the checked time display"
+        ]
+      },
+      {
+        "name": "Service the town clock practice mechanism · advanced review",
+        "tools": [
+          "Stopped practice clock",
+          "Gear diagram",
+          "Service log"
+        ],
+        "steps": [
+          "Confirm the practice mechanism is stopped",
+          "Compare the gear diagram",
+          "Test the demonstrated adjustment",
+          "Record the checked time display"
+        ]
+      }
+    ],
+    "town-the-honey-mug-cafe": [
+      {
+        "name": "Prepare the café breakfast for twelve · practice round",
+        "tools": [
+          "Menu and portion card",
+          "Clean measuring tools",
+          "Supervisor’s recipe"
+        ],
+        "steps": [
+          "Measure ingredients",
+          "Prepare with the supervisor",
+          "Check recipe temperatures",
+          "Portion twelve plates"
+        ]
+      },
+      {
+        "name": "Prepare the café breakfast for twelve · family challenge",
+        "tools": [
+          "Menu and portion card",
+          "Clean measuring tools",
+          "Supervisor’s recipe"
+        ],
+        "steps": [
+          "Measure ingredients",
+          "Prepare with the supervisor",
+          "Check recipe temperatures",
+          "Portion twelve plates"
+        ]
+      },
+      {
+        "name": "Prepare the café breakfast for twelve · advanced review",
+        "tools": [
+          "Menu and portion card",
+          "Clean measuring tools",
+          "Supervisor’s recipe"
+        ],
+        "steps": [
+          "Measure ingredients",
+          "Prepare with the supervisor",
+          "Check recipe temperatures",
+          "Portion twelve plates"
+        ]
+      }
+    ],
+    "town-cub-cakes-crumbs": [
+      {
+        "name": "Bake and portion the family tea cakes · practice round",
+        "tools": [
+          "Menu and portion card",
+          "Clean measuring tools",
+          "Supervisor’s recipe"
+        ],
+        "steps": [
+          "Measure ingredients",
+          "Prepare with the supervisor",
+          "Check recipe temperatures",
+          "Portion twelve plates"
+        ]
+      },
+      {
+        "name": "Bake and portion the family tea cakes · family challenge",
+        "tools": [
+          "Menu and portion card",
+          "Clean measuring tools",
+          "Supervisor’s recipe"
+        ],
+        "steps": [
+          "Measure ingredients",
+          "Prepare with the supervisor",
+          "Check recipe temperatures",
+          "Portion twelve plates"
+        ]
+      },
+      {
+        "name": "Bake and portion the family tea cakes · advanced review",
+        "tools": [
+          "Menu and portion card",
+          "Clean measuring tools",
+          "Supervisor’s recipe"
+        ],
+        "steps": [
+          "Measure ingredients",
+          "Prepare with the supervisor",
+          "Check recipe temperatures",
+          "Portion twelve plates"
+        ]
+      }
+    ],
+    "town-bearcessities": [
+      {
+        "name": "Fill a family essentials order · practice round",
+        "tools": [
+          "Customer order",
+          "Stock labels",
+          "Account sheet"
+        ],
+        "steps": [
+          "Read the family order",
+          "Count the stock",
+          "Pack each order",
+          "Balance the account"
+        ]
+      },
+      {
+        "name": "Fill a family essentials order · family challenge",
+        "tools": [
+          "Customer order",
+          "Stock labels",
+          "Account sheet"
+        ],
+        "steps": [
+          "Read the family order",
+          "Count the stock",
+          "Pack each order",
+          "Balance the account"
+        ]
+      },
+      {
+        "name": "Fill a family essentials order · advanced review",
+        "tools": [
+          "Customer order",
+          "Stock labels",
+          "Account sheet"
+        ],
+        "steps": [
+          "Read the family order",
+          "Count the stock",
+          "Pack each order",
+          "Balance the account"
+        ]
+      }
+    ],
+    "town-honeybrook-market": [
+      {
+        "name": "Prepare a balanced family grocery order · practice round",
+        "tools": [
+          "Customer order",
+          "Stock labels",
+          "Account sheet"
+        ],
+        "steps": [
+          "Read the family order",
+          "Count the stock",
+          "Pack each order",
+          "Balance the account"
+        ]
+      },
+      {
+        "name": "Prepare a balanced family grocery order · family challenge",
+        "tools": [
+          "Customer order",
+          "Stock labels",
+          "Account sheet"
+        ],
+        "steps": [
+          "Read the family order",
+          "Count the stock",
+          "Pack each order",
+          "Balance the account"
+        ]
+      },
+      {
+        "name": "Prepare a balanced family grocery order · advanced review",
+        "tools": [
+          "Customer order",
+          "Stock labels",
+          "Account sheet"
+        ],
+        "steps": [
+          "Read the family order",
+          "Count the stock",
+          "Pack each order",
+          "Balance the account"
+        ]
+      }
+    ],
+    "town-paws-threads": [
+      {
+        "name": "Sew and inspect the family team pennant · practice round",
+        "tools": [
+          "Project pattern",
+          "Checked craft tools",
+          "Chosen materials"
+        ],
+        "steps": [
+          "Prepare the pattern",
+          "Make the supervised sample",
+          "Finish the edges",
+          "Inspect the keepsake"
+        ]
+      },
+      {
+        "name": "Sew and inspect the family team pennant · family challenge",
+        "tools": [
+          "Project pattern",
+          "Checked craft tools",
+          "Chosen materials"
+        ],
+        "steps": [
+          "Prepare the pattern",
+          "Make the supervised sample",
+          "Finish the edges",
+          "Inspect the keepsake"
+        ]
+      },
+      {
+        "name": "Sew and inspect the family team pennant · advanced review",
+        "tools": [
+          "Project pattern",
+          "Checked craft tools",
+          "Chosen materials"
+        ],
+        "steps": [
+          "Prepare the pattern",
+          "Make the supervised sample",
+          "Finish the edges",
+          "Inspect the keepsake"
+        ]
+      }
+    ],
+    "town-honeybrook-business-center": [
+      {
+        "name": "Balance a staffed service-day ledger · practice round",
+        "tools": [
+          "Service records",
+          "Staff rota",
+          "Account sheet"
+        ],
+        "steps": [
+          "Verify the records",
+          "Check staffing and supplies",
+          "Calculate the balance",
+          "Inspect the finished account"
+        ]
+      },
+      {
+        "name": "Balance a staffed service-day ledger · family challenge",
+        "tools": [
+          "Service records",
+          "Staff rota",
+          "Account sheet"
+        ],
+        "steps": [
+          "Verify the records",
+          "Check staffing and supplies",
+          "Calculate the balance",
+          "Inspect the finished account"
+        ]
+      },
+      {
+        "name": "Balance a staffed service-day ledger · advanced review",
+        "tools": [
+          "Service records",
+          "Staff rota",
+          "Account sheet"
+        ],
+        "steps": [
+          "Verify the records",
+          "Check staffing and supplies",
+          "Calculate the balance",
+          "Inspect the finished account"
+        ]
+      }
+    ],
+    "town-hearthwell-home": [
+      {
+        "name": "Prepare the family cabin for guests · practice round",
+        "tools": [
+          "Clean linen basket",
+          "Room checklist",
+          "Household supply tray"
+        ],
+        "steps": [
+          "Check each room",
+          "Place clean linens",
+          "Prepare family seating",
+          "Inspect doors and supplies"
+        ]
+      },
+      {
+        "name": "Prepare the family cabin for guests · family challenge",
+        "tools": [
+          "Clean linen basket",
+          "Room checklist",
+          "Household supply tray"
+        ],
+        "steps": [
+          "Check each room",
+          "Place clean linens",
+          "Prepare family seating",
+          "Inspect doors and supplies"
+        ]
+      },
+      {
+        "name": "Prepare the family cabin for guests · advanced review",
+        "tools": [
+          "Clean linen basket",
+          "Room checklist",
+          "Household supply tray"
+        ],
+        "steps": [
+          "Check each room",
+          "Place clean linens",
+          "Prepare family seating",
+          "Inspect doors and supplies"
+        ]
+      }
+    ],
+    "town-big-mama-s-cottage": [
+      {
+        "name": "Prepare a family supper with Big Mama · practice round",
+        "tools": [
+          "Menu and portion card",
+          "Clean measuring tools",
+          "Supervisor’s recipe"
+        ],
+        "steps": [
+          "Measure ingredients",
+          "Prepare with the supervisor",
+          "Check recipe temperatures",
+          "Portion twelve plates"
+        ]
+      },
+      {
+        "name": "Prepare a family supper with Big Mama · family challenge",
+        "tools": [
+          "Menu and portion card",
+          "Clean measuring tools",
+          "Supervisor’s recipe"
+        ],
+        "steps": [
+          "Measure ingredients",
+          "Prepare with the supervisor",
+          "Check recipe temperatures",
+          "Portion twelve plates"
+        ]
+      },
+      {
+        "name": "Prepare a family supper with Big Mama · advanced review",
+        "tools": [
+          "Menu and portion card",
+          "Clean measuring tools",
+          "Supervisor’s recipe"
+        ],
+        "steps": [
+          "Measure ingredients",
+          "Prepare with the supervisor",
+          "Check recipe temperatures",
+          "Portion twelve plates"
+        ]
+      }
+    ],
+    "town-bridgeview-commons": [
+      {
+        "name": "Organize an accessible neighborhood gathering · practice round",
+        "tools": [
+          "Event roster",
+          "Seating plan",
+          "Equipment checklist"
+        ],
+        "steps": [
+          "Confirm the program",
+          "Check the equipment",
+          "Seat each family",
+          "Inspect clear exits"
+        ]
+      },
+      {
+        "name": "Organize an accessible neighborhood gathering · family challenge",
+        "tools": [
+          "Event roster",
+          "Seating plan",
+          "Equipment checklist"
+        ],
+        "steps": [
+          "Confirm the program",
+          "Check the equipment",
+          "Seat each family",
+          "Inspect clear exits"
+        ]
+      },
+      {
+        "name": "Organize an accessible neighborhood gathering · advanced review",
+        "tools": [
+          "Event roster",
+          "Seating plan",
+          "Equipment checklist"
+        ],
+        "steps": [
+          "Confirm the program",
+          "Check the equipment",
+          "Seat each family",
+          "Inspect clear exits"
+        ]
+      }
+    ],
+    "town-community-garden": [
+      {
+        "name": "Plant and harvest the family vegetable bed · practice round",
+        "tools": [
+          "Seed tray",
+          "Watering can",
+          "Hand trowel"
+        ],
+        "steps": [
+          "Prepare soil",
+          "Plant six spaces",
+          "Water each space",
+          "Inspect the growth"
+        ]
+      },
+      {
+        "name": "Plant and harvest the family vegetable bed · family challenge",
+        "tools": [
+          "Seed tray",
+          "Watering can",
+          "Hand trowel"
+        ],
+        "steps": [
+          "Prepare soil",
+          "Plant six spaces",
+          "Water each space",
+          "Inspect the growth"
+        ]
+      },
+      {
+        "name": "Plant and harvest the family vegetable bed · advanced review",
+        "tools": [
+          "Seed tray",
+          "Watering can",
+          "Hand trowel"
+        ],
+        "steps": [
+          "Prepare soil",
+          "Plant six spaces",
+          "Water each space",
+          "Inspect the growth"
+        ]
+      }
+    ],
+    "town-old-bridge": [
+      {
+        "name": "Inspect and repair the Bear Hollow crossing · practice round",
+        "tools": [
+          "Measuring tape",
+          "Supervised repair kit",
+          "Inspection sheet"
+        ],
+        "steps": [
+          "Inspect the structure",
+          "Measure the parts",
+          "Fit supervised repairs",
+          "Check stability"
+        ]
+      },
+      {
+        "name": "Inspect and repair the Bear Hollow crossing · family challenge",
+        "tools": [
+          "Measuring tape",
+          "Supervised repair kit",
+          "Inspection sheet"
+        ],
+        "steps": [
+          "Inspect the structure",
+          "Measure the parts",
+          "Fit supervised repairs",
+          "Check stability"
+        ]
+      },
+      {
+        "name": "Inspect and repair the Bear Hollow crossing · advanced review",
+        "tools": [
+          "Measuring tape",
+          "Supervised repair kit",
+          "Inspection sheet"
+        ],
+        "steps": [
+          "Inspect the structure",
+          "Measure the parts",
+          "Fit supervised repairs",
+          "Check stability"
+        ]
+      }
+    ]
+  },
+  "legacyLocationCases": {
+    "fair-midway": [
+      {
+        "name": "Fairground family challenge · practice round",
+        "tools": [
+          "Fair map",
+          "Game tokens",
+          "Turn card"
+        ],
+        "steps": [
+          "Choose an activity",
+          "Check the rules",
+          "Play the round",
+          "Record the result"
+        ]
+      },
+      {
+        "name": "Fairground family challenge · family challenge",
+        "tools": [
+          "Fair map",
+          "Game tokens",
+          "Turn card"
+        ],
+        "steps": [
+          "Choose an activity",
+          "Check the rules",
+          "Play the round",
+          "Record the result"
+        ]
+      },
+      {
+        "name": "Fairground family challenge · advanced showcase",
+        "tools": [
+          "Fair map",
+          "Game tokens",
+          "Turn card"
+        ],
+        "steps": [
+          "Choose an activity",
+          "Check the rules",
+          "Play the round",
+          "Record the result"
+        ]
+      }
+    ],
+    "fair-rings": [
+      {
+        "name": "Ring toss · practice round",
+        "tools": [
+          "Soft rings",
+          "Target posts",
+          "Turn card"
+        ],
+        "steps": [
+          "Check the standing line",
+          "Choose a target",
+          "Practice the toss",
+          "Record the result"
+        ]
+      },
+      {
+        "name": "Ring toss · family challenge",
+        "tools": [
+          "Soft rings",
+          "Target posts",
+          "Turn card"
+        ],
+        "steps": [
+          "Check the standing line",
+          "Choose a target",
+          "Practice the toss",
+          "Record the result"
+        ]
+      },
+      {
+        "name": "Ring toss · advanced showcase",
+        "tools": [
+          "Soft rings",
+          "Target posts",
+          "Turn card"
+        ],
+        "steps": [
+          "Check the standing line",
+          "Choose a target",
+          "Practice the toss",
+          "Record the result"
+        ]
+      }
+    ],
+    "fair-ducks": [
+      {
+        "name": "Duck pond · practice round",
+        "tools": [
+          "Numbered ducks",
+          "Match cards",
+          "Prize checklist"
+        ],
+        "steps": [
+          "Read the round rules",
+          "Choose a duck",
+          "Check its match",
+          "Record the result"
+        ]
+      },
+      {
+        "name": "Duck pond · family challenge",
+        "tools": [
+          "Numbered ducks",
+          "Match cards",
+          "Prize checklist"
+        ],
+        "steps": [
+          "Read the round rules",
+          "Choose a duck",
+          "Check its match",
+          "Record the result"
+        ]
+      },
+      {
+        "name": "Duck pond · advanced showcase",
+        "tools": [
+          "Numbered ducks",
+          "Match cards",
+          "Prize checklist"
+        ],
+        "steps": [
+          "Read the round rules",
+          "Choose a duck",
+          "Check its match",
+          "Record the result"
+        ]
+      }
+    ],
+    "fair-balloons": [
+      {
+        "name": "Balloon color challenge · practice round",
+        "tools": [
+          "Color cards",
+          "Soft target pieces",
+          "Score card"
+        ],
+        "steps": [
+          "Read the target colors",
+          "Check the throw area",
+          "Play the round",
+          "Record the score"
+        ]
+      },
+      {
+        "name": "Balloon color challenge · family challenge",
+        "tools": [
+          "Color cards",
+          "Soft target pieces",
+          "Score card"
+        ],
+        "steps": [
+          "Read the target colors",
+          "Check the throw area",
+          "Play the round",
+          "Record the score"
+        ]
+      },
+      {
+        "name": "Balloon color challenge · advanced showcase",
+        "tools": [
+          "Color cards",
+          "Soft target pieces",
+          "Score card"
+        ],
+        "steps": [
+          "Read the target colors",
+          "Check the throw area",
+          "Play the round",
+          "Record the score"
+        ]
+      }
+    ],
+    "fair-wheel": [
+      {
+        "name": "Ferris wheel observation · practice round",
+        "tools": [
+          "Observation card",
+          "Ride safety card",
+          "Sketch notebook"
+        ],
+        "steps": [
+          "Check the staff instructions",
+          "Board with staff permission",
+          "Observe the valley",
+          "Record what you noticed"
+        ]
+      },
+      {
+        "name": "Ferris wheel observation · family challenge",
+        "tools": [
+          "Observation card",
+          "Ride safety card",
+          "Sketch notebook"
+        ],
+        "steps": [
+          "Check the staff instructions",
+          "Board with staff permission",
+          "Observe the valley",
+          "Record what you noticed"
+        ]
+      },
+      {
+        "name": "Ferris wheel observation · advanced showcase",
+        "tools": [
+          "Observation card",
+          "Ride safety card",
+          "Sketch notebook"
+        ],
+        "steps": [
+          "Check the staff instructions",
+          "Board with staff permission",
+          "Observe the valley",
+          "Record what you noticed"
+        ]
+      }
+    ],
+    "fair-carousel": [
+      {
+        "name": "Carousel rhythm · practice round",
+        "tools": [
+          "Rhythm cards",
+          "Ride safety card",
+          "Turn roster"
+        ],
+        "steps": [
+          "Check the staff instructions",
+          "Choose a suitable seat",
+          "Follow the music pattern",
+          "Record the memory"
+        ]
+      },
+      {
+        "name": "Carousel rhythm · family challenge",
+        "tools": [
+          "Rhythm cards",
+          "Ride safety card",
+          "Turn roster"
+        ],
+        "steps": [
+          "Check the staff instructions",
+          "Choose a suitable seat",
+          "Follow the music pattern",
+          "Record the memory"
+        ]
+      },
+      {
+        "name": "Carousel rhythm · advanced showcase",
+        "tools": [
+          "Rhythm cards",
+          "Ride safety card",
+          "Turn roster"
+        ],
+        "steps": [
+          "Check the staff instructions",
+          "Choose a suitable seat",
+          "Follow the music pattern",
+          "Record the memory"
+        ]
+      }
+    ],
+    "fair-circus": [
+      {
+        "name": "Friendly circus practice · practice round",
+        "tools": [
+          "Soft juggling scarves",
+          "Stage markers",
+          "Cue cards"
+        ],
+        "steps": [
+          "Check the practice space",
+          "Rehearse a gentle act",
+          "Follow the stage cue",
+          "Share the performance"
+        ]
+      },
+      {
+        "name": "Friendly circus practice · family challenge",
+        "tools": [
+          "Soft juggling scarves",
+          "Stage markers",
+          "Cue cards"
+        ],
+        "steps": [
+          "Check the practice space",
+          "Rehearse a gentle act",
+          "Follow the stage cue",
+          "Share the performance"
+        ]
+      },
+      {
+        "name": "Friendly circus practice · advanced showcase",
+        "tools": [
+          "Soft juggling scarves",
+          "Stage markers",
+          "Cue cards"
+        ],
+        "steps": [
+          "Check the practice space",
+          "Rehearse a gentle act",
+          "Follow the stage cue",
+          "Share the performance"
+        ]
+      }
+    ],
+    "fair-cotton": [
+      {
+        "name": "Treat stall · practice round",
+        "tools": [
+          "Recipe card",
+          "Clean serving tools",
+          "Portion trays"
+        ],
+        "steps": [
+          "Check the ingredients",
+          "Prepare with the supervisor",
+          "Portion the treats",
+          "Inspect and serve"
+        ]
+      },
+      {
+        "name": "Treat stall · family challenge",
+        "tools": [
+          "Recipe card",
+          "Clean serving tools",
+          "Portion trays"
+        ],
+        "steps": [
+          "Check the ingredients",
+          "Prepare with the supervisor",
+          "Portion the treats",
+          "Inspect and serve"
+        ]
+      },
+      {
+        "name": "Treat stall · advanced showcase",
+        "tools": [
+          "Recipe card",
+          "Clean serving tools",
+          "Portion trays"
+        ],
+        "steps": [
+          "Check the ingredients",
+          "Prepare with the supervisor",
+          "Portion the treats",
+          "Inspect and serve"
+        ]
+      }
+    ],
+    "fair-prizes": [
+      {
+        "name": "Prize counter · practice round",
+        "tools": [
+          "Prize list",
+          "Token ledger",
+          "Display trays"
+        ],
+        "steps": [
+          "Read the earned record",
+          "Choose the correct shelf",
+          "Check the prize",
+          "Record the handover"
+        ]
+      },
+      {
+        "name": "Prize counter · family challenge",
+        "tools": [
+          "Prize list",
+          "Token ledger",
+          "Display trays"
+        ],
+        "steps": [
+          "Read the earned record",
+          "Choose the correct shelf",
+          "Check the prize",
+          "Record the handover"
+        ]
+      },
+      {
+        "name": "Prize counter · advanced showcase",
+        "tools": [
+          "Prize list",
+          "Token ledger",
+          "Display trays"
+        ],
+        "steps": [
+          "Read the earned record",
+          "Choose the correct shelf",
+          "Check the prize",
+          "Record the handover"
+        ]
+      }
+    ],
+    "fair-stage": [
+      {
+        "name": "Family performance stage · practice round",
+        "tools": [
+          "Program sheet",
+          "Stage markers",
+          "Cue cards"
+        ],
+        "steps": [
+          "Read the program",
+          "Prepare accessible seating",
+          "Rehearse the cues",
+          "Share the performance"
+        ]
+      },
+      {
+        "name": "Family performance stage · family challenge",
+        "tools": [
+          "Program sheet",
+          "Stage markers",
+          "Cue cards"
+        ],
+        "steps": [
+          "Read the program",
+          "Prepare accessible seating",
+          "Rehearse the cues",
+          "Share the performance"
+        ]
+      },
+      {
+        "name": "Family performance stage · advanced showcase",
+        "tools": [
+          "Program sheet",
+          "Stage markers",
+          "Cue cards"
+        ],
+        "steps": [
+          "Read the program",
+          "Prepare accessible seating",
+          "Rehearse the cues",
+          "Share the performance"
+        ]
+      }
     ]
   }
 }
