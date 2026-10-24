@@ -66,3 +66,6 @@
 
 .po-sidebar nav>a{display:block;padding:10px 14px;color:#715236;text-decoration:none;font:12px Georgia;border:1px solid #d9c3a1;border-radius:5px;margin:5px 0;background:#f2e6cd}.po-device-controls>a{display:inline-block;padding:12px 16px;background:#69744e;color:#fff8e8;border-radius:5px;text-decoration:none;font:13px Georgia;margin:4px 8px 8px 0}
 
+
+/* Keep every office doorway available on small screens. */
+@media(max-width:750px){.po-sidebar nav[aria-label="Office rooms"]{display:flex;overflow-x:auto;gap:5px;padding:5px 0}.po-sidebar nav[aria-label="Office rooms"] button{flex:0 0 auto}}
