@@ -1,0 +1,50 @@
+name: Reception ledger checks
+on:
+  push:
+    branches: [welcome-house-reception-ledgers]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  reception:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Pure reception, cast and interior rules
+        run: |
+          node --check reception.js
+          node --check journey.js
+          node --check story-mode.js
+          node tests/reception.cjs
+          node tests/community.cjs
+          node tests/interiors.cjs
+      - name: Install pinned browser harness
+        run: |
+          npm install --no-save --package-lock=false playwright@1.55.1
+          npx playwright install --with-deps chromium
+      - name: Real browser reception and preservation checks
+        env:
+          TEST_URL: http://127.0.0.1:8794/
+        run: |
+          python3 -m http.server 8794 >/tmp/honeybrook-http.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid"' EXIT
+          for attempt in 1 2 3 4 5; do
+            curl --fail --silent http://127.0.0.1:8794/ >/dev/null && break
+            sleep 1
+          done
+          node tests/reception.mjs
+          node tests/quiet-guest-rooms.mjs
+          node tests/interior-navigation.mjs
+      - name: Keep browser screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reception-browser-evidence
+          path: verification/
+          if-no-files-found: ignore
+          compression-level: 0

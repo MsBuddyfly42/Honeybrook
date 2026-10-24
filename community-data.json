@@ -1416,17 +1416,17 @@
         "Gardening, parks and bears",
         "Puzzles, hands-on crafts and learning"
       ],
-      "routine": "Explore Honeybrook and Bear Hollow first. Beekeeping is the family business. The bears embrace a familiar-looking stranger before they know her identity; Nell chooses when she is ready to speak to Harold.",
+      "routine": "Explore Honeybrook and Bear Hollow first. Beekeeping is the family business. The bears embrace a familiar-looking stranger before they know her identity; Nell chooses when she is ready to speak to Harold. Reception and handwritten housing records are a regular job, also available outside her journey.",
       "status": "Your present-day character · owner-directed story adaptation",
       "home": {
         "name": "Welcome House spare room",
         "route": "games/honeybrook-craft-fair/?portal=town&place=welcome&return=ts&city=1"
       },
       "work": {
-        "name": "Honeybrook Post Office",
-        "route": "index.html#visit=Honeybrook%20Post%20Office"
+        "name": "Welcome House reception · Nell’s main assignment",
+        "route": "reception.html"
       },
-      "location": "Welcome House / Honeybrook Post Office",
+      "location": "Welcome House / family research",
       "storyRoute": "nell.html",
       "availability": "player",
       "inheritance": 800000000000000
@@ -3791,6 +3791,1716 @@
       "location": "Honeybrook Town Hall",
       "chapters": [],
       "availability": "resident"
+    },
+    {
+      "id": "reception-arrival-family-1",
+      "sourceId": "arrival-family-1",
+      "source": "game",
+      "group": "Reception arrival · game addition",
+      "name": "Juniper Reed and family",
+      "kind": "Bear household",
+      "details": "Willowmere Riverside Cottage, Willowmere Edwin Reed and Nora Reed 14 Willow Lane, Willowmere Our rented cottage was sold, and we needed somewhere our whole family could stay together. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Settle the household, learn the town, find suitable work and eventually move together into an available cottage.",
+      "personality": "Quietly observant and thoughtful",
+      "routine": "Shared meals, gentle community contact and quiet evening rest.",
+      "family": "Juniper Reed, Avery Reed, Lark Reed, Fenn Reed",
+      "age": "Juniper Reed: 34; Avery Reed: 32; Lark Reed: 6; Fenn Reed: 9",
+      "status": "Potential arrival; not automatically checked in. The player writes the ledger.",
+      "home": {
+        "name": "Reception register · accommodation is assigned by the player",
+        "route": "reception.html?view=households"
+      },
+      "work": null,
+      "location": "Reception guest-information book",
+      "chapters": [],
+      "availability": "guest",
+      "householdProfiles": [
+        {
+          "name": "Juniper Reed",
+          "birthday": "1992-01-01",
+          "age": "34",
+          "height": "5 ft 0 in",
+          "weight": "260 lb",
+          "fur": "Warm brown",
+          "eyes": "Brown"
+        },
+        {
+          "name": "Avery Reed",
+          "birthday": "1994-03-06",
+          "age": "32",
+          "height": "5 ft 1 in",
+          "weight": "277 lb",
+          "fur": "Cinnamon brown",
+          "eyes": "Amber"
+        },
+        {
+          "name": "Lark Reed",
+          "birthday": "2020-05-11",
+          "age": "6",
+          "height": "3 ft 2 in",
+          "weight": "73 lb",
+          "fur": "Dark chestnut",
+          "eyes": "Hazel"
+        },
+        {
+          "name": "Fenn Reed",
+          "birthday": "2017-07-16",
+          "age": "9",
+          "height": "3 ft 3 in",
+          "weight": "92 lb",
+          "fur": "Honey brown",
+          "eyes": "Dark brown"
+        }
+      ],
+      "storyFields": {
+        "origin": "Willowmere",
+        "birthplace": "Riverside Cottage, Willowmere",
+        "parents": "Edwin Reed and Nora Reed",
+        "oldAddress": "14 Willow Lane, Willowmere",
+        "reasonLeaving": "Our rented cottage was sold, and we needed somewhere our whole family could stay together.",
+        "whyHoneybrook": "Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness.",
+        "plans": "Settle the household, learn the town, find suitable work and eventually move together into an available cottage."
+      },
+      "credentials": {
+        "work": "Previous community gardening experience.",
+        "skills": "gardening",
+        "references": "A reference may be checked with the Willowmere community workshop office.",
+        "housingNeeds": "Enough suitable beds for the whole household and wider step-free access."
+      }
+    },
+    {
+      "id": "reception-arrival-quiet-1",
+      "sourceId": "arrival-quiet-1",
+      "source": "game",
+      "group": "Reception arrival · game addition",
+      "name": "Pippa Moss",
+      "kind": "Bear cub · quiet supported visitor",
+      "details": "Maplecross Riverside Cottage, Maplecross Arthur Moss and Celia Moss 16 Willow Lane, Maplecross The adults caring for me left me behind. A kind traveller helped me reach somewhere safe. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready.",
+      "personality": "Quietly observant and thoughtful",
+      "routine": "Rest and meals first; optional reading or company.",
+      "family": "Pippa Moss",
+      "age": "Pippa Moss: 7",
+      "status": "Potential arrival; not automatically checked in. The player writes the ledger.",
+      "home": {
+        "name": "Reception register · accommodation is assigned by the player",
+        "route": "reception.html?view=individual"
+      },
+      "work": null,
+      "location": "Reception guest-information book",
+      "chapters": [],
+      "availability": "guest",
+      "householdProfiles": [
+        {
+          "name": "Pippa Moss",
+          "birthday": "2019-01-01",
+          "age": "7",
+          "height": "3 ft 0 in",
+          "weight": "77 lb",
+          "fur": "Warm brown",
+          "eyes": "Brown"
+        }
+      ],
+      "storyFields": {
+        "origin": "Maplecross",
+        "birthplace": "Riverside Cottage, Maplecross",
+        "parents": "Arthur Moss and Celia Moss",
+        "oldAddress": "16 Willow Lane, Maplecross",
+        "reasonLeaving": "The adults caring for me left me behind. A kind traveller helped me reach somewhere safe.",
+        "whyHoneybrook": "Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness.",
+        "plans": "Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready."
+      },
+      "credentials": {
+        "work": "Young cub; not an employment applicant.",
+        "skills": "Personal interests are not conditions for care.",
+        "references": "Any agreed cottage move needs continuing trusted adult support.",
+        "housingNeeds": "A private calm place with steady adult care."
+      }
+    },
+    {
+      "id": "reception-arrival-bunk-1",
+      "sourceId": "arrival-bunk-1",
+      "source": "game",
+      "group": "Reception arrival · game addition",
+      "name": "Hugo Brook",
+      "kind": "Adult bear newcomer",
+      "details": "Fernwick Riverside Cottage, Fernwick Benedict Brook and Ivy Brook 18 Willow Lane, Fernwick I was treated as though I did not belong in my old settlement. I wanted a kinder place to begin again. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life.",
+      "personality": "Quietly observant and thoughtful",
+      "routine": "Shared meals, gentle community contact and quiet evening rest.",
+      "family": "Hugo Brook",
+      "age": "Hugo Brook: 27",
+      "status": "Potential arrival; not automatically checked in. The player writes the ledger.",
+      "home": {
+        "name": "Reception register · accommodation is assigned by the player",
+        "route": "reception.html?view=individual"
+      },
+      "work": null,
+      "location": "Reception guest-information book",
+      "chapters": [],
+      "availability": "guest",
+      "householdProfiles": [
+        {
+          "name": "Hugo Brook",
+          "birthday": "1999-01-01",
+          "age": "27",
+          "height": "5 ft 0 in",
+          "weight": "260 lb",
+          "fur": "Warm brown",
+          "eyes": "Brown"
+        }
+      ],
+      "storyFields": {
+        "origin": "Fernwick",
+        "birthplace": "Riverside Cottage, Fernwick",
+        "parents": "Benedict Brook and Ivy Brook",
+        "oldAddress": "18 Willow Lane, Fernwick",
+        "reasonLeaving": "I was treated as though I did not belong in my old settlement. I wanted a kinder place to begin again.",
+        "whyHoneybrook": "Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness.",
+        "plans": "Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life."
+      },
+      "credentials": {
+        "work": "Previous community gardening experience.",
+        "skills": "gardening",
+        "references": "A reference may be checked with the Fernwick community workshop office.",
+        "housingNeeds": "A modest home and optional community company."
+      }
+    },
+    {
+      "id": "reception-arrival-family-2",
+      "sourceId": "arrival-family-2",
+      "source": "game",
+      "group": "Reception arrival · game addition",
+      "name": "Mara Alder and family",
+      "kind": "Bear household",
+      "details": "Briarford Old Mill Cottage, Briarford Silas Alder and Mabel Alder 21 Mill Road, Briarford Repairs made our old home temporarily unsafe to live in. We left together with our clothes and keepsakes. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Settle the household, learn the town, find suitable work and eventually move together into an available cottage.",
+      "personality": "Warm once comfortable; patient with plans",
+      "routine": "Shared meals, gentle community contact and quiet evening rest.",
+      "family": "Mara Alder, Milo Alder, Dove Alder",
+      "age": "Mara Alder: 36; Milo Alder: 7; Dove Alder: 10",
+      "status": "Potential arrival; not automatically checked in. The player writes the ledger.",
+      "home": {
+        "name": "Reception register · accommodation is assigned by the player",
+        "route": "reception.html?view=households"
+      },
+      "work": null,
+      "location": "Reception guest-information book",
+      "chapters": [],
+      "availability": "guest",
+      "householdProfiles": [
+        {
+          "name": "Mara Alder",
+          "birthday": "1990-04-08",
+          "age": "36",
+          "height": "6 ft 2 in",
+          "weight": "283 lb",
+          "fur": "Cinnamon brown",
+          "eyes": "Amber"
+        },
+        {
+          "name": "Milo Alder",
+          "birthday": "2019-08-18",
+          "age": "7",
+          "height": "3 ft 4 in",
+          "weight": "80 lb",
+          "fur": "Honey brown",
+          "eyes": "Dark brown"
+        },
+        {
+          "name": "Dove Alder",
+          "birthday": "2016-10-23",
+          "age": "10",
+          "height": "4 ft 5 in",
+          "weight": "99 lb",
+          "fur": "Soft russet",
+          "eyes": "Brown"
+        }
+      ],
+      "storyFields": {
+        "origin": "Briarford",
+        "birthplace": "Old Mill Cottage, Briarford",
+        "parents": "Silas Alder and Mabel Alder",
+        "oldAddress": "21 Mill Road, Briarford",
+        "reasonLeaving": "Repairs made our old home temporarily unsafe to live in. We left together with our clothes and keepsakes.",
+        "whyHoneybrook": "Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness.",
+        "plans": "Settle the household, learn the town, find suitable work and eventually move together into an available cottage."
+      },
+      "credentials": {
+        "work": "Previous community woodworking experience.",
+        "skills": "woodworking",
+        "references": "A reference may be checked with the Briarford community workshop office.",
+        "housingNeeds": "Enough suitable beds for the whole household."
+      }
+    },
+    {
+      "id": "reception-arrival-quiet-2",
+      "sourceId": "arrival-quiet-2",
+      "source": "game",
+      "group": "Reception arrival · game addition",
+      "name": "Nico Rowan",
+      "kind": "Bear cub · quiet supported visitor",
+      "details": "Cedar Glen Old Mill Cottage, Cedar Glen Reuben Rowan and Etta Rowan 23 Mill Road, Cedar Glen I became separated from my family on a travelling route. Trusted adults are helping with a careful search. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready.",
+      "personality": "Warm once comfortable; patient with plans",
+      "routine": "Rest and meals first; optional reading or company.",
+      "family": "Nico Rowan",
+      "age": "Nico Rowan: 8",
+      "status": "Potential arrival; not automatically checked in. The player writes the ledger.",
+      "home": {
+        "name": "Reception register · accommodation is assigned by the player",
+        "route": "reception.html?view=individual"
+      },
+      "work": null,
+      "location": "Reception guest-information book",
+      "chapters": [],
+      "availability": "guest",
+      "householdProfiles": [
+        {
+          "name": "Nico Rowan",
+          "birthday": "2018-04-08",
+          "age": "8",
+          "height": "3 ft 2 in",
+          "weight": "84 lb",
+          "fur": "Cinnamon brown",
+          "eyes": "Amber"
+        }
+      ],
+      "storyFields": {
+        "origin": "Cedar Glen",
+        "birthplace": "Old Mill Cottage, Cedar Glen",
+        "parents": "Reuben Rowan and Etta Rowan",
+        "oldAddress": "23 Mill Road, Cedar Glen",
+        "reasonLeaving": "I became separated from my family on a travelling route. Trusted adults are helping with a careful search.",
+        "whyHoneybrook": "Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness.",
+        "plans": "Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready."
+      },
+      "credentials": {
+        "work": "Young cub; not an employment applicant.",
+        "skills": "Personal interests are not conditions for care.",
+        "references": "Any agreed cottage move needs continuing trusted adult support.",
+        "housingNeeds": "A private calm place with steady adult care."
+      }
+    },
+    {
+      "id": "reception-arrival-bunk-2",
+      "sourceId": "arrival-bunk-2",
+      "source": "game",
+      "group": "Reception arrival · game addition",
+      "name": "Cora Linden",
+      "kind": "Adult bear newcomer",
+      "details": "Acorn Vale Old Mill Cottage, Acorn Vale Walter Linden and Pearl Linden 25 Mill Road, Acorn Vale My old lodging closed. I travelled with my small bag and tools to find a community. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life.",
+      "personality": "Warm once comfortable; patient with plans",
+      "routine": "Shared meals, gentle community contact and quiet evening rest.",
+      "family": "Cora Linden",
+      "age": "Cora Linden: 30",
+      "status": "Potential arrival; not automatically checked in. The player writes the ledger.",
+      "home": {
+        "name": "Reception register · accommodation is assigned by the player",
+        "route": "reception.html?view=individual"
+      },
+      "work": null,
+      "location": "Reception guest-information book",
+      "chapters": [],
+      "availability": "guest",
+      "householdProfiles": [
+        {
+          "name": "Cora Linden",
+          "birthday": "1996-04-08",
+          "age": "30",
+          "height": "6 ft 2 in",
+          "weight": "283 lb",
+          "fur": "Cinnamon brown",
+          "eyes": "Amber"
+        }
+      ],
+      "storyFields": {
+        "origin": "Acorn Vale",
+        "birthplace": "Old Mill Cottage, Acorn Vale",
+        "parents": "Walter Linden and Pearl Linden",
+        "oldAddress": "25 Mill Road, Acorn Vale",
+        "reasonLeaving": "My old lodging closed. I travelled with my small bag and tools to find a community.",
+        "whyHoneybrook": "Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness.",
+        "plans": "Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life."
+      },
+      "credentials": {
+        "work": "Previous community woodworking experience.",
+        "skills": "woodworking",
+        "references": "A reference may be checked with the Acorn Vale community workshop office.",
+        "housingNeeds": "A modest home and optional community company."
+      }
+    },
+    {
+      "id": "reception-arrival-family-3",
+      "sourceId": "arrival-family-3",
+      "source": "game",
+      "group": "Reception arrival · game addition",
+      "name": "Ellis Brook and family",
+      "kind": "Bear household",
+      "details": "Maplecross Riverside Cottage, Maplecross Arthur Brook and Celia Brook 28 Orchard Close, Maplecross The workshop where we worked closed. We needed a fresh start without separating the family. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Settle the household, learn the town, find suitable work and eventually move together into an available cottage.",
+      "personality": "Curious, creative and fond of familiar routines",
+      "routine": "Shared meals, gentle community contact and quiet evening rest.",
+      "family": "Ellis Brook, Morgan Brook, Briar Brook, Calla Brook",
+      "age": "Ellis Brook: 38; Morgan Brook: 34; Briar Brook: 8; Calla Brook: 11",
+      "status": "Potential arrival; not automatically checked in. The player writes the ledger.",
+      "home": {
+        "name": "Reception register · accommodation is assigned by the player",
+        "route": "reception.html?view=households"
+      },
+      "work": null,
+      "location": "Reception guest-information book",
+      "chapters": [],
+      "availability": "guest",
+      "householdProfiles": [
+        {
+          "name": "Ellis Brook",
+          "birthday": "1988-07-15",
+          "age": "38",
+          "height": "5 ft 4 in",
+          "weight": "306 lb",
+          "fur": "Dark chestnut",
+          "eyes": "Hazel"
+        },
+        {
+          "name": "Morgan Brook",
+          "birthday": "1992-09-20",
+          "age": "34",
+          "height": "5 ft 5 in",
+          "weight": "323 lb",
+          "fur": "Honey brown",
+          "eyes": "Dark brown"
+        },
+        {
+          "name": "Briar Brook",
+          "birthday": "2017-11-25",
+          "age": "8",
+          "height": "3 ft 6 in",
+          "weight": "87 lb",
+          "fur": "Soft russet",
+          "eyes": "Brown"
+        },
+        {
+          "name": "Calla Brook",
+          "birthday": "2015-01-04",
+          "age": "11",
+          "height": "4 ft 7 in",
+          "weight": "106 lb",
+          "fur": "Deep brown",
+          "eyes": "Amber"
+        }
+      ],
+      "storyFields": {
+        "origin": "Maplecross",
+        "birthplace": "Riverside Cottage, Maplecross",
+        "parents": "Arthur Brook and Celia Brook",
+        "oldAddress": "28 Orchard Close, Maplecross",
+        "reasonLeaving": "The workshop where we worked closed. We needed a fresh start without separating the family.",
+        "whyHoneybrook": "Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness.",
+        "plans": "Settle the household, learn the town, find suitable work and eventually move together into an available cottage."
+      },
+      "credentials": {
+        "work": "Previous community cooking experience.",
+        "skills": "cooking",
+        "references": "A reference may be checked with the Maplecross community workshop office.",
+        "housingNeeds": "Enough suitable beds for the whole household."
+      }
+    },
+    {
+      "id": "reception-arrival-quiet-3",
+      "sourceId": "arrival-quiet-3",
+      "source": "game",
+      "group": "Reception arrival · game addition",
+      "name": "Ember Vale",
+      "kind": "Bear cub · quiet supported visitor",
+      "details": "Fernwick Riverside Cottage, Fernwick Benedict Vale and Ivy Vale 30 Orchard Close, Fernwick My parents died, and there was no familiar caregiver able to keep me. I brought a treasured keepsake. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready.",
+      "personality": "Curious, creative and fond of familiar routines",
+      "routine": "Rest and meals first; optional reading or company.",
+      "family": "Ember Vale",
+      "age": "Ember Vale: 9",
+      "status": "Potential arrival; not automatically checked in. The player writes the ledger.",
+      "home": {
+        "name": "Reception register · accommodation is assigned by the player",
+        "route": "reception.html?view=individual"
+      },
+      "work": null,
+      "location": "Reception guest-information book",
+      "chapters": [],
+      "availability": "guest",
+      "householdProfiles": [
+        {
+          "name": "Ember Vale",
+          "birthday": "2017-07-15",
+          "age": "9",
+          "height": "3 ft 4 in",
+          "weight": "91 lb",
+          "fur": "Dark chestnut",
+          "eyes": "Hazel"
+        }
+      ],
+      "storyFields": {
+        "origin": "Fernwick",
+        "birthplace": "Riverside Cottage, Fernwick",
+        "parents": "Benedict Vale and Ivy Vale",
+        "oldAddress": "30 Orchard Close, Fernwick",
+        "reasonLeaving": "My parents died, and there was no familiar caregiver able to keep me. I brought a treasured keepsake.",
+        "whyHoneybrook": "Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness.",
+        "plans": "Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready."
+      },
+      "credentials": {
+        "work": "Young cub; not an employment applicant.",
+        "skills": "Personal interests are not conditions for care.",
+        "references": "Any agreed cottage move needs continuing trusted adult support.",
+        "housingNeeds": "A private calm place with steady adult care."
+      }
+    },
+    {
+      "id": "reception-arrival-bunk-3",
+      "sourceId": "arrival-bunk-3",
+      "source": "game",
+      "group": "Reception arrival · game addition",
+      "name": "Felix Moss and a travelling friend",
+      "kind": "Adult bear newcomer",
+      "details": "Mossbridge Riverside Cottage, Mossbridge Gideon Moss and Olive Moss 32 Orchard Close, Mossbridge I had drifted between places for too long. I decided to seek a home, not just a bed. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life.",
+      "personality": "Curious, creative and fond of familiar routines",
+      "routine": "Shared meals, gentle community contact and quiet evening rest.",
+      "family": "Felix Moss, Morgan Moss",
+      "age": "Felix Moss: 33; Morgan Moss: 33",
+      "status": "Potential arrival; not automatically checked in. The player writes the ledger.",
+      "home": {
+        "name": "Reception register · accommodation is assigned by the player",
+        "route": "reception.html?view=households"
+      },
+      "work": null,
+      "location": "Reception guest-information book",
+      "chapters": [],
+      "availability": "guest",
+      "householdProfiles": [
+        {
+          "name": "Felix Moss",
+          "birthday": "1993-07-15",
+          "age": "33",
+          "height": "5 ft 4 in",
+          "weight": "306 lb",
+          "fur": "Dark chestnut",
+          "eyes": "Hazel"
+        },
+        {
+          "name": "Morgan Moss",
+          "birthday": "1993-09-20",
+          "age": "33",
+          "height": "5 ft 5 in",
+          "weight": "323 lb",
+          "fur": "Honey brown",
+          "eyes": "Dark brown"
+        }
+      ],
+      "storyFields": {
+        "origin": "Mossbridge",
+        "birthplace": "Riverside Cottage, Mossbridge",
+        "parents": "Gideon Moss and Olive Moss",
+        "oldAddress": "32 Orchard Close, Mossbridge",
+        "reasonLeaving": "I had drifted between places for too long. I decided to seek a home, not just a bed.",
+        "whyHoneybrook": "Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness.",
+        "plans": "Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life."
+      },
+      "credentials": {
+        "work": "Previous community cooking experience.",
+        "skills": "cooking",
+        "references": "A reference may be checked with the Mossbridge community workshop office.",
+        "housingNeeds": "A modest home and optional community company."
+      }
+    },
+    {
+      "id": "reception-arrival-family-4",
+      "sourceId": "arrival-family-4",
+      "source": "game",
+      "group": "Reception arrival · game addition",
+      "name": "Tessa Finch and family",
+      "kind": "Bear household",
+      "details": "Cedar Glen Old Mill Cottage, Cedar Glen Reuben Finch and Etta Finch 35 Brookside Walk, Cedar Glen Our rented cottage was sold, and we needed somewhere our whole family could stay together. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Settle the household, learn the town, find suitable work and eventually move together into an available cottage.",
+      "personality": "Quietly observant and thoughtful",
+      "routine": "Shared meals, gentle community contact and quiet evening rest.",
+      "family": "Tessa Finch, Laurel Finch, Sora Finch, Joss Finch",
+      "age": "Tessa Finch: 40; Laurel Finch: 35; Sora Finch: 9; Joss Finch: 12",
+      "status": "Potential arrival; not automatically checked in. The player writes the ledger.",
+      "home": {
+        "name": "Reception register · accommodation is assigned by the player",
+        "route": "reception.html?view=households"
+      },
+      "work": null,
+      "location": "Reception guest-information book",
+      "chapters": [],
+      "availability": "guest",
+      "householdProfiles": [
+        {
+          "name": "Tessa Finch",
+          "birthday": "1986-10-22",
+          "age": "40",
+          "height": "6 ft 6 in",
+          "weight": "329 lb",
+          "fur": "Honey brown",
+          "eyes": "Dark brown"
+        },
+        {
+          "name": "Laurel Finch",
+          "birthday": "1990-12-01",
+          "age": "35",
+          "height": "6 ft 7 in",
+          "weight": "346 lb",
+          "fur": "Soft russet",
+          "eyes": "Brown"
+        },
+        {
+          "name": "Sora Finch",
+          "birthday": "2017-02-06",
+          "age": "9",
+          "height": "3 ft 8 in",
+          "weight": "94 lb",
+          "fur": "Deep brown",
+          "eyes": "Amber"
+        },
+        {
+          "name": "Joss Finch",
+          "birthday": "2014-04-11",
+          "age": "12",
+          "height": "4 ft 9 in",
+          "weight": "113 lb",
+          "fur": "Warm brown",
+          "eyes": "Hazel"
+        }
+      ],
+      "storyFields": {
+        "origin": "Cedar Glen",
+        "birthplace": "Old Mill Cottage, Cedar Glen",
+        "parents": "Reuben Finch and Etta Finch",
+        "oldAddress": "35 Brookside Walk, Cedar Glen",
+        "reasonLeaving": "Our rented cottage was sold, and we needed somewhere our whole family could stay together.",
+        "whyHoneybrook": "Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness.",
+        "plans": "Settle the household, learn the town, find suitable work and eventually move together into an available cottage."
+      },
+      "credentials": {
+        "work": "Previous community sewing experience.",
+        "skills": "sewing",
+        "references": "A reference may be checked with the Cedar Glen community workshop office.",
+        "housingNeeds": "Enough suitable beds for the whole household."
+      }
+    },
+    {
+      "id": "reception-arrival-quiet-4",
+      "sourceId": "arrival-quiet-4",
+      "source": "game",
+      "group": "Reception arrival · game addition",
+      "name": "Otis Finch",
+      "kind": "Bear cub · quiet supported visitor",
+      "details": "Acorn Vale Old Mill Cottage, Acorn Vale Walter Finch and Pearl Finch 37 Brookside Walk, Acorn Vale The adults caring for me left me behind. A kind traveller helped me reach somewhere safe. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready.",
+      "personality": "Quietly observant and thoughtful",
+      "routine": "Rest and meals first; optional reading or company.",
+      "family": "Otis Finch",
+      "age": "Otis Finch: 10",
+      "status": "Potential arrival; not automatically checked in. The player writes the ledger.",
+      "home": {
+        "name": "Reception register · accommodation is assigned by the player",
+        "route": "reception.html?view=individual"
+      },
+      "work": null,
+      "location": "Reception guest-information book",
+      "chapters": [],
+      "availability": "guest",
+      "householdProfiles": [
+        {
+          "name": "Otis Finch",
+          "birthday": "2016-10-22",
+          "age": "10",
+          "height": "4 ft 6 in",
+          "weight": "98 lb",
+          "fur": "Honey brown",
+          "eyes": "Dark brown"
+        }
+      ],
+      "storyFields": {
+        "origin": "Acorn Vale",
+        "birthplace": "Old Mill Cottage, Acorn Vale",
+        "parents": "Walter Finch and Pearl Finch",
+        "oldAddress": "37 Brookside Walk, Acorn Vale",
+        "reasonLeaving": "The adults caring for me left me behind. A kind traveller helped me reach somewhere safe.",
+        "whyHoneybrook": "Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness.",
+        "plans": "Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready."
+      },
+      "credentials": {
+        "work": "Young cub; not an employment applicant.",
+        "skills": "Personal interests are not conditions for care.",
+        "references": "Any agreed cottage move needs continuing trusted adult support.",
+        "housingNeeds": "A private calm place with steady adult care."
+      }
+    },
+    {
+      "id": "reception-arrival-bunk-4",
+      "sourceId": "arrival-bunk-4",
+      "source": "game",
+      "group": "Reception arrival · game addition",
+      "name": "Iris Vale",
+      "kind": "Adult bear newcomer",
+      "details": "Pinewater Old Mill Cottage, Pinewater Leonard Vale and Elsie Vale 39 Brookside Walk, Pinewater I was treated as though I did not belong in my old settlement. I wanted a kinder place to begin again. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life.",
+      "personality": "Quietly observant and thoughtful",
+      "routine": "Shared meals, gentle community contact and quiet evening rest.",
+      "family": "Iris Vale",
+      "age": "Iris Vale: 36",
+      "status": "Potential arrival; not automatically checked in. The player writes the ledger.",
+      "home": {
+        "name": "Reception register · accommodation is assigned by the player",
+        "route": "reception.html?view=individual"
+      },
+      "work": null,
+      "location": "Reception guest-information book",
+      "chapters": [],
+      "availability": "guest",
+      "householdProfiles": [
+        {
+          "name": "Iris Vale",
+          "birthday": "1990-10-22",
+          "age": "36",
+          "height": "6 ft 6 in",
+          "weight": "329 lb",
+          "fur": "Honey brown",
+          "eyes": "Dark brown"
+        }
+      ],
+      "storyFields": {
+        "origin": "Pinewater",
+        "birthplace": "Old Mill Cottage, Pinewater",
+        "parents": "Leonard Vale and Elsie Vale",
+        "oldAddress": "39 Brookside Walk, Pinewater",
+        "reasonLeaving": "I was treated as though I did not belong in my old settlement. I wanted a kinder place to begin again.",
+        "whyHoneybrook": "Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness.",
+        "plans": "Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life."
+      },
+      "credentials": {
+        "work": "Previous community sewing experience.",
+        "skills": "sewing",
+        "references": "A reference may be checked with the Pinewater community workshop office.",
+        "housingNeeds": "A modest home and optional community company."
+      }
+    },
+    {
+      "id": "reception-arrival-family-5",
+      "sourceId": "arrival-family-5",
+      "source": "game",
+      "group": "Reception arrival · game addition",
+      "name": "Rowan Vale and family",
+      "kind": "Bear household",
+      "details": "Fernwick Riverside Cottage, Fernwick Benedict Vale and Ivy Vale 42 Birch Crescent, Fernwick Repairs made our old home temporarily unsafe to live in. We left together with our clothes and keepsakes. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Settle the household, learn the town, find suitable work and eventually move together into an available cottage.",
+      "personality": "Warm once comfortable; patient with plans",
+      "routine": "Shared meals, gentle community contact and quiet evening rest.",
+      "family": "Rowan Vale, Fenn Vale, Willa Vale",
+      "age": "Rowan Vale: 42; Fenn Vale: 10; Willa Vale: 9",
+      "status": "Potential arrival; not automatically checked in. The player writes the ledger.",
+      "home": {
+        "name": "Reception register · accommodation is assigned by the player",
+        "route": "reception.html?view=households"
+      },
+      "work": null,
+      "location": "Reception guest-information book",
+      "chapters": [],
+      "availability": "guest",
+      "householdProfiles": [
+        {
+          "name": "Rowan Vale",
+          "birthday": "1984-01-03",
+          "age": "42",
+          "height": "5 ft 8 in",
+          "weight": "352 lb",
+          "fur": "Soft russet",
+          "eyes": "Brown"
+        },
+        {
+          "name": "Fenn Vale",
+          "birthday": "2016-05-13",
+          "age": "10",
+          "height": "4 ft 10 in",
+          "weight": "101 lb",
+          "fur": "Warm brown",
+          "eyes": "Hazel"
+        },
+        {
+          "name": "Willa Vale",
+          "birthday": "2017-07-18",
+          "age": "9",
+          "height": "3 ft 0 in",
+          "weight": "96 lb",
+          "fur": "Cinnamon brown",
+          "eyes": "Dark brown"
+        }
+      ],
+      "storyFields": {
+        "origin": "Fernwick",
+        "birthplace": "Riverside Cottage, Fernwick",
+        "parents": "Benedict Vale and Ivy Vale",
+        "oldAddress": "42 Birch Crescent, Fernwick",
+        "reasonLeaving": "Repairs made our old home temporarily unsafe to live in. We left together with our clothes and keepsakes.",
+        "whyHoneybrook": "Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness.",
+        "plans": "Settle the household, learn the town, find suitable work and eventually move together into an available cottage."
+      },
+      "credentials": {
+        "work": "Previous community beekeeping experience.",
+        "skills": "beekeeping",
+        "references": "A reference may be checked with the Fernwick community workshop office.",
+        "housingNeeds": "Enough suitable beds for the whole household and wider step-free access."
+      }
+    },
+    {
+      "id": "reception-arrival-quiet-5",
+      "sourceId": "arrival-quiet-5",
+      "source": "game",
+      "group": "Reception arrival · game addition",
+      "name": "Lumi Birch",
+      "kind": "Bear cub · quiet supported visitor",
+      "details": "Mossbridge Riverside Cottage, Mossbridge Gideon Birch and Olive Birch 44 Birch Crescent, Mossbridge I became separated from my family on a travelling route. Trusted adults are helping with a careful search. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready.",
+      "personality": "Warm once comfortable; patient with plans",
+      "routine": "Rest and meals first; optional reading or company.",
+      "family": "Lumi Birch",
+      "age": "Lumi Birch: 11",
+      "status": "Potential arrival; not automatically checked in. The player writes the ledger.",
+      "home": {
+        "name": "Reception register · accommodation is assigned by the player",
+        "route": "reception.html?view=individual"
+      },
+      "work": null,
+      "location": "Reception guest-information book",
+      "chapters": [],
+      "availability": "guest",
+      "householdProfiles": [
+        {
+          "name": "Lumi Birch",
+          "birthday": "2015-01-03",
+          "age": "11",
+          "height": "4 ft 8 in",
+          "weight": "105 lb",
+          "fur": "Soft russet",
+          "eyes": "Brown"
+        }
+      ],
+      "storyFields": {
+        "origin": "Mossbridge",
+        "birthplace": "Riverside Cottage, Mossbridge",
+        "parents": "Gideon Birch and Olive Birch",
+        "oldAddress": "44 Birch Crescent, Mossbridge",
+        "reasonLeaving": "I became separated from my family on a travelling route. Trusted adults are helping with a careful search.",
+        "whyHoneybrook": "Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness.",
+        "plans": "Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready."
+      },
+      "credentials": {
+        "work": "Young cub; not an employment applicant.",
+        "skills": "Personal interests are not conditions for care.",
+        "references": "Any agreed cottage move needs continuing trusted adult support.",
+        "housingNeeds": "A private calm place with steady adult care."
+      }
+    },
+    {
+      "id": "reception-arrival-bunk-5",
+      "sourceId": "arrival-bunk-5",
+      "source": "game",
+      "group": "Reception arrival · game addition",
+      "name": "Nolan Reed",
+      "kind": "Adult bear newcomer",
+      "details": "Hazelcombe Riverside Cottage, Hazelcombe Alfred Reed and Viola Reed 46 Birch Crescent, Hazelcombe My old lodging closed. I travelled with my small bag and tools to find a community. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life.",
+      "personality": "Warm once comfortable; patient with plans",
+      "routine": "Shared meals, gentle community contact and quiet evening rest.",
+      "family": "Nolan Reed",
+      "age": "Nolan Reed: 39",
+      "status": "Potential arrival; not automatically checked in. The player writes the ledger.",
+      "home": {
+        "name": "Reception register · accommodation is assigned by the player",
+        "route": "reception.html?view=individual"
+      },
+      "work": null,
+      "location": "Reception guest-information book",
+      "chapters": [],
+      "availability": "guest",
+      "householdProfiles": [
+        {
+          "name": "Nolan Reed",
+          "birthday": "1987-01-03",
+          "age": "39",
+          "height": "5 ft 8 in",
+          "weight": "352 lb",
+          "fur": "Soft russet",
+          "eyes": "Brown"
+        }
+      ],
+      "storyFields": {
+        "origin": "Hazelcombe",
+        "birthplace": "Riverside Cottage, Hazelcombe",
+        "parents": "Alfred Reed and Viola Reed",
+        "oldAddress": "46 Birch Crescent, Hazelcombe",
+        "reasonLeaving": "My old lodging closed. I travelled with my small bag and tools to find a community.",
+        "whyHoneybrook": "Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness.",
+        "plans": "Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life."
+      },
+      "credentials": {
+        "work": "Previous community beekeeping experience.",
+        "skills": "beekeeping",
+        "references": "A reference may be checked with the Hazelcombe community workshop office.",
+        "housingNeeds": "A modest home and optional community company."
+      }
+    },
+    {
+      "id": "reception-arrival-family-6",
+      "sourceId": "arrival-family-6",
+      "source": "game",
+      "group": "Reception arrival · game addition",
+      "name": "Ada Meadow and family",
+      "kind": "Bear household",
+      "details": "Acorn Vale Old Mill Cottage, Acorn Vale Walter Meadow and Pearl Meadow 49 Willow Lane, Acorn Vale The workshop where we worked closed. We needed a fresh start without separating the family. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Settle the household, learn the town, find suitable work and eventually move together into an available cottage.",
+      "personality": "Curious, creative and fond of familiar routines",
+      "routine": "Shared meals, gentle community contact and quiet evening rest.",
+      "family": "Ada Meadow, Finley Meadow, Dove Meadow, Beck Meadow",
+      "age": "Ada Meadow: 44; Finley Meadow: 37; Dove Meadow: 6; Beck Meadow: 10",
+      "status": "Potential arrival; not automatically checked in. The player writes the ledger.",
+      "home": {
+        "name": "Reception register · accommodation is assigned by the player",
+        "route": "reception.html?view=households"
+      },
+      "work": null,
+      "location": "Reception guest-information book",
+      "chapters": [],
+      "availability": "guest",
+      "householdProfiles": [
+        {
+          "name": "Ada Meadow",
+          "birthday": "1982-04-10",
+          "age": "44",
+          "height": "6 ft 10 in",
+          "weight": "375 lb",
+          "fur": "Deep brown",
+          "eyes": "Amber"
+        },
+        {
+          "name": "Finley Meadow",
+          "birthday": "1989-06-15",
+          "age": "37",
+          "height": "6 ft 0 in",
+          "weight": "392 lb",
+          "fur": "Warm brown",
+          "eyes": "Hazel"
+        },
+        {
+          "name": "Dove Meadow",
+          "birthday": "2020-08-20",
+          "age": "6",
+          "height": "3 ft 1 in",
+          "weight": "78 lb",
+          "fur": "Cinnamon brown",
+          "eyes": "Dark brown"
+        },
+        {
+          "name": "Beck Meadow",
+          "birthday": "2015-10-25",
+          "age": "10",
+          "height": "4 ft 2 in",
+          "weight": "103 lb",
+          "fur": "Dark chestnut",
+          "eyes": "Brown"
+        }
+      ],
+      "storyFields": {
+        "origin": "Acorn Vale",
+        "birthplace": "Old Mill Cottage, Acorn Vale",
+        "parents": "Walter Meadow and Pearl Meadow",
+        "oldAddress": "49 Willow Lane, Acorn Vale",
+        "reasonLeaving": "The workshop where we worked closed. We needed a fresh start without separating the family.",
+        "whyHoneybrook": "Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness.",
+        "plans": "Settle the household, learn the town, find suitable work and eventually move together into an available cottage."
+      },
+      "credentials": {
+        "work": "Previous community clerical work experience.",
+        "skills": "clerical work",
+        "references": "A reference may be checked with the Acorn Vale community workshop office.",
+        "housingNeeds": "Enough suitable beds for the whole household."
+      }
+    },
+    {
+      "id": "reception-arrival-quiet-6",
+      "sourceId": "arrival-quiet-6",
+      "source": "game",
+      "group": "Reception arrival · game addition",
+      "name": "Kit Meadow",
+      "kind": "Bear cub · quiet supported visitor",
+      "details": "Pinewater Old Mill Cottage, Pinewater Leonard Meadow and Elsie Meadow 51 Willow Lane, Pinewater My parents died, and there was no familiar caregiver able to keep me. I brought a treasured keepsake. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready.",
+      "personality": "Curious, creative and fond of familiar routines",
+      "routine": "Rest and meals first; optional reading or company.",
+      "family": "Kit Meadow",
+      "age": "Kit Meadow: 12",
+      "status": "Potential arrival; not automatically checked in. The player writes the ledger.",
+      "home": {
+        "name": "Reception register · accommodation is assigned by the player",
+        "route": "reception.html?view=individual"
+      },
+      "work": null,
+      "location": "Reception guest-information book",
+      "chapters": [],
+      "availability": "guest",
+      "householdProfiles": [
+        {
+          "name": "Kit Meadow",
+          "birthday": "2014-04-10",
+          "age": "12",
+          "height": "4 ft 10 in",
+          "weight": "112 lb",
+          "fur": "Deep brown",
+          "eyes": "Amber"
+        }
+      ],
+      "storyFields": {
+        "origin": "Pinewater",
+        "birthplace": "Old Mill Cottage, Pinewater",
+        "parents": "Leonard Meadow and Elsie Meadow",
+        "oldAddress": "51 Willow Lane, Pinewater",
+        "reasonLeaving": "My parents died, and there was no familiar caregiver able to keep me. I brought a treasured keepsake.",
+        "whyHoneybrook": "Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness.",
+        "plans": "Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready."
+      },
+      "credentials": {
+        "work": "Young cub; not an employment applicant.",
+        "skills": "Personal interests are not conditions for care.",
+        "references": "Any agreed cottage move needs continuing trusted adult support.",
+        "housingNeeds": "A private calm place with steady adult care."
+      }
+    },
+    {
+      "id": "reception-arrival-bunk-6",
+      "sourceId": "arrival-bunk-6",
+      "source": "game",
+      "group": "Reception arrival · game addition",
+      "name": "Sylvie Ash and a travelling friend",
+      "kind": "Adult bear newcomer",
+      "details": "Rosebank Old Mill Cottage, Rosebank Hector Ash and Mina Ash 53 Willow Lane, Rosebank I had drifted between places for too long. I decided to seek a home, not just a bed. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life.",
+      "personality": "Curious, creative and fond of familiar routines",
+      "routine": "Shared meals, gentle community contact and quiet evening rest.",
+      "family": "Sylvie Ash, Finley Ash",
+      "age": "Sylvie Ash: 42; Finley Ash: 39",
+      "status": "Potential arrival; not automatically checked in. The player writes the ledger.",
+      "home": {
+        "name": "Reception register · accommodation is assigned by the player",
+        "route": "reception.html?view=households"
+      },
+      "work": null,
+      "location": "Reception guest-information book",
+      "chapters": [],
+      "availability": "guest",
+      "householdProfiles": [
+        {
+          "name": "Sylvie Ash",
+          "birthday": "1984-04-10",
+          "age": "42",
+          "height": "6 ft 10 in",
+          "weight": "375 lb",
+          "fur": "Deep brown",
+          "eyes": "Amber"
+        },
+        {
+          "name": "Finley Ash",
+          "birthday": "1987-06-15",
+          "age": "39",
+          "height": "6 ft 0 in",
+          "weight": "392 lb",
+          "fur": "Warm brown",
+          "eyes": "Hazel"
+        }
+      ],
+      "storyFields": {
+        "origin": "Rosebank",
+        "birthplace": "Old Mill Cottage, Rosebank",
+        "parents": "Hector Ash and Mina Ash",
+        "oldAddress": "53 Willow Lane, Rosebank",
+        "reasonLeaving": "I had drifted between places for too long. I decided to seek a home, not just a bed.",
+        "whyHoneybrook": "Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness.",
+        "plans": "Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life."
+      },
+      "credentials": {
+        "work": "Previous community clerical work experience.",
+        "skills": "clerical work",
+        "references": "A reference may be checked with the Rosebank community workshop office.",
+        "housingNeeds": "A modest home and optional community company."
+      }
+    },
+    {
+      "id": "reception-arrival-family-7",
+      "sourceId": "arrival-family-7",
+      "source": "game",
+      "group": "Reception arrival · game addition",
+      "name": "Owen Glen and family",
+      "kind": "Bear household",
+      "details": "Mossbridge Riverside Cottage, Mossbridge Gideon Glen and Olive Glen 56 Mill Road, Mossbridge Our rented cottage was sold, and we needed somewhere our whole family could stay together. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Settle the household, learn the town, find suitable work and eventually move together into an available cottage.",
+      "personality": "Quietly observant and thoughtful",
+      "routine": "Shared meals, gentle community contact and quiet evening rest.",
+      "family": "Owen Glen, Aspen Glen, Calla Glen, Lark Glen",
+      "age": "Owen Glen: 46; Aspen Glen: 38; Calla Glen: 7; Lark Glen: 11",
+      "status": "Potential arrival; not automatically checked in. The player writes the ledger.",
+      "home": {
+        "name": "Reception register · accommodation is assigned by the player",
+        "route": "reception.html?view=households"
+      },
+      "work": null,
+      "location": "Reception guest-information book",
+      "chapters": [],
+      "availability": "guest",
+      "householdProfiles": [
+        {
+          "name": "Owen Glen",
+          "birthday": "1980-07-17",
+          "age": "46",
+          "height": "5 ft 1 in",
+          "weight": "398 lb",
+          "fur": "Warm brown",
+          "eyes": "Hazel"
+        },
+        {
+          "name": "Aspen Glen",
+          "birthday": "1988-09-22",
+          "age": "38",
+          "height": "5 ft 2 in",
+          "weight": "415 lb",
+          "fur": "Cinnamon brown",
+          "eyes": "Dark brown"
+        },
+        {
+          "name": "Calla Glen",
+          "birthday": "2018-11-01",
+          "age": "7",
+          "height": "3 ft 3 in",
+          "weight": "85 lb",
+          "fur": "Dark chestnut",
+          "eyes": "Brown"
+        },
+        {
+          "name": "Lark Glen",
+          "birthday": "2015-01-06",
+          "age": "11",
+          "height": "4 ft 4 in",
+          "weight": "110 lb",
+          "fur": "Honey brown",
+          "eyes": "Amber"
+        }
+      ],
+      "storyFields": {
+        "origin": "Mossbridge",
+        "birthplace": "Riverside Cottage, Mossbridge",
+        "parents": "Gideon Glen and Olive Glen",
+        "oldAddress": "56 Mill Road, Mossbridge",
+        "reasonLeaving": "Our rented cottage was sold, and we needed somewhere our whole family could stay together.",
+        "whyHoneybrook": "Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness.",
+        "plans": "Settle the household, learn the town, find suitable work and eventually move together into an available cottage."
+      },
+      "credentials": {
+        "work": "Previous community painting experience.",
+        "skills": "painting",
+        "references": "A reference may be checked with the Mossbridge community workshop office.",
+        "housingNeeds": "Enough suitable beds for the whole household."
+      }
+    },
+    {
+      "id": "reception-arrival-quiet-7",
+      "sourceId": "arrival-quiet-7",
+      "source": "game",
+      "group": "Reception arrival · game addition",
+      "name": "Rue Glen",
+      "kind": "Bear cub · quiet supported visitor",
+      "details": "Hazelcombe Riverside Cottage, Hazelcombe Alfred Glen and Viola Glen 58 Mill Road, Hazelcombe The adults caring for me left me behind. A kind traveller helped me reach somewhere safe. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready.",
+      "personality": "Quietly observant and thoughtful",
+      "routine": "Rest and meals first; optional reading or company.",
+      "family": "Rue Glen",
+      "age": "Rue Glen: 13",
+      "status": "Potential arrival; not automatically checked in. The player writes the ledger.",
+      "home": {
+        "name": "Reception register · accommodation is assigned by the player",
+        "route": "reception.html?view=individual"
+      },
+      "work": null,
+      "location": "Reception guest-information book",
+      "chapters": [],
+      "availability": "guest",
+      "householdProfiles": [
+        {
+          "name": "Rue Glen",
+          "birthday": "2013-07-17",
+          "age": "13",
+          "height": "4 ft 1 in",
+          "weight": "119 lb",
+          "fur": "Warm brown",
+          "eyes": "Hazel"
+        }
+      ],
+      "storyFields": {
+        "origin": "Hazelcombe",
+        "birthplace": "Riverside Cottage, Hazelcombe",
+        "parents": "Alfred Glen and Viola Glen",
+        "oldAddress": "58 Mill Road, Hazelcombe",
+        "reasonLeaving": "The adults caring for me left me behind. A kind traveller helped me reach somewhere safe.",
+        "whyHoneybrook": "Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness.",
+        "plans": "Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready."
+      },
+      "credentials": {
+        "work": "Young cub; not an employment applicant.",
+        "skills": "Personal interests are not conditions for care.",
+        "references": "Any agreed cottage move needs continuing trusted adult support.",
+        "housingNeeds": "A private calm place with steady adult care."
+      }
+    },
+    {
+      "id": "reception-arrival-bunk-7",
+      "sourceId": "arrival-bunk-7",
+      "source": "game",
+      "group": "Reception arrival · game addition",
+      "name": "Toby Glen",
+      "kind": "Adult bear newcomer",
+      "details": "Willowmere Riverside Cottage, Willowmere Edwin Glen and Nora Glen 60 Mill Road, Willowmere I was treated as though I did not belong in my old settlement. I wanted a kinder place to begin again. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life.",
+      "personality": "Quietly observant and thoughtful",
+      "routine": "Shared meals, gentle community contact and quiet evening rest.",
+      "family": "Toby Glen",
+      "age": "Toby Glen: 45",
+      "status": "Potential arrival; not automatically checked in. The player writes the ledger.",
+      "home": {
+        "name": "Reception register · accommodation is assigned by the player",
+        "route": "reception.html?view=individual"
+      },
+      "work": null,
+      "location": "Reception guest-information book",
+      "chapters": [],
+      "availability": "guest",
+      "householdProfiles": [
+        {
+          "name": "Toby Glen",
+          "birthday": "1981-07-17",
+          "age": "45",
+          "height": "5 ft 1 in",
+          "weight": "398 lb",
+          "fur": "Warm brown",
+          "eyes": "Hazel"
+        }
+      ],
+      "storyFields": {
+        "origin": "Willowmere",
+        "birthplace": "Riverside Cottage, Willowmere",
+        "parents": "Edwin Glen and Nora Glen",
+        "oldAddress": "60 Mill Road, Willowmere",
+        "reasonLeaving": "I was treated as though I did not belong in my old settlement. I wanted a kinder place to begin again.",
+        "whyHoneybrook": "Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness.",
+        "plans": "Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life."
+      },
+      "credentials": {
+        "work": "Previous community painting experience.",
+        "skills": "painting",
+        "references": "A reference may be checked with the Willowmere community workshop office.",
+        "housingNeeds": "A modest home and optional community company."
+      }
+    },
+    {
+      "id": "reception-arrival-family-8",
+      "sourceId": "arrival-family-8",
+      "source": "game",
+      "group": "Reception arrival · game addition",
+      "name": "Flora Pine and family",
+      "kind": "Bear household",
+      "details": "Pinewater Old Mill Cottage, Pinewater Leonard Pine and Elsie Pine 63 Orchard Close, Pinewater Repairs made our old home temporarily unsafe to live in. We left together with our clothes and keepsakes. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Settle the household, learn the town, find suitable work and eventually move together into an available cottage.",
+      "personality": "Warm once comfortable; patient with plans",
+      "routine": "Shared meals, gentle community contact and quiet evening rest.",
+      "family": "Flora Pine, Joss Pine, Milo Pine",
+      "age": "Flora Pine: 48; Joss Pine: 8; Milo Pine: 12",
+      "status": "Potential arrival; not automatically checked in. The player writes the ledger.",
+      "home": {
+        "name": "Reception register · accommodation is assigned by the player",
+        "route": "reception.html?view=households"
+      },
+      "work": null,
+      "location": "Reception guest-information book",
+      "chapters": [],
+      "availability": "guest",
+      "householdProfiles": [
+        {
+          "name": "Flora Pine",
+          "birthday": "1978-10-24",
+          "age": "48",
+          "height": "6 ft 3 in",
+          "weight": "421 lb",
+          "fur": "Cinnamon brown",
+          "eyes": "Dark brown"
+        },
+        {
+          "name": "Joss Pine",
+          "birthday": "2018-02-08",
+          "age": "8",
+          "height": "3 ft 5 in",
+          "weight": "92 lb",
+          "fur": "Honey brown",
+          "eyes": "Amber"
+        },
+        {
+          "name": "Milo Pine",
+          "birthday": "2014-04-13",
+          "age": "12",
+          "height": "4 ft 6 in",
+          "weight": "117 lb",
+          "fur": "Soft russet",
+          "eyes": "Hazel"
+        }
+      ],
+      "storyFields": {
+        "origin": "Pinewater",
+        "birthplace": "Old Mill Cottage, Pinewater",
+        "parents": "Leonard Pine and Elsie Pine",
+        "oldAddress": "63 Orchard Close, Pinewater",
+        "reasonLeaving": "Repairs made our old home temporarily unsafe to live in. We left together with our clothes and keepsakes.",
+        "whyHoneybrook": "Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness.",
+        "plans": "Settle the household, learn the town, find suitable work and eventually move together into an available cottage."
+      },
+      "credentials": {
+        "work": "Previous community music experience.",
+        "skills": "music",
+        "references": "A reference may be checked with the Pinewater community workshop office.",
+        "housingNeeds": "Enough suitable beds for the whole household."
+      }
+    },
+    {
+      "id": "reception-arrival-quiet-8",
+      "sourceId": "arrival-quiet-8",
+      "source": "game",
+      "group": "Reception arrival · game addition",
+      "name": "Bram Acorn",
+      "kind": "Bear cub · quiet supported visitor",
+      "details": "Rosebank Old Mill Cottage, Rosebank Hector Acorn and Mina Acorn 65 Orchard Close, Rosebank I became separated from my family on a travelling route. Trusted adults are helping with a careful search. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready.",
+      "personality": "Warm once comfortable; patient with plans",
+      "routine": "Rest and meals first; optional reading or company.",
+      "family": "Bram Acorn",
+      "age": "Bram Acorn: 7",
+      "status": "Potential arrival; not automatically checked in. The player writes the ledger.",
+      "home": {
+        "name": "Reception register · accommodation is assigned by the player",
+        "route": "reception.html?view=individual"
+      },
+      "work": null,
+      "location": "Reception guest-information book",
+      "chapters": [],
+      "availability": "guest",
+      "householdProfiles": [
+        {
+          "name": "Bram Acorn",
+          "birthday": "2019-10-24",
+          "age": "7",
+          "height": "3 ft 3 in",
+          "weight": "84 lb",
+          "fur": "Cinnamon brown",
+          "eyes": "Dark brown"
+        }
+      ],
+      "storyFields": {
+        "origin": "Rosebank",
+        "birthplace": "Old Mill Cottage, Rosebank",
+        "parents": "Hector Acorn and Mina Acorn",
+        "oldAddress": "65 Orchard Close, Rosebank",
+        "reasonLeaving": "I became separated from my family on a travelling route. Trusted adults are helping with a careful search.",
+        "whyHoneybrook": "Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness.",
+        "plans": "Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready."
+      },
+      "credentials": {
+        "work": "Young cub; not an employment applicant.",
+        "skills": "Personal interests are not conditions for care.",
+        "references": "Any agreed cottage move needs continuing trusted adult support.",
+        "housingNeeds": "A private calm place with steady adult care."
+      }
+    },
+    {
+      "id": "reception-arrival-bunk-8",
+      "sourceId": "arrival-bunk-8",
+      "source": "game",
+      "group": "Reception arrival · game addition",
+      "name": "Wren Alder",
+      "kind": "Adult bear newcomer",
+      "details": "Briarford Old Mill Cottage, Briarford Silas Alder and Mabel Alder 67 Orchard Close, Briarford My old lodging closed. I travelled with my small bag and tools to find a community. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life.",
+      "personality": "Warm once comfortable; patient with plans",
+      "routine": "Shared meals, gentle community contact and quiet evening rest.",
+      "family": "Wren Alder",
+      "age": "Wren Alder: 48",
+      "status": "Potential arrival; not automatically checked in. The player writes the ledger.",
+      "home": {
+        "name": "Reception register · accommodation is assigned by the player",
+        "route": "reception.html?view=individual"
+      },
+      "work": null,
+      "location": "Reception guest-information book",
+      "chapters": [],
+      "availability": "guest",
+      "householdProfiles": [
+        {
+          "name": "Wren Alder",
+          "birthday": "1978-10-24",
+          "age": "48",
+          "height": "6 ft 3 in",
+          "weight": "421 lb",
+          "fur": "Cinnamon brown",
+          "eyes": "Dark brown"
+        }
+      ],
+      "storyFields": {
+        "origin": "Briarford",
+        "birthplace": "Old Mill Cottage, Briarford",
+        "parents": "Silas Alder and Mabel Alder",
+        "oldAddress": "67 Orchard Close, Briarford",
+        "reasonLeaving": "My old lodging closed. I travelled with my small bag and tools to find a community.",
+        "whyHoneybrook": "Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness.",
+        "plans": "Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life."
+      },
+      "credentials": {
+        "work": "Previous community music experience.",
+        "skills": "music",
+        "references": "A reference may be checked with the Briarford community workshop office.",
+        "housingNeeds": "A modest home and optional community company."
+      }
+    },
+    {
+      "id": "reception-arrival-family-9",
+      "sourceId": "arrival-family-9",
+      "source": "game",
+      "group": "Reception arrival · game addition",
+      "name": "Hollis Dale and family",
+      "kind": "Bear household",
+      "details": "Hazelcombe Riverside Cottage, Hazelcombe Alfred Dale and Viola Dale 70 Brookside Walk, Hazelcombe The workshop where we worked closed. We needed a fresh start without separating the family. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Settle the household, learn the town, find suitable work and eventually move together into an available cottage.",
+      "personality": "Curious, creative and fond of familiar routines",
+      "routine": "Shared meals, gentle community contact and quiet evening rest.",
+      "family": "Hollis Dale, Marin Dale, Willa Dale, Briar Dale",
+      "age": "Hollis Dale: 50; Marin Dale: 40; Willa Dale: 9; Briar Dale: 9",
+      "status": "Potential arrival; not automatically checked in. The player writes the ledger.",
+      "home": {
+        "name": "Reception register · accommodation is assigned by the player",
+        "route": "reception.html?view=households"
+      },
+      "work": null,
+      "location": "Reception guest-information book",
+      "chapters": [],
+      "availability": "guest",
+      "householdProfiles": [
+        {
+          "name": "Hollis Dale",
+          "birthday": "1976-01-05",
+          "age": "50",
+          "height": "5 ft 5 in",
+          "weight": "444 lb",
+          "fur": "Dark chestnut",
+          "eyes": "Brown"
+        },
+        {
+          "name": "Marin Dale",
+          "birthday": "1986-03-10",
+          "age": "40",
+          "height": "5 ft 6 in",
+          "weight": "271 lb",
+          "fur": "Honey brown",
+          "eyes": "Amber"
+        },
+        {
+          "name": "Willa Dale",
+          "birthday": "2017-05-15",
+          "age": "9",
+          "height": "3 ft 7 in",
+          "weight": "99 lb",
+          "fur": "Soft russet",
+          "eyes": "Hazel"
+        },
+        {
+          "name": "Briar Dale",
+          "birthday": "2017-07-20",
+          "age": "9",
+          "height": "3 ft 8 in",
+          "weight": "100 lb",
+          "fur": "Deep brown",
+          "eyes": "Dark brown"
+        }
+      ],
+      "storyFields": {
+        "origin": "Hazelcombe",
+        "birthplace": "Riverside Cottage, Hazelcombe",
+        "parents": "Alfred Dale and Viola Dale",
+        "oldAddress": "70 Brookside Walk, Hazelcombe",
+        "reasonLeaving": "The workshop where we worked closed. We needed a fresh start without separating the family.",
+        "whyHoneybrook": "Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness.",
+        "plans": "Settle the household, learn the town, find suitable work and eventually move together into an available cottage."
+      },
+      "credentials": {
+        "work": "Previous community repairs experience.",
+        "skills": "repairs",
+        "references": "A reference may be checked with the Hazelcombe community workshop office.",
+        "housingNeeds": "Enough suitable beds for the whole household and wider step-free access."
+      }
+    },
+    {
+      "id": "reception-arrival-quiet-9",
+      "sourceId": "arrival-quiet-9",
+      "source": "game",
+      "group": "Reception arrival · game addition",
+      "name": "Tansy Reed",
+      "kind": "Bear cub · quiet supported visitor",
+      "details": "Willowmere Riverside Cottage, Willowmere Edwin Reed and Nora Reed 72 Brookside Walk, Willowmere My parents died, and there was no familiar caregiver able to keep me. I brought a treasured keepsake. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready.",
+      "personality": "Curious, creative and fond of familiar routines",
+      "routine": "Rest and meals first; optional reading or company.",
+      "family": "Tansy Reed",
+      "age": "Tansy Reed: 8",
+      "status": "Potential arrival; not automatically checked in. The player writes the ledger.",
+      "home": {
+        "name": "Reception register · accommodation is assigned by the player",
+        "route": "reception.html?view=individual"
+      },
+      "work": null,
+      "location": "Reception guest-information book",
+      "chapters": [],
+      "availability": "guest",
+      "householdProfiles": [
+        {
+          "name": "Tansy Reed",
+          "birthday": "2018-01-05",
+          "age": "8",
+          "height": "3 ft 5 in",
+          "weight": "91 lb",
+          "fur": "Dark chestnut",
+          "eyes": "Brown"
+        }
+      ],
+      "storyFields": {
+        "origin": "Willowmere",
+        "birthplace": "Riverside Cottage, Willowmere",
+        "parents": "Edwin Reed and Nora Reed",
+        "oldAddress": "72 Brookside Walk, Willowmere",
+        "reasonLeaving": "My parents died, and there was no familiar caregiver able to keep me. I brought a treasured keepsake.",
+        "whyHoneybrook": "Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness.",
+        "plans": "Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready."
+      },
+      "credentials": {
+        "work": "Young cub; not an employment applicant.",
+        "skills": "Personal interests are not conditions for care.",
+        "references": "Any agreed cottage move needs continuing trusted adult support.",
+        "housingNeeds": "A private calm place with steady adult care."
+      }
+    },
+    {
+      "id": "reception-arrival-bunk-9",
+      "sourceId": "arrival-bunk-9",
+      "source": "game",
+      "group": "Reception arrival · game addition",
+      "name": "Orin Pine and a travelling friend",
+      "kind": "Adult bear newcomer",
+      "details": "Maplecross Riverside Cottage, Maplecross Arthur Pine and Celia Pine 74 Brookside Walk, Maplecross I had drifted between places for too long. I decided to seek a home, not just a bed. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life.",
+      "personality": "Curious, creative and fond of familiar routines",
+      "routine": "Shared meals, gentle community contact and quiet evening rest.",
+      "family": "Orin Pine, Marin Pine",
+      "age": "Orin Pine: 51; Marin Pine: 45",
+      "status": "Potential arrival; not automatically checked in. The player writes the ledger.",
+      "home": {
+        "name": "Reception register · accommodation is assigned by the player",
+        "route": "reception.html?view=households"
+      },
+      "work": null,
+      "location": "Reception guest-information book",
+      "chapters": [],
+      "availability": "guest",
+      "householdProfiles": [
+        {
+          "name": "Orin Pine",
+          "birthday": "1975-01-05",
+          "age": "51",
+          "height": "5 ft 5 in",
+          "weight": "444 lb",
+          "fur": "Dark chestnut",
+          "eyes": "Brown"
+        },
+        {
+          "name": "Marin Pine",
+          "birthday": "1981-03-10",
+          "age": "45",
+          "height": "5 ft 6 in",
+          "weight": "271 lb",
+          "fur": "Honey brown",
+          "eyes": "Amber"
+        }
+      ],
+      "storyFields": {
+        "origin": "Maplecross",
+        "birthplace": "Riverside Cottage, Maplecross",
+        "parents": "Arthur Pine and Celia Pine",
+        "oldAddress": "74 Brookside Walk, Maplecross",
+        "reasonLeaving": "I had drifted between places for too long. I decided to seek a home, not just a bed.",
+        "whyHoneybrook": "Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness.",
+        "plans": "Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life."
+      },
+      "credentials": {
+        "work": "Previous community repairs experience.",
+        "skills": "repairs",
+        "references": "A reference may be checked with the Maplecross community workshop office.",
+        "housingNeeds": "A modest home and optional community company."
+      }
+    },
+    {
+      "id": "reception-arrival-family-10",
+      "sourceId": "arrival-family-10",
+      "source": "game",
+      "group": "Reception arrival · game addition",
+      "name": "Bryn Hazel and family",
+      "kind": "Bear household",
+      "details": "Rosebank Old Mill Cottage, Rosebank Hector Hazel and Mina Hazel 77 Birch Crescent, Rosebank Our rented cottage was sold, and we needed somewhere our whole family could stay together. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Settle the household, learn the town, find suitable work and eventually move together into an available cottage.",
+      "personality": "Quietly observant and thoughtful",
+      "routine": "Shared meals, gentle community contact and quiet evening rest.",
+      "family": "Bryn Hazel, Darcy Hazel, Beck Hazel, Sora Hazel",
+      "age": "Bryn Hazel: 52; Darcy Hazel: 41; Beck Hazel: 10; Sora Hazel: 10",
+      "status": "Potential arrival; not automatically checked in. The player writes the ledger.",
+      "home": {
+        "name": "Reception register · accommodation is assigned by the player",
+        "route": "reception.html?view=households"
+      },
+      "work": null,
+      "location": "Reception guest-information book",
+      "chapters": [],
+      "availability": "guest",
+      "householdProfiles": [
+        {
+          "name": "Bryn Hazel",
+          "birthday": "1974-04-12",
+          "age": "52",
+          "height": "6 ft 7 in",
+          "weight": "277 lb",
+          "fur": "Honey brown",
+          "eyes": "Amber"
+        },
+        {
+          "name": "Darcy Hazel",
+          "birthday": "1985-06-17",
+          "age": "41",
+          "height": "6 ft 8 in",
+          "weight": "294 lb",
+          "fur": "Soft russet",
+          "eyes": "Hazel"
+        },
+        {
+          "name": "Beck Hazel",
+          "birthday": "2016-08-22",
+          "age": "10",
+          "height": "4 ft 9 in",
+          "weight": "106 lb",
+          "fur": "Deep brown",
+          "eyes": "Dark brown"
+        },
+        {
+          "name": "Sora Hazel",
+          "birthday": "2016-10-01",
+          "age": "10",
+          "height": "4 ft 10 in",
+          "weight": "95 lb",
+          "fur": "Warm brown",
+          "eyes": "Brown"
+        }
+      ],
+      "storyFields": {
+        "origin": "Rosebank",
+        "birthplace": "Old Mill Cottage, Rosebank",
+        "parents": "Hector Hazel and Mina Hazel",
+        "oldAddress": "77 Birch Crescent, Rosebank",
+        "reasonLeaving": "Our rented cottage was sold, and we needed somewhere our whole family could stay together.",
+        "whyHoneybrook": "Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness.",
+        "plans": "Settle the household, learn the town, find suitable work and eventually move together into an available cottage."
+      },
+      "credentials": {
+        "work": "Previous community food growing experience.",
+        "skills": "food growing",
+        "references": "A reference may be checked with the Rosebank community workshop office.",
+        "housingNeeds": "Enough suitable beds for the whole household."
+      }
+    },
+    {
+      "id": "reception-arrival-quiet-10",
+      "sourceId": "arrival-quiet-10",
+      "source": "game",
+      "group": "Reception arrival · game addition",
+      "name": "Remy Dale",
+      "kind": "Bear cub · quiet supported visitor",
+      "details": "Briarford Old Mill Cottage, Briarford Silas Dale and Mabel Dale 79 Birch Crescent, Briarford The adults caring for me left me behind. A kind traveller helped me reach somewhere safe. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready.",
+      "personality": "Quietly observant and thoughtful",
+      "routine": "Rest and meals first; optional reading or company.",
+      "family": "Remy Dale",
+      "age": "Remy Dale: 9",
+      "status": "Potential arrival; not automatically checked in. The player writes the ledger.",
+      "home": {
+        "name": "Reception register · accommodation is assigned by the player",
+        "route": "reception.html?view=individual"
+      },
+      "work": null,
+      "location": "Reception guest-information book",
+      "chapters": [],
+      "availability": "guest",
+      "householdProfiles": [
+        {
+          "name": "Remy Dale",
+          "birthday": "2017-04-12",
+          "age": "9",
+          "height": "3 ft 7 in",
+          "weight": "98 lb",
+          "fur": "Honey brown",
+          "eyes": "Amber"
+        }
+      ],
+      "storyFields": {
+        "origin": "Briarford",
+        "birthplace": "Old Mill Cottage, Briarford",
+        "parents": "Silas Dale and Mabel Dale",
+        "oldAddress": "79 Birch Crescent, Briarford",
+        "reasonLeaving": "The adults caring for me left me behind. A kind traveller helped me reach somewhere safe.",
+        "whyHoneybrook": "Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness.",
+        "plans": "Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready."
+      },
+      "credentials": {
+        "work": "Young cub; not an employment applicant.",
+        "skills": "Personal interests are not conditions for care.",
+        "references": "Any agreed cottage move needs continuing trusted adult support.",
+        "housingNeeds": "A private calm place with steady adult care."
+      }
+    },
+    {
+      "id": "reception-arrival-bunk-10",
+      "sourceId": "arrival-bunk-10",
+      "source": "game",
+      "group": "Reception arrival · game addition",
+      "name": "Faye Hazel",
+      "kind": "Adult bear newcomer",
+      "details": "Cedar Glen Old Mill Cottage, Cedar Glen Reuben Hazel and Etta Hazel 81 Birch Crescent, Cedar Glen I was treated as though I did not belong in my old settlement. I wanted a kinder place to begin again. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life.",
+      "personality": "Quietly observant and thoughtful",
+      "routine": "Shared meals, gentle community contact and quiet evening rest.",
+      "family": "Faye Hazel",
+      "age": "Faye Hazel: 54",
+      "status": "Potential arrival; not automatically checked in. The player writes the ledger.",
+      "home": {
+        "name": "Reception register · accommodation is assigned by the player",
+        "route": "reception.html?view=individual"
+      },
+      "work": null,
+      "location": "Reception guest-information book",
+      "chapters": [],
+      "availability": "guest",
+      "householdProfiles": [
+        {
+          "name": "Faye Hazel",
+          "birthday": "1972-04-12",
+          "age": "54",
+          "height": "6 ft 7 in",
+          "weight": "277 lb",
+          "fur": "Honey brown",
+          "eyes": "Amber"
+        }
+      ],
+      "storyFields": {
+        "origin": "Cedar Glen",
+        "birthplace": "Old Mill Cottage, Cedar Glen",
+        "parents": "Reuben Hazel and Etta Hazel",
+        "oldAddress": "81 Birch Crescent, Cedar Glen",
+        "reasonLeaving": "I was treated as though I did not belong in my old settlement. I wanted a kinder place to begin again.",
+        "whyHoneybrook": "Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness.",
+        "plans": "Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life."
+      },
+      "credentials": {
+        "work": "Previous community food growing experience.",
+        "skills": "food growing",
+        "references": "A reference may be checked with the Cedar Glen community workshop office.",
+        "housingNeeds": "A modest home and optional community company."
+      }
     }
   ],
   "zones": [
