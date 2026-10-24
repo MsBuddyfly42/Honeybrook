@@ -174,3 +174,7 @@ The welcome front page uses **one stationary photograph only**: the original fir
 ## Interior rooms and bear-world reference — October 24, 2026
 
 Give every business and home/cabin/cottage at least five connected interior rooms, each with ten purpose-specific assignments and appropriate photographic scenes. Homes receive seven domestic rooms. The owner rejected ordinary human-country interiors and explicitly chose the **inside of the Community Storm Refuge** as the visual reference: actual furry bears, substantial warm timber/stone architecture, bear-scale furnishings and plum/green textiles. Keep lighting restrained. Match a building's use and existing exterior family; do not turn outdoor paths/lawns into indoor buildings. New rooms remain game additions for later manuscript adaptation.
+
+## New game session destination — October 24, 2026
+
+Only start from the Welcome House entrance after exiting the game and closing its tab. Refreshing an open tab returns to the entrance of the last place visited, with unfinished work saved. Connected interiors reopen the same building at its first room; a room activity is not automatically resumed. Keep all saved gameplay intact. A committed Journey remains committed; Continue resumes it from the entrance without opening free play.
