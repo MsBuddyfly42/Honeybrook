@@ -26,7 +26,8 @@
       390
     ],
     "economy": "actual ticket office purchases, midway admission/prizes, wristband ride, concession, Fair save/reload and Town Hall ledger",
-    "otherSavePreservation": true
+    "otherSavePreservation": true,
+    "nightSceneCheck": "New scene backdrops follow shared night mode; foreground buttons remain bright and playable."
   },
   "ruleChecks": [
     "40 complete citizen cases",
