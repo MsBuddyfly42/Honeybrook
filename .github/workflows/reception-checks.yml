@@ -20,6 +20,7 @@ jobs:
           node --check journey.js
           node --check story-mode.js
           node tests/reception.cjs
+          node tests/reception-edits.cjs
           node tests/community.cjs
           node tests/interiors.cjs
       - name: Install pinned browser harness
@@ -38,6 +39,8 @@ jobs:
             sleep 1
           done
           node tests/reception.mjs
+          node tests/reception-edits.mjs
+          node tests/page-back.mjs
           node tests/quiet-guest-rooms.mjs
           node tests/interior-navigation.mjs
       - name: Keep browser screenshots
