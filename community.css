@@ -21,3 +21,7 @@ body:has(>.honeybrook-sound){padding-bottom:120px}.honeybrook-sound{max-height:7
 
 /* Fair sound controls are available inside its deliberately opened menu. */
 #hud:not(.hud-open):not(:focus-within) .honeybrook-sound{display:none}
+
+.community-all-clear{position:relative;padding:12px 18px;background:#dcebd0;color:#24442e;border-bottom:2px solid #769666;font:700 15px/1.4 system-ui}.storm-end-clock{display:block;color:#fff0b5}
+
+.community-all-clear{flex:1 1 100%;box-sizing:border-box;max-width:100%;border-radius:8px}

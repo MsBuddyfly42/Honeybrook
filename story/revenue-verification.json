@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-23",
+  "scope": "Isolated synthetic test saves; no owner browser save accessed",
+  "local": {
+    "ruleChecks": [
+      "all 44 offers across 10 enterprises",
+      "eight saved actions and once-only balanced receipts",
+      "town/private fee separation and no vendor-sales miscount",
+      "premium/stay gates, exclusive booking dates, rescheduling, cancellations, daily limits",
+      "town/camp timed all-clear and quiet readiness without fabricated checks",
+      "existing refuge, camp and Fair economy rule suites"
+    ],
+    "browserWidths": [
+      1440,
+      390
+    ],
+    "enterpriseGameplay": "All ten desks and eighty actual actions per width, plan arrangement, wrong-check retry, invoice/handover, partial reload, combined treasury, all 44 guide offers and older-save preservation",
+    "stormGameplay": "Actual town/camp weather clearance, red-banner/siren removal, restored header space, navigation/reload and quiet readiness; old save strings preserved"
+  },
+  "sourceManuscriptSha256": "8c3c52318cd77fe5253987fbf77850d8c0ebc49bb15bb6fa142dbe38f4822cab",
+  "live": {
+    "status": "pending publishing",
+    "fullLegacyWorldReplay": false
+  }
+}
