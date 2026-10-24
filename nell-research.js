@@ -23,8 +23,8 @@ const tasks=[
         "question": "Choose Nell’s next research question.",
         "options": [
           "Why is Goldilocks remembered so deeply here?",
-          "How much must Nell pay to be welcomed?",
-          "Where is Nell’s royal coronation?"
+          "Which bears personally remember Goldilocks?",
+          "Does looking like Goldilocks establish Nell’s ancestry?"
         ],
         "answer": 0,
         "note": "Follow the community’s memory of Goldilocks. Nell’s welcome is freely given."
@@ -68,7 +68,7 @@ const tasks=[
         "options": [
           "Proof the family did not care.",
           "A route by which woodland knowledge could reach the human family.",
-          "A reason to erase the old searches."
+          "More copies of the same search summary."
         ],
         "answer": 1,
         "note": "Being loved and widely known in one community did not make her whereabouts known outside it."
@@ -76,8 +76,8 @@ const tasks=[
       {
         "question": "Choose the next source to examine.",
         "options": [
-          "An invented royal decree.",
-          "A claim that the family never searched.",
+          "A second retelling of the same woodland account.",
+          "A later second-hand version of the search route.",
           "The family’s search notes and the point where fear stopped them."
         ],
         "answer": 2,
@@ -112,7 +112,7 @@ const tasks=[
         "options": [
           "Nell’s hair alone.",
           "Details about the beekeepers, the child and who personally knew her.",
-          "How expensive the family estate is."
+          "The date Nell entered Honeybrook."
         ],
         "answer": 1,
         "note": "Look for shared events and personal testimony rather than wealth or resemblance."
@@ -291,7 +291,7 @@ const tasks=[
       {
         "question": "Match Nell’s knowledge to the family account.",
         "options": [
-          "A new royal title.",
+          "A family name confirmed by a signed record.",
           "Beekeeping, honey and care for the hives.",
           "A letter she has not yet read."
         ],
@@ -302,7 +302,7 @@ const tasks=[
         "question": "What does shared beekeeping establish?",
         "options": [
           "A meaningful lead to investigate, not the full answer.",
-          "An automatic meeting with Harold.",
+          "A dated account identifying her parents.",
           "Proof that Nell and Goldilocks are the same person."
         ],
         "answer": 0,
@@ -311,8 +311,8 @@ const tasks=[
       {
         "question": "Choose the next place to understand the bears’ care.",
         "options": [
-          "Leave the mystery behind.",
-          "Invent a new human witness.",
+          "Treat the shared trade as a complete identification.",
+          "Revisit the same hive without seeking another source.",
           "Bear Hollow, where the animals remember Goldilocks."
         ],
         "answer": 2,
@@ -389,8 +389,8 @@ const tasks=[
         "question": "Which question follows the missing-person account forward?",
         "options": [
           "What life might she have had after the day the family lost her?",
-          "Why did she become a queen?",
-          "Why did the family never care?"
+          "Did her relatives know the location of this garden?",
+          "Could this garden alone establish her human identity?"
         ],
         "answer": 0,
         "note": "Nell begins looking for the life beyond the disappearance rather than only its last known moment."
@@ -447,9 +447,9 @@ const tasks=[
       {
         "question": "Whose knowledge stayed inside the deep woods?",
         "options": [
-          "Only a human newspaper editor’s.",
+          "Only Nell’s interpretation of the place names.",
           "The animals’ knowledge of Goldilocks and her place among them.",
-          "Nell’s already-opened letter."
+          "A conclusion based only on the resemblance."
         ],
         "answer": 1,
         "note": "Goldilocks’s woodland fame could not answer relatives who did not know where or whom to ask."
@@ -457,7 +457,7 @@ const tasks=[
       {
         "question": "What is still needed before Nell tells her family what happened?",
         "options": [
-          "A guess presented as a recovered document.",
+          "Another retelling without a first-hand source.",
           "A claim that nobody ever searched.",
           "A personal account entrusted to someone who can explain it."
         ],
@@ -493,7 +493,7 @@ const tasks=[
         "options": [
           "Between a woodland community and human relatives who did not know it existed.",
           "Between Nell and a letter she has already mailed.",
-          "Because every animal forgot her."
+          "Because the surviving accounts use different names."
         ],
         "answer": 0,
         "note": "The tragedy includes a missing connection between two communities, not an absence of remembrance."
@@ -541,8 +541,8 @@ const tasks=[
         "question": "Why must Nell tell this carefully?",
         "options": [
           "The family needs truth about survival, loss and years apart.",
-          "A happy ending requires erasing every death.",
-          "The bears should invent a reunion."
+          "Survival alone explains what happened in every later year.",
+          "A remembered resemblance dates the whole family tree."
         ],
         "answer": 0,
         "note": "Relief will not erase grief. Both belong in the discovery."
@@ -642,9 +642,9 @@ const tasks=[
       {
         "question": "Choose the questions to take to Harold.",
         "options": [
-          "Why did the family refuse to search at all?",
+          "Can he identify Nell from her hair alone?",
           "What happened to the beekeepers, what became of their daughter, and did she leave word for family?",
-          "Can he explain every secret of the Northern Woods?"
+          "Can he confirm a theory without seeing the family details?"
         ],
         "answer": 1,
         "note": "Nell’s questions now grow from her research, her grandfather’s promise and the dream’s instruction."
@@ -667,9 +667,10 @@ const tasks=[
   }
 ];
 const initial=()=>({version:1,revision:0,files:{},mail:{draft:'',posted:false,copy:''}});
+for(const t of tasks)for(const st of t.steps)if(st.type==='order'&&!['trade','years'].includes(t.id)){st.unordered=true;st.question={names:'Compare both accounts and keep the unproven link marked as a question.',map:'Compare the search boundary with the deeper settlements.',hearsay:'Compare the family’s fear with Nell’s actual welcome.',garden:'Keep these three questions open while examining the garden.',animals:'Compare who knew the woodland story and who did not.',packet:'Review the questions Nell intends to take to Harold.'}[t.id];}
 function valid(s){try{if(!s||s.version!==1||!Number.isSafeInteger(s.revision)||s.revision<0||!s.files||Array.isArray(s.files)||Object.keys(s.files).some(id=>!tasks.some(t=>t.id===id)))return false;let closed=false;for(const t of tasks){const f=s.files[t.id];if(f){if(closed||f.visited!==true||!Number.isInteger(f.step)||f.step<0||f.step>3)return false;if(f.step<3)closed=true;}else closed=true;}const m=s.mail;return !!m&&typeof m.draft==='string'&&m.draft.length<=4000&&typeof m.posted==='boolean'&&typeof m.copy==='string'&&m.copy.length<=4000&&(m.posted?!!m.copy.trim():m.copy==='');}catch{return false;}}
 const complete=s=>valid(s)&&tasks.every(t=>s.files[t.id]?.step===3);
 const letterRead=s=>!!s?.letterOpened&&(s.chapter>3||s.chapter===3&&s.step>=3);
-function run(input,a,journey){if(!valid(input))throw Error('Research save needs recovery; it has not been overwritten.');const s=JSON.parse(JSON.stringify(input));if(a.type==='draft'||a.type==='post'){if(!letterRead(journey))throw Error('Read Goldilocks’s letter before writing this discovery home.');if(s.mail.posted)throw Error('Your letter is already in Harold’s outgoing family post.');const text=String(a.text||'').trim();if(!text||text.length>4000)throw Error('Write 1–4000 characters for your family.');s.mail.draft=text;if(a.type==='post'){s.mail.posted=true;s.mail.copy=text;}}else{const t=tasks.find(t=>t.id===a.id);if(!t)throw Error('Choose a research file.');if(tasks.slice(0,tasks.indexOf(t)).some(x=>s.files[x.id]?.step!==3))throw Error('Follow the next lead from your last research file.');if(a.type==='visit'){if(!s.files[t.id])s.files[t.id]={visited:true,step:0};else return {state:s,message:'This place is already in your research notebook.'};}else if(a.type==='answer'){const f=s.files[t.id];if(!f)throw Error('Enter the actual research place before working on its evidence.');if(f.step>=3)throw Error('This file is complete. Follow its next lead.');if(a.step!==f.step)throw Error('This research file changed. Reload before continuing.');const st=t.steps[f.step],right=st.type==='order'?Array.isArray(a.sequence)&&JSON.stringify(a.sequence)===JSON.stringify(st.order):a.choice===st.answer;if(!right)return{state:s,message:'Paws and ponder: '+t.steps[f.step].note,correct:false};f.step++;}else throw Error('Choose a research action.');}s.revision++;if(!valid(s))throw Error('This research action could not be saved.');return{state:s,message:a.type==='post'?'Your family letter is posted in the game. A copy remains here.':a.type==='draft'?'Your family letter draft is saved.':'Research notebook updated.',correct:true};}
+function run(input,a,journey){if(!valid(input))throw Error('Research save needs recovery; it has not been overwritten.');const s=JSON.parse(JSON.stringify(input));if(a.type==='draft'||a.type==='post'){if(!letterRead(journey))throw Error('Read Goldilocks’s letter before writing this discovery home.');if(s.mail.posted)throw Error('Your letter is already in Harold’s outgoing family post.');const text=String(a.text||'').trim();if(!text||text.length>4000)throw Error('Write 1–4000 characters for your family.');s.mail.draft=text;if(a.type==='post'){s.mail.posted=true;s.mail.copy=text;}}else{const t=tasks.find(t=>t.id===a.id);if(!t)throw Error('Choose a research file.');if(tasks.slice(0,tasks.indexOf(t)).some(x=>s.files[x.id]?.step!==3))throw Error('Follow the next lead from your last research file.');if(a.type==='visit'){if(!s.files[t.id])s.files[t.id]={visited:true,step:0};else return {state:s,message:'This place is already in your research notebook.'};}else if(a.type==='answer'){const f=s.files[t.id];if(!f)throw Error('Enter the actual research place before working on its evidence.');if(f.step>=3)throw Error('This file is complete. Follow its next lead.');if(a.step!==f.step)throw Error('This research file changed. Reload before continuing.');const st=t.steps[f.step],right=st.type==='order'?Array.isArray(a.sequence)&&(st.unordered?a.sequence.length===st.cards.length&&new Set(a.sequence).size===st.cards.length&&a.sequence.every(n=>Number.isInteger(n)&&n>=0&&n<st.cards.length):JSON.stringify(a.sequence)===JSON.stringify(st.order)):a.choice===st.answer;if(!right)return{state:s,message:'Paws and ponder: '+t.steps[f.step].note,correct:false};f.step++;}else throw Error('Choose a research action.');}s.revision++;if(!valid(s))throw Error('This research action could not be saved.');return{state:s,message:a.type==='post'?'Your family letter is posted in the game. A copy remains here.':a.type==='draft'?'Your family letter draft is saved.':'Research notebook updated.',correct:true};}
 const familyDraft='My dear family,\n\nI have found the part of our story we could never reach. The beekeepers were lost in the river, but their little girl survived. Goldilocks was sheltered and loved by bears, deep in the woods, in a community we did not know existed.\n\nWe searched for years. We were afraid to go far enough into bear country, never imagining that bears could be the sanctuary of our own kin. She was known and loved by the woodland animals while we still thought her lost. Had we known about Bear Hollow and Honeybrook, perhaps we could have found her.\n\nGoldilocks left a letter for whichever member of our family came looking. Harold kept it. I cried as I read it. She wanted us to know she lived, that she was loved, and that she had not forgotten us. There is grief in this answer, but there is love in it too.\n\nGranddad did not live to hear it, but I have kept my promise. I wanted you to know as soon as I knew. I will bring her words home.\n\nWith love,\nNell';
 return{tasks,initial,valid,complete,run,letterRead,familyDraft};});
