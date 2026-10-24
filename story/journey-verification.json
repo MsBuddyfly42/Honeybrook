@@ -41,7 +41,21 @@
   ],
   "originalManuscriptSha256": "8c3c52318cd77fe5253987fbf77850d8c0ebc49bb15bb6fa142dbe38f4822cab",
   "live": {
-    "status": "pending deployment verification",
-    "fullLiveGameplayReplay": false
+    "status": "Render live",
+    "commit": "c8b2e42f5bef2c3e0b33358dd646576c13dd2a73",
+    "deploy": "dep-dbdviueq1p3s73f59gfg",
+    "servedRuntimeAndArtworkFiles": 37,
+    "matchedLocalSha256": 37,
+    "journeyGameplayWidths": [
+      1440,
+      390
+    ],
+    "journeyGameplay": "Passed using actual live-served assets in isolated browser contexts: introduction, eight opening scenes, future locks, stay, full citizen case/evidence board, object actions, finished room and save/reload",
+    "fullLegacyWorldReplay": false,
+    "fairEconomyGameplayWidths": [
+      1440,
+      390
+    ],
+    "fairEconomyGameplay": "Passed actual live-served ticket purchases, game/prize, wristband ride, concession, Fair save/reload and Town Hall ledger."
   }
 }
