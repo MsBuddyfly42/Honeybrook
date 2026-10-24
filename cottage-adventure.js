@@ -9,7 +9,7 @@ const title=()=>root.querySelector('h1')?.textContent||'';
 const escape=x=>String(x).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const button=(label,action,extra='')=>'<button type="button" data-adventure="'+action+'" '+extra+'>'+label+'</button>';
 const go=n=>dispatchEvent(new CustomEvent('honeybrook-enter-place',{detail:{name:n}}));
-const houses=n=>/cottage|house|home/i.test(n)&&n!=='Distant Cottage Glimpse'&&!/(?:Kitchen|Porch)$/.test(n);
+const houses=n=>/cottage|house|home/i.test(n)&&n!=='Distant Cottage Glimpse'&&n!=='Welcome House'&&!/(?:Kitchen|Porch)$/.test(n);
 const trail=['Old Bridge','Incomplete Map Stone','Giant Mushroom Hollow','Distant Cottage Glimpse'];
 let mounted;
 const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(quest));}catch{const out=root.querySelector('.adventure-feedback');if(out)out.textContent='Saving is unavailable. This adventure will last for this visit.';}};

@@ -76,15 +76,15 @@ const Snd = {
   schedule() {
     if (!this.ctx) return;
     const c = this.ctx, evening = S.slot === 2;
-    const bpm = this.mood === 'pond' ? 72 : evening ? 70 : 88, eighth = 60 / bpm / 2;
-    const prog = [[53, 57, 60], [58, 62, 65], [60, 64, 67], [53, 57, 60], [50, 53, 57], [58, 62, 65], [60, 64, 67], [53, 57, 60]];
+    const bpm = this.mood === 'pond' ? 104 : evening ? 108 : 116, eighth = 60 / bpm / 2;
+    const prog = [[53, 57, 60], [58, 62, 65], [60, 64, 67], [53, 57, 60], [55, 59, 62], [58, 62, 65], [60, 64, 67], [53, 57, 60]];
     const scale = [65, 67, 69, 72, 74, 77, 79, 81];
     const mtof = m => 440 * Math.pow(2, (m - 69) / 12);
     while (this.nextNote < c.currentTime + 0.3) {
       const t = this.nextNote, bar = Math.floor(this.step / 8) % prog.length, beat = this.step % 8, ch = prog[bar];
       if (beat === 0) { ch.forEach(n => this.tone(mtof(n), t, eighth * 7.5, 'sine', 0.05, this.musicGain)); this.tone(mtof(ch[0] - 12), t, eighth * 3, 'triangle', 0.22, this.musicGain); }
       if (beat === 4) this.tone(mtof(ch[2] - 12), t, eighth * 3, 'triangle', 0.16, this.musicGain);
-      const density = this.mood === 'pond' ? 0.32 : evening ? 0.38 : 0.55;
+      const density = this.mood === 'pond' ? 0.65 : evening ? 0.72 : 0.86;
       if (Math.random() < density) {
         this.mel = clamp((this.mel ?? 3) + pick([-2, -1, -1, 0, 1, 1, 2]), 0, scale.length - 1);
         let n = scale[this.mel]; if (beat === 0 && !ch.some(x => (x - n) % 12 === 0)) n = ch[2] + 12;

@@ -178,3 +178,9 @@ Give every business and home/cabin/cottage at least five connected interior room
 ## Refresh and reopening destination — October 24, 2026
 
 Latest owner correction: refreshing always enters **Welcome House**, regardless of the last place. Closing and reopening the game in a new tab starts at the **front page** with the single stationary Welcome House exterior photograph. Keep all saved progress intact. A committed Journey stays committed, with Continue available from either arrival screen.
+
+## Welcome House boarding house and music — October 24, 2026
+
+Welcome visitors from outside, with deliberate front-door entry. Welcome House is a huge timber/stone cottage or cabin boarding house, with home-style reception, several rooms and at least twenty cozy bunk areas. The latest correction requires **one big wide cozy bedroom**, with grouped bunks and shared sitting space, rather than a long hall. Interiors must match the house exterior. Keep a single stationary outside front-page photograph. Music should be lively and cheerful for Honeybrook, rather than sad or slow.
+
+Whole-family clarification: include at least ten private family bedrooms, shared bathroom quarters with multiple toilet stalls/sinks, a private accessible family washroom and suitable family support spaces. Welcome House is the first introduction to Honeybrook and must feel comfortable, practical, generous and home-like.

@@ -927,28 +927,28 @@
       "rooms": [
         {
           "id": "reception",
-          "name": "Reception and waiting room",
+          "name": "Front hall and reception desk",
           "entrance": true,
           "via": "Entrance",
           "floor": 0
         },
         {
           "id": "living",
-          "name": "Living room",
+          "name": "Boarders’ sitting room",
           "entrance": false,
           "via": "Central hall",
           "floor": 0
         },
         {
           "id": "kitchen",
-          "name": "Household kitchen",
+          "name": "Boarding-house kitchen",
           "entrance": false,
           "via": "Central hall",
           "floor": 0
         },
         {
           "id": "dining",
-          "name": "Dining room",
+          "name": "Shared dining room",
           "entrance": false,
           "via": "Central hall",
           "floor": 0
@@ -959,10 +959,158 @@
           "entrance": false,
           "via": "Central hall",
           "floor": 0
+        },
+        {
+          "id": "bedroom",
+          "name": "Cozy shared sleeping room · 20 bunk areas",
+          "entrance": false,
+          "via": "Front hall → shared bedroom",
+          "floor": 0
+        },
+        {
+          "id": "guestroom",
+          "name": "Quiet guest bedroom",
+          "entrance": false,
+          "via": "Stairs → guest corridor",
+          "floor": 1
+        },
+        {
+          "id": "bathroom",
+          "name": "Accessible private family washroom",
+          "entrance": false,
+          "via": "Central hall",
+          "floor": 0
+        },
+        {
+          "id": "laundry",
+          "name": "Laundry and linen room",
+          "entrance": false,
+          "via": "Central hall",
+          "floor": 0
+        },
+        {
+          "id": "attic",
+          "name": "Attic keepsake room",
+          "entrance": false,
+          "via": "House stairs → attic",
+          "floor": 2
+        },
+        {
+          "id": "family01",
+          "name": "Family bedroom 1",
+          "entrance": false,
+          "via": "Front hall → accessible family rooms",
+          "floor": 0,
+          "familyRoom": true
+        },
+        {
+          "id": "family02",
+          "name": "Family bedroom 2",
+          "entrance": false,
+          "via": "Front hall → accessible family rooms",
+          "floor": 0,
+          "familyRoom": true
+        },
+        {
+          "id": "family03",
+          "name": "Family bedroom 3",
+          "entrance": false,
+          "via": "House stairs → family sleeping quarters",
+          "floor": 1,
+          "familyRoom": true
+        },
+        {
+          "id": "family04",
+          "name": "Family bedroom 4",
+          "entrance": false,
+          "via": "House stairs → family sleeping quarters",
+          "floor": 1,
+          "familyRoom": true
+        },
+        {
+          "id": "family05",
+          "name": "Family bedroom 5",
+          "entrance": false,
+          "via": "House stairs → family sleeping quarters",
+          "floor": 1,
+          "familyRoom": true
+        },
+        {
+          "id": "family06",
+          "name": "Family bedroom 6",
+          "entrance": false,
+          "via": "House stairs → family sleeping quarters",
+          "floor": 1,
+          "familyRoom": true
+        },
+        {
+          "id": "family07",
+          "name": "Family bedroom 7",
+          "entrance": false,
+          "via": "House stairs → family sleeping quarters",
+          "floor": 1,
+          "familyRoom": true
+        },
+        {
+          "id": "family08",
+          "name": "Family bedroom 8",
+          "entrance": false,
+          "via": "House stairs → family sleeping quarters",
+          "floor": 2,
+          "familyRoom": true
+        },
+        {
+          "id": "family09",
+          "name": "Family bedroom 9",
+          "entrance": false,
+          "via": "House stairs → family sleeping quarters",
+          "floor": 2,
+          "familyRoom": true
+        },
+        {
+          "id": "family10",
+          "name": "Family bedroom 10",
+          "entrance": false,
+          "via": "House stairs → family sleeping quarters",
+          "floor": 2,
+          "familyRoom": true
+        },
+        {
+          "id": "sharedwashroom",
+          "name": "Shared bathroom quarter",
+          "entrance": false,
+          "via": "Central hall",
+          "floor": 0
+        },
+        {
+          "id": "cubsplay",
+          "name": "Supervised cubs’ playroom",
+          "entrance": false,
+          "via": "Central hall",
+          "floor": 0
+        },
+        {
+          "id": "familysupport",
+          "name": "Private family support room",
+          "entrance": false,
+          "via": "Central hall",
+          "floor": 0
+        },
+        {
+          "id": "necessities",
+          "name": "Clothing and bear necessities room",
+          "entrance": false,
+          "via": "Central hall",
+          "floor": 0
         }
       ],
       "products": [],
-      "parent": null
+      "parent": null,
+      "bunkAreas": 20,
+      "sharedBerths": 40,
+      "familyBedrooms": 10,
+      "washroomStalls": 6,
+      "washroomSinks": 6
     },
     {
       "id": "town-wellness-center",
@@ -6927,7 +7075,26 @@
       "living",
       "kitchen",
       "dining",
-      "study"
+      "study",
+      "bedroom",
+      "guestroom",
+      "bathroom",
+      "laundry",
+      "attic",
+      "family01",
+      "family02",
+      "family03",
+      "family04",
+      "family05",
+      "family06",
+      "family07",
+      "family08",
+      "family09",
+      "family10",
+      "sharedwashroom",
+      "cubsplay",
+      "familysupport",
+      "necessities"
     ],
     "community": [
       "living",

@@ -691,8 +691,8 @@
       "name": "Welcome House",
       "profile": "welcome",
       "photo": {
-        "src": "assets/story-scenes/book-12.webp",
-        "tile": 1
+        "src": "assets/welcome-house/welcome-house-exterior.png",
+        "single": true
       },
       "route": "index.html#visit=Welcome%20House",
       "aliases": [
@@ -706,7 +706,7 @@
       "name": "Welcome House Kitchen",
       "profile": "cook",
       "photo": {
-        "src": "assets/fair-scenes/bear-country/country-13.webp",
+        "src": "assets/welcome-house/welcome-house-common.png",
         "tile": 2
       },
       "route": "index.html#visit=Welcome%20House%20Kitchen",
@@ -720,8 +720,8 @@
       "name": "Welcome House Porch",
       "profile": "welcome",
       "photo": {
-        "src": "assets/fair-scenes/bear-country/country-13.webp",
-        "tile": 3
+        "src": "assets/welcome-house/welcome-house-exterior.png",
+        "single": true
       },
       "route": "index.html#visit=Welcome%20House%20Porch",
       "aliases": [
@@ -2196,8 +2196,8 @@
       "name": "Welcome House porch",
       "profile": "welcome",
       "photo": {
-        "src": "assets/story-scenes/book-06.webp",
-        "tile": 3
+        "src": "assets/welcome-house/welcome-house-exterior.png",
+        "single": true
       },
       "route": "index.html#visit=Welcome%20House%20porch"
     },
@@ -2206,8 +2206,8 @@
       "name": "Welcome House kitchen",
       "profile": "cook",
       "photo": {
-        "src": "assets/fair-scenes/bear-country/country-44.webp",
-        "tile": 1
+        "src": "assets/welcome-house/welcome-house-common.png",
+        "tile": 2
       },
       "route": "index.html#visit=Welcome%20House%20kitchen"
     },
@@ -2216,7 +2216,7 @@
       "name": "Welcome House attic",
       "profile": "library",
       "photo": {
-        "src": "assets/story-scenes/book-20.webp",
+        "src": "assets/welcome-house/welcome-house-private.png",
         "tile": 3
       },
       "route": "index.html#visit=Welcome%20House%20attic"

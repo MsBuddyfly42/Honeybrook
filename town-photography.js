@@ -19,6 +19,7 @@
   function record(name,area){
     name=aliases[name]||name;
     const catalog=window.HoneybrookPhotoCatalog||{};
+    if(name==='Welcome House'&&!area)return catalog[name];
     if(!area&&houses.includes(name)){try{area=JSON.parse(localStorage.getItem('honeybrook_lantern_trail_v1')||'{}').rooms?.[name]?.area||'porch';}catch{area='porch';}}
     return catalog[area?name+' '+area:name]||catalog[name];
   }
@@ -29,7 +30,7 @@
   function background(panel,p){panel.style.backgroundImage='url("'+p.src+'")';panel.style.backgroundSize=Number.isInteger(p.tile)?'200% 200%':'cover';panel.style.backgroundPosition=Number.isInteger(p.tile)?(p.tile%2)*100+'% '+Math.floor(p.tile/2)*100+'%':'center';}
   function presentation(root,name,area){
     const p=record(name,area),room=root.querySelector('.visit-room'),image=root.querySelector('.visit-room-photo');
-    if(!p||!room||!image)return;tileImage(image,p);
+    if(!p||!room||!image)return;tileImage(image,p);if(name==='Welcome House'&&!area){room.style.height='auto';room.style.aspectRatio='3 / 2';image.style.objectFit='contain';}
     image.alt='Honeybrook setting for '+name+(area?' · '+area:'');
     room.dataset.photoScene=name;room.dataset.sceneArea=area||'';room.dataset.sceneInterior=String(p.interior===true);
     room.style.setProperty('--scene-photo','url("'+p.src+'")');
