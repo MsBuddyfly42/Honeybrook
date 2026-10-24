@@ -18,3 +18,9 @@ All files below are PNG originals created with the built-in image-generation too
 The shared bathroom quarter contains six private toilet cubicles and six handwashing sinks. A separate private accessible family washroom provides supported-access space and a changing table. Bunk selectors describe twenty areas; no occupancy or completed booking/check-in is invented.
 
 The original `assets/nell/welcome.webp` supplied the material/bear reference and remains unchanged. The latest family rooms reference the approved cozy bedroom palette. Historical manuscript photographs remain in their source chapters. These additions are recorded for later author revision in story/BOARDING_HOUSE_GAME_ADDITION.md.
+
+## More of the approved quiet guest bedroom
+
+`quiet-cubs-a.png` and `quiet-cubs-b.png` contain eight individually photographed quiet guest bedrooms, four views per sheet in reading order. They explicitly match the top-right bedroom in `welcome-house-private.png`, the exact room the owner identified in her screenshot. Keep that original room and photograph intact. Each added room has its own single wooden bed, floral quilt/curtains, wardrobe, little shaded lamp, woodland window, chair, keepsake space, woven rug and simple washstand. Rooms are named Fern, Honey, Bluebell, Clover, Willow, Acorn, Heather and Robin; these are room names, not assigned residents.
+
+Both assets were generated with the built-in image-generation tool. Full final prompts, reference, room mappings and SHA-256 checksums are in `manifest.json`. Earlier drafts based on family-room styling were superseded before integration and are not runtime assets. There are no added present-day humans or fabricated portraits of original characters.

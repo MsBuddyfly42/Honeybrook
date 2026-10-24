@@ -1102,10 +1102,75 @@
           "entrance": false,
           "via": "Central hall",
           "floor": 0
+        },
+        {
+          "id": "quietcub01",
+          "name": "Quiet guest bedroom · Fern",
+          "entrance": false,
+          "via": "Front hall → quiet cottage wing",
+          "floor": 0,
+          "quietCubRoom": true
+        },
+        {
+          "id": "quietcub02",
+          "name": "Quiet guest bedroom · Honey",
+          "entrance": false,
+          "via": "Front hall → quiet cottage wing",
+          "floor": 0,
+          "quietCubRoom": true
+        },
+        {
+          "id": "quietcub03",
+          "name": "Quiet guest bedroom · Bluebell",
+          "entrance": false,
+          "via": "Front hall → quiet cottage wing",
+          "floor": 0,
+          "quietCubRoom": true
+        },
+        {
+          "id": "quietcub04",
+          "name": "Quiet guest bedroom · Clover",
+          "entrance": false,
+          "via": "Front hall → quiet cottage wing",
+          "floor": 0,
+          "quietCubRoom": true
+        },
+        {
+          "id": "quietcub05",
+          "name": "Quiet guest bedroom · Willow",
+          "entrance": false,
+          "via": "Front hall → quiet cottage wing",
+          "floor": 0,
+          "quietCubRoom": true
+        },
+        {
+          "id": "quietcub06",
+          "name": "Quiet guest bedroom · Acorn",
+          "entrance": false,
+          "via": "Front hall → quiet cottage wing",
+          "floor": 0,
+          "quietCubRoom": true
+        },
+        {
+          "id": "quietcub07",
+          "name": "Quiet guest bedroom · Heather",
+          "entrance": false,
+          "via": "Front hall → quiet cottage wing",
+          "floor": 0,
+          "quietCubRoom": true
+        },
+        {
+          "id": "quietcub08",
+          "name": "Quiet guest bedroom · Robin",
+          "entrance": false,
+          "via": "Front hall → quiet cottage wing",
+          "floor": 0,
+          "quietCubRoom": true
         }
       ],
       "products": [],
       "parent": null,
+      "quietCubBedrooms": 8,
       "bunkAreas": 20,
       "sharedBerths": 40,
       "familyBedrooms": 10,
@@ -7094,7 +7159,15 @@
       "sharedwashroom",
       "cubsplay",
       "familysupport",
-      "necessities"
+      "necessities",
+      "quietcub01",
+      "quietcub02",
+      "quietcub03",
+      "quietcub04",
+      "quietcub05",
+      "quietcub06",
+      "quietcub07",
+      "quietcub08"
     ],
     "community": [
       "living",
