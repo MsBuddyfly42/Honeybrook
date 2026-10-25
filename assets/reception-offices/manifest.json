@@ -1,0 +1,38 @@
+[
+  {
+    "site": "welcome",
+    "title": "Welcome House",
+    "file": "assets/reception-offices/welcome.webp",
+    "sha256": "6e200330e3f4b3239967a4d65dc5b617784791e690d88fdc04a010480b619893",
+    "width": 1536,
+    "height": 1024,
+    "tool": "Built-in image_gen",
+    "intent": "New separate private office behind existing reception; keep all public reception artwork unchanged.",
+    "styleReference": "assets/welcome-house/welcome-house-common.png",
+    "promptSummary": "One distinct wide photographic bear-country back office, handmade oak desk and empty player chair, blank ledgers, unobtrusive computer, wooden files, forest green and plum textiles, restrained flowers and lamps; no people, no public reception visible, no text or collage. Match the timber and stone of Welcome House. Cottage daylight window and floral home textiles."
+  },
+  {
+    "site": "community",
+    "title": "Community Storm Refuge",
+    "file": "assets/reception-offices/community.webp",
+    "sha256": "19ec49f8a977639594650d9d31d93978815d1b57d7d7decace6bd7c42913be7e",
+    "width": 1536,
+    "height": 1024,
+    "tool": "Built-in image_gen",
+    "intent": "New separate private office behind existing reception; keep all public reception artwork unchanged.",
+    "styleReference": "assets/interiors/reviewed/rooms-37.webp",
+    "promptSummary": "One distinct wide photographic bear-country back office, handmade oak desk and empty player chair, blank ledgers, unobtrusive computer, wooden files, forest green and plum textiles, restrained flowers and lamps; no people, no public reception visible, no text or collage. Match the timber and stone of Community Storm Refuge. Protected fieldstone shelter room without large exterior windows."
+  },
+  {
+    "site": "camp",
+    "title": "Camp Storm Shelter",
+    "file": "assets/reception-offices/camp.webp",
+    "sha256": "a79db7527d951be9cfe31afc0a4f426ecdc01beefaa907d8237b89fedbf1bf72",
+    "width": 1536,
+    "height": 1024,
+    "tool": "Built-in image_gen",
+    "intent": "New separate private office behind existing reception; keep all public reception artwork unchanged.",
+    "styleReference": "assets/interiors/reviewed/rooms-29.webp",
+    "promptSummary": "One distinct wide photographic bear-country back office, handmade oak desk and empty player chair, blank ledgers, unobtrusive computer, wooden files, forest green and plum textiles, restrained flowers and lamps; no people, no public reception visible, no text or collage. Match the timber and stone of Camp Storm Shelter. Protected fieldstone shelter room without large exterior windows."
+  }
+]

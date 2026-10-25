@@ -353,3 +353,11 @@ Local verification for this connected release passed at 1440/390px: actual peopl
 ### October 25 · Journey career integration
 
 Journey Work offers all 31 careers after the established discovery/stay gate. Its read-only portfolio uses actual office career records, including legacy accepted career snapshots, and does not write or reset books. Reception retains its earlier welcome-episode opening. Manuals now explain the limits of game practice and link to authoritative further training; a full real-world factual audit of every duty remains unperformed.
+
+### October 25 · specialist practice desk
+
+Added 30 investigator and 30 beekeeper source-led practice assignments to the actual Welcome House office (PI & beekeeping tab), also linked from Journey careers and full manuals. Own `honeybrook_specialist_practice_v1` book; explicit draft saves, unlimited retries, structured answer checks, typed handover with own accuracy review, preserved successful versions, conflict protection and checked backup restoration. Numbered manuals and worked examples stay beside the form. These are paperwork, reasoning and planning exercises, not physical hive operations or complete real-world professional training. Automated checks do not grade free-text meaning. Original office, reception, inventory and story records remain separate.
+
+### October 25 · three private reception offices
+
+Added My Office to Welcome House, community refuge and camp shelter connected-room navigation and a direct My Office link at each reception desk. Three distinct new photographic office assets preserve all previous public-reception imagery. Site-specific links open the matching guest/shelter book, supply work and specialist training at the existing working desk. Totals are now 699 connected rooms, 6,990 room assignments and 7,780 mapped career duties; the earlier 696/6,960/7,750 totals remain historical release notes. Existing room saves and accepted job IDs remain intact. Reception-stage Journey access to these offices does not unlock unrelated later rooms.
