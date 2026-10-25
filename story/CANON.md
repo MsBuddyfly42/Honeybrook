@@ -63,3 +63,6 @@ October 24 owner clarification: the goddess who spoke to Nell in her dream is th
 
 
 October 25 owner clarification: Bear Hollow is the sacred town outside Honeybrook, rooted in love and firm expectations of good conduct. Its oldest residents are long-lived bears who knew Goldilocks in her final years. Centuries later, when Nell arrives, they have opened up and become less severe than in Amelia’s youth, while remaining strict and willing to send away visitors who refuse respectful conduct. Not every visitor stays long. Preserve Amelia’s historical objection to overzealous enforcement without treating the Hollow as loveless or all its elders as cruel. This applies to the expanded manuscript, introductions and Journey research/family visits.
+
+
+October 25 owner addition: after Storybook Lane is awakened, bears can visit the fairy-tale residents and hear personal accounts, omitted ordinary details and funny disagreements with the short versions. The expanded manuscript now includes nine such conversations after the family’s book return. Journey visits unlock only after the ordered continuation ending. Character perspectives add nuance without erasing real harm or claiming these new dialogues are historic fairy-tale text. Other tales remain beyond the central lane. Preserve the exact final epilogue.
