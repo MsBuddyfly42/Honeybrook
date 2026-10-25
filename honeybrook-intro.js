@@ -2,13 +2,13 @@
 (()=>{'use strict';window.HoneybrookIntro=function(done){const slides=[
   [
     "The beekeepers’ little girl",
-    "Before she was called Goldilocks, she was a seven-year-old girl growing up beside her parents’ hives. Her mother lifted honeycomb frames with sure, gentle hands. Her father hummed while tying lids onto honey jars, and their wagon smelled of warm beeswax. This was the work her family loved—the life she knew. One spring morning, her mother wrapped a jar in blue-flowered cloth and tucked it into her satchel.",
+    "Before the bears called her Goldilocks, her name was Abigail Kensington. She was seven, golden-haired, and growing up among a family of beekeepers. Her mother taught her to watch a hive patiently; her father hummed while closing honey jars. On a spring journey, her mother wrapped a jar in blue-flowered cloth and put it in her satchel. They expected to come home. The river would change that ordinary family morning forever.",
     "assets/intro/goldilocks-early-life.webp",
     0
   ],
   [
     "The river takes them",
-    "Then the sky darkened, and the river rose too quickly. Through the rain came a shout. Her mother pushed the satchel into her arms and told her, “Hold tight.” The little girl held on. The water carried the rest away. In a moment, the familiar world of her parents’ voices, the wagon, and the hives was gone. She was alive—but she was alone.",
+    "A sudden flood struck the road beside the river. Abigail’s father freed the horse, then became trapped by the shifting wagon. Her mother lifted Abigail onto higher ground, gave her the honey satchel, and returned to help him. For a moment they nearly escaped. Then timber struck, the bank collapsed, and the water carried both parents away. Abigail survived above them, calling their names. That night, she kept an empty place beside her under a tree.",
     "assets/intro/goldilocks-early-life.webp",
     1
   ],
@@ -32,19 +32,19 @@
   ],
   [
     "Bear Hollow takes root",
-    "First came a lonely cub, then two orphaned brothers, and then more bears with nowhere to go. Goldilocks welcomed them as she had been welcomed: “You’re home now.” Cabins rose around the cottage. A square, a fountain, gardens, and a footbridge followed. Baby Bear helped build, Mama kept a pot warm, and Goldilocks remembered every newcomer’s loneliness. They called their growing home Bear Hollow.",
+    "Other lost bears came to the cottage, and Goldilocks welcomed them: “You’re home now.” Cabins, gardens, a square and a fountain formed Bear Hollow. One of her first friends beyond the Three Bears’ household was Missy, a cub whose family lived beside a brook. Missy loved honey and treated people lovingly. Goldilocks gave her the name Honeybrook. Missy would become the grandmother of a bear named Amelia, carrying that kindness into another generation.",
     "assets/story-scenes/book-01.webp",
     3
   ],
   [
     "The years that shaped the Hollow",
-    "The years brought love and sorrow together. A hard winter took Mama and Papa Bear; when spring returned, Goldilocks and the grown Baby Bear warmed the pots and tended the bees again. Goldilocks’s hair silvered, and her welcome became part of the town’s memory. Bear Hollow’s rule was love. Yet fear sometimes closed doors that kindness had opened. Beyond its pines, travelers followed the creek toward another valley.",
+    "Goldilocks grew old after a life of beekeeping, friendship and welcome. A hard winter had taken Mama and Papa Bear; grief and ordinary love both belonged to the Hollow’s history. Later, its leaders let pride turn the principle “LOVE. Treat everybody right” into rules that excluded neighbours. Amelia Honeybrook would not accept that as love. She left rather than live under those decisions. In later years, Bear Hollow became the woodland’s senior bear community.",
     "assets/story-scenes/book-02.webp",
     0
   ],
   [
     "A broken bridge—and Honeybrook’s beginning",
-    "In that valley, Amelia arrived on a stormy evening with half an apple, tired feet, and no home. A gentle woman’s reassurance helped her face another morning. Then Tom Bridgewell came with his tools. Together, with others who gathered to help, they repaired the broken wooden crossing. Amelia asked for a door facing the path, a covered bench, and water. Across that bridge, a different welcome began to grow.",
+    "Leaving Bear Hollow did not immediately give Amelia a home. She reached a valley in the rain with half an apple and sheltered beneath a broken wooden bridge. A strange, gentle woman’s presence felt like a guardian angel. Tom Bridgewell arrived with tools, and neighbours helped repair the crossing. Amelia asked for a path-facing door, a covered bench and water. Their welcome grew into Honeybrook, carrying the kindness behind Amelia’s family name into a town.",
     "assets/story-scenes/book-03.webp",
     1
   ],
@@ -61,7 +61,7 @@
     null
   ]
 ];
-const box=document.createElement('section');box.id='honeybrookIntro';box.setAttribute('aria-label','Honeybrook story introduction');box.innerHTML='<div class="intro-picture" aria-hidden="true"></div><div class="intro-shade"></div><div class="intro-copy" aria-live="polite"><p class="intro-eyebrow">THE HONEYBROOK CHRONICLES · A STORY BY TEMPLAR HUGHES-BRYANT</p><p id="introCount"></p><h1>Honeybrook</h1><p id="introCaption">A story of lost paths, open doors, and the courage to belong.</p><p id="introSource">A brief overview of Book One, followed by Nell’s game adaptation. Discover the full story inside Honeybrook.</p><button type="button" id="introStart">Play the introduction</button></div><nav class="intro-navigation" aria-label="Introduction playback"><button id="introPrevious" hidden>Previous scene</button><button id="introPause" hidden>Pause introduction</button><button id="introNext" hidden>Next scene</button><button id="introSkip">Skip to Honeybrook</button></nav>';document.body.append(box);let index=-1,paused=false,timer,ended=false;const picture=box.querySelector('.intro-picture'),heading=box.querySelector('h1'),caption=box.querySelector('#introCaption'),counter=box.querySelector('#introCount');
+const box=document.createElement('section');box.id='honeybrookIntro';box.setAttribute('aria-label','Honeybrook story introduction');box.innerHTML='<div class="intro-picture" aria-hidden="true"></div><div class="intro-shade"></div><div class="intro-copy" aria-live="polite"><p class="intro-eyebrow">THE HONEYBROOK CHRONICLES · A STORY BY TEMPLAR HUGHES-BRYANT</p><p id="introCount"></p><h1>Honeybrook</h1><p id="introCaption">A story of lost paths, open doors, and the courage to belong.</p><p id="introSource">The story leading to Nell’s arrival. Your Journey will uncover what the opening leaves unanswered.</p><button type="button" id="introStart">Play the introduction</button></div><nav class="intro-navigation" aria-label="Introduction playback"><button id="introPrevious" hidden>Previous scene</button><button id="introPause" hidden>Pause introduction</button><button id="introNext" hidden>Next scene</button><button id="introSkip">Skip to Honeybrook</button></nav>';document.body.append(box);let index=-1,paused=false,timer,ended=false;const picture=box.querySelector('.intro-picture'),heading=box.querySelector('h1'),caption=box.querySelector('#introCaption'),counter=box.querySelector('#introCount');
 function image(src,tile){picture.replaceChildren();if(tile===null){const img=document.createElement('img');img.src=src;img.alt='';picture.append(img);}else{const ns='http://www.w3.org/2000/svg',svg=document.createElementNS(ns,'svg'),img=document.createElementNS(ns,'image');svg.setAttribute('viewBox',`${tile%2*768} ${Math.floor(tile/2)*512} 768 512`);svg.setAttribute('preserveAspectRatio','xMidYMid slice');img.setAttribute('href',src);img.setAttribute('width','1536');img.setAttribute('height','1024');svg.append(img);picture.append(svg);}}
 image(slides[9][2],slides[9][3]);
 function finish(){if(ended)return;ended=true;clearTimeout(timer);try{localStorage.setItem('honeybrook_intro_seen_v1',JSON.stringify({version:1,seen:true}));}catch{}HoneybrookAudio.prelude(false);box.remove();done();}

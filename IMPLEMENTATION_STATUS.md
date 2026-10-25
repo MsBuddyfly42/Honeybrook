@@ -1,5 +1,15 @@
 # Request coverage and remaining work
 
+## October 25 expanded manuscript and playable story continuation
+
+The default Open the Book now reads the complete expanded author edition: 48 chapters plus prologue and epilogue, including subsequent river, Missy and grandfather additions. Original manuscript files and their 71-section progress engine remain accessible unchanged through the original edition. Revised reading has a separate bookmark record.
+
+The existing arrival, fourteen research files, deliberate Harold conversation, letter opening and family-post/visit scenes connect to fourteen new ordered continuation scenes. These use the actual approved chapter prose, existing photographic illustrations, source-based decisions, route preparations, typed family notes, four player-written tellings that progressively light windows, book-order arrangement and kept responses. The continuation is a narrative and record-based experience, not a new physical walking simulator or newly illustrated image for every character. Scene prose and titles remain concealed until the actual family/research gates are met. Unlimited retries and HINT do not advance wrong answers. Free prose is checked for completion and length, not semantic truth. Drafts and completed records save separately from all older accounts, with write locks, checkpoints, conflict protection and previewed restore.
+
+A one-time, player-selected restart archives the old campaign before resetting only Journey story records. It starts a ten-part Nell prologue in the dream, includes the long grandfather meeting, and hands control to the bridge arrival. The whole-game introduction remains ten parts, remembers prior viewing, and now reflects the expanded background without exposing the final identity. Bear Hollow's overview and city-map name identify the senior community. No real business records or services are accessed.
+
+Validation: `tests/finale.cjs`, `tests/nell.cjs`, `tests/nell-research.cjs`, `tests/journey.cjs`; `tests/expanded-journey.mjs` at 1440/390 through all continuation scenes, preserved upstream saves, restart archive and ten prologue parts; `tests/intro-story.mjs` at 1440/1366/390 for ten scenes, controls and no story-state advancement. Production release evidence is recorded separately after deployment.
+
 This document records the original implementation and subsequent dated releases. Later entries supersede earlier story and artwork descriptions; release evidence is recorded with each publication. The complete camp wishlist remains broader than the implemented systems. See WORLD_PREFERENCES.md and story/CANON.md for current authority.
 
 ## Implemented in My Honeybrook Life
