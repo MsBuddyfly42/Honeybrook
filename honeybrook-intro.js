@@ -50,13 +50,13 @@
   ],
   [
     "A welcome becomes a town",
-    "The shelter became the Welcome House, offering food, rest, and room to choose a next step. Sammy arrived in his patched coat and found belonging before usefulness. The Hearthwells brought family life; Templar learned again, teachers practiced patience, and Wally baked with help from Miss Patty. Homes, classrooms, workshops, and shared tables gave Honeybrook its daily rhythm. Its neighbors kept old memories—and made room for whoever might arrive next.",
+    "The shelter became the Welcome House, offering food, rest, and room to choose a next step. Sammy arrived in his patched coat and found belonging before usefulness. The Hearthwells brought family life; Templar learned again, teachers practiced patience, and Wally baked with help from Miss Patty. Homes, classrooms, workshops, and shared tables gave Honeybrook its daily rhythm. Its neighbors kept old memories—and made room for whoever might arrive next. Long before Nell’s arrival, Honeybrook was already a flourishing town, with generations of welcome, work and shared life behind it.",
     "assets/story-scenes/book-07.webp",
     1
   ],
   [
     "Now Nell arrives",
-    "Now you arrive as Nell: a British human woman, a private investigator by choice, and a beekeeper by trade. A promise to your grandfather and a goddess’s voice in a dream have brought you here. The bears see your golden hair and feel something familiar, though they do not yet know your story. Harold’s name is waiting in your mind. First, there is a town to discover: neighbors to meet, work to learn, a Fair to visit, and a Welcome House door opening for you.",
+    "Centuries after Abigail’s childhood, and long after Honeybrook had taken root and bloomed, you arrive as Nell: a British human woman, a private investigator by choice, and a beekeeper by trade. A promise to your grandfather and a goddess’s voice in a dream have brought you here. The bears see your golden hair and feel something familiar, though they do not yet know your story. Harold’s name is waiting in your mind. First, there is a town to discover: neighbors to meet, work to learn, a Fair to visit, and a Welcome House door opening for you.",
     "assets/welcome-house/welcome-house-exterior.png",
     null
   ]
