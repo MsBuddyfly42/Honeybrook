@@ -38,7 +38,7 @@
   ],
   [
     "The years that shaped the Hollow",
-    "Goldilocks grew old after a life of beekeeping, friendship and welcome. A hard winter had taken Mama and Papa Bear; grief and ordinary love both belonged to the Hollow’s history. Later, its leaders let pride turn the principle “LOVE. Treat everybody right” into rules that excluded neighbours. Amelia Honeybrook would not accept that as love. She left rather than live under those decisions. In later years, Bear Hollow became the woodland’s senior bear community.",
+    "Goldilocks grew old after a life of beekeeping, friendship and welcome. A hard winter had taken Mama and Papa Bear; grief and ordinary love both belonged to the Hollow’s history. Later, its leaders let pride turn the principle “LOVE. Treat everybody right” into rules that excluded neighbours. Amelia Honeybrook would not accept that as love. She left rather than live under those decisions. Bear Hollow remained a sacred town rooted in love. In later years it became the home of old bears who had known Goldilocks in her final years. By Nell’s arrival centuries later, they had opened up somewhat, though visitors still had to act respectfully or be asked to leave.",
     "assets/story-scenes/book-02.webp",
     0
   ],

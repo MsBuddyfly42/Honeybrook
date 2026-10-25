@@ -432,17 +432,17 @@ const tasks=[
     "place": "Bear Hollow",
     "route": "games/honeybrook-craft-fair/?portal=town&place=hollow&city=1",
     "photo": "arrival",
-    "intro": "Nell listens to Bear Hollow’s oldest bears. They remember Goldilocks as someone cherished, not a stranger from a distant human tale. Other woodland animals knew her too. Nell begins to understand why her family’s searches and the animals’ memories never met.",
+    "intro": "Nell visits Bear Hollow, the sacred town outside Honeybrook and home to old bears who knew Goldilocks in her final years. Centuries later, their long lives make them living witnesses. They stand on love and expect visitors to act right. They have opened up since Amelia left, but remain strict: they can ask a disrespectful visitor to leave. Some visitors choose only a short stay. Nell asks permission before taking photographs, respects private doors and lets each elder decide when to stop. Their warmth and their boundaries belong together. Other woodland animals knew Goldilocks too; Nell begins to understand why her family’s searches and the animals’ memories never met.",
     "steps": [
       {
-        "question": "Compare the human fear with the community you encounter.",
+        "question": "How should Nell approach the elders in this sacred town?",
         "options": [
-          "The bears are capable of hospitality and protection.",
-          "Every bear must behave exactly as the family feared.",
-          "The family already knew this community."
+          "Ask permission, respect their homes and quiet, and listen without pressing.",
+          "Assume their softer welcome means their rules no longer matter.",
+          "Open private doors and photograph the elders without asking."
         ],
         "answer": 0,
-        "note": "The sanctuary was a possibility the frightened searchers had never imagined."
+        "note": "Bear Hollow offers love with firm boundaries. Its elders are more open than before, but can end a visit when someone refuses to act respectfully. Their sanctuary was a possibility the human searchers had never imagined."
       },
       {
         "question": "Whose knowledge stayed inside the deep woods?",

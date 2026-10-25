@@ -2,7 +2,7 @@
 (()=>{'use strict';
 const g=window.HoneybrookGeography,root=new URL('.',document.currentScript.src),url=p=>new URL(p,root).href;
 const positions={nw:[18,12],ne:[39,16],os:[69,15],sq:[22,34],ts:[39,46],town:[52,47],ms:[60,30],bv:[78,36],hollow:[87,59],hh:[17,57],ep:[28,77],cc:[49,65],fr:[49,85],pk:[70,73],se:[78,92]};
-const nodes={...Object.fromEntries(Object.entries(g.districts).map(([key,d])=>[key,{name:d.title,kind:'district'}])),town:{name:'Honeybrook town centre',kind:'town'},hollow:{name:'Bear Hollow · senior bear community',kind:'town'}};
+const nodes={...Object.fromEntries(Object.entries(g.districts).map(([key,d])=>[key,{name:d.title,kind:'district'}])),town:{name:'Honeybrook town centre',kind:'town'},hollow:{name:'Bear Hollow · sacred elder town',kind:'town'}};
 const edges=[...g.edges,['ts','town'],['town','ms'],['town','bv'],['bv','hollow'],['os','hollow']];
 function path(from,to){const q=[[from]],seen=new Set([from]);while(q.length){const p=q.shift(),last=p.at(-1);if(last===to)return p;for(const [a,b]of edges){const n=a===last?b:b===last?a:null;if(n&&!seen.has(n)){seen.add(n);q.push([...p,n]);}}}return [];}
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
