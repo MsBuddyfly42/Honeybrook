@@ -9,3 +9,5 @@ body.city-map-open #town>header{display:none} .city-map-canvas:not(.city-closer)
 .city-area-key{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:6px;margin:16px 0}.city-area-key button{text-align:left;font-size:13px!important;padding:8px!important}@media(max-width:600px){.city-area-key{grid-template-columns:1fr 1fr}.city-area-key button{font-size:12px!important}}
 
 .city-finder-launch{position:fixed;top:135px;right:12px;z-index:900;background:#315547;color:#fff4d4;padding:10px 14px;border:1px solid #c4b181;border-radius:8px;font:700 14px system-ui,sans-serif;text-decoration:none}@media(max-width:600px){.city-finder-launch{top:120px;right:8px;font-size:12px}}
+/* Keep map return controls visible when the compact mobile header hides global navigation. */
+#honeybrookCityMap .city-heading>nav{display:flex!important;flex-wrap:wrap;gap:8px}
