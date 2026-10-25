@@ -157,3 +157,28 @@ Quiet guest bedroom expansion: the eight `quietcub01`–`quietcub08` room addres
 `reception-data.js` supplies complete labeled new game profiles and three facility inventories. `reception-engine.js` is pure; `reception.js` is one shared desk UI with `?desk=welcome`, `community` or `camp`. One additive `honeybrook_reception_v1` save holds separate facility records/drafts and a shared housing/construction board. `honeybrook_reception_writing_v1` preserves typed, unsaved form drafts separately. Neither key migrates an old account. Every new form is blank; reference facts stay in the information book. Completed handovers and manually written entries are distinct. Shelter books do not issue an emergency all-clear or replace the existing emergency headcount. Main-wing allocation inventories are bounded at 90 Welcome House sleeping places, 400 community-shelter places and 120 camp-shelter places.
 
 Individual/household entry, member/background fields, real bunk occupancy, checked qualifications, construction notices, variable releases, atomic handwritten batch home entries, agreed placement, persistence, backup/restore and stale-tab guards are covered by `tests/reception.cjs` and `tests/reception.mjs`. `.github/workflows/reception-checks.yml` runs the pure and real Chromium browser checks on the preservation branch. Screenshot artifacts are retained for review. The original manuscript hash remains covered by `tests/community.cjs`.
+
+## One game-wide audio player and the opening introduction
+
+`story-mode.js` routes top-level game entry through `play.html`. The outer player owns one soundtrack and two independent controls (Game Sound and Music); ordinary game pages stay inside a same-origin frame. The frame retains its original URLs, scripts, storage, story gates, Back history and gameplay. Music is not recreated when the frame enters another building, the Fair or an office. Leaving the tab releases its audio playback lock so another Honeybrook tab does not double the soundtrack.
+
+`honeybrook_intro_seen_v1` remembers completion or skipping of the optional photographic story introduction in this browser. Later visits bypass it. The welcome page's replay action opens it again without discarding the current frame or game progress. Refresh still enters Welcome House. A user gesture is required to start audio where browser autoplay policy requires it. No real-business record or manuscript text is changed.
+
+Run the actual audio/intro test with the normal Playwright module:
+
+```sh
+node tests/unified-audio.mjs
+```
+
+For existing gameplay browser suites, use the frame-aware harness (it automatically skips the optional introduction in synthetic test contexts):
+
+```sh
+HONEYBROOK_PLAYWRIGHT_MODULE=/absolute/path/to/playwright/index.mjs \
+PLAYWRIGHT_MODULE=$PWD/tests/player-browser.mjs \
+CHROMIUM_PATH=/absolute/path/to/chromium \
+node tests/opening-back.mjs
+```
+
+Use the same environment for `tests/page-back.mjs`, `tests/refresh-entrance.mjs` and `tests/storm-ending.mjs`. The replacement `tests/audio-playback.mjs` runs the unified audio test, whose checks include actual waveform output, channel independence, silence, one persistent music context, locations/Fair, introductory playback, saved skip/replay and save preservation at desktop and phone widths.
+
+`tests/audio-alarm.mjs` checks the actual siren waveform, independent muting/restoring and timed all-clear with a synthetic clock. `tests/audio-owner.mjs` checks that two tabs cannot both own audible playback. These use the normal Playwright module, not the compatibility harness.

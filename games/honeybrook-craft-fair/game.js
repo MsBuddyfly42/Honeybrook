@@ -74,7 +74,7 @@ const Snd = {
   },
   // music: F major folk lilt
   schedule() {
-    if (!this.ctx) return;
+    if (!this.ctx || window.parent?.HoneybrookAudio) return;
     const c = this.ctx, evening = S.slot === 2;
     const bpm = this.mood === 'pond' ? 104 : evening ? 108 : 116, eighth = 60 / bpm / 2;
     const prog = [[53, 57, 60], [58, 62, 65], [60, 64, 67], [53, 57, 60], [55, 59, 62], [58, 62, 65], [60, 64, 67], [53, 57, 60]];

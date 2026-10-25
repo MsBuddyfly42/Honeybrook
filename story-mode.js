@@ -1,5 +1,8 @@
 /* An explicitly begun journey stays in its authored story routes. No old gameplay save is reset. */
-(()=>{'use strict';const KEY='honeybrook_story_mode_v1',base=new URL('.',document.currentScript.src),url=name=>new URL(name,base),read=k=>{try{return JSON.parse(localStorage.getItem(k)||'null');}catch{return null;}},active=()=>localStorage.getItem(KEY)!==null;
+(()=>{'use strict';
+// The outer player owns the only soundtrack; pages inside it retain their normal routes.
+if(window===window.top){const root=new URL('.',document.currentScript.src),player=new URL('play.html',root);player.searchParams.set('start',location.href);if(performance.getEntriesByType('navigation')[0]?.type==='reload')player.searchParams.set('refresh','1');document.documentElement.style.visibility='hidden';location.replace(player.href);return;}
+const KEY='honeybrook_story_mode_v1',base=new URL('.',document.currentScript.src),url=name=>new URL(name,base),read=k=>{try{return JSON.parse(localStorage.getItem(k)||'null');}catch{return null;}},active=()=>localStorage.getItem(KEY)!==null;
 // A new tab starts at the Welcome House; refresh and travel keep their current route.
 const entrance=url('index.html');
 let newTab=false;try{newTab=sessionStorage.getItem('honeybrook_tab_open_v1')!=='open';sessionStorage.setItem('honeybrook_tab_open_v1','open');}catch{}
