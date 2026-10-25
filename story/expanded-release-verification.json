@@ -1,0 +1,67 @@
+{
+  "commit": "ad28415faa5d19f18d90220bd0660ad4152b34d4",
+  "deploy": "dep-dbf6rf67bikc73bth8sg",
+  "browser": "Local Chromium desktop 1440 and mobile 390. TLS-verified production HTTP bytes; production browser not claimed.",
+  "checks": [
+    {
+      "path": "journey.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "journey-finale.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "journey-restart.js",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "finale-engine.js",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "finale-ui.js",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "revised-story-data.js",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "revised-book.js",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "chronicles.html",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "honeybrook-intro.js",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "story/Honeybrook_Expanded_Manuscript.docx",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "nell-data.js",
+      "status": 200,
+      "matches": true
+    },
+    {
+      "path": "story-mode.js",
+      "status": 200,
+      "matches": true
+    }
+  ]
+}
