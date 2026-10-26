@@ -83,3 +83,6 @@ Game storytelling motivation: after hearing the fairy-tale residents describe th
 
 
 October 26 latest owner request explicitly updates the manuscript, game and introduction together. Fairy-tale restoration has one necessary cause: the stories must be told again. Supplies, repairs or promises alone do not restore the fading lives. Nell explains this to Honeybrook; neighbours fall in love with the tales and begin telling them to their children, who pass them onward. The opening foreshadows this rule without exposing the guardian’s identity or advancing a Journey gate. The previous game-only restriction on updating the Word master is superseded for these authorised revisions.
+
+
+October 26 author correction: retain the first private woodland recognition, but remove the guardian’s repeated return scenes from Chapters 44–47. Book planning now belongs to Nell, Harold, Amelia and Sammy; the pre-winter visit belongs to Ash and his neighbours, followed by a child’s letter from home. Sammy accompanies Nell at the unexplained light. No guardian comes to town gatherings or subsequent pre-finale visits. Her next embodied appearance after the initial woodland sequence is the final public farewell. Existing chapter IDs, accepted answers and saved progress are unchanged.
