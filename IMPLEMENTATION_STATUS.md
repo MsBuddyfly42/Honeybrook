@@ -381,3 +381,8 @@ Eight additive scenes follow the original fourteen continuation episodes: the wh
 ### October 26 · private woodland knowledge and public finale
 
 Journey visitors see and recognise Goldilocks inside the woods, then recount the whole process in Honeybrook without disclosing the mysterious woman’s identity. Wider community visits use resident hosts, with the guardian out of view. The final public reveal acknowledges that the original party kept its promise. A clothbound book adds a game-only mystery through responsive drawings of completed welcomes, resolved at the heavenly reunion. Existing scene IDs, answer indices, saves and rewards stay compatible; the downloadable Word master is not included in this game-only release.
+
+
+### October 26 · stories restored through retelling
+
+The owner now authorises the manuscript, game and opening overview to share the current continuity. Storybook Lane’s people explain that only renewed telling restores their fading world; a promise alone produces no physical restoration. Nell proposes the plan, Honeybrook hears it, neighbours love the tales and tell their cubs, and later generations carry them forward. The Word master and game prose contain the same 50 sections. Intro timing remains ten scenes, with arrival last and no guardian-identity spoiler or save reset. Local desktop/phone opening and all fourteen Journey-scene regressions pass; current delivery still uses the existing photographic illustrations and shared audio player.
