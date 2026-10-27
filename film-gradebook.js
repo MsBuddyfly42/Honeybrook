@@ -1,0 +1,12 @@
+'use strict';
+(() => {
+  const box = document.getElementById('film-gradebook');
+  const backup = document.getElementById('film-backup');
+  const status = document.getElementById('backup-status');
+  const keys=['honeybrook_film_studies_101_v1','honeybrook_film_units_v1'];
+  const lessons=[['editing','Editing'],['sound','Sound'],['story','Screenwriting'],['design','Production design'],['genre','Genre']];
+  function read(k){const raw=localStorage.getItem(k);if(raw===null)return {};const value=JSON.parse(raw);if(!value||typeof value!=='object'||Array.isArray(value))throw Error('invalid save');return value}
+  function update(){box.replaceChildren();try{const one=read(keys[0]),other=read(keys[1]);const list=document.createElement('ul');list.className='grades';const scores=[];function row(label,score,total){const li=document.createElement('li');const valid=Number.isInteger(score)&&score>=0&&score<=total;if(valid)scores.push([score,total]);li.textContent=label+': '+(valid?`${score}/${total}`:'not taken');list.append(li)}row('Film language',one.score,10);for(const [id,title] of lessons)row(title,other[id]?.score,5);box.append(list);const p=document.createElement('p');p.className='small';p.textContent=scores.length?`Assessment average: ${Math.round(scores.reduce((a,x)=>a+x[0],0)/scores.reduce((a,x)=>a+x[1],0)*100)}% across ${scores.length} completed assessment${scores.length===1?'':'s'}. Written assignments are not included.`:'Complete an assessment to see your average.';box.append(p)}catch(e){const p=document.createElement('p');p.textContent='A course save could not be read. It was left untouched.';box.append(p)}}
+  backup.addEventListener('click',()=>{try{const records={};for(const key of keys){const raw=localStorage.getItem(key);if(raw!==null){read(key);records[key]=JSON.parse(raw)}}const blob=new Blob([JSON.stringify({format:'honeybrook-film-school-backup',version:1,exportedAt:new Date().toISOString(),records},null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='honeybrook-film-school-backup.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);status.textContent='Backup downloaded. Keep it somewhere you can find it.'}catch(e){status.textContent='Backup could not be created because a course record could not be read.'}});
+  window.addEventListener('film-progress-changed',update);window.addEventListener('storage',e=>{if(keys.includes(e.key))update()});update();
+})();
