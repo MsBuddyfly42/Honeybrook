@@ -1,7 +1,7 @@
 'use strict';
 (() => {
  const key='honeybrook_film_editing_v1';
- const clips={theater:{name:'The theater',src:'assets/scene-photos/honeybrook-theater.jpg',description:'A visit to the theater.'},art:{name:'The art studio',src:'assets/scene-photos/poppy-s-art-studio.jpg',description:'A creative workroom.'},stage:{name:'The performance studio',src:'assets/scene-photos/dance-theater-studio.jpg',description:'A space ready for a performance.'}};
+ const clips={theater:{name:'The theater',src:'assets/film-school/room-8.webp?v=film-bear-world-2',description:'A visit to the theater.'},art:{name:'The art studio',src:'assets/film-school/room-7.webp?v=film-bear-world-2',description:'A creative workroom.'},stage:{name:'The performance studio',src:'assets/film-school/room-2.webp?v=film-bear-world-2',description:'A space ready for a performance.'}};
  const ids=Object.keys(clips),screen=document.getElementById('editing-screen'),caption=document.getElementById('editing-caption'),list=document.getElementById('editing-shots'),status=document.getElementById('editing-save-status');
  let state={order:ids.slice(),seconds:{theater:2,art:2,stage:2}},raw=null,safe=true,timer=null,playing=false;
  function valid(v){return v&&typeof v==='object'&&Array.isArray(v.order)&&v.order.length===3&&new Set(v.order).size===3&&v.order.every(x=>ids.includes(x))&&v.seconds&&ids.every(x=>Number.isInteger(v.seconds[x])&&v.seconds[x]>=1&&v.seconds[x]<=5)}

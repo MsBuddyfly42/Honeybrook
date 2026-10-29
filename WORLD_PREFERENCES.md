@@ -205,3 +205,7 @@ No deadlines, timed shifts or daily check-in cap. Preserve unfinished typing and
 ## Editable books and page history — October 24, 2026
 
 Nell can reopen and change information she has typed into guest, household, construction and home ledger blanks. Guest Information Book profiles are editable too; these are saved game-reference corrections and never modify the manuscript or automatically rewrite previously entered ledgers. Keep first-time ledger pages blank. Provide a Back button on every game page using the tab's visited-page history, without an added game-imposed step cap.
+
+## Film School belongs to Honeybrook — October 29, 2026
+
+The Film School locations must match the rest of Honeybrook, including its actual furry bear inhabitants, bear-scale timber/stone rooms, plum/green furnishings and photographic treatment. Use the existing school (`assets/interiors/civic.webp`) and Community Storm Refuge (`assets/community-refuge/hall.webp`) as direct visual references. A generic empty woodland or human-style university campus does not meet this requirement. Keep each studio purpose distinct and preserve all manuals, equipment behavior, original lessons, grades and saved work while correcting its scenery. Use the shared bear-country fonts and cream/pine/honey/plum presentation.
