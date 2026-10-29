@@ -1,0 +1,100 @@
+{
+  "provenance": "Generated with built-in image generation, October 29 2026. Two photographic contact sheets, cropped into ten distinct room views.",
+  "rooms": [
+    {
+      "path": "assets/film-school/room-0.webp",
+      "source": "exec-12cea7b9-a855-4002-94bc-3851f6777e1a.png",
+      "panel": [
+        0,
+        0
+      ],
+      "sha256": "4b9adee81beebb7fbe9fa6e297aa3866e8a3808973093752e4eb655cb89f0aeb"
+    },
+    {
+      "path": "assets/film-school/room-1.webp",
+      "source": "exec-12cea7b9-a855-4002-94bc-3851f6777e1a.png",
+      "panel": [
+        1,
+        0
+      ],
+      "sha256": "9506eab2788c4b5347c496a99399cff93283ee90530d8a63af2b4633d5450324"
+    },
+    {
+      "path": "assets/film-school/room-2.webp",
+      "source": "exec-12cea7b9-a855-4002-94bc-3851f6777e1a.png",
+      "panel": [
+        2,
+        0
+      ],
+      "sha256": "c157d0a751b034011e7423739ab7f6ab5c7ae2da4095475cbd41733781d2fece"
+    },
+    {
+      "path": "assets/film-school/room-3.webp",
+      "source": "exec-12cea7b9-a855-4002-94bc-3851f6777e1a.png",
+      "panel": [
+        0,
+        1
+      ],
+      "sha256": "fbb6a265cc8009a351b890c13ba7fd5405b9eeaa9cd8944333085270ac1e9af2"
+    },
+    {
+      "path": "assets/film-school/room-4.webp",
+      "source": "exec-12cea7b9-a855-4002-94bc-3851f6777e1a.png",
+      "panel": [
+        1,
+        1
+      ],
+      "sha256": "dbef5656e666dec2d365cf82ef5350377711a1c6ce5de7ce86817f46678900f9"
+    },
+    {
+      "path": "assets/film-school/room-5.webp",
+      "source": "exec-12cea7b9-a855-4002-94bc-3851f6777e1a.png",
+      "panel": [
+        2,
+        1
+      ],
+      "sha256": "0c40e91d40e9c2592f64143bacf524a22593efcd7a9f4c3e4fdf23c0c9f430f4"
+    },
+    {
+      "path": "assets/film-school/room-6.webp",
+      "source": "exec-a091ad53-9da1-4a58-80e4-950bf29940ff.png",
+      "panel": [
+        0,
+        0
+      ],
+      "sha256": "a4a3fde18bf53b5f958679030612fb9b28d7b700114e818651a9fa578c8d1a3d"
+    },
+    {
+      "path": "assets/film-school/room-7.webp",
+      "source": "exec-a091ad53-9da1-4a58-80e4-950bf29940ff.png",
+      "panel": [
+        1,
+        0
+      ],
+      "sha256": "d598d6ec8f03e56e7ac3d94c6f06201982b8c36d79b7a4f5fbd9d861a5af7652"
+    },
+    {
+      "path": "assets/film-school/room-8.webp",
+      "source": "exec-a091ad53-9da1-4a58-80e4-950bf29940ff.png",
+      "panel": [
+        0,
+        1
+      ],
+      "sha256": "b0382c50b93b44b609d24144147c9a18e9aebd729276425e5a48c78e376e0dc8"
+    },
+    {
+      "path": "assets/film-school/room-9.webp",
+      "source": "exec-a091ad53-9da1-4a58-80e4-950bf29940ff.png",
+      "panel": [
+        1,
+        1
+      ],
+      "sha256": "da14576d7570576a4bbbdadfa7f9117e439cc9fd426e1d2216e113caf15378aa"
+    }
+  ],
+  "courtyard": {
+    "path": "assets/film-school/courtyard.webp",
+    "source": "exec-7d9da752-d2bf-4254-9cc1-9e553fa8b8fc.png",
+    "sha256": "adfc1c2e1ca467f37983aea844c24c7707635535d38994286d8b2cb492bbf214"
+  }
+}

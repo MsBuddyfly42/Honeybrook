@@ -1,0 +1,2 @@
+/* Film practice follows the existing committed-Journey gate; it never changes story saves. */
+(()=>{'use strict';function enforce(){try{if(localStorage.getItem('honeybrook_story_mode_v1')!==null)location.replace(new URL('journey.html',document.currentScript?.src||location.href).href);}catch{/* The school save adapter reports unavailable storage without replacing records. */}}enforce();addEventListener('storage',e=>{if(e.key==='honeybrook_story_mode_v1')enforce();});})();

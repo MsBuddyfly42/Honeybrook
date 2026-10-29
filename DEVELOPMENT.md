@@ -182,3 +182,29 @@ node tests/opening-back.mjs
 Use the same environment for `tests/page-back.mjs`, `tests/refresh-entrance.mjs` and `tests/storm-ending.mjs`. The replacement `tests/audio-playback.mjs` runs the unified audio test, whose checks include actual waveform output, channel independence, silence, one persistent music context, locations/Fair, introductory playback, saved skip/replay and save preservation at desktop and phone widths.
 
 `tests/audio-alarm.mjs` checks the actual siren waveform, independent muting/restoring and timed all-clear with a synthetic clock. `tests/audio-owner.mjs` checks that two tabs cannot both own audible playback. These use the normal Playwright module, not the compatibility harness.
+
+## Film School expansion · October 29, 2026
+
+Continue PR #3 on `codex/film-studies-opening`. There is still no application build step. `film-campus-data.js` defines ten courses with forty manual chapters; `film-campus-engine.js` validates drafts and exercise-specific practical results; `film-campus.js` presents the connected photographic wing and equipment benches. The town-school and learning-cabin interiors have a direct school doorway. `film-school-guard.js` retains the existing committed-Journey gate. Original `film-school.js`, `film-units.js` and `film-editing-lab.js` remain intact, with their six lessons, draft keys and assessment records.
+
+The new additive record is `honeybrook_film_campus_v1`, with a previous-state checkpoint, Web Lock, raw-save conflict guard and recovery download. It retains drafts, partial assessment selections, notebook writing and dated practical/knowledge/self-review submission snapshots. It neither migrates the original film keys nor writes the town, life, story, learning or Fair accounts. The existing school backup now includes the campus, validates its contents, accepts older backups containing only original records, previews included records, preserves a before-restore copy, rolls back failed writes and reloads after success. Campus writes and restore share a lock. Saves remain browser/device-local.
+
+The benches are explicit teaching models: relative exposure stops and still-image framing; two stand-ins/axis/coverage logs; script/breakdown forms; in/out source ranges and timed still playback; synthesized sound stems and a conservative peak estimate; illustrative lighting; a set floor plan, prop budget and continuity capture; a timed genre cue sheet; and an evidence/interpretation argument workbook. Practical grades check each stated brief; written meaning and artistic quality use labeled self-review rather than claimed automatic instructor evaluation. These are ten introductory practical courses, not a professional NLE, physics renderer or full filmmaking application.
+
+Use Playwright 1.62.1 or compatible, with an installed Chromium/headless shell. Tools belong outside the repository. `PLAYWRIGHT_MODULE` is the absolute path to its `index.mjs`; optional `CHROMIUM_PATH` selects an existing executable. Serve this checkout on 8792. In restricted runtimes, start the server and browser tests in the same shell session.
+
+```sh
+node tests/film-campus.cjs
+node tests/film-units.cjs
+node tests/film-editing.cjs
+node tests/film-backup.cjs
+node tests/film-foundation.mjs
+node tests/film-campus.mjs
+node tests/film-world.mjs
+```
+
+The foundation suite operates all six assessments, original drafts/framing/editing, old-backup import, stale restore, invalid import and failed-write rollback. The campus suite performs all ten practicals, thirty new knowledge questions, self-reviews, notebook reload, room image decoding, export/restore, conflicting tabs and malformed-record preservation at 1440/390. The world suite operates the existing map/districts, real school doorway, learning session, separate Fair and Welcome House refresh, checking retained school records. `tests/opening-back.mjs`, `tests/page-back.mjs` and `tests/refresh-entrance.mjs` use the existing frame-aware `tests/player-browser.mjs`; set `HONEYBROOK_PLAYWRIGHT_MODULE` to the real Playwright module and `TEST_URL=http://127.0.0.1:8792` explicitly.
+
+Historical `tests/browser.mjs`, `tests/navigation-usability.mjs`, `tests/city-map.mjs` and `tests/learning-camp.mjs` contain earlier entrance/refresh or selector assumptions and fail against the current Welcome House/player navigation. They are not counted as passing checks for this expansion. The current-route suites above test the established behavior without disabling its refresh/arrival rules. All root `tests/*.cjs` rule/data suites are also run. `.github/workflows/film-school-checks.yml` reproduces these checks on this PR and main.
+
+Render target: existing static site `Honeybrook`, `srv-dautmo0473hc73ckhmbg`, `main`, publish path `.`. Merge only the verified PR head; the existing on-commit deployment publishes it automatically. Do not create another service or change its hosting configuration. Verify the resulting deploy ID/commit and live school assets before claiming deployment.
