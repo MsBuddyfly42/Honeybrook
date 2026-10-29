@@ -1,5 +1,15 @@
 # Request coverage and remaining work
 
+## October 29 · Film School expansion of PR #3
+
+The original six film lessons, written assignments, assessments, framing activity, three-shot edit and saved keys remain. Ten connected photographic course rooms add forty beginner manual chapters across history, cinematography, directing, screenwriting, editing, sound, lighting, production design, genres and criticism. Each has a specific practical brief, working controls, inspection feedback, notebook, knowledge assessment and separately labeled artistic self-review. The existing school/learning-cabin interiors and Learning Studio enter the wing; adjacent-room doors, courtyard, gradebook and shared Back connect it.
+
+The equipment is deliberately scoped: camera exposure/framing model with take logs; directing stand-ins and coverage axis; screenplay/breakdown editor; timed still-image in/out timeline; synthesized sound-mix monitoring; illustrative light controls; set budget/placement/continuity; chronological archive programming; genre cue-sheet playback; evidence classification/criticism workbook. These operate on performed work and saved choices; they do not capture real camera footage or automatically judge the meaning of essays. Optional archive/camera/editing references support further real-world study.
+
+An additive campus record retains drafts, partial knowledge answers, notebook writing and all submitted practical/assessment/self-review snapshots. Backups include old and new film records, old backups remain accepted, restore previews its scope and checkpoints before applying, failed writes roll back, and campus writes/restore share a Web Lock with stale-tab checks. Invalid saves stay untouched; browser-local recovery export includes unsaved campus work. Cross-device sync remains outside the static site's capabilities.
+
+Validation uses all root rule/data suites and six current browser suites: `film-foundation`, `film-campus`, `film-world`, `opening-back`, `page-back`, `refresh-entrance`. Desktop/phone coverage includes all original and new assessment items, ten performed practicals, actual room images, draft/partial-answer reloads, old/new backup compatibility, malformed imports, failed-write rollback, conflicting tabs, real school entrance, town routes, twenty-question Learning Studio session, separate Fair and established Welcome House/Journey behavior. Historical navigation suites retain superseded selectors/refresh expectations and are documented in DEVELOPMENT.md rather than represented as passing. Publication is verified separately against the existing Honeybrook Render service and source commit.
+
 ## October 25 expanded manuscript and playable story continuation
 
 The default Open the Book now reads the complete expanded author edition: 48 chapters plus prologue and epilogue, including subsequent river, Missy and grandfather additions. Original manuscript files and their 71-section progress engine remain accessible unchanged through the original edition. Revised reading has a separate bookmark record.
