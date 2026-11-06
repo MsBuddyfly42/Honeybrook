@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-06",
+  "purpose": "Established Honeybrook imagery and working location entrances.",
+  "previousRelease": "83ae46242b29eb8ac9d6d06e23a11803c4c49b61",
+  "art": {
+    "activeAtlases": 8,
+    "composedViews": 128,
+    "referenceFiles": [
+      "assets/community-refuge/hall.webp",
+      "assets/bear-country/cottages-a.webp"
+    ],
+    "review": "Original fairy-tale people, animals and magical figures retain their identities; humans are not replaced with bears. Prior generated images are retained.",
+    "actualDomImages": "All 128 album views reference and decode the eight new honeybrook/ delivery files."
+  },
+  "navigation": {
+    "sharedDirectoryEntriesAudited": 300,
+    "sharedDirectoryChecksPassed": 300,
+    "newDirectEntrances": 70,
+    "woodlandScenes": 8,
+    "changes": [
+      "Shared directory, city map and finder resolve the new destinations directly.",
+      "Legacy Storybook Lane/woods-boundary bookmarks bypass the old start screen.",
+      "Woodland buttons open actual destination scenes with connected paths and local recoveries.",
+      "Companion Every location directory has direct Enter here buttons.",
+      "Protected records do not block scene navigation."
+    ]
+  },
+  "tests": {
+    "desktopAndPhone": "PASS at 1440/390px: all 70 shared-directory entrances, companion Enter here controls, eight woodland scenes, finder, viewport fit, protected saves and legacy bookmarks during an unchanged Journey.",
+    "gameplay": "PASS at 1440/390px: all 41 recoveries/retellings and 78 elder interactions, notes/reload, checked backups, conflicting tabs and old-save preservation.",
+    "connections": "PASS Honeybrook welcome, direct native bookmark, regions and return paths.",
+    "storyRules": "storywood.cjs, retelling.cjs and woods-secret.cjs passed."
+  },
+  "unchangedManuscripts": {
+    "story/Honeybrook_Complete_Story_Manuscript.docx": "8c3c52318cd77fe5253987fbf77850d8c0ebc49bb15bb6fa142dbe38f4822cab",
+    "story/Honeybrook_Expanded_Manuscript.docx": "b97558f5c6bb4570a926a41f4babf1c64964d298a1cb03dda09f9a0b20545b35"
+  },
+  "files": {
+    "index.html": "e2c9cdfb9e82ad7a174fcf2933edcb10fa99811c63412591f9882f9f6090e0af",
+    "interiors.html": "af4a3bdbe01d8ca156038a62e35f5c9866b20d56ccfea1dd727f4d32960751f1",
+    "interiors.js": "fd5b703949f176caea5fa6cac25e2a34a9b964fc80588616ec0354b6c669f556",
+    "city-map.js": "c03302850143c977eba4d838f5e5351def8fbd669ffbd62b01f6aed3e694f23e",
+    "navigation.js": "8a0e5fd847ac13c127c252accc31c9c6635993e7e6b12a4fab06dd53d2dd6350",
+    "story-mode.js": "c0b3ae2159a37142a47f3faaa799891ea7f744bd364c4ed853a011159c9839a0",
+    "games/honeybrook-craft-fair/index.html": "3ad060449f33a675dc4d01bb17012d1cc61873aa2ba5d142d0efb6530beb7d5d",
+    "storywood.html": "afe18493153ff9041b68bf6afe5a64a4b83349fba32f1bebf6c60da80ef0fb5d",
+    "storywood.css": "ef605341f5409858bf1172756da569a2e0554c6494b1d526a23783164b28d70f",
+    "storywood-country.js": "d3ee0b3b2f50c1c63c175880f9d67026b8ee2bd7dbf38ceb0610826b32d7cc46",
+    "storywood-app.js": "b2315b5eca972bad8c99e06604d4eaaecc715f9be0ff5bef1499122767d4d3dd",
+    "storywood-routes.js": "5ecc6032137180bfb9d8908a4831f4e4d777f93eee1816cda19c2eb2ae0ed50f",
+    "storywood-data.js": "909c3db1d0e9a53ed16df68d2d3f6a27c0c1501c9f581dacf1b3495ec0897d50",
+    "assets/storywood/manifest.json": "fd5eade6f81ddb9396fac84f72fd45f9035ab2f9914caeb5ee8c60d6f82d217d",
+    "country-style.css": "29e5901d0b21985a342aaf71a4a8cbe2ce7ee5bc6c03a4cb592e42acfc6f880d",
+    "assets/storywood/honeybrook/atlas.webp": "0e11b4d7ea54275f6e4c745c554f06002f86f36427fd37d8a5a37a049e24a949",
+    "assets/storywood/honeybrook/homes-a.webp": "e2209127fbfb8953c6a93c011cec58abea85ee4395a7edf5c69c8c416ea8e3b9",
+    "assets/storywood/honeybrook/homes-b.webp": "69c0e1fcc3c8463a09f2b5d821e375c7b74d422b41727efce22c35664632b809",
+    "assets/storywood/honeybrook/homes-c.webp": "3d1bc1dcee4f76ee36de7c0b6fa6521d40b9e1e831b983e7bf74739f27b82810",
+    "assets/storywood/honeybrook/actions-a.webp": "4fb55ea4638d268f02a48e5b9b1434bea563a2b7cb664283df246ec11e4c6177",
+    "assets/storywood/honeybrook/actions-b.webp": "fb4b38fc0e51168f66cb81211e9c41f5c9bd418edf1c2e3129301815c08433f6",
+    "assets/storywood/honeybrook/actions-c.webp": "ef7fbd93cb025c8ebd62bf4f5d7506d2e6b92738be21e3e9e5cc0fe775b17d1a",
+    "assets/storywood/honeybrook/elders.webp": "54579b3a0fa9a501b40291ea1eb624f0b611d5947be2355a9348784d8c160514"
+  },
+  "verificationTransport": "Local Chromium; production checks use actual TLS-verified curl responses because Work\u2019s proxy CA is absent from Chromium\u2019s NSS store. Certificate verification is never disabled.",
+  "limits": [
+    "Directory audit covers entering the linked destination and normal first-time/continue controls, not every legacy activity inside every destination.",
+    "Original paid Fair mechanics and campaign gates outside the requested free-play locations remain in place.",
+    "Photographic-style fictional scenery is delivered as 128 composed views in eight atlases."
+  ]
+}

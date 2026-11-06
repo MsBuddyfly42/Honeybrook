@@ -5,821 +5,827 @@
   "panels": [
     {
       "id": "atlas-0",
-      "atlas": "assets/storywood/atlas.webp",
+      "atlas": "assets/storywood/honeybrook/atlas.webp",
       "tile": 0,
       "label": "Village waiting"
     },
     {
       "id": "atlas-1",
-      "atlas": "assets/storywood/atlas.webp",
+      "atlas": "assets/storywood/honeybrook/atlas.webp",
       "tile": 1,
       "label": "Village returning"
     },
     {
       "id": "atlas-2",
-      "atlas": "assets/storywood/atlas.webp",
+      "atlas": "assets/storywood/honeybrook/atlas.webp",
       "tile": 2,
       "label": "Village awake"
     },
     {
       "id": "atlas-3",
-      "atlas": "assets/storywood/atlas.webp",
+      "atlas": "assets/storywood/honeybrook/atlas.webp",
       "tile": 3,
       "label": "Ash and Red Riding Hood"
     },
     {
       "id": "atlas-4",
-      "atlas": "assets/storywood/atlas.webp",
+      "atlas": "assets/storywood/honeybrook/atlas.webp",
       "tile": 4,
       "label": "Woods waiting"
     },
     {
       "id": "atlas-5",
-      "atlas": "assets/storywood/atlas.webp",
+      "atlas": "assets/storywood/honeybrook/atlas.webp",
       "tile": 5,
       "label": "Woods returning"
     },
     {
       "id": "atlas-6",
-      "atlas": "assets/storywood/atlas.webp",
+      "atlas": "assets/storywood/honeybrook/atlas.webp",
       "tile": 6,
       "label": "Woods awake"
     },
     {
       "id": "atlas-7",
-      "atlas": "assets/storywood/atlas.webp",
+      "atlas": "assets/storywood/honeybrook/atlas.webp",
       "tile": 7,
       "label": "The buried book"
     },
     {
       "id": "atlas-8",
-      "atlas": "assets/storywood/atlas.webp",
+      "atlas": "assets/storywood/honeybrook/atlas.webp",
       "tile": 8,
       "label": "Cinderella visiting"
     },
     {
       "id": "atlas-9",
-      "atlas": "assets/storywood/atlas.webp",
+      "atlas": "assets/storywood/honeybrook/atlas.webp",
       "tile": 9,
       "label": "Rapunzel at the garden gate"
     },
     {
       "id": "atlas-10",
-      "atlas": "assets/storywood/atlas.webp",
+      "atlas": "assets/storywood/honeybrook/atlas.webp",
       "tile": 10,
       "label": "Bear Hollow listening"
     },
     {
       "id": "atlas-11",
-      "atlas": "assets/storywood/atlas.webp",
+      "atlas": "assets/storywood/honeybrook/atlas.webp",
       "tile": 11,
       "label": "Harold telling memories"
     },
     {
       "id": "homes-a-0",
-      "atlas": "assets/storywood/homes-a.webp",
+      "atlas": "assets/storywood/honeybrook/homes-a.webp",
       "tile": 0,
       "label": "Ash the wolf"
     },
     {
       "id": "homes-a-1",
-      "atlas": "assets/storywood/homes-a.webp",
+      "atlas": "assets/storywood/honeybrook/homes-a.webp",
       "tile": 1,
       "label": "The Elves and the Shoemaker"
     },
     {
       "id": "homes-a-2",
-      "atlas": "assets/storywood/homes-a.webp",
+      "atlas": "assets/storywood/honeybrook/homes-a.webp",
       "tile": 2,
       "label": "Pinocchio and Geppetto"
     },
     {
       "id": "homes-a-3",
-      "atlas": "assets/storywood/homes-a.webp",
+      "atlas": "assets/storywood/honeybrook/homes-a.webp",
       "tile": 3,
       "label": "Cinderella"
     },
     {
       "id": "homes-a-4",
-      "atlas": "assets/storywood/homes-a.webp",
+      "atlas": "assets/storywood/honeybrook/homes-a.webp",
       "tile": 4,
       "label": "Snow White and the Seven Dwarfs"
     },
     {
       "id": "homes-a-5",
-      "atlas": "assets/storywood/homes-a.webp",
+      "atlas": "assets/storywood/honeybrook/homes-a.webp",
       "tile": 5,
       "label": "Rapunzel"
     },
     {
       "id": "homes-a-6",
-      "atlas": "assets/storywood/homes-a.webp",
+      "atlas": "assets/storywood/honeybrook/homes-a.webp",
       "tile": 6,
       "label": "Little Red Riding Hood and Grandmother"
     },
     {
       "id": "homes-a-7",
-      "atlas": "assets/storywood/homes-a.webp",
+      "atlas": "assets/storywood/honeybrook/homes-a.webp",
       "tile": 7,
       "label": "Hansel and Gretel"
     },
     {
       "id": "homes-a-8",
-      "atlas": "assets/storywood/homes-a.webp",
+      "atlas": "assets/storywood/honeybrook/homes-a.webp",
       "tile": 8,
       "label": "Jack and His Mother"
     },
     {
       "id": "homes-a-9",
-      "atlas": "assets/storywood/homes-a.webp",
+      "atlas": "assets/storywood/honeybrook/homes-a.webp",
       "tile": 9,
       "label": "The Frog Prince"
     },
     {
       "id": "homes-a-10",
-      "atlas": "assets/storywood/homes-a.webp",
+      "atlas": "assets/storywood/honeybrook/homes-a.webp",
       "tile": 10,
       "label": "The Ugly Duckling"
     },
     {
       "id": "homes-a-11",
-      "atlas": "assets/storywood/homes-a.webp",
+      "atlas": "assets/storywood/honeybrook/homes-a.webp",
       "tile": 11,
       "label": "Sleeping Beauty"
     },
     {
       "id": "homes-a-12",
-      "atlas": "assets/storywood/homes-a.webp",
+      "atlas": "assets/storywood/honeybrook/homes-a.webp",
       "tile": 12,
       "label": "The Princess and the Pea"
     },
     {
       "id": "homes-a-13",
-      "atlas": "assets/storywood/homes-a.webp",
+      "atlas": "assets/storywood/honeybrook/homes-a.webp",
       "tile": 13,
       "label": "The Twelve Dancing Princesses"
     },
     {
       "id": "homes-a-14",
-      "atlas": "assets/storywood/homes-a.webp",
+      "atlas": "assets/storywood/honeybrook/homes-a.webp",
       "tile": 14,
       "label": "Puss in Boots"
     },
     {
       "id": "homes-a-15",
-      "atlas": "assets/storywood/homes-a.webp",
+      "atlas": "assets/storywood/honeybrook/homes-a.webp",
       "tile": 15,
       "label": "Tom Thumb"
     },
     {
       "id": "homes-b-0",
-      "atlas": "assets/storywood/homes-b.webp",
+      "atlas": "assets/storywood/honeybrook/homes-b.webp",
       "tile": 0,
       "label": "Thumbelina"
     },
     {
       "id": "homes-b-1",
-      "atlas": "assets/storywood/homes-b.webp",
+      "atlas": "assets/storywood/honeybrook/homes-b.webp",
       "tile": 1,
       "label": "The Three Little Pigs"
     },
     {
       "id": "homes-b-2",
-      "atlas": "assets/storywood/homes-b.webp",
+      "atlas": "assets/storywood/honeybrook/homes-b.webp",
       "tile": 2,
       "label": "The Bremen Town Musicians"
     },
     {
       "id": "homes-b-3",
-      "atlas": "assets/storywood/homes-b.webp",
+      "atlas": "assets/storywood/honeybrook/homes-b.webp",
       "tile": 3,
       "label": "Rumpelstiltskin"
     },
     {
       "id": "homes-b-4",
-      "atlas": "assets/storywood/homes-b.webp",
+      "atlas": "assets/storywood/honeybrook/homes-b.webp",
       "tile": 4,
       "label": "The Fisherman and His Wife"
     },
     {
       "id": "homes-b-5",
-      "atlas": "assets/storywood/homes-b.webp",
+      "atlas": "assets/storywood/honeybrook/homes-b.webp",
       "tile": 5,
       "label": "The Family in the Shoe"
     },
     {
       "id": "homes-b-6",
-      "atlas": "assets/storywood/homes-b.webp",
+      "atlas": "assets/storywood/honeybrook/homes-b.webp",
       "tile": 6,
       "label": "The Town Mouse and the Country Mouse"
     },
     {
       "id": "homes-b-7",
-      "atlas": "assets/storywood/homes-b.webp",
+      "atlas": "assets/storywood/honeybrook/homes-b.webp",
       "tile": 7,
       "label": "The Little Mermaid"
     },
     {
       "id": "homes-b-8",
-      "atlas": "assets/storywood/homes-b.webp",
+      "atlas": "assets/storywood/honeybrook/homes-b.webp",
       "tile": 8,
       "label": "The Snow Queen"
     },
     {
       "id": "homes-b-9",
-      "atlas": "assets/storywood/homes-b.webp",
+      "atlas": "assets/storywood/honeybrook/homes-b.webp",
       "tile": 9,
       "label": "The Wild Swans"
     },
     {
       "id": "homes-b-10",
-      "atlas": "assets/storywood/homes-b.webp",
+      "atlas": "assets/storywood/honeybrook/homes-b.webp",
       "tile": 10,
       "label": "The Steadfast Tin Soldier"
     },
     {
       "id": "homes-b-11",
-      "atlas": "assets/storywood/homes-b.webp",
+      "atlas": "assets/storywood/honeybrook/homes-b.webp",
       "tile": 11,
       "label": "The Little Match Girl"
     },
     {
       "id": "homes-b-12",
-      "atlas": "assets/storywood/homes-b.webp",
+      "atlas": "assets/storywood/honeybrook/homes-b.webp",
       "tile": 12,
       "label": "The Red Shoes"
     },
     {
       "id": "homes-b-13",
-      "atlas": "assets/storywood/homes-b.webp",
+      "atlas": "assets/storywood/honeybrook/homes-b.webp",
       "tile": 13,
       "label": "Aladdin"
     },
     {
       "id": "homes-b-14",
-      "atlas": "assets/storywood/homes-b.webp",
+      "atlas": "assets/storywood/honeybrook/homes-b.webp",
       "tile": 14,
       "label": "The Fisherman and the Genie"
     },
     {
       "id": "homes-b-15",
-      "atlas": "assets/storywood/homes-b.webp",
+      "atlas": "assets/storywood/honeybrook/homes-b.webp",
       "tile": 15,
       "label": "Ali Baba"
     },
     {
       "id": "homes-c-0",
-      "atlas": "assets/storywood/homes-c.webp",
+      "atlas": "assets/storywood/honeybrook/homes-c.webp",
       "tile": 0,
       "label": "Sinbad"
     },
     {
       "id": "homes-c-1",
-      "atlas": "assets/storywood/homes-c.webp",
+      "atlas": "assets/storywood/honeybrook/homes-c.webp",
       "tile": 1,
       "label": "Vasilisa"
     },
     {
       "id": "homes-c-2",
-      "atlas": "assets/storywood/homes-c.webp",
+      "atlas": "assets/storywood/honeybrook/homes-c.webp",
       "tile": 2,
       "label": "Baba Yaga"
     },
     {
       "id": "homes-c-3",
-      "atlas": "assets/storywood/homes-c.webp",
+      "atlas": "assets/storywood/honeybrook/homes-c.webp",
       "tile": 3,
       "label": "East of the Sun and West of the Moon"
     },
     {
       "id": "homes-c-4",
-      "atlas": "assets/storywood/homes-c.webp",
+      "atlas": "assets/storywood/honeybrook/homes-c.webp",
       "tile": 4,
       "label": "The Firebird"
     },
     {
       "id": "homes-c-5",
-      "atlas": "assets/storywood/homes-c.webp",
+      "atlas": "assets/storywood/honeybrook/homes-c.webp",
       "tile": 5,
       "label": "The Golden Goose"
     },
     {
       "id": "homes-c-6",
-      "atlas": "assets/storywood/homes-c.webp",
+      "atlas": "assets/storywood/honeybrook/homes-c.webp",
       "tile": 6,
       "label": "The Six Swans"
     },
     {
       "id": "homes-c-7",
-      "atlas": "assets/storywood/homes-c.webp",
+      "atlas": "assets/storywood/honeybrook/homes-c.webp",
       "tile": 7,
       "label": "The Seven Ravens"
     },
     {
       "id": "homes-c-8",
-      "atlas": "assets/storywood/homes-c.webp",
+      "atlas": "assets/storywood/honeybrook/homes-c.webp",
       "tile": 8,
       "label": "Beauty and the Beast"
     },
     {
       "id": "homes-c-9",
-      "atlas": "assets/storywood/homes-c.webp",
+      "atlas": "assets/storywood/honeybrook/homes-c.webp",
       "tile": 9,
       "label": "Woodland and community view 1"
     },
     {
       "id": "homes-c-10",
-      "atlas": "assets/storywood/homes-c.webp",
+      "atlas": "assets/storywood/honeybrook/homes-c.webp",
       "tile": 10,
       "label": "Woodland and community view 2"
     },
     {
       "id": "homes-c-11",
-      "atlas": "assets/storywood/homes-c.webp",
+      "atlas": "assets/storywood/honeybrook/homes-c.webp",
       "tile": 11,
       "label": "Woodland and community view 3"
     },
     {
       "id": "homes-c-12",
-      "atlas": "assets/storywood/homes-c.webp",
+      "atlas": "assets/storywood/honeybrook/homes-c.webp",
       "tile": 12,
       "label": "Woodland and community view 4"
     },
     {
       "id": "homes-c-13",
-      "atlas": "assets/storywood/homes-c.webp",
+      "atlas": "assets/storywood/honeybrook/homes-c.webp",
       "tile": 13,
       "label": "Woodland and community view 5"
     },
     {
       "id": "homes-c-14",
-      "atlas": "assets/storywood/homes-c.webp",
+      "atlas": "assets/storywood/honeybrook/homes-c.webp",
       "tile": 14,
       "label": "Woodland and community view 6"
     },
     {
       "id": "homes-c-15",
-      "atlas": "assets/storywood/homes-c.webp",
+      "atlas": "assets/storywood/honeybrook/homes-c.webp",
       "tile": 15,
       "label": "Woodland and community view 7"
     },
     {
       "id": "actions-a-0",
-      "atlas": "assets/storywood/actions-a.webp",
+      "atlas": "assets/storywood/honeybrook/actions-a.webp",
       "tile": 0,
       "label": "Ash the wolf"
     },
     {
       "id": "actions-a-1",
-      "atlas": "assets/storywood/actions-a.webp",
+      "atlas": "assets/storywood/honeybrook/actions-a.webp",
       "tile": 1,
       "label": "The Elves and the Shoemaker"
     },
     {
       "id": "actions-a-2",
-      "atlas": "assets/storywood/actions-a.webp",
+      "atlas": "assets/storywood/honeybrook/actions-a.webp",
       "tile": 2,
       "label": "Pinocchio and Geppetto"
     },
     {
       "id": "actions-a-3",
-      "atlas": "assets/storywood/actions-a.webp",
+      "atlas": "assets/storywood/honeybrook/actions-a.webp",
       "tile": 3,
       "label": "Cinderella"
     },
     {
       "id": "actions-a-4",
-      "atlas": "assets/storywood/actions-a.webp",
+      "atlas": "assets/storywood/honeybrook/actions-a.webp",
       "tile": 4,
       "label": "Snow White and the Seven Dwarfs"
     },
     {
       "id": "actions-a-5",
-      "atlas": "assets/storywood/actions-a.webp",
+      "atlas": "assets/storywood/honeybrook/actions-a.webp",
       "tile": 5,
       "label": "Rapunzel"
     },
     {
       "id": "actions-a-6",
-      "atlas": "assets/storywood/actions-a.webp",
+      "atlas": "assets/storywood/honeybrook/actions-a.webp",
       "tile": 6,
       "label": "Little Red Riding Hood and Grandmother"
     },
     {
       "id": "actions-a-7",
-      "atlas": "assets/storywood/actions-a.webp",
+      "atlas": "assets/storywood/honeybrook/actions-a.webp",
       "tile": 7,
       "label": "Hansel and Gretel"
     },
     {
       "id": "actions-a-8",
-      "atlas": "assets/storywood/actions-a.webp",
+      "atlas": "assets/storywood/honeybrook/actions-a.webp",
       "tile": 8,
       "label": "Jack and His Mother"
     },
     {
       "id": "actions-a-9",
-      "atlas": "assets/storywood/actions-a.webp",
+      "atlas": "assets/storywood/honeybrook/actions-a.webp",
       "tile": 9,
       "label": "The Frog Prince"
     },
     {
       "id": "actions-a-10",
-      "atlas": "assets/storywood/actions-a.webp",
+      "atlas": "assets/storywood/honeybrook/actions-a.webp",
       "tile": 10,
       "label": "The Ugly Duckling"
     },
     {
       "id": "actions-a-11",
-      "atlas": "assets/storywood/actions-a.webp",
+      "atlas": "assets/storywood/honeybrook/actions-a.webp",
       "tile": 11,
       "label": "Sleeping Beauty"
     },
     {
       "id": "actions-a-12",
-      "atlas": "assets/storywood/actions-a.webp",
+      "atlas": "assets/storywood/honeybrook/actions-a.webp",
       "tile": 12,
       "label": "The Princess and the Pea"
     },
     {
       "id": "actions-a-13",
-      "atlas": "assets/storywood/actions-a.webp",
+      "atlas": "assets/storywood/honeybrook/actions-a.webp",
       "tile": 13,
       "label": "The Twelve Dancing Princesses"
     },
     {
       "id": "actions-a-14",
-      "atlas": "assets/storywood/actions-a.webp",
+      "atlas": "assets/storywood/honeybrook/actions-a.webp",
       "tile": 14,
       "label": "Puss in Boots"
     },
     {
       "id": "actions-a-15",
-      "atlas": "assets/storywood/actions-a.webp",
+      "atlas": "assets/storywood/honeybrook/actions-a.webp",
       "tile": 15,
       "label": "Tom Thumb"
     },
     {
       "id": "actions-b-0",
-      "atlas": "assets/storywood/actions-b.webp",
+      "atlas": "assets/storywood/honeybrook/actions-b.webp",
       "tile": 0,
       "label": "Thumbelina"
     },
     {
       "id": "actions-b-1",
-      "atlas": "assets/storywood/actions-b.webp",
+      "atlas": "assets/storywood/honeybrook/actions-b.webp",
       "tile": 1,
       "label": "The Three Little Pigs"
     },
     {
       "id": "actions-b-2",
-      "atlas": "assets/storywood/actions-b.webp",
+      "atlas": "assets/storywood/honeybrook/actions-b.webp",
       "tile": 2,
       "label": "The Bremen Town Musicians"
     },
     {
       "id": "actions-b-3",
-      "atlas": "assets/storywood/actions-b.webp",
+      "atlas": "assets/storywood/honeybrook/actions-b.webp",
       "tile": 3,
       "label": "Rumpelstiltskin"
     },
     {
       "id": "actions-b-4",
-      "atlas": "assets/storywood/actions-b.webp",
+      "atlas": "assets/storywood/honeybrook/actions-b.webp",
       "tile": 4,
       "label": "The Fisherman and His Wife"
     },
     {
       "id": "actions-b-5",
-      "atlas": "assets/storywood/actions-b.webp",
+      "atlas": "assets/storywood/honeybrook/actions-b.webp",
       "tile": 5,
       "label": "The Family in the Shoe"
     },
     {
       "id": "actions-b-6",
-      "atlas": "assets/storywood/actions-b.webp",
+      "atlas": "assets/storywood/honeybrook/actions-b.webp",
       "tile": 6,
       "label": "The Town Mouse and the Country Mouse"
     },
     {
       "id": "actions-b-7",
-      "atlas": "assets/storywood/actions-b.webp",
+      "atlas": "assets/storywood/honeybrook/actions-b.webp",
       "tile": 7,
       "label": "The Little Mermaid"
     },
     {
       "id": "actions-b-8",
-      "atlas": "assets/storywood/actions-b.webp",
+      "atlas": "assets/storywood/honeybrook/actions-b.webp",
       "tile": 8,
       "label": "The Snow Queen"
     },
     {
       "id": "actions-b-9",
-      "atlas": "assets/storywood/actions-b.webp",
+      "atlas": "assets/storywood/honeybrook/actions-b.webp",
       "tile": 9,
       "label": "The Wild Swans"
     },
     {
       "id": "actions-b-10",
-      "atlas": "assets/storywood/actions-b.webp",
+      "atlas": "assets/storywood/honeybrook/actions-b.webp",
       "tile": 10,
       "label": "The Steadfast Tin Soldier"
     },
     {
       "id": "actions-b-11",
-      "atlas": "assets/storywood/actions-b.webp",
+      "atlas": "assets/storywood/honeybrook/actions-b.webp",
       "tile": 11,
       "label": "The Little Match Girl"
     },
     {
       "id": "actions-b-12",
-      "atlas": "assets/storywood/actions-b.webp",
+      "atlas": "assets/storywood/honeybrook/actions-b.webp",
       "tile": 12,
       "label": "The Red Shoes"
     },
     {
       "id": "actions-b-13",
-      "atlas": "assets/storywood/actions-b.webp",
+      "atlas": "assets/storywood/honeybrook/actions-b.webp",
       "tile": 13,
       "label": "Aladdin"
     },
     {
       "id": "actions-b-14",
-      "atlas": "assets/storywood/actions-b.webp",
+      "atlas": "assets/storywood/honeybrook/actions-b.webp",
       "tile": 14,
       "label": "The Fisherman and the Genie"
     },
     {
       "id": "actions-b-15",
-      "atlas": "assets/storywood/actions-b.webp",
+      "atlas": "assets/storywood/honeybrook/actions-b.webp",
       "tile": 15,
       "label": "Ali Baba"
     },
     {
       "id": "actions-c-0",
-      "atlas": "assets/storywood/actions-c.webp",
+      "atlas": "assets/storywood/honeybrook/actions-c.webp",
       "tile": 0,
       "label": "Sinbad"
     },
     {
       "id": "actions-c-1",
-      "atlas": "assets/storywood/actions-c.webp",
+      "atlas": "assets/storywood/honeybrook/actions-c.webp",
       "tile": 1,
       "label": "Vasilisa"
     },
     {
       "id": "actions-c-2",
-      "atlas": "assets/storywood/actions-c.webp",
+      "atlas": "assets/storywood/honeybrook/actions-c.webp",
       "tile": 2,
       "label": "Baba Yaga"
     },
     {
       "id": "actions-c-3",
-      "atlas": "assets/storywood/actions-c.webp",
+      "atlas": "assets/storywood/honeybrook/actions-c.webp",
       "tile": 3,
       "label": "East of the Sun and West of the Moon"
     },
     {
       "id": "actions-c-4",
-      "atlas": "assets/storywood/actions-c.webp",
+      "atlas": "assets/storywood/honeybrook/actions-c.webp",
       "tile": 4,
       "label": "The Firebird"
     },
     {
       "id": "actions-c-5",
-      "atlas": "assets/storywood/actions-c.webp",
+      "atlas": "assets/storywood/honeybrook/actions-c.webp",
       "tile": 5,
       "label": "The Golden Goose"
     },
     {
       "id": "actions-c-6",
-      "atlas": "assets/storywood/actions-c.webp",
+      "atlas": "assets/storywood/honeybrook/actions-c.webp",
       "tile": 6,
       "label": "The Six Swans"
     },
     {
       "id": "actions-c-7",
-      "atlas": "assets/storywood/actions-c.webp",
+      "atlas": "assets/storywood/honeybrook/actions-c.webp",
       "tile": 7,
       "label": "The Seven Ravens"
     },
     {
       "id": "actions-c-8",
-      "atlas": "assets/storywood/actions-c.webp",
+      "atlas": "assets/storywood/honeybrook/actions-c.webp",
       "tile": 8,
       "label": "Beauty and the Beast"
     },
     {
       "id": "actions-c-9",
-      "atlas": "assets/storywood/actions-c.webp",
+      "atlas": "assets/storywood/honeybrook/actions-c.webp",
       "tile": 9,
       "label": "Woodland and community view 1"
     },
     {
       "id": "actions-c-10",
-      "atlas": "assets/storywood/actions-c.webp",
+      "atlas": "assets/storywood/honeybrook/actions-c.webp",
       "tile": 10,
       "label": "Woodland and community view 2"
     },
     {
       "id": "actions-c-11",
-      "atlas": "assets/storywood/actions-c.webp",
+      "atlas": "assets/storywood/honeybrook/actions-c.webp",
       "tile": 11,
       "label": "Woodland and community view 3"
     },
     {
       "id": "actions-c-12",
-      "atlas": "assets/storywood/actions-c.webp",
+      "atlas": "assets/storywood/honeybrook/actions-c.webp",
       "tile": 12,
       "label": "Woodland and community view 4"
     },
     {
       "id": "actions-c-13",
-      "atlas": "assets/storywood/actions-c.webp",
+      "atlas": "assets/storywood/honeybrook/actions-c.webp",
       "tile": 13,
       "label": "Woodland and community view 5"
     },
     {
       "id": "actions-c-14",
-      "atlas": "assets/storywood/actions-c.webp",
+      "atlas": "assets/storywood/honeybrook/actions-c.webp",
       "tile": 14,
       "label": "Woodland and community view 6"
     },
     {
       "id": "actions-c-15",
-      "atlas": "assets/storywood/actions-c.webp",
+      "atlas": "assets/storywood/honeybrook/actions-c.webp",
       "tile": 15,
       "label": "Woodland and community view 7"
     },
     {
       "id": "elders-0",
-      "atlas": "assets/storywood/elders.webp",
+      "atlas": "assets/storywood/honeybrook/elders.webp",
       "tile": 0,
       "label": "Elowen Reedpaw"
     },
     {
       "id": "elders-1",
-      "atlas": "assets/storywood/elders.webp",
+      "atlas": "assets/storywood/honeybrook/elders.webp",
       "tile": 1,
       "label": "Bramble Oatwell"
     },
     {
       "id": "elders-2",
-      "atlas": "assets/storywood/elders.webp",
+      "atlas": "assets/storywood/honeybrook/elders.webp",
       "tile": 2,
       "label": "Mabel Hearthfern"
     },
     {
       "id": "elders-3",
-      "atlas": "assets/storywood/elders.webp",
+      "atlas": "assets/storywood/honeybrook/elders.webp",
       "tile": 3,
       "label": "Orson Brookmoss"
     },
     {
       "id": "elders-4",
-      "atlas": "assets/storywood/elders.webp",
+      "atlas": "assets/storywood/honeybrook/elders.webp",
       "tile": 4,
       "label": "Tansy Honeyreed"
     },
     {
       "id": "elders-5",
-      "atlas": "assets/storywood/elders.webp",
+      "atlas": "assets/storywood/honeybrook/elders.webp",
       "tile": 5,
       "label": "Clover Birchden"
     },
     {
       "id": "elders-6",
-      "atlas": "assets/storywood/elders.webp",
+      "atlas": "assets/storywood/honeybrook/elders.webp",
       "tile": 6,
       "label": "Rowan Porridgepot"
     },
     {
       "id": "elders-7",
-      "atlas": "assets/storywood/elders.webp",
+      "atlas": "assets/storywood/honeybrook/elders.webp",
       "tile": 7,
       "label": "Hazel Mossmere"
     },
     {
       "id": "elders-8",
-      "atlas": "assets/storywood/elders.webp",
+      "atlas": "assets/storywood/honeybrook/elders.webp",
       "tile": 8,
       "label": "Silas Creekroot"
     },
     {
       "id": "elders-9",
-      "atlas": "assets/storywood/elders.webp",
+      "atlas": "assets/storywood/honeybrook/elders.webp",
       "tile": 9,
       "label": "Poppy Ashbasket"
     },
     {
       "id": "elders-10",
-      "atlas": "assets/storywood/elders.webp",
+      "atlas": "assets/storywood/honeybrook/elders.webp",
       "tile": 10,
       "label": "Alder Softstep"
     },
     {
       "id": "elders-11",
-      "atlas": "assets/storywood/elders.webp",
+      "atlas": "assets/storywood/honeybrook/elders.webp",
       "tile": 11,
       "label": "Della Willowcup"
     },
     {
       "id": "elders-12",
-      "atlas": "assets/storywood/elders.webp",
+      "atlas": "assets/storywood/honeybrook/elders.webp",
       "tile": 12,
       "label": "Emmett Pineward"
     },
     {
       "id": "elders-13",
-      "atlas": "assets/storywood/elders.webp",
+      "atlas": "assets/storywood/honeybrook/elders.webp",
       "tile": 13,
       "label": "Fern Applebough"
     },
     {
       "id": "elders-14",
-      "atlas": "assets/storywood/elders.webp",
+      "atlas": "assets/storywood/honeybrook/elders.webp",
       "tile": 14,
       "label": "Hugh Lanternpaw"
     },
     {
       "id": "elders-15",
-      "atlas": "assets/storywood/elders.webp",
+      "atlas": "assets/storywood/honeybrook/elders.webp",
       "tile": 15,
       "label": "Iris Teakettle"
     },
     {
       "id": "elders-16",
-      "atlas": "assets/storywood/elders.webp",
+      "atlas": "assets/storywood/honeybrook/elders.webp",
       "tile": 16,
       "label": "Jasper Woolden"
     },
     {
       "id": "elders-17",
-      "atlas": "assets/storywood/elders.webp",
+      "atlas": "assets/storywood/honeybrook/elders.webp",
       "tile": 17,
       "label": "Nora Berrybriar"
     },
     {
       "id": "elders-18",
-      "atlas": "assets/storywood/elders.webp",
+      "atlas": "assets/storywood/honeybrook/elders.webp",
       "tile": 18,
       "label": "Otis Stonefern"
     },
     {
       "id": "elders-19",
-      "atlas": "assets/storywood/elders.webp",
+      "atlas": "assets/storywood/honeybrook/elders.webp",
       "tile": 19,
       "label": "Wren Maplehush"
     }
   ],
   "files": {
-    "assets/storywood/atlas.webp": {
-      "sha256": "da654ac80bcc7c901eac19172cfc2f30ca535cbf0c14a330785e6cc82623caa8",
-      "bytes": 616836,
+    "assets/storywood/honeybrook/atlas.webp": {
+      "sha256": "0e11b4d7ea54275f6e4c745c554f06002f86f36427fd37d8a5a37a049e24a949",
+      "bytes": 579792,
       "columns": 4,
       "rows": 3
     },
-    "assets/storywood/homes-a.webp": {
-      "sha256": "5d4c65af5aaa1b3e2a403e9d20af3f733079b58c18723aa7ad02c0066ffde6ed",
-      "bytes": 706338,
+    "assets/storywood/honeybrook/homes-a.webp": {
+      "sha256": "e2209127fbfb8953c6a93c011cec58abea85ee4395a7edf5c69c8c416ea8e3b9",
+      "bytes": 695730,
       "columns": 4,
       "rows": 4
     },
-    "assets/storywood/homes-b.webp": {
-      "sha256": "bc225475d89e9eac12c14611c8850fbed45bbd7b76150e941852d882abb9b061",
-      "bytes": 711060,
+    "assets/storywood/honeybrook/homes-b.webp": {
+      "sha256": "69c0e1fcc3c8463a09f2b5d821e375c7b74d422b41727efce22c35664632b809",
+      "bytes": 691730,
       "columns": 4,
       "rows": 4
     },
-    "assets/storywood/homes-c.webp": {
-      "sha256": "70c7d0af1e36c68786be6360e81b8bc29549552a2320c670311434700048ba4f",
-      "bytes": 684274,
+    "assets/storywood/honeybrook/homes-c.webp": {
+      "sha256": "3d1bc1dcee4f76ee36de7c0b6fa6521d40b9e1e831b983e7bf74739f27b82810",
+      "bytes": 721556,
       "columns": 4,
       "rows": 4
     },
-    "assets/storywood/actions-a.webp": {
-      "sha256": "3b09bd07e6b5223d315ca6d5a229c1646decb16cba64a80c0f7f3c3671a596e4",
-      "bytes": 587920,
+    "assets/storywood/honeybrook/actions-a.webp": {
+      "sha256": "4fb55ea4638d268f02a48e5b9b1434bea563a2b7cb664283df246ec11e4c6177",
+      "bytes": 641324,
       "columns": 4,
       "rows": 4
     },
-    "assets/storywood/actions-b.webp": {
-      "sha256": "4dadd6c053563541b3d169a8b02f99eb709eee85f4f5b89acea95755b2fea2eb",
-      "bytes": 590470,
+    "assets/storywood/honeybrook/actions-b.webp": {
+      "sha256": "fb4b38fc0e51168f66cb81211e9c41f5c9bd418edf1c2e3129301815c08433f6",
+      "bytes": 649828,
       "columns": 4,
       "rows": 4
     },
-    "assets/storywood/actions-c.webp": {
-      "sha256": "7a0300d6d2779cc49693fa9db9291dd92fe9e1a2992e4d932c03ba016e443737",
-      "bytes": 609394,
+    "assets/storywood/honeybrook/actions-c.webp": {
+      "sha256": "ef7fbd93cb025c8ebd62bf4f5d7506d2e6b92738be21e3e9e5cc0fe775b17d1a",
+      "bytes": 654404,
       "columns": 4,
       "rows": 4
     },
-    "assets/storywood/elders.webp": {
-      "sha256": "9e7ad244616b0df44ba6b5f94ab85f347d8e17ace2fdb1e88583f835f43e137d",
-      "bytes": 586016,
+    "assets/storywood/honeybrook/elders.webp": {
+      "sha256": "54579b3a0fa9a501b40291ea1eb624f0b611d5947be2355a9348784d8c160514",
+      "bytes": 670542,
       "columns": 5,
       "rows": 4
     }
-  }
+  },
+  "style": "Established Honeybrook photographic timber/stone cottage world; classic fairytale casts and species preserved.",
+  "styleReferences": {
+    "assets/community-refuge/hall.webp": "c7b31557c7b95dd9118d35a9bf86bd765f0809d08082ef869a9328c7b494289d",
+    "assets/bear-country/cottages-a.webp": "1555556ff79f3fcb465548c7a4050111ae33a9933a05cacbd1fa00005664c05a"
+  },
+  "previousArt": "Earlier generated atlas files retained unchanged in assets/storywood/. Current delivery uses honeybrook/ subdirectory."
 }

@@ -9,3 +9,9 @@ The renderer uses SVG view boxes to show individual atlas panels without distort
 The new elder accounts are fictional additions explicitly requested by the author, not recovered testimony from the original uploaded manuscript. Earlier recollections heard from relatives are identified as such. Names and portraits do not replace original cast IDs. The ancient stone bridge's authorship remains unresolved, and the guide's identity is not exposed in public retellings.
 
 Delivery copies use WebP compression at original dimensions. Generated PNG originals remain in the session’s generated-images library. No panel was cropped or rearranged in the stored atlases.
+
+## Established Honeybrook revision
+
+The owner requested that the new scenes match the existing Honeybrook photographic world and explicitly retained the original fairy-tale humans, animals and magical characters. All eight active atlases were edited using `assets/community-refuge/hall.webp` and `assets/bear-country/cottages-a.webp` as direct image references. Warm substantial timber and rounded stone, practical cottage furnishings, plum/pine fabrics, conifer woodland and natural light now follow that established treatment. Classic character identities, culturally specific details and characteristic magical homes remain distinct.
+
+Active delivery files are in `honeybrook/`; the original generated WebP atlases remain unchanged in this directory. Generated PNG originals remain in the session library. The current manifest identifies only the eight active atlases and all 128 panel mappings, with reference-image hashes. Pinocchio’s present-day workshop shows the living boy from the manuscript, with his wooden beginning remembered by a figurine. The ordinary Honeybrook bear neighbours in the restored square are upright and clothed like the established residents. The chapter reader preserves the existing 3:2 story-sheet geometry, and the new scene renderer keeps atlas grid boundaries exact.

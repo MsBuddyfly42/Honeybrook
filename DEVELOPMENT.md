@@ -220,3 +220,11 @@ The owner rejected the empty human-style woodland campus imagery. All eleven fil
 Run `node tests/storywood.cjs` and `node tests/storywood.mjs` against the development server on port 8794. The browser test uses the prepared external Playwright installation and system Chromium. It performs every tale's observations, marker selection, twelve-section brush work, page sequence and retelling at desktop/phone widths, then all 78 elder interactions, notebook/reload, checked backup restore and stale-tab protection. `TEST_URL` selects production verification. Synthetic contexts never use owner saves.
 
 Art is photographic-style fictional scenery in eight intact atlases, shown using SVG view boxes. See `assets/storywood/manifest.json` and its README for exact panel assignments. There are 41 named tale destinations, eight connected woodland places and 21 elder visiting rooms, including Harold. New elder accounts are author-authorised fiction, not testimony recovered from the original DOCX. The manuscript adaptation is performed after game validation.
+
+### Honeybrook appearance and direct entrances
+
+`storywood-country.js` is the current companion controller; `storywood-app.js` loads it for cached older pages. Active scenery is in `assets/storywood/honeybrook/`; earlier generated atlases are retained. The existing Honeybrook fonts/palette now apply to the companion, and the chapter reader uses the proper 3:2 sheet geometry.
+
+`storywood-routes.js` provides one save-independent set of 70 direct entrances for the shared directory, city map and place finder. Old Storybook Lane/woods-boundary bookmarks enter the companion directly. The companion also has an Every location directory. Woodland entrances open individual photographic scenes, connected paths and the appropriate local recovery activity; navigating never depends on a successful metadata save.
+
+Run `node tests/storywood-entrances.mjs`, the updated `tests/storywood-connections.mjs` and the existing companion rule/browser tests. The entrance test clicks all 70 shared-directory links at 1440/390px, all eight woodland doors and the global finder, and checks protected records and old bookmarks during an unchanged committed Journey. `TEST_URL` and `TEST_TLS_CURL=1` select certificate-verified production-response checks with the existing curl adapter.
