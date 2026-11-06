@@ -34,12 +34,12 @@ function routes(host){
  }
  return out;
 }
+const mounted=new WeakMap();
 function mount(host){
- if(host.querySelector('.scene-explore-tools'))return;
- const picture=host.querySelector('.visit-room-photo,.heroImage');if(!picture)return;
+ const picture=host.querySelector('.visit-room-photo,.heroImage');if(!picture||mounted.get(host)===picture)return;
  const links=routes(host);if(!links.length)return;
- host.classList.add('scene-explorable');
- const windowFrame=document.createElement('div');windowFrame.className='scene-photo-window';picture.before(windowFrame);windowFrame.append(picture);
+ host.querySelectorAll('.scene-explore-tools,.scene-paths').forEach(n=>n.remove());if(host.nextElementSibling?.classList.contains('scene-explore-hint'))host.nextElementSibling.remove();mounted.set(host,picture);host.classList.add('scene-explorable');
+ if(!picture.parentElement.classList.contains('scene-photo-window')){const windowFrame=document.createElement('div');windowFrame.className='scene-photo-window';picture.before(windowFrame);windowFrame.append(picture);}
  const controls=document.createElement('div');controls.className='scene-explore-tools';controls.setAttribute('aria-label','Look around this scene');
  let zoom=1,x=0,y=0,drag=null;
  function paint(){picture.style.transformOrigin='center';picture.style.transform='translate('+x+'px,'+y+'px) scale('+zoom+')';}
