@@ -1,0 +1,66 @@
+{
+  "canonicalReference": "assets/nell/nell.webp",
+  "referenceSha256": "1c1f1abdf2c53d655699a0f18cfede53bba545a39d5cb27739564501e326af49",
+  "edition": "November 6 2026",
+  "files": [
+    {
+      "path": "assets/storywood/honeybrook/homes-c-nell.webp",
+      "sha256": "a8862ac5d8b42b6b67d5c888716287b52b6b282d151a7e654c40b65ac173ef38"
+    },
+    {
+      "path": "assets/storywood/honeybrook/actions-b-nell.webp",
+      "sha256": "e181d66dc5218cd89e70575b5d7d6bbeb26b8cba287137f4ecf14ca65cda9471"
+    },
+    {
+      "path": "assets/storywood/honeybrook/actions-c-nell.webp",
+      "sha256": "b6a5bd3eeb223f199658df38b330859b6ad22dd029ed2ef871f9823539c87985"
+    },
+    {
+      "path": "assets/storywood/honeybrook/actions-a-nell.webp",
+      "sha256": "f8f316cf1018206ed663daa2b1f6ca5afcf7dd84837802eefba69644971afdce"
+    },
+    {
+      "path": "assets/storywood/honeybrook/homes-b-nell.webp",
+      "sha256": "d322b73efce12ef4bb83c824bddbcedea66fdfadc072222b7cd2e5e9898a979f"
+    },
+    {
+      "path": "assets/storywood/honeybrook/atlas-nell.webp",
+      "sha256": "7979a56aa62ddbf8c48ed65df0abd2edb02177f0d1ab0f32a8401884dc1d9ef3"
+    },
+    {
+      "path": "assets/storywood/honeybrook/elders-visits.webp",
+      "sha256": "d4cc92b9e04c11be6d5329c049d6df665798d7aacf0548e33be38355b25a7d74"
+    },
+    {
+      "path": "assets/activity-action/work.webp",
+      "sha256": "a4d175d59ba157f22290fca78ffe67a1632836898421f91b9514499d74dcc143"
+    },
+    {
+      "path": "assets/activity-action/games.webp",
+      "sha256": "9f9a2bb126e5c142190da906f727a78a725bc3b395d90ac1bcaa9c57a366971a"
+    },
+    {
+      "path": "assets/nell/journey-1.webp",
+      "sha256": "5840a0ada9dcd76a3e85de5ebfb0bfa06c9dce0cade51c8a49d410f9e249e722"
+    },
+    {
+      "path": "assets/nell/journey-2.webp",
+      "sha256": "10850b749ce9b11a754513cfcd6067c08be76f73b99414bb421c8e0a522579df"
+    },
+    {
+      "path": "assets/nell/journey-4.webp",
+      "sha256": "f6588eb050f576af28fed272c03c99bc338c096d6e6a11235dfd90912bf7313f"
+    },
+    {
+      "path": "assets/nell/journey-3.webp",
+      "sha256": "8d7e738eee58e8c04e1271f1cc5be1018249075654c2a4aadf13022cadbb79ab"
+    },
+    {
+      "path": "assets/nell/promise.webp",
+      "sha256": "d119c1f54837192785c14380da837d27329d00d8742c38631f206cd806e0fa0f"
+    }
+  ],
+  "sharedActivityPhotos": 32,
+  "elderConversationPhotos": 21,
+  "notes": "Fairy-tale residents retain their distinct identities; Nell is the canonical adult woman with shoulder-length golden curls and plum coat."
+}

@@ -6,7 +6,8 @@ const KEY='honeybrook_story_mode_v1',base=new URL('.',document.currentScript.src
 // A new tab starts at the Welcome House; refresh and travel keep their current route.
 const entrance=url('index.html');
 let newTab=false;try{newTab=sessionStorage.getItem('honeybrook_tab_open_v1')!=='open';sessionStorage.setItem('honeybrook_tab_open_v1','open');}catch{}
-if(newTab){
+const hollowDoor=location.pathname.includes('/honeybrook-craft-fair/')&&new URLSearchParams(location.search).get('portal')==='town'&&(new URLSearchParams(location.search).get('place')==='hollow'||(new URLSearchParams(location.search).get('place')||'').startsWith('hollow-'));
+if(newTab&&!hollowDoor){
  if('scrollRestoration'in history)history.scrollRestoration='manual';
  if(location.pathname!==entrance.pathname&&location.pathname!==base.pathname){document.documentElement.style.visibility='hidden';location.replace(entrance.href);return;}
  history.replaceState(null,'',entrance.pathname);scrollTo(0,0);

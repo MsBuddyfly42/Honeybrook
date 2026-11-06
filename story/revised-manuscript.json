@@ -1572,6 +1572,7 @@
       "paragraphs": [
         "Far beyond the woodland roads, Nell sat beside her grandfather's bed.",
         "She was forty-two, a married British woman who earned her living as a private investigator. Beekeeping was the family trade she practised whenever work allowed. Almost everyone in the family loved bees. She had grown up hearing the missing beekeepers' story without imagining that she would be the one expected to finish it.",
+        "Her golden curls reached her shoulders, catching on the collar of the plum coat she had brought in from the cold. A camera rested against her cream blouse; her notebook fitted into the worn brown satchel at her side. Her grandfather knew that face before she arranged it into a reassuring smile.",
         "He had sent for her that morning.",
         "The message was brief: would Nell come today, if she could? He wanted time with her while he could still say what he meant. She read it twice before putting down the phone. For years, he had treated illness as an interruption to his plans. This was the first invitation that sounded as though he was planning for his own absence.",
         "She came with a jar of honey because arriving with something useful was easier than arriving afraid. In the passage outside his room, she wiped her palms against her coat and arranged the expression she hoped would reassure him.",
@@ -1688,7 +1689,7 @@
       ],
       "part": "Part Eight Nell Comes to Honeybrook",
       "photo": {
-        "src": "assets/story-scenes/book-18.webp",
+        "src": "assets/nell/journey-1.webp",
         "tile": 0
       }
     },
@@ -1736,8 +1737,8 @@
       ],
       "part": "Part Eight Nell Comes to Honeybrook",
       "photo": {
-        "src": "assets/story-scenes/book-12.webp",
-        "tile": 3
+        "src": "assets/nell/journey-2.webp",
+        "tile": 0
       }
     },
     {
@@ -1792,8 +1793,8 @@
       ],
       "part": "Part Eight Nell Comes to Honeybrook",
       "photo": {
-        "src": "assets/story-scenes/book-17.webp",
-        "tile": 1
+        "src": "assets/nell/journey-1.webp",
+        "tile": 2
       }
     },
     {
@@ -1838,6 +1839,9 @@
         "In the morning, Nell told Amelia what she had heard. Amelia's expression changed at the words come and see, but she did not claim to understand their purpose. She explained the Northern Woods' boundary and promised they would discuss a proper visit once Nell knew more.",
         "While they waited for her family's answer, Nell kept the voice in her notebook beside the questions she could not yet resolve. She had followed enough uncertain evidence to know that being curious did not require being careless.",
         "Visits from Honeybrook to Bear Hollow had been ordinary long before Nell arrived. Neighbours went to hear the old stories, to carry news back, to sit with people whose voices had become familiar. There were visits for porridge and visits that lasted through the cooling of the tea. Nell was joining a friendship, not beginning one.",
+        "The creek road brought them into the Bear Hollow Nell had already visited. The old square, porridge kitchen, honey house, garden and cottages were still there. New cottage doors continued along the existing paths; they had not made another town beyond the one she knew.",
+        "Amelia showed her where the elders' cottage path joined the lane. Twenty older neighbours had made room for regular visitors, and Harold had his familiar visiting chair among them. A caller could go from the square to a cottage, leave by its front door, and return to the same square. The footbridge still led home towards Honeybrook.",
+        "Nell did not hurry from one name to the next. She noticed the quilt folded over a chair, waited while a cup was moved within reach, and asked before opening her notebook. What she would remember was a bear in a particular home, telling a particular part of Abigail's life.",
         "Some Hollow bears lived remarkably long lives. Among the oldest were neighbours who had been cubs when Abigail was a child, younger friends who had grown old beside her, and bears whose earliest memories belonged to her last years. Others carried an older relative’s account. Nell kept those differences in her notebook. She did not change “my mother told me” into “I was there”.",
         "They did not gather to repeat only the famous breakfast. There were porridge customs, the turning of cups so small paws could reach, the first visitor’s place at the hearth, and the ordinary rule that a meal was not something a hungry cub had to earn. The old bears could talk about a whole area before the present generation knew its paths.",
         "Elowen Reedpaw welcomed Nell at Quilt Cottage. She was younger than Abigail when the human girl was a child. A long-lived Hollow bear, she remembers their childhood table and the later years that followed.",
@@ -1943,8 +1947,8 @@
       ],
       "part": "Part Eight Nell Comes to Honeybrook",
       "photo": {
-        "src": "assets/story-scenes/book-18.webp",
-        "tile": 1
+        "src": "assets/nell/journey-1.webp",
+        "tile": 3
       }
     },
     {
@@ -1981,8 +1985,8 @@
       ],
       "part": "Part Nine The Life Nell Chooses",
       "photo": {
-        "src": "assets/story-scenes/book-12.webp",
-        "tile": 1
+        "src": "assets/nell/journey-2.webp",
+        "tile": 0
       }
     },
     {
@@ -1999,12 +2003,17 @@
         "At the apiary, she helped compare seasonal records and plan a follow-up with the keeper. She did not open a live colony simply to prove that she knew bees. The colony's condition and the keeper's plan came first.",
         "When she became stuck, the Professor offered a hint tied to the actual problem. Sometimes a gentler suggestion arrived in the quiet between thoughts, in the voice she had begun to recognise. It helped her notice what she had missed without doing the work for her.",
         "Every closed request recorded the action taken, the check, and the person's response. A repaired latch could be seen holding. A corrected booking stopped sending two groups to the same hall. An accurate supply count meant the next worker could find what the book promised.",
+        "Doing the work changed what was in front of her. At the kitchen table she measured flour into the bowl, poured the milk, and felt the mixture thicken under the spoon. When the dough was ready, she shaped the biscuits on the tray. The baker checked the hot oven; Nell counted the portions that came back out.",
+        "In the garden she pressed each seedling into its own space and watered the soil around it. At the honey house, inspected honey rose inside a clean jar before she fitted its lid. A label belonged on a sealed jar that somebody could use, not on a promise that the honey had been bottled.",
+        "At a workbench she compared prepared wooden pieces, fitted them in order, and checked the joint with Tom. At another table a stitch pulled two edges of cloth together. She could turn the piece over and see where the thread had missed. The guide stayed beside her hands so that she could try the difficult part again.",
+        "Reception work had its own visible results: a guest's answer entered into the right place, a room allocation checked against the occupied beds, and the closed register returned to the desk. Practice pages and private guest records remained separate. When she counted supplies, the next worker could compare the shelf with the written total.",
+        "Nell kept sketches and agreed photographs of these ordinary actions beside her notes. A picture of a kitchen could help her find the door; the next picture needed to show the bowl, the measured ingredients and the hands doing the work. She wanted a learner to recognise what they were being asked to attempt.",
         "Trust grew from these outcomes. It could not be bought with the money her grandfather had left her."
       ],
       "part": "Part Nine The Life Nell Chooses",
       "photo": {
-        "src": "assets/story-scenes/book-13.webp",
-        "tile": 0
+        "src": "assets/nell/journey-2.webp",
+        "tile": 1
       }
     },
     {
@@ -2049,8 +2058,8 @@
       ],
       "part": "Part Nine The Life Nell Chooses",
       "photo": {
-        "src": "assets/story-scenes/book-18.webp",
-        "tile": 0
+        "src": "assets/nell/journey-2.webp",
+        "tile": 3
       }
     },
     {
@@ -2081,8 +2090,8 @@
       ],
       "part": "Part Ten The Northern Woods",
       "photo": {
-        "src": "assets/story-scenes/book-17.webp",
-        "tile": 2
+        "src": "assets/nell/journey-2.webp",
+        "tile": 3
       }
     },
     {
@@ -2099,6 +2108,8 @@
         "\"What reason?\" Nell asked.",
         "The elder gave the stories he had inherited. When she asked who had seen the dangers described, his answers became less certain.",
         "She did not laugh at him. The human side of her family had lived with the consequences of fear too. They agreed that uncertainty required care. It did not require never asking another question.",
+        "Their route brought them first to Northern Edge. The ranger's boundary and inspected public approach belonged to Honeybrook; the woodland entrance stood beyond them. Nell wrote both names on her route page. Northern Edge was the place to prepare and meet the others before entering the Northern Woods.",
+        "They checked the way back as carefully as the way forward. The same woodland entrance would bring them out at Northern Edge, where Harold would know to expect them. Beyond the trees, Storybook Lane would have its own gate. None of those paths needed to become another Bear Hollow.",
         "At the tree line, Nell's husband checked the fastenings on their bag. Her mother stood beside Amelia. Tom looked back to make sure everyone was still together.",
         "Then the voice spoke.",
         "\"Nell. Come and see.\"",
@@ -2123,8 +2134,8 @@
       ],
       "part": "Part Ten The Northern Woods",
       "photo": {
-        "src": "assets/story-scenes/book-17.webp",
-        "tile": 2
+        "src": "assets/nell/journey-3.webp",
+        "tile": 0
       }
     },
     {
@@ -2214,8 +2225,8 @@
       ],
       "part": "Part Ten The Northern Woods",
       "photo": {
-        "src": "assets/story-scenes/book-12.webp",
-        "tile": 2
+        "src": "assets/nell/journey-3.webp",
+        "tile": 1
       }
     },
     {
@@ -2266,8 +2277,8 @@
       ],
       "part": "Part Ten The Northern Woods",
       "photo": {
-        "src": "assets/story-scenes/book-17.webp",
-        "tile": 3
+        "src": "assets/nell/journey-3.webp",
+        "tile": 2
       }
     },
     {
@@ -2315,7 +2326,7 @@
       ],
       "part": "Part Ten The Northern Woods",
       "photo": {
-        "src": "assets/story-scenes/book-17.webp",
+        "src": "assets/nell/journey-3.webp",
         "tile": 3
       }
     },
@@ -2367,8 +2378,8 @@
       ],
       "part": "Part Ten The Northern Woods",
       "photo": {
-        "src": "assets/story-scenes/book-17.webp",
-        "tile": 3
+        "src": "assets/nell/journey-4.webp",
+        "tile": 1
       }
     },
     {
@@ -2421,6 +2432,10 @@
         "The arranged visits continued after the first storytelling evening. Storybook Lane could not be understood from the square alone. Its paths led through gardens, over streams and towards the distant shores the family had glimpsed. The Northern Woods belonged to the same awakening.",
         "The stories themselves had rested deep in the woods when their tellings fell quiet. Beside a split oak, at a stream bend, near a moss-covered arch and beneath the ferns, the visitors found signs the residents could explain. Nell did not take a book merely because she had found it. She first asked its owner what was waiting there, what had been left out, and how the pages should be heard.",
         "They brushed loose leaf mould away without tearing the living roots. A recovered account might begin with a household, continue through a danger, and return to the people who still had to live afterwards. Nell compared the passages instead of assuming the most famous picture belonged at the beginning. When the account was together, it went back to the person whose life it concerned.",
+        "On a later visit, Nell followed Ash's sketch from his bakery to the split oak. She stopped at a trail marker, compared the bend in the roots with his drawing, and went closer. The book was partly hidden by leaves. She worked a soft brush from the edge of its cover until its whole outline could be seen.",
+        "At the stream bend, another path led towards the moss arch; a quieter turn reached the fern hollow. They left the stream clear and kept away from unstable stone. The remembering clearing offered room to compare their notes, and the storytelling circle gave the recovered pages a place to be heard. From the rise they could look back towards the village before taking the marked way to the gate.",
+        "Each walk brought them into the place they had chosen. A cottage door opened onto a host's room. A woodland turn led to another stretch of path, with its own ground underfoot and its own reason to stop. They could listen, inspect a keepsake, work over a waiting book, or turn back. Nell did not mark a place explored merely because she had read its name.",
+        "After the telling, they returned through Northern Edge to Honeybrook and took the creek road into the familiar Hollow. The new elders' cottages were still part of that same neighbourhood. A story heard in one of those rooms could now travel with them into the woods and home again, keeping its teller's name.",
         "Finding the pages did not make a wall solid. Carrying a book home unopened did not bring water to the fountain. The stories had to be told again, with listeners who wanted to pass them on. The residents could agree to a telling, correct it, or ask for a private experience to remain private.",
         "At Ash’s bakery, Ash the wolf showed the visitors a flour-dusted apron. The familiar account ran this way: Ash frightened Red Riding Hood and her grandmother. He acknowledged their hurt without demanding forgiveness. He began the patient work of becoming a neighbour they could choose to trust.",
         "The part the hurried version missed mattered just as much. He learned that an apology must be followed by dependable conduct.",
@@ -2520,7 +2535,7 @@
       ],
       "part": "Part Eleven The Story Travels Home",
       "photo": {
-        "src": "assets/story-scenes/book-12.webp",
+        "src": "assets/nell/journey-4.webp",
         "tile": 1
       }
     },
@@ -2566,8 +2581,8 @@
       ],
       "part": "Part Eleven The Story Travels Home",
       "photo": {
-        "src": "assets/story-scenes/book-18.webp",
-        "tile": 0
+        "src": "assets/nell/journey-2.webp",
+        "tile": 2
       }
     },
     {
@@ -2610,8 +2625,8 @@
       ],
       "part": "Part Eleven The Story Travels Home",
       "photo": {
-        "src": "assets/story-scenes/book-17.webp",
-        "tile": 1
+        "src": "assets/nell/journey-4.webp",
+        "tile": 2
       }
     },
     {
@@ -2714,8 +2729,8 @@
       ],
       "part": "Part Eleven The Story Travels Home",
       "photo": {
-        "src": "assets/story-scenes/book-12.webp",
-        "tile": 1
+        "src": "assets/nell/journey-4.webp",
+        "tile": 2
       }
     },
     {
@@ -3034,8 +3049,8 @@
       ],
       "part": "Part Eleven The Story Travels Home",
       "photo": {
-        "src": "assets/story-scenes/book-17.webp",
-        "tile": 3
+        "src": "assets/nell/journey-4.webp",
+        "tile": 1
       }
     },
     {
@@ -3067,10 +3082,10 @@
       ],
       "part": "Epilogue",
       "photo": {
-        "src": "assets/story-scenes/book-18.webp",
-        "tile": 2
+        "src": "assets/nell/journey-4.webp",
+        "tile": 3
       }
     }
   ],
-  "edition": "Expanded Nell edition · Storybook Lane and Northern Woods"
+  "edition": "Expanded Nell edition · Connected Bear Hollow and woodland paths · November 6 2026"
 }
