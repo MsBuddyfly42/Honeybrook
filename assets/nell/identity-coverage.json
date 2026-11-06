@@ -60,7 +60,8 @@
       "sha256": "d119c1f54837192785c14380da837d27329d00d8742c38631f206cd806e0fa0f"
     }
   ],
-  "sharedActivityPhotos": 32,
+  "sharedActivityPhotos": 48,
   "elderConversationPhotos": 21,
-  "notes": "Fairy-tale residents retain their distinct identities; Nell is the canonical adult woman with shoulder-length golden curls and plum coat."
+  "notes": "Fairy-tale residents retain their distinct identities; Nell is the canonical adult woman with shoulder-length golden curls and plum coat.",
+  "contextualActivityAtlas": "assets/activity-action/context.webp"
 }

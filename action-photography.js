@@ -6,6 +6,23 @@ const descriptions={count:'counting supplies against a notebook',mix:'measuring 
 function resolve(kind,title=''){
  let k=String(kind||'').toLowerCase(),t=String(title).toLowerCase();if(k==='game-delivery')k='game-maze';
  if(k.startsWith('game-'))return {sheet:'games',tile:games[k.slice(5)],action:k.slice(5)};
+ const contextual=(tile,action)=>({sheet:'context',tile,action});
+ if(/^(place|sort|setup|order|care|share|stock|inventory|count)$/.test(k)){
+  if(/reference book|bookcase|map folder|study and planning|library/.test(t))return contextual(0,'arranging books and study materials');
+  if(/archive|file tray|folders|paper records/.test(t))return contextual(1,'sorting archive papers into file trays');
+  if(/music room|instrument|sheet music/.test(t))return contextual(2,'preparing the instruments and sheet music');
+  if(/classroom|teaching materials|lesson materials/.test(t))return contextual(3,'preparing lesson materials with bear students');
+  if(/mail|postal|envelope/.test(t))return contextual(8,'placing letters into their postal cubbies');
+  if(/clothing|garment/.test(t))return contextual(7,'sorting folded clothing');
+  if(/bedroom|guest bed|bedding/.test(t))return contextual(13,'making the guest bed');
+  if(/towel|linen|clinic/.test(t))return contextual(4,'folding clean clinic towels and comfort linens');
+  if(/dining|cutlery|table setting/.test(t))return contextual(14,'setting bowls and cutlery on the dining table');
+ }
+ if(/water sample|water quality|laboratory/.test(t)&&/mix|measurement|inspect/.test(k))return contextual(6,'measuring a water sample with a bear laboratory mentor');
+ if(/chair|wooden joint/.test(t)&&/repair|craft|order/.test(k))return contextual(5,'repairing a wooden chair joint');
+ if(/clay|pottery/.test(t)&&/craft|mix|pattern/.test(k))return contextual(9,'shaping a clay bowl');
+ if(/bathroom|washbasin|sink/.test(t)&&/clean|housekeeping/.test(k))return contextual(12,'wiping the bathroom sink');
+ if(/computer|keyboard/.test(t)&&/inspect|repair|setup/.test(k))return contextual(15,'checking the computer cable and keyboard');
  const aliases={rubric:'inspect',pattern:'craft',cue:'rhythm',serve:'setup',cook:'mix',porridge:'mix',bakery:'bake',jars:'honey',flowers:'garden',bridge:'order',wood:'order',firewood:'sort',textile:'craft',sewing:'craft',paint:'paint',repair:'order',inventory:'count',stock:'sort',housekeeping:'clean',care:'place',shelter:'inspect',welcome:'write',mail:'write',learn:'write',teach:'write',fellowship:'write',sunset:'route',campfire:'inspect',hiking:'route',water:'swim',dance:'rhythm',measurement:'mix',recipe:'mix',performance:'rhythm',rehearsal:'rhythm',judging:'inspect',aim:'targets',sequence:'order',note:'write',share:'place',pack:'kit'};
  k=aliases[k]||k;
  if(['camera','editing','sound','lighting','paint','swim','kit','memory','mosaic','word','maze','targets','rhythm'].includes(k))return {sheet:'games',tile:games[k],action:k};
