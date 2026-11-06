@@ -1,6 +1,6 @@
 # Original cast and chronology audit
 
-Audited all 41 entries against the complete retained Word manuscript, full paragraph extraction, CANON.md and the source chapter references. `cast-presence-audit.json` records each entry, source location, chapters and presentation. The Word file remains SHA-256 `8c3c52318cd77fe5253987fbf77850d8c0ebc49bb15bb6fa142dbe38f4822cab`.
+Audited all 41 entries against the complete retained Word manuscript, full paragraph extraction, CANON.md and the source chapter references. `cast-presence-audit.json` records each entry, source location, chapters and presentation. The Word file remains SHA-256 `77d9b6a8939aa30641e0a3f0ae10b19717b14da718145875dc5e46884fbfd26b`.
 
 The complete Hearthwell household remains together at home. Templar/Ja’Mya connect to technology and Helping House; Buddy/Tom to practical work; Jonesha/Lance and the unnamed ranger to the old stone arch; Robin/Rheanna to music; the Professor/Sammy/Lance/Landis to learning. Lena stays supported with familiar family company, without invented dialogue or walking. Wally/Patty/Daisy connect to the bakery and café. Harold connects to the post office. Amelia/Tom connect to the repaired wooden bridge. Mabel, Toby, Nora, Milo and the distinct older cub connect to Welcome House. The ranger and older cub were missing from the playable companion/native neighbor roster; they have been restored without inventing personal names or biographies.
 
