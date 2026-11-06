@@ -307,6 +307,7 @@ function go(scene, arg) {
     else if(!townPortal&&!['carnival','circus'].includes(scene)){returnToTown();return;}
   }
   if(townPortal&&scene==='area'&&['storybook-lane','northern-woods'].includes(arg)){location.assign('../../storywood.html#region='+(arg==='storybook-lane'?'lane':'woods'));return;}
+  if(townPortal&&scene==='area'&&arg==='bear-hollow'&&window.HoneybrookBearCountry){window.HoneybrookBearCountry.navigate('hollow');return;}
   const sceneChanged=scene!==S.scene||(scene==='area'&&arg!==S.area)||(scene==='home'&&arg!==Stay.stayPlace);
   if(sceneChanged){S.sceneEpoch=(S.sceneEpoch||0)+1;if(!$('#modal').hidden)closeModal();}
   if (scene === 'home' && S.scene !== 'home') Stay.returnTarget = { scene: S.scene, area: S.area };

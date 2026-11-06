@@ -6,5 +6,5 @@ const host={classList:{contains:()=>false}},woods=D.window.StorywoodData.woods,g
 for(const w of woods){ctx.location.hash='#region=woods&wood='+w.id;const paths=ctx.routes(host);assert(paths.length>=2,w.name);graph[w.id]=paths.map(r=>new URL(r.href,ctx.rootURL)).filter(u=>!u.searchParams.has('search')).map(u=>new URLSearchParams(u.hash.slice(1)).get('wood')).filter(Boolean);for(const r of paths)assert(!r.label.includes('undefined'));}
 for(const [id,adj]of Object.entries(graph))for(const next of adj)assert(graph[next].includes(id),id+' ↔ '+next);
 for(const t of D.window.StorywoodData.tales){ctx.location.hash='#tale='+t.id;const paths=ctx.routes(host);assert.equal(paths.length,2);assert(paths.some(r=>r.href.includes('wood='+t.forest)));}
-for(const e of D.window.StorywoodData.elders){ctx.location.hash='#elder='+e.id;assert(ctx.routes(host).some(r=>r.href==='games/honeybrook-craft-fair/?portal=town&place=hollow'));}
+for(const e of D.window.StorywoodData.elders){ctx.location.hash='#elder='+e.id;assert(ctx.routes(host).some(r=>r.href==='games/honeybrook-craft-fair/?portal=town&place=hollow#place=hollow&view=outside'));}
 console.log('PASS reciprocal trails at all 8 woodland scenes, 41 resident-to-investigation paths, 21 elder front-door returns, and no unresolved scene labels.');

@@ -15,21 +15,21 @@ function routes(host){
  }else{
   const D=window.StorywoodData;if(!D)return out;
   const q=new URLSearchParams(location.hash.slice(1)),wood=D.woods.find(w=>w.id===q.get('wood')),tale=D.tales.find(t=>t.id===q.get('tale')),elder=D.elders.find(e=>e.id===q.get('elder'));
-  if(elder){add('Front door → Bear Hollow','games/honeybrook-craft-fair/?portal=town&place=hollow');add('Forest path → Northern Woods','storywood.html#region=woods');}
+  if(elder){add('Front door → Bear Hollow','games/honeybrook-craft-fair/?portal=town&place=hollow#place=hollow&view=outside');add('Forest path → Northern Woods','storywood.html#region=woods');}
   else if(tale){add('Front door → Storybook Lane','storywood.html#region=lane');add('Follow the sketch → '+D.woods.find(w=>w.id===tale.forest)?.name,'storywood.html#region=woods&wood='+tale.forest+'&search='+tale.id);}
   else if(wood){
    const paths={gate:['roots','stream','rise'],roots:['gate','arch'],stream:['gate','ferns'],arch:['roots','clearing'],ferns:['stream','clearing'],clearing:['arch','ferns','circle'],circle:['clearing','rise'],rise:['circle','gate']};
    for(const id of paths[wood.id]||[])add('Trail → '+D.woods.find(w=>w.id===id)?.name,'storywood.html#region=woods&wood='+id);
    const account=D.tales.find(t=>t.id===q.get('search'))||D.tales.find(t=>t.forest===wood.id);
    if(account)add('Investigate → '+account.name+'’s resting account','storywood.html#region=woods&wood='+wood.id+'&search='+account.id);
-   if(wood.id==='gate')add('Village gate → Storybook Lane','storywood.html#region=lane');
+   if(wood.id==='gate'){add('Village gate → Storybook Lane','storywood.html#region=lane');add('Exit woods → Northern Edge','index.html#district=ne');}
   }else if(q.get('region')==='woods'){
-   for(const id of['gate','roots','stream'])add('Walk to '+D.woods.find(w=>w.id===id)?.name,'storywood.html#region=woods&wood='+id);
+   add('Exit woods → Northern Edge','index.html#district=ne');for(const id of['gate','roots','stream'])add('Walk to '+D.woods.find(w=>w.id===id)?.name,'storywood.html#region=woods&wood='+id);
    add('Return gate → Storybook Lane','storywood.html#region=lane');
   }else{
    for(const t of D.tales.slice(0,2))add('Door → '+t.place,'storywood.html#tale='+t.id);
    add('Forest gate → Northern Woods','storywood.html#region=woods&wood=gate');
-   add('Creek path → Bear Hollow','games/honeybrook-craft-fair/?portal=town&place=hollow');
+   add('Creek path → Bear Hollow','games/honeybrook-craft-fair/?portal=town&place=hollow#place=hollow&view=outside');
   }
  }
  return out;
