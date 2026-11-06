@@ -11,14 +11,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "Seven when the spring river takes her beekeeper parents; survives three days on honey, reaches the cottage on the fourth day.",
-    "delivery": "unhurried, rounded phrases",
-    "rate": 0.82,
-    "pitch": 0.73,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 0,
     "visualIdentity": "Human · historical",
     "storyContext": "Seven when the spring river takes her beekeeper parents; survives three days on honey, reaches the cottage on the fourth day. Mama Bear welcomes her. Her hair later silvers; she dies old and beloved before Carmen arrives. She entrusts Harold with the sealed family letter.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "child"
   },
   {
     "id": "story-mama",
@@ -33,12 +35,14 @@ window.HoneybrookVoiceCast=[
     "personality": "Sees a lost child rather than an intruder, says ‘She stays,’ and offers care without demanding her story.",
     "delivery": "crisp phrases with a measured pause",
     "rate": 0.832,
-    "pitch": 1.1,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 1,
     "visualIdentity": "Bear · historical",
     "storyContext": "Sees a lost child rather than an intruder, says ‘She stays,’ and offers care without demanding her story. Dies with Papa Bear during the cruel winter.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "adult"
   },
   {
     "id": "story-papa",
@@ -53,12 +57,14 @@ window.HoneybrookVoiceCast=[
     "personality": "At first roars over the empty bowls, then lowers his head when Mama sees the child.",
     "delivery": "warm, flowing delivery",
     "rate": 0.844,
-    "pitch": 1.47,
+    "pitch": 0.92,
     "lang": "en-US",
     "voiceSlot": 2,
     "visualIdentity": "Bear · historical",
     "storyContext": "At first roars over the empty bowls, then lowers his head when Mama sees the child. Teaches cubs to mend a fence. Dies with Mama Bear in winter.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "adult"
   },
   {
     "id": "story-baby",
@@ -71,14 +77,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "Shares his toy, bed and world with Goldilocks.",
-    "delivery": "soft, deliberate phrasing",
-    "rate": 0.856,
-    "pitch": 0.95,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 1.01,
+    "pitch": 1.45,
     "lang": "en-US",
     "voiceSlot": 3,
     "visualIdentity": "Bear · grows older",
     "storyContext": "Shares his toy, bed and world with Goldilocks. Grows broad and quiet. He and Goldilocks tend the home after Mama and Papa die.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "child"
   },
   {
     "id": "story-amelia",
@@ -98,7 +106,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 4,
     "visualIdentity": "Bear · Founder Bear",
     "storyContext": "Arrives rootless with half an apple, saved string and cloth. Helps Thomas Bridgewell repair the wooden crossing. Wants a path-facing door, bench and water. Co-founds Honeybrook through a welcome that does not require usefulness. Her guardian angel protects her without controlling her choices.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "adult"
   },
   {
     "id": "story-tom",
@@ -114,12 +124,14 @@ window.HoneybrookVoiceCast=[
     "personality": "Practical and careful; values safe work and dependable crossings.",
     "delivery": "Grounded, measured instructions; low register.",
     "rate": 0.9,
-    "pitch": 0.72,
+    "pitch": 0.92,
     "lang": "en-US",
     "voiceSlot": 5,
     "visualIdentity": "Bear · carpenter and stoneworker",
     "storyContext": "Traveling builder who becomes a neighbor. Inspects before opening work, accepts a second experienced review, makes wide routes and usable benches. Works with Buddy at the Works Yard. The repaired wooden bridge is not the ancient stone arch.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "adult"
   },
   {
     "id": "story-sammy",
@@ -133,14 +145,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "Earnest and observant; learning remains uneven, with no secret genius or royal identity.",
-    "delivery": "Youthful, sincere delivery; takes time to find words.",
-    "rate": 0.95,
-    "pitch": 1.25,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.32,
     "lang": "en-US",
     "voiceSlot": 6,
     "visualIdentity": "Bear · First Bear Welcomed Home",
     "storyContext": "Arrives about eleven in an oversized coat with uneven patches, including a blue patch. Chooses Patchwell privately; Samuel Patchwell goes on the list. Learning remains uneven. He is never a secret prince or genius. His old coat is displayed later. His bed was unconditional before anyone knew how he might help.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "child"
   },
   {
     "id": "story-templar",
@@ -155,12 +169,14 @@ window.HoneybrookVoiceCast=[
     "personality": "Relearns her technology skills through honest practice.",
     "delivery": "gentle, lightly breathy delivery",
     "rate": 0.904,
-    "pitch": 1.54,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 7,
     "visualIdentity": "Bear · mother · First Techie Bear",
     "storyContext": "Relearns her technology skills through honest practice. Starts a work corner, then the first technology workshop and Helping House for notices, records and business plans. Makes room for family, rest and Lena’s full participation.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "adult"
   },
   {
     "id": "story-buddy",
@@ -175,12 +191,14 @@ window.HoneybrookVoiceCast=[
     "personality": "His disciplined service informs clear routes, sensible supplies and quiet practical care.",
     "delivery": "unhurried, rounded phrases",
     "rate": 0.916,
-    "pitch": 1.02,
+    "pitch": 0.92,
     "lang": "en-US",
     "voiceSlot": 8,
     "visualIdentity": "Bear · family protector and practical planner",
     "storyContext": "His disciplined service informs clear routes, sensible supplies and quiet practical care. Plans with Tom and family rather than imposing changes. Asks Templar to include rest. Reacts tensely when Carmen first arrives.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "adult"
   },
   {
     "id": "story-mary",
@@ -195,12 +213,14 @@ window.HoneybrookVoiceCast=[
     "personality": "Caring, generous household presence; makes space at her table.",
     "delivery": "Full, reassuring warmth; relaxed pacing.",
     "rate": 0.88,
-    "pitch": 0.94,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 9,
     "visualIdentity": "Bear · family elder",
     "storyContext": "Keeps the family near, checks that helpers eat, remembers Willie with tenderness, and makes room on the porch beside Lena. Her welcome is ‘Pull up a paw.’",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "elder"
   },
   {
     "id": "story-jonesha",
@@ -215,12 +235,14 @@ window.HoneybrookVoiceCast=[
     "personality": "Carries a notebook of paths, corrects the outdated map, discovers the old stone arch with Lance from the marked public path.",
     "delivery": "warm, flowing delivery",
     "rate": 0.94,
-    "pitch": 0.87,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 10,
     "visualIdentity": "Bear · explorer and map-maker",
     "storyContext": "Carries a notebook of paths, corrects the outdated map, discovers the old stone arch with Lance from the marked public path. Learns to leave Milo room for quiet and separate choices.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "adult"
   },
   {
     "id": "story-jamya",
@@ -235,12 +257,14 @@ window.HoneybrookVoiceCast=[
     "personality": "Packs useful supplies, notices the right route mark, labels drawers and folders, spots a cupboard blocking a path.",
     "delivery": "soft, deliberate phrasing",
     "rate": 0.952,
-    "pitch": 1.24,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 11,
     "visualIdentity": "Bear · thoughtful family helper",
     "storyContext": "Packs useful supplies, notices the right route mark, labels drawers and folders, spots a cupboard blocking a path. Helping never makes her responsible for everything.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "adult"
   },
   {
     "id": "story-jamon",
@@ -255,12 +279,14 @@ window.HoneybrookVoiceCast=[
     "personality": "Keeps familiar blankets and bags secure, folds the temporary paper dinosaur for Landis and notices access problems beside Buddy.",
     "delivery": "bright, lightly lifted delivery",
     "rate": 0.964,
-    "pitch": 1.61,
+    "pitch": 0.92,
     "lang": "en-US",
     "voiceSlot": 12,
     "visualIdentity": "Bear · quiet observer",
     "storyContext": "Keeps familiar blankets and bags secure, folds the temporary paper dinosaur for Landis and notices access problems beside Buddy.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "adult"
   },
   {
     "id": "story-robin",
@@ -275,12 +301,14 @@ window.HoneybrookVoiceCast=[
     "personality": "Brings songs and offers company or quiet.",
     "delivery": "clear, evenly paced delivery",
     "rate": 0.976,
-    "pitch": 1.09,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 13,
     "visualIdentity": "Bear · singer",
     "storyContext": "Brings songs and offers company or quiet. Sings a familiar gentle phrase with Lena; helps recover the Professor’s scattered papers.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "adult"
   },
   {
     "id": "story-rheanna",
@@ -295,12 +323,14 @@ window.HoneybrookVoiceCast=[
     "personality": "Chooses a picture and a bright window, adds rhythm to a traveling song, brightens the workshop noticeboard and makes an ordinary doorway feel like a stage entrance.",
     "delivery": "low, steady delivery",
     "rate": 0.988,
-    "pitch": 1.46,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 14,
     "visualIdentity": "Bear · bright family presence",
     "storyContext": "Chooses a picture and a bright window, adds rhythm to a traveling song, brightens the workshop noticeboard and makes an ordinary doorway feel like a stage entrance.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "adult"
   },
   {
     "id": "story-lena",
@@ -315,12 +345,14 @@ window.HoneybrookVoiceCast=[
     "personality": "Does not use spoken words or walk to a lesson as some others do.",
     "delivery": "gentle, lightly breathy delivery",
     "rate": 1,
-    "pitch": 0.94,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 15,
     "visualIdentity": "Bear · beloved family member",
     "storyContext": "Does not use spoken words or walk to a lesson as some others do. Recognizes loved ones and responds through expressions her family understands. Comfort, familiar voices, time and participation are planned with her family. No cure or change into a different learner is promised.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "adult"
   },
   {
     "id": "story-lance",
@@ -333,14 +365,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "Brings games, turns numbers into points and helps make an untimed practice game show with a pass option and quiet alternative.",
-    "delivery": "unhurried, rounded phrases",
-    "rate": 1.012,
-    "pitch": 1.31,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 16,
     "visualIdentity": "Bear · games and learning",
     "storyContext": "Brings games, turns numbers into points and helps make an untimed practice game show with a pass option and quiet alternative. Explores the old arch with Jonesha and marks the safe route.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "child"
   },
   {
     "id": "story-landis",
@@ -353,14 +387,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "The toy dinosaur is lost on the journey and later found in a blanket box.",
-    "delivery": "crisp phrases with a measured pause",
-    "rate": 0.82,
-    "pitch": 0.79,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 17,
     "visualIdentity": "Bear · dinosaur enthusiast",
     "storyContext": "The toy dinosaur is lost on the journey and later found in a blanket box. Jamon’s folded paper dinosaur remains on the workshop shelf. Uses dinosaurs as counters and requests a bonus question.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "child"
   },
   {
     "id": "story-landric",
@@ -373,14 +409,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "The little one asks for snacks, enjoys the lunch stop, and finds the kitchen important.",
-    "delivery": "warm, flowing delivery",
-    "rate": 0.832,
-    "pitch": 1.16,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 18,
     "visualIdentity": "Bear · youngest child",
     "storyContext": "The little one asks for snacks, enjoys the lunch stop, and finds the kitchen important. The manuscript does not give him an exact age.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "child"
   },
   {
     "id": "story-willie",
@@ -395,12 +433,14 @@ window.HoneybrookVoiceCast=[
     "personality": "Not present to enter the new house.",
     "delivery": "soft, deliberate phrasing",
     "rate": 0.844,
-    "pitch": 1.53,
+    "pitch": 0.92,
     "lang": "en-US",
     "voiceSlot": 19,
     "visualIdentity": "Family memory",
     "storyContext": "Not present to enter the new house. Big Mama tells his stories tenderly and the family carries his memory into its home. Never a living visitor or a speaking quest-giver.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "adult"
   },
   {
     "id": "story-theodore",
@@ -415,12 +455,14 @@ window.HoneybrookVoiceCast=[
     "personality": "Arrives in a waistcoat with spectacles, books and a tidy plan.",
     "delivery": "bright, lightly lifted delivery",
     "rate": 0.856,
-    "pitch": 1.01,
+    "pitch": 0.92,
     "lang": "en-US",
     "voiceSlot": 20,
     "visualIdentity": "Bear · teacher who learns",
     "storyContext": "Arrives in a waistcoat with spectacles, books and a tidy plan. Learns to ask, adapt, repeat familiar objects, offer privacy and adult learning, include Lena, admit the map error and use checked references.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "adult"
   },
   {
     "id": "story-harold",
@@ -435,12 +477,14 @@ window.HoneybrookVoiceCast=[
     "personality": "Patient keeper of letters and memories; speaks carefully and honours promises.",
     "delivery": "Low, unhurried storytelling; deliberate pauses.",
     "rate": 0.82,
-    "pitch": 0.77,
+    "pitch": 0.92,
     "lang": "en-GB",
     "voiceSlot": 21,
     "visualIdentity": "Bear · mail carrier",
     "storyContext": "The oldest bear in two towns. Keeps Goldilocks’s century-old letter sealed, private and separate from any player finances. Gives it to Carmen on her fourth day asking about beekeepers, then tells her what he knows.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "adult"
   },
   {
     "id": "story-wally",
@@ -455,12 +499,14 @@ window.HoneybrookVoiceCast=[
     "personality": "Arrives with recipe book, mixing bowl and broken wrapped cookies.",
     "delivery": "low, steady delivery",
     "rate": 0.88,
-    "pitch": 0.86,
+    "pitch": 0.92,
     "lang": "en-US",
     "voiceSlot": 22,
     "visualIdentity": "Bear · baker",
     "storyContext": "Arrives with recipe book, mixing bowl and broken wrapped cookies. Learns portions, sales records, truthful descriptions, safe storage, manageable promises and keeping his own supper. His shop is Cub Cakes & Crumbs.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "adult"
   },
   {
     "id": "story-patty",
@@ -475,12 +521,14 @@ window.HoneybrookVoiceCast=[
     "personality": "Asks Wally about actual customers, realistic batches and reliable opening products.",
     "delivery": "gentle, lightly breathy delivery",
     "rate": 0.892,
-    "pitch": 1.23,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 23,
     "visualIdentity": "Bear · café neighbor and planning help",
     "storyContext": "Asks Wally about actual customers, realistic batches and reliable opening products. Wants his kindness to last longer than one tray; later collects café orders.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "adult"
   },
   {
     "id": "story-daisy",
@@ -495,12 +543,14 @@ window.HoneybrookVoiceCast=[
     "personality": "May sit without deciding her whole future.",
     "delivery": "unhurried, rounded phrases",
     "rate": 0.904,
-    "pitch": 1.6,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 24,
     "visualIdentity": "Bear · still finding her direction",
     "storyContext": "May sit without deciding her whole future. Talks with Wally about experiments and unfinished ideas; he offers a chair rather than a solution to her entire life.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "adult"
   },
   {
     "id": "story-mabel",
@@ -520,7 +570,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 25,
     "visualIdentity": "Bear · later Welcome House neighbor",
     "storyContext": "Named among the later bears who carry on Welcome House’s work. The manuscript does not supply an elaborate personal biography.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "story-toby",
@@ -540,7 +592,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 26,
     "visualIdentity": "Bear · later Welcome House neighbor",
     "storyContext": "Named among the later bears who improve Welcome House while keeping its bench. Additional personal history is not specified.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "story-nora",
@@ -560,7 +614,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 27,
     "visualIdentity": "Bear · later Welcome House neighbor",
     "storyContext": "Named among the later Welcome House bears who keep the welcome and the bench. Her exact professional credentials are not specified.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "story-milo",
@@ -580,7 +636,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 28,
     "visualIdentity": "Bear · newcomer",
     "storyContext": "A young bear offered a quiet chair by Jonesha. Chooses Big Mama’s porch, then the festival on different days; neither choice earns his supper.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "story-carmen",
@@ -595,12 +653,14 @@ window.HoneybrookVoiceCast=[
     "personality": "Arrives Tuesday in a rental car with a dented fender, notebook and camera.",
     "delivery": "clear, evenly paced delivery",
     "rate": 0.964,
-    "pitch": 0.78,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 29,
     "visualIdentity": "Human · descendant searching family history",
     "storyContext": "Arrives Tuesday in a rental car with a dented fender, notebook and camera. Calls herself an investigator while following her family’s missing beekeeper story. Opens the ancestor’s letter on day four and stays. The voice calls her at 3 AM; her entry into the woods is the next beginning, not an already resolved sequel.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "adult"
   },
   {
     "id": "story-angel",
@@ -615,12 +675,14 @@ window.HoneybrookVoiceCast=[
     "personality": "The woman at the creek protects Amelia without controlling her choices.",
     "delivery": "low, steady delivery",
     "rate": 0.976,
-    "pitch": 1.15,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 30,
     "visualIdentity": "Guardian · identity not fully explained",
     "storyContext": "The woman at the creek protects Amelia without controlling her choices. Names herself her guardian angel in chapter 46 and is connected to the Guardian Goddess. The complete relationship remains unknown.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "adult"
   },
   {
     "id": "story-goddess",
@@ -635,12 +697,14 @@ window.HoneybrookVoiceCast=[
     "personality": "Protective and patient; guides without controlling a choice or revealing the ending.",
     "delivery": "Calm, spacious phrases; gentle high register.",
     "rate": 0.79,
-    "pitch": 1.29,
+    "pitch": 1.02,
     "lang": "en-GB",
     "voiceSlot": 31,
     "visualIdentity": "Guardian · older mystery",
     "storyContext": "Protects Honeybrook and surrounding land. Her older history and exact relationship to the guardian angel remain deliberately unresolved. Never substitute the angel’s revealed identity for the Goddess’s unknown one.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "adult"
   },
   {
     "id": "story-ash",
@@ -655,12 +719,14 @@ window.HoneybrookVoiceCast=[
     "personality": "Accountable and practical; follows an apology with dependable conduct.",
     "delivery": "Dry, low, precise phrasing; restrained humour.",
     "rate": 0.92,
-    "pitch": 0.69,
+    "pitch": 0.92,
     "lang": "en-GB",
     "voiceSlot": 32,
     "visualIdentity": "Wolf · former Big Bad Wolf",
     "storyContext": "The older, rounder, now-kind Big Bad Wolf bakes sourdough in Storybook Lane. The Lane appears when its stories are brought back to life, not as a routine road district.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "adult"
   },
   {
     "id": "story-beekeepers",
@@ -680,7 +746,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 33,
     "visualIdentity": "Humans · historical beekeepers",
     "storyContext": "A husband and wife lost in the spring river. Her mother gives her the satchel, honey jar and blue-flowered cloth. Their names are not supplied.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "story-ancestor",
@@ -700,7 +768,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 34,
     "visualIdentity": "Human · historical letter writer",
     "storyContext": "Father of the beekeeper’s wife and grandfather of Goldilocks. Searches for his missing daughter, not knowing about the river or surviving granddaughter. Carmen descends from the family’s other branch. The manuscript does not provide the full letter text or all names.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "story-prince",
@@ -720,7 +790,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 35,
     "visualIdentity": "Human · ancient prologue",
     "storyContext": "The unnamed prince kneels beneath the moon; true love’s kiss wakes the sleeping princess. The warmth enters roots, seeds and soil. No supplied royal name or connection to later family ancestry.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "story-princess",
@@ -740,7 +812,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 36,
     "visualIdentity": "Human · ancient prologue",
     "storyContext": "The unnamed princess wakes through true love’s kiss. The forest keeps its warmth after her awakening.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "story-cook",
@@ -760,7 +834,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 37,
     "visualIdentity": "Bear · unnamed in the manuscript",
     "storyContext": "Feeds the bridge builders, walks with Amelia after spilled water, helps plan bowls and welcome, and jokes about the roof drip. This early cook is not retrospectively identified as Wally.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "story-ranger",
@@ -780,7 +856,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 38,
     "visualIdentity": "Bear · unnamed in the manuscript",
     "storyContext": "Visits the old stone arch with Tom while the children remain behind the boundary rope. No supplied personal name or invented biography.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "story-older-cub",
@@ -800,7 +878,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 39,
     "visualIdentity": "Bear · unnamed in the manuscript",
     "storyContext": "A separate traveler from Sammy. Does not say why he left at first; later helps Tom raise a beam and shows others the way. Do not merge his identity with Sammy.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "story-travelers",
@@ -820,7 +900,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 40,
     "visualIdentity": "Bears · unnamed supporting characters",
     "storyContext": "The medicine-basket traveler, relative-bound traveler, pinecone-offering cub, water-giving elder, careful helpers, newcomers and adult learners have their own places in the text. Their unprovided names stay unprovided.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "game-nell",
@@ -835,12 +917,14 @@ window.HoneybrookVoiceCast=[
     "personality": "Curious, loving British private investigator and family beekeeper; asks careful questions and loves bears.",
     "delivery": "Warm British English; thoughtful questions, clear observations.",
     "rate": 0.96,
-    "pitch": 1.12,
+    "pitch": 1.02,
     "lang": "en-GB",
     "voiceSlot": 41,
     "visualIdentity": "British human woman · player protagonist",
     "storyContext": "The familiar stranger · investigator from a lineage of beekeepers. Nell’s golden hair is the first resemblance the bears see. As a private investigator, she compares records, separates belief from evidence and listens before drawing conclusions. In her spare time she keeps bees. She is part of a long family lineage of beekeepers; almost everyone in the family loves bees. Her own thorough knowledge belongs within that shared tradition. Her patient care, loving attention, curious questions and lifelong ease around bears make the resemblance feel deeper. She is drawn to Honeybrook before she understands the connection; she wants to know its paths, homes and people before seeking Harold. The bears’ belief surrounds her arrival, while her grandfather’s promise and the goddess’s dream remain her own story to share. Nell is Honeybrook’s first present-day human arrival. She comes to discover the place she heard about as a child; her welcome is never something she must buy. Private investigator; she keeps bees in her spare time. Nell belongs to a long family line of beekeepers. Almost everyone in her family loves bees, and she knows their shared trade thoroughly. Nell has loved bears for as long as she can remember. She wonders whether that instinctive fondness has always drawn her toward this place. Before they know who Nell is, bears across Honeybrook and Bear Hollow immediately welcome her. Her golden hair, curious and loving nature, beekeeper’s care and instinctive affection for bears remind them so strongly of the beloved Goldilocks that they feel her spirit in Nell. Some believe Nell is Goldilocks reincarnated. This is their belief, not a confirmed answer to Nell’s identity. Keep the promise to her grandfather: visit Honeybrook and learn what happened to the beekeepers. Follow the goddess’s dream instruction to ask for Harold. Goldilocks’s mother was the daughter of the owner of oil-rich land. The same landowner is Nell’s great-great-great-grandfather. Her late grandfather left her an $800 trillion inheritance; her visit is about family history and the promise, not claiming a fortune.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "adult"
   },
   {
     "id": "game-maya",
@@ -855,12 +939,14 @@ window.HoneybrookVoiceCast=[
     "personality": "Care starts with listening and checking what each family actually needs.",
     "delivery": "warm, flowing delivery",
     "rate": 0.916,
-    "pitch": 1.14,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 42,
     "visualIdentity": "Bear · Black American mother · nurse · Williams family",
     "storyContext": "Care starts with listening and checking what each family actually needs.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "adult"
   },
   {
     "id": "game-daniel",
@@ -875,12 +961,14 @@ window.HoneybrookVoiceCast=[
     "personality": "Measure, make a safe plan, then inspect the work together.",
     "delivery": "soft, deliberate phrasing",
     "rate": 0.928,
-    "pitch": 1.51,
+    "pitch": 0.92,
     "lang": "en-US",
     "voiceSlot": 43,
     "visualIdentity": "Bear · White American father · carpenter · Miller family",
     "storyContext": "Measure, make a safe plan, then inspect the work together.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "adult"
   },
   {
     "id": "game-lin",
@@ -895,12 +983,14 @@ window.HoneybrookVoiceCast=[
     "personality": "A careful first row gives the whole piece a good beginning.",
     "delivery": "bright, lightly lifted delivery",
     "rate": 0.94,
-    "pitch": 0.99,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 44,
     "visualIdentity": "Bear · Chinese American grandmother · weaving teacher · Chen family",
     "storyContext": "A careful first row gives the whole piece a good beginning.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "elder"
   },
   {
     "id": "game-aiko",
@@ -920,7 +1010,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 45,
     "visualIdentity": "Bear · Japanese American parent · painter · Tanaka family",
     "storyContext": "Look at the light before choosing your colors.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "game-sofia",
@@ -935,12 +1027,14 @@ window.HoneybrookVoiceCast=[
     "personality": "Count the guests first, then check the portions and ingredients.",
     "delivery": "low, steady delivery",
     "rate": 0.964,
-    "pitch": 0.84,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 46,
     "visualIdentity": "Bear · Puerto Rican mother · cook · Rivera family",
     "storyContext": "Count the guests first, then check the portions and ingredients.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "adult"
   },
   {
     "id": "game-arjun",
@@ -955,12 +1049,14 @@ window.HoneybrookVoiceCast=[
     "personality": "A checklist is a promise to bring the right equipment for everybody.",
     "delivery": "gentle, lightly breathy delivery",
     "rate": 0.976,
-    "pitch": 1.21,
+    "pitch": 0.92,
     "lang": "en-US",
     "voiceSlot": 47,
     "visualIdentity": "Bear · Indian American father · supply steward · Patel family",
     "storyContext": "A checklist is a promise to bring the right equipment for everybody.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "adult"
   },
   {
     "id": "game-marie",
@@ -975,12 +1071,14 @@ window.HoneybrookVoiceCast=[
     "personality": "We can keep the soil healthy and share what grows.",
     "delivery": "unhurried, rounded phrases",
     "rate": 0.988,
-    "pitch": 1.58,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 48,
     "visualIdentity": "Bear · Haitian American aunt · gardening mentor · Jean-Baptiste family",
     "storyContext": "We can keep the soil healthy and share what grows.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "adult"
   },
   {
     "id": "game-elijah",
@@ -995,12 +1093,14 @@ window.HoneybrookVoiceCast=[
     "personality": "There is room for your voice in our sunset songs.",
     "delivery": "crisp phrases with a measured pause",
     "rate": 1,
-    "pitch": 1.06,
+    "pitch": 0.92,
     "lang": "en-US",
     "voiceSlot": 49,
     "visualIdentity": "Bear · Jamaican American grandfather · music mentor · Campbell family",
     "storyContext": "There is room for your voice in our sunset songs.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "elder"
   },
   {
     "id": "game-amina",
@@ -1015,12 +1115,14 @@ window.HoneybrookVoiceCast=[
     "personality": "Preparation and kindness help every camper belong.",
     "delivery": "warm, flowing delivery",
     "rate": 1.012,
-    "pitch": 1.43,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 50,
     "visualIdentity": "Bear · Nigerian American mother · scout counselor · Okafor family",
     "storyContext": "Preparation and kindness help every camper belong.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "adult"
   },
   {
     "id": "hollow-cedar-0",
@@ -1040,7 +1142,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 51,
     "visualIdentity": "Bear · introduced game household",
     "storyContext": "Rowan repairs wooden things; Hazel loves patchwork. Pip is building a tiny village from smooth blocks.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "hollow-cedar-1",
@@ -1060,7 +1164,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 52,
     "visualIdentity": "Bear · introduced game household",
     "storyContext": "Rowan repairs wooden things; Hazel loves patchwork. Pip is building a tiny village from smooth blocks.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "hollow-cedar-2",
@@ -1080,7 +1186,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 53,
     "visualIdentity": "Bear · introduced game household",
     "storyContext": "Rowan repairs wooden things; Hazel loves patchwork. Pip is building a tiny village from smooth blocks.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "hollow-willow-0",
@@ -1100,7 +1208,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 54,
     "visualIdentity": "Bear · introduced game household",
     "storyContext": "Hana shapes clay bowls. Kenji watches the creek birds, and Emi keeps a notebook of every visitor.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "hollow-willow-1",
@@ -1120,7 +1230,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 55,
     "visualIdentity": "Bear · introduced game household",
     "storyContext": "Hana shapes clay bowls. Kenji watches the creek birds, and Emi keeps a notebook of every visitor.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "hollow-willow-2",
@@ -1140,7 +1252,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 56,
     "visualIdentity": "Bear · introduced game household",
     "storyContext": "Hana shapes clay bowls. Kenji watches the creek birds, and Emi keeps a notebook of every visitor.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "hollow-clover-0",
@@ -1160,7 +1274,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 57,
     "visualIdentity": "Bear · introduced game household",
     "storyContext": "Mireille grows vegetables, Luc mends baskets, and Jojo carefully counts every new bean leaf.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "hollow-clover-1",
@@ -1180,7 +1296,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 58,
     "visualIdentity": "Bear · introduced game household",
     "storyContext": "Mireille grows vegetables, Luc mends baskets, and Jojo carefully counts every new bean leaf.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "hollow-clover-2",
@@ -1200,7 +1318,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 59,
     "visualIdentity": "Bear · introduced game household",
     "storyContext": "Mireille grows vegetables, Luc mends baskets, and Jojo carefully counts every new bean leaf.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "hollow-maple-0",
@@ -1220,7 +1340,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 60,
     "visualIdentity": "Bear · introduced game household",
     "storyContext": "Music drifts from this porch. Marjorie knows the best honey-biscuit recipe; Theo keeps the family rhythm.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "hollow-maple-1",
@@ -1240,7 +1362,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 61,
     "visualIdentity": "Bear · introduced game household",
     "storyContext": "Music drifts from this porch. Marjorie knows the best honey-biscuit recipe; Theo keeps the family rhythm.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "hollow-maple-2",
@@ -1260,7 +1384,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 62,
     "visualIdentity": "Bear · introduced game household",
     "storyContext": "Music drifts from this porch. Marjorie knows the best honey-biscuit recipe; Theo keeps the family rhythm.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "hollow-fern-0",
@@ -1280,7 +1406,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 63,
     "visualIdentity": "Bear · introduced game household",
     "storyContext": "Wide paths and an easy ramp make visiting comfortable. Lin enjoys puzzles; Mei paints the creek in bright colors.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "hollow-fern-1",
@@ -1300,7 +1428,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 64,
     "visualIdentity": "Bear · introduced game household",
     "storyContext": "Wide paths and an easy ramp make visiting comfortable. Lin enjoys puzzles; Mei paints the creek in bright colors.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "hollow-fern-2",
@@ -1320,7 +1450,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 65,
     "visualIdentity": "Bear · introduced game household",
     "storyContext": "Wide paths and an easy ramp make visiting comfortable. Lin enjoys puzzles; Mei paints the creek in bright colors.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "hollow-bluebell-0",
@@ -1340,7 +1472,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 66,
     "visualIdentity": "Bear · introduced game household",
     "storyContext": "A fragrant family kitchen and a lilac front door. Mateo tends bluebells, and Luna loves helping portion biscuits.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "hollow-bluebell-1",
@@ -1360,7 +1494,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 67,
     "visualIdentity": "Bear · introduced game household",
     "storyContext": "A fragrant family kitchen and a lilac front door. Mateo tends bluebells, and Luna loves helping portion biscuits.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "hollow-bluebell-2",
@@ -1380,7 +1516,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 68,
     "visualIdentity": "Bear · introduced game household",
     "storyContext": "A fragrant family kitchen and a lilac front door. Mateo tends bluebells, and Luna loves helping portion biscuits.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "guide-honey",
@@ -1400,7 +1538,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 69,
     "visualIdentity": "Bear · earlier game mentor",
     "storyContext": "Bottle six jars from Beatrice’s already inspected honey, then seal and label each jar for a cottage. Only the adult beekeeper works with the hives.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "guide-porridge",
@@ -1420,7 +1560,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 70,
     "visualIdentity": "Bear · earlier game mentor",
     "storyContext": "Measure a real six-bowl recipe, follow the cooking order with Mama Maple at the hot stove, and portion breakfast for the cottage lane.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "guide-bridge",
@@ -1440,7 +1582,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 71,
     "visualIdentity": "Bear · earlier game mentor",
     "storyContext": "Measure the replacement rails on the practice bench, fit four supervised fasteners and inspect the rail before the ranger opens the crossing. No shortcuts around the water.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "town-role-longtime",
@@ -1460,7 +1604,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 72,
     "visualIdentity": "Bear · Retired neighbor",
     "storyContext": "An unnamed supporting town role from the earlier game roster. No personal name or private biography has been supplied.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "town-role-helper",
@@ -1480,7 +1626,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 73,
     "visualIdentity": "Bear · Mechanic / workshop helper",
     "storyContext": "An unnamed supporting town role from the earlier game roster. No personal name or private biography has been supplied.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "town-role-bridgeview",
@@ -1500,7 +1648,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 74,
     "visualIdentity": "Bear · Bridgeview neighbor",
     "storyContext": "An unnamed supporting town role from the earlier game roster. No personal name or private biography has been supplied.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "town-role-icecream",
@@ -1520,7 +1670,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 75,
     "visualIdentity": "Bear · Ice-cream stand seller",
     "storyContext": "An unnamed supporting town role from the earlier game roster. No personal name or private biography has been supplied.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "town-role-welcome",
@@ -1540,7 +1692,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 76,
     "visualIdentity": "Bear · Transitioning visitor",
     "storyContext": "An unnamed supporting town role from the earlier game roster. No personal name or private biography has been supplied.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "camp-cub-01",
@@ -1553,14 +1707,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "curious and patient",
-    "delivery": "clear, evenly paced delivery",
-    "rate": 0.928,
-    "pitch": 0.74,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 77,
     "visualIdentity": "Bear cub · girl",
     "storyContext": "curious and patient; enjoys nature journals.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-02",
@@ -1573,14 +1729,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "cheerful and practical",
-    "delivery": "low, steady delivery",
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
     "rate": 0.94,
-    "pitch": 1.11,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 78,
     "visualIdentity": "Bear cub · boy",
     "storyContext": "cheerful and practical; enjoys woodland crafts.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-03",
@@ -1593,14 +1751,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "quiet and observant",
-    "delivery": "gentle, lightly breathy delivery",
-    "rate": 0.952,
-    "pitch": 1.48,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 79,
     "visualIdentity": "Bear cub · girl",
     "storyContext": "quiet and observant; enjoys cooperative games.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-04",
@@ -1613,14 +1773,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "playful and thoughtful",
-    "delivery": "unhurried, rounded phrases",
-    "rate": 0.964,
-    "pitch": 0.96,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 80,
     "visualIdentity": "Bear cub · boy",
     "storyContext": "playful and thoughtful; enjoys music and rhythm.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-05",
@@ -1633,14 +1795,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "creative and encouraging",
-    "delivery": "crisp phrases with a measured pause",
-    "rate": 0.976,
-    "pitch": 1.33,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 81,
     "visualIdentity": "Bear cub · girl",
     "storyContext": "creative and encouraging; enjoys science and building.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-06",
@@ -1653,14 +1817,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "curious and patient",
-    "delivery": "warm, flowing delivery",
-    "rate": 0.988,
-    "pitch": 0.81,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 82,
     "visualIdentity": "Bear cub · boy",
     "storyContext": "curious and patient; enjoys nature journals.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-07",
@@ -1673,14 +1839,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "cheerful and practical",
-    "delivery": "soft, deliberate phrasing",
-    "rate": 1,
-    "pitch": 1.18,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 83,
     "visualIdentity": "Bear cub · girl",
     "storyContext": "cheerful and practical; enjoys woodland crafts.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-08",
@@ -1693,14 +1861,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "quiet and observant",
-    "delivery": "bright, lightly lifted delivery",
-    "rate": 1.012,
-    "pitch": 1.55,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 84,
     "visualIdentity": "Bear cub · boy",
     "storyContext": "quiet and observant; enjoys cooperative games.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-09",
@@ -1713,14 +1883,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "playful and thoughtful",
-    "delivery": "clear, evenly paced delivery",
-    "rate": 0.82,
-    "pitch": 1.03,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 85,
     "visualIdentity": "Bear cub · girl",
     "storyContext": "playful and thoughtful; enjoys music and rhythm.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-10",
@@ -1733,14 +1905,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "creative and encouraging",
-    "delivery": "low, steady delivery",
-    "rate": 0.832,
-    "pitch": 1.4,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 86,
     "visualIdentity": "Bear cub · boy",
     "storyContext": "creative and encouraging; enjoys science and building.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-11",
@@ -1753,14 +1927,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "curious and patient",
-    "delivery": "gentle, lightly breathy delivery",
-    "rate": 0.844,
-    "pitch": 0.88,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 87,
     "visualIdentity": "Bear cub · girl",
     "storyContext": "curious and patient; enjoys nature journals.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-12",
@@ -1773,14 +1949,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "cheerful and practical",
-    "delivery": "unhurried, rounded phrases",
-    "rate": 0.856,
-    "pitch": 1.25,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 88,
     "visualIdentity": "Bear cub · boy",
     "storyContext": "cheerful and practical; enjoys woodland crafts.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-13",
@@ -1793,14 +1971,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "quiet and observant",
-    "delivery": "crisp phrases with a measured pause",
-    "rate": 0.868,
-    "pitch": 0.73,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 89,
     "visualIdentity": "Bear cub · girl",
     "storyContext": "quiet and observant; enjoys cooperative games.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-14",
@@ -1813,14 +1993,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "playful and thoughtful",
-    "delivery": "warm, flowing delivery",
-    "rate": 0.88,
-    "pitch": 1.1,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 90,
     "visualIdentity": "Bear cub · boy",
     "storyContext": "playful and thoughtful; enjoys music and rhythm.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-15",
@@ -1833,14 +2015,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "creative and encouraging",
-    "delivery": "soft, deliberate phrasing",
-    "rate": 0.892,
-    "pitch": 1.47,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 91,
     "visualIdentity": "Bear cub · girl",
     "storyContext": "creative and encouraging; enjoys science and building.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-16",
@@ -1853,14 +2037,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "curious and patient",
-    "delivery": "bright, lightly lifted delivery",
-    "rate": 0.904,
-    "pitch": 0.95,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 92,
     "visualIdentity": "Bear cub · boy",
     "storyContext": "curious and patient; enjoys nature journals.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-17",
@@ -1873,14 +2059,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "cheerful and practical",
-    "delivery": "clear, evenly paced delivery",
-    "rate": 0.916,
-    "pitch": 1.32,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 93,
     "visualIdentity": "Bear cub · girl",
     "storyContext": "cheerful and practical; enjoys woodland crafts.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-18",
@@ -1893,14 +2081,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "quiet and observant",
-    "delivery": "low, steady delivery",
-    "rate": 0.928,
-    "pitch": 0.8,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 94,
     "visualIdentity": "Bear cub · boy",
     "storyContext": "quiet and observant; enjoys cooperative games.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-19",
@@ -1913,14 +2103,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "playful and thoughtful",
-    "delivery": "gentle, lightly breathy delivery",
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
     "rate": 0.94,
-    "pitch": 1.17,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 95,
     "visualIdentity": "Bear cub · girl",
     "storyContext": "playful and thoughtful; enjoys music and rhythm.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-20",
@@ -1933,14 +2125,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "creative and encouraging",
-    "delivery": "unhurried, rounded phrases",
-    "rate": 0.952,
-    "pitch": 1.54,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 96,
     "visualIdentity": "Bear cub · boy",
     "storyContext": "creative and encouraging; enjoys science and building.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-21",
@@ -1953,14 +2147,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "curious and patient",
-    "delivery": "crisp phrases with a measured pause",
-    "rate": 0.964,
-    "pitch": 1.02,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 97,
     "visualIdentity": "Bear cub · girl",
     "storyContext": "curious and patient; enjoys nature journals.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-22",
@@ -1973,14 +2169,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "cheerful and practical",
-    "delivery": "warm, flowing delivery",
-    "rate": 0.976,
-    "pitch": 1.39,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 98,
     "visualIdentity": "Bear cub · boy",
     "storyContext": "cheerful and practical; enjoys woodland crafts.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-23",
@@ -1993,14 +2191,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "quiet and observant",
-    "delivery": "soft, deliberate phrasing",
-    "rate": 0.988,
-    "pitch": 0.87,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 99,
     "visualIdentity": "Bear cub · girl",
     "storyContext": "quiet and observant; enjoys cooperative games.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-24",
@@ -2013,14 +2213,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "playful and thoughtful",
-    "delivery": "bright, lightly lifted delivery",
-    "rate": 1,
-    "pitch": 1.24,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 100,
     "visualIdentity": "Bear cub · boy",
     "storyContext": "playful and thoughtful; enjoys music and rhythm.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-25",
@@ -2033,14 +2235,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "creative and encouraging",
-    "delivery": "clear, evenly paced delivery",
-    "rate": 1.012,
-    "pitch": 1.61,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 101,
     "visualIdentity": "Bear cub · girl",
     "storyContext": "creative and encouraging; enjoys science and building.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-26",
@@ -2053,14 +2257,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "curious and patient",
-    "delivery": "low, steady delivery",
-    "rate": 0.82,
-    "pitch": 1.09,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 102,
     "visualIdentity": "Bear cub · boy",
     "storyContext": "curious and patient; enjoys nature journals.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-27",
@@ -2073,14 +2279,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "cheerful and practical",
-    "delivery": "gentle, lightly breathy delivery",
-    "rate": 0.832,
-    "pitch": 1.46,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 103,
     "visualIdentity": "Bear cub · girl",
     "storyContext": "cheerful and practical; enjoys woodland crafts.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-28",
@@ -2093,14 +2301,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "quiet and observant",
-    "delivery": "unhurried, rounded phrases",
-    "rate": 0.844,
-    "pitch": 0.94,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 104,
     "visualIdentity": "Bear cub · boy",
     "storyContext": "quiet and observant; enjoys cooperative games.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-29",
@@ -2113,14 +2323,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "playful and thoughtful",
-    "delivery": "crisp phrases with a measured pause",
-    "rate": 0.856,
-    "pitch": 1.31,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 105,
     "visualIdentity": "Bear cub · girl",
     "storyContext": "playful and thoughtful; enjoys music and rhythm.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-30",
@@ -2133,14 +2345,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "creative and encouraging",
-    "delivery": "warm, flowing delivery",
-    "rate": 0.868,
-    "pitch": 0.79,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 106,
     "visualIdentity": "Bear cub · boy",
     "storyContext": "creative and encouraging; enjoys science and building.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-31",
@@ -2153,14 +2367,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "curious and patient",
-    "delivery": "soft, deliberate phrasing",
-    "rate": 0.88,
-    "pitch": 1.16,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 107,
     "visualIdentity": "Bear cub · girl",
     "storyContext": "curious and patient; enjoys nature journals.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-32",
@@ -2173,14 +2389,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "cheerful and practical",
-    "delivery": "bright, lightly lifted delivery",
-    "rate": 0.892,
-    "pitch": 1.53,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 108,
     "visualIdentity": "Bear cub · boy",
     "storyContext": "cheerful and practical; enjoys woodland crafts.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-33",
@@ -2193,14 +2411,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "quiet and observant",
-    "delivery": "clear, evenly paced delivery",
-    "rate": 0.904,
-    "pitch": 1.01,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 109,
     "visualIdentity": "Bear cub · girl",
     "storyContext": "quiet and observant; enjoys cooperative games.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-34",
@@ -2213,14 +2433,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "playful and thoughtful",
-    "delivery": "low, steady delivery",
-    "rate": 0.916,
-    "pitch": 1.38,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 110,
     "visualIdentity": "Bear cub · boy",
     "storyContext": "playful and thoughtful; enjoys music and rhythm.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-35",
@@ -2233,14 +2455,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "creative and encouraging",
-    "delivery": "gentle, lightly breathy delivery",
-    "rate": 0.928,
-    "pitch": 0.86,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 111,
     "visualIdentity": "Bear cub · girl",
     "storyContext": "creative and encouraging; enjoys science and building.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-36",
@@ -2253,14 +2477,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "curious and patient",
-    "delivery": "unhurried, rounded phrases",
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
     "rate": 0.94,
-    "pitch": 1.23,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 112,
     "visualIdentity": "Bear cub · boy",
     "storyContext": "curious and patient; enjoys nature journals.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-37",
@@ -2273,14 +2499,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "cheerful and practical",
-    "delivery": "crisp phrases with a measured pause",
-    "rate": 0.952,
-    "pitch": 1.6,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 113,
     "visualIdentity": "Bear cub · girl",
     "storyContext": "cheerful and practical; enjoys woodland crafts.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-38",
@@ -2293,14 +2521,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "quiet and observant",
-    "delivery": "warm, flowing delivery",
-    "rate": 0.964,
-    "pitch": 1.08,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 114,
     "visualIdentity": "Bear cub · boy",
     "storyContext": "quiet and observant; enjoys cooperative games.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-39",
@@ -2313,14 +2543,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "playful and thoughtful",
-    "delivery": "soft, deliberate phrasing",
-    "rate": 0.976,
-    "pitch": 1.45,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 115,
     "visualIdentity": "Bear cub · girl",
     "storyContext": "playful and thoughtful; enjoys music and rhythm.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-40",
@@ -2333,14 +2565,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "creative and encouraging",
-    "delivery": "bright, lightly lifted delivery",
-    "rate": 0.988,
-    "pitch": 0.93,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 116,
     "visualIdentity": "Bear cub · boy",
     "storyContext": "creative and encouraging; enjoys science and building.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-41",
@@ -2353,14 +2587,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "curious and patient",
-    "delivery": "clear, evenly paced delivery",
-    "rate": 1,
-    "pitch": 1.3,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 117,
     "visualIdentity": "Bear cub · girl",
     "storyContext": "curious and patient; enjoys nature journals.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-42",
@@ -2373,14 +2609,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "cheerful and practical",
-    "delivery": "low, steady delivery",
-    "rate": 1.012,
-    "pitch": 0.78,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 118,
     "visualIdentity": "Bear cub · boy",
     "storyContext": "cheerful and practical; enjoys woodland crafts.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-43",
@@ -2393,14 +2631,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "quiet and observant",
-    "delivery": "gentle, lightly breathy delivery",
-    "rate": 0.82,
-    "pitch": 1.15,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 119,
     "visualIdentity": "Bear cub · girl",
     "storyContext": "quiet and observant; enjoys cooperative games.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-44",
@@ -2413,14 +2653,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "playful and thoughtful",
-    "delivery": "unhurried, rounded phrases",
-    "rate": 0.832,
-    "pitch": 1.52,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 120,
     "visualIdentity": "Bear cub · boy",
     "storyContext": "playful and thoughtful; enjoys music and rhythm.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-45",
@@ -2433,14 +2675,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "creative and encouraging",
-    "delivery": "crisp phrases with a measured pause",
-    "rate": 0.844,
-    "pitch": 1,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 121,
     "visualIdentity": "Bear cub · girl",
     "storyContext": "creative and encouraging; enjoys science and building.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-46",
@@ -2453,14 +2697,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "curious and patient",
-    "delivery": "warm, flowing delivery",
-    "rate": 0.856,
-    "pitch": 1.37,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 122,
     "visualIdentity": "Bear cub · boy",
     "storyContext": "curious and patient; enjoys nature journals.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-47",
@@ -2473,14 +2719,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "cheerful and practical",
-    "delivery": "soft, deliberate phrasing",
-    "rate": 0.868,
-    "pitch": 0.85,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 123,
     "visualIdentity": "Bear cub · girl",
     "storyContext": "cheerful and practical; enjoys woodland crafts.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-48",
@@ -2493,14 +2741,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "quiet and observant",
-    "delivery": "bright, lightly lifted delivery",
-    "rate": 0.88,
-    "pitch": 1.22,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 124,
     "visualIdentity": "Bear cub · boy",
     "storyContext": "quiet and observant; enjoys cooperative games.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-49",
@@ -2513,14 +2763,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "playful and thoughtful",
-    "delivery": "clear, evenly paced delivery",
-    "rate": 0.892,
-    "pitch": 1.59,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 125,
     "visualIdentity": "Bear cub · girl",
     "storyContext": "playful and thoughtful; enjoys music and rhythm.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "child"
   },
   {
     "id": "camp-cub-50",
@@ -2533,14 +2785,16 @@ window.HoneybrookVoiceCast=[
     "source": "Established Honeybrook cast",
     "speechEnabled": true,
     "personality": "creative and encouraging",
-    "delivery": "low, steady delivery",
-    "rate": 0.904,
-    "pitch": 1.07,
+    "delivery": "Child performance: gentle, youthful phrasing; a recognised child voice is preferred, otherwise a light feminine synthesis voice.",
+    "rate": 0.94,
+    "pitch": 1.36,
     "lang": "en-US",
     "voiceSlot": 126,
     "visualIdentity": "Bear cub · boy",
     "storyContext": "creative and encouraging; enjoys science and building.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "child"
   },
   {
     "id": "game-treasurer",
@@ -2560,7 +2814,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 127,
     "visualIdentity": "Bear · civic finance officer",
     "storyContext": "Keeps Honeybrook’s Fair fund, records sales and operating reserves, and publishes balanced receipts. The author has not assigned a personal name or manuscript biography.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "reception-arrival-family-1",
@@ -2580,7 +2836,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 128,
     "visualIdentity": "Juniper Reed · Warm brown · Brown; Avery Reed · Cinnamon brown · Amber; Lark Reed · Dark chestnut · Hazel; Fenn Reed · Honey brown · Dark brown",
     "storyContext": "Willowmere Riverside Cottage, Willowmere Edwin Reed and Nora Reed 14 Willow Lane, Willowmere Our rented cottage was sold, and we needed somewhere our whole family could stay together. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Settle the household, learn the town, find suitable work and eventually move together into an available cottage.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "reception-arrival-quiet-1",
@@ -2600,7 +2858,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 129,
     "visualIdentity": "Pippa Moss · Warm brown · Brown",
     "storyContext": "Maplecross Riverside Cottage, Maplecross Arthur Moss and Celia Moss 16 Willow Lane, Maplecross The adults caring for me left me behind. A kind traveller helped me reach somewhere safe. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "reception-arrival-bunk-1",
@@ -2620,7 +2880,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 130,
     "visualIdentity": "Hugo Brook · Warm brown · Brown",
     "storyContext": "Fernwick Riverside Cottage, Fernwick Benedict Brook and Ivy Brook 18 Willow Lane, Fernwick I was treated as though I did not belong in my old settlement. I wanted a kinder place to begin again. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "reception-arrival-family-2",
@@ -2640,7 +2902,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 131,
     "visualIdentity": "Mara Alder · Cinnamon brown · Amber; Milo Alder · Honey brown · Dark brown; Dove Alder · Soft russet · Brown",
     "storyContext": "Briarford Old Mill Cottage, Briarford Silas Alder and Mabel Alder 21 Mill Road, Briarford Repairs made our old home temporarily unsafe to live in. We left together with our clothes and keepsakes. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Settle the household, learn the town, find suitable work and eventually move together into an available cottage.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "reception-arrival-quiet-2",
@@ -2660,7 +2924,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 132,
     "visualIdentity": "Nico Rowan · Cinnamon brown · Amber",
     "storyContext": "Cedar Glen Old Mill Cottage, Cedar Glen Reuben Rowan and Etta Rowan 23 Mill Road, Cedar Glen I became separated from my family on a travelling route. Trusted adults are helping with a careful search. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "reception-arrival-bunk-2",
@@ -2680,7 +2946,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 133,
     "visualIdentity": "Cora Linden · Cinnamon brown · Amber",
     "storyContext": "Acorn Vale Old Mill Cottage, Acorn Vale Walter Linden and Pearl Linden 25 Mill Road, Acorn Vale My old lodging closed. I travelled with my small bag and tools to find a community. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "reception-arrival-family-3",
@@ -2700,7 +2968,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 134,
     "visualIdentity": "Ellis Brook · Dark chestnut · Hazel; Morgan Brook · Honey brown · Dark brown; Briar Brook · Soft russet · Brown; Calla Brook · Deep brown · Amber",
     "storyContext": "Maplecross Riverside Cottage, Maplecross Arthur Brook and Celia Brook 28 Orchard Close, Maplecross The workshop where we worked closed. We needed a fresh start without separating the family. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Settle the household, learn the town, find suitable work and eventually move together into an available cottage.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "reception-arrival-quiet-3",
@@ -2720,7 +2990,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 135,
     "visualIdentity": "Ember Vale · Dark chestnut · Hazel",
     "storyContext": "Fernwick Riverside Cottage, Fernwick Benedict Vale and Ivy Vale 30 Orchard Close, Fernwick My parents died, and there was no familiar caregiver able to keep me. I brought a treasured keepsake. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "reception-arrival-bunk-3",
@@ -2740,7 +3012,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 136,
     "visualIdentity": "Felix Moss · Dark chestnut · Hazel; Morgan Moss · Honey brown · Dark brown",
     "storyContext": "Mossbridge Riverside Cottage, Mossbridge Gideon Moss and Olive Moss 32 Orchard Close, Mossbridge I had drifted between places for too long. I decided to seek a home, not just a bed. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "reception-arrival-family-4",
@@ -2760,7 +3034,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 137,
     "visualIdentity": "Tessa Finch · Honey brown · Dark brown; Laurel Finch · Soft russet · Brown; Sora Finch · Deep brown · Amber; Joss Finch · Warm brown · Hazel",
     "storyContext": "Cedar Glen Old Mill Cottage, Cedar Glen Reuben Finch and Etta Finch 35 Brookside Walk, Cedar Glen Our rented cottage was sold, and we needed somewhere our whole family could stay together. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Settle the household, learn the town, find suitable work and eventually move together into an available cottage.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "reception-arrival-quiet-4",
@@ -2780,7 +3056,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 138,
     "visualIdentity": "Otis Finch · Honey brown · Dark brown",
     "storyContext": "Acorn Vale Old Mill Cottage, Acorn Vale Walter Finch and Pearl Finch 37 Brookside Walk, Acorn Vale The adults caring for me left me behind. A kind traveller helped me reach somewhere safe. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "reception-arrival-bunk-4",
@@ -2800,7 +3078,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 139,
     "visualIdentity": "Iris Vale · Honey brown · Dark brown",
     "storyContext": "Pinewater Old Mill Cottage, Pinewater Leonard Vale and Elsie Vale 39 Brookside Walk, Pinewater I was treated as though I did not belong in my old settlement. I wanted a kinder place to begin again. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "reception-arrival-family-5",
@@ -2820,7 +3100,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 140,
     "visualIdentity": "Rowan Vale · Soft russet · Brown; Fenn Vale · Warm brown · Hazel; Willa Vale · Cinnamon brown · Dark brown",
     "storyContext": "Fernwick Riverside Cottage, Fernwick Benedict Vale and Ivy Vale 42 Birch Crescent, Fernwick Repairs made our old home temporarily unsafe to live in. We left together with our clothes and keepsakes. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Settle the household, learn the town, find suitable work and eventually move together into an available cottage.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "reception-arrival-quiet-5",
@@ -2840,7 +3122,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 141,
     "visualIdentity": "Lumi Birch · Soft russet · Brown",
     "storyContext": "Mossbridge Riverside Cottage, Mossbridge Gideon Birch and Olive Birch 44 Birch Crescent, Mossbridge I became separated from my family on a travelling route. Trusted adults are helping with a careful search. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "reception-arrival-bunk-5",
@@ -2860,7 +3144,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 142,
     "visualIdentity": "Nolan Reed · Soft russet · Brown",
     "storyContext": "Hazelcombe Riverside Cottage, Hazelcombe Alfred Reed and Viola Reed 46 Birch Crescent, Hazelcombe My old lodging closed. I travelled with my small bag and tools to find a community. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "reception-arrival-family-6",
@@ -2880,7 +3166,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 143,
     "visualIdentity": "Ada Meadow · Deep brown · Amber; Finley Meadow · Warm brown · Hazel; Dove Meadow · Cinnamon brown · Dark brown; Beck Meadow · Dark chestnut · Brown",
     "storyContext": "Acorn Vale Old Mill Cottage, Acorn Vale Walter Meadow and Pearl Meadow 49 Willow Lane, Acorn Vale The workshop where we worked closed. We needed a fresh start without separating the family. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Settle the household, learn the town, find suitable work and eventually move together into an available cottage.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "reception-arrival-quiet-6",
@@ -2900,7 +3188,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 144,
     "visualIdentity": "Kit Meadow · Deep brown · Amber",
     "storyContext": "Pinewater Old Mill Cottage, Pinewater Leonard Meadow and Elsie Meadow 51 Willow Lane, Pinewater My parents died, and there was no familiar caregiver able to keep me. I brought a treasured keepsake. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "reception-arrival-bunk-6",
@@ -2920,7 +3210,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 145,
     "visualIdentity": "Sylvie Ash · Deep brown · Amber; Finley Ash · Warm brown · Hazel",
     "storyContext": "Rosebank Old Mill Cottage, Rosebank Hector Ash and Mina Ash 53 Willow Lane, Rosebank I had drifted between places for too long. I decided to seek a home, not just a bed. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "reception-arrival-family-7",
@@ -2940,7 +3232,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 146,
     "visualIdentity": "Owen Glen · Warm brown · Hazel; Aspen Glen · Cinnamon brown · Dark brown; Calla Glen · Dark chestnut · Brown; Lark Glen · Honey brown · Amber",
     "storyContext": "Mossbridge Riverside Cottage, Mossbridge Gideon Glen and Olive Glen 56 Mill Road, Mossbridge Our rented cottage was sold, and we needed somewhere our whole family could stay together. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Settle the household, learn the town, find suitable work and eventually move together into an available cottage.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "reception-arrival-quiet-7",
@@ -2960,7 +3254,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 147,
     "visualIdentity": "Rue Glen · Warm brown · Hazel",
     "storyContext": "Hazelcombe Riverside Cottage, Hazelcombe Alfred Glen and Viola Glen 58 Mill Road, Hazelcombe The adults caring for me left me behind. A kind traveller helped me reach somewhere safe. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "reception-arrival-bunk-7",
@@ -2980,7 +3276,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 148,
     "visualIdentity": "Toby Glen · Warm brown · Hazel",
     "storyContext": "Willowmere Riverside Cottage, Willowmere Edwin Glen and Nora Glen 60 Mill Road, Willowmere I was treated as though I did not belong in my old settlement. I wanted a kinder place to begin again. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "reception-arrival-family-8",
@@ -3000,7 +3298,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 149,
     "visualIdentity": "Flora Pine · Cinnamon brown · Dark brown; Joss Pine · Honey brown · Amber; Milo Pine · Soft russet · Hazel",
     "storyContext": "Pinewater Old Mill Cottage, Pinewater Leonard Pine and Elsie Pine 63 Orchard Close, Pinewater Repairs made our old home temporarily unsafe to live in. We left together with our clothes and keepsakes. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Settle the household, learn the town, find suitable work and eventually move together into an available cottage.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "reception-arrival-quiet-8",
@@ -3020,7 +3320,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 150,
     "visualIdentity": "Bram Acorn · Cinnamon brown · Dark brown",
     "storyContext": "Rosebank Old Mill Cottage, Rosebank Hector Acorn and Mina Acorn 65 Orchard Close, Rosebank I became separated from my family on a travelling route. Trusted adults are helping with a careful search. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "reception-arrival-bunk-8",
@@ -3040,7 +3342,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 151,
     "visualIdentity": "Wren Alder · Cinnamon brown · Dark brown",
     "storyContext": "Briarford Old Mill Cottage, Briarford Silas Alder and Mabel Alder 67 Orchard Close, Briarford My old lodging closed. I travelled with my small bag and tools to find a community. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "reception-arrival-family-9",
@@ -3060,7 +3364,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 152,
     "visualIdentity": "Hollis Dale · Dark chestnut · Brown; Marin Dale · Honey brown · Amber; Willa Dale · Soft russet · Hazel; Briar Dale · Deep brown · Dark brown",
     "storyContext": "Hazelcombe Riverside Cottage, Hazelcombe Alfred Dale and Viola Dale 70 Brookside Walk, Hazelcombe The workshop where we worked closed. We needed a fresh start without separating the family. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Settle the household, learn the town, find suitable work and eventually move together into an available cottage.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "reception-arrival-quiet-9",
@@ -3080,7 +3386,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 153,
     "visualIdentity": "Tansy Reed · Dark chestnut · Brown",
     "storyContext": "Willowmere Riverside Cottage, Willowmere Edwin Reed and Nora Reed 72 Brookside Walk, Willowmere My parents died, and there was no familiar caregiver able to keep me. I brought a treasured keepsake. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "reception-arrival-bunk-9",
@@ -3100,7 +3408,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 154,
     "visualIdentity": "Orin Pine · Dark chestnut · Brown; Marin Pine · Honey brown · Amber",
     "storyContext": "Maplecross Riverside Cottage, Maplecross Arthur Pine and Celia Pine 74 Brookside Walk, Maplecross I had drifted between places for too long. I decided to seek a home, not just a bed. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "reception-arrival-family-10",
@@ -3120,7 +3430,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 155,
     "visualIdentity": "Bryn Hazel · Honey brown · Amber; Darcy Hazel · Soft russet · Hazel; Beck Hazel · Deep brown · Dark brown; Sora Hazel · Warm brown · Brown",
     "storyContext": "Rosebank Old Mill Cottage, Rosebank Hector Hazel and Mina Hazel 77 Birch Crescent, Rosebank Our rented cottage was sold, and we needed somewhere our whole family could stay together. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Settle the household, learn the town, find suitable work and eventually move together into an available cottage.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "reception-arrival-quiet-10",
@@ -3140,7 +3452,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 156,
     "visualIdentity": "Remy Dale · Honey brown · Amber",
     "storyContext": "Briarford Old Mill Cottage, Briarford Silas Dale and Mabel Dale 79 Birch Crescent, Briarford The adults caring for me left me behind. A kind traveller helped me reach somewhere safe. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "reception-arrival-bunk-10",
@@ -3160,7 +3474,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 157,
     "visualIdentity": "Faye Hazel · Honey brown · Amber",
     "storyContext": "Cedar Glen Old Mill Cottage, Cedar Glen Reuben Hazel and Etta Hazel 81 Birch Crescent, Cedar Glen I was treated as though I did not belong in my old settlement. I wanted a kinder place to begin again. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "elder-1",
@@ -3174,12 +3490,14 @@ window.HoneybrookVoiceCast=[
     "personality": "She was younger than Abigail when the human girl was a child.",
     "delivery": "low, steady delivery",
     "rate": 0.88,
-    "pitch": 1.34,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 158,
     "visualIdentity": "Quilt Cottage",
     "storyContext": "She was younger than Abigail when the human girl was a child. A long-lived Hollow bear, she remembers their childhood table and the later years that followed.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "elder"
   },
   {
     "id": "elder-2",
@@ -3193,12 +3511,14 @@ window.HoneybrookVoiceCast=[
     "personality": "He and Abigail were children in the same early household years.",
     "delivery": "gentle, lightly breathy delivery",
     "rate": 0.892,
-    "pitch": 0.82,
+    "pitch": 0.92,
     "lang": "en-US",
     "voiceSlot": 159,
     "visualIdentity": "Oat Cottage",
     "storyContext": "He and Abigail were children in the same early household years. He grew old alongside her; his mother’s accounts reach back before either of them could remember.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "elder"
   },
   {
     "id": "elder-3",
@@ -3212,12 +3532,14 @@ window.HoneybrookVoiceCast=[
     "personality": "She was a young neighbour during Abigail’s childhood and grew into old age knowing her.",
     "delivery": "unhurried, rounded phrases",
     "rate": 0.904,
-    "pitch": 1.19,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 160,
     "visualIdentity": "Fern Hearth",
     "storyContext": "She was a young neighbour during Abigail’s childhood and grew into old age knowing her. Earlier household details still come through her aunt’s accounts.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "elder"
   },
   {
     "id": "elder-4",
@@ -3231,12 +3553,14 @@ window.HoneybrookVoiceCast=[
     "personality": "He remembers the later Bear Hollow and carries his father’s accounts of its earlier paths.",
     "delivery": "crisp phrases with a measured pause",
     "rate": 0.916,
-    "pitch": 1.56,
+    "pitch": 0.92,
     "lang": "en-US",
     "voiceSlot": 161,
     "visualIdentity": "Brookside Lodge",
     "storyContext": "He remembers the later Bear Hollow and carries his father’s accounts of its earlier paths.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "elder"
   },
   {
     "id": "elder-5",
@@ -3250,12 +3574,14 @@ window.HoneybrookVoiceCast=[
     "personality": "Her grandmother’s household knew Abigail; Tansy remembers the old woman’s visits to their garden.",
     "delivery": "warm, flowing delivery",
     "rate": 0.928,
-    "pitch": 1.04,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 162,
     "visualIdentity": "Reed Garden Cottage",
     "storyContext": "Her grandmother’s household knew Abigail; Tansy remembers the old woman’s visits to their garden.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "elder"
   },
   {
     "id": "elder-6",
@@ -3269,12 +3595,14 @@ window.HoneybrookVoiceCast=[
     "personality": "A younger contemporary in Abigail’s old age, with family accounts from her childhood.",
     "delivery": "soft, deliberate phrasing",
     "rate": 0.94,
-    "pitch": 1.41,
+    "pitch": 0.92,
     "lang": "en-US",
     "voiceSlot": 163,
     "visualIdentity": "Birch Cottage",
     "storyContext": "A younger contemporary in Abigail’s old age, with family accounts from her childhood.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "elder"
   },
   {
     "id": "elder-7",
@@ -3288,12 +3616,14 @@ window.HoneybrookVoiceCast=[
     "personality": "He remembers the household’s later breakfasts and his uncle’s earlier kitchen accounts.",
     "delivery": "bright, lightly lifted delivery",
     "rate": 0.952,
-    "pitch": 0.89,
+    "pitch": 0.92,
     "lang": "en-US",
     "voiceSlot": 164,
     "visualIdentity": "Copper Pot Cottage",
     "storyContext": "He remembers the household’s later breakfasts and his uncle’s earlier kitchen accounts.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "elder"
   },
   {
     "id": "elder-8",
@@ -3307,12 +3637,14 @@ window.HoneybrookVoiceCast=[
     "personality": "She was a cub in Abigail’s final years and remembers stories told by older relatives.",
     "delivery": "clear, evenly paced delivery",
     "rate": 0.964,
-    "pitch": 1.26,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 165,
     "visualIdentity": "Mossmere Cottage",
     "storyContext": "She was a cub in Abigail’s final years and remembers stories told by older relatives.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "elder"
   },
   {
     "id": "elder-9",
@@ -3326,12 +3658,14 @@ window.HoneybrookVoiceCast=[
     "personality": "His parents knew Abigail’s middle years; he remembers her later walks.",
     "delivery": "low, steady delivery",
     "rate": 0.976,
-    "pitch": 0.74,
+    "pitch": 0.92,
     "lang": "en-US",
     "voiceSlot": 166,
     "visualIdentity": "Creekroot Home",
     "storyContext": "His parents knew Abigail’s middle years; he remembers her later walks.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "elder"
   },
   {
     "id": "elder-10",
@@ -3345,12 +3679,14 @@ window.HoneybrookVoiceCast=[
     "personality": "She recalls Abigail’s later years and her grandmother’s domestic memories.",
     "delivery": "gentle, lightly breathy delivery",
     "rate": 0.988,
-    "pitch": 1.11,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 167,
     "visualIdentity": "Basket Cottage",
     "storyContext": "She recalls Abigail’s later years and her grandmother’s domestic memories.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "elder"
   },
   {
     "id": "elder-11",
@@ -3364,12 +3700,14 @@ window.HoneybrookVoiceCast=[
     "personality": "A cub during Abigail’s last years; his grandfather remembered the older Hollow.",
     "delivery": "unhurried, rounded phrases",
     "rate": 1,
-    "pitch": 1.48,
+    "pitch": 0.92,
     "lang": "en-US",
     "voiceSlot": 168,
     "visualIdentity": "Softstep Lodge",
     "storyContext": "A cub during Abigail’s last years; his grandfather remembered the older Hollow.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "elder"
   },
   {
     "id": "elder-12",
@@ -3383,12 +3721,14 @@ window.HoneybrookVoiceCast=[
     "personality": "She remembers helping with tea in Abigail’s old age and inherited accounts of earlier meals.",
     "delivery": "crisp phrases with a measured pause",
     "rate": 1.012,
-    "pitch": 0.96,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 169,
     "visualIdentity": "Willowcup Cottage",
     "storyContext": "She remembers helping with tea in Abigail’s old age and inherited accounts of earlier meals.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "elder"
   },
   {
     "id": "elder-13",
@@ -3402,12 +3742,14 @@ window.HoneybrookVoiceCast=[
     "personality": "He knew Abigail as a child knows a much older neighbour; family memory reaches farther back.",
     "delivery": "warm, flowing delivery",
     "rate": 0.82,
-    "pitch": 1.33,
+    "pitch": 0.92,
     "lang": "en-US",
     "voiceSlot": 170,
     "visualIdentity": "Pineward Home",
     "storyContext": "He knew Abigail as a child knows a much older neighbour; family memory reaches farther back.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "elder"
   },
   {
     "id": "elder-14",
@@ -3421,12 +3763,14 @@ window.HoneybrookVoiceCast=[
     "personality": "Her aunt passed on accounts of Abigail’s adult years; Fern remembers visits near the end of her life.",
     "delivery": "soft, deliberate phrasing",
     "rate": 0.832,
-    "pitch": 0.81,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 171,
     "visualIdentity": "Apple Cottage",
     "storyContext": "Her aunt passed on accounts of Abigail’s adult years; Fern remembers visits near the end of her life.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "elder"
   },
   {
     "id": "elder-15",
@@ -3440,12 +3784,14 @@ window.HoneybrookVoiceCast=[
     "personality": "He remembers Abigail’s later evenings and his father’s accounts of her younger years.",
     "delivery": "bright, lightly lifted delivery",
     "rate": 0.844,
-    "pitch": 1.18,
+    "pitch": 0.92,
     "lang": "en-US",
     "voiceSlot": 172,
     "visualIdentity": "Lantern Lodge",
     "storyContext": "He remembers Abigail’s later evenings and his father’s accounts of her younger years.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "elder"
   },
   {
     "id": "elder-16",
@@ -3459,12 +3805,14 @@ window.HoneybrookVoiceCast=[
     "personality": "She remembers being a young cub when Abigail was elderly and carries her mother’s earlier recollections.",
     "delivery": "clear, evenly paced delivery",
     "rate": 0.856,
-    "pitch": 1.55,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 173,
     "visualIdentity": "Kettle Cottage",
     "storyContext": "She remembers being a young cub when Abigail was elderly and carries her mother’s earlier recollections.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "elder"
   },
   {
     "id": "elder-17",
@@ -3478,12 +3826,14 @@ window.HoneybrookVoiceCast=[
     "personality": "A late-life acquaintance whose older relatives remembered the Three Bears’ household.",
     "delivery": "low, steady delivery",
     "rate": 0.868,
-    "pitch": 1.03,
+    "pitch": 0.92,
     "lang": "en-US",
     "voiceSlot": 174,
     "visualIdentity": "Wool Cottage",
     "storyContext": "A late-life acquaintance whose older relatives remembered the Three Bears’ household.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "elder"
   },
   {
     "id": "elder-18",
@@ -3497,12 +3847,14 @@ window.HoneybrookVoiceCast=[
     "personality": "She remembers Abigail’s final years and shares her grandfather’s older seasonal accounts.",
     "delivery": "gentle, lightly breathy delivery",
     "rate": 0.88,
-    "pitch": 1.4,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 175,
     "visualIdentity": "Berry Cottage",
     "storyContext": "She remembers Abigail’s final years and shares her grandfather’s older seasonal accounts.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "elder"
   },
   {
     "id": "elder-19",
@@ -3516,12 +3868,14 @@ window.HoneybrookVoiceCast=[
     "personality": "His own memories belong to Abigail’s old age; earlier history comes through his family.",
     "delivery": "unhurried, rounded phrases",
     "rate": 0.892,
-    "pitch": 0.88,
+    "pitch": 0.92,
     "lang": "en-US",
     "voiceSlot": 176,
     "visualIdentity": "Stonefern Home",
     "storyContext": "His own memories belong to Abigail’s old age; earlier history comes through his family.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "elder"
   },
   {
     "id": "elder-20",
@@ -3535,12 +3889,14 @@ window.HoneybrookVoiceCast=[
     "personality": "She was very young before Abigail died; older family voices fill the limits of her own memory.",
     "delivery": "crisp phrases with a measured pause",
     "rate": 0.904,
-    "pitch": 1.25,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 177,
     "visualIdentity": "Maple Cottage",
     "storyContext": "She was very young before Abigail died; older family voices fill the limits of her own memory.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "elder"
   },
   {
     "id": "harold",
@@ -3554,12 +3910,14 @@ window.HoneybrookVoiceCast=[
     "personality": "Patient keeper of letters and memories; speaks carefully and honours promises.",
     "delivery": "Low, unhurried storytelling; deliberate pauses.",
     "rate": 0.82,
-    "pitch": 0.77,
+    "pitch": 0.92,
     "lang": "en-GB",
     "voiceSlot": 178,
     "visualIdentity": "Harold’s visiting room",
     "storyContext": "The established keeper of the letter. Private correspondence stays private; these visits never substitute for reading the letter in Nell’s Journey.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "elder"
   },
   {
     "id": "ash",
@@ -3573,12 +3931,14 @@ window.HoneybrookVoiceCast=[
     "personality": "Accountable and practical; follows an apology with dependable conduct.",
     "delivery": "Dry, low, precise phrasing; restrained humour.",
     "rate": 0.92,
-    "pitch": 0.69,
+    "pitch": 0.92,
     "lang": "en-GB",
     "voiceSlot": 179,
     "visualIdentity": "Ash’s bakery",
     "storyContext": "He learned that an apology must be followed by dependable conduct.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "adult"
   },
   {
     "id": "elves",
@@ -3597,7 +3957,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 180,
     "visualIdentity": "The shared shoe workroom",
     "storyContext": "The gift mattered because somebody noticed the workers, not just their work.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "pinocchio",
@@ -3616,7 +3978,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 181,
     "visualIdentity": "Geppetto’s workshop",
     "storyContext": "Being found and welcomed home mattered more than the famous nose.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "cinderella",
@@ -3630,12 +3994,14 @@ window.HoneybrookVoiceCast=[
     "personality": "After the ball she still needed ordinary freedom, practical shoes and choices of her own.",
     "delivery": "low, steady delivery",
     "rate": 0.964,
-    "pitch": 1.32,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 182,
     "visualIdentity": "The slipper and dress shop",
     "storyContext": "After the ball she still needed ordinary freedom, practical shoes and choices of her own.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "adult"
   },
   {
     "id": "snow-white",
@@ -3649,12 +4015,14 @@ window.HoneybrookVoiceCast=[
     "personality": "The seven workers had lives, names and kindness beyond being a place to hide.",
     "delivery": "gentle, lightly breathy delivery",
     "rate": 0.976,
-    "pitch": 0.8,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 183,
     "visualIdentity": "The garden of eight chairs",
     "storyContext": "The seven workers had lives, names and kindness beyond being a place to hide.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "adult"
   },
   {
     "id": "rapunzel",
@@ -3668,12 +4036,14 @@ window.HoneybrookVoiceCast=[
     "personality": "A beautiful view cannot replace the freedom to leave.",
     "delivery": "unhurried, rounded phrases",
     "rate": 0.988,
-    "pitch": 1.17,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 184,
     "visualIdentity": "The garden tower",
     "storyContext": "A beautiful view cannot replace the freedom to leave.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "adult"
   },
   {
     "id": "red",
@@ -3687,12 +4057,14 @@ window.HoneybrookVoiceCast=[
     "personality": "Trust belongs to the people who were frightened; a friendly wolf cannot demand it back.",
     "delivery": "crisp phrases with a measured pause",
     "rate": 1,
-    "pitch": 1.54,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 185,
     "visualIdentity": "Grandmother’s cottage",
     "storyContext": "Trust belongs to the people who were frightened; a friendly wolf cannot demand it back.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "elder"
   },
   {
     "id": "hansel",
@@ -3711,7 +4083,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 186,
     "visualIdentity": "The woodland bakehouse",
     "storyContext": "The children helped one another; sweets never made the trap acceptable.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "jack",
@@ -3730,7 +4104,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 187,
     "visualIdentity": "The bean garden",
     "storyContext": "His mother waited at home; courage did not cancel the consequences of taking things.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "frog",
@@ -3749,7 +4125,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 188,
     "visualIdentity": "The pond-side guest house",
     "storyContext": "Promises do not entitle anybody to ignore another person’s boundaries.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "duckling",
@@ -3768,7 +4146,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 189,
     "visualIdentity": "The reed-water refuge",
     "storyContext": "Belonging should not wait for somebody to become beautiful.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "sleeping",
@@ -3782,12 +4162,14 @@ window.HoneybrookVoiceCast=[
     "personality": "Waking meant learning a changed world, not merely reaching a kiss.",
     "delivery": "low, steady delivery",
     "rate": 0.856,
-    "pitch": 1.61,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 190,
     "visualIdentity": "The orchard tea garden",
     "storyContext": "Waking meant learning a changed world, not merely reaching a kiss.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "adult"
   },
   {
     "id": "pea",
@@ -3801,12 +4183,14 @@ window.HoneybrookVoiceCast=[
     "personality": "A guest deserves a comfortable bed without having to prove her worth.",
     "delivery": "gentle, lightly breathy delivery",
     "rate": 0.868,
-    "pitch": 1.09,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 191,
     "visualIdentity": "The guest-room cottage",
     "storyContext": "A guest deserves a comfortable bed without having to prove her worth.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "adult"
   },
   {
     "id": "dancing",
@@ -3820,12 +4204,14 @@ window.HoneybrookVoiceCast=[
     "personality": "The sisters now choose their evening; visitors cannot demand a performance.",
     "delivery": "unhurried, rounded phrases",
     "rate": 0.88,
-    "pitch": 1.46,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 192,
     "visualIdentity": "The dancing sisters’ hall",
     "storyContext": "The sisters now choose their evening; visitors cannot demand a performance.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "adult"
   },
   {
     "id": "puss",
@@ -3844,7 +4230,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 193,
     "visualIdentity": "The hat-and-boot garden",
     "storyContext": "Cleverness changes lives, and its deceptions deserve honest examination.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "thumb",
@@ -3863,7 +4251,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 194,
     "visualIdentity": "The small-door cottage",
     "storyContext": "A small person needs respect and accessible ways to act, not an audience measuring him.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "thumbelina",
@@ -3877,12 +4267,14 @@ window.HoneybrookVoiceCast=[
     "personality": "Ask before approaching; being tiny does not make her home public property.",
     "delivery": "soft, deliberate phrasing",
     "rate": 0.916,
-    "pitch": 0.79,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 195,
     "visualIdentity": "The flower doorway",
     "storyContext": "Ask before approaching; being tiny does not make her home public property.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "adult"
   },
   {
     "id": "pigs",
@@ -3901,7 +4293,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 196,
     "visualIdentity": "The brick meeting house",
     "storyContext": "Safe homes and shared practical knowledge matter after the chase ends.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "bremen",
@@ -3920,7 +4314,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 197,
     "visualIdentity": "The music courtyard",
     "storyContext": "They made a home after others decided they were no longer useful.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "rumpel",
@@ -3939,7 +4335,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 198,
     "visualIdentity": "The mill of names",
     "storyContext": "Coercion is not made harmless by a cheerful roof; a child is never a payment.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "fisher",
@@ -3958,7 +4356,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 199,
     "visualIdentity": "The shore cottage",
     "storyContext": "Wanting security and endlessly demanding power are different things.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "shoe",
@@ -3977,7 +4377,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 200,
     "visualIdentity": "The shoe-shaped family house",
     "storyContext": "The children need care and room to be heard; harsh treatment is not a cosy joke.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "mice",
@@ -3996,7 +4398,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 201,
     "visualIdentity": "The two-table tea room",
     "storyContext": "Comfort means different things to different guests.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "mermaid",
@@ -4010,12 +4414,14 @@ window.HoneybrookVoiceCast=[
     "personality": "Different versions end differently; do not replace a painful ending with a familiar film.",
     "delivery": "warm, flowing delivery",
     "rate": 1,
-    "pitch": 1.6,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 202,
     "visualIdentity": "The distant-shore listening house",
     "storyContext": "Different versions end differently; do not replace a painful ending with a familiar film.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "adult"
   },
   {
     "id": "snow-queen",
@@ -4029,12 +4435,14 @@ window.HoneybrookVoiceCast=[
     "personality": "The friend who kept looking belongs at the centre of the telling.",
     "delivery": "soft, deliberate phrasing",
     "rate": 1.012,
-    "pitch": 1.08,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 203,
     "visualIdentity": "The snow-country wayhouse",
     "storyContext": "The friend who kept looking belongs at the centre of the telling.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "adult"
   },
   {
     "id": "wild-swans",
@@ -4048,12 +4456,14 @@ window.HoneybrookVoiceCast=[
     "personality": "Quiet labour and pain were part of saving her brothers.",
     "delivery": "bright, lightly lifted delivery",
     "rate": 0.82,
-    "pitch": 1.45,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 204,
     "visualIdentity": "The nettle garden",
     "storyContext": "Quiet labour and pain were part of saving her brothers.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "adult"
   },
   {
     "id": "tin",
@@ -4072,7 +4482,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 205,
     "visualIdentity": "The paper-boat memorial",
     "storyContext": "Do not turn the ending’s suffering into a prize or a cheerful rescue.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "match",
@@ -4086,12 +4498,14 @@ window.HoneybrookVoiceCast=[
     "personality": "A child needed shelter while she lived; admiration afterwards cannot substitute for care.",
     "delivery": "low, steady delivery",
     "rate": 0.844,
-    "pitch": 1.3,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 206,
     "visualIdentity": "The remembered-light shelter",
     "storyContext": "A child needed shelter while she lived; admiration afterwards cannot substitute for care.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "adult"
   },
   {
     "id": "red-shoes",
@@ -4105,12 +4519,14 @@ window.HoneybrookVoiceCast=[
     "personality": "A painful tale needs thoughtful witnesses, not a dancing attraction.",
     "delivery": "gentle, lightly breathy delivery",
     "rate": 0.856,
-    "pitch": 0.78,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 207,
     "visualIdentity": "The quiet memorial garden",
     "storyContext": "A painful tale needs thoughtful witnesses, not a dancing attraction.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "adult"
   },
   {
     "id": "aladdin",
@@ -4129,7 +4545,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 208,
     "visualIdentity": "The lamp courtyard",
     "storyContext": "Objects can change fortunes without making somebody wise about power.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "genie",
@@ -4148,7 +4566,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 209,
     "visualIdentity": "The sealed-vessel shore",
     "storyContext": "Gratitude is not guaranteed by power; the fisherman survived by thinking carefully.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "ali",
@@ -4167,7 +4587,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 210,
     "visualIdentity": "The mountain storehouse",
     "storyContext": "Secret wealth does not erase the courage of the person who saved the household.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "sinbad",
@@ -4186,7 +4608,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 211,
     "visualIdentity": "The voyage harbour",
     "storyContext": "The sailor’s listener and the people who helped him deserve a place beside the marvels.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "vasilisa",
@@ -4200,12 +4624,14 @@ window.HoneybrookVoiceCast=[
     "personality": "Help from a mother’s gift did not remove the work Vasilisa had to do.",
     "delivery": "bright, lightly lifted delivery",
     "rate": 0.916,
-    "pitch": 0.85,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 212,
     "visualIdentity": "The little-doll cottage",
     "storyContext": "Help from a mother’s gift did not remove the work Vasilisa had to do.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "adult"
   },
   {
     "id": "baba",
@@ -4219,12 +4645,14 @@ window.HoneybrookVoiceCast=[
     "personality": "Different tellings make her helper, danger or both; ask which account is being shared.",
     "delivery": "clear, evenly paced delivery",
     "rate": 0.928,
-    "pitch": 1.22,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 213,
     "visualIdentity": "The moving house clearing",
     "storyContext": "Different tellings make her helper, danger or both; ask which account is being shared.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "adult"
   },
   {
     "id": "east",
@@ -4243,7 +4671,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 214,
     "visualIdentity": "The long-road lodge",
     "storyContext": "The search after the broken promise is as important as the enchanted beginning.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "firebird",
@@ -4262,7 +4692,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 215,
     "visualIdentity": "The feather orchard",
     "storyContext": "A beautiful discovery can carry obligations and consequences.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "goose",
@@ -4281,7 +4713,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 216,
     "visualIdentity": "The shared-supper orchard",
     "storyContext": "The kindness before the joke belongs in the tale too.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "six",
@@ -4295,12 +4729,14 @@ window.HoneybrookVoiceCast=[
     "personality": "This is a distinct telling from The Wild Swans; its brothers and terms are not interchangeable.",
     "delivery": "crisp phrases with a measured pause",
     "rate": 0.976,
-    "pitch": 0.92,
+    "pitch": 1.02,
     "lang": "en-US",
     "voiceSlot": 217,
     "visualIdentity": "The star-flower cottage",
     "storyContext": "This is a distinct telling from The Wild Swans; its brothers and terms are not interchangeable.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "adult"
   },
   {
     "id": "ravens",
@@ -4319,7 +4755,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 218,
     "visualIdentity": "The glass-mountain path",
     "storyContext": "The sister’s long search deserves more than a hurried final sentence.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "beauty",
@@ -4338,7 +4776,9 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 219,
     "visualIdentity": "The rose-garden household",
     "storyContext": "Visitors are welcome by agreement; nobody owes strangers a reenactment of private pain.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
   },
   {
     "id": "guardian-goddess",
@@ -4352,12 +4792,14 @@ window.HoneybrookVoiceCast=[
     "personality": "Protective and patient; guides without controlling a choice or revealing the ending.",
     "delivery": "Calm, spacious phrases; gentle high register.",
     "rate": 0.79,
-    "pitch": 1.29,
+    "pitch": 1.02,
     "lang": "en-GB",
     "voiceSlot": 220,
     "visualIdentity": "Use the established character portrait; preserve identifying features.",
     "storyContext": "Honeybrook’s protective guide",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "adult"
   },
   {
     "id": "narrator",
@@ -4376,6 +4818,112 @@ window.HoneybrookVoiceCast=[
     "voiceSlot": 221,
     "visualIdentity": "Use the established character portrait; preserve identifying features.",
     "storyContext": "Reads scene description, without impersonating a named character.",
-    "performanceNote": "Game performance direction; does not change manuscript facts."
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "neutral",
+    "ageBand": "adult"
+  },
+  {
+    "id": "gold-child",
+    "name": "Goldilocks · age seven",
+    "aliases": [
+      "gold-child",
+      "Goldilocks age seven"
+    ],
+    "source": "Established Honeybrook cast",
+    "speechEnabled": true,
+    "personality": "Seven when the spring river takes her beekeeper parents; survives three days on honey, reaches the cottage on the fourth day.",
+    "delivery": "Feminine age seven delivery; small, youthful phrases",
+    "rate": 0.94,
+    "pitch": 1.4,
+    "lang": "en-US",
+    "voiceSlot": 0,
+    "visualIdentity": "Human · historical",
+    "storyContext": "Seven when the spring river takes her beekeeper parents; survives three days on honey, reaches the cottage on the fourth day. Mama Bear welcomes her. Her hair later silvers; she dies old and beloved before Carmen arrives. She entrusts Harold with the sealed family letter.",
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "child"
+  },
+  {
+    "id": "gold-teen",
+    "name": "Goldilocks · teenage years",
+    "aliases": [
+      "gold-teen",
+      "Goldilocks teenage years"
+    ],
+    "source": "Established Honeybrook cast",
+    "speechEnabled": true,
+    "personality": "Seven when the spring river takes her beekeeper parents; survives three days on honey, reaches the cottage on the fourth day.",
+    "delivery": "Feminine teenage years delivery; clear, warm phrases",
+    "rate": 0.99,
+    "pitch": 1.16,
+    "lang": "en-US",
+    "voiceSlot": 0,
+    "visualIdentity": "Human · historical",
+    "storyContext": "Seven when the spring river takes her beekeeper parents; survives three days on honey, reaches the cottage on the fourth day. Mama Bear welcomes her. Her hair later silvers; she dies old and beloved before Carmen arrives. She entrusts Harold with the sealed family letter.",
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "teen"
+  },
+  {
+    "id": "gold-adult",
+    "name": "Goldilocks · adult beekeeper",
+    "aliases": [
+      "gold-adult",
+      "Goldilocks adult beekeeper"
+    ],
+    "source": "Established Honeybrook cast",
+    "speechEnabled": true,
+    "personality": "Seven when the spring river takes her beekeeper parents; survives three days on honey, reaches the cottage on the fourth day.",
+    "delivery": "Feminine adult beekeeper delivery; clear, warm phrases",
+    "rate": 0.96,
+    "pitch": 1.02,
+    "lang": "en-US",
+    "voiceSlot": 0,
+    "visualIdentity": "Human · historical",
+    "storyContext": "Seven when the spring river takes her beekeeper parents; survives three days on honey, reaches the cottage on the fourth day. Mama Bear welcomes her. Her hair later silvers; she dies old and beloved before Carmen arrives. She entrusts Harold with the sealed family letter.",
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "adult"
+  },
+  {
+    "id": "gold-elder",
+    "name": "Goldilocks · elderly letter writer",
+    "aliases": [
+      "gold-elder",
+      "Goldilocks elderly letter writer"
+    ],
+    "source": "Established Honeybrook cast",
+    "speechEnabled": true,
+    "personality": "Seven when the spring river takes her beekeeper parents; survives three days on honey, reaches the cottage on the fourth day.",
+    "delivery": "Feminine elderly letter writer delivery; unhurried, reflective phrases",
+    "rate": 0.83,
+    "pitch": 0.95,
+    "lang": "en-US",
+    "voiceSlot": 0,
+    "visualIdentity": "Human · historical",
+    "storyContext": "Seven when the spring river takes her beekeeper parents; survives three days on honey, reaches the cottage on the fourth day. Mama Bear welcomes her. Her hair later silvers; she dies old and beloved before Carmen arrives. She entrusts Harold with the sealed family letter.",
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "female",
+    "ageBand": "elder"
+  },
+  {
+    "id": "baby-adult",
+    "name": "Baby Bear · grown adult",
+    "aliases": [
+      "baby-adult"
+    ],
+    "source": "Established Honeybrook cast",
+    "speechEnabled": true,
+    "personality": "Shares his toy, bed and world with Goldilocks.",
+    "delivery": "The grown Baby Bear: quiet, low, steady adult delivery.",
+    "rate": 0.9,
+    "pitch": 0.9,
+    "lang": "en-US",
+    "voiceSlot": 3,
+    "visualIdentity": "Bear · grows older",
+    "storyContext": "Shares his toy, bed and world with Goldilocks. Grows broad and quiet. He and Goldilocks tend the home after Mama and Papa die.",
+    "performanceNote": "Game performance direction; does not change manuscript facts.",
+    "gender": "male",
+    "ageBand": "adult"
   }
 ];
