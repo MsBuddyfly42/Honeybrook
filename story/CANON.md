@@ -86,3 +86,9 @@ October 26 latest owner request explicitly updates the manuscript, game and intr
 
 
 October 26 author correction: retain the first private woodland recognition, but remove the guardian’s repeated return scenes from Chapters 44–47. Book planning now belongs to Nell, Harold, Amelia and Sammy; the pre-winter visit belongs to Ash and his neighbours, followed by a child’s letter from home. Sammy accompanies Nell at the unexplained light. No guardian comes to town gatherings or subsequent pre-finale visits. Her next embodied appearance after the initial woodland sequence is the final public farewell. Existing chapter IDs, accepted answers and saved progress are unchanged.
+
+## November 6 · connected Storybook Lane and Northern Woods edition
+
+The owner explicitly authorises the standalone connected game, unrestricted free play, all named tale residents, buried-story investigation and the village/woods awakening together through renewed telling. Ordinary Honeybrook-to-Bear Hollow listening visits are an established tradition. Twenty additional fictional, long-lived surviving elders join Harold as hosts: some knew Abigail in childhood and grew old alongside her; others remember her later life or attribute earlier accounts to relatives. These new voices are the authorised expansion, not evidence recovered from the uploaded original.
+
+After game verification, the expanded Word/JSON/text and in-game prose add the elder visits in Chapter 34 and the further arranged Storybook Lane visits in Chapter 44. All earlier expanded paragraphs remain in order, chapter IDs and all 50 sections remain, and the exact epilogue and final Nell coda are preserved. The original uploaded Word file remains unchanged. No new ancestor relationship or bridge-builder identity is asserted. Public retellings concern Abigail’s human life and never disclose the guide's identity before the established farewell.

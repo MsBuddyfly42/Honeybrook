@@ -45,5 +45,32 @@
     "New elder memories are authorised fictional additions; earlier family accounts are attributed.",
     "Current Render documentation retrieval returned HTTP 403 for Markdown and HTML; existing static-service configuration is retained."
   ],
-  "liveVerificationNote": "Chromium does not trust Work\u2019s proxy certificate store. Production browser checks use actual responses fetched by curl with TLS certificate verification enabled; no certificate bypass flags are used."
+  "liveVerificationNote": "Chromium does not trust Work\u2019s proxy certificate store. Production browser checks use actual responses fetched by curl with TLS certificate verification enabled; no certificate bypass flags are used.",
+  "gamePublication": {
+    "commit": "b962c57005ce5f434bc588df8fd4c7621b582503",
+    "renderDeploy": "dep-dbn2o3k9v7es739vhkf0",
+    "status": "live",
+    "verifiedHttpsFiles": 20,
+    "tlsVerification": "enabled",
+    "connections": "Production browser passed at 1440px and 390px: Honeybrook welcome \u2192 companion, all regions, town return, native lane without Journey unlock.",
+    "browserTransport": "Actual HTTPS production bytes fetched with certificate verification enabled via curl, fulfilled into Chromium because Work\u2019s proxy CA is absent from its NSS store.",
+    "browser": "PASS actual production responses at 1440px and 390px: all 41 complete tale workflows, all 78 memory interactions, notes/reload, valid and invalid backups, stale-tab stop, old records unchanged, no page errors."
+  },
+  "manuscript": {
+    "updatedAfterVerifiedGame": true,
+    "sections": 50,
+    "sourceEditionPreserved": true,
+    "existingExpandedParagraphsPreservedInOrder": true,
+    "exactEpiloguePreserved": true,
+    "additions": [
+      "Chapter 34: established Honeybrook\u2013Bear Hollow tradition and all 78 attributed elder accounts",
+      "Chapter 44: all 41 tale households, buried-story investigation, human reactions, consent and joint woods/village awakening"
+    ],
+    "files": {
+      "story/revised-manuscript.json": "70020b153b62006d43b4b5546b088931957bd1dc572448c9eccdd1e854f888cf",
+      "story/revised-manuscript.txt": "b509a01cd6428ba52b40545a171ca62ba61d36bbb413e0c8991978e4267c0da8",
+      "story/Honeybrook_Expanded_Manuscript.docx": "b97558f5c6bb4570a926a41f4babf1c64964d298a1cb03dda09f9a0b20545b35",
+      "revised-story-data.js": "e6063918d099664c5dcf130ad2115ef95cb1f76c8ea73e60aa9af62385d08dac"
+    }
+  }
 }
