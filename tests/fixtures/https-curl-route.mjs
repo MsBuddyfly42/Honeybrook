@@ -1,0 +1,6 @@
+/* Work's proxy CA is trusted by curl but absent from Chromium's NSS store.
+ * Fulfil browser requests with the actual TLS-verified production response.
+ * Certificate verification is never disabled; failed HTTPS requests abort.
+ */
+import{execFile}from'node:child_process';import{promisify}from'node:util';const run=promisify(execFile),cache=new Map();
+export async function installVerifiedHttps(context){await context.route('https://honeybrook.onrender.com/**',async route=>{const url=route.request().url();try{let pending=cache.get(url);if(!pending){pending=run('curl',['--fail','--silent','--show-error','--location','--max-time','45',url],{encoding:'buffer',maxBuffer:64*1024*1024}).then(r=>r.stdout);cache.set(url,pending);}const body=await pending,path=new URL(url).pathname,ext=path.split('.').pop(),types={js:'text/javascript',css:'text/css',json:'application/json',webp:'image/webp',png:'image/png',jpg:'image/jpeg',svg:'image/svg+xml',woff2:'font/woff2',ttf:'font/ttf',mp3:'audio/mpeg',ogg:'audio/ogg',docx:'application/vnd.openxmlformats-officedocument.wordprocessingml.document'};await route.fulfill({status:200,contentType:types[ext]||'text/html',body});}catch(e){cache.delete(url);console.error('Verified HTTPS fetch failed:',url,e.message);await route.abort('failed');}});}

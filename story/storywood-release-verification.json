@@ -12,14 +12,13 @@
     "ruleTests": "passed: every tale, all memories, restoration only after retelling, invalid states",
     "browser": "passed at 1440 and 390px: all 41 workflows, all 78 memory interactions, notes/reload, valid and invalid backups, stale tabs, preserved original save strings",
     "connections": "passed at 1440 and 390px: welcome links, all regions, town round trip, native Storybook Lane without Journey unlock",
-    "art": "all eight delivered atlases decode; 128 manifested views accessible",
+    "art": "All eight delivered atlases decode; actual village, cottage, Hollow, elder and woodland screens reference and decode the delivered WebP files. All 128 manifested views are accessible.",
     "preservation": "malformed/empty records protected; failed storage write leaves stored and visible progress unchanged",
     "originalJourney": "retelling.cjs, finale.cjs, nell.cjs, nell-research.cjs, woods-secret.cjs passed"
   },
   "sourceManuscriptSha256": "8c3c52318cd77fe5253987fbf77850d8c0ebc49bb15bb6fa142dbe38f4822cab",
   "files": {
-    "storywood.html": "5162b2a702a6624299d9d85233a106d9a005e02c21d07c5c73349d3b5d5e57e1",
-    "storywood.js": "0e3fbdaad16e53fef43bf356eeb67243d6dfff86510e0095aa805896e220b176",
+    "storywood.html": "7f5e8a093297764cdc73e71032628749bdfa0a9d46e5c683fa7a429f3c428c88",
     "storywood.css": "951d052a658b21fd815eb8cccfdd80d5ce4d51b544765353898e077a80700539",
     "storywood-engine.js": "8af08d5cc06b4f2c5e8641f08edb36ed975ea570f15bd35641e0666f4cf3311b",
     "storywood-data.js": "909c3db1d0e9a53ed16df68d2d3f6a27c0c1501c9f581dacf1b3495ec0897d50",
@@ -37,12 +36,14 @@
     "assets/storywood/atlas.webp": "da654ac80bcc7c901eac19172cfc2f30ca535cbf0c14a330785e6cc82623caa8",
     "assets/storywood/elders.webp": "9e7ad244616b0df44ba6b5f94ab85f347d8e17ace2fdb1e88583f835f43e137d",
     "assets/storywood/homes-c.webp": "70c7d0af1e36c68786be6360e81b8bc29549552a2320c670311434700048ba4f",
-    "assets/storywood/actions-c.webp": "7a0300d6d2779cc49693fa9db9291dd92fe9e1a2992e4d932c03ba016e443737"
+    "assets/storywood/actions-c.webp": "7a0300d6d2779cc49693fa9db9291dd92fe9e1a2992e4d932c03ba016e443737",
+    "storywood-app.js": "3deaab2036ef8dbd34d416aa0bee4eb3b3f289e03406de1ac8552c4beb7d64fb"
   },
   "limitations": [
     "Static single-player scene activities, not 3D walking or autonomous population simulation.",
     "Three matching world-restoration photographic stages; individual tale progress and tellings are separately recorded.",
     "New elder memories are authorised fictional additions; earlier family accounts are attributed.",
     "Current Render documentation retrieval returned HTTP 403 for Markdown and HTML; existing static-service configuration is retained."
-  ]
+  ],
+  "liveVerificationNote": "Chromium does not trust Work\u2019s proxy certificate store. Production browser checks use actual responses fetched by curl with TLS certificate verification enabled; no certificate bypass flags are used."
 }
