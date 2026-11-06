@@ -367,12 +367,12 @@
       {place:'bakery',line:'A floury pawprint leads away from Wally’s back door, carrying a little piece of honey bread.',name:'Wally’s Bakery'}
     ];
     function explore() {
-      const clue=clues[memory.clues%clues.length];memory.clues++;save();
-      status.textContent='You noticed something in Honeybrook.';
-      showResponse(clue.line);choices.replaceChildren();
-      makeChoice('Follow the clue',()=>{const p=places().find(v=>v.button.dataset.hbPlace===clue.place);if(p)walkTo(p.x,p.y,()=>{showResponse('You reach '+clue.name+'. The clue rests here, waiting for you to decide what it means.');addMemory('Followed a small clue to '+clue.name);},'Following the small clue toward '+clue.name+'.');});
-      makeChoice('Keep a note',()=>{addMemory('Noted a clue near '+clue.name);showResponse('A note is tucked safely into your visit journal. You can follow it another time.');});
-      makeChoice('Leave it for now',()=>{showResponse('The town keeps its little mystery. You are free to come back—or wander elsewhere.');});
+      clearChoices();
+      const available=places();
+      const target=available.filter(p=>!memory.visits.includes(p.button.dataset.hbPlace)).sort((a,b)=>Math.hypot(a.x-x,a.y-y)-Math.hypot(b.x-x,b.y-y))[0]||nearestPlace();
+      if(!target)return;
+      status.textContent='Exploring the path to '+target.name+'.';
+      walkTo(target.x,target.y,()=>{addMemory('Explored the path to '+target.name);activate(target);},'Walking into '+target.name+'.');
       canvas.focus({preventScroll:true});
     }
     function activateNearest() {
@@ -429,3 +429,4 @@
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
 })();
+
