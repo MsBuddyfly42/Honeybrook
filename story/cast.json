@@ -13,7 +13,7 @@
       47,
       65
     ],
-    "fact": "Seven when the spring river takes her beekeeper parents; survives three days on honey, reaches the cottage on the fourth day. Mama Bear welcomes her. Her hair later silvers; she dies old and beloved before Carmen arrives. She entrusts Harold with the sealed family letter.",
+    "fact": "Seven when the spring river takes her beekeeper parents; survives three days on honey, reaches the cottage on the fourth day. Mama Bear welcomes her. Her hair later silvers; she dies old and beloved before Nell arrives. She entrusts Harold with the sealed family letter.",
     "visual": "Human girl with golden hair in childhood; human woman and silver-haired elder in later memories. Never a bear.",
     "historical": true
   },
@@ -194,7 +194,7 @@
       64,
       68
     ],
-    "fact": "His disciplined service informs clear routes, sensible supplies and quiet practical care. Plans with Tom and family rather than imposing changes. Asks Templar to include rest. Reacts tensely when Carmen first arrives."
+    "fact": "His disciplined service informs clear routes, sensible supplies and quiet practical care. Plans with Tom and family rather than imposing changes. Asks Templar to include rest. Reacts tensely when Nell first arrives."
   },
   {
     "id": "mary",
@@ -447,7 +447,7 @@
       65,
       68
     ],
-    "fact": "The oldest bear in two towns. Keeps Goldilocks’s century-old letter sealed, private and separate from any player finances. Gives it to Carmen on her fourth day asking about beekeepers, then tells her what he knows."
+    "fact": "The oldest bear in two towns. Keeps Goldilocks’s century-old letter sealed, private and separate from any player finances. Gives it to Nell on her fourth day asking about beekeepers, then tells her what he knows."
   },
   {
     "id": "wally",
@@ -535,7 +535,7 @@
   },
   {
     "id": "carmen",
-    "name": "Carmen",
+    "name": "Nell",
     "kind": "Human · descendant searching family history",
     "place": "Welcome House Spare Room",
     "chapters": [
@@ -607,7 +607,7 @@
       65,
       68
     ],
-    "fact": "Father of the beekeeper’s wife and grandfather of Goldilocks. Searches for his missing daughter, not knowing about the river or surviving granddaughter. Carmen descends from the family’s other branch. The manuscript does not provide the full letter text or all names.",
+    "fact": "Father of the beekeeper’s wife and grandfather of Goldilocks. Searches for his missing daughter, not knowing about the river or surviving granddaughter. Nell descends from the family’s other branch. The manuscript does not provide the full letter text or all names.",
     "historical": true
   },
   {

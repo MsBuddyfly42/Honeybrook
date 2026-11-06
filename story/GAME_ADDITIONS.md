@@ -1364,7 +1364,7 @@ Earlier game extensions include cub cohorts, mixed adult-led camp teams, repeata
 
 # Nell · owner-directed game protagonist
 
-Author direction received October 23, 2026. This supersedes the earlier rule that Carmen could never be adapted into the player character. The original uploaded manuscript, its literal text, source cast and historical chronology remain preserved for the author's later revision. Present-day game adaptation uses **Nell**, not a second simultaneous Carmen arrival.
+Author direction received October 23, 2026. This supersedes the earlier rule that Nell could never be adapted into the player character. The original uploaded manuscript, its literal text, source cast and historical chronology remain preserved for the author's later revision. Present-day game adaptation uses **Nell**, not a second simultaneous Nell arrival.
 
 ## Confirmed identity and purpose
 
@@ -1382,7 +1382,7 @@ Nell’s grandfather always wondered what happened to his auntie and the missing
 
 **Goldilocks herself wrote the special game letter.** She knew her family might come looking one day. She entrusted it to Harold with the instruction: if a human ever came to Honeybrook or Bear Hollow asking about the beekeepers, give that human her letter. Nell’s promise to her grandfather brings her to Harold’s promise to Goldilocks. The letter is received, opened and read through separate player-controlled steps.
 
-This new author direction supersedes the original manuscript’s letter-writer detail **for the game adaptation only**. The uploaded Book One still contains the father’s older ancestral letter and Carmen’s original chapter, unchanged. The new Goldilocks letter in `nell-data.js` is clearly labeled an owner-requested game adaptation and manuscript-addition draft, never passed off as a recovered quotation from that original document. Nell’s recent inheritance papers from her grandfather are a different set of documents.
+This new author direction supersedes the original manuscript’s letter-writer detail **for the game adaptation only**. The uploaded Book One still contains the father’s older ancestral letter and Nell’s original chapter, unchanged. The new Goldilocks letter in `nell-data.js` is clearly labeled an owner-requested game adaptation and manuscript-addition draft, never passed off as a recovered quotation from that original document. Nell’s recent inheritance papers from her grandfather are a different set of documents.
 
 Retain the meaningful journey: a Tuesday rental-car arrival with notebook and camera; Amelia’s Welcome House hospitality; the family connection and beekeepers; Harold’s kept promise; Goldilocks’s life beyond the river; Nell’s own notebook response; Sammy’s honey bun; the Northern Woods calling **“Nell” at 3 a.m.** The next beginning stays open. The owner’s latest letter reveal is player-paced rather than silently asserting four elapsed game days.
 
@@ -1398,7 +1398,7 @@ Keep existing save keys, paid progress, inventories, relationships, chapter hist
 
 ## Manuscript reminder · not yet inserted
 
-When revising the manuscript, replace Carmen’s present-day narrative role with Nell; preserve the welcome, Goldilocks-written special letter, 3 a.m. call and open ending, while adding the owner-confirmed 42-year-old married identity, childhood stories, reluctance, the goddess’s dream directing her to Harold, $800 trillion inheritance, oil-land ancestry and corrected maternal-uncle family branch. Do not use the real family’s names. The uploaded manuscript has not been changed. The game adaptation is tracked separately from this reminder.
+When revising the manuscript, replace Nell’s present-day narrative role with Nell; preserve the welcome, Goldilocks-written special letter, 3 a.m. call and open ending, while adding the owner-confirmed 42-year-old married identity, childhood stories, reluctance, the goddess’s dream directing her to Harold, $800 trillion inheritance, oil-land ancestry and corrected maternal-uncle family branch. Do not use the real family’s names. The uploaded manuscript has not been changed. The game adaptation is tracked separately from this reminder.
 
 ## Resemblances the oldest Bear Hollow bears notice
 

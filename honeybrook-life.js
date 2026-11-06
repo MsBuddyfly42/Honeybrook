@@ -120,7 +120,7 @@
     if(type==='sound'){toggleSound();return;}
     if(type==='askRest'){tell('Rest begins a new camp date and refreshes daily activities. Choose Rest now below to confirm.');root.querySelector('#lifeContent').prepend(Object.assign(document.createElement('div'),{className:'life-warning',innerHTML:'<p>Take your time. Rest clears partial daily activity steps and begins tomorrow.</p>'+btn('Rest now','rest')}));return;}
     if(type==='visit'&&state){const previous=state.location;if(await dispatch({type,id})){trail.push(previous);tab='places';render();}return;}
-    if(type==='partner'&&id==='carmen'&&!window.HoneybrookCastPresence?.carmenArrived()){tell('Carmen’s original source role is preserved in the book. You are Nell in the current game adaptation; your first Harold conversation is in My Story.');return;}
+    if(type==='partner'&&id==='carmen'&&!window.HoneybrookCastPresence?.carmenArrived()){tell('Nell’s original source role is preserved in the book. You are Nell in the current game adaptation; your first Harold conversation is in My Story.');return;}
     await dispatch({type,id,choice:Number(b.dataset.choice),step:b.dataset.step===undefined?undefined:Number(b.dataset.step),hour:Number(b.dataset.hour),job:b.dataset.job});
   });
   root.addEventListener('input',event=>{

@@ -12,6 +12,6 @@ const big=E.run(E.initial(),{type:'start',scenario:E.scenarios[0],roster:Array.f
 for(const corrupt of[s=>s.roster=[{id:'bad'}],s=>s.phase='cleared',s=>s.stock.water=-1,s=>s.checked=['missing'],s=>s.support=[2],s=>s.visitors=[{id:'x',name:'too many',count:61}]]){const s=E.initial();corrupt(s);assert(!E.valid(s));}
 for(const p of D.people){assert(p.name&&p.details&&p.age&&p.family);for(const r of[p.home,p.work].filter(Boolean))assert(fs.existsSync(r.route.split(/[?#]/)[0]),p.id+' route exists');}
 for(const r of D.rooms)assert(fs.existsSync(r.photo));
-console.log('PASS 158 directory records / all 41 manuscript entries, real travel files, all 16 route zones, eight distinct rooms, source hash, active-camp roster deduplication, historical/Carmen gates, four complete drills, visitors, family unity and Lena support, supplies/meal batches/power, capacity/overflow, all-clear/turnover, immutable/reloaded rules and invalid-save rejection.');
+console.log('PASS 158 directory records / all 41 manuscript entries, real travel files, all 16 route zones, eight distinct rooms, source hash, active-camp roster deduplication, historical/Nell gates, four complete drills, visitors, family unity and Lena support, supplies/meal batches/power, capacity/overflow, all-clear/turnover, immutable/reloaded rules and invalid-save rejection.');
 
 assert.equal(D.people.find(x=>x.id==='game-treasurer').work.route,'treasury.html');

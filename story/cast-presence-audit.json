@@ -15,7 +15,7 @@
         65
       ],
       "presentation": "Source scenes / historical memory",
-      "sourceFact": "Seven when the spring river takes her beekeeper parents; survives three days on honey, reaches the cottage on the fourth day. Mama Bear welcomes her. Her hair later silvers; she dies old and beloved before Carmen arrives. She entrusts Harold with the sealed family letter."
+      "sourceFact": "Seven when the spring river takes her beekeeper parents; survives three days on honey, reaches the cottage on the fourth day. Mama Bear welcomes her. Her hair later silvers; she dies old and beloved before Nell arrives. She entrusts Harold with the sealed family letter."
     },
     {
       "id": "mama",
@@ -192,7 +192,7 @@
         68
       ],
       "presentation": "Current original neighbor / source-linked location",
-      "sourceFact": "His disciplined service informs clear routes, sensible supplies and quiet practical care. Plans with Tom and family rather than imposing changes. Asks Templar to include rest. Reacts tensely when Carmen first arrives."
+      "sourceFact": "His disciplined service informs clear routes, sensible supplies and quiet practical care. Plans with Tom and family rather than imposing changes. Asks Templar to include rest. Reacts tensely when Nell first arrives."
     },
     {
       "id": "mary",
@@ -443,7 +443,7 @@
         68
       ],
       "presentation": "Current original neighbor / source-linked location",
-      "sourceFact": "The oldest bear in two towns. Keeps Goldilocks’s century-old letter sealed, private and separate from any player finances. Gives it to Carmen on her fourth day asking about beekeepers, then tells her what he knows."
+      "sourceFact": "The oldest bear in two towns. Keeps Goldilocks’s century-old letter sealed, private and separate from any player finances. Gives it to Nell on her fourth day asking about beekeepers, then tells her what he knows."
     },
     {
       "id": "wally",
@@ -531,7 +531,7 @@
     },
     {
       "id": "carmen",
-      "name": "Carmen",
+      "name": "Nell",
       "sourcePlace": "Welcome House Spare Room",
       "chapters": [
         68,
@@ -598,7 +598,7 @@
         68
       ],
       "presentation": "Source scenes / historical memory",
-      "sourceFact": "Father of the beekeeper’s wife and grandfather of Goldilocks. Searches for his missing daughter, not knowing about the river or surviving granddaughter. Carmen descends from the family’s other branch. The manuscript does not provide the full letter text or all names."
+      "sourceFact": "Father of the beekeeper’s wife and grandfather of Goldilocks. Searches for his missing daughter, not knowing about the river or surviving granddaughter. Nell descends from the family’s other branch. The manuscript does not provide the full letter text or all names."
     },
     {
       "id": "prince",
@@ -678,7 +678,7 @@
     "Baby Bear grows older in the narrative; his original scenes and monument remain available. No invented present-day biography or resurrection.",
     "The first cook stays within founding scenes; not relabeled as Wally.",
     "Unnamed travelers retain unnamed supporting roles; modern Welcome House may welcome unnamed travelers without asserting they are the original historical individuals.",
-    "Carmen arrives via original Fair story threshold 28 or reading/completing chapter 68. Full prose is always open.",
+    "Nell arrives via original Fair story threshold 28 or reading/completing chapter 68. Full prose is always open.",
     "Lena remains supported and nonspeaking; Willie remains a family memory.",
     "Ancient stone arch and repaired wooden bridge remain distinct.",
     "No manuscript paragraphs, chapter photos or source bytes changed."

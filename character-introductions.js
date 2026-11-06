@@ -146,7 +146,7 @@ window.HoneybrookCharacterIntroductions={
     "evidence": "A young bear offered a quiet chair by Jonesha. Chooses Big Mama’s porch, then the festival on different days; neither choice earns his supper."
   },
   "story-carmen": {
-    "text": "Hello, I’m Nell. I come to Honeybrook with a notebook and camera, searching for my family’s missing beekeeper story. I ask questions and follow the evidence at my own pace.",
+    "text": "Hi, I’m Nell. I’m a British private investigator and a beekeeper from a family of beekeepers. I promised my grandfather I would come to Honeybrook. I’m here to listen, explore and learn what happened to our family.",
     "source": "Manuscript character role",
     "evidence": "Arrives Tuesday in a rental car with a dented fender, notebook and camera. Calls herself an investigator while following her family’s missing beekeeper story. Opens the ancestor’s letter on day four and stays. The voice calls her at 3 AM; her entry into the woods is the next beginning, not an already resolved sequel."
   },
