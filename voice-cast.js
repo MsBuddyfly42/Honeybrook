@@ -1,0 +1,4159 @@
+/* Authored performance directions; source facts and portraits are preserved. */
+window.HoneybrookVoiceCast=[
+  {
+    "id": "story-gold",
+    "name": "Goldilocks",
+    "aliases": [
+      "Goldilocks",
+      "story-gold",
+      "gold"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "patient and reflective; leaves room for a reply",
+    "delivery": "unhurried, rounded phrases",
+    "rate": 0.82,
+    "pitch": 0.73,
+    "lang": "en-US",
+    "voiceSlot": 0,
+    "visualIdentity": "Human · historical",
+    "storyContext": "Seven when the spring river takes her beekeeper parents; survives three days on honey, reaches the cottage on the fourth day. Mama Bear welcomes her. Her hair later silvers; she dies old and beloved before Carmen arrives. She entrusts Harold with the sealed family letter.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-mama",
+    "name": "Mama Bear",
+    "aliases": [
+      "Mama Bear",
+      "story-mama",
+      "mama"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "brisk and practical; gives one clear next step",
+    "delivery": "crisp phrases with a measured pause",
+    "rate": 0.832,
+    "pitch": 1.1,
+    "lang": "en-US",
+    "voiceSlot": 1,
+    "visualIdentity": "Bear · historical",
+    "storyContext": "Sees a lost child rather than an intruder, says ‘She stays,’ and offers care without demanding her story. Dies with Papa Bear during the cruel winter.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-papa",
+    "name": "Papa Bear",
+    "aliases": [
+      "Papa Bear",
+      "story-papa",
+      "papa"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "warm and encouraging; notices another person’s effort",
+    "delivery": "warm, flowing delivery",
+    "rate": 0.844,
+    "pitch": 1.47,
+    "lang": "en-US",
+    "voiceSlot": 2,
+    "visualIdentity": "Bear · historical",
+    "storyContext": "At first roars over the empty bowls, then lowers his head when Mama sees the child. Teaches cubs to mend a fence. Dies with Mama Bear in winter.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-baby",
+    "name": "Baby Bear",
+    "aliases": [
+      "Baby Bear",
+      "story-baby",
+      "baby"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "quietly curious; asks before drawing conclusions",
+    "delivery": "soft, deliberate phrasing",
+    "rate": 0.856,
+    "pitch": 0.95,
+    "lang": "en-US",
+    "voiceSlot": 3,
+    "visualIdentity": "Bear · grows older",
+    "storyContext": "Shares his toy, bed and world with Goldilocks. Grows broad and quiet. He and Goldilocks tend the home after Mama and Papa die.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-amelia",
+    "name": "Amelia Honeybrook",
+    "aliases": [
+      "Amelia Honeybrook",
+      "story-amelia",
+      "amelia"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "Welcoming and independent; offers safety before asking for usefulness.",
+    "delivery": "Warm and confident; patient, open invitations.",
+    "rate": 0.94,
+    "pitch": 1.02,
+    "lang": "en-US",
+    "voiceSlot": 4,
+    "visualIdentity": "Bear · Founder Bear",
+    "storyContext": "Arrives rootless with half an apple, saved string and cloth. Helps Thomas Bridgewell repair the wooden crossing. Wants a path-facing door, bench and water. Co-founds Honeybrook through a welcome that does not require usefulness. Her guardian angel protects her without controlling her choices.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-tom",
+    "name": "Thomas ‘Tom’ Bridgewell",
+    "aliases": [
+      "Thomas ‘Tom’ Bridgewell",
+      "story-tom",
+      "tom",
+      "Tom"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "Practical and careful; values safe work and dependable crossings.",
+    "delivery": "Grounded, measured instructions; low register.",
+    "rate": 0.9,
+    "pitch": 0.72,
+    "lang": "en-US",
+    "voiceSlot": 5,
+    "visualIdentity": "Bear · carpenter and stoneworker",
+    "storyContext": "Traveling builder who becomes a neighbor. Inspects before opening work, accepts a second experienced review, makes wide routes and usable benches. Works with Buddy at the Works Yard. The repaired wooden bridge is not the ancient stone arch.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-sammy",
+    "name": "Samuel ‘Sammy’ Patchwell",
+    "aliases": [
+      "Samuel ‘Sammy’ Patchwell",
+      "story-sammy",
+      "sammy",
+      "Sammy"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "Earnest and observant; learning remains uneven, with no secret genius or royal identity.",
+    "delivery": "Youthful, sincere delivery; takes time to find words.",
+    "rate": 0.95,
+    "pitch": 1.25,
+    "lang": "en-US",
+    "voiceSlot": 6,
+    "visualIdentity": "Bear · First Bear Welcomed Home",
+    "storyContext": "Arrives about eleven in an oversized coat with uneven patches, including a blue patch. Chooses Patchwell privately; Samuel Patchwell goes on the list. Learning remains uneven. He is never a secret prince or genius. His old coat is displayed later. His bed was unconditional before anyone knew how he might help.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-templar",
+    "name": "Templar Hearthwell",
+    "aliases": [
+      "Templar Hearthwell",
+      "story-templar",
+      "templar"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "gentle and observant; remembers small acts of care",
+    "delivery": "gentle, lightly breathy delivery",
+    "rate": 0.904,
+    "pitch": 1.54,
+    "lang": "en-US",
+    "voiceSlot": 7,
+    "visualIdentity": "Bear · mother · First Techie Bear",
+    "storyContext": "Relearns her technology skills through honest practice. Starts a work corner, then the first technology workshop and Helping House for notices, records and business plans. Makes room for family, rest and Lena’s full participation.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-buddy",
+    "name": "Buddy Hearthwell",
+    "aliases": [
+      "Buddy Hearthwell",
+      "story-buddy",
+      "buddy"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "patient and reflective; leaves room for a reply",
+    "delivery": "unhurried, rounded phrases",
+    "rate": 0.916,
+    "pitch": 1.02,
+    "lang": "en-US",
+    "voiceSlot": 8,
+    "visualIdentity": "Bear · family protector and practical planner",
+    "storyContext": "His disciplined service informs clear routes, sensible supplies and quiet practical care. Plans with Tom and family rather than imposing changes. Asks Templar to include rest. Reacts tensely when Carmen first arrives.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-mary",
+    "name": "Big Mama Mary",
+    "aliases": [
+      "Big Mama Mary",
+      "story-mary",
+      "mary"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "Caring, generous household presence; makes space at her table.",
+    "delivery": "Full, reassuring warmth; relaxed pacing.",
+    "rate": 0.88,
+    "pitch": 0.94,
+    "lang": "en-US",
+    "voiceSlot": 9,
+    "visualIdentity": "Bear · family elder",
+    "storyContext": "Keeps the family near, checks that helpers eat, remembers Willie with tenderness, and makes room on the porch beside Lena. Her welcome is ‘Pull up a paw.’",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-jonesha",
+    "name": "Jonesha Hearthwell",
+    "aliases": [
+      "Jonesha Hearthwell",
+      "story-jonesha",
+      "jonesha"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "warm and encouraging; notices another person’s effort",
+    "delivery": "warm, flowing delivery",
+    "rate": 0.94,
+    "pitch": 0.87,
+    "lang": "en-US",
+    "voiceSlot": 10,
+    "visualIdentity": "Bear · explorer and map-maker",
+    "storyContext": "Carries a notebook of paths, corrects the outdated map, discovers the old stone arch with Lance from the marked public path. Learns to leave Milo room for quiet and separate choices.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-jamya",
+    "name": "Ja’Mya Hearthwell",
+    "aliases": [
+      "Ja’Mya Hearthwell",
+      "story-jamya",
+      "jamya"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "quietly curious; asks before drawing conclusions",
+    "delivery": "soft, deliberate phrasing",
+    "rate": 0.952,
+    "pitch": 1.24,
+    "lang": "en-US",
+    "voiceSlot": 11,
+    "visualIdentity": "Bear · thoughtful family helper",
+    "storyContext": "Packs useful supplies, notices the right route mark, labels drawers and folders, spots a cupboard blocking a path. Helping never makes her responsible for everything.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-jamon",
+    "name": "Jamon Hearthwell",
+    "aliases": [
+      "Jamon Hearthwell",
+      "story-jamon",
+      "jamon"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "cheerful and lightly playful; never mocks grief",
+    "delivery": "bright, lightly lifted delivery",
+    "rate": 0.964,
+    "pitch": 1.61,
+    "lang": "en-US",
+    "voiceSlot": 12,
+    "visualIdentity": "Bear · quiet observer",
+    "storyContext": "Keeps familiar blankets and bags secure, folds the temporary paper dinosaur for Landis and notices access problems beside Buddy.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-robin",
+    "name": "Robin Hearthwell",
+    "aliases": [
+      "Robin Hearthwell",
+      "story-robin",
+      "robin"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "precise and thoughtful; distinguishes facts from guesses",
+    "delivery": "clear, evenly paced delivery",
+    "rate": 0.976,
+    "pitch": 1.09,
+    "lang": "en-US",
+    "voiceSlot": 13,
+    "visualIdentity": "Bear · singer",
+    "storyContext": "Brings songs and offers company or quiet. Sings a familiar gentle phrase with Lena; helps recover the Professor’s scattered papers.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-rheanna",
+    "name": "Rheanna Hearthwell",
+    "aliases": [
+      "Rheanna Hearthwell",
+      "story-rheanna",
+      "rheanna"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "steady and protective; explains a boundary calmly",
+    "delivery": "low, steady delivery",
+    "rate": 0.988,
+    "pitch": 1.46,
+    "lang": "en-US",
+    "voiceSlot": 14,
+    "visualIdentity": "Bear · bright family presence",
+    "storyContext": "Chooses a picture and a bright window, adds rhythm to a traveling song, brightens the workshop noticeboard and makes an ordinary doorway feel like a stage entrance.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-lena",
+    "name": "Lena Hearthwell",
+    "aliases": [
+      "Lena Hearthwell",
+      "story-lena",
+      "lena"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "gentle and observant; remembers small acts of care",
+    "delivery": "gentle, lightly breathy delivery",
+    "rate": 1,
+    "pitch": 0.94,
+    "lang": "en-US",
+    "voiceSlot": 15,
+    "visualIdentity": "Bear · beloved family member",
+    "storyContext": "Does not use spoken words or walk to a lesson as some others do. Recognizes loved ones and responds through expressions her family understands. Comfort, familiar voices, time and participation are planned with her family. No cure or change into a different learner is promised.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-lance",
+    "name": "Lance Hearthwell",
+    "aliases": [
+      "Lance Hearthwell",
+      "story-lance",
+      "lance"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "patient and reflective; leaves room for a reply",
+    "delivery": "unhurried, rounded phrases",
+    "rate": 1.012,
+    "pitch": 1.31,
+    "lang": "en-US",
+    "voiceSlot": 16,
+    "visualIdentity": "Bear · games and learning",
+    "storyContext": "Brings games, turns numbers into points and helps make an untimed practice game show with a pass option and quiet alternative. Explores the old arch with Jonesha and marks the safe route.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-landis",
+    "name": "Landis Hearthwell",
+    "aliases": [
+      "Landis Hearthwell",
+      "story-landis",
+      "landis"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "brisk and practical; gives one clear next step",
+    "delivery": "crisp phrases with a measured pause",
+    "rate": 0.82,
+    "pitch": 0.79,
+    "lang": "en-US",
+    "voiceSlot": 17,
+    "visualIdentity": "Bear · dinosaur enthusiast",
+    "storyContext": "The toy dinosaur is lost on the journey and later found in a blanket box. Jamon’s folded paper dinosaur remains on the workshop shelf. Uses dinosaurs as counters and requests a bonus question.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-landric",
+    "name": "Landric Hearthwell",
+    "aliases": [
+      "Landric Hearthwell",
+      "story-landric",
+      "landric"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "warm and encouraging; notices another person’s effort",
+    "delivery": "warm, flowing delivery",
+    "rate": 0.832,
+    "pitch": 1.16,
+    "lang": "en-US",
+    "voiceSlot": 18,
+    "visualIdentity": "Bear · youngest child",
+    "storyContext": "The little one asks for snacks, enjoys the lunch stop, and finds the kitchen important. The manuscript does not give him an exact age.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-willie",
+    "name": "Willie",
+    "aliases": [
+      "Willie",
+      "story-willie",
+      "willie"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "quietly curious; asks before drawing conclusions",
+    "delivery": "soft, deliberate phrasing",
+    "rate": 0.844,
+    "pitch": 1.53,
+    "lang": "en-US",
+    "voiceSlot": 19,
+    "visualIdentity": "Family memory",
+    "storyContext": "Not present to enter the new house. Big Mama tells his stories tenderly and the family carries his memory into its home. Never a living visitor or a speaking quest-giver.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-theodore",
+    "name": "Professor Theodore Honeywell",
+    "aliases": [
+      "Professor Theodore Honeywell",
+      "story-theodore",
+      "theodore"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "cheerful and lightly playful; never mocks grief",
+    "delivery": "bright, lightly lifted delivery",
+    "rate": 0.856,
+    "pitch": 1.01,
+    "lang": "en-US",
+    "voiceSlot": 20,
+    "visualIdentity": "Bear · teacher who learns",
+    "storyContext": "Arrives in a waistcoat with spectacles, books and a tidy plan. Learns to ask, adapt, repeat familiar objects, offer privacy and adult learning, include Lena, admit the map error and use checked references.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-harold",
+    "name": "Harold Pawst",
+    "aliases": [
+      "Harold Pawst",
+      "story-harold",
+      "harold"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "Patient keeper of letters and memories; speaks carefully and honours promises.",
+    "delivery": "Low, unhurried storytelling; deliberate pauses.",
+    "rate": 0.82,
+    "pitch": 0.77,
+    "lang": "en-GB",
+    "voiceSlot": 21,
+    "visualIdentity": "Bear · mail carrier",
+    "storyContext": "The oldest bear in two towns. Keeps Goldilocks’s century-old letter sealed, private and separate from any player finances. Gives it to Carmen on her fourth day asking about beekeepers, then tells her what he knows.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-wally",
+    "name": "Wally Crumbwell",
+    "aliases": [
+      "Wally Crumbwell",
+      "story-wally",
+      "wally"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "steady and protective; explains a boundary calmly",
+    "delivery": "low, steady delivery",
+    "rate": 0.88,
+    "pitch": 0.86,
+    "lang": "en-US",
+    "voiceSlot": 22,
+    "visualIdentity": "Bear · baker",
+    "storyContext": "Arrives with recipe book, mixing bowl and broken wrapped cookies. Learns portions, sales records, truthful descriptions, safe storage, manageable promises and keeping his own supper. His shop is Cub Cakes & Crumbs.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-patty",
+    "name": "Miss Patty Peaches",
+    "aliases": [
+      "Miss Patty Peaches",
+      "story-patty",
+      "patty"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "gentle and observant; remembers small acts of care",
+    "delivery": "gentle, lightly breathy delivery",
+    "rate": 0.892,
+    "pitch": 1.23,
+    "lang": "en-US",
+    "voiceSlot": 23,
+    "visualIdentity": "Bear · café neighbor and planning help",
+    "storyContext": "Asks Wally about actual customers, realistic batches and reliable opening products. Wants his kindness to last longer than one tray; later collects café orders.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-daisy",
+    "name": "Daisy Bellweather",
+    "aliases": [
+      "Daisy Bellweather",
+      "story-daisy",
+      "daisy"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "patient and reflective; leaves room for a reply",
+    "delivery": "unhurried, rounded phrases",
+    "rate": 0.904,
+    "pitch": 1.6,
+    "lang": "en-US",
+    "voiceSlot": 24,
+    "visualIdentity": "Bear · still finding her direction",
+    "storyContext": "May sit without deciding her whole future. Talks with Wally about experiments and unfinished ideas; he offers a chair rather than a solution to her entire life.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-mabel",
+    "name": "Mabel Welcomeberry",
+    "aliases": [
+      "Mabel Welcomeberry",
+      "story-mabel",
+      "mabel"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "brisk and practical; gives one clear next step",
+    "delivery": "crisp phrases with a measured pause",
+    "rate": 0.916,
+    "pitch": 1.08,
+    "lang": "en-US",
+    "voiceSlot": 25,
+    "visualIdentity": "Bear · later Welcome House neighbor",
+    "storyContext": "Named among the later bears who carry on Welcome House’s work. The manuscript does not supply an elaborate personal biography.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-toby",
+    "name": "Toby Trailpaw",
+    "aliases": [
+      "Toby Trailpaw",
+      "story-toby",
+      "toby"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "warm and encouraging; notices another person’s effort",
+    "delivery": "warm, flowing delivery",
+    "rate": 0.928,
+    "pitch": 1.45,
+    "lang": "en-US",
+    "voiceSlot": 26,
+    "visualIdentity": "Bear · later Welcome House neighbor",
+    "storyContext": "Named among the later bears who improve Welcome House while keeping its bench. Additional personal history is not specified.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-nora",
+    "name": "Nora Kindpaw",
+    "aliases": [
+      "Nora Kindpaw",
+      "story-nora",
+      "nora"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "quietly curious; asks before drawing conclusions",
+    "delivery": "soft, deliberate phrasing",
+    "rate": 0.94,
+    "pitch": 0.93,
+    "lang": "en-US",
+    "voiceSlot": 27,
+    "visualIdentity": "Bear · later Welcome House neighbor",
+    "storyContext": "Named among the later Welcome House bears who keep the welcome and the bench. Her exact professional credentials are not specified.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-milo",
+    "name": "Milo",
+    "aliases": [
+      "Milo",
+      "story-milo",
+      "milo"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "cheerful and lightly playful; never mocks grief",
+    "delivery": "bright, lightly lifted delivery",
+    "rate": 0.952,
+    "pitch": 1.3,
+    "lang": "en-US",
+    "voiceSlot": 28,
+    "visualIdentity": "Bear · newcomer",
+    "storyContext": "A young bear offered a quiet chair by Jonesha. Chooses Big Mama’s porch, then the festival on different days; neither choice earns his supper.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-carmen",
+    "name": "Carmen",
+    "aliases": [
+      "Carmen",
+      "story-carmen",
+      "carmen"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "precise and thoughtful; distinguishes facts from guesses",
+    "delivery": "clear, evenly paced delivery",
+    "rate": 0.964,
+    "pitch": 0.78,
+    "lang": "en-US",
+    "voiceSlot": 29,
+    "visualIdentity": "Human · descendant searching family history",
+    "storyContext": "Arrives Tuesday in a rental car with a dented fender, notebook and camera. Calls herself an investigator while following her family’s missing beekeeper story. Opens the ancestor’s letter on day four and stays. The voice calls her at 3 AM; her entry into the woods is the next beginning, not an already resolved sequel.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-angel",
+    "name": "Amelia’s guardian angel",
+    "aliases": [
+      "Amelia’s guardian angel",
+      "story-angel",
+      "angel"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "steady and protective; explains a boundary calmly",
+    "delivery": "low, steady delivery",
+    "rate": 0.976,
+    "pitch": 1.15,
+    "lang": "en-US",
+    "voiceSlot": 30,
+    "visualIdentity": "Guardian · identity not fully explained",
+    "storyContext": "The woman at the creek protects Amelia without controlling her choices. Names herself her guardian angel in chapter 46 and is connected to the Guardian Goddess. The complete relationship remains unknown.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-goddess",
+    "name": "The Guardian Goddess",
+    "aliases": [
+      "The Guardian Goddess",
+      "story-goddess",
+      "goddess"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "Protective and patient; guides without controlling a choice or revealing the ending.",
+    "delivery": "Calm, spacious phrases; gentle high register.",
+    "rate": 0.79,
+    "pitch": 1.29,
+    "lang": "en-GB",
+    "voiceSlot": 31,
+    "visualIdentity": "Guardian · older mystery",
+    "storyContext": "Protects Honeybrook and surrounding land. Her older history and exact relationship to the guardian angel remain deliberately unresolved. Never substitute the angel’s revealed identity for the Goddess’s unknown one.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-ash",
+    "name": "Ash",
+    "aliases": [
+      "Ash",
+      "story-ash",
+      "ash"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "Accountable and practical; follows an apology with dependable conduct.",
+    "delivery": "Dry, low, precise phrasing; restrained humour.",
+    "rate": 0.92,
+    "pitch": 0.69,
+    "lang": "en-GB",
+    "voiceSlot": 32,
+    "visualIdentity": "Wolf · former Big Bad Wolf",
+    "storyContext": "The older, rounder, now-kind Big Bad Wolf bakes sourdough in Storybook Lane. The Lane appears when its stories are brought back to life, not as a routine road district.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-beekeepers",
+    "name": "Goldilocks’s parents",
+    "aliases": [
+      "Goldilocks’s parents",
+      "story-beekeepers",
+      "beekeepers"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "brisk and practical; gives one clear next step",
+    "delivery": "crisp phrases with a measured pause",
+    "rate": 1.012,
+    "pitch": 1.37,
+    "lang": "en-US",
+    "voiceSlot": 33,
+    "visualIdentity": "Humans · historical beekeepers",
+    "storyContext": "A husband and wife lost in the spring river. Her mother gives her the satchel, honey jar and blue-flowered cloth. Their names are not supplied.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-ancestor",
+    "name": "The searching father",
+    "aliases": [
+      "The searching father",
+      "story-ancestor",
+      "ancestor"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "warm and encouraging; notices another person’s effort",
+    "delivery": "warm, flowing delivery",
+    "rate": 0.82,
+    "pitch": 0.85,
+    "lang": "en-US",
+    "voiceSlot": 34,
+    "visualIdentity": "Human · historical letter writer",
+    "storyContext": "Father of the beekeeper’s wife and grandfather of Goldilocks. Searches for his missing daughter, not knowing about the river or surviving granddaughter. Carmen descends from the family’s other branch. The manuscript does not provide the full letter text or all names.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-prince",
+    "name": "The prince",
+    "aliases": [
+      "The prince",
+      "story-prince",
+      "prince"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "quietly curious; asks before drawing conclusions",
+    "delivery": "soft, deliberate phrasing",
+    "rate": 0.832,
+    "pitch": 1.22,
+    "lang": "en-US",
+    "voiceSlot": 35,
+    "visualIdentity": "Human · ancient prologue",
+    "storyContext": "The unnamed prince kneels beneath the moon; true love’s kiss wakes the sleeping princess. The warmth enters roots, seeds and soil. No supplied royal name or connection to later family ancestry.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-princess",
+    "name": "The sleeping princess",
+    "aliases": [
+      "The sleeping princess",
+      "story-princess",
+      "princess"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "cheerful and lightly playful; never mocks grief",
+    "delivery": "bright, lightly lifted delivery",
+    "rate": 0.844,
+    "pitch": 1.59,
+    "lang": "en-US",
+    "voiceSlot": 36,
+    "visualIdentity": "Human · ancient prologue",
+    "storyContext": "The unnamed princess wakes through true love’s kiss. The forest keeps its warmth after her awakening.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-cook",
+    "name": "The first shelter’s cook",
+    "aliases": [
+      "The first shelter’s cook",
+      "story-cook",
+      "cook"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "precise and thoughtful; distinguishes facts from guesses",
+    "delivery": "clear, evenly paced delivery",
+    "rate": 0.856,
+    "pitch": 1.07,
+    "lang": "en-US",
+    "voiceSlot": 37,
+    "visualIdentity": "Bear · unnamed in the manuscript",
+    "storyContext": "Feeds the bridge builders, walks with Amelia after spilled water, helps plan bowls and welcome, and jokes about the roof drip. This early cook is not retrospectively identified as Wally.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-ranger",
+    "name": "The ranger",
+    "aliases": [
+      "The ranger",
+      "story-ranger",
+      "ranger"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "steady and protective; explains a boundary calmly",
+    "delivery": "low, steady delivery",
+    "rate": 0.868,
+    "pitch": 1.44,
+    "lang": "en-US",
+    "voiceSlot": 38,
+    "visualIdentity": "Bear · unnamed in the manuscript",
+    "storyContext": "Visits the old stone arch with Tom while the children remain behind the boundary rope. No supplied personal name or invented biography.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-older-cub",
+    "name": "The older cub from Bear Hollow",
+    "aliases": [
+      "The older cub from Bear Hollow",
+      "story-older-cub",
+      "older-cub"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "gentle and observant; remembers small acts of care",
+    "delivery": "gentle, lightly breathy delivery",
+    "rate": 0.88,
+    "pitch": 0.92,
+    "lang": "en-US",
+    "voiceSlot": 39,
+    "visualIdentity": "Bear · unnamed in the manuscript",
+    "storyContext": "A separate traveler from Sammy. Does not say why he left at first; later helps Tom raise a beam and shows others the way. Do not merge his identity with Sammy.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "story-travelers",
+    "name": "Travelers and neighbors",
+    "aliases": [
+      "Travelers and neighbors",
+      "story-travelers",
+      "travelers"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "patient and reflective; leaves room for a reply",
+    "delivery": "unhurried, rounded phrases",
+    "rate": 0.892,
+    "pitch": 1.29,
+    "lang": "en-US",
+    "voiceSlot": 40,
+    "visualIdentity": "Bears · unnamed supporting characters",
+    "storyContext": "The medicine-basket traveler, relative-bound traveler, pinecone-offering cub, water-giving elder, careful helpers, newcomers and adult learners have their own places in the text. Their unprovided names stay unprovided.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "game-nell",
+    "name": "Nell",
+    "aliases": [
+      "Nell",
+      "game-nell",
+      "nell"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "Curious, loving British private investigator and family beekeeper; asks careful questions and loves bears.",
+    "delivery": "Warm British English; thoughtful questions, clear observations.",
+    "rate": 0.96,
+    "pitch": 1.12,
+    "lang": "en-GB",
+    "voiceSlot": 41,
+    "visualIdentity": "British human woman · player protagonist",
+    "storyContext": "The familiar stranger · investigator from a lineage of beekeepers. Nell’s golden hair is the first resemblance the bears see. As a private investigator, she compares records, separates belief from evidence and listens before drawing conclusions. In her spare time she keeps bees. She is part of a long family lineage of beekeepers; almost everyone in the family loves bees. Her own thorough knowledge belongs within that shared tradition. Her patient care, loving attention, curious questions and lifelong ease around bears make the resemblance feel deeper. She is drawn to Honeybrook before she understands the connection; she wants to know its paths, homes and people before seeking Harold. The bears’ belief surrounds her arrival, while her grandfather’s promise and the goddess’s dream remain her own story to share. Nell is Honeybrook’s first present-day human arrival. She comes to discover the place she heard about as a child; her welcome is never something she must buy. Private investigator; she keeps bees in her spare time. Nell belongs to a long family line of beekeepers. Almost everyone in her family loves bees, and she knows their shared trade thoroughly. Nell has loved bears for as long as she can remember. She wonders whether that instinctive fondness has always drawn her toward this place. Before they know who Nell is, bears across Honeybrook and Bear Hollow immediately welcome her. Her golden hair, curious and loving nature, beekeeper’s care and instinctive affection for bears remind them so strongly of the beloved Goldilocks that they feel her spirit in Nell. Some believe Nell is Goldilocks reincarnated. This is their belief, not a confirmed answer to Nell’s identity. Keep the promise to her grandfather: visit Honeybrook and learn what happened to the beekeepers. Follow the goddess’s dream instruction to ask for Harold. Goldilocks’s mother was the daughter of the owner of oil-rich land. The same landowner is Nell’s great-great-great-grandfather. Her late grandfather left her an $800 trillion inheritance; her visit is about family history and the promise, not claiming a fortune.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "game-maya",
+    "name": "Maya Williams",
+    "aliases": [
+      "Maya Williams",
+      "game-maya",
+      "maya"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "warm and encouraging; notices another person’s effort",
+    "delivery": "warm, flowing delivery",
+    "rate": 0.916,
+    "pitch": 1.14,
+    "lang": "en-US",
+    "voiceSlot": 42,
+    "visualIdentity": "Bear · Black American mother · nurse · Williams family",
+    "storyContext": "Care starts with listening and checking what each family actually needs.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "game-daniel",
+    "name": "Daniel Miller",
+    "aliases": [
+      "Daniel Miller",
+      "game-daniel",
+      "daniel"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "quietly curious; asks before drawing conclusions",
+    "delivery": "soft, deliberate phrasing",
+    "rate": 0.928,
+    "pitch": 1.51,
+    "lang": "en-US",
+    "voiceSlot": 43,
+    "visualIdentity": "Bear · White American father · carpenter · Miller family",
+    "storyContext": "Measure, make a safe plan, then inspect the work together.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "game-lin",
+    "name": "Lin Chen",
+    "aliases": [
+      "Lin Chen",
+      "game-lin",
+      "lin"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "cheerful and lightly playful; never mocks grief",
+    "delivery": "bright, lightly lifted delivery",
+    "rate": 0.94,
+    "pitch": 0.99,
+    "lang": "en-US",
+    "voiceSlot": 44,
+    "visualIdentity": "Bear · Chinese American grandmother · weaving teacher · Chen family",
+    "storyContext": "A careful first row gives the whole piece a good beginning.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "game-aiko",
+    "name": "Aiko Tanaka",
+    "aliases": [
+      "Aiko Tanaka",
+      "game-aiko",
+      "aiko"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "precise and thoughtful; distinguishes facts from guesses",
+    "delivery": "clear, evenly paced delivery",
+    "rate": 0.952,
+    "pitch": 1.36,
+    "lang": "en-US",
+    "voiceSlot": 45,
+    "visualIdentity": "Bear · Japanese American parent · painter · Tanaka family",
+    "storyContext": "Look at the light before choosing your colors.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "game-sofia",
+    "name": "Sofía Rivera",
+    "aliases": [
+      "Sofía Rivera",
+      "game-sofia",
+      "sofia"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "steady and protective; explains a boundary calmly",
+    "delivery": "low, steady delivery",
+    "rate": 0.964,
+    "pitch": 0.84,
+    "lang": "en-US",
+    "voiceSlot": 46,
+    "visualIdentity": "Bear · Puerto Rican mother · cook · Rivera family",
+    "storyContext": "Count the guests first, then check the portions and ingredients.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "game-arjun",
+    "name": "Arjun Patel",
+    "aliases": [
+      "Arjun Patel",
+      "game-arjun",
+      "arjun"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "gentle and observant; remembers small acts of care",
+    "delivery": "gentle, lightly breathy delivery",
+    "rate": 0.976,
+    "pitch": 1.21,
+    "lang": "en-US",
+    "voiceSlot": 47,
+    "visualIdentity": "Bear · Indian American father · supply steward · Patel family",
+    "storyContext": "A checklist is a promise to bring the right equipment for everybody.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "game-marie",
+    "name": "Marie Jean-Baptiste",
+    "aliases": [
+      "Marie Jean-Baptiste",
+      "game-marie",
+      "marie"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "patient and reflective; leaves room for a reply",
+    "delivery": "unhurried, rounded phrases",
+    "rate": 0.988,
+    "pitch": 1.58,
+    "lang": "en-US",
+    "voiceSlot": 48,
+    "visualIdentity": "Bear · Haitian American aunt · gardening mentor · Jean-Baptiste family",
+    "storyContext": "We can keep the soil healthy and share what grows.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "game-elijah",
+    "name": "Elijah Campbell",
+    "aliases": [
+      "Elijah Campbell",
+      "game-elijah",
+      "elijah"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "brisk and practical; gives one clear next step",
+    "delivery": "crisp phrases with a measured pause",
+    "rate": 1,
+    "pitch": 1.06,
+    "lang": "en-US",
+    "voiceSlot": 49,
+    "visualIdentity": "Bear · Jamaican American grandfather · music mentor · Campbell family",
+    "storyContext": "There is room for your voice in our sunset songs.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "game-amina",
+    "name": "Amina Okafor",
+    "aliases": [
+      "Amina Okafor",
+      "game-amina",
+      "amina"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "warm and encouraging; notices another person’s effort",
+    "delivery": "warm, flowing delivery",
+    "rate": 1.012,
+    "pitch": 1.43,
+    "lang": "en-US",
+    "voiceSlot": 50,
+    "visualIdentity": "Bear · Nigerian American mother · scout counselor · Okafor family",
+    "storyContext": "Preparation and kindness help every camper belong.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "hollow-cedar-0",
+    "name": "Rowan Bramblepaw",
+    "aliases": [
+      "Rowan Bramblepaw",
+      "hollow-cedar-0",
+      "hollow-cedar-0"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "quietly curious; asks before drawing conclusions",
+    "delivery": "soft, deliberate phrasing",
+    "rate": 0.82,
+    "pitch": 0.91,
+    "lang": "en-US",
+    "voiceSlot": 51,
+    "visualIdentity": "Bear · introduced game household",
+    "storyContext": "Rowan repairs wooden things; Hazel loves patchwork. Pip is building a tiny village from smooth blocks.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "hollow-cedar-1",
+    "name": "Hazel Bramblepaw",
+    "aliases": [
+      "Hazel Bramblepaw",
+      "hollow-cedar-1",
+      "hollow-cedar-1"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "cheerful and lightly playful; never mocks grief",
+    "delivery": "bright, lightly lifted delivery",
+    "rate": 0.832,
+    "pitch": 1.28,
+    "lang": "en-US",
+    "voiceSlot": 52,
+    "visualIdentity": "Bear · introduced game household",
+    "storyContext": "Rowan repairs wooden things; Hazel loves patchwork. Pip is building a tiny village from smooth blocks.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "hollow-cedar-2",
+    "name": "Pip Bramblepaw",
+    "aliases": [
+      "Pip Bramblepaw",
+      "hollow-cedar-2",
+      "hollow-cedar-2"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "precise and thoughtful; distinguishes facts from guesses",
+    "delivery": "clear, evenly paced delivery",
+    "rate": 0.844,
+    "pitch": 0.76,
+    "lang": "en-US",
+    "voiceSlot": 53,
+    "visualIdentity": "Bear · introduced game household",
+    "storyContext": "Rowan repairs wooden things; Hazel loves patchwork. Pip is building a tiny village from smooth blocks.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "hollow-willow-0",
+    "name": "Hana Mizumori",
+    "aliases": [
+      "Hana Mizumori",
+      "hollow-willow-0",
+      "hollow-willow-0"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "steady and protective; explains a boundary calmly",
+    "delivery": "low, steady delivery",
+    "rate": 0.856,
+    "pitch": 1.13,
+    "lang": "en-US",
+    "voiceSlot": 54,
+    "visualIdentity": "Bear · introduced game household",
+    "storyContext": "Hana shapes clay bowls. Kenji watches the creek birds, and Emi keeps a notebook of every visitor.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "hollow-willow-1",
+    "name": "Kenji Mizumori",
+    "aliases": [
+      "Kenji Mizumori",
+      "hollow-willow-1",
+      "hollow-willow-1"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "gentle and observant; remembers small acts of care",
+    "delivery": "gentle, lightly breathy delivery",
+    "rate": 0.868,
+    "pitch": 1.5,
+    "lang": "en-US",
+    "voiceSlot": 55,
+    "visualIdentity": "Bear · introduced game household",
+    "storyContext": "Hana shapes clay bowls. Kenji watches the creek birds, and Emi keeps a notebook of every visitor.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "hollow-willow-2",
+    "name": "Emi Mizumori",
+    "aliases": [
+      "Emi Mizumori",
+      "hollow-willow-2",
+      "hollow-willow-2"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "patient and reflective; leaves room for a reply",
+    "delivery": "unhurried, rounded phrases",
+    "rate": 0.88,
+    "pitch": 0.98,
+    "lang": "en-US",
+    "voiceSlot": 56,
+    "visualIdentity": "Bear · introduced game household",
+    "storyContext": "Hana shapes clay bowls. Kenji watches the creek birds, and Emi keeps a notebook of every visitor.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "hollow-clover-0",
+    "name": "Mireille Jean-Baptiste",
+    "aliases": [
+      "Mireille Jean-Baptiste",
+      "hollow-clover-0",
+      "hollow-clover-0"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "brisk and practical; gives one clear next step",
+    "delivery": "crisp phrases with a measured pause",
+    "rate": 0.892,
+    "pitch": 1.35,
+    "lang": "en-US",
+    "voiceSlot": 57,
+    "visualIdentity": "Bear · introduced game household",
+    "storyContext": "Mireille grows vegetables, Luc mends baskets, and Jojo carefully counts every new bean leaf.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "hollow-clover-1",
+    "name": "Luc Jean-Baptiste",
+    "aliases": [
+      "Luc Jean-Baptiste",
+      "hollow-clover-1",
+      "hollow-clover-1"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "warm and encouraging; notices another person’s effort",
+    "delivery": "warm, flowing delivery",
+    "rate": 0.904,
+    "pitch": 0.83,
+    "lang": "en-US",
+    "voiceSlot": 58,
+    "visualIdentity": "Bear · introduced game household",
+    "storyContext": "Mireille grows vegetables, Luc mends baskets, and Jojo carefully counts every new bean leaf.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "hollow-clover-2",
+    "name": "Jojo Jean-Baptiste",
+    "aliases": [
+      "Jojo Jean-Baptiste",
+      "hollow-clover-2",
+      "hollow-clover-2"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "quietly curious; asks before drawing conclusions",
+    "delivery": "soft, deliberate phrasing",
+    "rate": 0.916,
+    "pitch": 1.2,
+    "lang": "en-US",
+    "voiceSlot": 59,
+    "visualIdentity": "Bear · introduced game household",
+    "storyContext": "Mireille grows vegetables, Luc mends baskets, and Jojo carefully counts every new bean leaf.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "hollow-maple-0",
+    "name": "Elijah Campbell",
+    "aliases": [
+      "Elijah Campbell",
+      "hollow-maple-0",
+      "hollow-maple-0"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "cheerful and lightly playful; never mocks grief",
+    "delivery": "bright, lightly lifted delivery",
+    "rate": 0.928,
+    "pitch": 1.57,
+    "lang": "en-US",
+    "voiceSlot": 60,
+    "visualIdentity": "Bear · introduced game household",
+    "storyContext": "Music drifts from this porch. Marjorie knows the best honey-biscuit recipe; Theo keeps the family rhythm.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "hollow-maple-1",
+    "name": "Marjorie Campbell",
+    "aliases": [
+      "Marjorie Campbell",
+      "hollow-maple-1",
+      "hollow-maple-1"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "precise and thoughtful; distinguishes facts from guesses",
+    "delivery": "clear, evenly paced delivery",
+    "rate": 0.94,
+    "pitch": 1.05,
+    "lang": "en-US",
+    "voiceSlot": 61,
+    "visualIdentity": "Bear · introduced game household",
+    "storyContext": "Music drifts from this porch. Marjorie knows the best honey-biscuit recipe; Theo keeps the family rhythm.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "hollow-maple-2",
+    "name": "Theo Campbell",
+    "aliases": [
+      "Theo Campbell",
+      "hollow-maple-2",
+      "hollow-maple-2"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "steady and protective; explains a boundary calmly",
+    "delivery": "low, steady delivery",
+    "rate": 0.952,
+    "pitch": 1.42,
+    "lang": "en-US",
+    "voiceSlot": 62,
+    "visualIdentity": "Bear · introduced game household",
+    "storyContext": "Music drifts from this porch. Marjorie knows the best honey-biscuit recipe; Theo keeps the family rhythm.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "hollow-fern-0",
+    "name": "Lin (Fernwood household)",
+    "aliases": [
+      "Lin (Fernwood household)",
+      "hollow-fern-0",
+      "hollow-fern-0"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "gentle and observant; remembers small acts of care",
+    "delivery": "gentle, lightly breathy delivery",
+    "rate": 0.964,
+    "pitch": 0.9,
+    "lang": "en-US",
+    "voiceSlot": 63,
+    "visualIdentity": "Bear · introduced game household",
+    "storyContext": "Wide paths and an easy ramp make visiting comfortable. Lin enjoys puzzles; Mei paints the creek in bright colors.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "hollow-fern-1",
+    "name": "Wei (Fernwood household)",
+    "aliases": [
+      "Wei (Fernwood household)",
+      "hollow-fern-1",
+      "hollow-fern-1"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "patient and reflective; leaves room for a reply",
+    "delivery": "unhurried, rounded phrases",
+    "rate": 0.976,
+    "pitch": 1.27,
+    "lang": "en-US",
+    "voiceSlot": 64,
+    "visualIdentity": "Bear · introduced game household",
+    "storyContext": "Wide paths and an easy ramp make visiting comfortable. Lin enjoys puzzles; Mei paints the creek in bright colors.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "hollow-fern-2",
+    "name": "Mei (Fernwood household)",
+    "aliases": [
+      "Mei (Fernwood household)",
+      "hollow-fern-2",
+      "hollow-fern-2"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "brisk and practical; gives one clear next step",
+    "delivery": "crisp phrases with a measured pause",
+    "rate": 0.988,
+    "pitch": 0.75,
+    "lang": "en-US",
+    "voiceSlot": 65,
+    "visualIdentity": "Bear · introduced game household",
+    "storyContext": "Wide paths and an easy ramp make visiting comfortable. Lin enjoys puzzles; Mei paints the creek in bright colors.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "hollow-bluebell-0",
+    "name": "Sofía (Bluebell Nook household)",
+    "aliases": [
+      "Sofía (Bluebell Nook household)",
+      "hollow-bluebell-0",
+      "hollow-bluebell-0"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "warm and encouraging; notices another person’s effort",
+    "delivery": "warm, flowing delivery",
+    "rate": 1,
+    "pitch": 1.12,
+    "lang": "en-US",
+    "voiceSlot": 66,
+    "visualIdentity": "Bear · introduced game household",
+    "storyContext": "A fragrant family kitchen and a lilac front door. Mateo tends bluebells, and Luna loves helping portion biscuits.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "hollow-bluebell-1",
+    "name": "Mateo Rivera",
+    "aliases": [
+      "Mateo Rivera",
+      "hollow-bluebell-1",
+      "hollow-bluebell-1"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "quietly curious; asks before drawing conclusions",
+    "delivery": "soft, deliberate phrasing",
+    "rate": 1.012,
+    "pitch": 1.49,
+    "lang": "en-US",
+    "voiceSlot": 67,
+    "visualIdentity": "Bear · introduced game household",
+    "storyContext": "A fragrant family kitchen and a lilac front door. Mateo tends bluebells, and Luna loves helping portion biscuits.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "hollow-bluebell-2",
+    "name": "Luna Rivera",
+    "aliases": [
+      "Luna Rivera",
+      "hollow-bluebell-2",
+      "hollow-bluebell-2"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "cheerful and lightly playful; never mocks grief",
+    "delivery": "bright, lightly lifted delivery",
+    "rate": 0.82,
+    "pitch": 0.97,
+    "lang": "en-US",
+    "voiceSlot": 68,
+    "visualIdentity": "Bear · introduced game household",
+    "storyContext": "A fragrant family kitchen and a lilac front door. Mateo tends bluebells, and Luna loves helping portion biscuits.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "guide-honey",
+    "name": "Beatrice Bumblepaw",
+    "aliases": [
+      "Beatrice Bumblepaw",
+      "guide-honey",
+      "guide-honey"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "precise and thoughtful; distinguishes facts from guesses",
+    "delivery": "clear, evenly paced delivery",
+    "rate": 0.832,
+    "pitch": 1.34,
+    "lang": "en-US",
+    "voiceSlot": 69,
+    "visualIdentity": "Bear · earlier game mentor",
+    "storyContext": "Bottle six jars from Beatrice’s already inspected honey, then seal and label each jar for a cottage. Only the adult beekeeper works with the hives.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "guide-porridge",
+    "name": "Mama Maple",
+    "aliases": [
+      "Mama Maple",
+      "guide-porridge",
+      "guide-porridge"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "steady and protective; explains a boundary calmly",
+    "delivery": "low, steady delivery",
+    "rate": 0.844,
+    "pitch": 0.82,
+    "lang": "en-US",
+    "voiceSlot": 70,
+    "visualIdentity": "Bear · earlier game mentor",
+    "storyContext": "Measure a real six-bowl recipe, follow the cooking order with Mama Maple at the hot stove, and portion breakfast for the cottage lane.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "guide-bridge",
+    "name": "Ranger Juniper",
+    "aliases": [
+      "Ranger Juniper",
+      "guide-bridge",
+      "guide-bridge"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "gentle and observant; remembers small acts of care",
+    "delivery": "gentle, lightly breathy delivery",
+    "rate": 0.856,
+    "pitch": 1.19,
+    "lang": "en-US",
+    "voiceSlot": 71,
+    "visualIdentity": "Bear · earlier game mentor",
+    "storyContext": "Measure the replacement rails on the practice bench, fit four supervised fasteners and inspect the rail before the ranger opens the crossing. No shortcuts around the water.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "town-role-longtime",
+    "name": "A longtime neighbor",
+    "aliases": [
+      "A longtime neighbor",
+      "town-role-longtime",
+      "longtime"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "patient and reflective; leaves room for a reply",
+    "delivery": "unhurried, rounded phrases",
+    "rate": 0.868,
+    "pitch": 1.56,
+    "lang": "en-US",
+    "voiceSlot": 72,
+    "visualIdentity": "Bear · Retired neighbor",
+    "storyContext": "An unnamed supporting town role from the earlier game roster. No personal name or private biography has been supplied.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "town-role-helper",
+    "name": "The workshop helper",
+    "aliases": [
+      "The workshop helper",
+      "town-role-helper",
+      "helper"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "brisk and practical; gives one clear next step",
+    "delivery": "crisp phrases with a measured pause",
+    "rate": 0.88,
+    "pitch": 1.04,
+    "lang": "en-US",
+    "voiceSlot": 73,
+    "visualIdentity": "Bear · Mechanic / workshop helper",
+    "storyContext": "An unnamed supporting town role from the earlier game roster. No personal name or private biography has been supplied.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "town-role-bridgeview",
+    "name": "A Bridgeview neighbor",
+    "aliases": [
+      "A Bridgeview neighbor",
+      "town-role-bridgeview",
+      "bridgeview"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "warm and encouraging; notices another person’s effort",
+    "delivery": "warm, flowing delivery",
+    "rate": 0.892,
+    "pitch": 1.41,
+    "lang": "en-US",
+    "voiceSlot": 74,
+    "visualIdentity": "Bear · Bridgeview neighbor",
+    "storyContext": "An unnamed supporting town role from the earlier game roster. No personal name or private biography has been supplied.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "town-role-icecream",
+    "name": "The ice-cream seller",
+    "aliases": [
+      "The ice-cream seller",
+      "town-role-icecream",
+      "icecream"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "quietly curious; asks before drawing conclusions",
+    "delivery": "soft, deliberate phrasing",
+    "rate": 0.904,
+    "pitch": 0.89,
+    "lang": "en-US",
+    "voiceSlot": 75,
+    "visualIdentity": "Bear · Ice-cream stand seller",
+    "storyContext": "An unnamed supporting town role from the earlier game roster. No personal name or private biography has been supplied.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "town-role-welcome",
+    "name": "A Welcome House visitor",
+    "aliases": [
+      "A Welcome House visitor",
+      "town-role-welcome",
+      "welcome"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "cheerful and lightly playful; never mocks grief",
+    "delivery": "bright, lightly lifted delivery",
+    "rate": 0.916,
+    "pitch": 1.26,
+    "lang": "en-US",
+    "voiceSlot": 76,
+    "visualIdentity": "Bear · Transitioning visitor",
+    "storyContext": "An unnamed supporting town role from the earlier game roster. No personal name or private biography has been supplied.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-01",
+    "name": "Maya Fernbrook",
+    "aliases": [
+      "Maya Fernbrook",
+      "camp-cub-01",
+      "cub-01"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "curious and patient",
+    "delivery": "clear, evenly paced delivery",
+    "rate": 0.928,
+    "pitch": 0.74,
+    "lang": "en-US",
+    "voiceSlot": 77,
+    "visualIdentity": "Bear cub · girl",
+    "storyContext": "curious and patient; enjoys nature journals.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-02",
+    "name": "Noah Alderleaf",
+    "aliases": [
+      "Noah Alderleaf",
+      "camp-cub-02",
+      "cub-02"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "cheerful and practical",
+    "delivery": "low, steady delivery",
+    "rate": 0.94,
+    "pitch": 1.11,
+    "lang": "en-US",
+    "voiceSlot": 78,
+    "visualIdentity": "Bear cub · boy",
+    "storyContext": "cheerful and practical; enjoys woodland crafts.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-03",
+    "name": "Zuri Pinehaven",
+    "aliases": [
+      "Zuri Pinehaven",
+      "camp-cub-03",
+      "cub-03"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "quiet and observant",
+    "delivery": "gentle, lightly breathy delivery",
+    "rate": 0.952,
+    "pitch": 1.48,
+    "lang": "en-US",
+    "voiceSlot": 79,
+    "visualIdentity": "Bear cub · girl",
+    "storyContext": "quiet and observant; enjoys cooperative games.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-04",
+    "name": "Leo Mossbank",
+    "aliases": [
+      "Leo Mossbank",
+      "camp-cub-04",
+      "cub-04"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "playful and thoughtful",
+    "delivery": "unhurried, rounded phrases",
+    "rate": 0.964,
+    "pitch": 0.96,
+    "lang": "en-US",
+    "voiceSlot": 80,
+    "visualIdentity": "Bear cub · boy",
+    "storyContext": "playful and thoughtful; enjoys music and rhythm.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-05",
+    "name": "Aiko Cloverfield",
+    "aliases": [
+      "Aiko Cloverfield",
+      "camp-cub-05",
+      "cub-05"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "creative and encouraging",
+    "delivery": "crisp phrases with a measured pause",
+    "rate": 0.976,
+    "pitch": 1.33,
+    "lang": "en-US",
+    "voiceSlot": 81,
+    "visualIdentity": "Bear cub · girl",
+    "storyContext": "creative and encouraging; enjoys science and building.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-06",
+    "name": "Elias Birchwood",
+    "aliases": [
+      "Elias Birchwood",
+      "camp-cub-06",
+      "cub-06"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "curious and patient",
+    "delivery": "warm, flowing delivery",
+    "rate": 0.988,
+    "pitch": 0.81,
+    "lang": "en-US",
+    "voiceSlot": 82,
+    "visualIdentity": "Bear cub · boy",
+    "storyContext": "curious and patient; enjoys nature journals.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-07",
+    "name": "Mei Willowmere",
+    "aliases": [
+      "Mei Willowmere",
+      "camp-cub-07",
+      "cub-07"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "cheerful and practical",
+    "delivery": "soft, deliberate phrasing",
+    "rate": 1,
+    "pitch": 1.18,
+    "lang": "en-US",
+    "voiceSlot": 83,
+    "visualIdentity": "Bear cub · girl",
+    "storyContext": "cheerful and practical; enjoys woodland crafts.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-08",
+    "name": "Jonah Oakridge",
+    "aliases": [
+      "Jonah Oakridge",
+      "camp-cub-08",
+      "cub-08"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "quiet and observant",
+    "delivery": "bright, lightly lifted delivery",
+    "rate": 1.012,
+    "pitch": 1.55,
+    "lang": "en-US",
+    "voiceSlot": 84,
+    "visualIdentity": "Bear cub · boy",
+    "storyContext": "quiet and observant; enjoys cooperative games.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-09",
+    "name": "Imani Sunvale",
+    "aliases": [
+      "Imani Sunvale",
+      "camp-cub-09",
+      "cub-09"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "playful and thoughtful",
+    "delivery": "clear, evenly paced delivery",
+    "rate": 0.82,
+    "pitch": 1.03,
+    "lang": "en-US",
+    "voiceSlot": 85,
+    "visualIdentity": "Bear cub · girl",
+    "storyContext": "playful and thoughtful; enjoys music and rhythm.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-10",
+    "name": "Mateo Brookstone",
+    "aliases": [
+      "Mateo Brookstone",
+      "camp-cub-10",
+      "cub-10"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "creative and encouraging",
+    "delivery": "low, steady delivery",
+    "rate": 0.832,
+    "pitch": 1.4,
+    "lang": "en-US",
+    "voiceSlot": 86,
+    "visualIdentity": "Bear cub · boy",
+    "storyContext": "creative and encouraging; enjoys science and building.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-11",
+    "name": "Sora Juniper",
+    "aliases": [
+      "Sora Juniper",
+      "camp-cub-11",
+      "cub-11"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "curious and patient",
+    "delivery": "gentle, lightly breathy delivery",
+    "rate": 0.844,
+    "pitch": 0.88,
+    "lang": "en-US",
+    "voiceSlot": 87,
+    "visualIdentity": "Bear cub · girl",
+    "storyContext": "curious and patient; enjoys nature journals.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-12",
+    "name": "Caleb Reedpath",
+    "aliases": [
+      "Caleb Reedpath",
+      "camp-cub-12",
+      "cub-12"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "cheerful and practical",
+    "delivery": "unhurried, rounded phrases",
+    "rate": 0.856,
+    "pitch": 1.25,
+    "lang": "en-US",
+    "voiceSlot": 88,
+    "visualIdentity": "Bear cub · boy",
+    "storyContext": "cheerful and practical; enjoys woodland crafts.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-13",
+    "name": "Amara Hazelwood",
+    "aliases": [
+      "Amara Hazelwood",
+      "camp-cub-13",
+      "cub-13"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "quiet and observant",
+    "delivery": "crisp phrases with a measured pause",
+    "rate": 0.868,
+    "pitch": 0.73,
+    "lang": "en-US",
+    "voiceSlot": 89,
+    "visualIdentity": "Bear cub · girl",
+    "storyContext": "quiet and observant; enjoys cooperative games.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-14",
+    "name": "Felix Cedarvale",
+    "aliases": [
+      "Felix Cedarvale",
+      "camp-cub-14",
+      "cub-14"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "playful and thoughtful",
+    "delivery": "warm, flowing delivery",
+    "rate": 0.88,
+    "pitch": 1.1,
+    "lang": "en-US",
+    "voiceSlot": 90,
+    "visualIdentity": "Bear cub · boy",
+    "storyContext": "playful and thoughtful; enjoys music and rhythm.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-15",
+    "name": "Nia Maplebrook",
+    "aliases": [
+      "Nia Maplebrook",
+      "camp-cub-15",
+      "cub-15"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "creative and encouraging",
+    "delivery": "soft, deliberate phrasing",
+    "rate": 0.892,
+    "pitch": 1.47,
+    "lang": "en-US",
+    "voiceSlot": 91,
+    "visualIdentity": "Bear cub · girl",
+    "storyContext": "creative and encouraging; enjoys science and building.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-16",
+    "name": "Hugo Brambleton",
+    "aliases": [
+      "Hugo Brambleton",
+      "camp-cub-16",
+      "cub-16"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "curious and patient",
+    "delivery": "bright, lightly lifted delivery",
+    "rate": 0.904,
+    "pitch": 0.95,
+    "lang": "en-US",
+    "voiceSlot": 92,
+    "visualIdentity": "Bear cub · boy",
+    "storyContext": "curious and patient; enjoys nature journals.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-17",
+    "name": "Leila Meadowfern",
+    "aliases": [
+      "Leila Meadowfern",
+      "camp-cub-17",
+      "cub-17"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "cheerful and practical",
+    "delivery": "clear, evenly paced delivery",
+    "rate": 0.916,
+    "pitch": 1.32,
+    "lang": "en-US",
+    "voiceSlot": 93,
+    "visualIdentity": "Bear cub · girl",
+    "storyContext": "cheerful and practical; enjoys woodland crafts.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-18",
+    "name": "Owen Riverpine",
+    "aliases": [
+      "Owen Riverpine",
+      "camp-cub-18",
+      "cub-18"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "quiet and observant",
+    "delivery": "low, steady delivery",
+    "rate": 0.928,
+    "pitch": 0.8,
+    "lang": "en-US",
+    "voiceSlot": 94,
+    "visualIdentity": "Bear cub · boy",
+    "storyContext": "quiet and observant; enjoys cooperative games.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-19",
+    "name": "Priya Dawnridge",
+    "aliases": [
+      "Priya Dawnridge",
+      "camp-cub-19",
+      "cub-19"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "playful and thoughtful",
+    "delivery": "gentle, lightly breathy delivery",
+    "rate": 0.94,
+    "pitch": 1.17,
+    "lang": "en-US",
+    "voiceSlot": 95,
+    "visualIdentity": "Bear cub · girl",
+    "storyContext": "playful and thoughtful; enjoys music and rhythm.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-20",
+    "name": "Theo Greenbough",
+    "aliases": [
+      "Theo Greenbough",
+      "camp-cub-20",
+      "cub-20"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "creative and encouraging",
+    "delivery": "unhurried, rounded phrases",
+    "rate": 0.952,
+    "pitch": 1.54,
+    "lang": "en-US",
+    "voiceSlot": 96,
+    "visualIdentity": "Bear cub · boy",
+    "storyContext": "creative and encouraging; enjoys science and building.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-21",
+    "name": "Hana Silverleaf",
+    "aliases": [
+      "Hana Silverleaf",
+      "camp-cub-21",
+      "cub-21"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "curious and patient",
+    "delivery": "crisp phrases with a measured pause",
+    "rate": 0.964,
+    "pitch": 1.02,
+    "lang": "en-US",
+    "voiceSlot": 97,
+    "visualIdentity": "Bear cub · girl",
+    "storyContext": "curious and patient; enjoys nature journals.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-22",
+    "name": "Isaac Foxglove",
+    "aliases": [
+      "Isaac Foxglove",
+      "camp-cub-22",
+      "cub-22"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "cheerful and practical",
+    "delivery": "warm, flowing delivery",
+    "rate": 0.976,
+    "pitch": 1.39,
+    "lang": "en-US",
+    "voiceSlot": 98,
+    "visualIdentity": "Bear cub · boy",
+    "storyContext": "cheerful and practical; enjoys woodland crafts.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-23",
+    "name": "Esme Honeyfern",
+    "aliases": [
+      "Esme Honeyfern",
+      "camp-cub-23",
+      "cub-23"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "quiet and observant",
+    "delivery": "soft, deliberate phrasing",
+    "rate": 0.988,
+    "pitch": 0.87,
+    "lang": "en-US",
+    "voiceSlot": 99,
+    "visualIdentity": "Bear cub · girl",
+    "storyContext": "quiet and observant; enjoys cooperative games.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-24",
+    "name": "Malik Springwell",
+    "aliases": [
+      "Malik Springwell",
+      "camp-cub-24",
+      "cub-24"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "playful and thoughtful",
+    "delivery": "bright, lightly lifted delivery",
+    "rate": 1,
+    "pitch": 1.24,
+    "lang": "en-US",
+    "voiceSlot": 100,
+    "visualIdentity": "Bear cub · boy",
+    "storyContext": "playful and thoughtful; enjoys music and rhythm.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-25",
+    "name": "Yuna Copperwood",
+    "aliases": [
+      "Yuna Copperwood",
+      "camp-cub-25",
+      "cub-25"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "creative and encouraging",
+    "delivery": "clear, evenly paced delivery",
+    "rate": 1.012,
+    "pitch": 1.61,
+    "lang": "en-US",
+    "voiceSlot": 101,
+    "visualIdentity": "Bear cub · girl",
+    "storyContext": "creative and encouraging; enjoys science and building.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-26",
+    "name": "Aria Mossgrove",
+    "aliases": [
+      "Aria Mossgrove",
+      "camp-cub-26",
+      "cub-26"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "curious and patient",
+    "delivery": "low, steady delivery",
+    "rate": 0.82,
+    "pitch": 1.09,
+    "lang": "en-US",
+    "voiceSlot": 102,
+    "visualIdentity": "Bear cub · boy",
+    "storyContext": "curious and patient; enjoys nature journals.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-27",
+    "name": "Finn Applefern",
+    "aliases": [
+      "Finn Applefern",
+      "camp-cub-27",
+      "cub-27"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "cheerful and practical",
+    "delivery": "gentle, lightly breathy delivery",
+    "rate": 0.832,
+    "pitch": 1.46,
+    "lang": "en-US",
+    "voiceSlot": 103,
+    "visualIdentity": "Bear cub · girl",
+    "storyContext": "cheerful and practical; enjoys woodland crafts.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-28",
+    "name": "Sanaa Elmbridge",
+    "aliases": [
+      "Sanaa Elmbridge",
+      "camp-cub-28",
+      "cub-28"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "quiet and observant",
+    "delivery": "unhurried, rounded phrases",
+    "rate": 0.844,
+    "pitch": 0.94,
+    "lang": "en-US",
+    "voiceSlot": 104,
+    "visualIdentity": "Bear cub · boy",
+    "storyContext": "quiet and observant; enjoys cooperative games.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-29",
+    "name": "Luca Willowglade",
+    "aliases": [
+      "Luca Willowglade",
+      "camp-cub-29",
+      "cub-29"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "playful and thoughtful",
+    "delivery": "crisp phrases with a measured pause",
+    "rate": 0.856,
+    "pitch": 1.31,
+    "lang": "en-US",
+    "voiceSlot": 105,
+    "visualIdentity": "Bear cub · girl",
+    "storyContext": "playful and thoughtful; enjoys music and rhythm.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-30",
+    "name": "Keiko Rosepath",
+    "aliases": [
+      "Keiko Rosepath",
+      "camp-cub-30",
+      "cub-30"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "creative and encouraging",
+    "delivery": "warm, flowing delivery",
+    "rate": 0.868,
+    "pitch": 0.79,
+    "lang": "en-US",
+    "voiceSlot": 106,
+    "visualIdentity": "Bear cub · boy",
+    "storyContext": "creative and encouraging; enjoys science and building.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-31",
+    "name": "Adrian Pinecross",
+    "aliases": [
+      "Adrian Pinecross",
+      "camp-cub-31",
+      "cub-31"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "curious and patient",
+    "delivery": "soft, deliberate phrasing",
+    "rate": 0.88,
+    "pitch": 1.16,
+    "lang": "en-US",
+    "voiceSlot": 107,
+    "visualIdentity": "Bear cub · girl",
+    "storyContext": "curious and patient; enjoys nature journals.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-32",
+    "name": "Lina Brookhaven",
+    "aliases": [
+      "Lina Brookhaven",
+      "camp-cub-32",
+      "cub-32"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "cheerful and practical",
+    "delivery": "bright, lightly lifted delivery",
+    "rate": 0.892,
+    "pitch": 1.53,
+    "lang": "en-US",
+    "voiceSlot": 108,
+    "visualIdentity": "Bear cub · boy",
+    "storyContext": "cheerful and practical; enjoys woodland crafts.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-33",
+    "name": "Micah Meadowvale",
+    "aliases": [
+      "Micah Meadowvale",
+      "camp-cub-33",
+      "cub-33"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "quiet and observant",
+    "delivery": "clear, evenly paced delivery",
+    "rate": 0.904,
+    "pitch": 1.01,
+    "lang": "en-US",
+    "voiceSlot": 109,
+    "visualIdentity": "Bear cub · girl",
+    "storyContext": "quiet and observant; enjoys cooperative games.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-34",
+    "name": "Nadia Fernridge",
+    "aliases": [
+      "Nadia Fernridge",
+      "camp-cub-34",
+      "cub-34"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "playful and thoughtful",
+    "delivery": "low, steady delivery",
+    "rate": 0.916,
+    "pitch": 1.38,
+    "lang": "en-US",
+    "voiceSlot": 110,
+    "visualIdentity": "Bear cub · boy",
+    "storyContext": "playful and thoughtful; enjoys music and rhythm.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-35",
+    "name": "Rafael Amberleaf",
+    "aliases": [
+      "Rafael Amberleaf",
+      "camp-cub-35",
+      "cub-35"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "creative and encouraging",
+    "delivery": "gentle, lightly breathy delivery",
+    "rate": 0.928,
+    "pitch": 0.86,
+    "lang": "en-US",
+    "voiceSlot": 111,
+    "visualIdentity": "Bear cub · girl",
+    "storyContext": "creative and encouraging; enjoys science and building.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-36",
+    "name": "Mina Cedarbrook",
+    "aliases": [
+      "Mina Cedarbrook",
+      "camp-cub-36",
+      "cub-36"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "curious and patient",
+    "delivery": "unhurried, rounded phrases",
+    "rate": 0.94,
+    "pitch": 1.23,
+    "lang": "en-US",
+    "voiceSlot": 112,
+    "visualIdentity": "Bear cub · boy",
+    "storyContext": "curious and patient; enjoys nature journals.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-37",
+    "name": "Ezra Chestnut",
+    "aliases": [
+      "Ezra Chestnut",
+      "camp-cub-37",
+      "cub-37"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "cheerful and practical",
+    "delivery": "crisp phrases with a measured pause",
+    "rate": 0.952,
+    "pitch": 1.6,
+    "lang": "en-US",
+    "voiceSlot": 113,
+    "visualIdentity": "Bear cub · girl",
+    "storyContext": "cheerful and practical; enjoys woodland crafts.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-38",
+    "name": "Anika Willowstep",
+    "aliases": [
+      "Anika Willowstep",
+      "camp-cub-38",
+      "cub-38"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "quiet and observant",
+    "delivery": "warm, flowing delivery",
+    "rate": 0.964,
+    "pitch": 1.08,
+    "lang": "en-US",
+    "voiceSlot": 114,
+    "visualIdentity": "Bear cub · boy",
+    "storyContext": "quiet and observant; enjoys cooperative games.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-39",
+    "name": "Silas Greenbank",
+    "aliases": [
+      "Silas Greenbank",
+      "camp-cub-39",
+      "cub-39"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "playful and thoughtful",
+    "delivery": "soft, deliberate phrasing",
+    "rate": 0.976,
+    "pitch": 1.45,
+    "lang": "en-US",
+    "voiceSlot": 115,
+    "visualIdentity": "Bear cub · girl",
+    "storyContext": "playful and thoughtful; enjoys music and rhythm.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-40",
+    "name": "Jada Sunbrook",
+    "aliases": [
+      "Jada Sunbrook",
+      "camp-cub-40",
+      "cub-40"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "creative and encouraging",
+    "delivery": "bright, lightly lifted delivery",
+    "rate": 0.988,
+    "pitch": 0.93,
+    "lang": "en-US",
+    "voiceSlot": 116,
+    "visualIdentity": "Bear cub · boy",
+    "storyContext": "creative and encouraging; enjoys science and building.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-41",
+    "name": "Oscar Clayfield",
+    "aliases": [
+      "Oscar Clayfield",
+      "camp-cub-41",
+      "cub-41"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "curious and patient",
+    "delivery": "clear, evenly paced delivery",
+    "rate": 1,
+    "pitch": 1.3,
+    "lang": "en-US",
+    "voiceSlot": 117,
+    "visualIdentity": "Bear cub · girl",
+    "storyContext": "curious and patient; enjoys nature journals.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-42",
+    "name": "Elena Birchglade",
+    "aliases": [
+      "Elena Birchglade",
+      "camp-cub-42",
+      "cub-42"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "cheerful and practical",
+    "delivery": "low, steady delivery",
+    "rate": 1.012,
+    "pitch": 0.78,
+    "lang": "en-US",
+    "voiceSlot": 118,
+    "visualIdentity": "Bear cub · boy",
+    "storyContext": "cheerful and practical; enjoys woodland crafts.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-43",
+    "name": "Rowan Maplewell",
+    "aliases": [
+      "Rowan Maplewell",
+      "camp-cub-43",
+      "cub-43"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "quiet and observant",
+    "delivery": "gentle, lightly breathy delivery",
+    "rate": 0.82,
+    "pitch": 1.15,
+    "lang": "en-US",
+    "voiceSlot": 119,
+    "visualIdentity": "Bear cub · girl",
+    "storyContext": "quiet and observant; enjoys cooperative games.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-44",
+    "name": "Mira Rainfern",
+    "aliases": [
+      "Mira Rainfern",
+      "camp-cub-44",
+      "cub-44"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "playful and thoughtful",
+    "delivery": "unhurried, rounded phrases",
+    "rate": 0.832,
+    "pitch": 1.52,
+    "lang": "en-US",
+    "voiceSlot": 120,
+    "visualIdentity": "Bear cub · boy",
+    "storyContext": "playful and thoughtful; enjoys music and rhythm.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-45",
+    "name": "Tobias Cloverbank",
+    "aliases": [
+      "Tobias Cloverbank",
+      "camp-cub-45",
+      "cub-45"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "creative and encouraging",
+    "delivery": "crisp phrases with a measured pause",
+    "rate": 0.844,
+    "pitch": 1,
+    "lang": "en-US",
+    "voiceSlot": 121,
+    "visualIdentity": "Bear cub · girl",
+    "storyContext": "creative and encouraging; enjoys science and building.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-46",
+    "name": "Nori Windridge",
+    "aliases": [
+      "Nori Windridge",
+      "camp-cub-46",
+      "cub-46"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "curious and patient",
+    "delivery": "warm, flowing delivery",
+    "rate": 0.856,
+    "pitch": 1.37,
+    "lang": "en-US",
+    "voiceSlot": 122,
+    "visualIdentity": "Bear cub · boy",
+    "storyContext": "curious and patient; enjoys nature journals.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-47",
+    "name": "Gabriel Oakwell",
+    "aliases": [
+      "Gabriel Oakwell",
+      "camp-cub-47",
+      "cub-47"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "cheerful and practical",
+    "delivery": "soft, deliberate phrasing",
+    "rate": 0.868,
+    "pitch": 0.85,
+    "lang": "en-US",
+    "voiceSlot": 123,
+    "visualIdentity": "Bear cub · girl",
+    "storyContext": "cheerful and practical; enjoys woodland crafts.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-48",
+    "name": "Isla Dawnwood",
+    "aliases": [
+      "Isla Dawnwood",
+      "camp-cub-48",
+      "cub-48"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "quiet and observant",
+    "delivery": "bright, lightly lifted delivery",
+    "rate": 0.88,
+    "pitch": 1.22,
+    "lang": "en-US",
+    "voiceSlot": 124,
+    "visualIdentity": "Bear cub · boy",
+    "storyContext": "quiet and observant; enjoys cooperative games.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-49",
+    "name": "Darius Reedvale",
+    "aliases": [
+      "Darius Reedvale",
+      "camp-cub-49",
+      "cub-49"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "playful and thoughtful",
+    "delivery": "clear, evenly paced delivery",
+    "rate": 0.892,
+    "pitch": 1.59,
+    "lang": "en-US",
+    "voiceSlot": 125,
+    "visualIdentity": "Bear cub · girl",
+    "storyContext": "playful and thoughtful; enjoys music and rhythm.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "camp-cub-50",
+    "name": "Suki Clearbrook",
+    "aliases": [
+      "Suki Clearbrook",
+      "camp-cub-50",
+      "cub-50"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "creative and encouraging",
+    "delivery": "low, steady delivery",
+    "rate": 0.904,
+    "pitch": 1.07,
+    "lang": "en-US",
+    "voiceSlot": 126,
+    "visualIdentity": "Bear cub · boy",
+    "storyContext": "creative and encouraging; enjoys science and building.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "game-treasurer",
+    "name": "The town treasurer",
+    "aliases": [
+      "The town treasurer",
+      "game-treasurer",
+      "treasurer"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "gentle and observant; remembers small acts of care",
+    "delivery": "gentle, lightly breathy delivery",
+    "rate": 0.916,
+    "pitch": 1.44,
+    "lang": "en-US",
+    "voiceSlot": 127,
+    "visualIdentity": "Bear · civic finance officer",
+    "storyContext": "Keeps Honeybrook’s Fair fund, records sales and operating reserves, and publishes balanced receipts. The author has not assigned a personal name or manuscript biography.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "reception-arrival-family-1",
+    "name": "Juniper Reed and family",
+    "aliases": [
+      "Juniper Reed and family",
+      "reception-arrival-family-1",
+      "arrival-family-1"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "Quietly observant and thoughtful",
+    "delivery": "unhurried, rounded phrases",
+    "rate": 0.928,
+    "pitch": 0.92,
+    "lang": "en-US",
+    "voiceSlot": 128,
+    "visualIdentity": "Juniper Reed · Warm brown · Brown; Avery Reed · Cinnamon brown · Amber; Lark Reed · Dark chestnut · Hazel; Fenn Reed · Honey brown · Dark brown",
+    "storyContext": "Willowmere Riverside Cottage, Willowmere Edwin Reed and Nora Reed 14 Willow Lane, Willowmere Our rented cottage was sold, and we needed somewhere our whole family could stay together. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Settle the household, learn the town, find suitable work and eventually move together into an available cottage.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "reception-arrival-quiet-1",
+    "name": "Pippa Moss",
+    "aliases": [
+      "Pippa Moss",
+      "reception-arrival-quiet-1",
+      "arrival-quiet-1"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "Quietly observant and thoughtful",
+    "delivery": "crisp phrases with a measured pause",
+    "rate": 0.94,
+    "pitch": 1.29,
+    "lang": "en-US",
+    "voiceSlot": 129,
+    "visualIdentity": "Pippa Moss · Warm brown · Brown",
+    "storyContext": "Maplecross Riverside Cottage, Maplecross Arthur Moss and Celia Moss 16 Willow Lane, Maplecross The adults caring for me left me behind. A kind traveller helped me reach somewhere safe. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "reception-arrival-bunk-1",
+    "name": "Hugo Brook",
+    "aliases": [
+      "Hugo Brook",
+      "reception-arrival-bunk-1",
+      "arrival-bunk-1"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "Quietly observant and thoughtful",
+    "delivery": "warm, flowing delivery",
+    "rate": 0.952,
+    "pitch": 0.77,
+    "lang": "en-US",
+    "voiceSlot": 130,
+    "visualIdentity": "Hugo Brook · Warm brown · Brown",
+    "storyContext": "Fernwick Riverside Cottage, Fernwick Benedict Brook and Ivy Brook 18 Willow Lane, Fernwick I was treated as though I did not belong in my old settlement. I wanted a kinder place to begin again. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "reception-arrival-family-2",
+    "name": "Mara Alder and family",
+    "aliases": [
+      "Mara Alder and family",
+      "reception-arrival-family-2",
+      "arrival-family-2"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "Warm once comfortable; patient with plans",
+    "delivery": "soft, deliberate phrasing",
+    "rate": 0.964,
+    "pitch": 1.14,
+    "lang": "en-US",
+    "voiceSlot": 131,
+    "visualIdentity": "Mara Alder · Cinnamon brown · Amber; Milo Alder · Honey brown · Dark brown; Dove Alder · Soft russet · Brown",
+    "storyContext": "Briarford Old Mill Cottage, Briarford Silas Alder and Mabel Alder 21 Mill Road, Briarford Repairs made our old home temporarily unsafe to live in. We left together with our clothes and keepsakes. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Settle the household, learn the town, find suitable work and eventually move together into an available cottage.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "reception-arrival-quiet-2",
+    "name": "Nico Rowan",
+    "aliases": [
+      "Nico Rowan",
+      "reception-arrival-quiet-2",
+      "arrival-quiet-2"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "Warm once comfortable; patient with plans",
+    "delivery": "bright, lightly lifted delivery",
+    "rate": 0.976,
+    "pitch": 1.51,
+    "lang": "en-US",
+    "voiceSlot": 132,
+    "visualIdentity": "Nico Rowan · Cinnamon brown · Amber",
+    "storyContext": "Cedar Glen Old Mill Cottage, Cedar Glen Reuben Rowan and Etta Rowan 23 Mill Road, Cedar Glen I became separated from my family on a travelling route. Trusted adults are helping with a careful search. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "reception-arrival-bunk-2",
+    "name": "Cora Linden",
+    "aliases": [
+      "Cora Linden",
+      "reception-arrival-bunk-2",
+      "arrival-bunk-2"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "Warm once comfortable; patient with plans",
+    "delivery": "clear, evenly paced delivery",
+    "rate": 0.988,
+    "pitch": 0.99,
+    "lang": "en-US",
+    "voiceSlot": 133,
+    "visualIdentity": "Cora Linden · Cinnamon brown · Amber",
+    "storyContext": "Acorn Vale Old Mill Cottage, Acorn Vale Walter Linden and Pearl Linden 25 Mill Road, Acorn Vale My old lodging closed. I travelled with my small bag and tools to find a community. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "reception-arrival-family-3",
+    "name": "Ellis Brook and family",
+    "aliases": [
+      "Ellis Brook and family",
+      "reception-arrival-family-3",
+      "arrival-family-3"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "Curious, creative and fond of familiar routines",
+    "delivery": "low, steady delivery",
+    "rate": 1,
+    "pitch": 1.36,
+    "lang": "en-US",
+    "voiceSlot": 134,
+    "visualIdentity": "Ellis Brook · Dark chestnut · Hazel; Morgan Brook · Honey brown · Dark brown; Briar Brook · Soft russet · Brown; Calla Brook · Deep brown · Amber",
+    "storyContext": "Maplecross Riverside Cottage, Maplecross Arthur Brook and Celia Brook 28 Orchard Close, Maplecross The workshop where we worked closed. We needed a fresh start without separating the family. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Settle the household, learn the town, find suitable work and eventually move together into an available cottage.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "reception-arrival-quiet-3",
+    "name": "Ember Vale",
+    "aliases": [
+      "Ember Vale",
+      "reception-arrival-quiet-3",
+      "arrival-quiet-3"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "Curious, creative and fond of familiar routines",
+    "delivery": "gentle, lightly breathy delivery",
+    "rate": 1.012,
+    "pitch": 0.84,
+    "lang": "en-US",
+    "voiceSlot": 135,
+    "visualIdentity": "Ember Vale · Dark chestnut · Hazel",
+    "storyContext": "Fernwick Riverside Cottage, Fernwick Benedict Vale and Ivy Vale 30 Orchard Close, Fernwick My parents died, and there was no familiar caregiver able to keep me. I brought a treasured keepsake. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "reception-arrival-bunk-3",
+    "name": "Felix Moss and a travelling friend",
+    "aliases": [
+      "Felix Moss and a travelling friend",
+      "reception-arrival-bunk-3",
+      "arrival-bunk-3"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "Curious, creative and fond of familiar routines",
+    "delivery": "unhurried, rounded phrases",
+    "rate": 0.82,
+    "pitch": 1.21,
+    "lang": "en-US",
+    "voiceSlot": 136,
+    "visualIdentity": "Felix Moss · Dark chestnut · Hazel; Morgan Moss · Honey brown · Dark brown",
+    "storyContext": "Mossbridge Riverside Cottage, Mossbridge Gideon Moss and Olive Moss 32 Orchard Close, Mossbridge I had drifted between places for too long. I decided to seek a home, not just a bed. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "reception-arrival-family-4",
+    "name": "Tessa Finch and family",
+    "aliases": [
+      "Tessa Finch and family",
+      "reception-arrival-family-4",
+      "arrival-family-4"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "Quietly observant and thoughtful",
+    "delivery": "crisp phrases with a measured pause",
+    "rate": 0.832,
+    "pitch": 1.58,
+    "lang": "en-US",
+    "voiceSlot": 137,
+    "visualIdentity": "Tessa Finch · Honey brown · Dark brown; Laurel Finch · Soft russet · Brown; Sora Finch · Deep brown · Amber; Joss Finch · Warm brown · Hazel",
+    "storyContext": "Cedar Glen Old Mill Cottage, Cedar Glen Reuben Finch and Etta Finch 35 Brookside Walk, Cedar Glen Our rented cottage was sold, and we needed somewhere our whole family could stay together. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Settle the household, learn the town, find suitable work and eventually move together into an available cottage.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "reception-arrival-quiet-4",
+    "name": "Otis Finch",
+    "aliases": [
+      "Otis Finch",
+      "reception-arrival-quiet-4",
+      "arrival-quiet-4"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "Quietly observant and thoughtful",
+    "delivery": "warm, flowing delivery",
+    "rate": 0.844,
+    "pitch": 1.06,
+    "lang": "en-US",
+    "voiceSlot": 138,
+    "visualIdentity": "Otis Finch · Honey brown · Dark brown",
+    "storyContext": "Acorn Vale Old Mill Cottage, Acorn Vale Walter Finch and Pearl Finch 37 Brookside Walk, Acorn Vale The adults caring for me left me behind. A kind traveller helped me reach somewhere safe. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "reception-arrival-bunk-4",
+    "name": "Iris Vale",
+    "aliases": [
+      "Iris Vale",
+      "reception-arrival-bunk-4",
+      "arrival-bunk-4"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "Quietly observant and thoughtful",
+    "delivery": "soft, deliberate phrasing",
+    "rate": 0.856,
+    "pitch": 1.43,
+    "lang": "en-US",
+    "voiceSlot": 139,
+    "visualIdentity": "Iris Vale · Honey brown · Dark brown",
+    "storyContext": "Pinewater Old Mill Cottage, Pinewater Leonard Vale and Elsie Vale 39 Brookside Walk, Pinewater I was treated as though I did not belong in my old settlement. I wanted a kinder place to begin again. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "reception-arrival-family-5",
+    "name": "Rowan Vale and family",
+    "aliases": [
+      "Rowan Vale and family",
+      "reception-arrival-family-5",
+      "arrival-family-5"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "Warm once comfortable; patient with plans",
+    "delivery": "bright, lightly lifted delivery",
+    "rate": 0.868,
+    "pitch": 0.91,
+    "lang": "en-US",
+    "voiceSlot": 140,
+    "visualIdentity": "Rowan Vale · Soft russet · Brown; Fenn Vale · Warm brown · Hazel; Willa Vale · Cinnamon brown · Dark brown",
+    "storyContext": "Fernwick Riverside Cottage, Fernwick Benedict Vale and Ivy Vale 42 Birch Crescent, Fernwick Repairs made our old home temporarily unsafe to live in. We left together with our clothes and keepsakes. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Settle the household, learn the town, find suitable work and eventually move together into an available cottage.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "reception-arrival-quiet-5",
+    "name": "Lumi Birch",
+    "aliases": [
+      "Lumi Birch",
+      "reception-arrival-quiet-5",
+      "arrival-quiet-5"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "Warm once comfortable; patient with plans",
+    "delivery": "clear, evenly paced delivery",
+    "rate": 0.88,
+    "pitch": 1.28,
+    "lang": "en-US",
+    "voiceSlot": 141,
+    "visualIdentity": "Lumi Birch · Soft russet · Brown",
+    "storyContext": "Mossbridge Riverside Cottage, Mossbridge Gideon Birch and Olive Birch 44 Birch Crescent, Mossbridge I became separated from my family on a travelling route. Trusted adults are helping with a careful search. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "reception-arrival-bunk-5",
+    "name": "Nolan Reed",
+    "aliases": [
+      "Nolan Reed",
+      "reception-arrival-bunk-5",
+      "arrival-bunk-5"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "Warm once comfortable; patient with plans",
+    "delivery": "low, steady delivery",
+    "rate": 0.892,
+    "pitch": 0.76,
+    "lang": "en-US",
+    "voiceSlot": 142,
+    "visualIdentity": "Nolan Reed · Soft russet · Brown",
+    "storyContext": "Hazelcombe Riverside Cottage, Hazelcombe Alfred Reed and Viola Reed 46 Birch Crescent, Hazelcombe My old lodging closed. I travelled with my small bag and tools to find a community. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "reception-arrival-family-6",
+    "name": "Ada Meadow and family",
+    "aliases": [
+      "Ada Meadow and family",
+      "reception-arrival-family-6",
+      "arrival-family-6"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "Curious, creative and fond of familiar routines",
+    "delivery": "gentle, lightly breathy delivery",
+    "rate": 0.904,
+    "pitch": 1.13,
+    "lang": "en-US",
+    "voiceSlot": 143,
+    "visualIdentity": "Ada Meadow · Deep brown · Amber; Finley Meadow · Warm brown · Hazel; Dove Meadow · Cinnamon brown · Dark brown; Beck Meadow · Dark chestnut · Brown",
+    "storyContext": "Acorn Vale Old Mill Cottage, Acorn Vale Walter Meadow and Pearl Meadow 49 Willow Lane, Acorn Vale The workshop where we worked closed. We needed a fresh start without separating the family. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Settle the household, learn the town, find suitable work and eventually move together into an available cottage.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "reception-arrival-quiet-6",
+    "name": "Kit Meadow",
+    "aliases": [
+      "Kit Meadow",
+      "reception-arrival-quiet-6",
+      "arrival-quiet-6"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "Curious, creative and fond of familiar routines",
+    "delivery": "unhurried, rounded phrases",
+    "rate": 0.916,
+    "pitch": 1.5,
+    "lang": "en-US",
+    "voiceSlot": 144,
+    "visualIdentity": "Kit Meadow · Deep brown · Amber",
+    "storyContext": "Pinewater Old Mill Cottage, Pinewater Leonard Meadow and Elsie Meadow 51 Willow Lane, Pinewater My parents died, and there was no familiar caregiver able to keep me. I brought a treasured keepsake. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "reception-arrival-bunk-6",
+    "name": "Sylvie Ash and a travelling friend",
+    "aliases": [
+      "Sylvie Ash and a travelling friend",
+      "reception-arrival-bunk-6",
+      "arrival-bunk-6"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "Curious, creative and fond of familiar routines",
+    "delivery": "crisp phrases with a measured pause",
+    "rate": 0.928,
+    "pitch": 0.98,
+    "lang": "en-US",
+    "voiceSlot": 145,
+    "visualIdentity": "Sylvie Ash · Deep brown · Amber; Finley Ash · Warm brown · Hazel",
+    "storyContext": "Rosebank Old Mill Cottage, Rosebank Hector Ash and Mina Ash 53 Willow Lane, Rosebank I had drifted between places for too long. I decided to seek a home, not just a bed. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "reception-arrival-family-7",
+    "name": "Owen Glen and family",
+    "aliases": [
+      "Owen Glen and family",
+      "reception-arrival-family-7",
+      "arrival-family-7"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "Quietly observant and thoughtful",
+    "delivery": "warm, flowing delivery",
+    "rate": 0.94,
+    "pitch": 1.35,
+    "lang": "en-US",
+    "voiceSlot": 146,
+    "visualIdentity": "Owen Glen · Warm brown · Hazel; Aspen Glen · Cinnamon brown · Dark brown; Calla Glen · Dark chestnut · Brown; Lark Glen · Honey brown · Amber",
+    "storyContext": "Mossbridge Riverside Cottage, Mossbridge Gideon Glen and Olive Glen 56 Mill Road, Mossbridge Our rented cottage was sold, and we needed somewhere our whole family could stay together. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Settle the household, learn the town, find suitable work and eventually move together into an available cottage.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "reception-arrival-quiet-7",
+    "name": "Rue Glen",
+    "aliases": [
+      "Rue Glen",
+      "reception-arrival-quiet-7",
+      "arrival-quiet-7"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "Quietly observant and thoughtful",
+    "delivery": "soft, deliberate phrasing",
+    "rate": 0.952,
+    "pitch": 0.83,
+    "lang": "en-US",
+    "voiceSlot": 147,
+    "visualIdentity": "Rue Glen · Warm brown · Hazel",
+    "storyContext": "Hazelcombe Riverside Cottage, Hazelcombe Alfred Glen and Viola Glen 58 Mill Road, Hazelcombe The adults caring for me left me behind. A kind traveller helped me reach somewhere safe. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "reception-arrival-bunk-7",
+    "name": "Toby Glen",
+    "aliases": [
+      "Toby Glen",
+      "reception-arrival-bunk-7",
+      "arrival-bunk-7"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "Quietly observant and thoughtful",
+    "delivery": "bright, lightly lifted delivery",
+    "rate": 0.964,
+    "pitch": 1.2,
+    "lang": "en-US",
+    "voiceSlot": 148,
+    "visualIdentity": "Toby Glen · Warm brown · Hazel",
+    "storyContext": "Willowmere Riverside Cottage, Willowmere Edwin Glen and Nora Glen 60 Mill Road, Willowmere I was treated as though I did not belong in my old settlement. I wanted a kinder place to begin again. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "reception-arrival-family-8",
+    "name": "Flora Pine and family",
+    "aliases": [
+      "Flora Pine and family",
+      "reception-arrival-family-8",
+      "arrival-family-8"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "Warm once comfortable; patient with plans",
+    "delivery": "clear, evenly paced delivery",
+    "rate": 0.976,
+    "pitch": 1.57,
+    "lang": "en-US",
+    "voiceSlot": 149,
+    "visualIdentity": "Flora Pine · Cinnamon brown · Dark brown; Joss Pine · Honey brown · Amber; Milo Pine · Soft russet · Hazel",
+    "storyContext": "Pinewater Old Mill Cottage, Pinewater Leonard Pine and Elsie Pine 63 Orchard Close, Pinewater Repairs made our old home temporarily unsafe to live in. We left together with our clothes and keepsakes. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Settle the household, learn the town, find suitable work and eventually move together into an available cottage.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "reception-arrival-quiet-8",
+    "name": "Bram Acorn",
+    "aliases": [
+      "Bram Acorn",
+      "reception-arrival-quiet-8",
+      "arrival-quiet-8"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "Warm once comfortable; patient with plans",
+    "delivery": "low, steady delivery",
+    "rate": 0.988,
+    "pitch": 1.05,
+    "lang": "en-US",
+    "voiceSlot": 150,
+    "visualIdentity": "Bram Acorn · Cinnamon brown · Dark brown",
+    "storyContext": "Rosebank Old Mill Cottage, Rosebank Hector Acorn and Mina Acorn 65 Orchard Close, Rosebank I became separated from my family on a travelling route. Trusted adults are helping with a careful search. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "reception-arrival-bunk-8",
+    "name": "Wren Alder",
+    "aliases": [
+      "Wren Alder",
+      "reception-arrival-bunk-8",
+      "arrival-bunk-8"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "Warm once comfortable; patient with plans",
+    "delivery": "gentle, lightly breathy delivery",
+    "rate": 1,
+    "pitch": 1.42,
+    "lang": "en-US",
+    "voiceSlot": 151,
+    "visualIdentity": "Wren Alder · Cinnamon brown · Dark brown",
+    "storyContext": "Briarford Old Mill Cottage, Briarford Silas Alder and Mabel Alder 67 Orchard Close, Briarford My old lodging closed. I travelled with my small bag and tools to find a community. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "reception-arrival-family-9",
+    "name": "Hollis Dale and family",
+    "aliases": [
+      "Hollis Dale and family",
+      "reception-arrival-family-9",
+      "arrival-family-9"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "Curious, creative and fond of familiar routines",
+    "delivery": "unhurried, rounded phrases",
+    "rate": 1.012,
+    "pitch": 0.9,
+    "lang": "en-US",
+    "voiceSlot": 152,
+    "visualIdentity": "Hollis Dale · Dark chestnut · Brown; Marin Dale · Honey brown · Amber; Willa Dale · Soft russet · Hazel; Briar Dale · Deep brown · Dark brown",
+    "storyContext": "Hazelcombe Riverside Cottage, Hazelcombe Alfred Dale and Viola Dale 70 Brookside Walk, Hazelcombe The workshop where we worked closed. We needed a fresh start without separating the family. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Settle the household, learn the town, find suitable work and eventually move together into an available cottage.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "reception-arrival-quiet-9",
+    "name": "Tansy Reed",
+    "aliases": [
+      "Tansy Reed",
+      "reception-arrival-quiet-9",
+      "arrival-quiet-9"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "Curious, creative and fond of familiar routines",
+    "delivery": "crisp phrases with a measured pause",
+    "rate": 0.82,
+    "pitch": 1.27,
+    "lang": "en-US",
+    "voiceSlot": 153,
+    "visualIdentity": "Tansy Reed · Dark chestnut · Brown",
+    "storyContext": "Willowmere Riverside Cottage, Willowmere Edwin Reed and Nora Reed 72 Brookside Walk, Willowmere My parents died, and there was no familiar caregiver able to keep me. I brought a treasured keepsake. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "reception-arrival-bunk-9",
+    "name": "Orin Pine and a travelling friend",
+    "aliases": [
+      "Orin Pine and a travelling friend",
+      "reception-arrival-bunk-9",
+      "arrival-bunk-9"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "Curious, creative and fond of familiar routines",
+    "delivery": "warm, flowing delivery",
+    "rate": 0.832,
+    "pitch": 0.75,
+    "lang": "en-US",
+    "voiceSlot": 154,
+    "visualIdentity": "Orin Pine · Dark chestnut · Brown; Marin Pine · Honey brown · Amber",
+    "storyContext": "Maplecross Riverside Cottage, Maplecross Arthur Pine and Celia Pine 74 Brookside Walk, Maplecross I had drifted between places for too long. I decided to seek a home, not just a bed. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "reception-arrival-family-10",
+    "name": "Bryn Hazel and family",
+    "aliases": [
+      "Bryn Hazel and family",
+      "reception-arrival-family-10",
+      "arrival-family-10"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "Quietly observant and thoughtful",
+    "delivery": "soft, deliberate phrasing",
+    "rate": 0.844,
+    "pitch": 1.12,
+    "lang": "en-US",
+    "voiceSlot": 155,
+    "visualIdentity": "Bryn Hazel · Honey brown · Amber; Darcy Hazel · Soft russet · Hazel; Beck Hazel · Deep brown · Dark brown; Sora Hazel · Warm brown · Brown",
+    "storyContext": "Rosebank Old Mill Cottage, Rosebank Hector Hazel and Mina Hazel 77 Birch Crescent, Rosebank Our rented cottage was sold, and we needed somewhere our whole family could stay together. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Settle the household, learn the town, find suitable work and eventually move together into an available cottage.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "reception-arrival-quiet-10",
+    "name": "Remy Dale",
+    "aliases": [
+      "Remy Dale",
+      "reception-arrival-quiet-10",
+      "arrival-quiet-10"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "Quietly observant and thoughtful",
+    "delivery": "bright, lightly lifted delivery",
+    "rate": 0.856,
+    "pitch": 1.49,
+    "lang": "en-US",
+    "voiceSlot": 156,
+    "visualIdentity": "Remy Dale · Honey brown · Amber",
+    "storyContext": "Briarford Old Mill Cottage, Briarford Silas Dale and Mabel Dale 79 Birch Crescent, Briarford The adults caring for me left me behind. A kind traveller helped me reach somewhere safe. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest somewhere private, keep my belongings safe and get to know a trusted adult. Friends and activities can wait until I feel ready.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "reception-arrival-bunk-10",
+    "name": "Faye Hazel",
+    "aliases": [
+      "Faye Hazel",
+      "reception-arrival-bunk-10",
+      "arrival-bunk-10"
+    ],
+    "source": "Established Honeybrook cast",
+    "personality": "Quietly observant and thoughtful",
+    "delivery": "clear, evenly paced delivery",
+    "rate": 0.868,
+    "pitch": 0.97,
+    "lang": "en-US",
+    "voiceSlot": 157,
+    "visualIdentity": "Faye Hazel · Honey brown · Amber",
+    "storyContext": "Cedar Glen Old Mill Cottage, Cedar Glen Reuben Hazel and Etta Hazel 81 Birch Crescent, Cedar Glen I was treated as though I did not belong in my old settlement. I wanted a kinder place to begin again. Travellers spoke of Honeybrook offering a patient welcome before asking for explanations or usefulness. Rest, meet neighbors at my own pace, share my interests if welcome, and find a modest home and a steady place in community life.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "elder-1",
+    "name": "Elowen Reedpaw",
+    "aliases": [
+      "Elowen Reedpaw",
+      "elder-1"
+    ],
+    "source": "Bear Hollow elder",
+    "personality": "steady and protective; explains a boundary calmly",
+    "delivery": "low, steady delivery",
+    "rate": 0.88,
+    "pitch": 1.34,
+    "lang": "en-US",
+    "voiceSlot": 158,
+    "visualIdentity": "Quilt Cottage",
+    "storyContext": "She was younger than Abigail when the human girl was a child. A long-lived Hollow bear, she remembers their childhood table and the later years that followed.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "elder-2",
+    "name": "Bramble Oatwell",
+    "aliases": [
+      "Bramble Oatwell",
+      "elder-2"
+    ],
+    "source": "Bear Hollow elder",
+    "personality": "gentle and observant; remembers small acts of care",
+    "delivery": "gentle, lightly breathy delivery",
+    "rate": 0.892,
+    "pitch": 0.82,
+    "lang": "en-US",
+    "voiceSlot": 159,
+    "visualIdentity": "Oat Cottage",
+    "storyContext": "He and Abigail were children in the same early household years. He grew old alongside her; his mother’s accounts reach back before either of them could remember.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "elder-3",
+    "name": "Mabel Hearthfern",
+    "aliases": [
+      "Mabel Hearthfern",
+      "elder-3"
+    ],
+    "source": "Bear Hollow elder",
+    "personality": "patient and reflective; leaves room for a reply",
+    "delivery": "unhurried, rounded phrases",
+    "rate": 0.904,
+    "pitch": 1.19,
+    "lang": "en-US",
+    "voiceSlot": 160,
+    "visualIdentity": "Fern Hearth",
+    "storyContext": "She was a young neighbour during Abigail’s childhood and grew into old age knowing her. Earlier household details still come through her aunt’s accounts.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "elder-4",
+    "name": "Orson Brookmoss",
+    "aliases": [
+      "Orson Brookmoss",
+      "elder-4"
+    ],
+    "source": "Bear Hollow elder",
+    "personality": "brisk and practical; gives one clear next step",
+    "delivery": "crisp phrases with a measured pause",
+    "rate": 0.916,
+    "pitch": 1.56,
+    "lang": "en-US",
+    "voiceSlot": 161,
+    "visualIdentity": "Brookside Lodge",
+    "storyContext": "He remembers the later Bear Hollow and carries his father’s accounts of its earlier paths.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "elder-5",
+    "name": "Tansy Honeyreed",
+    "aliases": [
+      "Tansy Honeyreed",
+      "elder-5"
+    ],
+    "source": "Bear Hollow elder",
+    "personality": "warm and encouraging; notices another person’s effort",
+    "delivery": "warm, flowing delivery",
+    "rate": 0.928,
+    "pitch": 1.04,
+    "lang": "en-US",
+    "voiceSlot": 162,
+    "visualIdentity": "Reed Garden Cottage",
+    "storyContext": "Her grandmother’s household knew Abigail; Tansy remembers the old woman’s visits to their garden.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "elder-6",
+    "name": "Clover Birchden",
+    "aliases": [
+      "Clover Birchden",
+      "elder-6"
+    ],
+    "source": "Bear Hollow elder",
+    "personality": "quietly curious; asks before drawing conclusions",
+    "delivery": "soft, deliberate phrasing",
+    "rate": 0.94,
+    "pitch": 1.41,
+    "lang": "en-US",
+    "voiceSlot": 163,
+    "visualIdentity": "Birch Cottage",
+    "storyContext": "A younger contemporary in Abigail’s old age, with family accounts from her childhood.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "elder-7",
+    "name": "Rowan Porridgepot",
+    "aliases": [
+      "Rowan Porridgepot",
+      "elder-7"
+    ],
+    "source": "Bear Hollow elder",
+    "personality": "cheerful and lightly playful; never mocks grief",
+    "delivery": "bright, lightly lifted delivery",
+    "rate": 0.952,
+    "pitch": 0.89,
+    "lang": "en-US",
+    "voiceSlot": 164,
+    "visualIdentity": "Copper Pot Cottage",
+    "storyContext": "He remembers the household’s later breakfasts and his uncle’s earlier kitchen accounts.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "elder-8",
+    "name": "Hazel Mossmere",
+    "aliases": [
+      "Hazel Mossmere",
+      "elder-8"
+    ],
+    "source": "Bear Hollow elder",
+    "personality": "precise and thoughtful; distinguishes facts from guesses",
+    "delivery": "clear, evenly paced delivery",
+    "rate": 0.964,
+    "pitch": 1.26,
+    "lang": "en-US",
+    "voiceSlot": 165,
+    "visualIdentity": "Mossmere Cottage",
+    "storyContext": "She was a cub in Abigail’s final years and remembers stories told by older relatives.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "elder-9",
+    "name": "Silas Creekroot",
+    "aliases": [
+      "Silas Creekroot",
+      "elder-9"
+    ],
+    "source": "Bear Hollow elder",
+    "personality": "steady and protective; explains a boundary calmly",
+    "delivery": "low, steady delivery",
+    "rate": 0.976,
+    "pitch": 0.74,
+    "lang": "en-US",
+    "voiceSlot": 166,
+    "visualIdentity": "Creekroot Home",
+    "storyContext": "His parents knew Abigail’s middle years; he remembers her later walks.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "elder-10",
+    "name": "Poppy Ashbasket",
+    "aliases": [
+      "Poppy Ashbasket",
+      "elder-10"
+    ],
+    "source": "Bear Hollow elder",
+    "personality": "gentle and observant; remembers small acts of care",
+    "delivery": "gentle, lightly breathy delivery",
+    "rate": 0.988,
+    "pitch": 1.11,
+    "lang": "en-US",
+    "voiceSlot": 167,
+    "visualIdentity": "Basket Cottage",
+    "storyContext": "She recalls Abigail’s later years and her grandmother’s domestic memories.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "elder-11",
+    "name": "Alder Softstep",
+    "aliases": [
+      "Alder Softstep",
+      "elder-11"
+    ],
+    "source": "Bear Hollow elder",
+    "personality": "patient and reflective; leaves room for a reply",
+    "delivery": "unhurried, rounded phrases",
+    "rate": 1,
+    "pitch": 1.48,
+    "lang": "en-US",
+    "voiceSlot": 168,
+    "visualIdentity": "Softstep Lodge",
+    "storyContext": "A cub during Abigail’s last years; his grandfather remembered the older Hollow.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "elder-12",
+    "name": "Della Willowcup",
+    "aliases": [
+      "Della Willowcup",
+      "elder-12"
+    ],
+    "source": "Bear Hollow elder",
+    "personality": "brisk and practical; gives one clear next step",
+    "delivery": "crisp phrases with a measured pause",
+    "rate": 1.012,
+    "pitch": 0.96,
+    "lang": "en-US",
+    "voiceSlot": 169,
+    "visualIdentity": "Willowcup Cottage",
+    "storyContext": "She remembers helping with tea in Abigail’s old age and inherited accounts of earlier meals.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "elder-13",
+    "name": "Emmett Pineward",
+    "aliases": [
+      "Emmett Pineward",
+      "elder-13"
+    ],
+    "source": "Bear Hollow elder",
+    "personality": "warm and encouraging; notices another person’s effort",
+    "delivery": "warm, flowing delivery",
+    "rate": 0.82,
+    "pitch": 1.33,
+    "lang": "en-US",
+    "voiceSlot": 170,
+    "visualIdentity": "Pineward Home",
+    "storyContext": "He knew Abigail as a child knows a much older neighbour; family memory reaches farther back.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "elder-14",
+    "name": "Fern Applebough",
+    "aliases": [
+      "Fern Applebough",
+      "elder-14"
+    ],
+    "source": "Bear Hollow elder",
+    "personality": "quietly curious; asks before drawing conclusions",
+    "delivery": "soft, deliberate phrasing",
+    "rate": 0.832,
+    "pitch": 0.81,
+    "lang": "en-US",
+    "voiceSlot": 171,
+    "visualIdentity": "Apple Cottage",
+    "storyContext": "Her aunt passed on accounts of Abigail’s adult years; Fern remembers visits near the end of her life.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "elder-15",
+    "name": "Hugh Lanternpaw",
+    "aliases": [
+      "Hugh Lanternpaw",
+      "elder-15"
+    ],
+    "source": "Bear Hollow elder",
+    "personality": "cheerful and lightly playful; never mocks grief",
+    "delivery": "bright, lightly lifted delivery",
+    "rate": 0.844,
+    "pitch": 1.18,
+    "lang": "en-US",
+    "voiceSlot": 172,
+    "visualIdentity": "Lantern Lodge",
+    "storyContext": "He remembers Abigail’s later evenings and his father’s accounts of her younger years.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "elder-16",
+    "name": "Iris Teakettle",
+    "aliases": [
+      "Iris Teakettle",
+      "elder-16"
+    ],
+    "source": "Bear Hollow elder",
+    "personality": "precise and thoughtful; distinguishes facts from guesses",
+    "delivery": "clear, evenly paced delivery",
+    "rate": 0.856,
+    "pitch": 1.55,
+    "lang": "en-US",
+    "voiceSlot": 173,
+    "visualIdentity": "Kettle Cottage",
+    "storyContext": "She remembers being a young cub when Abigail was elderly and carries her mother’s earlier recollections.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "elder-17",
+    "name": "Jasper Woolden",
+    "aliases": [
+      "Jasper Woolden",
+      "elder-17"
+    ],
+    "source": "Bear Hollow elder",
+    "personality": "steady and protective; explains a boundary calmly",
+    "delivery": "low, steady delivery",
+    "rate": 0.868,
+    "pitch": 1.03,
+    "lang": "en-US",
+    "voiceSlot": 174,
+    "visualIdentity": "Wool Cottage",
+    "storyContext": "A late-life acquaintance whose older relatives remembered the Three Bears’ household.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "elder-18",
+    "name": "Nora Berrybriar",
+    "aliases": [
+      "Nora Berrybriar",
+      "elder-18"
+    ],
+    "source": "Bear Hollow elder",
+    "personality": "gentle and observant; remembers small acts of care",
+    "delivery": "gentle, lightly breathy delivery",
+    "rate": 0.88,
+    "pitch": 1.4,
+    "lang": "en-US",
+    "voiceSlot": 175,
+    "visualIdentity": "Berry Cottage",
+    "storyContext": "She remembers Abigail’s final years and shares her grandfather’s older seasonal accounts.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "elder-19",
+    "name": "Otis Stonefern",
+    "aliases": [
+      "Otis Stonefern",
+      "elder-19"
+    ],
+    "source": "Bear Hollow elder",
+    "personality": "patient and reflective; leaves room for a reply",
+    "delivery": "unhurried, rounded phrases",
+    "rate": 0.892,
+    "pitch": 0.88,
+    "lang": "en-US",
+    "voiceSlot": 176,
+    "visualIdentity": "Stonefern Home",
+    "storyContext": "His own memories belong to Abigail’s old age; earlier history comes through his family.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "elder-20",
+    "name": "Wren Maplehush",
+    "aliases": [
+      "Wren Maplehush",
+      "elder-20"
+    ],
+    "source": "Bear Hollow elder",
+    "personality": "brisk and practical; gives one clear next step",
+    "delivery": "crisp phrases with a measured pause",
+    "rate": 0.904,
+    "pitch": 1.25,
+    "lang": "en-US",
+    "voiceSlot": 177,
+    "visualIdentity": "Maple Cottage",
+    "storyContext": "She was very young before Abigail died; older family voices fill the limits of her own memory.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "harold",
+    "name": "Harold Pawst",
+    "aliases": [
+      "Harold Pawst",
+      "harold"
+    ],
+    "source": "Bear Hollow elder",
+    "personality": "Patient keeper of letters and memories; speaks carefully and honours promises.",
+    "delivery": "Low, unhurried storytelling; deliberate pauses.",
+    "rate": 0.82,
+    "pitch": 0.77,
+    "lang": "en-GB",
+    "voiceSlot": 178,
+    "visualIdentity": "Harold’s visiting room",
+    "storyContext": "The established keeper of the letter. Private correspondence stays private; these visits never substitute for reading the letter in Nell’s Journey.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "ash",
+    "name": "Ash the wolf",
+    "aliases": [
+      "Ash the wolf",
+      "ash"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "Accountable and practical; follows an apology with dependable conduct.",
+    "delivery": "Dry, low, precise phrasing; restrained humour.",
+    "rate": 0.92,
+    "pitch": 0.69,
+    "lang": "en-GB",
+    "voiceSlot": 179,
+    "visualIdentity": "Ash’s bakery",
+    "storyContext": "He learned that an apology must be followed by dependable conduct.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "elves",
+    "name": "The Elves and the Shoemaker",
+    "aliases": [
+      "The Elves and the Shoemaker",
+      "elves"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "cheerful and lightly playful; never mocks grief",
+    "delivery": "bright, lightly lifted delivery",
+    "rate": 0.94,
+    "pitch": 1.47,
+    "lang": "en-US",
+    "voiceSlot": 180,
+    "visualIdentity": "The shared shoe workroom",
+    "storyContext": "The gift mattered because somebody noticed the workers, not just their work.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "pinocchio",
+    "name": "Pinocchio and Geppetto",
+    "aliases": [
+      "Pinocchio and Geppetto",
+      "pinocchio"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "precise and thoughtful; distinguishes facts from guesses",
+    "delivery": "clear, evenly paced delivery",
+    "rate": 0.952,
+    "pitch": 0.95,
+    "lang": "en-US",
+    "voiceSlot": 181,
+    "visualIdentity": "Geppetto’s workshop",
+    "storyContext": "Being found and welcomed home mattered more than the famous nose.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "cinderella",
+    "name": "Cinderella",
+    "aliases": [
+      "Cinderella",
+      "cinderella"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "steady and protective; explains a boundary calmly",
+    "delivery": "low, steady delivery",
+    "rate": 0.964,
+    "pitch": 1.32,
+    "lang": "en-US",
+    "voiceSlot": 182,
+    "visualIdentity": "The slipper and dress shop",
+    "storyContext": "After the ball she still needed ordinary freedom, practical shoes and choices of her own.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "snow-white",
+    "name": "Snow White and the Seven Dwarfs",
+    "aliases": [
+      "Snow White and the Seven Dwarfs",
+      "snow-white"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "gentle and observant; remembers small acts of care",
+    "delivery": "gentle, lightly breathy delivery",
+    "rate": 0.976,
+    "pitch": 0.8,
+    "lang": "en-US",
+    "voiceSlot": 183,
+    "visualIdentity": "The garden of eight chairs",
+    "storyContext": "The seven workers had lives, names and kindness beyond being a place to hide.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "rapunzel",
+    "name": "Rapunzel",
+    "aliases": [
+      "Rapunzel",
+      "rapunzel"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "patient and reflective; leaves room for a reply",
+    "delivery": "unhurried, rounded phrases",
+    "rate": 0.988,
+    "pitch": 1.17,
+    "lang": "en-US",
+    "voiceSlot": 184,
+    "visualIdentity": "The garden tower",
+    "storyContext": "A beautiful view cannot replace the freedom to leave.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "red",
+    "name": "Little Red Riding Hood and Grandmother",
+    "aliases": [
+      "Little Red Riding Hood and Grandmother",
+      "red"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "brisk and practical; gives one clear next step",
+    "delivery": "crisp phrases with a measured pause",
+    "rate": 1,
+    "pitch": 1.54,
+    "lang": "en-US",
+    "voiceSlot": 185,
+    "visualIdentity": "Grandmother’s cottage",
+    "storyContext": "Trust belongs to the people who were frightened; a friendly wolf cannot demand it back.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "hansel",
+    "name": "Hansel and Gretel",
+    "aliases": [
+      "Hansel and Gretel",
+      "hansel"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "warm and encouraging; notices another person’s effort",
+    "delivery": "warm, flowing delivery",
+    "rate": 1.012,
+    "pitch": 1.02,
+    "lang": "en-US",
+    "voiceSlot": 186,
+    "visualIdentity": "The woodland bakehouse",
+    "storyContext": "The children helped one another; sweets never made the trap acceptable.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "jack",
+    "name": "Jack and His Mother",
+    "aliases": [
+      "Jack and His Mother",
+      "jack"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "quietly curious; asks before drawing conclusions",
+    "delivery": "soft, deliberate phrasing",
+    "rate": 0.82,
+    "pitch": 1.39,
+    "lang": "en-US",
+    "voiceSlot": 187,
+    "visualIdentity": "The bean garden",
+    "storyContext": "His mother waited at home; courage did not cancel the consequences of taking things.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "frog",
+    "name": "The Frog Prince",
+    "aliases": [
+      "The Frog Prince",
+      "frog"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "cheerful and lightly playful; never mocks grief",
+    "delivery": "bright, lightly lifted delivery",
+    "rate": 0.832,
+    "pitch": 0.87,
+    "lang": "en-US",
+    "voiceSlot": 188,
+    "visualIdentity": "The pond-side guest house",
+    "storyContext": "Promises do not entitle anybody to ignore another person’s boundaries.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "duckling",
+    "name": "The Ugly Duckling",
+    "aliases": [
+      "The Ugly Duckling",
+      "duckling"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "precise and thoughtful; distinguishes facts from guesses",
+    "delivery": "clear, evenly paced delivery",
+    "rate": 0.844,
+    "pitch": 1.24,
+    "lang": "en-US",
+    "voiceSlot": 189,
+    "visualIdentity": "The reed-water refuge",
+    "storyContext": "Belonging should not wait for somebody to become beautiful.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "sleeping",
+    "name": "Sleeping Beauty",
+    "aliases": [
+      "Sleeping Beauty",
+      "sleeping"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "steady and protective; explains a boundary calmly",
+    "delivery": "low, steady delivery",
+    "rate": 0.856,
+    "pitch": 1.61,
+    "lang": "en-US",
+    "voiceSlot": 190,
+    "visualIdentity": "The orchard tea garden",
+    "storyContext": "Waking meant learning a changed world, not merely reaching a kiss.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "pea",
+    "name": "The Princess and the Pea",
+    "aliases": [
+      "The Princess and the Pea",
+      "pea"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "gentle and observant; remembers small acts of care",
+    "delivery": "gentle, lightly breathy delivery",
+    "rate": 0.868,
+    "pitch": 1.09,
+    "lang": "en-US",
+    "voiceSlot": 191,
+    "visualIdentity": "The guest-room cottage",
+    "storyContext": "A guest deserves a comfortable bed without having to prove her worth.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "dancing",
+    "name": "The Twelve Dancing Princesses",
+    "aliases": [
+      "The Twelve Dancing Princesses",
+      "dancing"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "patient and reflective; leaves room for a reply",
+    "delivery": "unhurried, rounded phrases",
+    "rate": 0.88,
+    "pitch": 1.46,
+    "lang": "en-US",
+    "voiceSlot": 192,
+    "visualIdentity": "The dancing sisters’ hall",
+    "storyContext": "The sisters now choose their evening; visitors cannot demand a performance.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "puss",
+    "name": "Puss in Boots",
+    "aliases": [
+      "Puss in Boots",
+      "puss"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "brisk and practical; gives one clear next step",
+    "delivery": "crisp phrases with a measured pause",
+    "rate": 0.892,
+    "pitch": 0.94,
+    "lang": "en-US",
+    "voiceSlot": 193,
+    "visualIdentity": "The hat-and-boot garden",
+    "storyContext": "Cleverness changes lives, and its deceptions deserve honest examination.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "thumb",
+    "name": "Tom Thumb",
+    "aliases": [
+      "Tom Thumb",
+      "thumb"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "warm and encouraging; notices another person’s effort",
+    "delivery": "warm, flowing delivery",
+    "rate": 0.904,
+    "pitch": 1.31,
+    "lang": "en-US",
+    "voiceSlot": 194,
+    "visualIdentity": "The small-door cottage",
+    "storyContext": "A small person needs respect and accessible ways to act, not an audience measuring him.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "thumbelina",
+    "name": "Thumbelina",
+    "aliases": [
+      "Thumbelina",
+      "thumbelina"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "quietly curious; asks before drawing conclusions",
+    "delivery": "soft, deliberate phrasing",
+    "rate": 0.916,
+    "pitch": 0.79,
+    "lang": "en-US",
+    "voiceSlot": 195,
+    "visualIdentity": "The flower doorway",
+    "storyContext": "Ask before approaching; being tiny does not make her home public property.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "pigs",
+    "name": "The Three Little Pigs",
+    "aliases": [
+      "The Three Little Pigs",
+      "pigs"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "cheerful and lightly playful; never mocks grief",
+    "delivery": "bright, lightly lifted delivery",
+    "rate": 0.928,
+    "pitch": 1.16,
+    "lang": "en-US",
+    "voiceSlot": 196,
+    "visualIdentity": "The brick meeting house",
+    "storyContext": "Safe homes and shared practical knowledge matter after the chase ends.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "bremen",
+    "name": "The Bremen Town Musicians",
+    "aliases": [
+      "The Bremen Town Musicians",
+      "bremen"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "precise and thoughtful; distinguishes facts from guesses",
+    "delivery": "clear, evenly paced delivery",
+    "rate": 0.94,
+    "pitch": 1.53,
+    "lang": "en-US",
+    "voiceSlot": 197,
+    "visualIdentity": "The music courtyard",
+    "storyContext": "They made a home after others decided they were no longer useful.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "rumpel",
+    "name": "Rumpelstiltskin",
+    "aliases": [
+      "Rumpelstiltskin",
+      "rumpel"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "steady and protective; explains a boundary calmly",
+    "delivery": "low, steady delivery",
+    "rate": 0.952,
+    "pitch": 1.01,
+    "lang": "en-US",
+    "voiceSlot": 198,
+    "visualIdentity": "The mill of names",
+    "storyContext": "Coercion is not made harmless by a cheerful roof; a child is never a payment.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "fisher",
+    "name": "The Fisherman and His Wife",
+    "aliases": [
+      "The Fisherman and His Wife",
+      "fisher"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "gentle and observant; remembers small acts of care",
+    "delivery": "gentle, lightly breathy delivery",
+    "rate": 0.964,
+    "pitch": 1.38,
+    "lang": "en-US",
+    "voiceSlot": 199,
+    "visualIdentity": "The shore cottage",
+    "storyContext": "Wanting security and endlessly demanding power are different things.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "shoe",
+    "name": "The Family in the Shoe",
+    "aliases": [
+      "The Family in the Shoe",
+      "shoe"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "patient and reflective; leaves room for a reply",
+    "delivery": "unhurried, rounded phrases",
+    "rate": 0.976,
+    "pitch": 0.86,
+    "lang": "en-US",
+    "voiceSlot": 200,
+    "visualIdentity": "The shoe-shaped family house",
+    "storyContext": "The children need care and room to be heard; harsh treatment is not a cosy joke.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "mice",
+    "name": "The Town Mouse and the Country Mouse",
+    "aliases": [
+      "The Town Mouse and the Country Mouse",
+      "mice"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "brisk and practical; gives one clear next step",
+    "delivery": "crisp phrases with a measured pause",
+    "rate": 0.988,
+    "pitch": 1.23,
+    "lang": "en-US",
+    "voiceSlot": 201,
+    "visualIdentity": "The two-table tea room",
+    "storyContext": "Comfort means different things to different guests.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "mermaid",
+    "name": "The Little Mermaid",
+    "aliases": [
+      "The Little Mermaid",
+      "mermaid"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "warm and encouraging; notices another person’s effort",
+    "delivery": "warm, flowing delivery",
+    "rate": 1,
+    "pitch": 1.6,
+    "lang": "en-US",
+    "voiceSlot": 202,
+    "visualIdentity": "The distant-shore listening house",
+    "storyContext": "Different versions end differently; do not replace a painful ending with a familiar film.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "snow-queen",
+    "name": "The Snow Queen",
+    "aliases": [
+      "The Snow Queen",
+      "snow-queen"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "quietly curious; asks before drawing conclusions",
+    "delivery": "soft, deliberate phrasing",
+    "rate": 1.012,
+    "pitch": 1.08,
+    "lang": "en-US",
+    "voiceSlot": 203,
+    "visualIdentity": "The snow-country wayhouse",
+    "storyContext": "The friend who kept looking belongs at the centre of the telling.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "wild-swans",
+    "name": "The Wild Swans",
+    "aliases": [
+      "The Wild Swans",
+      "wild-swans"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "cheerful and lightly playful; never mocks grief",
+    "delivery": "bright, lightly lifted delivery",
+    "rate": 0.82,
+    "pitch": 1.45,
+    "lang": "en-US",
+    "voiceSlot": 204,
+    "visualIdentity": "The nettle garden",
+    "storyContext": "Quiet labour and pain were part of saving her brothers.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "tin",
+    "name": "The Steadfast Tin Soldier",
+    "aliases": [
+      "The Steadfast Tin Soldier",
+      "tin"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "precise and thoughtful; distinguishes facts from guesses",
+    "delivery": "clear, evenly paced delivery",
+    "rate": 0.832,
+    "pitch": 0.93,
+    "lang": "en-US",
+    "voiceSlot": 205,
+    "visualIdentity": "The paper-boat memorial",
+    "storyContext": "Do not turn the ending’s suffering into a prize or a cheerful rescue.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "match",
+    "name": "The Little Match Girl",
+    "aliases": [
+      "The Little Match Girl",
+      "match"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "steady and protective; explains a boundary calmly",
+    "delivery": "low, steady delivery",
+    "rate": 0.844,
+    "pitch": 1.3,
+    "lang": "en-US",
+    "voiceSlot": 206,
+    "visualIdentity": "The remembered-light shelter",
+    "storyContext": "A child needed shelter while she lived; admiration afterwards cannot substitute for care.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "red-shoes",
+    "name": "The Red Shoes",
+    "aliases": [
+      "The Red Shoes",
+      "red-shoes"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "gentle and observant; remembers small acts of care",
+    "delivery": "gentle, lightly breathy delivery",
+    "rate": 0.856,
+    "pitch": 0.78,
+    "lang": "en-US",
+    "voiceSlot": 207,
+    "visualIdentity": "The quiet memorial garden",
+    "storyContext": "A painful tale needs thoughtful witnesses, not a dancing attraction.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "aladdin",
+    "name": "Aladdin",
+    "aliases": [
+      "Aladdin",
+      "aladdin"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "patient and reflective; leaves room for a reply",
+    "delivery": "unhurried, rounded phrases",
+    "rate": 0.868,
+    "pitch": 1.15,
+    "lang": "en-US",
+    "voiceSlot": 208,
+    "visualIdentity": "The lamp courtyard",
+    "storyContext": "Objects can change fortunes without making somebody wise about power.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "genie",
+    "name": "The Fisherman and the Genie",
+    "aliases": [
+      "The Fisherman and the Genie",
+      "genie"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "brisk and practical; gives one clear next step",
+    "delivery": "crisp phrases with a measured pause",
+    "rate": 0.88,
+    "pitch": 1.52,
+    "lang": "en-US",
+    "voiceSlot": 209,
+    "visualIdentity": "The sealed-vessel shore",
+    "storyContext": "Gratitude is not guaranteed by power; the fisherman survived by thinking carefully.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "ali",
+    "name": "Ali Baba",
+    "aliases": [
+      "Ali Baba",
+      "ali"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "warm and encouraging; notices another person’s effort",
+    "delivery": "warm, flowing delivery",
+    "rate": 0.892,
+    "pitch": 1,
+    "lang": "en-US",
+    "voiceSlot": 210,
+    "visualIdentity": "The mountain storehouse",
+    "storyContext": "Secret wealth does not erase the courage of the person who saved the household.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "sinbad",
+    "name": "Sinbad",
+    "aliases": [
+      "Sinbad",
+      "sinbad"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "quietly curious; asks before drawing conclusions",
+    "delivery": "soft, deliberate phrasing",
+    "rate": 0.904,
+    "pitch": 1.37,
+    "lang": "en-US",
+    "voiceSlot": 211,
+    "visualIdentity": "The voyage harbour",
+    "storyContext": "The sailor’s listener and the people who helped him deserve a place beside the marvels.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "vasilisa",
+    "name": "Vasilisa",
+    "aliases": [
+      "Vasilisa",
+      "vasilisa"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "cheerful and lightly playful; never mocks grief",
+    "delivery": "bright, lightly lifted delivery",
+    "rate": 0.916,
+    "pitch": 0.85,
+    "lang": "en-US",
+    "voiceSlot": 212,
+    "visualIdentity": "The little-doll cottage",
+    "storyContext": "Help from a mother’s gift did not remove the work Vasilisa had to do.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "baba",
+    "name": "Baba Yaga",
+    "aliases": [
+      "Baba Yaga",
+      "baba"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "precise and thoughtful; distinguishes facts from guesses",
+    "delivery": "clear, evenly paced delivery",
+    "rate": 0.928,
+    "pitch": 1.22,
+    "lang": "en-US",
+    "voiceSlot": 213,
+    "visualIdentity": "The moving house clearing",
+    "storyContext": "Different tellings make her helper, danger or both; ask which account is being shared.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "east",
+    "name": "East of the Sun and West of the Moon",
+    "aliases": [
+      "East of the Sun and West of the Moon",
+      "east"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "steady and protective; explains a boundary calmly",
+    "delivery": "low, steady delivery",
+    "rate": 0.94,
+    "pitch": 1.59,
+    "lang": "en-US",
+    "voiceSlot": 214,
+    "visualIdentity": "The long-road lodge",
+    "storyContext": "The search after the broken promise is as important as the enchanted beginning.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "firebird",
+    "name": "The Firebird",
+    "aliases": [
+      "The Firebird",
+      "firebird"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "gentle and observant; remembers small acts of care",
+    "delivery": "gentle, lightly breathy delivery",
+    "rate": 0.952,
+    "pitch": 1.07,
+    "lang": "en-US",
+    "voiceSlot": 215,
+    "visualIdentity": "The feather orchard",
+    "storyContext": "A beautiful discovery can carry obligations and consequences.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "goose",
+    "name": "The Golden Goose",
+    "aliases": [
+      "The Golden Goose",
+      "goose"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "patient and reflective; leaves room for a reply",
+    "delivery": "unhurried, rounded phrases",
+    "rate": 0.964,
+    "pitch": 1.44,
+    "lang": "en-US",
+    "voiceSlot": 216,
+    "visualIdentity": "The shared-supper orchard",
+    "storyContext": "The kindness before the joke belongs in the tale too.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "six",
+    "name": "The Six Swans",
+    "aliases": [
+      "The Six Swans",
+      "six"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "brisk and practical; gives one clear next step",
+    "delivery": "crisp phrases with a measured pause",
+    "rate": 0.976,
+    "pitch": 0.92,
+    "lang": "en-US",
+    "voiceSlot": 217,
+    "visualIdentity": "The star-flower cottage",
+    "storyContext": "This is a distinct telling from The Wild Swans; its brothers and terms are not interchangeable.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "ravens",
+    "name": "The Seven Ravens",
+    "aliases": [
+      "The Seven Ravens",
+      "ravens"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "warm and encouraging; notices another person’s effort",
+    "delivery": "warm, flowing delivery",
+    "rate": 0.988,
+    "pitch": 1.29,
+    "lang": "en-US",
+    "voiceSlot": 218,
+    "visualIdentity": "The glass-mountain path",
+    "storyContext": "The sister’s long search deserves more than a hurried final sentence.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "beauty",
+    "name": "Beauty and the Beast",
+    "aliases": [
+      "Beauty and the Beast",
+      "beauty"
+    ],
+    "source": "Storybook Lane resident",
+    "personality": "quietly curious; asks before drawing conclusions",
+    "delivery": "soft, deliberate phrasing",
+    "rate": 1,
+    "pitch": 0.77,
+    "lang": "en-US",
+    "voiceSlot": 219,
+    "visualIdentity": "The rose-garden household",
+    "storyContext": "Visitors are welcome by agreement; nobody owes strangers a reenactment of private pain.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "guardian-goddess",
+    "name": "Guardian Goddess",
+    "aliases": [
+      "Guardian Goddess",
+      "guardian-goddess"
+    ],
+    "source": "Established story guide",
+    "personality": "cheerful and lightly playful; never mocks grief",
+    "delivery": "bright, lightly lifted delivery",
+    "rate": 1.012,
+    "pitch": 1.14,
+    "lang": "en-US",
+    "voiceSlot": 220,
+    "visualIdentity": "Use the established character portrait; preserve identifying features.",
+    "storyContext": "Honeybrook’s protective guide",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  },
+  {
+    "id": "narrator",
+    "name": "Narrator",
+    "aliases": [
+      "Narrator",
+      "narrator"
+    ],
+    "source": "Narration",
+    "personality": "precise and thoughtful; distinguishes facts from guesses",
+    "delivery": "clear, evenly paced delivery",
+    "rate": 0.82,
+    "pitch": 1.51,
+    "lang": "en-US",
+    "voiceSlot": 221,
+    "visualIdentity": "Use the established character portrait; preserve identifying features.",
+    "storyContext": "Reads scene description, without impersonating a named character.",
+    "performanceNote": "Game performance direction; does not change manuscript facts."
+  }
+];

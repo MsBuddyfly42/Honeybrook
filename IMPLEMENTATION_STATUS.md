@@ -423,3 +423,13 @@ Fixed the shared directory’s old Storybook Lane/woods-boundary links, added al
 A local audit clicked all 300 shared-directory entries in isolated synthetic browser contexts; new direct entrances were separately exercised at 1440/390px. All 41 story recovery/retelling workflows and 78 elder interactions passed at both widths with the shared Honeybrook styling. Production verification for this revision is recorded separately in `story/storywood-country-verification.json`.
 
 Activity photography refinement: 48 shared action photographs now include material-specific book arranging, archive sorting, water sampling, clay work, linen care, and room preparation. Related tasks share photographs; game mechanics keep their dedicated images.
+
+## November 6 · character speech and audio priority
+
+The persistent player now owns browser-synthesised character speech. 222 cast entries have performance profiles, source context, existing appearance notes, pace, pitch and language preferences. Character voices opens a searchable profile and installed-voice selector. These profiles are game performance direction, not new manuscript biography. Original portraits are retained; this release does not create 222 replacement portraits or recorded voice actors. Browser inventories may share base voices.
+
+Visible quotation paragraphs, block quotations, Storybook Lane quotes, Journey captions and elder memories gain Hear this controls. New dialogue revealed by an interaction can speak automatically. Elder memories and Storybook Lane answers carry explicit speaker metadata; unidentified scene text uses Narrator rather than claiming a named actor. This is shared caption discovery, not a manual certification of every legacy dialogue branch.
+
+One parent speech queue cancels the prior speaker. Dialogue ducks music and shared effects to 12% of their selected volume while the speaking voice remains clear. Music suppresses ordinary shared effects while playing; alarms take priority. Frame navigation, hash/location changes, changed scene headings and hidden tabs cancel speech and outgoing soundtrack notes. Speech never changes story saves. Captions remain available if synthesis fails or no voice exists.
+
+Validation: character-voices.cjs checks registry, matching, British Nell, differentiated pitch, speech priority, replacement of an active line, mute, zero volume, and release after completion. Existing local browser audio tests require Playwright, unavailable in this checkout; live controls and rendered dialogue require separate verification.
