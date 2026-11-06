@@ -399,3 +399,13 @@ The owner now authorises the manuscript, game and opening overview to share the 
 
 
 October 26 author correction: retain the first private woodland recognition, but remove the guardian’s repeated return scenes from Chapters 44–47. Book planning now belongs to Nell, Harold, Amelia and Sammy; the pre-winter visit belongs to Ash and his neighbours, followed by a child’s letter from home. Sammy accompanies Nell at the unexplained light. No guardian comes to town gatherings or subsequent pre-finale visits. Her next embodied appearance after the initial woodland sequence is the final public farewell. Existing chapter IDs, accepted answers and saved progress are unchanged.
+
+### November 6 · Where the Stories Wake
+
+Added the standalone, connected `storywood.html` companion: all 41 tale households/memorials named in Chapters 41–42, eight Northern Woods places and 21 Bear Hollow visiting rooms. Every destination is available without Journey completion. Direct entrances appear at the Honeybrook welcome page, Northern Woods, native town portal and Journey. Native Storybook Lane travel no longer requires the former story unlock. Existing introductory and ordered campaign scenes remain intact.
+
+Each tale has an owner-specific keepsake, omitted experience, woodland marker and three-part recovered account. Players examine objects, compare the route, brush twelve distinct cover areas with pointer or accessible controls, reconstruct the sequence and return to share the missing part. Only completed retelling advances restoration; village and woods show matching waiting/returning/awake scenes. Sources retain their different versions and tragic memorials are not reenacted as attractions. Human residents respond to Abigail's life among bears without disclosing the woodland guide's identity. This is a collection of connected scene activities, not a 3D walking simulation.
+
+Twenty new elders plus Harold offer 78 repeatable accounts. Some new long-lived bears remember Abigail's childhood, others her later years; inherited accounts identify their family tellers. Regular Honeybrook-to-Hollow listening visits remain an established tradition. Visiting companions do not create population simulations, reopen Harold's sealed letter, spend money or advance campaign scenes.
+
+The companion has its own validated save, notebook, write lock/raw conflict checks, checkpoint, download, backup preview/explicit restore and before-restore recovery copy. Malformed records are protected. Full existing prose remains readable separately from the unchanged campaign. Local and live verification evidence is recorded in `story/storywood-release-verification.json` when complete; this implementation entry alone is not evidence of publication.

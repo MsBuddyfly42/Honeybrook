@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-06",
+  "scope": "Standalone companion and Honeybrook connections. Manuscript adaptation intentionally follows verified game publication.",
+  "destinations": 70,
+  "tales": 41,
+  "elderHosts": 21,
+  "newElders": 20,
+  "repeatableMemories": 78,
+  "photographicAtlasFiles": 8,
+  "composedPhotographicViews": 128,
+  "local": {
+    "ruleTests": "passed: every tale, all memories, restoration only after retelling, invalid states",
+    "browser": "passed at 1440 and 390px: all 41 workflows, all 78 memory interactions, notes/reload, valid and invalid backups, stale tabs, preserved original save strings",
+    "connections": "passed at 1440 and 390px: welcome links, all regions, town round trip, native Storybook Lane without Journey unlock",
+    "art": "all eight delivered atlases decode; 128 manifested views accessible",
+    "preservation": "malformed/empty records protected; failed storage write leaves stored and visible progress unchanged",
+    "originalJourney": "retelling.cjs, finale.cjs, nell.cjs, nell-research.cjs, woods-secret.cjs passed"
+  },
+  "sourceManuscriptSha256": "8c3c52318cd77fe5253987fbf77850d8c0ebc49bb15bb6fa142dbe38f4822cab",
+  "files": {
+    "storywood.html": "5162b2a702a6624299d9d85233a106d9a005e02c21d07c5c73349d3b5d5e57e1",
+    "storywood.js": "0e3fbdaad16e53fef43bf356eeb67243d6dfff86510e0095aa805896e220b176",
+    "storywood.css": "951d052a658b21fd815eb8cccfdd80d5ce4d51b544765353898e077a80700539",
+    "storywood-engine.js": "8af08d5cc06b4f2c5e8641f08edb36ed975ea570f15bd35641e0666f4cf3311b",
+    "storywood-data.js": "909c3db1d0e9a53ed16df68d2d3f6a27c0c1501c9f581dacf1b3495ec0897d50",
+    "storywood-links.js": "09bb02ee152266e270d5cc0ee0cb86b267aa25429b0353f6ffd1f3c57078fc1f",
+    "index.html": "cbb5e40cb72a0cf5f783904a55e79940af0e16c0984a19b81f8d6ebf5def87c2",
+    "story-mode.js": "32b997d6b8eefc348138f1616a2fea8b7240cd4cc1f4d29f1bef168bd561f319",
+    "town-geography.js": "c91d04a188f4d4cbcfdda3aa08e8f98c640d66727ab88394351c3c9b35a7a431",
+    "games/honeybrook-craft-fair/game.js": "5185c59c8ab34de41937f3bdf4ae0f05e8ec3790afa81611765223aab4b0a8f8",
+    "journey.html": "6f0b04177502e200a81f12469da2ac7b9ab9b67a093ab4232c9b9e55b7bd7136",
+    "journey-finale.html": "a48abd3be8ed96faf2419addb1b7e55b5c48a2b5a68205acaeb80dd2707decfb",
+    "assets/storywood/actions-a.webp": "3b09bd07e6b5223d315ca6d5a229c1646decb16cba64a80c0f7f3c3671a596e4",
+    "assets/storywood/homes-b.webp": "bc225475d89e9eac12c14611c8850fbed45bbd7b76150e941852d882abb9b061",
+    "assets/storywood/actions-b.webp": "4dadd6c053563541b3d169a8b02f99eb709eee85f4f5b89acea95755b2fea2eb",
+    "assets/storywood/homes-a.webp": "5d4c65af5aaa1b3e2a403e9d20af3f733079b58c18723aa7ad02c0066ffde6ed",
+    "assets/storywood/atlas.webp": "da654ac80bcc7c901eac19172cfc2f30ca535cbf0c14a330785e6cc82623caa8",
+    "assets/storywood/elders.webp": "9e7ad244616b0df44ba6b5f94ab85f347d8e17ace2fdb1e88583f835f43e137d",
+    "assets/storywood/homes-c.webp": "70c7d0af1e36c68786be6360e81b8bc29549552a2320c670311434700048ba4f",
+    "assets/storywood/actions-c.webp": "7a0300d6d2779cc49693fa9db9291dd92fe9e1a2992e4d932c03ba016e443737"
+  },
+  "limitations": [
+    "Static single-player scene activities, not 3D walking or autonomous population simulation.",
+    "Three matching world-restoration photographic stages; individual tale progress and tellings are separately recorded.",
+    "New elder memories are authorised fictional additions; earlier family accounts are attributed.",
+    "Current Render documentation retrieval returned HTTP 403 for Markdown and HTML; existing static-service configuration is retained."
+  ]
+}

@@ -306,7 +306,7 @@ function go(scene, arg) {
     else if(townPortal&&['carnival','circus'].includes(scene)){Save.push(true);location.assign('?portal=fair&return=ts');return;}
     else if(!townPortal&&!['carnival','circus'].includes(scene)){returnToTown();return;}
   }
-  if(townPortal&&scene==='area'&&arg==='storybook-lane'&&!S.woodsOpen){arg='northern-woods';}
+  if(townPortal&&scene==='area'&&['storybook-lane','northern-woods'].includes(arg)){location.assign('../../storywood.html#region='+(arg==='storybook-lane'?'lane':'woods'));return;}
   const sceneChanged=scene!==S.scene||(scene==='area'&&arg!==S.area)||(scene==='home'&&arg!==Stay.stayPlace);
   if(sceneChanged){S.sceneEpoch=(S.sceneEpoch||0)+1;if(!$('#modal').hidden)closeModal();}
   if (scene === 'home' && S.scene !== 'home') Stay.returnTarget = { scene: S.scene, area: S.area };
@@ -621,7 +621,7 @@ const LORE = {
 for(const [key,n]of Object.entries({"bridge": 9, "welcome": 45, "family": 29, "school": 44, "letter": 65, "statue": 47, "rule": 5, "cottage": 2, "goldilocks": 3, "ash": 67, "woods": 66, "angel": 46, "goddess": 46, "founder": 13, "tom": 17, "sammy": 22, "wally": 54, "harold": 65, "carmen": 68})){if(LORE[key]){const c=window.HoneybrookStory.sections[n];LORE[key]=[c.title,c.paragraphs.slice(0,3).join('\n\n')+'\nSource: '+c.label+'. The complete manuscript is in the Honeybrook Chronicles.'];}}
 async function showLore(id){const item=LORE[id];if(!item)return;const o={bridge:['🌉','Help check the repaired crossing'],welcome:['🏠','Set out a warm welcome'],family:['🎸','Join the family song'],school:['📚','Try a learning station'],bakery:['🥖','Help Wally prepare the next loaf'],letter:['✉️','Help Harold sort the route'],statue:['🧹','Polish the town statue'],belonging:['🧺','Prepare a place for a newcomer'],shared:['🍯','Share honey and porridge'],cabins:['🪚','Help raise a cabin beam'],square:['⛲','Tend the fountain and flowers'],footbridge:['🌉','Walk across the footbridge'],firewood:['🪵','Stack firewood for neighbors'],garden:['🌱','Water Goldilocks’ garden'],blueflower:['🍯','Inspect the blue-flower honey jar'],hives:['🐝','Tend the golden-honey hives'],hollowbakery:['🥣','Stir the porridge pot'],hearth:['🔥','Warm the kettle'],love:['💛','Leave a kindness for a neighbor'],voices:['🌲','Listen for the voice between the trees'],forgotten:['📖','Bring a story out of the fog'],mysterious:['✨','Follow the light at the tree line']}[id]||['🐻','Help with this place'];showPlayableAction($('#area-spots'),{kicker:'WHERE THE STORIES LIVE · TAKE PART',title:item[0],description:item[1],icon:o[0],verb:o[1],key:'story-'+id});}
 async function showStoryTrail() {
-  const lane = S.woodsOpen;
+  const lane = true;
   const choices = [
     ['village', 'Honeybrook Village', 'Amelia, Tom, the Welcome House, and the town that makes room.'],
     ['bear-hollow', 'Bear Hollow', 'Goldilocks, the Three Bears, the bees, and the meaning of the Hollow’s rule.'],
@@ -630,7 +630,7 @@ async function showStoryTrail() {
   ];
   const html = choices.map(([id, name, desc]) => `<button class="recipe-btn" data-val="${id}" ${id === 'storybook-lane' && !lane ? 'disabled' : ''}><b>${esc(name)}</b><small>${esc(desc)}</small></button>`).join('');
   const choice = await modal(`<p class="kicker">Explore the book’s places</p><h2>The Story Trail</h2><p>Walk through the places in <i>Where the Stories Live</i>. Tap a sign in each scene to hear its part of the story.</p><div class="recipe-grid">${html}</div>`, [{ label: 'Close', value: 'close' }]);
-  if (choice && choice !== 'close' && (choice !== 'storybook-lane' || S.woodsOpen)) go('area', choice);
+  if (choice && choice !== 'close' && (choice !== 'storybook-lane' || lane)) go('area', choice);
 }
 /* ------------------------------------------------------------------ */
 /* Orders, basket, store                                              */
