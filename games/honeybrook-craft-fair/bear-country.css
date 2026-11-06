@@ -20,3 +20,6 @@ html.bear-country-loading body{background:#294734}html.bear-country-loading #sta
 #bearCountry{font-weight:500}#bearCountry h1,#bearCountry h2,#bearCountry h3,#bearCountry .hc-brand{font-variation-settings:'SOFT' 70,'WONK' 1}#bearCountry .hc-pennant[style*="#bd7e29"]{color:#252b1d;text-shadow:none}
 #bearCountry .hc-scene-image{position:relative}#bearCountry .hc-cottage-door{position:absolute;transform:translate(-50%,-50%);width:44px;height:44px;min-height:44px;padding:0;font-size:0;color:transparent;border:2px solid #e4c583;border-radius:50%;background:#fff6dce6;box-shadow:0 0 0 5px #fff4d344}#bearCountry .hc-cottage-door::before{content:'↪';font-size:25px;color:#354d33}#bearCountry .hc-cottage-door:hover,#bearCountry .hc-cottage-door:focus-visible{font-size:12px;width:auto;padding:11px;color:#2f4d37;border-radius:8px;white-space:nowrap}#bearCountry .hc-cottage-door:hover::before,#bearCountry .hc-cottage-door:focus-visible::before{content:''}
 #bearCountry .hc-cottage-door:hover,#bearCountry .hc-cottage-door:focus-visible{transform:translate(-15%,-50%)}
+
+/* Keep the pale doorway cards legible inside the pine header. */
+#bearCountry .hc-header .community-global-links a,#bearCountry .hc-header a.community-link,#bearCountry .hc-header nav nav a{color:#294734!important}#bearCountry .hc-header a.canon-link{color:#fff5da!important}
