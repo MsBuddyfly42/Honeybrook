@@ -3,7 +3,7 @@ window.HoneybrookCharacterIntroductions={
   "story-gold": {
     "text": "Hi, I’m Goldilocks. My name is Abigail. I’m seven, and the bears have made room for me in their home. I’m learning to feel safe here, and Baby Bear shares his toys with me.",
     "source": "Manuscript character role",
-    "evidence": "Seven when the spring river takes her beekeeper parents; survives three days on honey, reaches the cottage on the fourth day. Mama Bear welcomes her. Her hair later silvers; she dies old and beloved before Carmen arrives. She entrusts Harold with the sealed family letter."
+    "evidence": "Seven when the spring river takes her beekeeper parents; survives three days on honey, reaches the cottage on the fourth day. Mama Bear welcomes her. Her hair later silvers; she dies old and beloved before Nell arrives. She entrusts Harold with the sealed family letter."
   },
   "story-mama": {
     "text": "Hello, I’m Mama Bear. Papa Bear and I are Baby Bear’s parents. When I found Goldilocks in our cottage, I saw a lost child who needed care. I made room for her in our home.",
@@ -43,7 +43,7 @@ window.HoneybrookCharacterIntroductions={
   "story-buddy": {
     "text": "Hello, I’m Buddy Hearthwell. I help my family plan safe routes, useful supplies and practical work. I work with Tom, and I remind Templar that our plans need room for rest, too.",
     "source": "Manuscript character role",
-    "evidence": "His disciplined service informs clear routes, sensible supplies and quiet practical care. Plans with Tom and family rather than imposing changes. Asks Templar to include rest. Reacts tensely when Carmen first arrives."
+    "evidence": "His disciplined service informs clear routes, sensible supplies and quiet practical care. Plans with Tom and family rather than imposing changes. Asks Templar to include rest. Reacts tensely when Nell first arrives."
   },
   "story-mary": {
     "text": "Hello, I’m Big Mama Mary. I keep my family close, make sure our helpers eat, and make room on the porch. Pull up a paw. You can sit with us.",
@@ -108,7 +108,7 @@ window.HoneybrookCharacterIntroductions={
   "story-harold": {
     "text": "Hello, I’m Harold Pawst. I carry the mail and look after the letters entrusted to me. I’ve known these towns for a very long time, and I take a promise seriously.",
     "source": "Manuscript character role",
-    "evidence": "The oldest bear in two towns. Keeps Goldilocks’s century-old letter sealed, private and separate from any player finances. Gives it to Carmen on her fourth day asking about beekeepers, then tells her what he knows."
+    "evidence": "The oldest bear in two towns. Keeps Goldilocks’s century-old letter sealed, private and separate from any player finances. Gives it to Nell on her fourth day asking about beekeepers, then tells her what he knows."
   },
   "story-wally": {
     "text": "Hi, I’m Wally Crumbwell. I’m the baker at Cub Cakes and Crumbs. I’m learning to plan my batches, keep honest records and make promises I can keep, with help from Miss Patty.",
@@ -146,7 +146,7 @@ window.HoneybrookCharacterIntroductions={
     "evidence": "A young bear offered a quiet chair by Jonesha. Chooses Big Mama’s porch, then the festival on different days; neither choice earns his supper."
   },
   "story-carmen": {
-    "text": "Hello, I’m Carmen. I come to Honeybrook with a notebook and camera, searching for my family’s missing beekeeper story. I ask questions and follow the evidence at my own pace.",
+    "text": "Hello, I’m Nell. I come to Honeybrook with a notebook and camera, searching for my family’s missing beekeeper story. I ask questions and follow the evidence at my own pace.",
     "source": "Manuscript character role",
     "evidence": "Arrives Tuesday in a rental car with a dented fender, notebook and camera. Calls herself an investigator while following her family’s missing beekeeper story. Opens the ancestor’s letter on day four and stays. The voice calls her at 3 AM; her entry into the woods is the next beginning, not an already resolved sequel."
   },
@@ -173,7 +173,7 @@ window.HoneybrookCharacterIntroductions={
   "story-ancestor": {
     "text": "I’m the father who searched for his missing daughter, Abigail’s mother. I kept looking without knowing what had happened at the river or that my granddaughter had survived.",
     "source": "Manuscript character role",
-    "evidence": "Father of the beekeeper’s wife and grandfather of Goldilocks. Searches for his missing daughter, not knowing about the river or surviving granddaughter. Carmen descends from the family’s other branch. The manuscript does not provide the full letter text or all names."
+    "evidence": "Father of the beekeeper’s wife and grandfather of Goldilocks. Searches for his missing daughter, not knowing about the river or surviving granddaughter. Nell descends from the family’s other branch. The manuscript does not provide the full letter text or all names."
   },
   "story-prince": {
     "text": "I’m the prince in the old beginning. Beneath the moon, my kiss wakes the sleeping princess, and the forest keeps the warmth of that moment.",

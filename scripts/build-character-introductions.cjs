@@ -27,7 +27,7 @@ mabel:"Hello, I’m Mabel Welcomeberry. I’m one of the later neighbours who he
 toby:"Hi, I’m Toby Trailpaw. I help carry the Welcome House forward while keeping the welcome and the bench that matter to its neighbours.",
 nora:"Hello, I’m Nora Kindpaw. I’m one of the later Welcome House neighbours. I help keep its welcome and its place to sit.",
 milo:"Hi, I’m Milo. I’m a newcomer, and I’m finding my own way here. Jonesha offered me a quiet chair. Some days I choose Big Mama’s porch, and some days I choose the festival.",
-carmen:"Hello, I’m Carmen. I come to Honeybrook with a notebook and camera, searching for my family’s missing beekeeper story. I ask questions and follow the evidence at my own pace.",
+carmen:"Hello, I’m Nell. I come to Honeybrook with a notebook and camera, searching for my family’s missing beekeeper story. I ask questions and follow the evidence at my own pace.",
 angel:"I’m Amelia’s guardian angel. I watch over her and offer protection without choosing her path for her.",
 goddess:"I’m the Guardian Goddess. I watch over Honeybrook and Bear Hollow. I offer guidance, but I leave each person room to choose the next step.",
 ash:"Hello, I’m Ash. You may know me as the Big Bad Wolf. I’m older now, and I bake sourdough in Storybook Lane. I know an apology has to be followed by dependable conduct.",

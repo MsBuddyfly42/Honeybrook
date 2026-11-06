@@ -17,7 +17,7 @@ window.HoneybrookVoiceCast=[
     "lang": "en-US",
     "voiceSlot": 0,
     "visualIdentity": "Human · historical",
-    "storyContext": "Seven when the spring river takes her beekeeper parents; survives three days on honey, reaches the cottage on the fourth day. Mama Bear welcomes her. Her hair later silvers; she dies old and beloved before Carmen arrives. She entrusts Harold with the sealed family letter.",
+    "storyContext": "Seven when the spring river takes her beekeeper parents; survives three days on honey, reaches the cottage on the fourth day. Mama Bear welcomes her. Her hair later silvers; she dies old and beloved before Nell arrives. She entrusts Harold with the sealed family letter.",
     "performanceNote": "Game performance direction; does not change manuscript facts.",
     "gender": "female",
     "ageBand": "child"
@@ -195,7 +195,7 @@ window.HoneybrookVoiceCast=[
     "lang": "en-US",
     "voiceSlot": 8,
     "visualIdentity": "Bear · family protector and practical planner",
-    "storyContext": "His disciplined service informs clear routes, sensible supplies and quiet practical care. Plans with Tom and family rather than imposing changes. Asks Templar to include rest. Reacts tensely when Carmen first arrives.",
+    "storyContext": "His disciplined service informs clear routes, sensible supplies and quiet practical care. Plans with Tom and family rather than imposing changes. Asks Templar to include rest. Reacts tensely when Nell first arrives.",
     "performanceNote": "Game performance direction; does not change manuscript facts.",
     "gender": "male",
     "ageBand": "adult"
@@ -481,7 +481,7 @@ window.HoneybrookVoiceCast=[
     "lang": "en-GB",
     "voiceSlot": 21,
     "visualIdentity": "Bear · mail carrier",
-    "storyContext": "The oldest bear in two towns. Keeps Goldilocks’s century-old letter sealed, private and separate from any player finances. Gives it to Carmen on her fourth day asking about beekeepers, then tells her what he knows.",
+    "storyContext": "The oldest bear in two towns. Keeps Goldilocks’s century-old letter sealed, private and separate from any player finances. Gives it to Nell on her fourth day asking about beekeepers, then tells her what he knows.",
     "performanceNote": "Game performance direction; does not change manuscript facts.",
     "gender": "male",
     "ageBand": "adult"
@@ -642,9 +642,9 @@ window.HoneybrookVoiceCast=[
   },
   {
     "id": "story-carmen",
-    "name": "Carmen",
+    "name": "Nell",
     "aliases": [
-      "Carmen",
+      "Nell",
       "story-carmen",
       "carmen"
     ],
@@ -767,7 +767,7 @@ window.HoneybrookVoiceCast=[
     "lang": "en-US",
     "voiceSlot": 34,
     "visualIdentity": "Human · historical letter writer",
-    "storyContext": "Father of the beekeeper’s wife and grandfather of Goldilocks. Searches for his missing daughter, not knowing about the river or surviving granddaughter. Carmen descends from the family’s other branch. The manuscript does not provide the full letter text or all names.",
+    "storyContext": "Father of the beekeeper’s wife and grandfather of Goldilocks. Searches for his missing daughter, not knowing about the river or surviving granddaughter. Nell descends from the family’s other branch. The manuscript does not provide the full letter text or all names.",
     "performanceNote": "Game performance direction; does not change manuscript facts.",
     "gender": "neutral",
     "ageBand": "adult"
@@ -4838,7 +4838,7 @@ window.HoneybrookVoiceCast=[
     "lang": "en-US",
     "voiceSlot": 0,
     "visualIdentity": "Human · historical",
-    "storyContext": "Seven when the spring river takes her beekeeper parents; survives three days on honey, reaches the cottage on the fourth day. Mama Bear welcomes her. Her hair later silvers; she dies old and beloved before Carmen arrives. She entrusts Harold with the sealed family letter.",
+    "storyContext": "Seven when the spring river takes her beekeeper parents; survives three days on honey, reaches the cottage on the fourth day. Mama Bear welcomes her. Her hair later silvers; she dies old and beloved before Nell arrives. She entrusts Harold with the sealed family letter.",
     "performanceNote": "Game performance direction; does not change manuscript facts.",
     "gender": "female",
     "ageBand": "child"
@@ -4859,7 +4859,7 @@ window.HoneybrookVoiceCast=[
     "lang": "en-US",
     "voiceSlot": 0,
     "visualIdentity": "Human · historical",
-    "storyContext": "Seven when the spring river takes her beekeeper parents; survives three days on honey, reaches the cottage on the fourth day. Mama Bear welcomes her. Her hair later silvers; she dies old and beloved before Carmen arrives. She entrusts Harold with the sealed family letter.",
+    "storyContext": "Seven when the spring river takes her beekeeper parents; survives three days on honey, reaches the cottage on the fourth day. Mama Bear welcomes her. Her hair later silvers; she dies old and beloved before Nell arrives. She entrusts Harold with the sealed family letter.",
     "performanceNote": "Game performance direction; does not change manuscript facts.",
     "gender": "female",
     "ageBand": "teen"
@@ -4880,7 +4880,7 @@ window.HoneybrookVoiceCast=[
     "lang": "en-US",
     "voiceSlot": 0,
     "visualIdentity": "Human · historical",
-    "storyContext": "Seven when the spring river takes her beekeeper parents; survives three days on honey, reaches the cottage on the fourth day. Mama Bear welcomes her. Her hair later silvers; she dies old and beloved before Carmen arrives. She entrusts Harold with the sealed family letter.",
+    "storyContext": "Seven when the spring river takes her beekeeper parents; survives three days on honey, reaches the cottage on the fourth day. Mama Bear welcomes her. Her hair later silvers; she dies old and beloved before Nell arrives. She entrusts Harold with the sealed family letter.",
     "performanceNote": "Game performance direction; does not change manuscript facts.",
     "gender": "female",
     "ageBand": "adult"
@@ -4901,7 +4901,7 @@ window.HoneybrookVoiceCast=[
     "lang": "en-US",
     "voiceSlot": 0,
     "visualIdentity": "Human · historical",
-    "storyContext": "Seven when the spring river takes her beekeeper parents; survives three days on honey, reaches the cottage on the fourth day. Mama Bear welcomes her. Her hair later silvers; she dies old and beloved before Carmen arrives. She entrusts Harold with the sealed family letter.",
+    "storyContext": "Seven when the spring river takes her beekeeper parents; survives three days on honey, reaches the cottage on the fourth day. Mama Bear welcomes her. Her hair later silvers; she dies old and beloved before Nell arrives. She entrusts Harold with the sealed family letter.",
     "performanceNote": "Game performance direction; does not change manuscript facts.",
     "gender": "female",
     "ageBand": "elder"
