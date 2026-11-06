@@ -9,7 +9,8 @@ window.HoneybrookVoiceCast=[
       "gold"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "patient and reflective; leaves room for a reply",
+    "speechEnabled": true,
+    "personality": "Seven when the spring river takes her beekeeper parents; survives three days on honey, reaches the cottage on the fourth day.",
     "delivery": "unhurried, rounded phrases",
     "rate": 0.82,
     "pitch": 0.73,
@@ -28,7 +29,8 @@ window.HoneybrookVoiceCast=[
       "mama"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "brisk and practical; gives one clear next step",
+    "speechEnabled": true,
+    "personality": "Sees a lost child rather than an intruder, says ‘She stays,’ and offers care without demanding her story.",
     "delivery": "crisp phrases with a measured pause",
     "rate": 0.832,
     "pitch": 1.1,
@@ -47,7 +49,8 @@ window.HoneybrookVoiceCast=[
       "papa"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "warm and encouraging; notices another person’s effort",
+    "speechEnabled": true,
+    "personality": "At first roars over the empty bowls, then lowers his head when Mama sees the child.",
     "delivery": "warm, flowing delivery",
     "rate": 0.844,
     "pitch": 1.47,
@@ -66,7 +69,8 @@ window.HoneybrookVoiceCast=[
       "baby"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "quietly curious; asks before drawing conclusions",
+    "speechEnabled": true,
+    "personality": "Shares his toy, bed and world with Goldilocks.",
     "delivery": "soft, deliberate phrasing",
     "rate": 0.856,
     "pitch": 0.95,
@@ -85,6 +89,7 @@ window.HoneybrookVoiceCast=[
       "amelia"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "Welcoming and independent; offers safety before asking for usefulness.",
     "delivery": "Warm and confident; patient, open invitations.",
     "rate": 0.94,
@@ -105,6 +110,7 @@ window.HoneybrookVoiceCast=[
       "Tom"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "Practical and careful; values safe work and dependable crossings.",
     "delivery": "Grounded, measured instructions; low register.",
     "rate": 0.9,
@@ -125,6 +131,7 @@ window.HoneybrookVoiceCast=[
       "Sammy"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "Earnest and observant; learning remains uneven, with no secret genius or royal identity.",
     "delivery": "Youthful, sincere delivery; takes time to find words.",
     "rate": 0.95,
@@ -144,7 +151,8 @@ window.HoneybrookVoiceCast=[
       "templar"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "gentle and observant; remembers small acts of care",
+    "speechEnabled": true,
+    "personality": "Relearns her technology skills through honest practice.",
     "delivery": "gentle, lightly breathy delivery",
     "rate": 0.904,
     "pitch": 1.54,
@@ -163,7 +171,8 @@ window.HoneybrookVoiceCast=[
       "buddy"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "patient and reflective; leaves room for a reply",
+    "speechEnabled": true,
+    "personality": "His disciplined service informs clear routes, sensible supplies and quiet practical care.",
     "delivery": "unhurried, rounded phrases",
     "rate": 0.916,
     "pitch": 1.02,
@@ -182,6 +191,7 @@ window.HoneybrookVoiceCast=[
       "mary"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "Caring, generous household presence; makes space at her table.",
     "delivery": "Full, reassuring warmth; relaxed pacing.",
     "rate": 0.88,
@@ -201,7 +211,8 @@ window.HoneybrookVoiceCast=[
       "jonesha"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "warm and encouraging; notices another person’s effort",
+    "speechEnabled": true,
+    "personality": "Carries a notebook of paths, corrects the outdated map, discovers the old stone arch with Lance from the marked public path.",
     "delivery": "warm, flowing delivery",
     "rate": 0.94,
     "pitch": 0.87,
@@ -220,7 +231,8 @@ window.HoneybrookVoiceCast=[
       "jamya"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "quietly curious; asks before drawing conclusions",
+    "speechEnabled": true,
+    "personality": "Packs useful supplies, notices the right route mark, labels drawers and folders, spots a cupboard blocking a path.",
     "delivery": "soft, deliberate phrasing",
     "rate": 0.952,
     "pitch": 1.24,
@@ -239,7 +251,8 @@ window.HoneybrookVoiceCast=[
       "jamon"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "cheerful and lightly playful; never mocks grief",
+    "speechEnabled": true,
+    "personality": "Keeps familiar blankets and bags secure, folds the temporary paper dinosaur for Landis and notices access problems beside Buddy.",
     "delivery": "bright, lightly lifted delivery",
     "rate": 0.964,
     "pitch": 1.61,
@@ -258,7 +271,8 @@ window.HoneybrookVoiceCast=[
       "robin"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "precise and thoughtful; distinguishes facts from guesses",
+    "speechEnabled": true,
+    "personality": "Brings songs and offers company or quiet.",
     "delivery": "clear, evenly paced delivery",
     "rate": 0.976,
     "pitch": 1.09,
@@ -277,7 +291,8 @@ window.HoneybrookVoiceCast=[
       "rheanna"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "steady and protective; explains a boundary calmly",
+    "speechEnabled": true,
+    "personality": "Chooses a picture and a bright window, adds rhythm to a traveling song, brightens the workshop noticeboard and makes an ordinary doorway feel like a stage entrance.",
     "delivery": "low, steady delivery",
     "rate": 0.988,
     "pitch": 1.46,
@@ -296,7 +311,8 @@ window.HoneybrookVoiceCast=[
       "lena"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "gentle and observant; remembers small acts of care",
+    "speechEnabled": false,
+    "personality": "Does not use spoken words or walk to a lesson as some others do.",
     "delivery": "gentle, lightly breathy delivery",
     "rate": 1,
     "pitch": 0.94,
@@ -315,7 +331,8 @@ window.HoneybrookVoiceCast=[
       "lance"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "patient and reflective; leaves room for a reply",
+    "speechEnabled": true,
+    "personality": "Brings games, turns numbers into points and helps make an untimed practice game show with a pass option and quiet alternative.",
     "delivery": "unhurried, rounded phrases",
     "rate": 1.012,
     "pitch": 1.31,
@@ -334,7 +351,8 @@ window.HoneybrookVoiceCast=[
       "landis"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "brisk and practical; gives one clear next step",
+    "speechEnabled": true,
+    "personality": "The toy dinosaur is lost on the journey and later found in a blanket box.",
     "delivery": "crisp phrases with a measured pause",
     "rate": 0.82,
     "pitch": 0.79,
@@ -353,7 +371,8 @@ window.HoneybrookVoiceCast=[
       "landric"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "warm and encouraging; notices another person’s effort",
+    "speechEnabled": true,
+    "personality": "The little one asks for snacks, enjoys the lunch stop, and finds the kitchen important.",
     "delivery": "warm, flowing delivery",
     "rate": 0.832,
     "pitch": 1.16,
@@ -372,7 +391,8 @@ window.HoneybrookVoiceCast=[
       "willie"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "quietly curious; asks before drawing conclusions",
+    "speechEnabled": false,
+    "personality": "Not present to enter the new house.",
     "delivery": "soft, deliberate phrasing",
     "rate": 0.844,
     "pitch": 1.53,
@@ -391,7 +411,8 @@ window.HoneybrookVoiceCast=[
       "theodore"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "cheerful and lightly playful; never mocks grief",
+    "speechEnabled": true,
+    "personality": "Arrives in a waistcoat with spectacles, books and a tidy plan.",
     "delivery": "bright, lightly lifted delivery",
     "rate": 0.856,
     "pitch": 1.01,
@@ -410,6 +431,7 @@ window.HoneybrookVoiceCast=[
       "harold"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "Patient keeper of letters and memories; speaks carefully and honours promises.",
     "delivery": "Low, unhurried storytelling; deliberate pauses.",
     "rate": 0.82,
@@ -429,7 +451,8 @@ window.HoneybrookVoiceCast=[
       "wally"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "steady and protective; explains a boundary calmly",
+    "speechEnabled": true,
+    "personality": "Arrives with recipe book, mixing bowl and broken wrapped cookies.",
     "delivery": "low, steady delivery",
     "rate": 0.88,
     "pitch": 0.86,
@@ -448,7 +471,8 @@ window.HoneybrookVoiceCast=[
       "patty"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "gentle and observant; remembers small acts of care",
+    "speechEnabled": true,
+    "personality": "Asks Wally about actual customers, realistic batches and reliable opening products.",
     "delivery": "gentle, lightly breathy delivery",
     "rate": 0.892,
     "pitch": 1.23,
@@ -467,7 +491,8 @@ window.HoneybrookVoiceCast=[
       "daisy"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "patient and reflective; leaves room for a reply",
+    "speechEnabled": true,
+    "personality": "May sit without deciding her whole future.",
     "delivery": "unhurried, rounded phrases",
     "rate": 0.904,
     "pitch": 1.6,
@@ -486,7 +511,8 @@ window.HoneybrookVoiceCast=[
       "mabel"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "brisk and practical; gives one clear next step",
+    "speechEnabled": true,
+    "personality": "Named among the later bears who carry on Welcome House’s work.",
     "delivery": "crisp phrases with a measured pause",
     "rate": 0.916,
     "pitch": 1.08,
@@ -505,7 +531,8 @@ window.HoneybrookVoiceCast=[
       "toby"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "warm and encouraging; notices another person’s effort",
+    "speechEnabled": true,
+    "personality": "Named among the later bears who improve Welcome House while keeping its bench.",
     "delivery": "warm, flowing delivery",
     "rate": 0.928,
     "pitch": 1.45,
@@ -524,7 +551,8 @@ window.HoneybrookVoiceCast=[
       "nora"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "quietly curious; asks before drawing conclusions",
+    "speechEnabled": true,
+    "personality": "Named among the later Welcome House bears who keep the welcome and the bench.",
     "delivery": "soft, deliberate phrasing",
     "rate": 0.94,
     "pitch": 0.93,
@@ -543,7 +571,8 @@ window.HoneybrookVoiceCast=[
       "milo"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "cheerful and lightly playful; never mocks grief",
+    "speechEnabled": true,
+    "personality": "A young bear offered a quiet chair by Jonesha.",
     "delivery": "bright, lightly lifted delivery",
     "rate": 0.952,
     "pitch": 1.3,
@@ -562,7 +591,8 @@ window.HoneybrookVoiceCast=[
       "carmen"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "precise and thoughtful; distinguishes facts from guesses",
+    "speechEnabled": true,
+    "personality": "Arrives Tuesday in a rental car with a dented fender, notebook and camera.",
     "delivery": "clear, evenly paced delivery",
     "rate": 0.964,
     "pitch": 0.78,
@@ -581,7 +611,8 @@ window.HoneybrookVoiceCast=[
       "angel"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "steady and protective; explains a boundary calmly",
+    "speechEnabled": true,
+    "personality": "The woman at the creek protects Amelia without controlling her choices.",
     "delivery": "low, steady delivery",
     "rate": 0.976,
     "pitch": 1.15,
@@ -600,6 +631,7 @@ window.HoneybrookVoiceCast=[
       "goddess"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "Protective and patient; guides without controlling a choice or revealing the ending.",
     "delivery": "Calm, spacious phrases; gentle high register.",
     "rate": 0.79,
@@ -619,6 +651,7 @@ window.HoneybrookVoiceCast=[
       "ash"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "Accountable and practical; follows an apology with dependable conduct.",
     "delivery": "Dry, low, precise phrasing; restrained humour.",
     "rate": 0.92,
@@ -638,7 +671,8 @@ window.HoneybrookVoiceCast=[
       "beekeepers"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "brisk and practical; gives one clear next step",
+    "speechEnabled": true,
+    "personality": "A husband and wife lost in the spring river.",
     "delivery": "crisp phrases with a measured pause",
     "rate": 1.012,
     "pitch": 1.37,
@@ -657,7 +691,8 @@ window.HoneybrookVoiceCast=[
       "ancestor"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "warm and encouraging; notices another person’s effort",
+    "speechEnabled": true,
+    "personality": "Father of the beekeeper’s wife and grandfather of Goldilocks.",
     "delivery": "warm, flowing delivery",
     "rate": 0.82,
     "pitch": 0.85,
@@ -676,7 +711,8 @@ window.HoneybrookVoiceCast=[
       "prince"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "quietly curious; asks before drawing conclusions",
+    "speechEnabled": true,
+    "personality": "The unnamed prince kneels beneath the moon; true love’s kiss wakes the sleeping princess.",
     "delivery": "soft, deliberate phrasing",
     "rate": 0.832,
     "pitch": 1.22,
@@ -695,7 +731,8 @@ window.HoneybrookVoiceCast=[
       "princess"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "cheerful and lightly playful; never mocks grief",
+    "speechEnabled": true,
+    "personality": "The unnamed princess wakes through true love’s kiss.",
     "delivery": "bright, lightly lifted delivery",
     "rate": 0.844,
     "pitch": 1.59,
@@ -714,7 +751,8 @@ window.HoneybrookVoiceCast=[
       "cook"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "precise and thoughtful; distinguishes facts from guesses",
+    "speechEnabled": true,
+    "personality": "Feeds the bridge builders, walks with Amelia after spilled water, helps plan bowls and welcome, and jokes about the roof drip.",
     "delivery": "clear, evenly paced delivery",
     "rate": 0.856,
     "pitch": 1.07,
@@ -733,7 +771,8 @@ window.HoneybrookVoiceCast=[
       "ranger"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "steady and protective; explains a boundary calmly",
+    "speechEnabled": true,
+    "personality": "Visits the old stone arch with Tom while the children remain behind the boundary rope.",
     "delivery": "low, steady delivery",
     "rate": 0.868,
     "pitch": 1.44,
@@ -752,7 +791,8 @@ window.HoneybrookVoiceCast=[
       "older-cub"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "gentle and observant; remembers small acts of care",
+    "speechEnabled": true,
+    "personality": "A separate traveler from Sammy.",
     "delivery": "gentle, lightly breathy delivery",
     "rate": 0.88,
     "pitch": 0.92,
@@ -771,7 +811,8 @@ window.HoneybrookVoiceCast=[
       "travelers"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "patient and reflective; leaves room for a reply",
+    "speechEnabled": true,
+    "personality": "The medicine-basket traveler, relative-bound traveler, pinecone-offering cub, water-giving elder, careful helpers, newcomers and adult learners have their own places in the text.",
     "delivery": "unhurried, rounded phrases",
     "rate": 0.892,
     "pitch": 1.29,
@@ -790,6 +831,7 @@ window.HoneybrookVoiceCast=[
       "nell"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "Curious, loving British private investigator and family beekeeper; asks careful questions and loves bears.",
     "delivery": "Warm British English; thoughtful questions, clear observations.",
     "rate": 0.96,
@@ -809,7 +851,8 @@ window.HoneybrookVoiceCast=[
       "maya"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "warm and encouraging; notices another person’s effort",
+    "speechEnabled": true,
+    "personality": "Care starts with listening and checking what each family actually needs.",
     "delivery": "warm, flowing delivery",
     "rate": 0.916,
     "pitch": 1.14,
@@ -828,7 +871,8 @@ window.HoneybrookVoiceCast=[
       "daniel"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "quietly curious; asks before drawing conclusions",
+    "speechEnabled": true,
+    "personality": "Measure, make a safe plan, then inspect the work together.",
     "delivery": "soft, deliberate phrasing",
     "rate": 0.928,
     "pitch": 1.51,
@@ -847,7 +891,8 @@ window.HoneybrookVoiceCast=[
       "lin"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "cheerful and lightly playful; never mocks grief",
+    "speechEnabled": true,
+    "personality": "A careful first row gives the whole piece a good beginning.",
     "delivery": "bright, lightly lifted delivery",
     "rate": 0.94,
     "pitch": 0.99,
@@ -866,7 +911,8 @@ window.HoneybrookVoiceCast=[
       "aiko"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "precise and thoughtful; distinguishes facts from guesses",
+    "speechEnabled": true,
+    "personality": "Look at the light before choosing your colors.",
     "delivery": "clear, evenly paced delivery",
     "rate": 0.952,
     "pitch": 1.36,
@@ -885,7 +931,8 @@ window.HoneybrookVoiceCast=[
       "sofia"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "steady and protective; explains a boundary calmly",
+    "speechEnabled": true,
+    "personality": "Count the guests first, then check the portions and ingredients.",
     "delivery": "low, steady delivery",
     "rate": 0.964,
     "pitch": 0.84,
@@ -904,7 +951,8 @@ window.HoneybrookVoiceCast=[
       "arjun"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "gentle and observant; remembers small acts of care",
+    "speechEnabled": true,
+    "personality": "A checklist is a promise to bring the right equipment for everybody.",
     "delivery": "gentle, lightly breathy delivery",
     "rate": 0.976,
     "pitch": 1.21,
@@ -923,7 +971,8 @@ window.HoneybrookVoiceCast=[
       "marie"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "patient and reflective; leaves room for a reply",
+    "speechEnabled": true,
+    "personality": "We can keep the soil healthy and share what grows.",
     "delivery": "unhurried, rounded phrases",
     "rate": 0.988,
     "pitch": 1.58,
@@ -942,7 +991,8 @@ window.HoneybrookVoiceCast=[
       "elijah"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "brisk and practical; gives one clear next step",
+    "speechEnabled": true,
+    "personality": "There is room for your voice in our sunset songs.",
     "delivery": "crisp phrases with a measured pause",
     "rate": 1,
     "pitch": 1.06,
@@ -961,7 +1011,8 @@ window.HoneybrookVoiceCast=[
       "amina"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "warm and encouraging; notices another person’s effort",
+    "speechEnabled": true,
+    "personality": "Preparation and kindness help every camper belong.",
     "delivery": "warm, flowing delivery",
     "rate": 1.012,
     "pitch": 1.43,
@@ -980,7 +1031,8 @@ window.HoneybrookVoiceCast=[
       "hollow-cedar-0"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "quietly curious; asks before drawing conclusions",
+    "speechEnabled": true,
+    "personality": "Rowan repairs wooden things; Hazel loves patchwork.",
     "delivery": "soft, deliberate phrasing",
     "rate": 0.82,
     "pitch": 0.91,
@@ -999,7 +1051,8 @@ window.HoneybrookVoiceCast=[
       "hollow-cedar-1"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "cheerful and lightly playful; never mocks grief",
+    "speechEnabled": true,
+    "personality": "Rowan repairs wooden things; Hazel loves patchwork.",
     "delivery": "bright, lightly lifted delivery",
     "rate": 0.832,
     "pitch": 1.28,
@@ -1018,7 +1071,8 @@ window.HoneybrookVoiceCast=[
       "hollow-cedar-2"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "precise and thoughtful; distinguishes facts from guesses",
+    "speechEnabled": true,
+    "personality": "Rowan repairs wooden things; Hazel loves patchwork.",
     "delivery": "clear, evenly paced delivery",
     "rate": 0.844,
     "pitch": 0.76,
@@ -1037,7 +1091,8 @@ window.HoneybrookVoiceCast=[
       "hollow-willow-0"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "steady and protective; explains a boundary calmly",
+    "speechEnabled": true,
+    "personality": "Hana shapes clay bowls.",
     "delivery": "low, steady delivery",
     "rate": 0.856,
     "pitch": 1.13,
@@ -1056,7 +1111,8 @@ window.HoneybrookVoiceCast=[
       "hollow-willow-1"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "gentle and observant; remembers small acts of care",
+    "speechEnabled": true,
+    "personality": "Hana shapes clay bowls.",
     "delivery": "gentle, lightly breathy delivery",
     "rate": 0.868,
     "pitch": 1.5,
@@ -1075,7 +1131,8 @@ window.HoneybrookVoiceCast=[
       "hollow-willow-2"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "patient and reflective; leaves room for a reply",
+    "speechEnabled": true,
+    "personality": "Hana shapes clay bowls.",
     "delivery": "unhurried, rounded phrases",
     "rate": 0.88,
     "pitch": 0.98,
@@ -1094,7 +1151,8 @@ window.HoneybrookVoiceCast=[
       "hollow-clover-0"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "brisk and practical; gives one clear next step",
+    "speechEnabled": true,
+    "personality": "Mireille grows vegetables, Luc mends baskets, and Jojo carefully counts every new bean leaf.",
     "delivery": "crisp phrases with a measured pause",
     "rate": 0.892,
     "pitch": 1.35,
@@ -1113,7 +1171,8 @@ window.HoneybrookVoiceCast=[
       "hollow-clover-1"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "warm and encouraging; notices another person’s effort",
+    "speechEnabled": true,
+    "personality": "Mireille grows vegetables, Luc mends baskets, and Jojo carefully counts every new bean leaf.",
     "delivery": "warm, flowing delivery",
     "rate": 0.904,
     "pitch": 0.83,
@@ -1132,7 +1191,8 @@ window.HoneybrookVoiceCast=[
       "hollow-clover-2"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "quietly curious; asks before drawing conclusions",
+    "speechEnabled": true,
+    "personality": "Mireille grows vegetables, Luc mends baskets, and Jojo carefully counts every new bean leaf.",
     "delivery": "soft, deliberate phrasing",
     "rate": 0.916,
     "pitch": 1.2,
@@ -1151,7 +1211,8 @@ window.HoneybrookVoiceCast=[
       "hollow-maple-0"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "cheerful and lightly playful; never mocks grief",
+    "speechEnabled": true,
+    "personality": "Music drifts from this porch.",
     "delivery": "bright, lightly lifted delivery",
     "rate": 0.928,
     "pitch": 1.57,
@@ -1170,7 +1231,8 @@ window.HoneybrookVoiceCast=[
       "hollow-maple-1"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "precise and thoughtful; distinguishes facts from guesses",
+    "speechEnabled": true,
+    "personality": "Music drifts from this porch.",
     "delivery": "clear, evenly paced delivery",
     "rate": 0.94,
     "pitch": 1.05,
@@ -1189,7 +1251,8 @@ window.HoneybrookVoiceCast=[
       "hollow-maple-2"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "steady and protective; explains a boundary calmly",
+    "speechEnabled": true,
+    "personality": "Music drifts from this porch.",
     "delivery": "low, steady delivery",
     "rate": 0.952,
     "pitch": 1.42,
@@ -1208,7 +1271,8 @@ window.HoneybrookVoiceCast=[
       "hollow-fern-0"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "gentle and observant; remembers small acts of care",
+    "speechEnabled": true,
+    "personality": "Wide paths and an easy ramp make visiting comfortable.",
     "delivery": "gentle, lightly breathy delivery",
     "rate": 0.964,
     "pitch": 0.9,
@@ -1227,7 +1291,8 @@ window.HoneybrookVoiceCast=[
       "hollow-fern-1"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "patient and reflective; leaves room for a reply",
+    "speechEnabled": true,
+    "personality": "Wide paths and an easy ramp make visiting comfortable.",
     "delivery": "unhurried, rounded phrases",
     "rate": 0.976,
     "pitch": 1.27,
@@ -1246,7 +1311,8 @@ window.HoneybrookVoiceCast=[
       "hollow-fern-2"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "brisk and practical; gives one clear next step",
+    "speechEnabled": true,
+    "personality": "Wide paths and an easy ramp make visiting comfortable.",
     "delivery": "crisp phrases with a measured pause",
     "rate": 0.988,
     "pitch": 0.75,
@@ -1265,7 +1331,8 @@ window.HoneybrookVoiceCast=[
       "hollow-bluebell-0"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "warm and encouraging; notices another person’s effort",
+    "speechEnabled": true,
+    "personality": "A fragrant family kitchen and a lilac front door.",
     "delivery": "warm, flowing delivery",
     "rate": 1,
     "pitch": 1.12,
@@ -1284,7 +1351,8 @@ window.HoneybrookVoiceCast=[
       "hollow-bluebell-1"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "quietly curious; asks before drawing conclusions",
+    "speechEnabled": true,
+    "personality": "A fragrant family kitchen and a lilac front door.",
     "delivery": "soft, deliberate phrasing",
     "rate": 1.012,
     "pitch": 1.49,
@@ -1303,7 +1371,8 @@ window.HoneybrookVoiceCast=[
       "hollow-bluebell-2"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "cheerful and lightly playful; never mocks grief",
+    "speechEnabled": true,
+    "personality": "A fragrant family kitchen and a lilac front door.",
     "delivery": "bright, lightly lifted delivery",
     "rate": 0.82,
     "pitch": 0.97,
@@ -1322,7 +1391,8 @@ window.HoneybrookVoiceCast=[
       "guide-honey"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "precise and thoughtful; distinguishes facts from guesses",
+    "speechEnabled": true,
+    "personality": "Bottle six jars from Beatrice’s already inspected honey, then seal and label each jar for a cottage.",
     "delivery": "clear, evenly paced delivery",
     "rate": 0.832,
     "pitch": 1.34,
@@ -1341,7 +1411,8 @@ window.HoneybrookVoiceCast=[
       "guide-porridge"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "steady and protective; explains a boundary calmly",
+    "speechEnabled": true,
+    "personality": "Measure a real six-bowl recipe, follow the cooking order with Mama Maple at the hot stove, and portion breakfast for the cottage lane.",
     "delivery": "low, steady delivery",
     "rate": 0.844,
     "pitch": 0.82,
@@ -1360,7 +1431,8 @@ window.HoneybrookVoiceCast=[
       "guide-bridge"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "gentle and observant; remembers small acts of care",
+    "speechEnabled": true,
+    "personality": "Measure the replacement rails on the practice bench, fit four supervised fasteners and inspect the rail before the ranger opens the crossing.",
     "delivery": "gentle, lightly breathy delivery",
     "rate": 0.856,
     "pitch": 1.19,
@@ -1379,7 +1451,8 @@ window.HoneybrookVoiceCast=[
       "longtime"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "patient and reflective; leaves room for a reply",
+    "speechEnabled": true,
+    "personality": "An unnamed supporting town role from the earlier game roster.",
     "delivery": "unhurried, rounded phrases",
     "rate": 0.868,
     "pitch": 1.56,
@@ -1398,7 +1471,8 @@ window.HoneybrookVoiceCast=[
       "helper"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "brisk and practical; gives one clear next step",
+    "speechEnabled": true,
+    "personality": "An unnamed supporting town role from the earlier game roster.",
     "delivery": "crisp phrases with a measured pause",
     "rate": 0.88,
     "pitch": 1.04,
@@ -1417,7 +1491,8 @@ window.HoneybrookVoiceCast=[
       "bridgeview"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "warm and encouraging; notices another person’s effort",
+    "speechEnabled": true,
+    "personality": "An unnamed supporting town role from the earlier game roster.",
     "delivery": "warm, flowing delivery",
     "rate": 0.892,
     "pitch": 1.41,
@@ -1436,7 +1511,8 @@ window.HoneybrookVoiceCast=[
       "icecream"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "quietly curious; asks before drawing conclusions",
+    "speechEnabled": true,
+    "personality": "An unnamed supporting town role from the earlier game roster.",
     "delivery": "soft, deliberate phrasing",
     "rate": 0.904,
     "pitch": 0.89,
@@ -1455,7 +1531,8 @@ window.HoneybrookVoiceCast=[
       "welcome"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "cheerful and lightly playful; never mocks grief",
+    "speechEnabled": true,
+    "personality": "An unnamed supporting town role from the earlier game roster.",
     "delivery": "bright, lightly lifted delivery",
     "rate": 0.916,
     "pitch": 1.26,
@@ -1474,6 +1551,7 @@ window.HoneybrookVoiceCast=[
       "cub-01"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "curious and patient",
     "delivery": "clear, evenly paced delivery",
     "rate": 0.928,
@@ -1493,6 +1571,7 @@ window.HoneybrookVoiceCast=[
       "cub-02"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "cheerful and practical",
     "delivery": "low, steady delivery",
     "rate": 0.94,
@@ -1512,6 +1591,7 @@ window.HoneybrookVoiceCast=[
       "cub-03"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "quiet and observant",
     "delivery": "gentle, lightly breathy delivery",
     "rate": 0.952,
@@ -1531,6 +1611,7 @@ window.HoneybrookVoiceCast=[
       "cub-04"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "playful and thoughtful",
     "delivery": "unhurried, rounded phrases",
     "rate": 0.964,
@@ -1550,6 +1631,7 @@ window.HoneybrookVoiceCast=[
       "cub-05"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "creative and encouraging",
     "delivery": "crisp phrases with a measured pause",
     "rate": 0.976,
@@ -1569,6 +1651,7 @@ window.HoneybrookVoiceCast=[
       "cub-06"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "curious and patient",
     "delivery": "warm, flowing delivery",
     "rate": 0.988,
@@ -1588,6 +1671,7 @@ window.HoneybrookVoiceCast=[
       "cub-07"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "cheerful and practical",
     "delivery": "soft, deliberate phrasing",
     "rate": 1,
@@ -1607,6 +1691,7 @@ window.HoneybrookVoiceCast=[
       "cub-08"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "quiet and observant",
     "delivery": "bright, lightly lifted delivery",
     "rate": 1.012,
@@ -1626,6 +1711,7 @@ window.HoneybrookVoiceCast=[
       "cub-09"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "playful and thoughtful",
     "delivery": "clear, evenly paced delivery",
     "rate": 0.82,
@@ -1645,6 +1731,7 @@ window.HoneybrookVoiceCast=[
       "cub-10"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "creative and encouraging",
     "delivery": "low, steady delivery",
     "rate": 0.832,
@@ -1664,6 +1751,7 @@ window.HoneybrookVoiceCast=[
       "cub-11"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "curious and patient",
     "delivery": "gentle, lightly breathy delivery",
     "rate": 0.844,
@@ -1683,6 +1771,7 @@ window.HoneybrookVoiceCast=[
       "cub-12"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "cheerful and practical",
     "delivery": "unhurried, rounded phrases",
     "rate": 0.856,
@@ -1702,6 +1791,7 @@ window.HoneybrookVoiceCast=[
       "cub-13"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "quiet and observant",
     "delivery": "crisp phrases with a measured pause",
     "rate": 0.868,
@@ -1721,6 +1811,7 @@ window.HoneybrookVoiceCast=[
       "cub-14"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "playful and thoughtful",
     "delivery": "warm, flowing delivery",
     "rate": 0.88,
@@ -1740,6 +1831,7 @@ window.HoneybrookVoiceCast=[
       "cub-15"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "creative and encouraging",
     "delivery": "soft, deliberate phrasing",
     "rate": 0.892,
@@ -1759,6 +1851,7 @@ window.HoneybrookVoiceCast=[
       "cub-16"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "curious and patient",
     "delivery": "bright, lightly lifted delivery",
     "rate": 0.904,
@@ -1778,6 +1871,7 @@ window.HoneybrookVoiceCast=[
       "cub-17"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "cheerful and practical",
     "delivery": "clear, evenly paced delivery",
     "rate": 0.916,
@@ -1797,6 +1891,7 @@ window.HoneybrookVoiceCast=[
       "cub-18"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "quiet and observant",
     "delivery": "low, steady delivery",
     "rate": 0.928,
@@ -1816,6 +1911,7 @@ window.HoneybrookVoiceCast=[
       "cub-19"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "playful and thoughtful",
     "delivery": "gentle, lightly breathy delivery",
     "rate": 0.94,
@@ -1835,6 +1931,7 @@ window.HoneybrookVoiceCast=[
       "cub-20"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "creative and encouraging",
     "delivery": "unhurried, rounded phrases",
     "rate": 0.952,
@@ -1854,6 +1951,7 @@ window.HoneybrookVoiceCast=[
       "cub-21"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "curious and patient",
     "delivery": "crisp phrases with a measured pause",
     "rate": 0.964,
@@ -1873,6 +1971,7 @@ window.HoneybrookVoiceCast=[
       "cub-22"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "cheerful and practical",
     "delivery": "warm, flowing delivery",
     "rate": 0.976,
@@ -1892,6 +1991,7 @@ window.HoneybrookVoiceCast=[
       "cub-23"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "quiet and observant",
     "delivery": "soft, deliberate phrasing",
     "rate": 0.988,
@@ -1911,6 +2011,7 @@ window.HoneybrookVoiceCast=[
       "cub-24"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "playful and thoughtful",
     "delivery": "bright, lightly lifted delivery",
     "rate": 1,
@@ -1930,6 +2031,7 @@ window.HoneybrookVoiceCast=[
       "cub-25"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "creative and encouraging",
     "delivery": "clear, evenly paced delivery",
     "rate": 1.012,
@@ -1949,6 +2051,7 @@ window.HoneybrookVoiceCast=[
       "cub-26"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "curious and patient",
     "delivery": "low, steady delivery",
     "rate": 0.82,
@@ -1968,6 +2071,7 @@ window.HoneybrookVoiceCast=[
       "cub-27"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "cheerful and practical",
     "delivery": "gentle, lightly breathy delivery",
     "rate": 0.832,
@@ -1987,6 +2091,7 @@ window.HoneybrookVoiceCast=[
       "cub-28"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "quiet and observant",
     "delivery": "unhurried, rounded phrases",
     "rate": 0.844,
@@ -2006,6 +2111,7 @@ window.HoneybrookVoiceCast=[
       "cub-29"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "playful and thoughtful",
     "delivery": "crisp phrases with a measured pause",
     "rate": 0.856,
@@ -2025,6 +2131,7 @@ window.HoneybrookVoiceCast=[
       "cub-30"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "creative and encouraging",
     "delivery": "warm, flowing delivery",
     "rate": 0.868,
@@ -2044,6 +2151,7 @@ window.HoneybrookVoiceCast=[
       "cub-31"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "curious and patient",
     "delivery": "soft, deliberate phrasing",
     "rate": 0.88,
@@ -2063,6 +2171,7 @@ window.HoneybrookVoiceCast=[
       "cub-32"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "cheerful and practical",
     "delivery": "bright, lightly lifted delivery",
     "rate": 0.892,
@@ -2082,6 +2191,7 @@ window.HoneybrookVoiceCast=[
       "cub-33"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "quiet and observant",
     "delivery": "clear, evenly paced delivery",
     "rate": 0.904,
@@ -2101,6 +2211,7 @@ window.HoneybrookVoiceCast=[
       "cub-34"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "playful and thoughtful",
     "delivery": "low, steady delivery",
     "rate": 0.916,
@@ -2120,6 +2231,7 @@ window.HoneybrookVoiceCast=[
       "cub-35"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "creative and encouraging",
     "delivery": "gentle, lightly breathy delivery",
     "rate": 0.928,
@@ -2139,6 +2251,7 @@ window.HoneybrookVoiceCast=[
       "cub-36"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "curious and patient",
     "delivery": "unhurried, rounded phrases",
     "rate": 0.94,
@@ -2158,6 +2271,7 @@ window.HoneybrookVoiceCast=[
       "cub-37"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "cheerful and practical",
     "delivery": "crisp phrases with a measured pause",
     "rate": 0.952,
@@ -2177,6 +2291,7 @@ window.HoneybrookVoiceCast=[
       "cub-38"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "quiet and observant",
     "delivery": "warm, flowing delivery",
     "rate": 0.964,
@@ -2196,6 +2311,7 @@ window.HoneybrookVoiceCast=[
       "cub-39"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "playful and thoughtful",
     "delivery": "soft, deliberate phrasing",
     "rate": 0.976,
@@ -2215,6 +2331,7 @@ window.HoneybrookVoiceCast=[
       "cub-40"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "creative and encouraging",
     "delivery": "bright, lightly lifted delivery",
     "rate": 0.988,
@@ -2234,6 +2351,7 @@ window.HoneybrookVoiceCast=[
       "cub-41"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "curious and patient",
     "delivery": "clear, evenly paced delivery",
     "rate": 1,
@@ -2253,6 +2371,7 @@ window.HoneybrookVoiceCast=[
       "cub-42"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "cheerful and practical",
     "delivery": "low, steady delivery",
     "rate": 1.012,
@@ -2272,6 +2391,7 @@ window.HoneybrookVoiceCast=[
       "cub-43"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "quiet and observant",
     "delivery": "gentle, lightly breathy delivery",
     "rate": 0.82,
@@ -2291,6 +2411,7 @@ window.HoneybrookVoiceCast=[
       "cub-44"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "playful and thoughtful",
     "delivery": "unhurried, rounded phrases",
     "rate": 0.832,
@@ -2310,6 +2431,7 @@ window.HoneybrookVoiceCast=[
       "cub-45"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "creative and encouraging",
     "delivery": "crisp phrases with a measured pause",
     "rate": 0.844,
@@ -2329,6 +2451,7 @@ window.HoneybrookVoiceCast=[
       "cub-46"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "curious and patient",
     "delivery": "warm, flowing delivery",
     "rate": 0.856,
@@ -2348,6 +2471,7 @@ window.HoneybrookVoiceCast=[
       "cub-47"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "cheerful and practical",
     "delivery": "soft, deliberate phrasing",
     "rate": 0.868,
@@ -2367,6 +2491,7 @@ window.HoneybrookVoiceCast=[
       "cub-48"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "quiet and observant",
     "delivery": "bright, lightly lifted delivery",
     "rate": 0.88,
@@ -2386,6 +2511,7 @@ window.HoneybrookVoiceCast=[
       "cub-49"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "playful and thoughtful",
     "delivery": "clear, evenly paced delivery",
     "rate": 0.892,
@@ -2405,6 +2531,7 @@ window.HoneybrookVoiceCast=[
       "cub-50"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "creative and encouraging",
     "delivery": "low, steady delivery",
     "rate": 0.904,
@@ -2424,7 +2551,8 @@ window.HoneybrookVoiceCast=[
       "treasurer"
     ],
     "source": "Established Honeybrook cast",
-    "personality": "gentle and observant; remembers small acts of care",
+    "speechEnabled": true,
+    "personality": "Keeps Honeybrook’s Fair fund, records sales and operating reserves, and publishes balanced receipts.",
     "delivery": "gentle, lightly breathy delivery",
     "rate": 0.916,
     "pitch": 1.44,
@@ -2443,6 +2571,7 @@ window.HoneybrookVoiceCast=[
       "arrival-family-1"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "Quietly observant and thoughtful",
     "delivery": "unhurried, rounded phrases",
     "rate": 0.928,
@@ -2462,6 +2591,7 @@ window.HoneybrookVoiceCast=[
       "arrival-quiet-1"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "Quietly observant and thoughtful",
     "delivery": "crisp phrases with a measured pause",
     "rate": 0.94,
@@ -2481,6 +2611,7 @@ window.HoneybrookVoiceCast=[
       "arrival-bunk-1"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "Quietly observant and thoughtful",
     "delivery": "warm, flowing delivery",
     "rate": 0.952,
@@ -2500,6 +2631,7 @@ window.HoneybrookVoiceCast=[
       "arrival-family-2"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "Warm once comfortable; patient with plans",
     "delivery": "soft, deliberate phrasing",
     "rate": 0.964,
@@ -2519,6 +2651,7 @@ window.HoneybrookVoiceCast=[
       "arrival-quiet-2"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "Warm once comfortable; patient with plans",
     "delivery": "bright, lightly lifted delivery",
     "rate": 0.976,
@@ -2538,6 +2671,7 @@ window.HoneybrookVoiceCast=[
       "arrival-bunk-2"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "Warm once comfortable; patient with plans",
     "delivery": "clear, evenly paced delivery",
     "rate": 0.988,
@@ -2557,6 +2691,7 @@ window.HoneybrookVoiceCast=[
       "arrival-family-3"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "Curious, creative and fond of familiar routines",
     "delivery": "low, steady delivery",
     "rate": 1,
@@ -2576,6 +2711,7 @@ window.HoneybrookVoiceCast=[
       "arrival-quiet-3"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "Curious, creative and fond of familiar routines",
     "delivery": "gentle, lightly breathy delivery",
     "rate": 1.012,
@@ -2595,6 +2731,7 @@ window.HoneybrookVoiceCast=[
       "arrival-bunk-3"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "Curious, creative and fond of familiar routines",
     "delivery": "unhurried, rounded phrases",
     "rate": 0.82,
@@ -2614,6 +2751,7 @@ window.HoneybrookVoiceCast=[
       "arrival-family-4"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "Quietly observant and thoughtful",
     "delivery": "crisp phrases with a measured pause",
     "rate": 0.832,
@@ -2633,6 +2771,7 @@ window.HoneybrookVoiceCast=[
       "arrival-quiet-4"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "Quietly observant and thoughtful",
     "delivery": "warm, flowing delivery",
     "rate": 0.844,
@@ -2652,6 +2791,7 @@ window.HoneybrookVoiceCast=[
       "arrival-bunk-4"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "Quietly observant and thoughtful",
     "delivery": "soft, deliberate phrasing",
     "rate": 0.856,
@@ -2671,6 +2811,7 @@ window.HoneybrookVoiceCast=[
       "arrival-family-5"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "Warm once comfortable; patient with plans",
     "delivery": "bright, lightly lifted delivery",
     "rate": 0.868,
@@ -2690,6 +2831,7 @@ window.HoneybrookVoiceCast=[
       "arrival-quiet-5"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "Warm once comfortable; patient with plans",
     "delivery": "clear, evenly paced delivery",
     "rate": 0.88,
@@ -2709,6 +2851,7 @@ window.HoneybrookVoiceCast=[
       "arrival-bunk-5"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "Warm once comfortable; patient with plans",
     "delivery": "low, steady delivery",
     "rate": 0.892,
@@ -2728,6 +2871,7 @@ window.HoneybrookVoiceCast=[
       "arrival-family-6"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "Curious, creative and fond of familiar routines",
     "delivery": "gentle, lightly breathy delivery",
     "rate": 0.904,
@@ -2747,6 +2891,7 @@ window.HoneybrookVoiceCast=[
       "arrival-quiet-6"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "Curious, creative and fond of familiar routines",
     "delivery": "unhurried, rounded phrases",
     "rate": 0.916,
@@ -2766,6 +2911,7 @@ window.HoneybrookVoiceCast=[
       "arrival-bunk-6"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "Curious, creative and fond of familiar routines",
     "delivery": "crisp phrases with a measured pause",
     "rate": 0.928,
@@ -2785,6 +2931,7 @@ window.HoneybrookVoiceCast=[
       "arrival-family-7"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "Quietly observant and thoughtful",
     "delivery": "warm, flowing delivery",
     "rate": 0.94,
@@ -2804,6 +2951,7 @@ window.HoneybrookVoiceCast=[
       "arrival-quiet-7"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "Quietly observant and thoughtful",
     "delivery": "soft, deliberate phrasing",
     "rate": 0.952,
@@ -2823,6 +2971,7 @@ window.HoneybrookVoiceCast=[
       "arrival-bunk-7"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "Quietly observant and thoughtful",
     "delivery": "bright, lightly lifted delivery",
     "rate": 0.964,
@@ -2842,6 +2991,7 @@ window.HoneybrookVoiceCast=[
       "arrival-family-8"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "Warm once comfortable; patient with plans",
     "delivery": "clear, evenly paced delivery",
     "rate": 0.976,
@@ -2861,6 +3011,7 @@ window.HoneybrookVoiceCast=[
       "arrival-quiet-8"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "Warm once comfortable; patient with plans",
     "delivery": "low, steady delivery",
     "rate": 0.988,
@@ -2880,6 +3031,7 @@ window.HoneybrookVoiceCast=[
       "arrival-bunk-8"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "Warm once comfortable; patient with plans",
     "delivery": "gentle, lightly breathy delivery",
     "rate": 1,
@@ -2899,6 +3051,7 @@ window.HoneybrookVoiceCast=[
       "arrival-family-9"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "Curious, creative and fond of familiar routines",
     "delivery": "unhurried, rounded phrases",
     "rate": 1.012,
@@ -2918,6 +3071,7 @@ window.HoneybrookVoiceCast=[
       "arrival-quiet-9"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "Curious, creative and fond of familiar routines",
     "delivery": "crisp phrases with a measured pause",
     "rate": 0.82,
@@ -2937,6 +3091,7 @@ window.HoneybrookVoiceCast=[
       "arrival-bunk-9"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "Curious, creative and fond of familiar routines",
     "delivery": "warm, flowing delivery",
     "rate": 0.832,
@@ -2956,6 +3111,7 @@ window.HoneybrookVoiceCast=[
       "arrival-family-10"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "Quietly observant and thoughtful",
     "delivery": "soft, deliberate phrasing",
     "rate": 0.844,
@@ -2975,6 +3131,7 @@ window.HoneybrookVoiceCast=[
       "arrival-quiet-10"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "Quietly observant and thoughtful",
     "delivery": "bright, lightly lifted delivery",
     "rate": 0.856,
@@ -2994,6 +3151,7 @@ window.HoneybrookVoiceCast=[
       "arrival-bunk-10"
     ],
     "source": "Established Honeybrook cast",
+    "speechEnabled": true,
     "personality": "Quietly observant and thoughtful",
     "delivery": "clear, evenly paced delivery",
     "rate": 0.868,
@@ -3012,7 +3170,8 @@ window.HoneybrookVoiceCast=[
       "elder-1"
     ],
     "source": "Bear Hollow elder",
-    "personality": "steady and protective; explains a boundary calmly",
+    "speechEnabled": true,
+    "personality": "She was younger than Abigail when the human girl was a child.",
     "delivery": "low, steady delivery",
     "rate": 0.88,
     "pitch": 1.34,
@@ -3030,7 +3189,8 @@ window.HoneybrookVoiceCast=[
       "elder-2"
     ],
     "source": "Bear Hollow elder",
-    "personality": "gentle and observant; remembers small acts of care",
+    "speechEnabled": true,
+    "personality": "He and Abigail were children in the same early household years.",
     "delivery": "gentle, lightly breathy delivery",
     "rate": 0.892,
     "pitch": 0.82,
@@ -3048,7 +3208,8 @@ window.HoneybrookVoiceCast=[
       "elder-3"
     ],
     "source": "Bear Hollow elder",
-    "personality": "patient and reflective; leaves room for a reply",
+    "speechEnabled": true,
+    "personality": "She was a young neighbour during Abigail’s childhood and grew into old age knowing her.",
     "delivery": "unhurried, rounded phrases",
     "rate": 0.904,
     "pitch": 1.19,
@@ -3066,7 +3227,8 @@ window.HoneybrookVoiceCast=[
       "elder-4"
     ],
     "source": "Bear Hollow elder",
-    "personality": "brisk and practical; gives one clear next step",
+    "speechEnabled": true,
+    "personality": "He remembers the later Bear Hollow and carries his father’s accounts of its earlier paths.",
     "delivery": "crisp phrases with a measured pause",
     "rate": 0.916,
     "pitch": 1.56,
@@ -3084,7 +3246,8 @@ window.HoneybrookVoiceCast=[
       "elder-5"
     ],
     "source": "Bear Hollow elder",
-    "personality": "warm and encouraging; notices another person’s effort",
+    "speechEnabled": true,
+    "personality": "Her grandmother’s household knew Abigail; Tansy remembers the old woman’s visits to their garden.",
     "delivery": "warm, flowing delivery",
     "rate": 0.928,
     "pitch": 1.04,
@@ -3102,7 +3265,8 @@ window.HoneybrookVoiceCast=[
       "elder-6"
     ],
     "source": "Bear Hollow elder",
-    "personality": "quietly curious; asks before drawing conclusions",
+    "speechEnabled": true,
+    "personality": "A younger contemporary in Abigail’s old age, with family accounts from her childhood.",
     "delivery": "soft, deliberate phrasing",
     "rate": 0.94,
     "pitch": 1.41,
@@ -3120,7 +3284,8 @@ window.HoneybrookVoiceCast=[
       "elder-7"
     ],
     "source": "Bear Hollow elder",
-    "personality": "cheerful and lightly playful; never mocks grief",
+    "speechEnabled": true,
+    "personality": "He remembers the household’s later breakfasts and his uncle’s earlier kitchen accounts.",
     "delivery": "bright, lightly lifted delivery",
     "rate": 0.952,
     "pitch": 0.89,
@@ -3138,7 +3303,8 @@ window.HoneybrookVoiceCast=[
       "elder-8"
     ],
     "source": "Bear Hollow elder",
-    "personality": "precise and thoughtful; distinguishes facts from guesses",
+    "speechEnabled": true,
+    "personality": "She was a cub in Abigail’s final years and remembers stories told by older relatives.",
     "delivery": "clear, evenly paced delivery",
     "rate": 0.964,
     "pitch": 1.26,
@@ -3156,7 +3322,8 @@ window.HoneybrookVoiceCast=[
       "elder-9"
     ],
     "source": "Bear Hollow elder",
-    "personality": "steady and protective; explains a boundary calmly",
+    "speechEnabled": true,
+    "personality": "His parents knew Abigail’s middle years; he remembers her later walks.",
     "delivery": "low, steady delivery",
     "rate": 0.976,
     "pitch": 0.74,
@@ -3174,7 +3341,8 @@ window.HoneybrookVoiceCast=[
       "elder-10"
     ],
     "source": "Bear Hollow elder",
-    "personality": "gentle and observant; remembers small acts of care",
+    "speechEnabled": true,
+    "personality": "She recalls Abigail’s later years and her grandmother’s domestic memories.",
     "delivery": "gentle, lightly breathy delivery",
     "rate": 0.988,
     "pitch": 1.11,
@@ -3192,7 +3360,8 @@ window.HoneybrookVoiceCast=[
       "elder-11"
     ],
     "source": "Bear Hollow elder",
-    "personality": "patient and reflective; leaves room for a reply",
+    "speechEnabled": true,
+    "personality": "A cub during Abigail’s last years; his grandfather remembered the older Hollow.",
     "delivery": "unhurried, rounded phrases",
     "rate": 1,
     "pitch": 1.48,
@@ -3210,7 +3379,8 @@ window.HoneybrookVoiceCast=[
       "elder-12"
     ],
     "source": "Bear Hollow elder",
-    "personality": "brisk and practical; gives one clear next step",
+    "speechEnabled": true,
+    "personality": "She remembers helping with tea in Abigail’s old age and inherited accounts of earlier meals.",
     "delivery": "crisp phrases with a measured pause",
     "rate": 1.012,
     "pitch": 0.96,
@@ -3228,7 +3398,8 @@ window.HoneybrookVoiceCast=[
       "elder-13"
     ],
     "source": "Bear Hollow elder",
-    "personality": "warm and encouraging; notices another person’s effort",
+    "speechEnabled": true,
+    "personality": "He knew Abigail as a child knows a much older neighbour; family memory reaches farther back.",
     "delivery": "warm, flowing delivery",
     "rate": 0.82,
     "pitch": 1.33,
@@ -3246,7 +3417,8 @@ window.HoneybrookVoiceCast=[
       "elder-14"
     ],
     "source": "Bear Hollow elder",
-    "personality": "quietly curious; asks before drawing conclusions",
+    "speechEnabled": true,
+    "personality": "Her aunt passed on accounts of Abigail’s adult years; Fern remembers visits near the end of her life.",
     "delivery": "soft, deliberate phrasing",
     "rate": 0.832,
     "pitch": 0.81,
@@ -3264,7 +3436,8 @@ window.HoneybrookVoiceCast=[
       "elder-15"
     ],
     "source": "Bear Hollow elder",
-    "personality": "cheerful and lightly playful; never mocks grief",
+    "speechEnabled": true,
+    "personality": "He remembers Abigail’s later evenings and his father’s accounts of her younger years.",
     "delivery": "bright, lightly lifted delivery",
     "rate": 0.844,
     "pitch": 1.18,
@@ -3282,7 +3455,8 @@ window.HoneybrookVoiceCast=[
       "elder-16"
     ],
     "source": "Bear Hollow elder",
-    "personality": "precise and thoughtful; distinguishes facts from guesses",
+    "speechEnabled": true,
+    "personality": "She remembers being a young cub when Abigail was elderly and carries her mother’s earlier recollections.",
     "delivery": "clear, evenly paced delivery",
     "rate": 0.856,
     "pitch": 1.55,
@@ -3300,7 +3474,8 @@ window.HoneybrookVoiceCast=[
       "elder-17"
     ],
     "source": "Bear Hollow elder",
-    "personality": "steady and protective; explains a boundary calmly",
+    "speechEnabled": true,
+    "personality": "A late-life acquaintance whose older relatives remembered the Three Bears’ household.",
     "delivery": "low, steady delivery",
     "rate": 0.868,
     "pitch": 1.03,
@@ -3318,7 +3493,8 @@ window.HoneybrookVoiceCast=[
       "elder-18"
     ],
     "source": "Bear Hollow elder",
-    "personality": "gentle and observant; remembers small acts of care",
+    "speechEnabled": true,
+    "personality": "She remembers Abigail’s final years and shares her grandfather’s older seasonal accounts.",
     "delivery": "gentle, lightly breathy delivery",
     "rate": 0.88,
     "pitch": 1.4,
@@ -3336,7 +3512,8 @@ window.HoneybrookVoiceCast=[
       "elder-19"
     ],
     "source": "Bear Hollow elder",
-    "personality": "patient and reflective; leaves room for a reply",
+    "speechEnabled": true,
+    "personality": "His own memories belong to Abigail’s old age; earlier history comes through his family.",
     "delivery": "unhurried, rounded phrases",
     "rate": 0.892,
     "pitch": 0.88,
@@ -3354,7 +3531,8 @@ window.HoneybrookVoiceCast=[
       "elder-20"
     ],
     "source": "Bear Hollow elder",
-    "personality": "brisk and practical; gives one clear next step",
+    "speechEnabled": true,
+    "personality": "She was very young before Abigail died; older family voices fill the limits of her own memory.",
     "delivery": "crisp phrases with a measured pause",
     "rate": 0.904,
     "pitch": 1.25,
@@ -3372,6 +3550,7 @@ window.HoneybrookVoiceCast=[
       "harold"
     ],
     "source": "Bear Hollow elder",
+    "speechEnabled": true,
     "personality": "Patient keeper of letters and memories; speaks carefully and honours promises.",
     "delivery": "Low, unhurried storytelling; deliberate pauses.",
     "rate": 0.82,
@@ -3390,6 +3569,7 @@ window.HoneybrookVoiceCast=[
       "ash"
     ],
     "source": "Storybook Lane resident",
+    "speechEnabled": true,
     "personality": "Accountable and practical; follows an apology with dependable conduct.",
     "delivery": "Dry, low, precise phrasing; restrained humour.",
     "rate": 0.92,
@@ -3408,7 +3588,8 @@ window.HoneybrookVoiceCast=[
       "elves"
     ],
     "source": "Storybook Lane resident",
-    "personality": "cheerful and lightly playful; never mocks grief",
+    "speechEnabled": true,
+    "personality": "The gift mattered because somebody noticed the workers, not just their work.",
     "delivery": "bright, lightly lifted delivery",
     "rate": 0.94,
     "pitch": 1.47,
@@ -3426,7 +3607,8 @@ window.HoneybrookVoiceCast=[
       "pinocchio"
     ],
     "source": "Storybook Lane resident",
-    "personality": "precise and thoughtful; distinguishes facts from guesses",
+    "speechEnabled": true,
+    "personality": "Being found and welcomed home mattered more than the famous nose.",
     "delivery": "clear, evenly paced delivery",
     "rate": 0.952,
     "pitch": 0.95,
@@ -3444,7 +3626,8 @@ window.HoneybrookVoiceCast=[
       "cinderella"
     ],
     "source": "Storybook Lane resident",
-    "personality": "steady and protective; explains a boundary calmly",
+    "speechEnabled": true,
+    "personality": "After the ball she still needed ordinary freedom, practical shoes and choices of her own.",
     "delivery": "low, steady delivery",
     "rate": 0.964,
     "pitch": 1.32,
@@ -3462,7 +3645,8 @@ window.HoneybrookVoiceCast=[
       "snow-white"
     ],
     "source": "Storybook Lane resident",
-    "personality": "gentle and observant; remembers small acts of care",
+    "speechEnabled": true,
+    "personality": "The seven workers had lives, names and kindness beyond being a place to hide.",
     "delivery": "gentle, lightly breathy delivery",
     "rate": 0.976,
     "pitch": 0.8,
@@ -3480,7 +3664,8 @@ window.HoneybrookVoiceCast=[
       "rapunzel"
     ],
     "source": "Storybook Lane resident",
-    "personality": "patient and reflective; leaves room for a reply",
+    "speechEnabled": true,
+    "personality": "A beautiful view cannot replace the freedom to leave.",
     "delivery": "unhurried, rounded phrases",
     "rate": 0.988,
     "pitch": 1.17,
@@ -3498,7 +3683,8 @@ window.HoneybrookVoiceCast=[
       "red"
     ],
     "source": "Storybook Lane resident",
-    "personality": "brisk and practical; gives one clear next step",
+    "speechEnabled": true,
+    "personality": "Trust belongs to the people who were frightened; a friendly wolf cannot demand it back.",
     "delivery": "crisp phrases with a measured pause",
     "rate": 1,
     "pitch": 1.54,
@@ -3516,7 +3702,8 @@ window.HoneybrookVoiceCast=[
       "hansel"
     ],
     "source": "Storybook Lane resident",
-    "personality": "warm and encouraging; notices another person’s effort",
+    "speechEnabled": true,
+    "personality": "The children helped one another; sweets never made the trap acceptable.",
     "delivery": "warm, flowing delivery",
     "rate": 1.012,
     "pitch": 1.02,
@@ -3534,7 +3721,8 @@ window.HoneybrookVoiceCast=[
       "jack"
     ],
     "source": "Storybook Lane resident",
-    "personality": "quietly curious; asks before drawing conclusions",
+    "speechEnabled": true,
+    "personality": "His mother waited at home; courage did not cancel the consequences of taking things.",
     "delivery": "soft, deliberate phrasing",
     "rate": 0.82,
     "pitch": 1.39,
@@ -3552,7 +3740,8 @@ window.HoneybrookVoiceCast=[
       "frog"
     ],
     "source": "Storybook Lane resident",
-    "personality": "cheerful and lightly playful; never mocks grief",
+    "speechEnabled": true,
+    "personality": "Promises do not entitle anybody to ignore another person’s boundaries.",
     "delivery": "bright, lightly lifted delivery",
     "rate": 0.832,
     "pitch": 0.87,
@@ -3570,7 +3759,8 @@ window.HoneybrookVoiceCast=[
       "duckling"
     ],
     "source": "Storybook Lane resident",
-    "personality": "precise and thoughtful; distinguishes facts from guesses",
+    "speechEnabled": true,
+    "personality": "Belonging should not wait for somebody to become beautiful.",
     "delivery": "clear, evenly paced delivery",
     "rate": 0.844,
     "pitch": 1.24,
@@ -3588,7 +3778,8 @@ window.HoneybrookVoiceCast=[
       "sleeping"
     ],
     "source": "Storybook Lane resident",
-    "personality": "steady and protective; explains a boundary calmly",
+    "speechEnabled": true,
+    "personality": "Waking meant learning a changed world, not merely reaching a kiss.",
     "delivery": "low, steady delivery",
     "rate": 0.856,
     "pitch": 1.61,
@@ -3606,7 +3797,8 @@ window.HoneybrookVoiceCast=[
       "pea"
     ],
     "source": "Storybook Lane resident",
-    "personality": "gentle and observant; remembers small acts of care",
+    "speechEnabled": true,
+    "personality": "A guest deserves a comfortable bed without having to prove her worth.",
     "delivery": "gentle, lightly breathy delivery",
     "rate": 0.868,
     "pitch": 1.09,
@@ -3624,7 +3816,8 @@ window.HoneybrookVoiceCast=[
       "dancing"
     ],
     "source": "Storybook Lane resident",
-    "personality": "patient and reflective; leaves room for a reply",
+    "speechEnabled": true,
+    "personality": "The sisters now choose their evening; visitors cannot demand a performance.",
     "delivery": "unhurried, rounded phrases",
     "rate": 0.88,
     "pitch": 1.46,
@@ -3642,7 +3835,8 @@ window.HoneybrookVoiceCast=[
       "puss"
     ],
     "source": "Storybook Lane resident",
-    "personality": "brisk and practical; gives one clear next step",
+    "speechEnabled": true,
+    "personality": "Cleverness changes lives, and its deceptions deserve honest examination.",
     "delivery": "crisp phrases with a measured pause",
     "rate": 0.892,
     "pitch": 0.94,
@@ -3660,7 +3854,8 @@ window.HoneybrookVoiceCast=[
       "thumb"
     ],
     "source": "Storybook Lane resident",
-    "personality": "warm and encouraging; notices another person’s effort",
+    "speechEnabled": true,
+    "personality": "A small person needs respect and accessible ways to act, not an audience measuring him.",
     "delivery": "warm, flowing delivery",
     "rate": 0.904,
     "pitch": 1.31,
@@ -3678,7 +3873,8 @@ window.HoneybrookVoiceCast=[
       "thumbelina"
     ],
     "source": "Storybook Lane resident",
-    "personality": "quietly curious; asks before drawing conclusions",
+    "speechEnabled": true,
+    "personality": "Ask before approaching; being tiny does not make her home public property.",
     "delivery": "soft, deliberate phrasing",
     "rate": 0.916,
     "pitch": 0.79,
@@ -3696,7 +3892,8 @@ window.HoneybrookVoiceCast=[
       "pigs"
     ],
     "source": "Storybook Lane resident",
-    "personality": "cheerful and lightly playful; never mocks grief",
+    "speechEnabled": true,
+    "personality": "Safe homes and shared practical knowledge matter after the chase ends.",
     "delivery": "bright, lightly lifted delivery",
     "rate": 0.928,
     "pitch": 1.16,
@@ -3714,7 +3911,8 @@ window.HoneybrookVoiceCast=[
       "bremen"
     ],
     "source": "Storybook Lane resident",
-    "personality": "precise and thoughtful; distinguishes facts from guesses",
+    "speechEnabled": true,
+    "personality": "They made a home after others decided they were no longer useful.",
     "delivery": "clear, evenly paced delivery",
     "rate": 0.94,
     "pitch": 1.53,
@@ -3732,7 +3930,8 @@ window.HoneybrookVoiceCast=[
       "rumpel"
     ],
     "source": "Storybook Lane resident",
-    "personality": "steady and protective; explains a boundary calmly",
+    "speechEnabled": true,
+    "personality": "Coercion is not made harmless by a cheerful roof; a child is never a payment.",
     "delivery": "low, steady delivery",
     "rate": 0.952,
     "pitch": 1.01,
@@ -3750,7 +3949,8 @@ window.HoneybrookVoiceCast=[
       "fisher"
     ],
     "source": "Storybook Lane resident",
-    "personality": "gentle and observant; remembers small acts of care",
+    "speechEnabled": true,
+    "personality": "Wanting security and endlessly demanding power are different things.",
     "delivery": "gentle, lightly breathy delivery",
     "rate": 0.964,
     "pitch": 1.38,
@@ -3768,7 +3968,8 @@ window.HoneybrookVoiceCast=[
       "shoe"
     ],
     "source": "Storybook Lane resident",
-    "personality": "patient and reflective; leaves room for a reply",
+    "speechEnabled": true,
+    "personality": "The children need care and room to be heard; harsh treatment is not a cosy joke.",
     "delivery": "unhurried, rounded phrases",
     "rate": 0.976,
     "pitch": 0.86,
@@ -3786,7 +3987,8 @@ window.HoneybrookVoiceCast=[
       "mice"
     ],
     "source": "Storybook Lane resident",
-    "personality": "brisk and practical; gives one clear next step",
+    "speechEnabled": true,
+    "personality": "Comfort means different things to different guests.",
     "delivery": "crisp phrases with a measured pause",
     "rate": 0.988,
     "pitch": 1.23,
@@ -3804,7 +4006,8 @@ window.HoneybrookVoiceCast=[
       "mermaid"
     ],
     "source": "Storybook Lane resident",
-    "personality": "warm and encouraging; notices another person’s effort",
+    "speechEnabled": true,
+    "personality": "Different versions end differently; do not replace a painful ending with a familiar film.",
     "delivery": "warm, flowing delivery",
     "rate": 1,
     "pitch": 1.6,
@@ -3822,7 +4025,8 @@ window.HoneybrookVoiceCast=[
       "snow-queen"
     ],
     "source": "Storybook Lane resident",
-    "personality": "quietly curious; asks before drawing conclusions",
+    "speechEnabled": true,
+    "personality": "The friend who kept looking belongs at the centre of the telling.",
     "delivery": "soft, deliberate phrasing",
     "rate": 1.012,
     "pitch": 1.08,
@@ -3840,7 +4044,8 @@ window.HoneybrookVoiceCast=[
       "wild-swans"
     ],
     "source": "Storybook Lane resident",
-    "personality": "cheerful and lightly playful; never mocks grief",
+    "speechEnabled": true,
+    "personality": "Quiet labour and pain were part of saving her brothers.",
     "delivery": "bright, lightly lifted delivery",
     "rate": 0.82,
     "pitch": 1.45,
@@ -3858,7 +4063,8 @@ window.HoneybrookVoiceCast=[
       "tin"
     ],
     "source": "Storybook Lane resident",
-    "personality": "precise and thoughtful; distinguishes facts from guesses",
+    "speechEnabled": true,
+    "personality": "Do not turn the ending’s suffering into a prize or a cheerful rescue.",
     "delivery": "clear, evenly paced delivery",
     "rate": 0.832,
     "pitch": 0.93,
@@ -3876,7 +4082,8 @@ window.HoneybrookVoiceCast=[
       "match"
     ],
     "source": "Storybook Lane resident",
-    "personality": "steady and protective; explains a boundary calmly",
+    "speechEnabled": true,
+    "personality": "A child needed shelter while she lived; admiration afterwards cannot substitute for care.",
     "delivery": "low, steady delivery",
     "rate": 0.844,
     "pitch": 1.3,
@@ -3894,7 +4101,8 @@ window.HoneybrookVoiceCast=[
       "red-shoes"
     ],
     "source": "Storybook Lane resident",
-    "personality": "gentle and observant; remembers small acts of care",
+    "speechEnabled": true,
+    "personality": "A painful tale needs thoughtful witnesses, not a dancing attraction.",
     "delivery": "gentle, lightly breathy delivery",
     "rate": 0.856,
     "pitch": 0.78,
@@ -3912,7 +4120,8 @@ window.HoneybrookVoiceCast=[
       "aladdin"
     ],
     "source": "Storybook Lane resident",
-    "personality": "patient and reflective; leaves room for a reply",
+    "speechEnabled": true,
+    "personality": "Objects can change fortunes without making somebody wise about power.",
     "delivery": "unhurried, rounded phrases",
     "rate": 0.868,
     "pitch": 1.15,
@@ -3930,7 +4139,8 @@ window.HoneybrookVoiceCast=[
       "genie"
     ],
     "source": "Storybook Lane resident",
-    "personality": "brisk and practical; gives one clear next step",
+    "speechEnabled": true,
+    "personality": "Gratitude is not guaranteed by power; the fisherman survived by thinking carefully.",
     "delivery": "crisp phrases with a measured pause",
     "rate": 0.88,
     "pitch": 1.52,
@@ -3948,7 +4158,8 @@ window.HoneybrookVoiceCast=[
       "ali"
     ],
     "source": "Storybook Lane resident",
-    "personality": "warm and encouraging; notices another person’s effort",
+    "speechEnabled": true,
+    "personality": "Secret wealth does not erase the courage of the person who saved the household.",
     "delivery": "warm, flowing delivery",
     "rate": 0.892,
     "pitch": 1,
@@ -3966,7 +4177,8 @@ window.HoneybrookVoiceCast=[
       "sinbad"
     ],
     "source": "Storybook Lane resident",
-    "personality": "quietly curious; asks before drawing conclusions",
+    "speechEnabled": true,
+    "personality": "The sailor’s listener and the people who helped him deserve a place beside the marvels.",
     "delivery": "soft, deliberate phrasing",
     "rate": 0.904,
     "pitch": 1.37,
@@ -3984,7 +4196,8 @@ window.HoneybrookVoiceCast=[
       "vasilisa"
     ],
     "source": "Storybook Lane resident",
-    "personality": "cheerful and lightly playful; never mocks grief",
+    "speechEnabled": true,
+    "personality": "Help from a mother’s gift did not remove the work Vasilisa had to do.",
     "delivery": "bright, lightly lifted delivery",
     "rate": 0.916,
     "pitch": 0.85,
@@ -4002,7 +4215,8 @@ window.HoneybrookVoiceCast=[
       "baba"
     ],
     "source": "Storybook Lane resident",
-    "personality": "precise and thoughtful; distinguishes facts from guesses",
+    "speechEnabled": true,
+    "personality": "Different tellings make her helper, danger or both; ask which account is being shared.",
     "delivery": "clear, evenly paced delivery",
     "rate": 0.928,
     "pitch": 1.22,
@@ -4020,7 +4234,8 @@ window.HoneybrookVoiceCast=[
       "east"
     ],
     "source": "Storybook Lane resident",
-    "personality": "steady and protective; explains a boundary calmly",
+    "speechEnabled": true,
+    "personality": "The search after the broken promise is as important as the enchanted beginning.",
     "delivery": "low, steady delivery",
     "rate": 0.94,
     "pitch": 1.59,
@@ -4038,7 +4253,8 @@ window.HoneybrookVoiceCast=[
       "firebird"
     ],
     "source": "Storybook Lane resident",
-    "personality": "gentle and observant; remembers small acts of care",
+    "speechEnabled": true,
+    "personality": "A beautiful discovery can carry obligations and consequences.",
     "delivery": "gentle, lightly breathy delivery",
     "rate": 0.952,
     "pitch": 1.07,
@@ -4056,7 +4272,8 @@ window.HoneybrookVoiceCast=[
       "goose"
     ],
     "source": "Storybook Lane resident",
-    "personality": "patient and reflective; leaves room for a reply",
+    "speechEnabled": true,
+    "personality": "The kindness before the joke belongs in the tale too.",
     "delivery": "unhurried, rounded phrases",
     "rate": 0.964,
     "pitch": 1.44,
@@ -4074,7 +4291,8 @@ window.HoneybrookVoiceCast=[
       "six"
     ],
     "source": "Storybook Lane resident",
-    "personality": "brisk and practical; gives one clear next step",
+    "speechEnabled": true,
+    "personality": "This is a distinct telling from The Wild Swans; its brothers and terms are not interchangeable.",
     "delivery": "crisp phrases with a measured pause",
     "rate": 0.976,
     "pitch": 0.92,
@@ -4092,7 +4310,8 @@ window.HoneybrookVoiceCast=[
       "ravens"
     ],
     "source": "Storybook Lane resident",
-    "personality": "warm and encouraging; notices another person’s effort",
+    "speechEnabled": true,
+    "personality": "The sister’s long search deserves more than a hurried final sentence.",
     "delivery": "warm, flowing delivery",
     "rate": 0.988,
     "pitch": 1.29,
@@ -4110,7 +4329,8 @@ window.HoneybrookVoiceCast=[
       "beauty"
     ],
     "source": "Storybook Lane resident",
-    "personality": "quietly curious; asks before drawing conclusions",
+    "speechEnabled": true,
+    "personality": "Visitors are welcome by agreement; nobody owes strangers a reenactment of private pain.",
     "delivery": "soft, deliberate phrasing",
     "rate": 1,
     "pitch": 0.77,
@@ -4128,11 +4348,12 @@ window.HoneybrookVoiceCast=[
       "guardian-goddess"
     ],
     "source": "Established story guide",
-    "personality": "cheerful and lightly playful; never mocks grief",
-    "delivery": "bright, lightly lifted delivery",
-    "rate": 1.012,
-    "pitch": 1.14,
-    "lang": "en-US",
+    "speechEnabled": true,
+    "personality": "Protective and patient; guides without controlling a choice or revealing the ending.",
+    "delivery": "Calm, spacious phrases; gentle high register.",
+    "rate": 0.79,
+    "pitch": 1.29,
+    "lang": "en-GB",
     "voiceSlot": 220,
     "visualIdentity": "Use the established character portrait; preserve identifying features.",
     "storyContext": "Honeybrook’s protective guide",
@@ -4146,7 +4367,8 @@ window.HoneybrookVoiceCast=[
       "narrator"
     ],
     "source": "Narration",
-    "personality": "precise and thoughtful; distinguishes facts from guesses",
+    "speechEnabled": true,
+    "personality": "Reads scene description, without impersonating a named character.",
     "delivery": "clear, evenly paced delivery",
     "rate": 0.82,
     "pitch": 1.51,
