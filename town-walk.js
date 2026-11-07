@@ -217,7 +217,7 @@
       memory.moments.push({ text:text, when:new Date().toLocaleString([], {month:'short',day:'numeric',hour:'numeric',minute:'2-digit'}) });
       memory.moments=memory.moments.slice(-20); save();
     }
-    function showResponse(text) { response.hidden=false; response.textContent=text; }
+    function showResponse(text) { response.hidden=false; if(activeNpc)response.dataset.speaker=activeNpc.name;else delete response.dataset.speaker;response.textContent=text; }
     function makeChoice(label, fn) {
       const b=document.createElement('button'); b.type='button'; b.textContent=label; b.addEventListener('click',fn); choices.appendChild(b); return b;
     }

@@ -1,0 +1,13 @@
+const assert=require('node:assert/strict'),vm=require('node:vm'),fs=require('node:fs');
+const D=require('../dialogue-lines.js');const root={window:{}};vm.runInNewContext(fs.readFileSync('voice-cast.js','utf8'),root);const cast=root.window.HoneybrookVoiceCast;
+let text='“Hello, Nell,” Amelia said. “Good morning,” Nell replied.';let turns=D.turns(text,'narrator',cast);
+assert.equal(turns[0].speaker,'story-amelia');assert.equal(turns[0].text,'Hello, Nell,');assert.equal(turns[1].speaker,'narrator');assert.equal(turns[2].speaker,'story-carmen');
+assert.equal(turns.map(x=>x.text).join(' '),text.replace(/[“”]/g,'').trim());
+assert.equal(D.turns('“I remember,” Goldilocks said.','gold-elder',cast)[0].speaker,'gold-elder');
+assert.equal(D.turns('“Come along,” Baby Bear said.','baby-adult',cast)[0].speaker,'baby-adult');
+assert.equal(D.turns('“Hello there.”','story-sammy',cast)[0].speaker,'story-sammy');
+assert.equal(D.turns('“A quiet moment.”','narrator',cast)[0].speaker,'narrator');
+assert.equal(D.attribution('Professor Theodore Honeywell replied.',cast),'story-theodore');
+assert.equal(D.attribution('Lena said.',cast),'');
+assert.equal(D.turns('We returned home.','narrator',cast)[0].text,'We returned home.');
+console.log('PASS ordered speaker changes, exact caption words, narration, age stages, explicit fallback and non-speaking roles.');
