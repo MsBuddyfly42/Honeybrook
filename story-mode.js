@@ -3,7 +3,7 @@
 // The outer player owns the only soundtrack; pages inside it retain their normal routes.
 if(window===window.top){const root=new URL('.',document.currentScript.src),player=new URL('play.html',root);player.searchParams.set('start',location.href);if(performance.getEntriesByType('navigation')[0]?.type==='reload')player.searchParams.set('refresh','1');document.documentElement.style.visibility='hidden';location.replace(player.href);return;}
 const KEY='honeybrook_story_mode_v1',base=new URL('.',document.currentScript.src),url=name=>new URL(name,base),read=k=>{try{return JSON.parse(localStorage.getItem(k)||'null');}catch{return null;}},active=()=>localStorage.getItem(KEY)!==null;
-// A new tab starts at the Welcome House; refresh and travel keep their current route.
+// New tabs and Refresh start at the main front page; ordinary travel keeps its route.
 const entrance=url('index.html');
 let newTab=false;try{newTab=sessionStorage.getItem('honeybrook_tab_open_v1')!=='open';sessionStorage.setItem('honeybrook_tab_open_v1','open');}catch{}
 const hollowDoor=location.pathname.includes('/honeybrook-craft-fair/')&&new URLSearchParams(location.search).get('portal')==='town'&&(new URLSearchParams(location.search).get('place')==='hollow'||(new URLSearchParams(location.search).get('place')||'').startsWith('hollow-'));
@@ -12,10 +12,10 @@ if(newTab&&!hollowDoor){
  if(location.pathname!==entrance.pathname&&location.pathname!==base.pathname){document.documentElement.style.visibility='hidden';location.replace(entrance.href);return;}
  history.replaceState(null,'',entrance.pathname);scrollTo(0,0);
 }
-// Refresh visits Welcome House; reopening a tab starts at the front page.
+// Refresh returns to the main front page without changing any saved progress.
 else if(performance.getEntriesByType('navigation')[0]?.type==='reload'){
  if('scrollRestoration'in history)history.scrollRestoration='manual';
- const welcome=new URL('index.html#visit=Welcome%20House',base);
+ const welcome=new URL('index.html',base);
  if(location.pathname!==welcome.pathname){document.documentElement.style.visibility='hidden';location.replace(welcome.href);return;}
  history.replaceState(null,'',welcome.href);scrollTo(0,0);
  addEventListener('pageshow',()=>{scrollTo(0,0);},{once:true});
