@@ -464,3 +464,8 @@ Named profiles now have individual rate, pitch and casting preferences. The dire
 ## November 7 · strict child voice matching
 
 Removed the remaining youthful-pitch adult fallback for children. Child roles now require a recognised child voice of the matching gender, including saved overrides; adults exclude recognised child voices. Existing per-character personality, pace, pitch, introductions, individual base assignment and music ducking remain. If no child voice is installed, captions remain and playback reports the missing voice. This does not install voices or produce unique recorded actors. Natural recorded performances are still pending installation and connection of an audio-generation service. Tests exercise mocked inventories rather than audible performance quality.
+
+
+## November 7 · town routes during Journey
+
+Reproduced a Town Hall map button briefly opening its exterior before the active story-route guard redirected to the current Journey. Town destinations, rooms, workspaces and return paths now remain navigable with an unfinished Journey; narrative Nell/research prerequisites remain. The map distinguishes area previews from entering an area, search results enter destinations directly, and route-step buttons actually travel. Home and return controls remain visible during Journey. Old save keys and engine progression are untouched. Opening checklist entries are now read-only progress labels rather than misleading buttons which all show the current scene. Automated route regression covers 729 named destination/district/room URLs with an active unfinished Journey and checks preservation of existing stored data. Live browser verification is recorded separately from this source check. The activity overhaul remains separate work.
