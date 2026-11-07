@@ -4,7 +4,7 @@ const female=/\b(female|zira|hazel|susan|samantha|victoria|karen|moira|tessa|fio
 const male=/\b(male|david|mark|george|daniel|alex|fred|ralph|thomas|oliver|arthur|guy|ryan|brian|christopher|eric|roger|andrew|william|james|matthew|justin|joey|russell|rishi|lee|albert|paul)\b/i;
 function gender(v){const n=v.name||'';if(/\bgirl\b/i.test(n))return 'female';if(/\bboy\b/i.test(n))return 'male';if(female.test(n))return 'female';if(male.test(n))return 'male';return 'unknown';}
 function childVoice(v){return /\b(ana|ivy|justin|child|kid|boy|girl)\b/i.test(v.name||'');}
-function compatible(p,v){const g=gender(v);return /^en(?:[-_]|$)/i.test(v.lang||'')&&(p.gender==='neutral'?g!=='unknown':g===p.gender)&&((p.ageBand==='child')||!childVoice(v));}
+function compatible(p,v){const g=gender(v);return /^en(?:[-_]|$)/i.test(v.lang||'')&&(p.gender==='neutral'?g!=='unknown':g===p.gender)&&(p.ageBand==='child'?childVoice(v):!childVoice(v));}
 function ranked(p,voices){const preferred=p.preferredVoices||[],score=v=>(p.ageBand==='child'&&childVoice(v)?100:0)+(v.lang.toLowerCase()===p.lang.toLowerCase()?8:0)+preferred.reduce((n,k,i)=>Math.max(n,(v.name||'').toLowerCase().includes(k.toLowerCase())?60-i*3:0),0);return voices.filter(v=>compatible(p,v)).sort((a,b)=>score(b)-score(a)||a.name.localeCompare(b.name));}
 function choose(p,voices,override){const selected=voices.find(v=>v.voiceURI===override);if(selected&&compatible(p,selected))return selected;const pool=ranked(p,voices);return pool.length?pool[(p.voiceSlot||0)%pool.length]:null;}
 function identity(p){return p.id==='story-carmen'?'game-nell':p.id==='story-gold'?'gold-child':p.id==='harold'?'story-harold':p.id==='ash'?'story-ash':p.id;}
