@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-07",
+  "testedCommit": "07d8f0498cf16b737b853dbfd9d641fd23255cf6",
+  "liveDeploy": "dep-dbnj1uh42hec73cg0b8g",
+  "browser": "Shared Chrome, synthetic local game state",
+  "passed": [
+    "Active unfinished Journey: Town Hall map route stays at named exterior and enters its Public enquiry desk",
+    "Gazette, Post Office and Public Safety open their own named destinations",
+    "Opening notebook opens a modal workspace with source and notes pages",
+    "Finish remains disabled before arranging all three notes",
+    "Closing partial notebook gives no opening credit",
+    "Reopening retains the two placed notes",
+    "Placing the final note enables Keep this page; saving marks only that hotspot",
+    "Family-paper inspection reveals three distinct source details; finishing unlocks the two scene responses"
+  ],
+  "automated": [
+    "134 opening/step plans and all new work mechanics",
+    "24 legacy opening-save positions",
+    "Existing full Journey logic suite",
+    "729 town/district/room routes during active Journey"
+  ],
+  "limits": [
+    "No full audible voice audition",
+    "No manual traversal of every late-game workbench or legacy activity",
+    "Existing photographs and manipulable HTML/SVG objects; no new individual action image set"
+  ],
+  "polishPendingVerification": [
+    "Focused Home hides unrelated town sections",
+    "Opening progress/restart menus collapsed",
+    "Standalone scene photographs show full frame"
+  ]
+}

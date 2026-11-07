@@ -9,7 +9,8 @@ function restore(){if(!document.getElementById('honeybrookHome'))return;const ha
 if(hash.startsWith('#citymap')){window.HoneybrookCity?.show(undefined,{restore:true});return;}
 const district=hash.match(/^#district=(\w+)$/);if(district){window.HoneybrookRoutes?.travel(district[1],{restore:true});return;}
 if(hash==='#walk'){window.HoneybrookNavigation?.walk();return;}
-if(!hash){window.HoneybrookDestination?.close();window.HoneybrookNavigation?.leave();document.getElementById('honeybrookHome').scrollIntoView({block:'start',behavior:'instant'});}}
+if(!hash){window.HoneybrookDestination?.close();window.HoneybrookNavigation?.home({restore:true});document.getElementById('honeybrookHome').scrollIntoView({block:'start',behavior:'instant'});}}
 addEventListener('popstate',restore);
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',mount,{once:true});else mount();
 })();
+
