@@ -442,11 +442,11 @@ updateMemoryBadge();
   const reg=document.getElementById("contentRegistry"),tf=document.getElementById("contentTypeFilter"),pf=document.getElementById("contentPlaceFilter");if(!reg||!tf||!pf)return;
   const p=progress(), type=tf.value, place=pf.value;
   const shown=content.filter(x=>(type==="all"||x.type===type)&&(place==="all"||x.place===place));
-  reg.innerHTML=shown.map(x=>{const s=p[x.id]||"Not started";return `<article class="content-card"><div>${x.icon} <strong>${x.type}</strong></div><h3>${x.title}</h3><div class="content-meta">📍 ${x.place}<br>🎯 ${x.audience}</div><p>${x.desc}</p><span class="content-status">${s}</span><div class="content-actions"><button class="start-activity" data-start="${x.id}">${s==="Not started"?"Start":"Open"}</button><button class="complete-activity" data-complete="${x.id}">Mark complete</button></div></article>`}).join("")||"<p>No activities match those filters.</p>";
+  reg.innerHTML=shown.map(x=>{const s=p[x.id]||"Not started";return `<article class="content-card"><div>${x.icon} <strong>${x.type}</strong></div><h3>${x.title}</h3><div class="content-meta">📍 ${x.place}<br>🎯 ${x.audience}</div><p>${x.desc}</p><span class="content-status">Passport record: ${s}</span><div class="content-actions"><button class="start-activity" data-start="${x.id}">${s==="Not started"?"Start":"Open"}</button><small>Complete the work inside its classroom; this passport does not award a grade.</small></div></article>`}).join("")||"<p>No activities match those filters.</p>";
   const vals=Object.values(p), done=vals.filter(x=>x==="Completed").length, started=vals.filter(x=>x==="In progress").length;
   document.getElementById("learningStats").innerHTML=`<span class="learning-stat">📚 ${content.length} activities</span><span class="learning-stat">▶️ ${started} in progress</span><span class="learning-stat">✅ ${done} completed</span>`;
   reg.querySelectorAll("[data-start]").forEach(b=>b.onclick=()=>{const q=progress();if(!q[b.dataset.start])q[b.dataset.start]="In progress";save(q);render()});
-  reg.querySelectorAll("[data-complete]").forEach(b=>b.onclick=()=>{const q=progress();q[b.dataset.complete]="Completed";save(q);render()});
+
  }
  document.addEventListener("DOMContentLoaded",()=>{
   const pf=document.getElementById("contentPlaceFilter"),tf=document.getElementById("contentTypeFilter");if(!pf||!tf)return;

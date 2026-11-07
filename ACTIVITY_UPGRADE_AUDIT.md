@@ -11,6 +11,8 @@
 - An independently saved activity notebook keeps drafts and object positions, supports reopening and downloads, and refuses to overwrite a record changed by another tab. The existing campaign saves retain their keys and validation. Restart archives this notebook before deliberately beginning again. Activity-note downloads are separate from older campaign backups.
 - Cinematic popups are opt-in by default and cannot interrupt a workbench. Existing explicit cinematic preferences are retained.
 
+- Removed the twelve old Learning Passport “Mark complete” controls. Start/Open retains the existing classroom launch; a passport button cannot claim completion without doing its work. Existing passport records remain saved.
+
 ## Existing systems reviewed
 
 The town workbench (`town-activities.js`), connected-room hands-on work (`interior-hands-on.js` / `interiors.js`), ten location games (`map-activities.js`), venue minigames (`venue-activities.js`), fourteen research files (`nell-research-ui.js`) and continuation activities (`finale-ui.js`) already have material selection, arrangements, physical controls, evidence boards or checked forms. They are kept, rather than replaced by the Journey workspace. Shops, calendar controls and accepting a task are not treated as physical activities.
